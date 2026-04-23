@@ -91,7 +91,9 @@ function main() {
   workspace.settings['git.autoRepositoryDetection'] = true;
   workspace.settings['git.ignoredRepositories'] = allRepos
     .filter((r) => !r.enabled)
-    .map((r) => r.name);
+    .map((r) => path.resolve(rootDir, r.name));
+  workspace.settings['scm.alwaysShowRepositories'] = true;
+  workspace.settings['scm.defaultViewMode'] = 'tree';
 
   // 6. Rebuild tasks.inputs "repoName" options
   if (workspace.tasks && workspace.tasks.inputs) {

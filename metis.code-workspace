@@ -18,7 +18,6 @@
     "editor.formatOnSave": false,
     "scm.defaultViewMode": "tree",
     "scm.alwaysShowRepositories": true,
-    "scm.repositories.visible": 0,
     "terminal.integrated.automationProfile.windows": {
       "path": "powershell.exe",
       "args": [
