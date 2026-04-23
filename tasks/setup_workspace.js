@@ -89,9 +89,9 @@ function main() {
 
   // 5. Configure Git to automatically detect repositories, but ignore disabled ones
   workspace.settings['git.autoRepositoryDetection'] = true;
-  workspace.settings['git.ignoredRepositories'] = allRepos
+  workspace.settings['git.repositoryScanIgnoredFolders'] = allRepos
     .filter((r) => !r.enabled)
-    .map((r) => path.resolve(rootDir, r.name));
+    .map((r) => r.name);
   workspace.settings['scm.alwaysShowRepositories'] = true;
   workspace.settings['scm.defaultViewMode'] = 'tree';
 
