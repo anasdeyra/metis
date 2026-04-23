@@ -28,7 +28,6 @@
     "editor.formatOnSave": false,
     "scm.defaultViewMode": "tree",
     "scm.alwaysShowRepositories": true,
-    "scm.repositories.visible": 0,
     "terminal.integrated.automationProfile.windows": {
       "path": "powershell.exe",
       "args": [
@@ -38,13 +37,13 @@
         "Bypass",
       ]
     },
-    "git.autoRepositoryDetection": true,
+    "git.autoRepositoryDetection": "subFolders",
     "git.ignoredRepositories": [
-      "api-car",
-      "api-dashboard",
-      "api-hotel",
-      "api-rail",
-      "front-dashboard",
+      "C:\\Users\\anasd\\OneDrive\\Desktop\\metis\\api-car",
+      "C:\\Users\\anasd\\OneDrive\\Desktop\\metis\\api-dashboard",
+      "C:\\Users\\anasd\\OneDrive\\Desktop\\metis\\api-hotel",
+      "C:\\Users\\anasd\\OneDrive\\Desktop\\metis\\api-rail",
+      "C:\\Users\\anasd\\OneDrive\\Desktop\\metis\\front-dashboard",
     ]
   },
   "launch": {

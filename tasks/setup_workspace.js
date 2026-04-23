@@ -88,10 +88,17 @@ function main() {
   workspace.settings['files.exclude'] = filesExclude;
 
   // 5. Configure Git to automatically detect repositories, but ignore disabled ones
-  workspace.settings['git.autoRepositoryDetection'] = true;
+  workspace.settings['git.autoRepositoryDetection'] = 'subFolders';
   workspace.settings['git.ignoredRepositories'] = allRepos
     .filter((r) => !r.enabled)
-    .map((r) => r.name);
+    .map((r) => path.resolve(rootDir, r.name));
+
+  // Ensure SCM view settings don't hide everything
+  if (workspace.settings['scm.repositories.visible'] !== undefined) {
+    delete workspace.settings['scm.repositories.visible'];
+  }
+  workspace.settings['scm.alwaysShowRepositories'] = true;
+  workspace.settings['scm.defaultViewMode'] = 'tree';
 
   // 6. Rebuild tasks.inputs "repoName" options
   if (workspace.tasks && workspace.tasks.inputs) {
