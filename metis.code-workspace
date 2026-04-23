@@ -1,7 +1,7 @@
 {
   
   "folders": [
-    {
+{
       "name": "api-aerial",
       "path": "api-aerial",
       "gitRemote": "git@gitlab.com:GroupeAdnenis/metis-connect/api-aerial"
@@ -129,6 +129,19 @@
           "reveal": "always",
           "panel": "shared"
         }
+      },
+      {
+        "label": "Git: Add Repository",
+        "type": "shell",
+        "command": "node tasks/add_repo.js \"${input:addRepoRemote}\" \"${input:addRepoName}\"",
+        "options": {
+          "cwd": "${workspaceFolder:metis}"
+        },
+        "problemMatcher": [],
+        "presentation": {
+          "reveal": "always",
+          "panel": "shared"
+        }
       }
     ],
     "inputs": [
@@ -144,6 +157,16 @@
           "front-dashboard",
           "front-reservation"
         ]
+      },
+      {
+        "id": "addRepoRemote",
+        "type": "promptString",
+        "description": "Enter the Git Remote URL (SSH format recommended)"
+      },
+      {
+        "id": "addRepoName",
+        "type": "promptString",
+        "description": "Enter custom folder name (leave empty to use default repo name from URL)"
       }
     ]
   },
