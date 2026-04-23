@@ -88,6 +88,7 @@ function main() {
   workspace.settings['files.exclude'] = filesExclude;
 
   // 5. Configure Git to automatically detect repositories, but ignore disabled ones
+  // Using repositoryScanIgnoredFolders with absolute paths prevents "flashing"
   workspace.settings['git.autoRepositoryDetection'] = true;
   workspace.settings['git.repositoryScanIgnoredFolders'] = allRepos
     .filter((r) => !r.enabled)
@@ -96,6 +97,11 @@ function main() {
   // Explicitly clear ignoredRepositories to prevent conflict with absolute paths
   workspace.settings['git.ignoredRepositories'] = [];
   
+  // Ensure SCM view settings don't hide everything
+  if (workspace.settings['scm.repositories.visible'] !== undefined) {
+    delete workspace.settings['scm.repositories.visible'];
+  }
+
   workspace.settings['scm.alwaysShowRepositories'] = true;
   workspace.settings['scm.defaultViewMode'] = 'tree';
 
