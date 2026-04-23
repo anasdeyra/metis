@@ -47,9 +47,12 @@ Open `metis.code-workspace` in VS Code to get a multi-root view of all projects.
 ## ⚙️ Adding a New Repository
 
 To add a new repository to this workspace:
-1.  Run the "Add Repo" task (accessible via VS Code tasks).
-2.  Or manually add an entry to the `folders` array in `metis.code-workspace` and add the directory name to `.gitignore`.
-3.  Run `Sync All` to download the new repository.
+1.  Run the **"Git: Add Repository"** task (accessible via Command Palette).
+2.  Paste the **Git Remote URL**.
+3.  The script will automatically update the workspace settings, handle `.gitignore`, configure task inputs, and **clone the repository** for you instantly.
+
+No manual configuration or secondary sync steps are required.
+
 
 ---
 *Maintained by Anas Deyra.*
