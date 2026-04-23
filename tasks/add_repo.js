@@ -1,5 +1,6 @@
 const fs = require('fs');
 const path = require('path');
+const { execSync } = require('child_process');
 
 const args = process.argv.slice(2);
 
@@ -61,7 +62,21 @@ async function main() {
     console.error(`❌ Error updating .gitignore: ${error.message}`);
   }
 
-  process.stdout.write(`\n🚀 Run 'Sync All' task to clone the new repository.\n`);
+  // 3. Automatically Clone
+  const fullPath = path.join(rootDir, name);
+  if (!fs.existsSync(fullPath)) {
+    console.log(`\n📂 Cloning ${name} from ${remote}...`);
+    try {
+      execSync(`git clone ${remote} ${name}`, { cwd: rootDir, stdio: 'inherit' });
+      console.log(`✅ Successfully cloned ${name}.`);
+    } catch (error) {
+      console.error(`❌ Error cloning ${name}: ${error.message}`);
+    }
+  } else {
+    console.log(`\nℹ️  Directory ${name} already exists. Skipping clone.`);
+  }
+
+  process.stdout.write(`\n✨ Done! The new repository is ready in your workspace.\n`);
 }
 
 main().catch(err => {
