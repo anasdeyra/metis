@@ -1,0 +1,39 @@
+{
+  "repos": [
+    {
+      "name": "api-car",
+      "remote": "git@gitlab.com:GroupeAdnenis/metis-connect/api-car",
+      "enabled": false
+    },
+    {
+      "name": "api-aerial",
+      "remote": "git@gitlab.com:GroupeAdnenis/metis-connect/api-aerial",
+      "enabled": false
+    },
+    {
+      "name": "api-dashboard",
+      "remote": "git@gitlab.com:GroupeAdnenis/metis-connect/api-dashboard",
+      "enabled": false
+    },
+    {
+      "name": "api-hotel",
+      "remote": "git@gitlab.com:GroupeAdnenis/metis-connect/api-hotel",
+      "enabled": false
+    },
+    {
+      "name": "api-rail",
+      "remote": "git@gitlab.com:GroupeAdnenis/metis-connect/api-rail",
+      "enabled": false
+    },
+    {
+      "name": "front-dashboard",
+      "remote": "git@gitlab.com:GroupeAdnenis/metis-connect/front-dashboard",
+      "enabled": false
+    },
+    {
+      "name": "front-reservation",
+      "remote": "git@gitlab.com:GroupeAdnenis/metis-connect/front-reservation",
+      "enabled": false
+    }
+  ]
+}
