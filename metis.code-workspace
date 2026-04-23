@@ -39,13 +39,17 @@
     },
     "git.autoRepositoryDetection": true,
     "git.repositoryScanIgnoredFolders": [
-      "C:\\Users\\anasd\\OneDrive\\Desktop\\metis\\api-car",
-      "C:\\Users\\anasd\\OneDrive\\Desktop\\metis\\api-dashboard",
-      "C:\\Users\\anasd\\OneDrive\\Desktop\\metis\\api-hotel",
-      "C:\\Users\\anasd\\OneDrive\\Desktop\\metis\\api-rail",
-      "C:\\Users\\anasd\\OneDrive\\Desktop\\metis\\front-dashboard",
+      "api-car",
+      "api-dashboard",
+      "api-hotel",
+      "api-rail",
+      "front-dashboard",
     ],
-    "git.ignoredRepositories": []
+    "git.ignoredRepositories": [],
+    "scm.repositories.selectionMode": "multiple",
+    "scm.repositories.explorer": true,
+    "scm.repositories.visible": 5,
+    "scm.repositories.sortOrder": "name",
   },
   "launch": {
     "configurations": [
