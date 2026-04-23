@@ -87,18 +87,26 @@ function main() {
   }
   workspace.settings['files.exclude'] = filesExclude;
 
-  // 5. Write back with trailing commas (JSONC style VS Code expects)
+  // 5. Rebuild tasks.inputs "repoName" options
+  if (workspace.tasks && workspace.tasks.inputs) {
+    const repoNameInput = workspace.tasks.inputs.find((i) => i.id === 'repoName');
+    if (repoNameInput) {
+      repoNameInput.options = enabledRepos.map((r) => r.name);
+    }
+  }
+
+  // 6. Write back with trailing commas (JSONC style VS Code expects)
   const output = addTrailingCommas(JSON.stringify(workspace, null, 2));
   fs.writeFileSync(workspacePath, output + '\n', 'utf8');
 
-  // 6. Rebuild .gitignore sub-projects section
+  // 7. Rebuild .gitignore sub-projects section
   const gitignorePath = path.join(rootDir, '.gitignore');
   if (fs.existsSync(gitignorePath)) {
     let gitignore = fs.readFileSync(gitignorePath, 'utf8');
     const repoEntries = allRepos.map((r) => `${r.name}/`).join('\n');
     // Replace everything between the sub-projects header and the next blank line or section
     gitignore = gitignore.replace(
-      /(# Sub-projects \(managed by scripts\))\n[\s\S]*?(\r?\n\r?\n)/,
+      /(# Sub-projects \(managed by scripts\))\r?\n[\s\S]*?(\r?\n\r?\n)/,
       `$1\n${repoEntries}$2`,
     );
     fs.writeFileSync(gitignorePath, gitignore);

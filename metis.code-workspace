@@ -115,19 +115,6 @@
         }
       },
       {
-        "label": "Git: Add Repository",
-        "type": "shell",
-        "command": "node tasks/add_repo.js \"${input:addRepoRemote}\" \"${input:addRepoName}\"",
-        "options": {
-          "cwd": "${workspaceFolder:metis}",
-        },
-        "problemMatcher": [],
-        "presentation": {
-          "reveal": "always",
-          "panel": "shared",
-        }
-      },
-      {
         "label": "Setup Workspace",
         "type": "shell",
         "command": "node tasks/setup_workspace.js",
@@ -146,22 +133,8 @@
         "id": "repoName",
         "type": "pickString",
         "description": "Select the repository to hard reset to development",
-        "options": [
-          "api-aerial",
-          "api-dashboard",
-          "front-reservation",
-        ]
+        "options": []
       },
-      {
-        "id": "addRepoRemote",
-        "type": "promptString",
-        "description": "Enter the Git Remote URL (SSH format recommended)",
-      },
-      {
-        "id": "addRepoName",
-        "type": "promptString",
-        "description": "Enter custom folder name (leave empty to use default repo name from URL)",
-      }
     ]
   },
 }
