@@ -10,7 +10,7 @@
     {
       "name": "api-aerial",
       "remote": "git@gitlab.com:GroupeAdnenis/metis-connect/api-aerial",
-      "enabled": false,
+      "enabled": true,
       "description": "Flight Booking API",
       "stack": "Node.js / Express"
     },
@@ -45,7 +45,7 @@
     {
       "name": "front-reservation",
       "remote": "git@gitlab.com:GroupeAdnenis/metis-connect/front-reservation",
-      "enabled": false,
+      "enabled": true,
       "description": "Booking Engine",
       "stack": "Nuxt 3 / Vue 3"
     }
