@@ -28,6 +28,16 @@
       ]
     },
     "git.autoRepositoryDetection": true,
+    "git.repositoryScanIgnoredFolders": [
+      "api-car",
+      "api-aerial",
+      "api-dashboard",
+      "api-hotel",
+      "api-rail",
+      "front-dashboard",
+      "front-reservation",
+    ],
+    "git.ignoredRepositories": []
   },
   "launch": {
     "configurations": [
