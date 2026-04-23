@@ -1,6 +1,16 @@
 {
   "folders": [
     {
+      "name": "api-aerial",
+      "path": "api-aerial",
+      "gitRemote": "git@gitlab.com:GroupeAdnenis/metis-connect/api-aerial",
+    },
+    {
+      "name": "front-reservation",
+      "path": "front-reservation",
+      "gitRemote": "git@gitlab.com:GroupeAdnenis/metis-connect/front-reservation",
+    },
+    {
       "name": "metis",
       "path": ".",
     }
@@ -28,6 +38,14 @@
       ]
     },
     "git.autoRepositoryDetection": true,
+    "git.repositoryScanIgnoredFolders": [
+      "C:\\Users\\anasd\\OneDrive\\Desktop\\metis\\api-car",
+      "C:\\Users\\anasd\\OneDrive\\Desktop\\metis\\api-dashboard",
+      "C:\\Users\\anasd\\OneDrive\\Desktop\\metis\\api-hotel",
+      "C:\\Users\\anasd\\OneDrive\\Desktop\\metis\\api-rail",
+      "C:\\Users\\anasd\\OneDrive\\Desktop\\metis\\front-dashboard",
+    ],
+    "git.ignoredRepositories": []
   },
   "launch": {
     "configurations": [
@@ -136,7 +154,10 @@
         "id": "repoName",
         "type": "pickString",
         "description": "Select the repository to hard reset to development",
-        "options": []
+        "options": [
+          "api-aerial",
+          "front-reservation",
+        ]
       },
     ]
   },

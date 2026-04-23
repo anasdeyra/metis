@@ -91,7 +91,11 @@ function main() {
   workspace.settings['git.autoRepositoryDetection'] = true;
   workspace.settings['git.repositoryScanIgnoredFolders'] = allRepos
     .filter((r) => !r.enabled)
-    .map((r) => r.name);
+    .map((r) => path.join(rootDir, r.name));
+  
+  // Explicitly clear ignoredRepositories to prevent conflict with absolute paths
+  workspace.settings['git.ignoredRepositories'] = [];
+  
   workspace.settings['scm.alwaysShowRepositories'] = true;
   workspace.settings['scm.defaultViewMode'] = 'tree';
 
