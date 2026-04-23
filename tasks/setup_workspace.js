@@ -87,8 +87,11 @@ function main() {
   }
   workspace.settings['files.exclude'] = filesExclude;
 
-  // 5. Configure Git to only detect repositories at workspace folder roots
-  workspace.settings['git.autoRepositoryDetection'] = false;
+  // 5. Configure Git to automatically detect repositories, but ignore disabled ones
+  workspace.settings['git.autoRepositoryDetection'] = true;
+  workspace.settings['git.ignoredRepositories'] = allRepos
+    .filter((r) => !r.enabled)
+    .map((r) => r.name);
 
   // 6. Rebuild tasks.inputs "repoName" options
   if (workspace.tasks && workspace.tasks.inputs) {

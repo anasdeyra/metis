@@ -38,7 +38,16 @@
         "Bypass",
       ]
     },
-    "git.autoRepositoryDetection": false,
+    "git.autoRepositoryDetection": true,
+    "git.ignoredRepositories": [
+      "api-car",
+      "api-aerial",
+      "api-dashboard",
+      "api-hotel",
+      "api-rail",
+      "front-dashboard",
+      "front-reservation",
+    ]
   },
   "launch": {
     "configurations": [
