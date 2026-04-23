@@ -26,22 +26,36 @@ async function main() {
 
   // 1. Update metis.code-workspace
   try {
-    const rawContent = fs.readFileSync(workspacePath, 'utf8');
-    const foldersMatch = rawContent.match(/"folders":\s*\[([\s\S]*?)\]/);
+    let workspaceStr = fs.readFileSync(workspacePath, 'utf8');
     
+    // Add to folders
+    const foldersMatch = workspaceStr.match(/"folders":\s*\[([\s\S]*?)\]/);
     if (foldersMatch) {
       const newFolderEntry = `    {
       "name": "${name}",
       "path": "${name}",
       "gitRemote": "${remote}"
     }`;
-      
       const updatedFolders = foldersMatch[1].trim() + ',\n' + newFolderEntry;
-      const updatedContent = rawContent.replace(foldersMatch[1], '\n' + updatedFolders + '\n  ');
-      
-      fs.writeFileSync(workspacePath, updatedContent);
-      console.log(`✅ Added ${name} to metis.code-workspace`);
+      workspaceStr = workspaceStr.replace(foldersMatch[1], '\n' + updatedFolders + '\n  ');
     }
+
+    // Add to settings.files.exclude
+    const excludeMatch = workspaceStr.match(/"files.exclude":\s*\{([\s\S]*?)\}/);
+    if (excludeMatch && !excludeMatch[1].includes(`"${name}"`)) {
+      const updatedExclude = excludeMatch[1].trim() + `,\n      "${name}": true`;
+      workspaceStr = workspaceStr.replace(excludeMatch[1], '\n' + updatedExclude + '\n    ');
+    }
+
+    // Add to hard_reset task's input options
+    const inputMatch = workspaceStr.match(/"id":\s*"repoName"[\s\S]*?"options":\s*\[([\s\S]*?)\]/);
+    if (inputMatch && !inputMatch[1].includes(`"${name}"`)) {
+      const updatedOptions = inputMatch[1].trim() + `,\n          "${name}"`;
+      workspaceStr = workspaceStr.replace(inputMatch[1], '\n' + updatedOptions + '\n        ');
+    }
+    
+    fs.writeFileSync(workspacePath, workspaceStr);
+    console.log(`✅ Updated metis.code-workspace (folders, excludes, and task inputs)`);
   } catch (error) {
     console.error(`❌ Error updating workspace: ${error.message}`);
   }

@@ -20,6 +20,7 @@ yarn-error.log*
 Thumbs.db
 
 # Sub-projects (managed by scripts)
+api-car/
 api-aerial/
 api-dashboard/
 api-hotel/

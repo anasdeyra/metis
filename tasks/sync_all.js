@@ -24,12 +24,14 @@ function syncAll() {
     return;
   }
 
-  // Read and parse workspace file (handling potential comments)
+  // Read and parse workspace file (handling potential comments and trailing commas)
   let workspace;
   try {
     const rawContent = fs.readFileSync(workspacePath, 'utf8');
-    // Simple regex to remove comments for parsing
-    const cleanContent = rawContent.replace(/\/\/.*|\/\*[\s\S]*?\*\//g, '');
+    // Strip comments
+    let cleanContent = rawContent.replace(/\/\/.*|\/\*[\s\S]*?\*\//g, '');
+    // Strip trailing commas
+    cleanContent = cleanContent.replace(/,\s*([\]}])/g, '$1');
     workspace = JSON.parse(cleanContent);
   } catch (error) {
     log(colors.red, `❌ Error parsing metis.code-workspace: ${error.message}`);

@@ -1,5 +1,4 @@
 {
-  
   "folders": [
 {
       "name": "api-aerial",
@@ -34,21 +33,37 @@
     {
       "name": "metis",
       "path": "."
+    },
+    {
+      "name": "api-car",
+      "path": "api-car",
+      "gitRemote": "git@gitlab.com:GroupeAdnenis/metis-connect/api-car.git"
+    },
+    {
+      "name": "api-car",
+      "path": "api-car",
+      "gitRemote": "git@gitlab.com:GroupeAdnenis/metis-connect/api-car.git"
     }
   ],
   "settings": {
     "files.exclude": {
-      "api-aerial": true,
+"api-aerial": true,
       "api-dashboard": true,
       "api-hotel": true,
       "api-rail": true,
       "front-dashboard": true,
-      "front-reservation": true
+      "front-reservation": true,
+      "api-car": true
     },
     "editor.formatOnSave": false,
     "terminal.integrated.automationProfile.windows": {
       "path": "powershell.exe",
-      "args": ["-NoLogo", "-NoProfile", "-ExecutionPolicy", "Bypass"]
+      "args": [
+        "-NoLogo",
+        "-NoProfile",
+        "-ExecutionPolicy",
+        "Bypass"
+      ]
     }
   },
   "launch": {
@@ -59,8 +74,11 @@
         "name": "Debug: api-aerial (npm)",
         "cwd": "${workspaceFolder:api-aerial}/src",
         "runtimeExecutable": "npm",
-        "runtimeArgs": ["run", "dev"],
-        "console": "integratedTerminal",
+        "runtimeArgs": [
+          "run",
+          "dev"
+        ],
+        "console": "integratedTerminal"
       },
       {
         "type": "node",
@@ -68,8 +86,11 @@
         "name": "Debug: api-dashboard (npm)",
         "cwd": "${workspaceFolder:api-dashboard}/src",
         "runtimeExecutable": "npm",
-        "runtimeArgs": ["run", "dev"],
-        "console": "integratedTerminal",
+        "runtimeArgs": [
+          "run",
+          "dev"
+        ],
+        "console": "integratedTerminal"
       },
       {
         "type": "node",
@@ -78,15 +99,18 @@
         "outputCapture": "std",
         "cwd": "${workspaceFolder:front-reservation}/src",
         "runtimeExecutable": "npm",
-        "runtimeArgs": ["run", "dev"],
+        "runtimeArgs": [
+          "run",
+          "dev"
+        ]
       },
       {
         "type": "msedge",
         "request": "launch",
         "name": "Launch Edge (front-reservation)",
         "url": "http://localhost:3000",
-        "webRoot": "${workspaceFolder:front-reservation}/src",
-      },
+        "webRoot": "${workspaceFolder:front-reservation}/src"
+      }
     ],
     "compounds": [
       {
@@ -95,11 +119,11 @@
           "Debug: api-aerial (npm)",
           "Debug: api-dashboard (npm)",
           "server: nuxt (front-reservation)",
-          "Launch Edge (front-reservation)",
+          "Launch Edge (front-reservation)"
         ],
-        "stopAll": true,
-      },
-    ],
+        "stopAll": true
+      }
+    ]
   },
   "tasks": {
     "version": "2.0.0",
@@ -150,12 +174,13 @@
         "type": "pickString",
         "description": "Select the repository to hard reset to development",
         "options": [
-          "api-aerial",
+"api-aerial",
           "api-dashboard",
           "api-hotel",
           "api-rail",
           "front-dashboard",
-          "front-reservation"
+          "front-reservation",
+          "api-car"
         ]
       },
       {
@@ -169,5 +194,5 @@
         "description": "Enter custom folder name (leave empty to use default repo name from URL)"
       }
     ]
-  },
+  }
 }
