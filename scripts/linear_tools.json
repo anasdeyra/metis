@@ -1,0 +1,279 @@
+{
+  "serverName": "linear-mcp-server",
+  "tools": [
+    {
+      "name": "create_document",
+      "description": "Create a new document in Linear",
+      "parameters": {
+        "title": "Document title",
+        "content": "Content as Markdown",
+        "project": "Project name, ID, or slug",
+        "issue": "Issue ID or identifier",
+        "icon": "Icon emoji",
+        "color": "Hex color"
+      }
+    },
+    {
+      "name": "create_issue_label",
+      "description": "Create a new Linear issue label",
+      "parameters": {
+        "name": "Label name",
+        "teamId": "Team UUID",
+        "description": "Label description",
+        "color": "Hex color code"
+      }
+    },
+    {
+      "name": "delete_comment",
+      "description": "Delete a comment from a Linear issue",
+      "parameters": {
+        "id": "Comment ID"
+      }
+    },
+    {
+      "name": "extract_images",
+      "description": "Extract and fetch images from markdown content",
+      "parameters": {
+        "markdown": "Markdown content containing image references"
+      }
+    },
+    {
+      "name": "get_attachment",
+      "description": "Retrieve an attachment's content by ID",
+      "parameters": {
+        "id": "Attachment ID"
+      }
+    },
+    {
+      "name": "get_document",
+      "description": "Retrieve a Linear document by ID or slug",
+      "parameters": {
+        "id": "Document ID or slug"
+      }
+    },
+    {
+      "name": "get_issue",
+      "description": "Retrieve detailed information about an issue by ID",
+      "parameters": {
+        "id": "Issue ID or identifier",
+        "includeRelations": "Include blocking/related/duplicate relations",
+        "includeCustomerNeeds": "Include associated customer needs"
+      }
+    },
+    {
+      "name": "get_issue_status",
+      "description": "Retrieve detailed information about an issue status",
+      "parameters": {
+        "id": "Status ID",
+        "name": "Status name",
+        "team": "Team name or ID"
+      }
+    },
+    {
+      "name": "get_project",
+      "description": "Retrieve details of a specific project",
+      "parameters": {
+        "query": "Project name, ID, or slug",
+        "includeMembers": "Include project members",
+        "includeMilestones": "Include milestones",
+        "includeResources": "Include resources"
+      }
+    },
+    {
+      "name": "get_team",
+      "description": "Retrieve details of a specific Linear team",
+      "parameters": {
+        "query": "Team UUID, key, or name"
+      }
+    },
+    {
+      "name": "get_user",
+      "description": "Retrieve details of a specific Linear user",
+      "parameters": {
+        "query": "User ID, name, email, or \"me\""
+      }
+    },
+    {
+      "name": "list_comments",
+      "description": "List comments for a specific Linear issue",
+      "parameters": {
+        "issueId": "Issue ID or identifier",
+        "limit": "Max results",
+        "cursor": "Next page cursor",
+        "orderBy": "Sort: createdAt | updatedAt"
+      }
+    },
+    {
+      "name": "list_documents",
+      "description": "List documents in the user's Linear workspace",
+      "parameters": {
+        "projectId": "Filter by project ID",
+        "creatorId": "Filter by creator ID",
+        "initiativeId": "Filter by initiative ID",
+        "query": "Search query",
+        "limit": "Max results"
+      }
+    },
+    {
+      "name": "list_issue_labels",
+      "description": "List available issue labels in a Linear workspace or team",
+      "parameters": {
+        "team": "Team name or ID",
+        "name": "Filter by name",
+        "limit": "Max results"
+      }
+    },
+    {
+      "name": "list_issue_statuses",
+      "description": "List available issue statuses in a Linear team",
+      "parameters": {
+        "team": "Team name or ID"
+      }
+    },
+    {
+      "name": "list_issues",
+      "description": "List issues in the user's Linear workspace",
+      "parameters": {
+        "team": "Team name or ID",
+        "state": "State type, name, or ID",
+        "assignee": "User ID, name, email, or \"me\"",
+        "priority": "0=None, 1=Urgent, 2=High, 3=Normal, 4=Low",
+        "limit": "Max results"
+      }
+    },
+    {
+      "name": "list_project_labels",
+      "description": "List available project labels in the Linear workspace",
+      "parameters": {
+        "name": "Filter by name",
+        "limit": "Max results"
+      }
+    },
+    {
+      "name": "list_projects",
+      "description": "List projects in the user's Linear workspace",
+      "parameters": {
+        "team": "Team name or ID",
+        "state": "State type, name, or ID",
+        "query": "Search project name",
+        "limit": "Max results"
+      }
+    },
+    {
+      "name": "list_teams",
+      "description": "List teams in the user's Linear workspace",
+      "parameters": {
+        "query": "Search query",
+        "limit": "Max results"
+      }
+    },
+    {
+      "name": "list_users",
+      "description": "Retrieve users in the Linear workspace",
+      "parameters": {
+        "team": "Team name or ID",
+        "query": "Filter by name or email",
+        "limit": "Max results"
+      }
+    },
+    {
+      "name": "save_comment",
+      "description": "Create or update a comment on a Linear issue",
+      "parameters": {
+        "issueId": "Issue ID or identifier",
+        "body": "Content as Markdown",
+        "id": "Comment ID (for updates)",
+        "parentId": "Parent comment ID"
+      }
+    },
+    {
+      "name": "save_issue",
+      "description": "Create or update a Linear issue",
+      "parameters": {
+        "title": "Issue title (required when creating)",
+        "team": "Team name or ID (required when creating)",
+        "description": "Content as Markdown",
+        "assignee": "User ID, name, email, or \"me\"",
+        "state": "State type, name, or ID",
+        "priority": "0-4"
+      }
+    },
+    {
+      "name": "search_documentation",
+      "description": "Search Linear's documentation",
+      "parameters": {
+        "query": "Search query",
+        "page": "Page number"
+      }
+    },
+    {
+      "name": "update_document",
+      "description": "Update an existing Linear document",
+      "parameters": {
+        "id": "Document ID or slug",
+        "title": "Document title",
+        "content": "Content as Markdown"
+      }
+    },
+    {
+      "name": "delete_attachment",
+      "description": "Delete an attachment (Disabled)",
+      "status": "disabled"
+    },
+    {
+      "name": "create_attachment",
+      "description": "Create an attachment (Disabled)",
+      "status": "disabled"
+    },
+    {
+      "name": "save_project",
+      "description": "Create or update a project (Disabled)",
+      "status": "disabled"
+    },
+    {
+      "name": "list_milestones",
+      "description": "List milestones (Disabled)",
+      "status": "disabled"
+    },
+    {
+      "name": "get_milestone",
+      "description": "Get milestone details (Disabled)",
+      "status": "disabled"
+    },
+    {
+      "name": "save_milestone",
+      "description": "Create or update a milestone (Disabled)",
+      "status": "disabled"
+    },
+    {
+      "name": "list_customers",
+      "description": "List customers (Disabled)",
+      "status": "disabled"
+    },
+    {
+      "name": "save_customer",
+      "description": "Create or update a customer (Disabled)",
+      "status": "disabled"
+    },
+    {
+      "name": "delete_customer",
+      "description": "Delete a customer (Disabled)",
+      "status": "disabled"
+    },
+    {
+      "name": "save_customer_need",
+      "description": "Create or update a customer need (Disabled)",
+      "status": "disabled"
+    },
+    {
+      "name": "delete_customer_need",
+      "description": "Delete a customer need (Disabled)",
+      "status": "disabled"
+    },
+    {
+      "name": "list_cycles",
+      "description": "List cycles (Disabled)",
+      "status": "disabled"
+    }
+  ]
+}

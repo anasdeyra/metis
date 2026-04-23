@@ -1,0 +1,150 @@
+{
+  
+  "folders": [
+    {
+      "name": "api-aerial",
+      "path": "api-aerial",
+      "gitRemote": "git@gitlab.com:GroupeAdnenis/metis-connect/api-aerial"
+    },
+    {
+      "name": "api-dashboard",
+      "path": "api-dashboard",
+      "gitRemote": "git@gitlab.com:GroupeAdnenis/metis-connect/api-dashboard"
+    },
+    {
+      "name": "api-hotel",
+      "path": "api-hotel",
+      "gitRemote": "git@gitlab.com:GroupeAdnenis/metis-connect/api-hotel"
+    },
+    {
+      "name": "api-rail",
+      "path": "api-rail",
+      "gitRemote": "git@gitlab.com:GroupeAdnenis/metis-connect/api-rail"
+    },
+    {
+      "name": "front-dashboard",
+      "path": "front-dashboard",
+      "gitRemote": "git@gitlab.com:GroupeAdnenis/metis-connect/front-dashboard"
+    },
+    {
+      "name": "front-reservation",
+      "path": "front-reservation",
+      "gitRemote": "git@gitlab.com:GroupeAdnenis/metis-connect/front-reservation"
+    },
+    {
+      "name": "metis",
+      "path": "."
+    }
+  ],
+  "settings": {
+    "files.exclude": {
+      "api-aerial": true,
+      "api-dashboard": true,
+      "api-hotel": true,
+      "api-rail": true,
+      "front-dashboard": true,
+      "front-reservation": true
+    },
+    "editor.formatOnSave": false,
+    "terminal.integrated.automationProfile.windows": {
+      "path": "powershell.exe",
+      "args": ["-NoLogo", "-NoProfile", "-ExecutionPolicy", "Bypass"]
+    }
+  },
+  "launch": {
+    "configurations": [
+      {
+        "type": "node",
+        "request": "launch",
+        "name": "Debug: api-aerial (npm)",
+        "cwd": "${workspaceFolder:api-aerial}/src",
+        "runtimeExecutable": "npm",
+        "runtimeArgs": ["run", "dev"],
+        "console": "integratedTerminal",
+      },
+      {
+        "type": "node",
+        "request": "launch",
+        "name": "Debug: api-dashboard (npm)",
+        "cwd": "${workspaceFolder:api-dashboard}/src",
+        "runtimeExecutable": "npm",
+        "runtimeArgs": ["run", "dev"],
+        "console": "integratedTerminal",
+      },
+      {
+        "type": "node",
+        "request": "launch",
+        "name": "server: nuxt (front-reservation)",
+        "outputCapture": "std",
+        "cwd": "${workspaceFolder:front-reservation}/src",
+        "runtimeExecutable": "npm",
+        "runtimeArgs": ["run", "dev"],
+      },
+      {
+        "type": "msedge",
+        "request": "launch",
+        "name": "Launch Edge (front-reservation)",
+        "url": "http://localhost:3000",
+        "webRoot": "${workspaceFolder:front-reservation}/src",
+      },
+    ],
+    "compounds": [
+      {
+        "name": "DEBUG ALL (Aerial + Dashboard + Reservation)",
+        "configurations": [
+          "Debug: api-aerial (npm)",
+          "Debug: api-dashboard (npm)",
+          "server: nuxt (front-reservation)",
+          "Launch Edge (front-reservation)",
+        ],
+        "stopAll": true,
+      },
+    ],
+  },
+  "tasks": {
+    "version": "2.0.0",
+    "tasks": [
+      {
+        "label": "Git: pull from dev",
+        "type": "shell",
+        "command": "node tasks/sync_all.js",
+        "options": {
+          "cwd": "${workspaceFolder:metis}"
+        },
+        "problemMatcher": [],
+        "presentation": {
+          "reveal": "always",
+          "panel": "shared"
+        }
+      },
+      {
+        "label": "Git: Hard Reset",
+        "type": "shell",
+        "command": "node tasks/hard_reset.js ${input:repoName}",
+        "options": {
+          "cwd": "${workspaceFolder:metis}"
+        },
+        "problemMatcher": [],
+        "presentation": {
+          "reveal": "always",
+          "panel": "shared"
+        }
+      }
+    ],
+    "inputs": [
+      {
+        "id": "repoName",
+        "type": "pickString",
+        "description": "Select the repository to hard reset to development",
+        "options": [
+          "api-aerial",
+          "api-dashboard",
+          "api-hotel",
+          "api-rail",
+          "front-dashboard",
+          "front-reservation"
+        ]
+      }
+    ]
+  },
+}
