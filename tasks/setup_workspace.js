@@ -87,7 +87,10 @@ function main() {
   }
   workspace.settings['files.exclude'] = filesExclude;
 
-  // 5. Rebuild tasks.inputs "repoName" options
+  // 5. Configure Git to only detect repositories at workspace folder roots
+  workspace.settings['git.autoRepositoryDetection'] = false;
+
+  // 6. Rebuild tasks.inputs "repoName" options
   if (workspace.tasks && workspace.tasks.inputs) {
     const repoNameInput = workspace.tasks.inputs.find((i) => i.id === 'repoName');
     if (repoNameInput) {

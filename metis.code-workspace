@@ -25,6 +25,7 @@
         "Bypass",
       ]
     },
+    "git.autoRepositoryDetection": false,
   },
   "launch": {
     "configurations": [
