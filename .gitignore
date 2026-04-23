@@ -19,6 +19,14 @@ yarn-error.log*
 .DS_Store
 Thumbs.db
 
+# Sub-projects (managed by scripts)
+api-aerial/
+api-dashboard/
+api-hotel/
+api-rail/
+front-dashboard/
+front-reservation/
+
 # Tooling
 .claude/
 .gemini/
