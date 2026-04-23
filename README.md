@@ -1,29 +1,33 @@
 # Metis Workspace Orchestrator
 
-This repository provides a unified development environment inside VSCode for multiple independent services and frontend applications.
+This repository is a central "shell" for the Metis monorepo. It manages a unified VS Code development environment for multiple independent services and frontend applications using a configuration-driven approach.
 
 ## 🚀 Quick Start
 
-To set up the entire development environment from scratch:
+To set up your development environment:
 
-1.  **Clone this repository**:
+1.  **Configure your workspace**:
+    Edit `metis.repos.json` and set `"enabled": true` for the repositories you want to work on.
+
+2.  **Apply configuration**:
+    Run the setup script to update VS Code settings and `.gitignore`:
     ```bash
-    git clone <this-repo-url> metis
-    cd metis
+    node tasks/setup_workspace.js
     ```
+    *(Or run the **"Setup Workspace"** task via `Ctrl+Shift+P` -> `Tasks: Run Task`)*
 
-2.  **Initialize all sub-projects**:
-    Run the sync task (via VS Code or terminal):
+3.  **Initialize/Sync repositories**:
+    Clone missing repositories and pull the latest changes:
     ```bash
     node tasks/sync_all.js
     ```
-    This script will read the `metis.code-workspace` configuration and automatically clone any missing repositories and pull the latest changes for existing ones.
+    *(Or run the **"Git: pull from dev"** task)*
 
 ## 📁 Repository Structure
 
-This is a **monorepo shell** that orchestrates the following services:
+The workspace orchestrates the following core Metis projects:
 
-| Name | Role | Technology |
+| Repo Name | Role | Technology |
 | :--- | :--- | :--- |
 | `api-aerial` | Flight Booking API | Node.js / Express |
 | `api-dashboard` | Back-office API | Node.js / Express |
@@ -34,25 +38,21 @@ This is a **monorepo shell** that orchestrates the following services:
 
 ## 🛠️ Developer Tools
 
-### Unified Workspace
-Open `metis.code-workspace` in VS Code to get a multi-root view of all projects. This enables:
-- **Shared Debugging**: Launch multiple APIs and frontends simultaneously.
-- **Global Search**: Search across all repositories at once.
-- **Custom Tasks**: Access specialized Metis scripts directly from the Command Palette (`Ctrl+Shift+P` -> `Tasks: Run Task`).
+### Unified VS Code Environment
+Open `metis.code-workspace` to access:
+- **Dynamic Multi-Root Folders**: Only your enabled repositories appear in the sidebar.
+- **Shared Debugging**: Launch multiple APIs and frontends simultaneously using compiled compounds.
+- **Selective Search**: Search results automatically exclude disabled repository directories.
+- **Integrated Tasks**: Common git and environment operations are available via the Command Palette.
 
-### Key Scripts
-- **Sync All** (`tasks/sync_all.js`): Clones missing repos and updates all projects to the latest `development` branch.
-- **Hard Reset** (`tasks/hard_reset.js`): Quickly reset any repository to the latest development state, discarding local changes.
-
-## ⚙️ Adding a New Repository
-
-To add a new repository to this workspace:
-1.  Run the **"Git: Add Repository"** task (accessible via Command Palette).
-2.  Paste the **Git Remote URL**.
-3.  The script will automatically update the workspace settings, handle `.gitignore`, configure task inputs, and **clone the repository** for you instantly.
-
-No manual configuration or secondary sync steps are required.
-
+### Integrated Scripts (`tasks/`)
+- **`setup_workspace.js`**: The core orchestrator. it reads `metis.repos.json` and dynamically patches:
+    - `folders` in the VS Code workspace.
+    - `files.exclude` in settings.
+    - Path options for the `Hard Reset` task input.
+    - `.gitignore` entry to prevent tracking sub-projects in the root repo.
+- **`sync_all.js`**: Reads enabled projects and ensures they are cloned locally and switched to the `development` branch.
+- **`hard_reset.js`**: Resets a specific repository's local branch to `origin/development`, discarding all local changes and synchronizing with the remote.
 
 ---
-*Maintained by Anas Deyra.*
+*Maintained by the Metis Platform Team.*
