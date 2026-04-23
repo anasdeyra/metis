@@ -26,6 +26,9 @@
       "front-reservation": true,
     },
     "editor.formatOnSave": false,
+    "scm.defaultViewMode": "tree",
+    "scm.alwaysShowRepositories": true,
+    "scm.repositories.visible": 0,
     "terminal.integrated.automationProfile.windows": {
       "path": "powershell.exe",
       "args": [
@@ -43,7 +46,7 @@
         "type": "node",
         "request": "launch",
         "name": "Debug: api-aerial (npm)",
-        "cwd": "${workspaceFolder:api-aerial}/src",
+        "cwd": "${workspaceFolder:metis}/api-aerial/src",
         "runtimeExecutable": "npm",
         "runtimeArgs": [
           "run",
@@ -55,7 +58,7 @@
         "type": "node",
         "request": "launch",
         "name": "Debug: api-dashboard (npm)",
-        "cwd": "${workspaceFolder:api-dashboard}/src",
+        "cwd": "${workspaceFolder:metis}/api-dashboard/src",
         "runtimeExecutable": "npm",
         "runtimeArgs": [
           "run",
@@ -68,7 +71,7 @@
         "request": "launch",
         "name": "server: nuxt (front-reservation)",
         "outputCapture": "std",
-        "cwd": "${workspaceFolder:front-reservation}/src",
+        "cwd": "${workspaceFolder:metis}/front-reservation/src",
         "runtimeExecutable": "npm",
         "runtimeArgs": [
           "run",
@@ -80,7 +83,7 @@
         "request": "launch",
         "name": "Launch Edge (front-reservation)",
         "url": "http://localhost:3000",
-        "webRoot": "${workspaceFolder:front-reservation}/src",
+        "webRoot": "${workspaceFolder:metis}/front-reservation/src",
       }
     ],
     "compounds": [
@@ -102,7 +105,7 @@
       {
         "label": "Git: pull from dev",
         "type": "shell",
-        "command": "node tasks/sync_all.js",
+        "command": "node ${workspaceFolder:metis}/tasks/sync_all.js",
         "options": {
           "cwd": "${workspaceFolder:metis}",
         },
@@ -115,7 +118,7 @@
       {
         "label": "Git: Hard Reset",
         "type": "shell",
-        "command": "node tasks/hard_reset.js ${input:repoName}",
+        "command": "node ${workspaceFolder:metis}/tasks/hard_reset.js ${input:repoName}",
         "options": {
           "cwd": "${workspaceFolder:metis}",
         },
@@ -128,7 +131,7 @@
       {
         "label": "Setup Workspace",
         "type": "shell",
-        "command": "node tasks/setup_workspace.js",
+        "command": "node ${workspaceFolder:metis}/tasks/setup_workspace.js",
         "options": {
           "cwd": "${workspaceFolder:metis}",
         },
