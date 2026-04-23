@@ -3,13 +3,11 @@ const path = require('path');
 const { execFileSync } = require('child_process');
 
 try {
-  // Read remotes from the workspace file
-  const workspacePath = path.join(__dirname, '..', 'metis.code-workspace');
-  const workspaceRaw = fs.readFileSync(workspacePath, 'utf-8');
-  const workspaceData = JSON.parse(workspaceRaw.replace(/,\s*([\]}])/g, '$1').replace(/\/\/.*$/gm, ''));
+  // Read repos from the configuration file
+  const reposData = require("../metis.repos.json");
   const remotes = {};
-  for (const folder of workspaceData.folders) {
-    if (folder.gitRemote) remotes[folder.name] = folder.gitRemote;
+  for (const repo of reposData.repos) {
+    remotes[repo.name] = repo.remote;
   }
 
   const mrsDir = 'mrs';

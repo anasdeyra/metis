@@ -32,6 +32,7 @@ front-reservation/
 .claude/
 .gemini/
 .agent/scratch/
+scratch/
 
 # Reviews (temp artifacts)
 mrs/*
