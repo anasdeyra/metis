@@ -92,6 +92,11 @@ function main() {
   workspace.settings['git.repositoryScanIgnoredFolders'] = allRepos
     .filter((r) => !r.enabled)
     .map((r) => r.name);
+  workspace.settings['git.ignoredRepositories'] = [];
+  if (workspace.settings['scm.repositories.visible'] !== undefined) {
+    delete workspace.settings['scm.repositories.visible'];
+  }
+
   workspace.settings['scm.alwaysShowRepositories'] = true;
   workspace.settings['scm.defaultViewMode'] = 'tree';
 
