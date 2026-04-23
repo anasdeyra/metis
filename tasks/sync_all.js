@@ -28,8 +28,11 @@ function syncAll() {
   let workspace;
   try {
     const rawContent = fs.readFileSync(workspacePath, 'utf8');
-    // Strip comments
-    let cleanContent = rawContent.replace(/\/\/.*|\/\*[\s\S]*?\*\//g, '');
+    // Strip comments (handling cases where // is inside a string, e.g., URLs)
+    let cleanContent = rawContent.replace(/("(?:[^"\\]|\\.)*")|(\/\/.*|\/\*[\s\S]*?\*\/)/g, (match, group1) => {
+      if (group1) return group1; // It's a string, keep it
+      return ""; // It's a comment, remove it
+    });
     // Strip trailing commas
     cleanContent = cleanContent.replace(/,\s*([\]}])/g, '$1');
     workspace = JSON.parse(cleanContent);

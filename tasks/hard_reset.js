@@ -26,7 +26,15 @@ async function main() {
   }
 
   const workspaceRaw = fs.readFileSync(workspacePath, 'utf-8');
-  const workspaceData = JSON.parse(workspaceRaw.replace(/,\s*([\]}])/g, '$1').replace(/\/\/.*$/gm, ''));
+  // Strip comments while preserving strings (handling // in URLs)
+  let cleanContent = workspaceRaw.replace(/("(?:[^"\\]|\\.)*")|(\/\/.*|\/\*[\s\S]*?\*\/)/g, (match, group1) => {
+    if (group1) return group1;
+    return "";
+  });
+  // Strip trailing commas
+  cleanContent = cleanContent.replace(/,\s*([\]}])/g, '$1');
+  
+  const workspaceData = JSON.parse(cleanContent);
   const remotes = {};
   for (const folder of workspaceData.folders) {
     if (folder.gitRemote) remotes[folder.name] = folder.gitRemote;
