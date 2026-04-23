@@ -93,10 +93,12 @@ function main() {
     .filter((r) => !r.enabled)
     .map((r) => r.name);
   workspace.settings['git.ignoredRepositories'] = [];
-  if (workspace.settings['scm.repositories.visible'] !== undefined) {
-    delete workspace.settings['scm.repositories.visible'];
-  }
-
+  
+  // SCM and Repository visibility settings
+  workspace.settings['scm.repositories.selectionMode'] = 'multiple';
+  workspace.settings['scm.repositories.explorer'] = true;
+  workspace.settings['scm.repositories.visible'] = 5;
+  workspace.settings['scm.repositories.sortOrder'] = 'name';
   workspace.settings['scm.alwaysShowRepositories'] = true;
   workspace.settings['scm.defaultViewMode'] = 'tree';
 
