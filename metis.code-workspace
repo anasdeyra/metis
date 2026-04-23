@@ -1,6 +1,6 @@
 {
   "folders": [
-{
+    {
       "name": "api-aerial",
       "path": "api-aerial",
       "gitRemote": "git@gitlab.com:GroupeAdnenis/metis-connect/api-aerial"
@@ -33,38 +33,22 @@
     {
       "name": "metis",
       "path": "."
-    },
-    {
-      "name": "api-car",
-      "path": "api-car",
-      "gitRemote": "git@gitlab.com:GroupeAdnenis/metis-connect/api-car.git"
-    },
-    {
-      "name": "api-car",
-      "path": "api-car",
-      "gitRemote": "git@gitlab.com:GroupeAdnenis/metis-connect/api-car.git"
     }
   ],
   "settings": {
     "files.exclude": {
-"api-aerial": true,
+      "api-aerial": true,
       "api-dashboard": true,
       "api-hotel": true,
       "api-rail": true,
       "front-dashboard": true,
       "front-reservation": true,
-      "api-car": true
     },
     "editor.formatOnSave": false,
     "terminal.integrated.automationProfile.windows": {
       "path": "powershell.exe",
-      "args": [
-        "-NoLogo",
-        "-NoProfile",
-        "-ExecutionPolicy",
-        "Bypass"
-      ]
-    }
+      "args": ["-NoLogo", "-NoProfile", "-ExecutionPolicy", "Bypass"],
+    },
   },
   "launch": {
     "configurations": [
@@ -74,11 +58,8 @@
         "name": "Debug: api-aerial (npm)",
         "cwd": "${workspaceFolder:api-aerial}/src",
         "runtimeExecutable": "npm",
-        "runtimeArgs": [
-          "run",
-          "dev"
-        ],
-        "console": "integratedTerminal"
+        "runtimeArgs": ["run", "dev"],
+        "console": "integratedTerminal",
       },
       {
         "type": "node",
@@ -86,11 +67,8 @@
         "name": "Debug: api-dashboard (npm)",
         "cwd": "${workspaceFolder:api-dashboard}/src",
         "runtimeExecutable": "npm",
-        "runtimeArgs": [
-          "run",
-          "dev"
-        ],
-        "console": "integratedTerminal"
+        "runtimeArgs": ["run", "dev"],
+        "console": "integratedTerminal",
       },
       {
         "type": "node",
@@ -99,18 +77,15 @@
         "outputCapture": "std",
         "cwd": "${workspaceFolder:front-reservation}/src",
         "runtimeExecutable": "npm",
-        "runtimeArgs": [
-          "run",
-          "dev"
-        ]
+        "runtimeArgs": ["run", "dev"],
       },
       {
         "type": "msedge",
         "request": "launch",
         "name": "Launch Edge (front-reservation)",
         "url": "http://localhost:3000",
-        "webRoot": "${workspaceFolder:front-reservation}/src"
-      }
+        "webRoot": "${workspaceFolder:front-reservation}/src",
+      },
     ],
     "compounds": [
       {
@@ -119,11 +94,11 @@
           "Debug: api-aerial (npm)",
           "Debug: api-dashboard (npm)",
           "server: nuxt (front-reservation)",
-          "Launch Edge (front-reservation)"
+          "Launch Edge (front-reservation)",
         ],
-        "stopAll": true
-      }
-    ]
+        "stopAll": true,
+      },
+    ],
   },
   "tasks": {
     "version": "2.0.0",
@@ -133,40 +108,40 @@
         "type": "shell",
         "command": "node tasks/sync_all.js",
         "options": {
-          "cwd": "${workspaceFolder:metis}"
+          "cwd": "${workspaceFolder:metis}",
         },
         "problemMatcher": [],
         "presentation": {
           "reveal": "always",
-          "panel": "shared"
-        }
+          "panel": "shared",
+        },
       },
       {
         "label": "Git: Hard Reset",
         "type": "shell",
         "command": "node tasks/hard_reset.js ${input:repoName}",
         "options": {
-          "cwd": "${workspaceFolder:metis}"
+          "cwd": "${workspaceFolder:metis}",
         },
         "problemMatcher": [],
         "presentation": {
           "reveal": "always",
-          "panel": "shared"
-        }
+          "panel": "shared",
+        },
       },
       {
         "label": "Git: Add Repository",
         "type": "shell",
         "command": "node tasks/add_repo.js \"${input:addRepoRemote}\" \"${input:addRepoName}\"",
         "options": {
-          "cwd": "${workspaceFolder:metis}"
+          "cwd": "${workspaceFolder:metis}",
         },
         "problemMatcher": [],
         "presentation": {
           "reveal": "always",
-          "panel": "shared"
-        }
-      }
+          "panel": "shared",
+        },
+      },
     ],
     "inputs": [
       {
@@ -174,25 +149,24 @@
         "type": "pickString",
         "description": "Select the repository to hard reset to development",
         "options": [
-"api-aerial",
+          "api-aerial",
           "api-dashboard",
           "api-hotel",
           "api-rail",
           "front-dashboard",
           "front-reservation",
-          "api-car"
-        ]
+        ],
       },
       {
         "id": "addRepoRemote",
         "type": "promptString",
-        "description": "Enter the Git Remote URL (SSH format recommended)"
+        "description": "Enter the Git Remote URL (SSH format recommended)",
       },
       {
         "id": "addRepoName",
         "type": "promptString",
-        "description": "Enter custom folder name (leave empty to use default repo name from URL)"
-      }
-    ]
-  }
+        "description": "Enter custom folder name (leave empty to use default repo name from URL)",
+      },
+    ],
+  },
 }
