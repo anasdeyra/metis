@@ -3,37 +3,51 @@
     {
       "name": "api-car",
       "remote": "git@gitlab.com:GroupeAdnenis/metis-connect/api-car",
-      "enabled": false
+      "enabled": false,
+      "description": "Car Rental Booking API",
+      "stack": "Node.js / Express"
     },
     {
       "name": "api-aerial",
       "remote": "git@gitlab.com:GroupeAdnenis/metis-connect/api-aerial",
-      "enabled": false
+      "enabled": false,
+      "description": "Flight Booking API",
+      "stack": "Node.js / Express"
     },
     {
       "name": "api-dashboard",
       "remote": "git@gitlab.com:GroupeAdnenis/metis-connect/api-dashboard",
-      "enabled": false
+      "enabled": false,
+      "description": "Back-office API",
+      "stack": "Node.js / Express"
     },
     {
       "name": "api-hotel",
       "remote": "git@gitlab.com:GroupeAdnenis/metis-connect/api-hotel",
-      "enabled": false
+      "enabled": false,
+      "description": "Hotel Booking API",
+      "stack": "Node.js / Express"
     },
     {
       "name": "api-rail",
       "remote": "git@gitlab.com:GroupeAdnenis/metis-connect/api-rail",
-      "enabled": false
+      "enabled": false,
+      "description": "Rail Booking API",
+      "stack": "Node.js / Express"
     },
     {
       "name": "front-dashboard",
       "remote": "git@gitlab.com:GroupeAdnenis/metis-connect/front-dashboard",
-      "enabled": false
+      "enabled": false,
+      "description": "Admin Dashboard",
+      "stack": "Nuxt 3 / Vue 3"
     },
     {
       "name": "front-reservation",
       "remote": "git@gitlab.com:GroupeAdnenis/metis-connect/front-reservation",
-      "enabled": false
+      "enabled": false,
+      "description": "Booking Engine",
+      "stack": "Nuxt 3 / Vue 3"
     }
   ]
 }

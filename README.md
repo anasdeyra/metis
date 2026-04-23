@@ -29,6 +29,7 @@ The workspace orchestrates the following core Metis projects:
 
 | Repo Name | Role | Technology |
 | :--- | :--- | :--- |
+| `api-car` | Car Rental Booking API | Node.js / Express |
 | `api-aerial` | Flight Booking API | Node.js / Express |
 | `api-dashboard` | Back-office API | Node.js / Express |
 | `api-hotel` | Hotel Booking API | Node.js / Express |

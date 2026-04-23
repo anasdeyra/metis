@@ -112,6 +112,13 @@ function main() {
     fs.writeFileSync(gitignorePath, gitignore);
   }
 
+  // 8. Update README repositories table
+  try {
+    require('./update_readme_repos.js');
+  } catch (err) {
+    log(colors.red, `⚠️ Warning: Failed to update README table: ${err.message}`);
+  }
+
   log(colors.bright + colors.green, `✅ metis.code-workspace & .gitignore updated`);
   log(colors.yellow, '   ⚠️  Reload VS Code window for changes to take effect (Ctrl+Shift+P → Reload)');
 }
