@@ -134,8 +134,44 @@ function main() {
     log(colors.red, `⚠️ Warning: Failed to update README table: ${err.message}`);
   }
 
+  // 9. Configure Git Hooks (NEW)
+  configureGitHooks(rootDir, allRepos);
+
   log(colors.bright + colors.green, `✅ metis.code-workspace & .gitignore updated`);
   log(colors.yellow, '   ⚠️  Reload VS Code window for changes to take effect (Ctrl+Shift+P → Reload)');
+}
+
+/**
+ * Configures Git repositories to use the version-controlled hooks in tasks/hooks.
+ * @param {string} rootDir
+ * @param {Array<{ name: string; enabled: boolean }>} allRepos
+ */
+function configureGitHooks(rootDir, allRepos) {
+  const { execSync } = require('child_process');
+  log(colors.bright + colors.cyan, '⚓ Configuring Git hooks...');
+
+  // Configuration for root repository
+  try {
+    execSync('git config core.hooksPath tasks/hooks', { cwd: rootDir });
+    log(colors.green, '  ✔ Root repository hooks configured');
+  } catch (err) {
+    log(colors.red, `  ✖ Failed to configure root hooks: ${err.message}`);
+  }
+
+  // Configuration for sub-repositories
+  allRepos.filter(r => r.enabled).forEach(repo => {
+    const repoPath = path.join(rootDir, repo.name);
+    if (fs.existsSync(path.join(repoPath, '.git'))) {
+      try {
+        // Point to the central hooks directory in the root
+        execSync('git config core.hooksPath ../tasks/hooks', { cwd: repoPath });
+        log(colors.green, `  ✔ ${repo.name} hooks configured`);
+      } catch (err) {
+        log(colors.red, `  ✖ Failed to configure ${repo.name} hooks: ${err.message}`);
+      }
+    }
+  });
+  console.log();
 }
 
 /**

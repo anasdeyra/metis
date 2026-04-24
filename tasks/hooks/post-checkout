@@ -1,0 +1,10 @@
+#!/bin/sh
+# Toggle SCM Visibility Hook
+# This hook ensures that VS Code refreshes its SCM view after a branch switch
+# manually triggered or via the UI.
+
+# Get the directory where this hook is located (tasks/hooks)
+HOOK_DIR="$(cd "$(dirname "$0")" && pwd)"
+
+# Call the toggle script located in tasks/
+node "$HOOK_DIR/../toggle_scm_visibility.js"
