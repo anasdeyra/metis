@@ -158,16 +158,14 @@ function configureGitHooks(rootDir, allRepos) {
     log(colors.red, `  ✖ Failed to configure root hooks: ${err.message}`);
   }
 
-  // Configuration for sub-repositories
-  allRepos.filter(r => r.enabled).forEach(repo => {
+  // Ensure sub-repositories do NOT use custom hooks path (per user request)
+  allRepos.forEach(repo => {
     const repoPath = path.join(rootDir, repo.name);
     if (fs.existsSync(path.join(repoPath, '.git'))) {
       try {
-        // Point to the central hooks directory in the root
-        execSync('git config core.hooksPath ../tasks/hooks', { cwd: repoPath });
-        log(colors.green, `  ✔ ${repo.name} hooks configured`);
+        execSync('git config --unset core.hooksPath', { cwd: repoPath });
       } catch (err) {
-        log(colors.red, `  ✖ Failed to configure ${repo.name} hooks: ${err.message}`);
+        // Ignore if it was not set
       }
     }
   });
