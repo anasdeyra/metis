@@ -29,6 +29,9 @@ function updateSelectionMode(mode) {
 async function main() {
     console.log('🔄 Toggling SCM visibility to force UI refresh...');
     
+    // Wait a moment before performing the toggle
+    await new Promise(resolve => setTimeout(resolve, 1000));
+    
     // 1. Set to single
     updateSelectionMode('single');
     

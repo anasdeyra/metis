@@ -90,11 +90,12 @@
         ]
       },
       {
-        "type": "msedge",
+        "type": "chrome",
         "request": "launch",
-        "name": "Launch Edge (front-reservation)",
+        "name": "Launch Chrome (front-reservation)",
         "url": "http://localhost:3000",
         "webRoot": "${workspaceFolder:metis}/front-reservation/src",
+        "port": 9222
       }
     ],
     "compounds": [
@@ -104,7 +105,7 @@
           "Debug: api-aerial (npm)",
           "Debug: api-dashboard (npm)",
           "server: nuxt (front-reservation)",
-          "Launch Edge (front-reservation)",
+          "Launch Chrome (front-reservation)",
         ],
         "stopAll": true,
       }
