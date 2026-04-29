@@ -152,8 +152,9 @@ function configureGitHooks(rootDir, allRepos) {
 
   // Configuration for root repository
   try {
-    execSync('git config core.hooksPath tasks/hooks', { cwd: rootDir });
-    log(colors.green, '  ✔ Root repository hooks configured');
+    const hooksPath = path.join(rootDir, 'tasks', 'hooks').replace(/\\/g, '/');
+    execSync(`git config core.hooksPath "${hooksPath}"`, { cwd: rootDir });
+    log(colors.green, '  ✔ Root repository hooks configured with absolute path');
   } catch (err) {
     log(colors.red, `  ✖ Failed to configure root hooks: ${err.message}`);
   }
