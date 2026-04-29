@@ -95,7 +95,7 @@
         "name": "Launch Chrome (front-reservation)",
         "url": "http://localhost:3000",
         "webRoot": "${workspaceFolder:metis}/front-reservation/src",
-        "port": 9222
+        "port": 9222,
       }
     ],
     "compounds": [
