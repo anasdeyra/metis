@@ -36,6 +36,7 @@ The workspace orchestrates the following core Metis projects:
 | `api-rail` | Rail Booking API | Node.js / Express |
 | `front-dashboard` | Admin Dashboard | Nuxt 3 / Vue 3 |
 | `front-reservation` | Booking Engine | Nuxt 3 / Vue 3 |
+| `obsidian-brain` | Shared Obsidian vault — product & engineering notes, runbooks, and ADRs | Obsidian / Markdown |
 
 ## 🛠️ Developer Tools
 

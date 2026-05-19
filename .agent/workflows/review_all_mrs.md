@@ -21,8 +21,12 @@ node scripts/fetch_reviewer_mrs.js
 > if no merge request to review found stop at this step
 
 ### 2. Review Merge Requests using the json file & diff file
-- each MR that need a review is listed in the mrs folder recursvly traverse every json file found there.
-- Leverage the merge request review skill and always adhere to the template to be always consistant & create the review artifact in the same directory as the json file named review.md and also generate a file called approved if the final verdict is approveed.
+- Each MR that needs review is listed in the `mrs` folder. Recursively traverse every JSON file found there.
+- Leverage the **merge request review skill** and always adhere to the template.
+- Create the review artifact in the same directory as the JSON file named `review.md`.
+- **CRITICAL**: Generate a file named `approved` ONLY if the final verdict is "Approve". 
+- If no `approved` file is present, the review will be posted as a **blocking resolvable discussion** that the author must address.
+
 
 ### 3. post reviews
 // turbo 

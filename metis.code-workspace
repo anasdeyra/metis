@@ -16,6 +16,11 @@
       "gitRemote": "git@gitlab.com:GroupeAdnenis/metis-connect/front-reservation",
     },
     {
+      "name": "obsidian-brain",
+      "path": "obsidian-brain",
+      "gitRemote": "git@gitlab.com:GroupeAdnenis/metis-connect/obsidian-brain",
+    },
+    {
       "name": "metis",
       "path": ".",
     }
@@ -29,6 +34,7 @@
       "api-rail": true,
       "front-dashboard": true,
       "front-reservation": true,
+      "obsidian-brain": true,
     },
     "editor.formatOnSave": false,
     "scm.defaultViewMode": "tree",
@@ -86,7 +92,7 @@
         "request": "launch",
         "name": "server: nuxt (front-reservation)",
         "outputCapture": "std",
-        "cwd": "${workspaceFolder:metis}/front-reservation/src",
+        "cwd": "${workspaceFolder:metis}/front-reservation",
         "runtimeExecutable": "npm",
         "runtimeArgs": [
           "run",
@@ -98,7 +104,7 @@
         "request": "launch",
         "name": "Launch Chrome (front-reservation)",
         "url": "http://localhost:3000",
-        "webRoot": "${workspaceFolder:metis}/front-reservation/src",
+        "webRoot": "${workspaceFolder:metis}/front-reservation",
         "port": 9222,
       }
     ],
@@ -167,6 +173,7 @@
           "api-aerial",
           "api-dashboard",
           "front-reservation",
+          "obsidian-brain",
         ]
       },
     ]

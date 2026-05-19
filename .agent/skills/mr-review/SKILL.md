@@ -170,9 +170,14 @@ Use the **exact template below** to generate an MR review artifact. Do not skip 
    - 🔴 **Request changes** — Any critical issue, or multiple important issues
 
 ### Step 5 — Post the Review
+The automated workflow handles posting based on the presence of the `approved` file:
 
+1. **Request Changes** (Default): Posted as a **resolvable discussion thread** using the GitLab API. This makes the review **blocking** — the author cannot merge until the discussion is resolved.
+2. **Approve**: Posted as a regular note and followed by a formal `glab mr approve`.
+
+Manual fallback commands:
 ```bash
-# Submit a formal review with verdict (request changes or approve)
+# Submit a formal review as a comment (non-blocking)
 glab mr note <MR_ID> -R <repo> -m "$(cat <review_artifact>)"
 
 # For approval with feedback

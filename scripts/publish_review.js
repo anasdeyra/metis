@@ -47,18 +47,24 @@ try {
 
       const filePath = path.join(mrDirPath, reviewArtifact);
       const content = fs.readFileSync(filePath, 'utf-8');
+      const approvedFileExists = files.some(f => f.includes('approved'));
 
       console.log(`Publishing review for MR ${mrId} (file: ${reviewArtifact}) in ${repoKey}...`);
 
       try {
-        // 1. Post the review comment
-        execFileSync('glab', ['mr', 'note', mrId, '--repo', repoPath, '-m', content], { encoding: 'utf-8', stdio: 'inherit' });
-        console.log(`✅ Successfully posted review for ${mrId}.`);
+        // Resolve any previous review discussions left by us before posting a new one
+        resolvePreviousReviewDiscussions(repoPath, mrId);
 
-        // 2. Check for approval
-        const approvedFileExists = files.some(f => f.includes('approved'));
-
-        if (approvedFileExists) execFileSync('glab', ['mr', 'approve', mrId, '--repo', repoPath], { encoding: 'utf-8', stdio: 'inherit' });
+        if (approvedFileExists) {
+          // Approved: post as a regular note (non-blocking)
+          execFileSync('glab', ['mr', 'note', mrId, '--repo', repoPath, '-m', content], { encoding: 'utf-8', stdio: 'inherit' });
+          execFileSync('glab', ['mr', 'approve', mrId, '--repo', repoPath], { encoding: 'utf-8', stdio: 'inherit' });
+          console.log(`✅ MR !${mrId} approved.`);
+        } else {
+          // Needs changes: post as a resolvable discussion thread (blocking)
+          postBlockingDiscussion(repoPath, mrId, content);
+          console.log(`🔴 MR !${mrId} — blocking discussion created (needs changes).`);
+        }
       } catch (err) {
         console.error(`❌ Failed to process MR ${mrId} in ${repoKey}:`, err.message);
       }
@@ -66,4 +72,70 @@ try {
   }
 } catch (err) {
   console.error('Failed to run publish script:', err.message);
+}
+
+/**
+ * Post a review as a resolvable discussion thread using the GitLab Discussions API.
+ * Discussions created via this endpoint are resolvable by default on MRs,
+ * making them blocking — the author must resolve them before merge.
+ */
+function postBlockingDiscussion(repoPath, mrId, body) {
+  // We need the project ID. Fetch it from the MR metadata.
+  const mrViewRaw = execFileSync('glab', ['mr', 'view', mrId, '--repo', repoPath, '--output', 'json'], { encoding: 'utf-8' });
+  const mrData = JSON.parse(mrViewRaw);
+  const projectId = mrData.project_id;
+
+  // Use glab api to create a discussion (resolvable thread)
+  // POST /projects/:id/merge_requests/:merge_request_iid/discussions
+  const apiPath = `projects/${projectId}/merge_requests/${mrId}/discussions`;
+
+  execFileSync('glab', ['api', apiPath, '-X', 'POST', '-f', `body=${body}`], {
+    encoding: 'utf-8',
+    stdio: 'inherit',
+  });
+}
+
+/**
+ * Resolve any previous unresolved discussions that were started by us (the reviewer).
+ * This prevents stacking up old blocking discussions when re-reviewing an MR.
+ */
+function resolvePreviousReviewDiscussions(repoPath, mrId) {
+  try {
+    const mrViewRaw = execFileSync('glab', ['mr', 'view', mrId, '--repo', repoPath, '--output', 'json'], { encoding: 'utf-8' });
+    const mrData = JSON.parse(mrViewRaw);
+    const projectId = mrData.project_id;
+
+    // Fetch all discussions for this MR
+    const discussionsRaw = execFileSync('glab', ['api', `projects/${projectId}/merge_requests/${mrId}/discussions`], { encoding: 'utf-8' });
+    const discussions = JSON.parse(discussionsRaw);
+
+    for (const discussion of discussions) {
+      // Only resolve discussions that are:
+      // 1. Resolvable (i.e., actual threads, not system notes)
+      // 2. Not yet resolved
+      // 3. Started by us (check first note's author)
+      const firstNote = discussion.notes?.[0];
+      if (!firstNote) continue;
+
+      const isResolvable = firstNote.resolvable === true;
+      const isUnresolved = firstNote.resolved === false;
+      const isOurs = firstNote.author?.username === 'anasdoura607';
+
+      // Also check if the note body looks like a review (starts with "## 📌 Summary")
+      const isReviewNote = firstNote.body?.includes('## 📌 Summary');
+
+      if (isResolvable && isUnresolved && isOurs && isReviewNote) {
+        console.log(`  ↻ Resolving previous review discussion ${discussion.id}...`);
+        execFileSync('glab', [
+          'api',
+          `projects/${projectId}/merge_requests/${mrId}/discussions/${discussion.id}`,
+          '-X', 'PUT',
+          '-f', 'resolved=true',
+        ], { encoding: 'utf-8', stdio: 'inherit' });
+      }
+    }
+  } catch (err) {
+    // Non-fatal: if we can't resolve old discussions, still proceed with posting
+    console.warn(`  ⚠ Could not resolve previous discussions: ${err.message}`);
+  }
 }

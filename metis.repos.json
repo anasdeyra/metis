@@ -48,6 +48,13 @@
       "enabled": true,
       "description": "Booking Engine",
       "stack": "Nuxt 3 / Vue 3"
+    },
+    {
+      "name": "obsidian-brain",
+      "remote": "git@gitlab.com:GroupeAdnenis/metis-connect/obsidian-brain",
+      "enabled": true,
+      "description": "Shared Obsidian vault — product & engineering notes, runbooks, and ADRs",
+      "stack": "Obsidian / Markdown"
     }
   ]
 }
