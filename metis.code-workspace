@@ -23,6 +23,10 @@
     {
       "name": "metis",
       "path": ".",
+    },
+    {
+      "name": "worktrees",
+      "path": "./worktrees"
     }
   ],
   "settings": {
@@ -56,7 +60,7 @@
       "front-dashboard",
     ],
     "git.ignoredRepositories": [],
-    "scm.repositories.selectionMode": "multiple",
+    "scm.repositories.selectionMode": "single",
     "scm.repositories.explorer": true,
     "scm.repositories.visible": 5,
     "scm.repositories.sortOrder": "name",
@@ -91,7 +95,6 @@
         "type": "node",
         "request": "launch",
         "name": "server: nuxt (front-reservation)",
-        "outputCapture": "std",
         "cwd": "${workspaceFolder:metis}/front-reservation",
         "runtimeExecutable": "npm",
         "runtimeArgs": [
