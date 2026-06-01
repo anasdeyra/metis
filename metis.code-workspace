@@ -60,7 +60,7 @@
       "front-dashboard",
     ],
     "git.ignoredRepositories": [],
-    "scm.repositories.selectionMode": "single",
+    "scm.repositories.selectionMode": "multiple",
     "scm.repositories.explorer": true,
     "scm.repositories.visible": 5,
     "scm.repositories.sortOrder": "name",
