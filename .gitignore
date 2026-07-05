@@ -29,7 +29,6 @@ front-dashboard/
 front-reservation/
 
 # Tooling
-.claude/
 .gemini/
 .agent/scratch/
 scratch/
