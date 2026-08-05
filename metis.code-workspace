@@ -6,6 +6,11 @@
       "gitRemote": "git@gitlab.com:GroupeAdnenis/metis-connect/api-aerial",
     },
     {
+      "name": "api-dashboard",
+      "path": "api-dashboard",
+      "gitRemote": "git@gitlab.com:GroupeAdnenis/metis-connect/api-dashboard",
+    },
+    {
       "name": "front-reservation",
       "path": "front-reservation",
       "gitRemote": "git@gitlab.com:GroupeAdnenis/metis-connect/front-reservation",
@@ -40,7 +45,6 @@
     "git.autoRepositoryDetection": true,
     "git.repositoryScanIgnoredFolders": [
       "api-car",
-      "api-dashboard",
       "api-hotel",
       "api-rail",
       "front-dashboard",
@@ -160,6 +164,7 @@
         "description": "Select the repository to hard reset to development",
         "options": [
           "api-aerial",
+          "api-dashboard",
           "front-reservation",
         ]
       },
