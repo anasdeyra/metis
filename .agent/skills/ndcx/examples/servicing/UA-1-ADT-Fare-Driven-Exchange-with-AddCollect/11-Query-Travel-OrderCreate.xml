@@ -1,0 +1,71 @@
+<soap:Envelope xmlns:add="http://www.w3.org/2005/08/addressing" xmlns:link="http://wsdl.amadeus.com/2010/06/ws/Link_v1" xmlns:oas="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd" xmlns:oas1="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:sec="http://xml.amadeus.com/2010/06/Security_v1" xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns:trav="http://xml.amadeus.com/2010/06/Travel_OrderCreateRQ_v1">
+  <soap:Header>
+    <add:MessageID>a5b3e788-629d-4573-a50c-3f8815d02260</add:MessageID>
+    <add:Action>http://webservices.amadeus.com/Travel_OrderCreate_1.7</add:Action>
+    <add:To>https://noded5.test.webservices.amadeus.com/WSAP</add:To>
+    <link:TransactionFlowLink />
+    <oas:Security>
+      <oas:UsernameToken oas1:Id="UsernameToken-1">
+        <oas:Username>YOUR_WS_USER</oas:Username>
+        <oas:Nonce EncodingType="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-soap-message-security-1.0#Base64Binary">REDACTED_NONCE</oas:Nonce>
+        <oas:Password Type="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-username-token-profile-1.0#PasswordDigest">REDACTED_DIGEST</oas:Password>
+        <oas1:Created>2024-05-24T17:47:34.875Z</oas1:Created>
+      </oas:UsernameToken>
+    </oas:Security>
+    <sec:AMA_SecurityHostedUser>
+      <sec:UserID AgentDutyCode="SU" POS_Type="1" PseudoCityCode="YOUR_OFFICE_ID" RequestorType="U" />
+    </sec:AMA_SecurityHostedUser>
+  </soap:Header>
+  <soap:Body>
+    <trav:AMA_TravelOrderCreateRQ>
+      <trav:Party>
+        <trav:Sender>
+          <trav:TravelAgency>
+            <trav:AgencyID>unused</trav:AgencyID>
+            <trav:PseudoCityID>unused</trav:PseudoCityID>
+          </trav:TravelAgency>
+        </trav:Sender>
+      </trav:Party>
+      <trav:Request>
+        <trav:CreateOrder>
+          <trav:SelectedOffer>
+            <trav:OfferID>ERM1-6UYiQTIyCjy~ZJPHOmB_1A_d1eb62cf-3612-40c9-8522-1278a2d96c3a_1A_PAD0DAB02-F919-4880-B4E4anvyliknsordr-1</trav:OfferID>
+            <trav:OwnerCode>UA</trav:OwnerCode>
+            <trav:ShoppingResponseRefID>PAD0DAB02-F919-4880-B4E4</trav:ShoppingResponseRefID>
+            <trav:SelectedOfferItem>
+              <trav:OfferItemID>PAD0DAB02-F919-4880-B4E4anvyliknsordr-1-1</trav:OfferItemID>
+              <trav:PaxRefID>P1</trav:PaxRefID>
+            </trav:SelectedOfferItem>
+          </trav:SelectedOffer>
+        </trav:CreateOrder>
+        <trav:DataLists>
+          <trav:PaxList>
+            <trav:Pax>
+              <trav:PaxID>P1</trav:PaxID>
+              <trav:PTC>ADT</trav:PTC>
+              <trav:Birthdate>2009-03-05</trav:Birthdate>
+              <trav:ContactInfo>
+                <trav:EmailAddress>
+                  <trav:LabelText>EMAIL</trav:LabelText>
+                  <trav:EmailAddressText>JUAN_1AWS_TEST@TAYRONA.LATAM.CO</trav:EmailAddressText>
+                </trav:EmailAddress>
+              </trav:ContactInfo>
+              <trav:IdentityDoc>
+                <trav:IdentityDocID>16969680</trav:IdentityDocID>
+                <trav:IdentityDocTypeCode>PT</trav:IdentityDocTypeCode>
+                <trav:IssuingCountryCode>CO</trav:IssuingCountryCode>
+                <trav:ExpiryDate>2028-01-01</trav:ExpiryDate>
+              </trav:IdentityDoc>
+              <trav:Individual>
+                <trav:GenderCode>M</trav:GenderCode>
+                <trav:TitleName>MR</trav:TitleName>
+                <trav:GivenName>JUAN</trav:GivenName>
+                <trav:Surname>ANTOLI</trav:Surname>
+              </trav:Individual>
+            </trav:Pax>
+          </trav:PaxList>
+        </trav:DataLists>
+      </trav:Request>
+    </trav:AMA_TravelOrderCreateRQ>
+  </soap:Body>
+</soap:Envelope>

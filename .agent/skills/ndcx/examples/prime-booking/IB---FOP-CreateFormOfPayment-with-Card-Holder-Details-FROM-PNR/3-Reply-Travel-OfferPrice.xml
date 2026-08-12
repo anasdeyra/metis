@@ -1,0 +1,404 @@
+<soap:Envelope xmlns:awsse="http://xml.amadeus.com/2010/06/Session_v3" xmlns:ns3="http://xml.amadeus.com/2010/06/Travel_OfferPriceRS_v1" xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns:wsa="http://www.w3.org/2005/08/addressing">
+  <soap:Header>
+    <wsa:To>http://www.w3.org/2005/08/addressing/anonymous</wsa:To>
+    <wsa:From>
+      <wsa:Address>https://noded5.test.webservices.amadeus.com/WSAP</wsa:Address>
+    </wsa:From>
+    <wsa:Action>http://webservices.amadeus.com/Travel_OfferPrice_1.2</wsa:Action>
+    <wsa:MessageID>urn:uuid:7939b88c-3354-3574-9d70-4e657f848514</wsa:MessageID>
+    <wsa:RelatesTo RelationshipType="http://www.w3.org/2005/08/addressing/reply">ca90f99f-716a-4f29-a9dc-e0b98b9ca0cc</wsa:RelatesTo>
+    <awsse:Session TransactionStatusCode="End">
+      <awsse:SessionId>01GE3O52OW</awsse:SessionId>
+      <awsse:SequenceNumber>1</awsse:SequenceNumber>
+      <awsse:SecurityToken>REDACTED_TOKEN</awsse:SecurityToken>
+    </awsse:Session>
+  </soap:Header>
+  <soap:Body>
+    <ns3:AMA_TravelOfferPriceRS>
+      <ns3:Response>
+        <ns3:DataLists>
+          <ns3:BaggageAllowanceList>
+            <ns3:BaggageAllowance>
+              <ns3:BaggageAllowanceID>HANDBAGALLOWANCE_0</ns3:BaggageAllowanceID>
+              <ns3:TypeCode>CarryOnBag</ns3:TypeCode>
+              <ns3:PieceAllowance>
+                <ns3:ApplicablePartyText>Traveler</ns3:ApplicablePartyText>
+                <ns3:TotalQty>2</ns3:TotalQty>
+                <ns3:PieceDimensionAllowance>
+                  <ns3:Qty>2</ns3:Qty>
+                </ns3:PieceDimensionAllowance>
+              </ns3:PieceAllowance>
+            </ns3:BaggageAllowance>
+            <ns3:BaggageAllowance>
+              <ns3:BaggageAllowanceID>CHECKEDBAGALLOWANCE_0</ns3:BaggageAllowanceID>
+              <ns3:TypeCode>CheckedBag</ns3:TypeCode>
+              <ns3:PieceAllowance>
+                <ns3:ApplicablePartyText>Traveler</ns3:ApplicablePartyText>
+                <ns3:TotalQty>0</ns3:TotalQty>
+                <ns3:PieceDimensionAllowance>
+                  <ns3:Qty>0</ns3:Qty>
+                </ns3:PieceDimensionAllowance>
+              </ns3:PieceAllowance>
+            </ns3:BaggageAllowance>
+          </ns3:BaggageAllowanceList>
+          <ns3:FareList>
+            <ns3:FareGroup ListKey="AON0B5">
+              <ns3:Fare>
+                <ns3:FareCode>70J</ns3:FareCode>
+              </ns3:Fare>
+              <ns3:FareBasisCode>
+                <ns3:Code>AON0B5</ns3:Code>
+              </ns3:FareBasisCode>
+            </ns3:FareGroup>
+          </ns3:FareList>
+          <ns3:OriginDestList>
+            <ns3:OriginDest>
+              <ns3:OriginDestID>OD1</ns3:OriginDestID>
+              <ns3:OriginCode>MAD</ns3:OriginCode>
+              <ns3:DestCode>BCN</ns3:DestCode>
+              <ns3:PaxJourneyRefID>MADBCN20241009214500</ns3:PaxJourneyRefID>
+            </ns3:OriginDest>
+          </ns3:OriginDestList>
+          <ns3:PaxJourneyList>
+            <ns3:PaxJourney>
+              <ns3:PaxJourneyID>MADBCN20241009214500</ns3:PaxJourneyID>
+              <ns3:Duration>PT1H15M</ns3:Duration>
+              <ns3:PaxSegmentRefID>IB303420241009</ns3:PaxSegmentRefID>
+            </ns3:PaxJourney>
+          </ns3:PaxJourneyList>
+          <ns3:PaxList>
+            <ns3:Pax>
+              <ns3:PaxID>P1</ns3:PaxID>
+              <ns3:PTC>ADT</ns3:PTC>
+            </ns3:Pax>
+          </ns3:PaxList>
+          <ns3:PaxSegmentList>
+            <ns3:PaxSegment>
+              <ns3:PaxSegmentID>IB303420241009</ns3:PaxSegmentID>
+              <ns3:Duration>PT1H15M</ns3:Duration>
+              <ns3:Dep>
+                <ns3:IATA_LocationCode>MAD</ns3:IATA_LocationCode>
+                <ns3:AircraftScheduledDateTime>2024-10-09T21:45:00</ns3:AircraftScheduledDateTime>
+                <ns3:TerminalName>4</ns3:TerminalName>
+                <ns3:StationName>Madrid Adolfo Suarez-Barajas</ns3:StationName>
+              </ns3:Dep>
+              <ns3:Arrival>
+                <ns3:IATA_LocationCode>BCN</ns3:IATA_LocationCode>
+                <ns3:AircraftScheduledDateTime>2024-10-09T23:00:00</ns3:AircraftScheduledDateTime>
+                <ns3:TerminalName>1</ns3:TerminalName>
+                <ns3:StationName>Barcelona</ns3:StationName>
+              </ns3:Arrival>
+              <ns3:MarketingCarrierInfo>
+                <ns3:CarrierDesigCode>IB</ns3:CarrierDesigCode>
+                <ns3:CarrierName>Iberia</ns3:CarrierName>
+                <ns3:MarketingCarrierFlightNumberText>3034</ns3:MarketingCarrierFlightNumberText>
+              </ns3:MarketingCarrierInfo>
+              <ns3:OperatingCarrierInfo>
+                <ns3:CarrierDesigCode>IB</ns3:CarrierDesigCode>
+                <ns3:CarrierName>Iberia</ns3:CarrierName>
+                <ns3:OperatingCarrierFlightNumberText>3034</ns3:OperatingCarrierFlightNumberText>
+                <ns3:Disclosure>
+                  <ns3:Desc>
+                    <ns3:DescText>IB</ns3:DescText>
+                  </ns3:Desc>
+                </ns3:Disclosure>
+              </ns3:OperatingCarrierInfo>
+              <ns3:DatedOperatingLeg>
+                <ns3:DatedOperatingLegID>S1</ns3:DatedOperatingLegID>
+                <ns3:CarrierAircraftType>
+                  <ns3:CarrierAircraftTypeCode>321</ns3:CarrierAircraftTypeCode>
+                  <ns3:CarrierAircraftTypeName>Airbus A321</ns3:CarrierAircraftTypeName>
+                </ns3:CarrierAircraftType>
+                <ns3:Dep>
+                  <ns3:IATA_LocationCode>MAD</ns3:IATA_LocationCode>
+                  <ns3:AircraftScheduledDateTime>2024-10-09T21:45:00</ns3:AircraftScheduledDateTime>
+                  <ns3:TerminalName>4</ns3:TerminalName>
+                  <ns3:StationName>Madrid Adolfo Suarez-Barajas</ns3:StationName>
+                </ns3:Dep>
+                <ns3:Arrival>
+                  <ns3:IATA_LocationCode>BCN</ns3:IATA_LocationCode>
+                  <ns3:AircraftScheduledDateTime>2024-10-09T23:00:00</ns3:AircraftScheduledDateTime>
+                  <ns3:TerminalName>1</ns3:TerminalName>
+                  <ns3:StationName>Barcelona</ns3:StationName>
+                </ns3:Arrival>
+              </ns3:DatedOperatingLeg>
+            </ns3:PaxSegment>
+          </ns3:PaxSegmentList>
+          <ns3:PriceClassList>
+            <ns3:PriceClass>
+              <ns3:PriceClassID>BASIC0mIXZbzP5I5</ns3:PriceClassID>
+              <ns3:Code>BASIC</ns3:Code>
+              <ns3:Name>BASIC</ns3:Name>
+              <ns3:Desc>
+                <ns3:DescID>FFM1-DESC1</ns3:DescID>
+                <ns3:DescText>STANDARD SEAT SELECTION/CHARGE</ns3:DescText>
+              </ns3:Desc>
+              <ns3:Desc>
+                <ns3:DescID>FFM1-DESC2</ns3:DescID>
+                <ns3:DescText>XL SEAT SELECTION/CHARGE</ns3:DescText>
+              </ns3:Desc>
+              <ns3:Desc>
+                <ns3:DescID>FFM1-DESC3</ns3:DescID>
+                <ns3:DescText>EMERGENCY SEAT SELECTION/CHARGE</ns3:DescText>
+              </ns3:Desc>
+              <ns3:Desc>
+                <ns3:DescID>FFM1-DESC4</ns3:DescID>
+                <ns3:DescText>FRONT SEAT SELECTION/CHARGE</ns3:DescText>
+              </ns3:Desc>
+              <ns3:Desc>
+                <ns3:DescID>FFM1-DESC5</ns3:DescID>
+                <ns3:DescText>STD SEAT SEL 24H BEFORE DEPART/CHARGE</ns3:DescText>
+              </ns3:Desc>
+              <ns3:Desc>
+                <ns3:DescID>FFM1-DESC6</ns3:DescID>
+                <ns3:DescText>MEAL/DISPLAYED-BUT-NOT-OFFERED</ns3:DescText>
+              </ns3:Desc>
+              <ns3:Desc>
+                <ns3:DescID>FFM1-DESC7</ns3:DescID>
+                <ns3:DescText>SNACK OR DRINK/CHARGE</ns3:DescText>
+              </ns3:Desc>
+              <ns3:Desc>
+                <ns3:DescID>FFM1-DESC8</ns3:DescID>
+                <ns3:DescText>LOUNGE ACCESS/DISPLAYED-BUT-NOT-OFFERED</ns3:DescText>
+              </ns3:Desc>
+              <ns3:Desc>
+                <ns3:DescID>FFM1-DESC9</ns3:DescID>
+                <ns3:DescText>PRIORITY SECURITY/DISPLAYED-BUT-NOT-OFFERED</ns3:DescText>
+              </ns3:Desc>
+              <ns3:Desc>
+                <ns3:DescID>FFM1-DESC10</ns3:DescID>
+                <ns3:DescText>PRIORITY BAGGAGE/DISPLAYED-BUT-NOT-OFFERED</ns3:DescText>
+              </ns3:Desc>
+              <ns3:Desc>
+                <ns3:DescID>FFM1-DESC11</ns3:DescID>
+                <ns3:DescText>PRIORITY BOARDING GROUP 1/DISPLAYED-BUT-NOT-OFFERED</ns3:DescText>
+              </ns3:Desc>
+              <ns3:Desc>
+                <ns3:DescID>FFM1-DESC12</ns3:DescID>
+                <ns3:DescText>PRIORITY BOARDING GROUP 2/DISPLAYED-BUT-NOT-OFFERED</ns3:DescText>
+              </ns3:Desc>
+              <ns3:Desc>
+                <ns3:DescID>FFM1-DESC13</ns3:DescID>
+                <ns3:DescText>PRIORITY CHECK IN/DISPLAYED-BUT-NOT-OFFERED</ns3:DescText>
+              </ns3:Desc>
+              <ns3:Desc>
+                <ns3:DescID>FFM1-DESC14</ns3:DescID>
+                <ns3:DescText>WIFI CONNECTION/CHARGE</ns3:DescText>
+              </ns3:Desc>
+              <ns3:Desc>
+                <ns3:DescID>FFM1-DESC15</ns3:DescID>
+                <ns3:DescText>AVIOS/FREE</ns3:DescText>
+              </ns3:Desc>
+              <ns3:Desc>
+                <ns3:DescID>FFM1-DESC16</ns3:DescID>
+                <ns3:DescText>AVIOS ELITE/FREE</ns3:DescText>
+              </ns3:Desc>
+            </ns3:PriceClass>
+          </ns3:PriceClassList>
+        </ns3:DataLists>
+        <ns3:Metadata>
+          <ns3:Other>
+            <ns3:OtherMetadata>
+              <ns3:CurrencyMetadatas>
+                <ns3:CurrencyMetadata MetadataKey="EUR">
+                  <ns3:Decimals>2</ns3:Decimals>
+                </ns3:CurrencyMetadata>
+              </ns3:CurrencyMetadatas>
+            </ns3:OtherMetadata>
+            <ns3:OtherMetadata>
+              <ns3:RuleMetadatas>
+                <ns3:RuleMetadata MetadataKey="RULEMETADATAKEY_2">
+                  <ns3:RuleID>Cancel</ns3:RuleID>
+                  <ns3:Values>
+                    <ns3:Value>
+                      <ns3:Instruction>Not Allowed</ns3:Instruction>
+                    </ns3:Value>
+                  </ns3:Values>
+                </ns3:RuleMetadata>
+                <ns3:RuleMetadata MetadataKey="RULEMETADATAKEY_3">
+                  <ns3:RuleID>Change</ns3:RuleID>
+                  <ns3:Values>
+                    <ns3:Value>
+                      <ns3:Instruction>Allowed</ns3:Instruction>
+                    </ns3:Value>
+                  </ns3:Values>
+                </ns3:RuleMetadata>
+              </ns3:RuleMetadatas>
+            </ns3:OtherMetadata>
+          </ns3:Other>
+        </ns3:Metadata>
+        <ns3:PricedOffer>
+          <ns3:Offer>
+            <ns3:OfferID>TOSrPpZRpQQT2fv97HF0yOeA.1_1A_6314aaa8-9779-4bed-80d4-07e4fd247211_1A_IB386db30bcb3045d9b6efca5afe5d6147OC</ns3:OfferID>
+            <ns3:OwnerCode>IB</ns3:OwnerCode>
+            <ns3:OfferExpirationDateTime>2024-08-26T14:57:39.248Z</ns3:OfferExpirationDateTime>
+            <ns3:PaymentTimeLimitDateTime>2024-08-27T21:59:59Z</ns3:PaymentTimeLimitDateTime>
+            <ns3:BaggageAllowance>
+              <ns3:PaxJourneyRefID>MADBCN20241009214500</ns3:PaxJourneyRefID>
+              <ns3:PaxRefID>P1</ns3:PaxRefID>
+              <ns3:BaggageAllowanceRefID>CHECKEDBAGALLOWANCE_0</ns3:BaggageAllowanceRefID>
+            </ns3:BaggageAllowance>
+            <ns3:BaggageAllowance>
+              <ns3:PaxJourneyRefID>MADBCN20241009214500</ns3:PaxJourneyRefID>
+              <ns3:PaxRefID>P1</ns3:PaxRefID>
+              <ns3:BaggageAllowanceRefID>HANDBAGALLOWANCE_0</ns3:BaggageAllowanceRefID>
+            </ns3:BaggageAllowance>
+            <ns3:JourneyOverview>
+              <ns3:JourneyPriceClass>
+                <ns3:PriceClassRefID>BASIC0mIXZbzP5I5</ns3:PriceClassRefID>
+                <ns3:PaxJourneyRefID>MADBCN20241009214500</ns3:PaxJourneyRefID>
+              </ns3:JourneyPriceClass>
+            </ns3:JourneyOverview>
+            <ns3:OfferItem>
+              <ns3:OfferItemID>IB386db30bcb3045d9b6efca5afe5d6147OC_01</ns3:OfferItemID>
+              <ns3:MandatoryInd>true</ns3:MandatoryInd>
+              <ns3:FareDetail>
+                <ns3:PassengerRefs>P1</ns3:PassengerRefs>
+                <ns3:Price>
+                  <ns3:BaseAmount Code="EUR">300</ns3:BaseAmount>
+                  <ns3:Taxes>
+                    <ns3:Total Code="EUR">2067</ns3:Total>
+                    <ns3:Breakdown>
+                      <ns3:Tax>
+                        <ns3:Amount Code="EUR">1609</ns3:Amount>
+                        <ns3:Nation>ES</ns3:Nation>
+                        <ns3:TaxCode>JD</ns3:TaxCode>
+                        <ns3:Description>Spain Departure Charge</ns3:Description>
+                      </ns3:Tax>
+                      <ns3:Tax>
+                        <ns3:Amount Code="EUR">69</ns3:Amount>
+                        <ns3:Nation>ES</ns3:Nation>
+                        <ns3:TaxCode>OG</ns3:TaxCode>
+                        <ns3:Description>Spain Aviation Safety And Security Fee</ns3:Description>
+                      </ns3:Tax>
+                      <ns3:Tax>
+                        <ns3:Amount Code="EUR">389</ns3:Amount>
+                        <ns3:Nation>ES</ns3:Nation>
+                        <ns3:TaxCode>QV</ns3:TaxCode>
+                        <ns3:Description>Spain Security Tax</ns3:Description>
+                      </ns3:Tax>
+                    </ns3:Breakdown>
+                  </ns3:Taxes>
+                </ns3:Price>
+                <ns3:FareComponent>
+                  <ns3:FareBasis>
+                    <ns3:FareBasisCode refs="AON0B5">
+                      <ns3:Code>AON0B5</ns3:Code>
+                    </ns3:FareBasisCode>
+                    <ns3:RBD>A</ns3:RBD>
+                    <ns3:CabinType>
+                      <ns3:CabinTypeCode>M</ns3:CabinTypeCode>
+                      <ns3:CabinTypeName>Economy</ns3:CabinTypeName>
+                    </ns3:CabinType>
+                  </ns3:FareBasis>
+                  <ns3:FareRules>
+                    <ns3:Penalty CancelFeeInd="false" ChangeFeeInd="true" RefundableInd="false">
+                      <ns3:Details>
+                        <ns3:Detail refs="RULEMETADATAKEY_2">
+                          <ns3:Type>Cancel</ns3:Type>
+                          <ns3:Application>1</ns3:Application>
+                          <ns3:Amounts>
+                            <ns3:Amount>
+                              <ns3:CurrencyAmountValue Code="EUR">0</ns3:CurrencyAmountValue>
+                              <ns3:AmountApplication>MIN</ns3:AmountApplication>
+                            </ns3:Amount>
+                            <ns3:Amount>
+                              <ns3:CurrencyAmountValue Code="EUR">0</ns3:CurrencyAmountValue>
+                              <ns3:AmountApplication>MAX</ns3:AmountApplication>
+                            </ns3:Amount>
+                          </ns3:Amounts>
+                        </ns3:Detail>
+                        <ns3:Detail refs="RULEMETADATAKEY_2">
+                          <ns3:Type>Cancel</ns3:Type>
+                          <ns3:Application>2</ns3:Application>
+                          <ns3:Amounts>
+                            <ns3:Amount>
+                              <ns3:CurrencyAmountValue Code="EUR">0</ns3:CurrencyAmountValue>
+                              <ns3:AmountApplication>MIN</ns3:AmountApplication>
+                            </ns3:Amount>
+                            <ns3:Amount>
+                              <ns3:CurrencyAmountValue Code="EUR">0</ns3:CurrencyAmountValue>
+                              <ns3:AmountApplication>MAX</ns3:AmountApplication>
+                            </ns3:Amount>
+                          </ns3:Amounts>
+                        </ns3:Detail>
+                        <ns3:Detail refs="RULEMETADATAKEY_2">
+                          <ns3:Type>Cancel</ns3:Type>
+                          <ns3:Application>3</ns3:Application>
+                          <ns3:Amounts>
+                            <ns3:Amount>
+                              <ns3:CurrencyAmountValue Code="EUR">0</ns3:CurrencyAmountValue>
+                              <ns3:AmountApplication>MIN</ns3:AmountApplication>
+                            </ns3:Amount>
+                            <ns3:Amount>
+                              <ns3:CurrencyAmountValue Code="EUR">0</ns3:CurrencyAmountValue>
+                              <ns3:AmountApplication>MAX</ns3:AmountApplication>
+                            </ns3:Amount>
+                          </ns3:Amounts>
+                        </ns3:Detail>
+                        <ns3:Detail refs="RULEMETADATAKEY_3">
+                          <ns3:Type>Change</ns3:Type>
+                          <ns3:Application>2</ns3:Application>
+                          <ns3:Amounts>
+                            <ns3:Amount>
+                              <ns3:CurrencyAmountValue Code="EUR">5000</ns3:CurrencyAmountValue>
+                              <ns3:AmountApplication>MIN</ns3:AmountApplication>
+                            </ns3:Amount>
+                            <ns3:Amount>
+                              <ns3:CurrencyAmountValue Code="EUR">5000</ns3:CurrencyAmountValue>
+                              <ns3:AmountApplication>MAX</ns3:AmountApplication>
+                            </ns3:Amount>
+                          </ns3:Amounts>
+                        </ns3:Detail>
+                        <ns3:Detail refs="RULEMETADATAKEY_3">
+                          <ns3:Type>Change</ns3:Type>
+                          <ns3:Application>3</ns3:Application>
+                          <ns3:Amounts>
+                            <ns3:Amount>
+                              <ns3:CurrencyAmountValue Code="EUR">5000</ns3:CurrencyAmountValue>
+                              <ns3:AmountApplication>MIN</ns3:AmountApplication>
+                            </ns3:Amount>
+                            <ns3:Amount>
+                              <ns3:CurrencyAmountValue Code="EUR">5000</ns3:CurrencyAmountValue>
+                              <ns3:AmountApplication>MAX</ns3:AmountApplication>
+                            </ns3:Amount>
+                          </ns3:Amounts>
+                        </ns3:Detail>
+                      </ns3:Details>
+                    </ns3:Penalty>
+                    <ns3:Remarks>
+                      <ns3:Remark> CANCELLATIONS BEFORE DEPARTURE TICKET IS NON-REFUNDABLE IN CASE OF CANCEL/REFUND. AFTER DEPARTURE TICKET IS NON-REFUNDABLE IN CASE OF CANCEL/REFUND. ANY TIME TICKET IS NON-REFUNDABLE IN CASE OF NO-SHOW. CHANGES BEFORE DEPARTURE PER TICKET CHARGE EUR 50.00 FOR REISSUE. CHILD/INFANT DISCOUNTS APPLY. AFTER DEPARTURE PER TICKET CHARGE EUR 50.00 FOR REISSUE. CHILD/INFANT DISCOUNTS APPLY. ANY TIME CHANGES NOT PERMITTED IN CASE OF NO-SHOW. NOTE - INFORMATION RELATIVE IN BOTH CANCELATION AND CHANGES ------------------------------ WAIVED FOR DEATH OF A PASSENGER AND PASSENGERS TRAVELLING COMPANIONS. ------------------------------ IT WILL BE CONSIDERED NO SHOW WHEN A PASSENGER HAS NOT ADVISED THE AIRLINE THAT WILL NOT BE ABLE TO MAKE THE FLIGHT IN WHICH THEY ARE BOOKED ON. BEING NECESSARY THAH THE PASSENGER HAS CANCELED AND REFUNDED OR CHANGED THE TICKET AT THE SAME TIME. ------------------------------ REFUND FOR NO SHOW- NOT PERMITTED CHANGES FOR NO SHOW- NOT PERMITTED ------------------------------ IN CASE CHARGE FOR CHANGES APPLIES PER TRANSACTION/TICKET AND PERSON TO ALL PASSENGER TYPES. IN CASE CHARGE FOR CANCELLATION APPLIES PER DIRECTION TO ALL PASSENGER TYPES. ------------------------------ A CHANGE IS A DATE/FLIGHT/ROUTING/BOOKING CODE CHANGE. ------------------------------ REISSUE MUST BE MADE AT THE SAME TIME AS CHANGE OF RESEVATION BUT NO LATER TAN SCHEDULED DEPARTURE TIME OF FLIGHT BEING CHANGED. ------------------------------ WHEN MORE THAN ONE FARE COMPONENT IS CHANGED THE HIGHEST PENALTY OF ALL CHANGED FARE COMPONENTS WITH THE JOURNEY APPLIES. ------------------------------ WHEN COMBINING NON-REFUNDABLE FARES WITH A REFUNDABLE FARES 1-THE AMOUNT PAID ON EACH REFUNDABLE FARE COMPONENT IS REFUNDED 2-THE AMOUNT PAID ON EACH NON-REFUNDABLE FARE COMPONENT WILL NOT BE REFUNDED 3-WHEN COMBINING FARES CHARGE THE SUM OF THE CANCELLATION FEES OF ALL CANCELLED FARE COMPONENTS ------------------------------ REFUND OF UNUSED TAXES PAID TO THIRD PARTIES PERMITTED. EXCEPT FOR TAXES THAT ARE LEGALLY NON-REFUNDABLE. YQ/YR WILL BE REFUNDED IF THE FARE IS REFUNDABLE OTHERWISE IT WOULD NOT BE ALLOWED. ------------------------------ REFUND AND CHANGES ARE PERMITTED WITHIN TICKET VALIDITY UNDER FARE CONDITIONS. ------------------------------ ANY NON-REFUNDABLE AMOUNT AND/OR CANCELLATION PENALTY FROM A PREVIOUS TICKET REMAINS NON- REFUNDABLE FOLLOWING A CHANGE. ------------------------------ TICKET IS NOT TRANSFERABLE TO ANOTHER PERSON. ----------------------------------------------- ----REPRICING CONDITIONS ---- A.BEFORE DEPARTURE OF JOURNEY WHEN THE FISRT FARE COMPONENT IS CHANGED THE ITINERARY MUST BE RE-PRICED USING CURRENT FARES IN EFFECT ON THE DATE THE TICKET IS REISSUED. B.BEFORE DEPARTURE OF JOURNEY WHEN CHANGES ARE TO BOOKING CODE ONLY IN THE FIRST FARE COMPONENT AND RESULT IN A HIGHER FARE THE ITINERARY MUST BE RE- PRICED USING HISTORICAL FARES IN EFFECT ON THE PREVIOUS TICKETING DATE OR USING CURRENT FARE IN EFFECT ON THE DATE THE TICKET IS REISSUED - WICHEVER IS LOWER. C. BEFORE DEPARTURE OF JOURNEY WHEN THERE ARE NO CHANGES TO THE FIRST FARE COMPONENT BUT OTHER FARE COMPONENTS ARE CHANGED THE ITINERARY MUST BE RE-PRICED USING HISTORICAL FAERS IN EFFECT ON THE PREVIOUS TICKETING DATE OR USING CURRENT FARES IN EFFECT ON THE DATE THE TICKET IS REISSUED - WHICHEVER IS LOWER. D. AFTER DEPARTURE OF JOURNEY THE ITINERARY MUST BE RE-PRICED USING HISTORICAL FARES IN EFFECT ON THE PREVIOUS TICKETING DATE. ----------------------------------------------- WHEN THE ITINERARY RESULT IN A HIGHER FARE THE DIFFERENCE WILL BE COLLECTED ANY APPLICABLE CHANGE FEE APPLIES. ----------------------------------------------- WHEN THE NEW ITINERARY RESULTS IN A LOWER FARE THE CHANGE FEE APPLIES AND NOT CREDIT OF THE RESIDUAL AMOUNT WILL BE MADE.</ns3:Remark>
+                    </ns3:Remarks>
+                  </ns3:FareRules>
+                  <ns3:PriceClassRef>BASIC0mIXZbzP5I5</ns3:PriceClassRef>
+                  <ns3:SegmentRefs>IB303420241009</ns3:SegmentRefs>
+                </ns3:FareComponent>
+              </ns3:FareDetail>
+              <ns3:Service>
+                <ns3:ServiceID>IBFLIGHT_01_IB386db30bcb3045d9b6efca5afe5d6147OC_01</ns3:ServiceID>
+                <ns3:PaxRefID>P1</ns3:PaxRefID>
+                <ns3:ServiceAssociations>
+                  <ns3:PaxJourneyRefID>MADBCN20241009214500</ns3:PaxJourneyRefID>
+                </ns3:ServiceAssociations>
+              </ns3:Service>
+              <ns3:Price>
+                <ns3:TotalAmount CurCode="EUR">2367</ns3:TotalAmount>
+              </ns3:Price>
+            </ns3:OfferItem>
+            <ns3:TotalPrice>
+              <ns3:TotalAmount CurCode="EUR">2367</ns3:TotalAmount>
+            </ns3:TotalPrice>
+          </ns3:Offer>
+        </ns3:PricedOffer>
+        <ns3:ShoppingResponse>
+          <ns3:ShoppingResponseID>Qm9va2luZ0BHVy0xNzI0NjgxMjQzMzQ2LWI1RmpB</ns3:ShoppingResponseID>
+        </ns3:ShoppingResponse>
+        <ns3:Warning>
+          <ns3:Code>42174</ns3:Code>
+          <ns3:DescText>FOR CREDIT CARD PAYMENT ENTER CARD HOLDER NAME, ADDRESS AND EMAIL</ns3:DescText>
+          <ns3:OwnerName>IB</ns3:OwnerName>
+        </ns3:Warning>
+      </ns3:Response>
+    </ns3:AMA_TravelOfferPriceRS>
+  </soap:Body>
+</soap:Envelope>

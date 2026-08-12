@@ -1,0 +1,44 @@
+<ns0:AMA_TravelOrderReshopRQ xmlns:ns0="http://xml.amadeus.com/2010/06/Travel_OrderReshopRQ_v1">
+  <ns0:Party>
+    <ns0:Sender>
+      <ns0:TravelAgency>
+        <ns0:AgencyID>00954656</ns0:AgencyID>
+        <ns0:PseudoCityID>LH09</ns0:PseudoCityID>
+      </ns0:TravelAgency>
+    </ns0:Sender>
+  </ns0:Party>
+  <ns0:Request>
+    <ns0:OrderItemRefID>6AIKBE</ns0:OrderItemRefID>
+    <ns0:BookingRef>
+      <ns0:BookingID />
+      <ns0:BookingEntity>
+        <ns0:Carrier>
+          <ns0:AirlineDesigCode>1A</ns0:AirlineDesigCode>
+        </ns0:Carrier>
+      </ns0:BookingEntity>
+    </ns0:BookingRef>
+    <ns0:ReshopParameters>
+      <ns0:Notices>
+        <ns0:PricingParameters AutoExchRequestInd="false" />
+      </ns0:Notices>
+    </ns0:ReshopParameters>
+    <ns0:UpdateOrder>
+      <ns0:ReshopOrder>
+        <ns0:ServiceOrder>
+          <ns0:DeleteOrderItem>
+            <ns0:OrderItemRefID>IB9dd0014a10ba42349493cb4806f98de9OC_01_1APAX_PAX1</ns0:OrderItemRefID>
+          </ns0:DeleteOrderItem>
+          <ns0:DeleteOrderItem>
+            <ns0:OrderItemRefID>IB9dd0014a10ba42349493cb4806f98de9OC_02_1APAX_PAX2</ns0:OrderItemRefID>
+          </ns0:DeleteOrderItem>
+          <ns0:DeleteOrderItem>
+            <ns0:OrderItemRefID>IB9dd0014a10ba42349493cb4806f98de9OC_03_1APAX_PAX3</ns0:OrderItemRefID>
+          </ns0:DeleteOrderItem>
+          <ns0:DeleteOrderItem>
+            <ns0:OrderItemRefID>IB9dd0014a10ba42349493cb4806f98de9OC_04_1APAX_PAX1.1</ns0:OrderItemRefID>
+          </ns0:DeleteOrderItem>
+        </ns0:ServiceOrder>
+      </ns0:ReshopOrder>
+    </ns0:UpdateOrder>
+  </ns0:Request>
+</ns0:AMA_TravelOrderReshopRQ>

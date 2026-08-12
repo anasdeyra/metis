@@ -1,0 +1,1264 @@
+<ns0:AMA_TravelOrderReshopRS xmlns:ns0="http://xml.amadeus.com/2010/06/Travel_OrderReshopRQ_v1">
+  <ns0:Response>
+    <ns0:DataLists>
+      <ns0:BaggageAllowanceList>
+        <ns0:BaggageAllowance>
+          <ns0:BaggageAllowanceID>BA4383C4AD-CO</ns0:BaggageAllowanceID>
+          <ns0:TypeCode>CarryOnBag</ns0:TypeCode>
+          <ns0:ApplicablePartyText>Traveler</ns0:ApplicablePartyText>
+          <ns0:DescText>CARRY ON ALLOWANCE</ns0:DescText>
+          <ns0:BDC>
+            <ns0:CarrierName>AA</ns0:CarrierName>
+          </ns0:BDC>
+          <ns0:PieceAllowance>
+            <ns0:ApplicablePartyText>Traveler</ns0:ApplicablePartyText>
+            <ns0:TotalQty>1</ns0:TotalQty>
+            <ns0:PieceDimensionAllowance>
+              <ns0:MinMeasure UnitCode="Centimeter">0</ns0:MinMeasure>
+              <ns0:MaxMeasure UnitCode="Centimeter">115</ns0:MaxMeasure>
+              <ns0:Qty>1</ns0:Qty>
+            </ns0:PieceDimensionAllowance>
+          </ns0:PieceAllowance>
+          <ns0:PieceAllowance>
+            <ns0:ApplicablePartyText>Traveler</ns0:ApplicablePartyText>
+            <ns0:TotalQty>1</ns0:TotalQty>
+            <ns0:PieceDimensionAllowance>
+              <ns0:MinMeasure UnitCode="Centimeter">0</ns0:MinMeasure>
+              <ns0:MaxMeasure UnitCode="Centimeter">115</ns0:MaxMeasure>
+              <ns0:Qty>1</ns0:Qty>
+            </ns0:PieceDimensionAllowance>
+          </ns0:PieceAllowance>
+        </ns0:BaggageAllowance>
+        <ns0:BaggageAllowance>
+          <ns0:BaggageAllowanceID>BA5CF12EA8</ns0:BaggageAllowanceID>
+          <ns0:TypeCode>CheckedBag</ns0:TypeCode>
+          <ns0:ApplicablePartyText>Traveler</ns0:ApplicablePartyText>
+          <ns0:DescText>CHECKED ALLOWANCE</ns0:DescText>
+          <ns0:BDC>
+            <ns0:CarrierName>AA</ns0:CarrierName>
+          </ns0:BDC>
+          <ns0:PieceAllowance>
+            <ns0:ApplicablePartyText>Traveler</ns0:ApplicablePartyText>
+            <ns0:TotalQty>3</ns0:TotalQty>
+            <ns0:PieceDimensionAllowance>
+              <ns0:MinMeasure UnitCode="Inch">0</ns0:MinMeasure>
+              <ns0:MaxMeasure UnitCode="Inch">62</ns0:MaxMeasure>
+              <ns0:Qty>3</ns0:Qty>
+            </ns0:PieceDimensionAllowance>
+            <ns0:PieceDimensionAllowance>
+              <ns0:MinMeasure UnitCode="Centimeter">0</ns0:MinMeasure>
+              <ns0:MaxMeasure UnitCode="Centimeter">158</ns0:MaxMeasure>
+              <ns0:Qty>3</ns0:Qty>
+            </ns0:PieceDimensionAllowance>
+            <ns0:PieceWeightAllowance>
+              <ns0:MaximumWeightMeasure UnitCode="KG">32</ns0:MaximumWeightMeasure>
+            </ns0:PieceWeightAllowance>
+            <ns0:PieceWeightAllowance>
+              <ns0:MaximumWeightMeasure UnitCode="LBS">70</ns0:MaximumWeightMeasure>
+            </ns0:PieceWeightAllowance>
+          </ns0:PieceAllowance>
+          <ns0:PieceAllowance>
+            <ns0:ApplicablePartyText>Traveler</ns0:ApplicablePartyText>
+            <ns0:TotalQty>3</ns0:TotalQty>
+            <ns0:PieceDimensionAllowance>
+              <ns0:MinMeasure UnitCode="Inch">0</ns0:MinMeasure>
+              <ns0:MaxMeasure UnitCode="Inch">62</ns0:MaxMeasure>
+              <ns0:Qty>3</ns0:Qty>
+            </ns0:PieceDimensionAllowance>
+            <ns0:PieceWeightAllowance>
+              <ns0:MaximumWeightMeasure UnitCode="KG">32</ns0:MaximumWeightMeasure>
+            </ns0:PieceWeightAllowance>
+          </ns0:PieceAllowance>
+          <ns0:PieceAllowance>
+            <ns0:ApplicablePartyText>Traveler</ns0:ApplicablePartyText>
+            <ns0:TotalQty>3</ns0:TotalQty>
+            <ns0:PieceDimensionAllowance>
+              <ns0:MinMeasure UnitCode="Inch">0</ns0:MinMeasure>
+              <ns0:MaxMeasure UnitCode="Inch">62</ns0:MaxMeasure>
+              <ns0:Qty>3</ns0:Qty>
+            </ns0:PieceDimensionAllowance>
+            <ns0:PieceWeightAllowance>
+              <ns0:MaximumWeightMeasure UnitCode="KG">32</ns0:MaximumWeightMeasure>
+            </ns0:PieceWeightAllowance>
+          </ns0:PieceAllowance>
+        </ns0:BaggageAllowance>
+      </ns0:BaggageAllowanceList>
+      <ns0:FareList>
+        <ns0:FareGroup refs="FRK3F945220" ListKey="FG1">
+          <ns0:Fare>
+            <ns0:FareCode>749</ns0:FareCode>
+          </ns0:Fare>
+          <ns0:FareBasisCode>
+            <ns0:Code>DLW8A7H5</ns0:Code>
+          </ns0:FareBasisCode>
+        </ns0:FareGroup>
+        <ns0:FareGroup refs="FRKBF8D203A" ListKey="FG2">
+          <ns0:Fare>
+            <ns0:FareCode>749</ns0:FareCode>
+          </ns0:Fare>
+          <ns0:FareBasisCode>
+            <ns0:Code>RLW8A7H5</ns0:Code>
+          </ns0:FareBasisCode>
+        </ns0:FareGroup>
+      </ns0:FareList>
+      <ns0:OriginDestList>
+        <ns0:OriginDest>
+          <ns0:OriginDestID>O1</ns0:OriginDestID>
+          <ns0:ArrivalStationCode>CDG</ns0:ArrivalStationCode>
+          <ns0:DepStationCode>DFW</ns0:DepStationCode>
+          <ns0:PaxJourneyRefID>F1</ns0:PaxJourneyRefID>
+        </ns0:OriginDest>
+        <ns0:OriginDest>
+          <ns0:OriginDestID>O2</ns0:OriginDestID>
+          <ns0:ArrivalStationCode>DFW</ns0:ArrivalStationCode>
+          <ns0:DepStationCode>CDG</ns0:DepStationCode>
+          <ns0:PaxJourneyRefID>F2</ns0:PaxJourneyRefID>
+        </ns0:OriginDest>
+      </ns0:OriginDestList>
+      <ns0:PaxJourneyList>
+        <ns0:PaxJourney>
+          <ns0:PaxJourneyID>F1</ns0:PaxJourneyID>
+          <ns0:PaxSegmentRefID>S1</ns0:PaxSegmentRefID>
+        </ns0:PaxJourney>
+        <ns0:PaxJourney>
+          <ns0:PaxJourneyID>F2</ns0:PaxJourneyID>
+          <ns0:PaxSegmentRefID>S2</ns0:PaxSegmentRefID>
+        </ns0:PaxJourney>
+      </ns0:PaxJourneyList>
+      <ns0:PaxList>
+        <ns0:Pax>
+          <ns0:PaxID>T1</ns0:PaxID>
+          <ns0:PTC>ADT</ns0:PTC>
+          <ns0:Individual>
+            <ns0:IndividualID>T1</ns0:IndividualID>
+            <ns0:Birthdate>1969-03-23</ns0:Birthdate>
+            <ns0:GenderCode>M</ns0:GenderCode>
+            <ns0:TitleName>MR</ns0:TitleName>
+            <ns0:GivenName>MIKE</ns0:GivenName>
+            <ns0:Surname>SMITH</ns0:Surname>
+          </ns0:Individual>
+        </ns0:Pax>
+        <ns0:Pax>
+          <ns0:PaxID>T2</ns0:PaxID>
+          <ns0:PTC>CHD</ns0:PTC>
+          <ns0:Individual>
+            <ns0:IndividualID>T2</ns0:IndividualID>
+            <ns0:Birthdate>2022-05-29</ns0:Birthdate>
+            <ns0:GenderCode>F</ns0:GenderCode>
+            <ns0:TitleName>MISS</ns0:TitleName>
+            <ns0:GivenName>SARA</ns0:GivenName>
+            <ns0:Surname>SMITH</ns0:Surname>
+          </ns0:Individual>
+        </ns0:Pax>
+      </ns0:PaxList>
+      <ns0:PaxSegmentList>
+        <ns0:PaxSegment>
+          <ns0:PaxSegmentID>S1</ns0:PaxSegmentID>
+          <ns0:Dep>
+            <ns0:IATA_LocationCode>DFW</ns0:IATA_LocationCode>
+            <ns0:AircraftScheduledDateTime>2024-10-28T17:55:00</ns0:AircraftScheduledDateTime>
+          </ns0:Dep>
+          <ns0:Arrival>
+            <ns0:IATA_LocationCode>CDG</ns0:IATA_LocationCode>
+            <ns0:AircraftScheduledDateTime>2024-10-29T09:05:00</ns0:AircraftScheduledDateTime>
+          </ns0:Arrival>
+          <ns0:MarketingCarrierInfo>
+            <ns0:CarrierDesigCode>AA</ns0:CarrierDesigCode>
+            <ns0:MarketingCarrierFlightNumberText>48</ns0:MarketingCarrierFlightNumberText>
+            <ns0:RBD_Code>D</ns0:RBD_Code>
+          </ns0:MarketingCarrierInfo>
+          <ns0:OperatingCarrierInfo>
+            <ns0:CarrierDesigCode>AA</ns0:CarrierDesigCode>
+            <ns0:OperatingCarrierFlightNumberText>48</ns0:OperatingCarrierFlightNumberText>
+          </ns0:OperatingCarrierInfo>
+        </ns0:PaxSegment>
+        <ns0:PaxSegment>
+          <ns0:PaxSegmentID>S2</ns0:PaxSegmentID>
+          <ns0:Dep>
+            <ns0:IATA_LocationCode>CDG</ns0:IATA_LocationCode>
+            <ns0:AircraftScheduledDateTime>2024-11-18T11:05:00</ns0:AircraftScheduledDateTime>
+          </ns0:Dep>
+          <ns0:Arrival>
+            <ns0:IATA_LocationCode>DFW</ns0:IATA_LocationCode>
+            <ns0:AircraftScheduledDateTime>2024-11-18T14:50:00</ns0:AircraftScheduledDateTime>
+          </ns0:Arrival>
+          <ns0:MarketingCarrierInfo>
+            <ns0:CarrierDesigCode>AA</ns0:CarrierDesigCode>
+            <ns0:MarketingCarrierFlightNumberText>49</ns0:MarketingCarrierFlightNumberText>
+            <ns0:RBD_Code>R</ns0:RBD_Code>
+          </ns0:MarketingCarrierInfo>
+          <ns0:OperatingCarrierInfo>
+            <ns0:CarrierDesigCode>AA</ns0:CarrierDesigCode>
+            <ns0:OperatingCarrierFlightNumberText>49</ns0:OperatingCarrierFlightNumberText>
+          </ns0:OperatingCarrierInfo>
+        </ns0:PaxSegment>
+      </ns0:PaxSegmentList>
+    </ns0:DataLists>
+    <ns0:Metadata>
+      <ns0:Other>
+        <ns0:OtherMetadata>
+          <ns0:RuleMetadatas>
+            <ns0:RuleMetadata MetadataKey="RM7E81B9C5">
+              <ns0:RuleID>Change</ns0:RuleID>
+              <ns0:Values>
+                <ns0:Value>
+                  <ns0:Instruction>Allowed</ns0:Instruction>
+                </ns0:Value>
+              </ns0:Values>
+            </ns0:RuleMetadata>
+            <ns0:RuleMetadata MetadataKey="RM60EBBA98">
+              <ns0:RuleID>Cancel</ns0:RuleID>
+              <ns0:Values>
+                <ns0:Value>
+                  <ns0:Instruction>Not Allowed</ns0:Instruction>
+                </ns0:Value>
+              </ns0:Values>
+            </ns0:RuleMetadata>
+          </ns0:RuleMetadatas>
+        </ns0:OtherMetadata>
+        <ns0:OtherMetadata>
+          <ns0:CurrencyMetadatas>
+            <ns0:CurrencyMetadata MetadataKey="USD">
+              <ns0:Decimals>2</ns0:Decimals>
+            </ns0:CurrencyMetadata>
+            <ns0:CurrencyMetadata MetadataKey="NUC">
+              <ns0:Decimals>2</ns0:Decimals>
+            </ns0:CurrencyMetadata>
+          </ns0:CurrencyMetadatas>
+        </ns0:OtherMetadata>
+      </ns0:Other>
+    </ns0:Metadata>
+    <ns0:ReshopResults UseCase="REUSE_TICKET">
+      <ns0:ReshopOffers>
+        <ns0:ReshopOffer>
+          <ns0:OfferID>1A_TPID_CiIIARIaUjhFNUVERDYzLUI0NjMtNEMxQy1CRUVDLTEYARgCEgVSZXVzZQ==</ns0:OfferID>
+          <ns0:OwnerCode>AA</ns0:OwnerCode>
+          <ns0:OfferStatus>REUSE_TICKET</ns0:OfferStatus>
+          <ns0:ValidatingCarrierCode>AA</ns0:ValidatingCarrierCode>
+          <ns0:OfferExpirationDateTime>2024-09-09T19:27:43Z</ns0:OfferExpirationDateTime>
+          <ns0:PaymentTimeLimitDateTime>2024-09-12T23:59:00</ns0:PaymentTimeLimitDateTime>
+          <ns0:BaggageAllowance>
+            <ns0:PaxJourneyRefID>F1</ns0:PaxJourneyRefID>
+            <ns0:PaxRefID>T1</ns0:PaxRefID>
+            <ns0:PaxRefID>T2</ns0:PaxRefID>
+            <ns0:BaggageAllowanceRefID>BA4383C4AD-CO</ns0:BaggageAllowanceRefID>
+          </ns0:BaggageAllowance>
+          <ns0:BaggageAllowance>
+            <ns0:PaxJourneyRefID>F2</ns0:PaxJourneyRefID>
+            <ns0:PaxRefID>T1</ns0:PaxRefID>
+            <ns0:PaxRefID>T2</ns0:PaxRefID>
+            <ns0:BaggageAllowanceRefID>BA4383C4AD-CO</ns0:BaggageAllowanceRefID>
+          </ns0:BaggageAllowance>
+          <ns0:BaggageAllowance>
+            <ns0:PaxJourneyRefID>F1</ns0:PaxJourneyRefID>
+            <ns0:PaxRefID>T1</ns0:PaxRefID>
+            <ns0:PaxRefID>T2</ns0:PaxRefID>
+            <ns0:BaggageAllowanceRefID>BA5CF12EA8</ns0:BaggageAllowanceRefID>
+          </ns0:BaggageAllowance>
+          <ns0:BaggageAllowance>
+            <ns0:PaxJourneyRefID>F2</ns0:PaxJourneyRefID>
+            <ns0:PaxRefID>T1</ns0:PaxRefID>
+            <ns0:PaxRefID>T2</ns0:PaxRefID>
+            <ns0:BaggageAllowanceRefID>BA5CF12EA8</ns0:BaggageAllowanceRefID>
+          </ns0:BaggageAllowance>
+          <ns0:JourneyOverview>
+            <ns0:JourneyPriceClass>
+              <ns0:PaxJourneyRefID>F1</ns0:PaxJourneyRefID>
+            </ns0:JourneyPriceClass>
+            <ns0:JourneyPriceClass>
+              <ns0:PaxJourneyRefID>F2</ns0:PaxJourneyRefID>
+            </ns0:JourneyPriceClass>
+          </ns0:JourneyOverview>
+          <ns0:PTC_OfferParameters>
+            <ns0:PTC_PricedCode>ADT</ns0:PTC_PricedCode>
+            <ns0:PTC_RequestedCode>ADT</ns0:PTC_RequestedCode>
+            <ns0:RequestedPaxNumber>1</ns0:RequestedPaxNumber>
+            <ns0:PricedPaxNumber>1</ns0:PricedPaxNumber>
+          </ns0:PTC_OfferParameters>
+          <ns0:PTC_OfferParameters>
+            <ns0:PTC_PricedCode>ADT</ns0:PTC_PricedCode>
+            <ns0:PTC_RequestedCode>CNN</ns0:PTC_RequestedCode>
+            <ns0:RequestedPaxNumber>1</ns0:RequestedPaxNumber>
+            <ns0:PricedPaxNumber>1</ns0:PricedPaxNumber>
+          </ns0:PTC_OfferParameters>
+          <ns0:TotalPrice>
+            <ns0:TotalAmount CurCode="USD">1590460</ns0:TotalAmount>
+          </ns0:TotalPrice>
+          <ns0:AddOfferItem>
+            <ns0:OfferItemID>1A_TPID_CAESHFI4RTVFREQ2My1CNDYzLTRDMUMtQkVFQy0xLTE=</ns0:OfferItemID>
+            <ns0:MandatoryInd>true</ns0:MandatoryInd>
+            <ns0:OrderItemRefID>P81071294-AE91-4066-824Ba2hmvoveugj6p-3-1</ns0:OrderItemRefID>
+            <ns0:FareDetail>
+              <ns0:PassengerRefs>T1</ns0:PassengerRefs>
+              <ns0:Price>
+                <ns0:TotalAmount>
+                  <ns0:DetailCurrencyPrice>
+                    <ns0:Total Code="USD">795230</ns0:Total>
+                  </ns0:DetailCurrencyPrice>
+                </ns0:TotalAmount>
+                <ns0:BaseAmount Code="USD">575000</ns0:BaseAmount>
+                <ns0:Taxes>
+                  <ns0:Total Code="USD">220230</ns0:Total>
+                  <ns0:Breakdown>
+                    <ns0:Tax>
+                      <ns0:Qualifier>709</ns0:Qualifier>
+                      <ns0:Amount Code="USD">560</ns0:Amount>
+                      <ns0:Nation>US</ns0:Nation>
+                      <ns0:TaxCode>AY</ns0:TaxCode>
+                      <ns0:Description>United States Passenger Civil Aviation Security Service Fee</ns0:Description>
+                    </ns0:Tax>
+                    <ns0:Tax>
+                      <ns0:Amount Code="USD">560</ns0:Amount>
+                      <ns0:Nation>US</ns0:Nation>
+                      <ns0:TaxCode>AY</ns0:TaxCode>
+                      <ns0:Description>United States Passenger Civil Aviation Security Service Fee</ns0:Description>
+                    </ns0:Tax>
+                    <ns0:Tax>
+                      <ns0:Amount Code="USD">200000</ns0:Amount>
+                      <ns0:TaxCode>YR</ns0:TaxCode>
+                      <ns0:Description>AA YR surcharge</ns0:Description>
+                    </ns0:Tax>
+                    <ns0:Tax>
+                      <ns0:Qualifier>709</ns0:Qualifier>
+                      <ns0:Amount Code="USD">450</ns0:Amount>
+                      <ns0:Nation>US</ns0:Nation>
+                      <ns0:TaxCode>XF</ns0:TaxCode>
+                      <ns0:Description>US Passenger Facility Charge</ns0:Description>
+                    </ns0:Tax>
+                    <ns0:Tax>
+                      <ns0:Amount Code="USD">450</ns0:Amount>
+                      <ns0:Nation>US</ns0:Nation>
+                      <ns0:TaxCode>XF</ns0:TaxCode>
+                      <ns0:CollectionPoint>
+                        <ns0:CurrCode>USD</ns0:CurrCode>
+                        <ns0:AirportAmount>450</ns0:AirportAmount>
+                        <ns0:AirportCode>DFW</ns0:AirportCode>
+                      </ns0:CollectionPoint>
+                      <ns0:Description>US Passenger Facility Charge</ns0:Description>
+                    </ns0:Tax>
+                    <ns0:Tax>
+                      <ns0:Amount Code="USD">2430</ns0:Amount>
+                      <ns0:Nation>FR</ns0:Nation>
+                      <ns0:TaxCode>FR</ns0:TaxCode>
+                      <ns0:Description>France Civil Aviation Tax Domestic And International</ns0:Description>
+                    </ns0:Tax>
+                    <ns0:Tax>
+                      <ns0:Amount Code="USD">383</ns0:Amount>
+                      <ns0:Nation>US</ns0:Nation>
+                      <ns0:TaxCode>XA</ns0:TaxCode>
+                      <ns0:Description>United States APHIS Passenger Fee Passengers</ns0:Description>
+                    </ns0:Tax>
+                    <ns0:Tax>
+                      <ns0:Amount Code="USD">697</ns0:Amount>
+                      <ns0:Nation>US</ns0:Nation>
+                      <ns0:TaxCode>YC</ns0:TaxCode>
+                      <ns0:Description>United States Customs User Fee</ns0:Description>
+                    </ns0:Tax>
+                    <ns0:Tax>
+                      <ns0:Amount Code="USD">3570</ns0:Amount>
+                      <ns0:Nation>FR</ns0:Nation>
+                      <ns0:TaxCode>QX</ns0:TaxCode>
+                      <ns0:Description>France Passenger Service Charge International</ns0:Description>
+                    </ns0:Tax>
+                    <ns0:Tax>
+                      <ns0:Amount Code="USD">700</ns0:Amount>
+                      <ns0:Nation>US</ns0:Nation>
+                      <ns0:TaxCode>XY</ns0:TaxCode>
+                      <ns0:Description>United States Immigration User Fee</ns0:Description>
+                    </ns0:Tax>
+                    <ns0:Tax>
+                      <ns0:Amount Code="USD">5000</ns0:Amount>
+                      <ns0:Nation>FR</ns0:Nation>
+                      <ns0:TaxCode>IZ</ns0:TaxCode>
+                      <ns0:Description>France Air Passenger Solidarity Tax</ns0:Description>
+                    </ns0:Tax>
+                    <ns0:Tax>
+                      <ns0:Amount Code="USD">2000</ns0:Amount>
+                      <ns0:Nation>FR</ns0:Nation>
+                      <ns0:TaxCode>O4</ns0:TaxCode>
+                      <ns0:Description>France Air Passenger Solidarity Tax Surplus</ns0:Description>
+                    </ns0:Tax>
+                    <ns0:Tax>
+                      <ns0:Qualifier>709</ns0:Qualifier>
+                      <ns0:Amount Code="USD">1000</ns0:Amount>
+                      <ns0:Nation>US</ns0:Nation>
+                      <ns0:TaxCode>ZP</ns0:TaxCode>
+                      <ns0:Description>Previous Ticket</ns0:Description>
+                    </ns0:Tax>
+                    <ns0:Tax>
+                      <ns0:Qualifier>709</ns0:Qualifier>
+                      <ns0:Amount Code="USD">4984</ns0:Amount>
+                      <ns0:Nation>US</ns0:Nation>
+                      <ns0:TaxCode>US</ns0:TaxCode>
+                      <ns0:Description>US International Departure Tax</ns0:Description>
+                    </ns0:Tax>
+                    <ns0:Tax>
+                      <ns0:Amount Code="USD">4440</ns0:Amount>
+                      <ns0:Nation>US</ns0:Nation>
+                      <ns0:TaxCode>US</ns0:TaxCode>
+                      <ns0:Description>US International Departure Tax</ns0:Description>
+                    </ns0:Tax>
+                  </ns0:Breakdown>
+                </ns0:Taxes>
+              </ns0:Price>
+              <ns0:FareComponent>
+                <ns0:Price>
+                  <ns0:TotalAmount>
+                    <ns0:DetailCurrencyPrice>
+                      <ns0:Total Code="USD">530450</ns0:Total>
+                    </ns0:DetailCurrencyPrice>
+                  </ns0:TotalAmount>
+                  <ns0:BaseAmount Code="NUC">325000</ns0:BaseAmount>
+                  <ns0:Taxes>
+                    <ns0:Total Code="USD">205450</ns0:Total>
+                  </ns0:Taxes>
+                </ns0:Price>
+                <ns0:FareBasis>
+                  <ns0:FareBasisCode refs="FG1">
+                    <ns0:Code>DLW8A7H5</ns0:Code>
+                  </ns0:FareBasisCode>
+                  <ns0:RBD>D</ns0:RBD>
+                  <ns0:CabinType>
+                    <ns0:CabinTypeCode>C</ns0:CabinTypeCode>
+                    <ns0:CabinTypeName>Business</ns0:CabinTypeName>
+                  </ns0:CabinType>
+                </ns0:FareBasis>
+                <ns0:FareRules>
+                  <ns0:Penalty CancelFeeInd="false" ChangeFeeInd="false" RefundableInd="false">
+                    <ns0:Details>
+                      <ns0:Detail refs="RM7E81B9C5">
+                        <ns0:Type>Change</ns0:Type>
+                        <ns0:Amounts>
+                          <ns0:Amount>
+                            <ns0:CurrencyAmountValue Code="USD">0</ns0:CurrencyAmountValue>
+                            <ns0:AmountApplication>MIN</ns0:AmountApplication>
+                          </ns0:Amount>
+                          <ns0:Amount>
+                            <ns0:CurrencyAmountValue Code="USD">0</ns0:CurrencyAmountValue>
+                            <ns0:AmountApplication>MAX</ns0:AmountApplication>
+                          </ns0:Amount>
+                        </ns0:Amounts>
+                      </ns0:Detail>
+                      <ns0:Detail refs="RM60EBBA98">
+                        <ns0:Type>Cancel</ns0:Type>
+                        <ns0:Amounts>
+                          <ns0:Amount>
+                            <ns0:CurrencyAmountValue Code="USD">0</ns0:CurrencyAmountValue>
+                            <ns0:AmountApplication>MIN</ns0:AmountApplication>
+                          </ns0:Amount>
+                          <ns0:Amount>
+                            <ns0:CurrencyAmountValue Code="USD">0</ns0:CurrencyAmountValue>
+                            <ns0:AmountApplication>MAX</ns0:AmountApplication>
+                          </ns0:Amount>
+                        </ns0:Amounts>
+                      </ns0:Detail>
+                    </ns0:Details>
+                  </ns0:Penalty>
+                  <ns0:Ticketing>
+                    <ns0:Endorsements>
+                      <ns0:Endorsement>USD5750.00 NON-REFUNDABLE</ns0:Endorsement>
+                      <ns0:Endorsement>NONREF/RESTRICTIONS APPLY</ns0:Endorsement>
+                    </ns0:Endorsements>
+                  </ns0:Ticketing>
+                </ns0:FareRules>
+                <ns0:SegmentRefs>S1</ns0:SegmentRefs>
+              </ns0:FareComponent>
+              <ns0:FareComponent>
+                <ns0:Price>
+                  <ns0:TotalAmount>
+                    <ns0:DetailCurrencyPrice>
+                      <ns0:Total Code="USD">264780</ns0:Total>
+                    </ns0:DetailCurrencyPrice>
+                  </ns0:TotalAmount>
+                  <ns0:BaseAmount Code="NUC">250000</ns0:BaseAmount>
+                  <ns0:Taxes>
+                    <ns0:Total Code="USD">14780</ns0:Total>
+                  </ns0:Taxes>
+                </ns0:Price>
+                <ns0:FareBasis>
+                  <ns0:FareBasisCode refs="FG2">
+                    <ns0:Code>RLW8A7H5</ns0:Code>
+                  </ns0:FareBasisCode>
+                  <ns0:RBD>R</ns0:RBD>
+                  <ns0:CabinType>
+                    <ns0:CabinTypeCode>C</ns0:CabinTypeCode>
+                    <ns0:CabinTypeName>Business</ns0:CabinTypeName>
+                  </ns0:CabinType>
+                </ns0:FareBasis>
+                <ns0:FareRules>
+                  <ns0:Penalty CancelFeeInd="false" ChangeFeeInd="false" RefundableInd="false">
+                    <ns0:Details>
+                      <ns0:Detail refs="RM7E81B9C5">
+                        <ns0:Type>Change</ns0:Type>
+                        <ns0:Amounts>
+                          <ns0:Amount>
+                            <ns0:CurrencyAmountValue Code="USD">0</ns0:CurrencyAmountValue>
+                            <ns0:AmountApplication>MIN</ns0:AmountApplication>
+                          </ns0:Amount>
+                          <ns0:Amount>
+                            <ns0:CurrencyAmountValue Code="USD">0</ns0:CurrencyAmountValue>
+                            <ns0:AmountApplication>MAX</ns0:AmountApplication>
+                          </ns0:Amount>
+                        </ns0:Amounts>
+                      </ns0:Detail>
+                      <ns0:Detail refs="RM60EBBA98">
+                        <ns0:Type>Cancel</ns0:Type>
+                        <ns0:Amounts>
+                          <ns0:Amount>
+                            <ns0:CurrencyAmountValue Code="USD">0</ns0:CurrencyAmountValue>
+                            <ns0:AmountApplication>MIN</ns0:AmountApplication>
+                          </ns0:Amount>
+                          <ns0:Amount>
+                            <ns0:CurrencyAmountValue Code="USD">0</ns0:CurrencyAmountValue>
+                            <ns0:AmountApplication>MAX</ns0:AmountApplication>
+                          </ns0:Amount>
+                        </ns0:Amounts>
+                      </ns0:Detail>
+                    </ns0:Details>
+                  </ns0:Penalty>
+                  <ns0:Ticketing>
+                    <ns0:Endorsements>
+                      <ns0:Endorsement>USD5750.00 NON-REFUNDABLE</ns0:Endorsement>
+                      <ns0:Endorsement>NONREF/RESTRICTIONS APPLY</ns0:Endorsement>
+                    </ns0:Endorsements>
+                  </ns0:Ticketing>
+                </ns0:FareRules>
+                <ns0:SegmentRefs>S2</ns0:SegmentRefs>
+              </ns0:FareComponent>
+            </ns0:FareDetail>
+            <ns0:Service>
+              <ns0:ServiceID>ServiceID1</ns0:ServiceID>
+              <ns0:PaxRefID>T1</ns0:PaxRefID>
+              <ns0:ServiceAssociations>
+                <ns0:PaxJourneyRefID>F1</ns0:PaxJourneyRefID>
+                <ns0:PaxJourneyRefID>F2</ns0:PaxJourneyRefID>
+              </ns0:ServiceAssociations>
+            </ns0:Service>
+            <ns0:Price>
+              <ns0:TotalAmount CurCode="USD">795230</ns0:TotalAmount>
+              <ns0:BaseAmount CurCode="USD">575000</ns0:BaseAmount>
+              <ns0:TaxSummary>
+                <ns0:TotalTaxAmount CurCode="USD">220230</ns0:TotalTaxAmount>
+              </ns0:TaxSummary>
+            </ns0:Price>
+            <ns0:OriginalOrderItemDifferential>
+              <ns0:Amount CurCode="USD">125651</ns0:Amount>
+              <ns0:TaxSummary>
+                <ns0:TotalTaxAmount CurCode="USD">12444</ns0:TotalTaxAmount>
+                <ns0:Tax>
+                  <ns0:Amount CurCode="USD">4712</ns0:Amount>
+                  <ns0:TaxCode>US</ns0:TaxCode>
+                  <ns0:DescText>US Transportation Tax</ns0:DescText>
+                  <ns0:Country>
+                    <ns0:CountryCode>US</ns0:CountryCode>
+                  </ns0:Country>
+                </ns0:Tax>
+                <ns0:Tax>
+                  <ns0:Amount CurCode="USD">4712</ns0:Amount>
+                  <ns0:TaxCode>US</ns0:TaxCode>
+                  <ns0:DescText>US Transportation Tax</ns0:DescText>
+                  <ns0:Country>
+                    <ns0:CountryCode>US</ns0:CountryCode>
+                  </ns0:Country>
+                </ns0:Tax>
+                <ns0:Tax>
+                  <ns0:Amount CurCode="USD">450</ns0:Amount>
+                  <ns0:TaxCode>XF</ns0:TaxCode>
+                  <ns0:DescText>US Passenger Facility Charge</ns0:DescText>
+                  <ns0:Country>
+                    <ns0:CountryCode>US</ns0:CountryCode>
+                  </ns0:Country>
+                </ns0:Tax>
+                <ns0:Tax>
+                  <ns0:Amount CurCode="USD">500</ns0:Amount>
+                  <ns0:TaxCode>ZP</ns0:TaxCode>
+                  <ns0:DescText>United States Flight Segment Tax Domestic</ns0:DescText>
+                  <ns0:Country>
+                    <ns0:CountryCode>US</ns0:CountryCode>
+                  </ns0:Country>
+                </ns0:Tax>
+                <ns0:Tax>
+                  <ns0:Amount CurCode="USD">1120</ns0:Amount>
+                  <ns0:TaxCode>AY</ns0:TaxCode>
+                  <ns0:DescText>United States Passenger Civil Aviation Security Service Fee</ns0:DescText>
+                  <ns0:Country>
+                    <ns0:CountryCode>US</ns0:CountryCode>
+                  </ns0:Country>
+                </ns0:Tax>
+                <ns0:Tax>
+                  <ns0:Amount CurCode="USD">450</ns0:Amount>
+                  <ns0:TaxCode>XF</ns0:TaxCode>
+                  <ns0:DescText>US Passenger Facility Charge</ns0:DescText>
+                  <ns0:Country>
+                    <ns0:CountryCode>US</ns0:CountryCode>
+                  </ns0:Country>
+                </ns0:Tax>
+                <ns0:Tax>
+                  <ns0:Amount CurCode="USD">500</ns0:Amount>
+                  <ns0:TaxCode>ZP</ns0:TaxCode>
+                  <ns0:DescText>United States Flight Segment Tax Domestic</ns0:DescText>
+                  <ns0:Country>
+                    <ns0:CountryCode>US</ns0:CountryCode>
+                  </ns0:Country>
+                </ns0:Tax>
+              </ns0:TaxSummary>
+            </ns0:OriginalOrderItemDifferential>
+            <ns0:NewOfferItemDifferential>
+              <ns0:Amount CurCode="USD">575000</ns0:Amount>
+              <ns0:TaxSummary>
+                <ns0:TotalTaxAmount CurCode="USD">220230</ns0:TotalTaxAmount>
+                <ns0:Tax>
+                  <ns0:Amount CurCode="USD">560</ns0:Amount>
+                  <ns0:TaxCode>AY</ns0:TaxCode>
+                  <ns0:DescText>United States Passenger Civil Aviation Security Service Fee</ns0:DescText>
+                  <ns0:Country>
+                    <ns0:CountryCode>US</ns0:CountryCode>
+                  </ns0:Country>
+                </ns0:Tax>
+                <ns0:Tax>
+                  <ns0:Amount CurCode="USD">200000</ns0:Amount>
+                  <ns0:TaxCode>YR</ns0:TaxCode>
+                  <ns0:DescText>AA YR surcharge</ns0:DescText>
+                </ns0:Tax>
+                <ns0:Tax>
+                  <ns0:Amount CurCode="USD">450</ns0:Amount>
+                  <ns0:TaxCode>XF</ns0:TaxCode>
+                  <ns0:DescText>US Passenger Facility Charge</ns0:DescText>
+                  <ns0:CollectionPointTax>
+                    <ns0:AirportAmount CurCode="USD">450</ns0:AirportAmount>
+                    <ns0:IATA_StationCode>DFW</ns0:IATA_StationCode>
+                  </ns0:CollectionPointTax>
+                  <ns0:Country>
+                    <ns0:CountryCode>US</ns0:CountryCode>
+                  </ns0:Country>
+                </ns0:Tax>
+                <ns0:Tax>
+                  <ns0:Amount CurCode="USD">2430</ns0:Amount>
+                  <ns0:TaxCode>FR</ns0:TaxCode>
+                  <ns0:DescText>France Civil Aviation Tax Domestic And International</ns0:DescText>
+                  <ns0:Country>
+                    <ns0:CountryCode>FR</ns0:CountryCode>
+                  </ns0:Country>
+                </ns0:Tax>
+                <ns0:Tax>
+                  <ns0:Amount CurCode="USD">383</ns0:Amount>
+                  <ns0:TaxCode>XA</ns0:TaxCode>
+                  <ns0:DescText>United States APHIS Passenger Fee Passengers</ns0:DescText>
+                  <ns0:Country>
+                    <ns0:CountryCode>US</ns0:CountryCode>
+                  </ns0:Country>
+                </ns0:Tax>
+                <ns0:Tax>
+                  <ns0:Amount CurCode="USD">697</ns0:Amount>
+                  <ns0:TaxCode>YC</ns0:TaxCode>
+                  <ns0:DescText>United States Customs User Fee</ns0:DescText>
+                  <ns0:Country>
+                    <ns0:CountryCode>US</ns0:CountryCode>
+                  </ns0:Country>
+                </ns0:Tax>
+                <ns0:Tax>
+                  <ns0:Amount CurCode="USD">3570</ns0:Amount>
+                  <ns0:TaxCode>QX</ns0:TaxCode>
+                  <ns0:DescText>France Passenger Service Charge International</ns0:DescText>
+                  <ns0:Country>
+                    <ns0:CountryCode>FR</ns0:CountryCode>
+                  </ns0:Country>
+                </ns0:Tax>
+                <ns0:Tax>
+                  <ns0:Amount CurCode="USD">700</ns0:Amount>
+                  <ns0:TaxCode>XY</ns0:TaxCode>
+                  <ns0:DescText>United States Immigration User Fee</ns0:DescText>
+                  <ns0:Country>
+                    <ns0:CountryCode>US</ns0:CountryCode>
+                  </ns0:Country>
+                </ns0:Tax>
+                <ns0:Tax>
+                  <ns0:Amount CurCode="USD">5000</ns0:Amount>
+                  <ns0:TaxCode>IZ</ns0:TaxCode>
+                  <ns0:DescText>France Air Passenger Solidarity Tax</ns0:DescText>
+                  <ns0:Country>
+                    <ns0:CountryCode>FR</ns0:CountryCode>
+                  </ns0:Country>
+                </ns0:Tax>
+                <ns0:Tax>
+                  <ns0:Amount CurCode="USD">2000</ns0:Amount>
+                  <ns0:TaxCode>O4</ns0:TaxCode>
+                  <ns0:DescText>France Air Passenger Solidarity Tax Surplus</ns0:DescText>
+                  <ns0:Country>
+                    <ns0:CountryCode>FR</ns0:CountryCode>
+                  </ns0:Country>
+                </ns0:Tax>
+                <ns0:Tax>
+                  <ns0:Amount CurCode="USD">4440</ns0:Amount>
+                  <ns0:TaxCode>US</ns0:TaxCode>
+                  <ns0:DescText>US International Departure Tax</ns0:DescText>
+                  <ns0:Country>
+                    <ns0:CountryCode>US</ns0:CountryCode>
+                  </ns0:Country>
+                </ns0:Tax>
+              </ns0:TaxSummary>
+            </ns0:NewOfferItemDifferential>
+            <ns0:DifferentialAmountDue>
+              <ns0:Amount CurCode="USD">657135</ns0:Amount>
+              <ns0:TaxSummary>
+                <ns0:TotalTaxAmount CurCode="USD">207786</ns0:TotalTaxAmount>
+                <ns0:CollectionInd>true</ns0:CollectionInd>
+                <ns0:Tax>
+                  <ns0:Amount CurCode="USD">193006</ns0:Amount>
+                  <ns0:TaxCode>YR</ns0:TaxCode>
+                  <ns0:DescText>AA YR surcharge</ns0:DescText>
+                </ns0:Tax>
+                <ns0:Tax>
+                  <ns0:Amount CurCode="USD">2430</ns0:Amount>
+                  <ns0:TaxCode>FR</ns0:TaxCode>
+                  <ns0:DescText>France Civil Aviation Tax Domestic And International</ns0:DescText>
+                  <ns0:Country>
+                    <ns0:CountryCode>FR</ns0:CountryCode>
+                  </ns0:Country>
+                </ns0:Tax>
+                <ns0:Tax>
+                  <ns0:Amount CurCode="USD">383</ns0:Amount>
+                  <ns0:TaxCode>XA</ns0:TaxCode>
+                  <ns0:DescText>United States APHIS Passenger Fee Passengers</ns0:DescText>
+                  <ns0:Country>
+                    <ns0:CountryCode>US</ns0:CountryCode>
+                  </ns0:Country>
+                </ns0:Tax>
+                <ns0:Tax>
+                  <ns0:Amount CurCode="USD">697</ns0:Amount>
+                  <ns0:TaxCode>YC</ns0:TaxCode>
+                  <ns0:DescText>United States Customs User Fee</ns0:DescText>
+                  <ns0:Country>
+                    <ns0:CountryCode>US</ns0:CountryCode>
+                  </ns0:Country>
+                </ns0:Tax>
+                <ns0:Tax>
+                  <ns0:Amount CurCode="USD">3570</ns0:Amount>
+                  <ns0:TaxCode>QX</ns0:TaxCode>
+                  <ns0:DescText>France Passenger Service Charge International</ns0:DescText>
+                  <ns0:Country>
+                    <ns0:CountryCode>FR</ns0:CountryCode>
+                  </ns0:Country>
+                </ns0:Tax>
+                <ns0:Tax>
+                  <ns0:Amount CurCode="USD">700</ns0:Amount>
+                  <ns0:TaxCode>XY</ns0:TaxCode>
+                  <ns0:DescText>United States Immigration User Fee</ns0:DescText>
+                  <ns0:Country>
+                    <ns0:CountryCode>US</ns0:CountryCode>
+                  </ns0:Country>
+                </ns0:Tax>
+                <ns0:Tax>
+                  <ns0:Amount CurCode="USD">5000</ns0:Amount>
+                  <ns0:TaxCode>IZ</ns0:TaxCode>
+                  <ns0:DescText>France Air Passenger Solidarity Tax</ns0:DescText>
+                  <ns0:Country>
+                    <ns0:CountryCode>FR</ns0:CountryCode>
+                  </ns0:Country>
+                </ns0:Tax>
+                <ns0:Tax>
+                  <ns0:Amount CurCode="USD">2000</ns0:Amount>
+                  <ns0:TaxCode>O4</ns0:TaxCode>
+                  <ns0:DescText>France Air Passenger Solidarity Tax Surplus</ns0:DescText>
+                  <ns0:Country>
+                    <ns0:CountryCode>FR</ns0:CountryCode>
+                  </ns0:Country>
+                </ns0:Tax>
+              </ns0:TaxSummary>
+            </ns0:DifferentialAmountDue>
+          </ns0:AddOfferItem>
+          <ns0:AddOfferItem>
+            <ns0:OfferItemID>1A_TPID_CAISHFI4RTVFREQ2My1CNDYzLTRDMUMtQkVFQy0xLTI=</ns0:OfferItemID>
+            <ns0:MandatoryInd>true</ns0:MandatoryInd>
+            <ns0:OrderItemRefID>P81071294-AE91-4066-824Ba2hmvoveugj6p-3-2</ns0:OrderItemRefID>
+            <ns0:FareDetail>
+              <ns0:PassengerRefs>T2</ns0:PassengerRefs>
+              <ns0:Price>
+                <ns0:TotalAmount>
+                  <ns0:DetailCurrencyPrice>
+                    <ns0:Total Code="USD">795230</ns0:Total>
+                  </ns0:DetailCurrencyPrice>
+                </ns0:TotalAmount>
+                <ns0:BaseAmount Code="USD">575000</ns0:BaseAmount>
+                <ns0:Taxes>
+                  <ns0:Total Code="USD">220230</ns0:Total>
+                  <ns0:Breakdown>
+                    <ns0:Tax>
+                      <ns0:Qualifier>709</ns0:Qualifier>
+                      <ns0:Amount Code="USD">560</ns0:Amount>
+                      <ns0:Nation>US</ns0:Nation>
+                      <ns0:TaxCode>AY</ns0:TaxCode>
+                      <ns0:Description>United States Passenger Civil Aviation Security Service Fee</ns0:Description>
+                    </ns0:Tax>
+                    <ns0:Tax>
+                      <ns0:Amount Code="USD">560</ns0:Amount>
+                      <ns0:Nation>US</ns0:Nation>
+                      <ns0:TaxCode>AY</ns0:TaxCode>
+                      <ns0:Description>United States Passenger Civil Aviation Security Service Fee</ns0:Description>
+                    </ns0:Tax>
+                    <ns0:Tax>
+                      <ns0:Amount Code="USD">200000</ns0:Amount>
+                      <ns0:TaxCode>YR</ns0:TaxCode>
+                      <ns0:Description>AA YR surcharge</ns0:Description>
+                    </ns0:Tax>
+                    <ns0:Tax>
+                      <ns0:Qualifier>709</ns0:Qualifier>
+                      <ns0:Amount Code="USD">450</ns0:Amount>
+                      <ns0:Nation>US</ns0:Nation>
+                      <ns0:TaxCode>XF</ns0:TaxCode>
+                      <ns0:Description>US Passenger Facility Charge</ns0:Description>
+                    </ns0:Tax>
+                    <ns0:Tax>
+                      <ns0:Amount Code="USD">450</ns0:Amount>
+                      <ns0:Nation>US</ns0:Nation>
+                      <ns0:TaxCode>XF</ns0:TaxCode>
+                      <ns0:CollectionPoint>
+                        <ns0:CurrCode>USD</ns0:CurrCode>
+                        <ns0:AirportAmount>450</ns0:AirportAmount>
+                        <ns0:AirportCode>DFW</ns0:AirportCode>
+                      </ns0:CollectionPoint>
+                      <ns0:Description>US Passenger Facility Charge</ns0:Description>
+                    </ns0:Tax>
+                    <ns0:Tax>
+                      <ns0:Amount Code="USD">2430</ns0:Amount>
+                      <ns0:Nation>FR</ns0:Nation>
+                      <ns0:TaxCode>FR</ns0:TaxCode>
+                      <ns0:Description>France Civil Aviation Tax Domestic And International</ns0:Description>
+                    </ns0:Tax>
+                    <ns0:Tax>
+                      <ns0:Amount Code="USD">383</ns0:Amount>
+                      <ns0:Nation>US</ns0:Nation>
+                      <ns0:TaxCode>XA</ns0:TaxCode>
+                      <ns0:Description>United States APHIS Passenger Fee Passengers</ns0:Description>
+                    </ns0:Tax>
+                    <ns0:Tax>
+                      <ns0:Amount Code="USD">697</ns0:Amount>
+                      <ns0:Nation>US</ns0:Nation>
+                      <ns0:TaxCode>YC</ns0:TaxCode>
+                      <ns0:Description>United States Customs User Fee</ns0:Description>
+                    </ns0:Tax>
+                    <ns0:Tax>
+                      <ns0:Amount Code="USD">3570</ns0:Amount>
+                      <ns0:Nation>FR</ns0:Nation>
+                      <ns0:TaxCode>QX</ns0:TaxCode>
+                      <ns0:Description>France Passenger Service Charge International</ns0:Description>
+                    </ns0:Tax>
+                    <ns0:Tax>
+                      <ns0:Amount Code="USD">700</ns0:Amount>
+                      <ns0:Nation>US</ns0:Nation>
+                      <ns0:TaxCode>XY</ns0:TaxCode>
+                      <ns0:Description>United States Immigration User Fee</ns0:Description>
+                    </ns0:Tax>
+                    <ns0:Tax>
+                      <ns0:Amount Code="USD">5000</ns0:Amount>
+                      <ns0:Nation>FR</ns0:Nation>
+                      <ns0:TaxCode>IZ</ns0:TaxCode>
+                      <ns0:Description>France Air Passenger Solidarity Tax</ns0:Description>
+                    </ns0:Tax>
+                    <ns0:Tax>
+                      <ns0:Amount Code="USD">2000</ns0:Amount>
+                      <ns0:Nation>FR</ns0:Nation>
+                      <ns0:TaxCode>O4</ns0:TaxCode>
+                      <ns0:Description>France Air Passenger Solidarity Tax Surplus</ns0:Description>
+                    </ns0:Tax>
+                    <ns0:Tax>
+                      <ns0:Qualifier>709</ns0:Qualifier>
+                      <ns0:Amount Code="USD">1000</ns0:Amount>
+                      <ns0:Nation>US</ns0:Nation>
+                      <ns0:TaxCode>ZP</ns0:TaxCode>
+                      <ns0:Description>Previous Ticket</ns0:Description>
+                    </ns0:Tax>
+                    <ns0:Tax>
+                      <ns0:Qualifier>709</ns0:Qualifier>
+                      <ns0:Amount Code="USD">4984</ns0:Amount>
+                      <ns0:Nation>US</ns0:Nation>
+                      <ns0:TaxCode>US</ns0:TaxCode>
+                      <ns0:Description>US International Departure Tax</ns0:Description>
+                    </ns0:Tax>
+                    <ns0:Tax>
+                      <ns0:Amount Code="USD">4440</ns0:Amount>
+                      <ns0:Nation>US</ns0:Nation>
+                      <ns0:TaxCode>US</ns0:TaxCode>
+                      <ns0:Description>US International Departure Tax</ns0:Description>
+                    </ns0:Tax>
+                  </ns0:Breakdown>
+                </ns0:Taxes>
+              </ns0:Price>
+              <ns0:FareComponent>
+                <ns0:Price>
+                  <ns0:TotalAmount>
+                    <ns0:DetailCurrencyPrice>
+                      <ns0:Total Code="USD">530450</ns0:Total>
+                    </ns0:DetailCurrencyPrice>
+                  </ns0:TotalAmount>
+                  <ns0:BaseAmount Code="NUC">325000</ns0:BaseAmount>
+                  <ns0:Taxes>
+                    <ns0:Total Code="USD">205450</ns0:Total>
+                  </ns0:Taxes>
+                </ns0:Price>
+                <ns0:FareBasis>
+                  <ns0:FareBasisCode refs="FG1">
+                    <ns0:Code>DLW8A7H5</ns0:Code>
+                  </ns0:FareBasisCode>
+                  <ns0:RBD>D</ns0:RBD>
+                  <ns0:CabinType>
+                    <ns0:CabinTypeCode>C</ns0:CabinTypeCode>
+                    <ns0:CabinTypeName>Business</ns0:CabinTypeName>
+                  </ns0:CabinType>
+                </ns0:FareBasis>
+                <ns0:FareRules>
+                  <ns0:Penalty CancelFeeInd="false" ChangeFeeInd="false" RefundableInd="false">
+                    <ns0:Details>
+                      <ns0:Detail refs="RM7E81B9C5">
+                        <ns0:Type>Change</ns0:Type>
+                        <ns0:Amounts>
+                          <ns0:Amount>
+                            <ns0:CurrencyAmountValue Code="USD">0</ns0:CurrencyAmountValue>
+                            <ns0:AmountApplication>MIN</ns0:AmountApplication>
+                          </ns0:Amount>
+                          <ns0:Amount>
+                            <ns0:CurrencyAmountValue Code="USD">0</ns0:CurrencyAmountValue>
+                            <ns0:AmountApplication>MAX</ns0:AmountApplication>
+                          </ns0:Amount>
+                        </ns0:Amounts>
+                      </ns0:Detail>
+                      <ns0:Detail refs="RM60EBBA98">
+                        <ns0:Type>Cancel</ns0:Type>
+                        <ns0:Amounts>
+                          <ns0:Amount>
+                            <ns0:CurrencyAmountValue Code="USD">0</ns0:CurrencyAmountValue>
+                            <ns0:AmountApplication>MIN</ns0:AmountApplication>
+                          </ns0:Amount>
+                          <ns0:Amount>
+                            <ns0:CurrencyAmountValue Code="USD">0</ns0:CurrencyAmountValue>
+                            <ns0:AmountApplication>MAX</ns0:AmountApplication>
+                          </ns0:Amount>
+                        </ns0:Amounts>
+                      </ns0:Detail>
+                    </ns0:Details>
+                  </ns0:Penalty>
+                  <ns0:Ticketing>
+                    <ns0:Endorsements>
+                      <ns0:Endorsement>USD5750.00 NON-REFUNDABLE</ns0:Endorsement>
+                      <ns0:Endorsement>NONREF/RESTRICTIONS APPLY</ns0:Endorsement>
+                    </ns0:Endorsements>
+                  </ns0:Ticketing>
+                </ns0:FareRules>
+                <ns0:SegmentRefs>S1</ns0:SegmentRefs>
+              </ns0:FareComponent>
+              <ns0:FareComponent>
+                <ns0:Price>
+                  <ns0:TotalAmount>
+                    <ns0:DetailCurrencyPrice>
+                      <ns0:Total Code="USD">264780</ns0:Total>
+                    </ns0:DetailCurrencyPrice>
+                  </ns0:TotalAmount>
+                  <ns0:BaseAmount Code="NUC">250000</ns0:BaseAmount>
+                  <ns0:Taxes>
+                    <ns0:Total Code="USD">14780</ns0:Total>
+                  </ns0:Taxes>
+                </ns0:Price>
+                <ns0:FareBasis>
+                  <ns0:FareBasisCode refs="FG2">
+                    <ns0:Code>RLW8A7H5</ns0:Code>
+                  </ns0:FareBasisCode>
+                  <ns0:RBD>R</ns0:RBD>
+                  <ns0:CabinType>
+                    <ns0:CabinTypeCode>C</ns0:CabinTypeCode>
+                    <ns0:CabinTypeName>Business</ns0:CabinTypeName>
+                  </ns0:CabinType>
+                </ns0:FareBasis>
+                <ns0:FareRules>
+                  <ns0:Penalty CancelFeeInd="false" ChangeFeeInd="false" RefundableInd="false">
+                    <ns0:Details>
+                      <ns0:Detail refs="RM7E81B9C5">
+                        <ns0:Type>Change</ns0:Type>
+                        <ns0:Amounts>
+                          <ns0:Amount>
+                            <ns0:CurrencyAmountValue Code="USD">0</ns0:CurrencyAmountValue>
+                            <ns0:AmountApplication>MIN</ns0:AmountApplication>
+                          </ns0:Amount>
+                          <ns0:Amount>
+                            <ns0:CurrencyAmountValue Code="USD">0</ns0:CurrencyAmountValue>
+                            <ns0:AmountApplication>MAX</ns0:AmountApplication>
+                          </ns0:Amount>
+                        </ns0:Amounts>
+                      </ns0:Detail>
+                      <ns0:Detail refs="RM60EBBA98">
+                        <ns0:Type>Cancel</ns0:Type>
+                        <ns0:Amounts>
+                          <ns0:Amount>
+                            <ns0:CurrencyAmountValue Code="USD">0</ns0:CurrencyAmountValue>
+                            <ns0:AmountApplication>MIN</ns0:AmountApplication>
+                          </ns0:Amount>
+                          <ns0:Amount>
+                            <ns0:CurrencyAmountValue Code="USD">0</ns0:CurrencyAmountValue>
+                            <ns0:AmountApplication>MAX</ns0:AmountApplication>
+                          </ns0:Amount>
+                        </ns0:Amounts>
+                      </ns0:Detail>
+                    </ns0:Details>
+                  </ns0:Penalty>
+                  <ns0:Ticketing>
+                    <ns0:Endorsements>
+                      <ns0:Endorsement>USD5750.00 NON-REFUNDABLE</ns0:Endorsement>
+                      <ns0:Endorsement>NONREF/RESTRICTIONS APPLY</ns0:Endorsement>
+                    </ns0:Endorsements>
+                  </ns0:Ticketing>
+                </ns0:FareRules>
+                <ns0:SegmentRefs>S2</ns0:SegmentRefs>
+              </ns0:FareComponent>
+            </ns0:FareDetail>
+            <ns0:Service>
+              <ns0:ServiceID>ServiceID2</ns0:ServiceID>
+              <ns0:PaxRefID>T2</ns0:PaxRefID>
+              <ns0:ServiceAssociations>
+                <ns0:PaxJourneyRefID>F1</ns0:PaxJourneyRefID>
+                <ns0:PaxJourneyRefID>F2</ns0:PaxJourneyRefID>
+              </ns0:ServiceAssociations>
+            </ns0:Service>
+            <ns0:Price>
+              <ns0:TotalAmount CurCode="USD">795230</ns0:TotalAmount>
+              <ns0:BaseAmount CurCode="USD">575000</ns0:BaseAmount>
+              <ns0:TaxSummary>
+                <ns0:TotalTaxAmount CurCode="USD">220230</ns0:TotalTaxAmount>
+              </ns0:TaxSummary>
+            </ns0:Price>
+            <ns0:OriginalOrderItemDifferential>
+              <ns0:Amount CurCode="USD">125651</ns0:Amount>
+              <ns0:TaxSummary>
+                <ns0:TotalTaxAmount CurCode="USD">12444</ns0:TotalTaxAmount>
+                <ns0:Tax>
+                  <ns0:Amount CurCode="USD">4712</ns0:Amount>
+                  <ns0:TaxCode>US</ns0:TaxCode>
+                  <ns0:DescText>US Transportation Tax</ns0:DescText>
+                  <ns0:Country>
+                    <ns0:CountryCode>US</ns0:CountryCode>
+                  </ns0:Country>
+                </ns0:Tax>
+                <ns0:Tax>
+                  <ns0:Amount CurCode="USD">4712</ns0:Amount>
+                  <ns0:TaxCode>US</ns0:TaxCode>
+                  <ns0:DescText>US Transportation Tax</ns0:DescText>
+                  <ns0:Country>
+                    <ns0:CountryCode>US</ns0:CountryCode>
+                  </ns0:Country>
+                </ns0:Tax>
+                <ns0:Tax>
+                  <ns0:Amount CurCode="USD">450</ns0:Amount>
+                  <ns0:TaxCode>XF</ns0:TaxCode>
+                  <ns0:DescText>US Passenger Facility Charge</ns0:DescText>
+                  <ns0:Country>
+                    <ns0:CountryCode>US</ns0:CountryCode>
+                  </ns0:Country>
+                </ns0:Tax>
+                <ns0:Tax>
+                  <ns0:Amount CurCode="USD">500</ns0:Amount>
+                  <ns0:TaxCode>ZP</ns0:TaxCode>
+                  <ns0:DescText>United States Flight Segment Tax Domestic</ns0:DescText>
+                  <ns0:Country>
+                    <ns0:CountryCode>US</ns0:CountryCode>
+                  </ns0:Country>
+                </ns0:Tax>
+                <ns0:Tax>
+                  <ns0:Amount CurCode="USD">1120</ns0:Amount>
+                  <ns0:TaxCode>AY</ns0:TaxCode>
+                  <ns0:DescText>United States Passenger Civil Aviation Security Service Fee</ns0:DescText>
+                  <ns0:Country>
+                    <ns0:CountryCode>US</ns0:CountryCode>
+                  </ns0:Country>
+                </ns0:Tax>
+                <ns0:Tax>
+                  <ns0:Amount CurCode="USD">450</ns0:Amount>
+                  <ns0:TaxCode>XF</ns0:TaxCode>
+                  <ns0:DescText>US Passenger Facility Charge</ns0:DescText>
+                  <ns0:Country>
+                    <ns0:CountryCode>US</ns0:CountryCode>
+                  </ns0:Country>
+                </ns0:Tax>
+                <ns0:Tax>
+                  <ns0:Amount CurCode="USD">500</ns0:Amount>
+                  <ns0:TaxCode>ZP</ns0:TaxCode>
+                  <ns0:DescText>United States Flight Segment Tax Domestic</ns0:DescText>
+                  <ns0:Country>
+                    <ns0:CountryCode>US</ns0:CountryCode>
+                  </ns0:Country>
+                </ns0:Tax>
+              </ns0:TaxSummary>
+            </ns0:OriginalOrderItemDifferential>
+            <ns0:NewOfferItemDifferential>
+              <ns0:Amount CurCode="USD">575000</ns0:Amount>
+              <ns0:TaxSummary>
+                <ns0:TotalTaxAmount CurCode="USD">220230</ns0:TotalTaxAmount>
+                <ns0:Tax>
+                  <ns0:Amount CurCode="USD">560</ns0:Amount>
+                  <ns0:TaxCode>AY</ns0:TaxCode>
+                  <ns0:DescText>United States Passenger Civil Aviation Security Service Fee</ns0:DescText>
+                  <ns0:Country>
+                    <ns0:CountryCode>US</ns0:CountryCode>
+                  </ns0:Country>
+                </ns0:Tax>
+                <ns0:Tax>
+                  <ns0:Amount CurCode="USD">200000</ns0:Amount>
+                  <ns0:TaxCode>YR</ns0:TaxCode>
+                  <ns0:DescText>AA YR surcharge</ns0:DescText>
+                </ns0:Tax>
+                <ns0:Tax>
+                  <ns0:Amount CurCode="USD">450</ns0:Amount>
+                  <ns0:TaxCode>XF</ns0:TaxCode>
+                  <ns0:DescText>US Passenger Facility Charge</ns0:DescText>
+                  <ns0:CollectionPointTax>
+                    <ns0:AirportAmount CurCode="USD">450</ns0:AirportAmount>
+                    <ns0:IATA_StationCode>DFW</ns0:IATA_StationCode>
+                  </ns0:CollectionPointTax>
+                  <ns0:Country>
+                    <ns0:CountryCode>US</ns0:CountryCode>
+                  </ns0:Country>
+                </ns0:Tax>
+                <ns0:Tax>
+                  <ns0:Amount CurCode="USD">2430</ns0:Amount>
+                  <ns0:TaxCode>FR</ns0:TaxCode>
+                  <ns0:DescText>France Civil Aviation Tax Domestic And International</ns0:DescText>
+                  <ns0:Country>
+                    <ns0:CountryCode>FR</ns0:CountryCode>
+                  </ns0:Country>
+                </ns0:Tax>
+                <ns0:Tax>
+                  <ns0:Amount CurCode="USD">383</ns0:Amount>
+                  <ns0:TaxCode>XA</ns0:TaxCode>
+                  <ns0:DescText>United States APHIS Passenger Fee Passengers</ns0:DescText>
+                  <ns0:Country>
+                    <ns0:CountryCode>US</ns0:CountryCode>
+                  </ns0:Country>
+                </ns0:Tax>
+                <ns0:Tax>
+                  <ns0:Amount CurCode="USD">697</ns0:Amount>
+                  <ns0:TaxCode>YC</ns0:TaxCode>
+                  <ns0:DescText>United States Customs User Fee</ns0:DescText>
+                  <ns0:Country>
+                    <ns0:CountryCode>US</ns0:CountryCode>
+                  </ns0:Country>
+                </ns0:Tax>
+                <ns0:Tax>
+                  <ns0:Amount CurCode="USD">3570</ns0:Amount>
+                  <ns0:TaxCode>QX</ns0:TaxCode>
+                  <ns0:DescText>France Passenger Service Charge International</ns0:DescText>
+                  <ns0:Country>
+                    <ns0:CountryCode>FR</ns0:CountryCode>
+                  </ns0:Country>
+                </ns0:Tax>
+                <ns0:Tax>
+                  <ns0:Amount CurCode="USD">700</ns0:Amount>
+                  <ns0:TaxCode>XY</ns0:TaxCode>
+                  <ns0:DescText>United States Immigration User Fee</ns0:DescText>
+                  <ns0:Country>
+                    <ns0:CountryCode>US</ns0:CountryCode>
+                  </ns0:Country>
+                </ns0:Tax>
+                <ns0:Tax>
+                  <ns0:Amount CurCode="USD">5000</ns0:Amount>
+                  <ns0:TaxCode>IZ</ns0:TaxCode>
+                  <ns0:DescText>France Air Passenger Solidarity Tax</ns0:DescText>
+                  <ns0:Country>
+                    <ns0:CountryCode>FR</ns0:CountryCode>
+                  </ns0:Country>
+                </ns0:Tax>
+                <ns0:Tax>
+                  <ns0:Amount CurCode="USD">2000</ns0:Amount>
+                  <ns0:TaxCode>O4</ns0:TaxCode>
+                  <ns0:DescText>France Air Passenger Solidarity Tax Surplus</ns0:DescText>
+                  <ns0:Country>
+                    <ns0:CountryCode>FR</ns0:CountryCode>
+                  </ns0:Country>
+                </ns0:Tax>
+                <ns0:Tax>
+                  <ns0:Amount CurCode="USD">4440</ns0:Amount>
+                  <ns0:TaxCode>US</ns0:TaxCode>
+                  <ns0:DescText>US International Departure Tax</ns0:DescText>
+                  <ns0:Country>
+                    <ns0:CountryCode>US</ns0:CountryCode>
+                  </ns0:Country>
+                </ns0:Tax>
+              </ns0:TaxSummary>
+            </ns0:NewOfferItemDifferential>
+            <ns0:DifferentialAmountDue>
+              <ns0:Amount CurCode="USD">657135</ns0:Amount>
+              <ns0:TaxSummary>
+                <ns0:TotalTaxAmount CurCode="USD">207786</ns0:TotalTaxAmount>
+                <ns0:CollectionInd>true</ns0:CollectionInd>
+                <ns0:Tax>
+                  <ns0:Amount CurCode="USD">193006</ns0:Amount>
+                  <ns0:TaxCode>YR</ns0:TaxCode>
+                  <ns0:DescText>AA YR surcharge</ns0:DescText>
+                </ns0:Tax>
+                <ns0:Tax>
+                  <ns0:Amount CurCode="USD">2430</ns0:Amount>
+                  <ns0:TaxCode>FR</ns0:TaxCode>
+                  <ns0:DescText>France Civil Aviation Tax Domestic And International</ns0:DescText>
+                  <ns0:Country>
+                    <ns0:CountryCode>FR</ns0:CountryCode>
+                  </ns0:Country>
+                </ns0:Tax>
+                <ns0:Tax>
+                  <ns0:Amount CurCode="USD">383</ns0:Amount>
+                  <ns0:TaxCode>XA</ns0:TaxCode>
+                  <ns0:DescText>United States APHIS Passenger Fee Passengers</ns0:DescText>
+                  <ns0:Country>
+                    <ns0:CountryCode>US</ns0:CountryCode>
+                  </ns0:Country>
+                </ns0:Tax>
+                <ns0:Tax>
+                  <ns0:Amount CurCode="USD">697</ns0:Amount>
+                  <ns0:TaxCode>YC</ns0:TaxCode>
+                  <ns0:DescText>United States Customs User Fee</ns0:DescText>
+                  <ns0:Country>
+                    <ns0:CountryCode>US</ns0:CountryCode>
+                  </ns0:Country>
+                </ns0:Tax>
+                <ns0:Tax>
+                  <ns0:Amount CurCode="USD">3570</ns0:Amount>
+                  <ns0:TaxCode>QX</ns0:TaxCode>
+                  <ns0:DescText>France Passenger Service Charge International</ns0:DescText>
+                  <ns0:Country>
+                    <ns0:CountryCode>FR</ns0:CountryCode>
+                  </ns0:Country>
+                </ns0:Tax>
+                <ns0:Tax>
+                  <ns0:Amount CurCode="USD">700</ns0:Amount>
+                  <ns0:TaxCode>XY</ns0:TaxCode>
+                  <ns0:DescText>United States Immigration User Fee</ns0:DescText>
+                  <ns0:Country>
+                    <ns0:CountryCode>US</ns0:CountryCode>
+                  </ns0:Country>
+                </ns0:Tax>
+                <ns0:Tax>
+                  <ns0:Amount CurCode="USD">5000</ns0:Amount>
+                  <ns0:TaxCode>IZ</ns0:TaxCode>
+                  <ns0:DescText>France Air Passenger Solidarity Tax</ns0:DescText>
+                  <ns0:Country>
+                    <ns0:CountryCode>FR</ns0:CountryCode>
+                  </ns0:Country>
+                </ns0:Tax>
+                <ns0:Tax>
+                  <ns0:Amount CurCode="USD">2000</ns0:Amount>
+                  <ns0:TaxCode>O4</ns0:TaxCode>
+                  <ns0:DescText>France Air Passenger Solidarity Tax Surplus</ns0:DescText>
+                  <ns0:Country>
+                    <ns0:CountryCode>FR</ns0:CountryCode>
+                  </ns0:Country>
+                </ns0:Tax>
+              </ns0:TaxSummary>
+            </ns0:DifferentialAmountDue>
+          </ns0:AddOfferItem>
+        </ns0:ReshopOffer>
+      </ns0:ReshopOffers>
+    </ns0:ReshopResults>
+    <ns0:ShoppingResponse>
+      <ns0:ShoppingResponseID>R8E5EDD63-B463-4C1C-BEEC</ns0:ShoppingResponseID>
+    </ns0:ShoppingResponse>
+    <ns0:Warning>
+      <ns0:DescText>NOT FARED AT PASSENGER TYPE REQUESTED</ns0:DescText>
+      <ns0:OwnerName>AA</ns0:OwnerName>
+    </ns0:Warning>
+  </ns0:Response>
+</ns0:AMA_TravelOrderReshopRS>

@@ -1,0 +1,30 @@
+<Air_MultiAvailability>
+  <messageActionDetails>
+    <functionDetails>
+      <businessFunction>1</businessFunction>
+      <actionCode>44</actionCode>
+    </functionDetails>
+  </messageActionDetails>
+  <requestSection>
+    <availabilityProductInfo>
+      <availabilityDetails>
+        <departureDate>020523</departureDate>
+      </availabilityDetails>
+      <departureLocationInfo>
+        <cityAirport>SYD</cityAirport>
+      </departureLocationInfo>
+      <arrivalLocationInfo>
+        <cityAirport>PER</cityAirport>
+      </arrivalLocationInfo>
+    </availabilityProductInfo>
+    <availabilityOptions>
+      <productTypeDetails>
+        <typeOfRequest>TN</typeOfRequest>
+      </productTypeDetails>
+      <optionInfo>
+        <type>BIA</type>
+        <arguments>QF</arguments>
+      </optionInfo>
+    </availabilityOptions>
+  </requestSection>
+</Air_MultiAvailability>

@@ -1,0 +1,432 @@
+<soap:Envelope xmlns:awsse="http://xml.amadeus.com/2010/06/Session_v3" xmlns:ns3="http://xml.amadeus.com/2010/06/Travel_OrderViewRS_v1" xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns:wsa="http://www.w3.org/2005/08/addressing">
+  <soap:Header>
+    <wsa:To>http://www.w3.org/2005/08/addressing/anonymous</wsa:To>
+    <wsa:From>
+      <wsa:Address>https://noded5.test.webservices.amadeus.com/WSAP</wsa:Address>
+    </wsa:From>
+    <wsa:Action>http://webservices.amadeus.com/Travel_OrderCreate_1.3</wsa:Action>
+    <wsa:MessageID>urn:uuid:2b38918e-b5b7-e5d4-41cc-153b76379949</wsa:MessageID>
+    <wsa:RelatesTo RelationshipType="http://www.w3.org/2005/08/addressing/reply">9f2357ea-523c-4eae-86bc-65ae33f8a542</wsa:RelatesTo>
+    <awsse:Session TransactionStatusCode="End">
+      <awsse:SessionId>01GJDSIDQH</awsse:SessionId>
+      <awsse:SequenceNumber>1</awsse:SequenceNumber>
+      <awsse:SecurityToken>REDACTED_TOKEN</awsse:SecurityToken>
+    </awsse:Session>
+  </soap:Header>
+  <soap:Body>
+    <ns3:AMA_TravelOrderViewRS>
+      <ns3:Response>
+        <ns3:DataLists>
+          <ns3:BaggageAllowanceList>
+            <ns3:BaggageAllowance>
+              <ns3:BaggageAllowanceID>BAG1</ns3:BaggageAllowanceID>
+              <ns3:TypeCode>Checked</ns3:TypeCode>
+              <ns3:DescText>FREE BAGGAGE</ns3:DescText>
+              <ns3:PieceAllowance>
+                <ns3:ApplicablePartyText>Party</ns3:ApplicablePartyText>
+                <ns3:TotalQty>0</ns3:TotalQty>
+              </ns3:PieceAllowance>
+            </ns3:BaggageAllowance>
+          </ns3:BaggageAllowanceList>
+          <ns3:ContactInfoList>
+            <ns3:ContactInfo>
+              <ns3:ContactInfoID>ContactInfo-T2</ns3:ContactInfoID>
+              <ns3:Phone>
+                <ns3:LabelText>mobile</ns3:LabelText>
+                <ns3:PhoneNumber>3054996000</ns3:PhoneNumber>
+              </ns3:Phone>
+              <ns3:EmailAddress>
+                <ns3:EmailAddressText>MSMITH@AMADEUS.COM</ns3:EmailAddressText>
+              </ns3:EmailAddress>
+            </ns3:ContactInfo>
+          </ns3:ContactInfoList>
+          <ns3:FareList>
+            <ns3:FareGroup ListKey="FBCODE1" refs="T2 FareType">
+              <ns3:Fare>
+                <ns3:FareCode>70J</ns3:FareCode>
+              </ns3:Fare>
+              <ns3:FareBasisCode>
+                <ns3:Code>BLX5C5B4</ns3:Code>
+              </ns3:FareBasisCode>
+            </ns3:FareGroup>
+          </ns3:FareList>
+          <ns3:OriginDestList>
+            <ns3:OriginDest>
+              <ns3:OriginDestID>OD1</ns3:OriginDestID>
+              <ns3:OriginCode>LGW</ns3:OriginCode>
+              <ns3:DestCode>JFK</ns3:DestCode>
+              <ns3:PaxJourneyRefID>Flight1</ns3:PaxJourneyRefID>
+            </ns3:OriginDest>
+          </ns3:OriginDestList>
+          <ns3:PaxJourneyList>
+            <ns3:PaxJourney>
+              <ns3:PaxJourneyID>Flight1</ns3:PaxJourneyID>
+              <ns3:Duration>PT8H0M</ns3:Duration>
+              <ns3:PaxSegmentRefID>FS1</ns3:PaxSegmentRefID>
+            </ns3:PaxJourney>
+          </ns3:PaxJourneyList>
+          <ns3:PaxList>
+            <ns3:Pax>
+              <ns3:PaxID>T2</ns3:PaxID>
+              <ns3:PTC>ADT</ns3:PTC>
+              <ns3:ContactInfoRefID>ContactInfo-T2</ns3:ContactInfoRefID>
+              <ns3:IdentityDoc>
+                <ns3:IdentityDocID>15478569</ns3:IdentityDocID>
+                <ns3:IdentityDocTypeCode>PT</ns3:IdentityDocTypeCode>
+                <ns3:IssuingCountryCode>USA</ns3:IssuingCountryCode>
+                <ns3:CitizenshipCountryCode>USA</ns3:CitizenshipCountryCode>
+                <ns3:ExpiryDate>2029-05-25</ns3:ExpiryDate>
+                <ns3:Birthdate>1993-02-25</ns3:Birthdate>
+              </ns3:IdentityDoc>
+              <ns3:IdentityDoc>
+                <ns3:IdentityDocID>87458999</ns3:IdentityDocID>
+                <ns3:IdentityDocTypeCode>R</ns3:IdentityDocTypeCode>
+                <ns3:Visa>
+                  <ns3:VisaID>87458999</ns3:VisaID>
+                  <ns3:VisaTypeCode>R</ns3:VisaTypeCode>
+                  <ns3:IssuingCountryCode>USA</ns3:IssuingCountryCode>
+                </ns3:Visa>
+              </ns3:IdentityDoc>
+              <ns3:Individual>
+                <ns3:IndividualID>ID2</ns3:IndividualID>
+                <ns3:Birthdate>1993-02-25</ns3:Birthdate>
+                <ns3:GenderCode>M</ns3:GenderCode>
+                <ns3:TitleName>MR</ns3:TitleName>
+                <ns3:GivenName>MIKE</ns3:GivenName>
+                <ns3:Surname>SMITH</ns3:Surname>
+              </ns3:Individual>
+            </ns3:Pax>
+          </ns3:PaxList>
+          <ns3:PaxSegmentList>
+            <ns3:PaxSegment>
+              <ns3:PaxSegmentID>FS1</ns3:PaxSegmentID>
+              <ns3:SecureFlightInd>true</ns3:SecureFlightInd>
+              <ns3:Duration>PT8H</ns3:Duration>
+              <ns3:SegmentTypeCode>HK</ns3:SegmentTypeCode>
+              <ns3:CabinType>
+                <ns3:CabinTypeCode>B</ns3:CabinTypeCode>
+              </ns3:CabinType>
+              <ns3:Dep>
+                <ns3:IATA_LocationCode>LGW</ns3:IATA_LocationCode>
+                <ns3:StationName>Gatwick (London) Airport</ns3:StationName>
+                <ns3:TerminalName>S</ns3:TerminalName>
+                <ns3:AircraftScheduledDateTime>2024-09-24T15:05:00</ns3:AircraftScheduledDateTime>
+              </ns3:Dep>
+              <ns3:Arrival>
+                <ns3:IATA_LocationCode>JFK</ns3:IATA_LocationCode>
+                <ns3:StationName>John F Kennedy (NY) (New York) Airport</ns3:StationName>
+                <ns3:TerminalName>8</ns3:TerminalName>
+                <ns3:AircraftScheduledDateTime>2024-09-24T18:05:00</ns3:AircraftScheduledDateTime>
+              </ns3:Arrival>
+              <ns3:MarketingCarrierInfo>
+                <ns3:CarrierDesigCode>BA</ns3:CarrierDesigCode>
+                <ns3:CarrierName>British Airways</ns3:CarrierName>
+                <ns3:MarketingCarrierFlightNumberText>2273</ns3:MarketingCarrierFlightNumberText>
+              </ns3:MarketingCarrierInfo>
+              <ns3:OperatingCarrierInfo>
+                <ns3:CarrierDesigCode>BA</ns3:CarrierDesigCode>
+                <ns3:CarrierName>British Airways</ns3:CarrierName>
+              </ns3:OperatingCarrierInfo>
+              <ns3:DatedOperatingLeg>
+                <ns3:DatedOperatingLegID>LEG1</ns3:DatedOperatingLegID>
+                <ns3:CarrierAircraftType>
+                  <ns3:CarrierAircraftTypeCode>777</ns3:CarrierAircraftTypeCode>
+                  <ns3:CarrierAircraftTypeName>Boeing 777 jet</ns3:CarrierAircraftTypeName>
+                </ns3:CarrierAircraftType>
+              </ns3:DatedOperatingLeg>
+            </ns3:PaxSegment>
+          </ns3:PaxSegmentList>
+          <ns3:PriceClassList>
+            <ns3:PriceClass>
+              <ns3:PriceClassID>PCR_1</ns3:PriceClassID>
+              <ns3:Code>NOBAG</ns3:Code>
+              <ns3:Name>BASIC ECONOMY</ns3:Name>
+            </ns3:PriceClass>
+          </ns3:PriceClassList>
+          <ns3:ServiceDefinitionList>
+            <ns3:ServiceDefinition>
+              <ns3:ServiceDefinitionID>BAG-T2-FS1-FreeBag</ns3:ServiceDefinitionID>
+              <ns3:Name>BAG</ns3:Name>
+              <ns3:Description>
+                <ns3:DescID>SerDescID</ns3:DescID>
+                <ns3:DescText>FREE BAGGAGE</ns3:DescText>
+              </ns3:Description>
+              <ns3:ServiceDefinitionAssociation>
+                <ns3:BaggageAllowanceRefID>BAG1</ns3:BaggageAllowanceRefID>
+              </ns3:ServiceDefinitionAssociation>
+              <ns3:BookingInstructions>
+                <ns3:SSRCode>ASVC</ns3:SSRCode>
+                <ns3:Method>SSR</ns3:Method>
+              </ns3:BookingInstructions>
+            </ns3:ServiceDefinition>
+          </ns3:ServiceDefinitionList>
+        </ns3:DataLists>
+        <ns3:Metadata>
+          <ns3:Other>
+            <ns3:OtherMetadata>
+              <ns3:CurrencyMetadatas>
+                <ns3:CurrencyMetadata MetadataKey="GBP">
+                  <ns3:Decimals>2</ns3:Decimals>
+                </ns3:CurrencyMetadata>
+              </ns3:CurrencyMetadatas>
+            </ns3:OtherMetadata>
+            <ns3:OtherMetadata>
+              <ns3:RuleMetadatas>
+                <ns3:RuleMetadata MetadataKey="RuleMetaData1">
+                  <ns3:RuleID>Change</ns3:RuleID>
+                  <ns3:Values>
+                    <ns3:Value>
+                      <ns3:Instruction>Allowed</ns3:Instruction>
+                    </ns3:Value>
+                  </ns3:Values>
+                </ns3:RuleMetadata>
+                <ns3:RuleMetadata MetadataKey="RuleMetaData2">
+                  <ns3:RuleID>Change</ns3:RuleID>
+                  <ns3:Values>
+                    <ns3:Value>
+                      <ns3:Instruction>NotAllowed</ns3:Instruction>
+                    </ns3:Value>
+                  </ns3:Values>
+                </ns3:RuleMetadata>
+                <ns3:RuleMetadata MetadataKey="RuleMetaData3">
+                  <ns3:RuleID>Cancellation</ns3:RuleID>
+                  <ns3:Values>
+                    <ns3:Value>
+                      <ns3:Instruction>NotAllowed</ns3:Instruction>
+                    </ns3:Value>
+                  </ns3:Values>
+                </ns3:RuleMetadata>
+              </ns3:RuleMetadatas>
+            </ns3:OtherMetadata>
+          </ns3:Other>
+        </ns3:Metadata>
+        <ns3:Order>
+          <ns3:OrderID>O7Q9W2</ns3:OrderID>
+          <ns3:OwnerCode>BA</ns3:OwnerCode>
+          <ns3:BookingRef>
+            <ns3:BookingID>O7Q9W2</ns3:BookingID>
+            <ns3:BookingEntity>
+              <ns3:Carrier>
+                <ns3:AirlineDesigCode>BA</ns3:AirlineDesigCode>
+              </ns3:Carrier>
+            </ns3:BookingEntity>
+          </ns3:BookingRef>
+          <ns3:BookingRef>
+            <ns3:BookingID>O7R387</ns3:BookingID>
+            <ns3:BookingEntity>
+              <ns3:Org OrgID="1A">
+                <ns3:Name>Amadeus</ns3:Name>
+              </ns3:Org>
+            </ns3:BookingEntity>
+          </ns3:BookingRef>
+          <ns3:OrderItem>
+            <ns3:OrderItemID>O7Q9W2-T2-FS1_1APAX_T2</ns3:OrderItemID>
+            <ns3:PaymentTimeLimitDateTime>2024-07-12T22:59:00.000Z</ns3:PaymentTimeLimitDateTime>
+            <ns3:FareDetail>
+              <ns3:PassengerRefs>T2</ns3:PassengerRefs>
+              <ns3:Price>
+                <ns3:TotalAmount>
+                  <ns3:DetailCurrencyPrice>
+                    <ns3:Total Code="GBP">111838</ns3:Total>
+                  </ns3:DetailCurrencyPrice>
+                </ns3:TotalAmount>
+                <ns3:BaseAmount Code="GBP">86200</ns3:BaseAmount>
+                <ns3:Taxes>
+                  <ns3:Total Code="GBP">25638</ns3:Total>
+                  <ns3:Breakdown>
+                    <ns3:Tax>
+                      <ns3:Amount Code="GBP">160</ns3:Amount>
+                      <ns3:Nation>AG</ns3:Nation>
+                      <ns3:TaxCode>OA</ns3:TaxCode>
+                    </ns3:Tax>
+                    <ns3:Tax>
+                      <ns3:Amount Code="GBP">11500</ns3:Amount>
+                      <ns3:Nation>AD</ns3:Nation>
+                      <ns3:TaxCode>YQ</ns3:TaxCode>
+                    </ns3:Tax>
+                    <ns3:Tax>
+                      <ns3:Amount Code="GBP">8800</ns3:Amount>
+                      <ns3:Nation>AD</ns3:Nation>
+                      <ns3:TaxCode>GB</ns3:TaxCode>
+                    </ns3:Tax>
+                    <ns3:Tax>
+                      <ns3:Amount Code="GBP">2018</ns3:Amount>
+                      <ns3:Nation>AS</ns3:Nation>
+                      <ns3:TaxCode>UB</ns3:TaxCode>
+                    </ns3:Tax>
+                    <ns3:Tax>
+                      <ns3:Amount Code="GBP">1760</ns3:Amount>
+                      <ns3:Nation>AS</ns3:Nation>
+                      <ns3:TaxCode>US</ns3:TaxCode>
+                    </ns3:Tax>
+                    <ns3:Tax>
+                      <ns3:Amount Code="GBP">300</ns3:Amount>
+                      <ns3:Nation>CO</ns3:Nation>
+                      <ns3:TaxCode>XA</ns3:TaxCode>
+                    </ns3:Tax>
+                    <ns3:Tax>
+                      <ns3:Amount Code="GBP">550</ns3:Amount>
+                      <ns3:Nation>CR</ns3:Nation>
+                      <ns3:TaxCode>XY</ns3:TaxCode>
+                    </ns3:Tax>
+                    <ns3:Tax>
+                      <ns3:Amount Code="GBP">550</ns3:Amount>
+                      <ns3:Nation>AE</ns3:Nation>
+                      <ns3:TaxCode>YC</ns3:TaxCode>
+                    </ns3:Tax>
+                  </ns3:Breakdown>
+                </ns3:Taxes>
+              </ns3:Price>
+              <ns3:FareComponent>
+                <ns3:FareBasis>
+                  <ns3:FareBasisCode>
+                    <ns3:Code>BLX5C5B4</ns3:Code>
+                  </ns3:FareBasisCode>
+                  <ns3:RBD>B</ns3:RBD>
+                  <ns3:CabinType>
+                    <ns3:CabinTypeCode>M</ns3:CabinTypeCode>
+                    <ns3:CabinTypeName>Economy</ns3:CabinTypeName>
+                  </ns3:CabinType>
+                </ns3:FareBasis>
+                <ns3:FareRules>
+                  <ns3:Penalty refs="Rule1 Rule2 Rule3 Rule4 Rule5 Rule6">
+                    <ns3:Details>
+                      <ns3:Detail refs="RuleMetaData1">
+                        <ns3:Type>Change</ns3:Type>
+                        <ns3:Application>2</ns3:Application>
+                        <ns3:Amounts>
+                          <ns3:Amount>
+                            <ns3:CurrencyAmountValue Code="GBP">15000</ns3:CurrencyAmountValue>
+                            <ns3:AmountApplication>MIN</ns3:AmountApplication>
+                          </ns3:Amount>
+                          <ns3:Amount>
+                            <ns3:CurrencyAmountValue Code="GBP">15000</ns3:CurrencyAmountValue>
+                            <ns3:AmountApplication>MAX</ns3:AmountApplication>
+                          </ns3:Amount>
+                        </ns3:Amounts>
+                      </ns3:Detail>
+                      <ns3:Detail refs="RuleMetaData2">
+                        <ns3:Type>Change</ns3:Type>
+                        <ns3:Application>1</ns3:Application>
+                      </ns3:Detail>
+                      <ns3:Detail refs="RuleMetaData2">
+                        <ns3:Type>Change</ns3:Type>
+                        <ns3:Application>3</ns3:Application>
+                      </ns3:Detail>
+                      <ns3:Detail refs="RuleMetaData3">
+                        <ns3:Type>Cancellation</ns3:Type>
+                        <ns3:Application>2</ns3:Application>
+                      </ns3:Detail>
+                      <ns3:Detail refs="RuleMetaData3">
+                        <ns3:Type>Cancellation</ns3:Type>
+                        <ns3:Application>1</ns3:Application>
+                      </ns3:Detail>
+                      <ns3:Detail refs="RuleMetaData3">
+                        <ns3:Type>Cancellation</ns3:Type>
+                        <ns3:Application>3</ns3:Application>
+                      </ns3:Detail>
+                    </ns3:Details>
+                  </ns3:Penalty>
+                </ns3:FareRules>
+                <ns3:PriceClassRef>PCR_1</ns3:PriceClassRef>
+                <ns3:SegmentRefs>FS1</ns3:SegmentRefs>
+              </ns3:FareComponent>
+            </ns3:FareDetail>
+            <ns3:Price>
+              <ns3:TotalAmount CurCode="GBP">111838</ns3:TotalAmount>
+              <ns3:BaseAmount CurCode="GBP">86200</ns3:BaseAmount>
+              <ns3:TaxSummary>
+                <ns3:TotalTaxAmount CurCode="GBP">25638</ns3:TotalTaxAmount>
+                <ns3:Tax>
+                  <ns3:Amount CurCode="GBP">160</ns3:Amount>
+                  <ns3:TaxCode>OA</ns3:TaxCode>
+                  <ns3:Country>
+                    <ns3:CountryCode>AG</ns3:CountryCode>
+                  </ns3:Country>
+                </ns3:Tax>
+                <ns3:Tax>
+                  <ns3:Amount CurCode="GBP">11500</ns3:Amount>
+                  <ns3:TaxCode>YQ</ns3:TaxCode>
+                  <ns3:Country>
+                    <ns3:CountryCode>AD</ns3:CountryCode>
+                  </ns3:Country>
+                </ns3:Tax>
+                <ns3:Tax>
+                  <ns3:Amount CurCode="GBP">8800</ns3:Amount>
+                  <ns3:TaxCode>GB</ns3:TaxCode>
+                  <ns3:Country>
+                    <ns3:CountryCode>AD</ns3:CountryCode>
+                  </ns3:Country>
+                </ns3:Tax>
+                <ns3:Tax>
+                  <ns3:Amount CurCode="GBP">2018</ns3:Amount>
+                  <ns3:TaxCode>UB</ns3:TaxCode>
+                  <ns3:Country>
+                    <ns3:CountryCode>AS</ns3:CountryCode>
+                  </ns3:Country>
+                </ns3:Tax>
+                <ns3:Tax>
+                  <ns3:Amount CurCode="GBP">1760</ns3:Amount>
+                  <ns3:TaxCode>US</ns3:TaxCode>
+                  <ns3:Country>
+                    <ns3:CountryCode>AS</ns3:CountryCode>
+                  </ns3:Country>
+                </ns3:Tax>
+                <ns3:Tax>
+                  <ns3:Amount CurCode="GBP">300</ns3:Amount>
+                  <ns3:TaxCode>XA</ns3:TaxCode>
+                  <ns3:Country>
+                    <ns3:CountryCode>CO</ns3:CountryCode>
+                  </ns3:Country>
+                </ns3:Tax>
+                <ns3:Tax>
+                  <ns3:Amount CurCode="GBP">550</ns3:Amount>
+                  <ns3:TaxCode>XY</ns3:TaxCode>
+                  <ns3:Country>
+                    <ns3:CountryCode>CR</ns3:CountryCode>
+                  </ns3:Country>
+                </ns3:Tax>
+                <ns3:Tax>
+                  <ns3:Amount CurCode="GBP">550</ns3:Amount>
+                  <ns3:TaxCode>YC</ns3:TaxCode>
+                  <ns3:Country>
+                    <ns3:CountryCode>AE</ns3:CountryCode>
+                  </ns3:Country>
+                </ns3:Tax>
+              </ns3:TaxSummary>
+            </ns3:Price>
+            <ns3:Service>
+              <ns3:ServiceID>Svc001</ns3:ServiceID>
+              <ns3:StatusCode>HK</ns3:StatusCode>
+              <ns3:PaxRefID>T2</ns3:PaxRefID>
+              <ns3:ServiceAssociations>
+                <ns3:PaxSegmentRefID>FS1</ns3:PaxSegmentRefID>
+              </ns3:ServiceAssociations>
+            </ns3:Service>
+            <ns3:Service>
+              <ns3:ServiceID>Svc001-BAG001</ns3:ServiceID>
+              <ns3:PaxRefID>T2</ns3:PaxRefID>
+              <ns3:ServiceAssociations>
+                <ns3:ServiceDefinitionRef>
+                  <ns3:ServiceDefinitionRefID>BAG-T2-FS1-FreeBag</ns3:ServiceDefinitionRefID>
+                  <ns3:PaxSegmentRefID>FS1</ns3:PaxSegmentRefID>
+                </ns3:ServiceDefinitionRef>
+              </ns3:ServiceAssociations>
+            </ns3:Service>
+          </ns3:OrderItem>
+          <ns3:TotalPrice>
+            <ns3:TotalAmount CurCode="GBP">111838</ns3:TotalAmount>
+          </ns3:TotalPrice>
+        </ns3:Order>
+        <ns3:Warning>
+          <ns3:Code>39795</ns3:Code>
+          <ns3:DescText>Additional fees may apply depending on your selected form of payment</ns3:DescText>
+        </ns3:Warning>
+        <ns3:Warning>
+          <ns3:Code>42174</ns3:Code>
+          <ns3:DescText>FOR CREDIT CARD PAYMENT ENTER CARD HOLDER NAME, ADDRESS AND EMAIL</ns3:DescText>
+        </ns3:Warning>
+      </ns3:Response>
+    </ns3:AMA_TravelOrderViewRS>
+  </soap:Body>
+</soap:Envelope>

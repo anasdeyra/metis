@@ -1,0 +1,734 @@
+<ns0:AMA_TravelOrderViewRS xmlns:ns0="http://xml.amadeus.com/2010/06/Travel_OrderViewRS_v1">
+  <ns0:Response>
+    <ns0:DataLists>
+      <ns0:ContactInfoList>
+        <ns0:ContactInfo>
+          <ns0:ContactInfoID>con-1</ns0:ContactInfoID>
+          <ns0:Phone>
+            <ns0:LabelText>Home</ns0:LabelText>
+            <ns0:PhoneNumber>33650254588</ns0:PhoneNumber>
+          </ns0:Phone>
+          <ns0:EmailAddress>
+            <ns0:EmailAddressText>JEAN.DUPONT@EMAIL.COM</ns0:EmailAddressText>
+          </ns0:EmailAddress>
+          <ns0:PostalAddress>
+            <ns0:StreetText>21 rue D</ns0:StreetText>
+            <ns0:PostalCode>06001</ns0:PostalCode>
+            <ns0:CityName>DESTA</ns0:CityName>
+            <ns0:CountryCode>FR</ns0:CountryCode>
+          </ns0:PostalAddress>
+        </ns0:ContactInfo>
+        <ns0:ContactInfo>
+          <ns0:ContactInfoID>con-2</ns0:ContactInfoID>
+          <ns0:Phone>
+            <ns0:LabelText>Home</ns0:LabelText>
+            <ns0:PhoneNumber>33650254588</ns0:PhoneNumber>
+          </ns0:Phone>
+          <ns0:EmailAddress>
+            <ns0:EmailAddressText>JEAN.DUPONT@EMAIL.COM</ns0:EmailAddressText>
+          </ns0:EmailAddress>
+          <ns0:PostalAddress>
+            <ns0:StreetText>22 rue D</ns0:StreetText>
+            <ns0:PostalCode>06001</ns0:PostalCode>
+            <ns0:CityName>DESTA</ns0:CityName>
+            <ns0:CountryCode>FR</ns0:CountryCode>
+          </ns0:PostalAddress>
+        </ns0:ContactInfo>
+        <ns0:ContactInfo>
+          <ns0:ContactInfoID>con-3</ns0:ContactInfoID>
+          <ns0:Phone>
+            <ns0:LabelText>Home</ns0:LabelText>
+            <ns0:PhoneNumber>33650254588</ns0:PhoneNumber>
+          </ns0:Phone>
+          <ns0:EmailAddress>
+            <ns0:EmailAddressText>JEAN.DUPONT@EMAIL.COM</ns0:EmailAddressText>
+          </ns0:EmailAddress>
+          <ns0:PostalAddress>
+            <ns0:StreetText>23 rue D</ns0:StreetText>
+            <ns0:PostalCode>06001</ns0:PostalCode>
+            <ns0:CityName>DESTA</ns0:CityName>
+            <ns0:CountryCode>FR</ns0:CountryCode>
+          </ns0:PostalAddress>
+        </ns0:ContactInfo>
+      </ns0:ContactInfoList>
+      <ns0:OriginDestList>
+        <ns0:OriginDest>
+          <ns0:OriginDestID>OD1</ns0:OriginDestID>
+          <ns0:OriginCode>BCN</ns0:OriginCode>
+          <ns0:DestCode>LGW</ns0:DestCode>
+          <ns0:PaxJourneyRefID>fl01552383722</ns0:PaxJourneyRefID>
+        </ns0:OriginDest>
+        <ns0:OriginDest>
+          <ns0:OriginDestID>OD2</ns0:OriginDestID>
+          <ns0:OriginCode>LGW</ns0:OriginCode>
+          <ns0:DestCode>BCN</ns0:DestCode>
+          <ns0:PaxJourneyRefID>fl01865446506</ns0:PaxJourneyRefID>
+        </ns0:OriginDest>
+      </ns0:OriginDestList>
+      <ns0:PaxJourneyList>
+        <ns0:PaxJourney>
+          <ns0:PaxJourneyID>fl01552383722</ns0:PaxJourneyID>
+          <ns0:PaxSegmentRefID>seg01552383722</ns0:PaxSegmentRefID>
+          <ns0:Duration>PT2H30M</ns0:Duration>
+        </ns0:PaxJourney>
+        <ns0:PaxJourney>
+          <ns0:PaxJourneyID>fl01865446506</ns0:PaxJourneyID>
+          <ns0:PaxSegmentRefID>seg01865446506</ns0:PaxSegmentRefID>
+          <ns0:Duration>PT2H10M</ns0:Duration>
+        </ns0:PaxJourney>
+      </ns0:PaxJourneyList>
+      <ns0:PaxList>
+        <ns0:Pax>
+          <ns0:PaxID>A173349997</ns0:PaxID>
+          <ns0:PTC>ADT</ns0:PTC>
+          <ns0:ResidenceCountryCode>FR</ns0:ResidenceCountryCode>
+          <ns0:CitizenshipCountryCode>FR</ns0:CitizenshipCountryCode>
+          <ns0:ContactInfoRefID>con-1</ns0:ContactInfoRefID>
+          <ns0:IdentityDoc>
+            <ns0:IdentityDocID>12AI72213</ns0:IdentityDocID>
+            <ns0:IdentityDocTypeCode>PT</ns0:IdentityDocTypeCode>
+            <ns0:IssuingCountryCode>FR</ns0:IssuingCountryCode>
+            <ns0:ExpiryDate>2031-01-01</ns0:ExpiryDate>
+            <ns0:TitleName>MR</ns0:TitleName>
+            <ns0:GivenName>JEAN</ns0:GivenName>
+            <ns0:Surname>DUPONT</ns0:Surname>
+            <ns0:Birthdate>1980-01-01</ns0:Birthdate>
+            <ns0:GenderCode>M</ns0:GenderCode>
+          </ns0:IdentityDoc>
+          <ns0:Individual>
+            <ns0:IndividualID>A173349997</ns0:IndividualID>
+            <ns0:Birthdate>1980-01-01</ns0:Birthdate>
+            <ns0:GenderCode>M</ns0:GenderCode>
+            <ns0:TitleName>MR</ns0:TitleName>
+            <ns0:GivenName>JEAN</ns0:GivenName>
+            <ns0:Surname>DUPONT</ns0:Surname>
+          </ns0:Individual>
+        </ns0:Pax>
+        <ns0:Pax>
+          <ns0:PaxID>A173349998</ns0:PaxID>
+          <ns0:PTC>ADT</ns0:PTC>
+          <ns0:ResidenceCountryCode>FR</ns0:ResidenceCountryCode>
+          <ns0:CitizenshipCountryCode>FR</ns0:CitizenshipCountryCode>
+          <ns0:ContactInfoRefID>con-2</ns0:ContactInfoRefID>
+          <ns0:IdentityDoc>
+            <ns0:IdentityDocID>12AI722132</ns0:IdentityDocID>
+            <ns0:IdentityDocTypeCode>PT</ns0:IdentityDocTypeCode>
+            <ns0:IssuingCountryCode>FR</ns0:IssuingCountryCode>
+            <ns0:ExpiryDate>2031-01-01</ns0:ExpiryDate>
+            <ns0:TitleName>MRS</ns0:TitleName>
+            <ns0:GivenName>JEANNE</ns0:GivenName>
+            <ns0:Surname>DUPONT</ns0:Surname>
+            <ns0:Birthdate>1980-01-02</ns0:Birthdate>
+            <ns0:GenderCode>F</ns0:GenderCode>
+          </ns0:IdentityDoc>
+          <ns0:Individual>
+            <ns0:IndividualID>A173349998</ns0:IndividualID>
+            <ns0:Birthdate>1980-01-02</ns0:Birthdate>
+            <ns0:GenderCode>F</ns0:GenderCode>
+            <ns0:TitleName>MRS</ns0:TitleName>
+            <ns0:GivenName>JEANNE</ns0:GivenName>
+            <ns0:Surname>DUPONT</ns0:Surname>
+          </ns0:Individual>
+        </ns0:Pax>
+        <ns0:Pax>
+          <ns0:PaxID>C173349999</ns0:PaxID>
+          <ns0:PTC>CHD</ns0:PTC>
+          <ns0:ResidenceCountryCode>FR</ns0:ResidenceCountryCode>
+          <ns0:CitizenshipCountryCode>FR</ns0:CitizenshipCountryCode>
+          <ns0:ContactInfoRefID>con-3</ns0:ContactInfoRefID>
+          <ns0:IdentityDoc>
+            <ns0:IdentityDocID>12AI722133</ns0:IdentityDocID>
+            <ns0:IdentityDocTypeCode>PT</ns0:IdentityDocTypeCode>
+            <ns0:IssuingCountryCode>FR</ns0:IssuingCountryCode>
+            <ns0:ExpiryDate>2031-01-01</ns0:ExpiryDate>
+            <ns0:GivenName>BOB</ns0:GivenName>
+            <ns0:Surname>DUPONT</ns0:Surname>
+            <ns0:Birthdate>2016-01-01</ns0:Birthdate>
+            <ns0:GenderCode>M</ns0:GenderCode>
+          </ns0:IdentityDoc>
+          <ns0:Individual>
+            <ns0:IndividualID>C173349999</ns0:IndividualID>
+            <ns0:Birthdate>2016-01-01</ns0:Birthdate>
+            <ns0:GenderCode>M</ns0:GenderCode>
+            <ns0:GivenName>BOB</ns0:GivenName>
+            <ns0:Surname>DUPONT</ns0:Surname>
+          </ns0:Individual>
+        </ns0:Pax>
+      </ns0:PaxList>
+      <ns0:PaxSegmentList>
+        <ns0:PaxSegment>
+          <ns0:PaxSegmentID>seg01552383722</ns0:PaxSegmentID>
+          <ns0:Duration>PT2H30M</ns0:Duration>
+          <ns0:Dep>
+            <ns0:IATA_LocationCode>BCN</ns0:IATA_LocationCode>
+            <ns0:AircraftScheduledDateTime>2024-05-19T07:00:00</ns0:AircraftScheduledDateTime>
+          </ns0:Dep>
+          <ns0:Arrival>
+            <ns0:IATA_LocationCode>LGW</ns0:IATA_LocationCode>
+            <ns0:AircraftScheduledDateTime>2024-05-19T08:30:00</ns0:AircraftScheduledDateTime>
+          </ns0:Arrival>
+          <ns0:MarketingCarrierInfo>
+            <ns0:CarrierDesigCode>VY</ns0:CarrierDesigCode>
+            <ns0:MarketingCarrierFlightNumberText>7830</ns0:MarketingCarrierFlightNumberText>
+          </ns0:MarketingCarrierInfo>
+          <ns0:OperatingCarrierInfo>
+            <ns0:CarrierDesigCode>VY</ns0:CarrierDesigCode>
+            <ns0:OperatingCarrierFlightNumberText>7830</ns0:OperatingCarrierFlightNumberText>
+          </ns0:OperatingCarrierInfo>
+          <ns0:DatedOperatingLeg>
+            <ns0:DatedOperatingLegID>seg01552383722-leg0</ns0:DatedOperatingLegID>
+            <ns0:Dep>
+              <ns0:IATA_LocationCode>BCN</ns0:IATA_LocationCode>
+              <ns0:AircraftScheduledDateTime>2024-05-19T07:00:00</ns0:AircraftScheduledDateTime>
+            </ns0:Dep>
+            <ns0:Arrival>
+              <ns0:IATA_LocationCode>LGW</ns0:IATA_LocationCode>
+              <ns0:AircraftScheduledDateTime>2024-05-19T08:30:00</ns0:AircraftScheduledDateTime>
+            </ns0:Arrival>
+          </ns0:DatedOperatingLeg>
+        </ns0:PaxSegment>
+        <ns0:PaxSegment>
+          <ns0:PaxSegmentID>seg01865446506</ns0:PaxSegmentID>
+          <ns0:Duration>PT2H10M</ns0:Duration>
+          <ns0:Dep>
+            <ns0:IATA_LocationCode>LGW</ns0:IATA_LocationCode>
+            <ns0:AircraftScheduledDateTime>2024-05-25T20:00:00</ns0:AircraftScheduledDateTime>
+          </ns0:Dep>
+          <ns0:Arrival>
+            <ns0:IATA_LocationCode>BCN</ns0:IATA_LocationCode>
+            <ns0:AircraftScheduledDateTime>2024-05-25T23:10:00</ns0:AircraftScheduledDateTime>
+          </ns0:Arrival>
+          <ns0:MarketingCarrierInfo>
+            <ns0:CarrierDesigCode>VY</ns0:CarrierDesigCode>
+            <ns0:MarketingCarrierFlightNumberText>7825</ns0:MarketingCarrierFlightNumberText>
+          </ns0:MarketingCarrierInfo>
+          <ns0:OperatingCarrierInfo>
+            <ns0:CarrierDesigCode>VY</ns0:CarrierDesigCode>
+            <ns0:OperatingCarrierFlightNumberText>7825</ns0:OperatingCarrierFlightNumberText>
+          </ns0:OperatingCarrierInfo>
+          <ns0:DatedOperatingLeg>
+            <ns0:DatedOperatingLegID>seg01865446506-leg0</ns0:DatedOperatingLegID>
+            <ns0:Dep>
+              <ns0:IATA_LocationCode>LGW</ns0:IATA_LocationCode>
+              <ns0:AircraftScheduledDateTime>2024-05-25T20:00:00</ns0:AircraftScheduledDateTime>
+            </ns0:Dep>
+            <ns0:Arrival>
+              <ns0:IATA_LocationCode>BCN</ns0:IATA_LocationCode>
+              <ns0:AircraftScheduledDateTime>2024-05-25T23:10:00</ns0:AircraftScheduledDateTime>
+            </ns0:Arrival>
+          </ns0:DatedOperatingLeg>
+        </ns0:PaxSegment>
+      </ns0:PaxSegmentList>
+      <ns0:PriceClassList>
+        <ns0:PriceClass>
+          <ns0:PriceClassID>pc01358566553</ns0:PriceClassID>
+          <ns0:Code>BA</ns0:Code>
+          <ns0:Name>Basic</ns0:Name>
+          <ns0:FareBasisCode>OQI3NDC1</ns0:FareBasisCode>
+        </ns0:PriceClass>
+        <ns0:PriceClass>
+          <ns0:PriceClassID>pc1252911195</ns0:PriceClassID>
+          <ns0:Code>BA</ns0:Code>
+          <ns0:Name>Basic</ns0:Name>
+          <ns0:FareBasisCode>LQI3NDC1</ns0:FareBasisCode>
+        </ns0:PriceClass>
+      </ns0:PriceClassList>
+    </ns0:DataLists>
+    <ns0:Metadata>
+      <ns0:Other>
+        <ns0:OtherMetadata>
+          <ns0:CurrencyMetadatas>
+            <ns0:CurrencyMetadata MetadataKey="EUR">
+              <ns0:Decimals>2</ns0:Decimals>
+            </ns0:CurrencyMetadata>
+          </ns0:CurrencyMetadatas>
+        </ns0:OtherMetadata>
+      </ns0:Other>
+    </ns0:Metadata>
+    <ns0:Order>
+      <ns0:OrderID>WGWMJA</ns0:OrderID>
+      <ns0:OwnerCode>VY</ns0:OwnerCode>
+      <ns0:StatusCode>OPENED</ns0:StatusCode>
+      <ns0:PaymentTimeLimitDateTime>2024-01-10T15:20:18Z</ns0:PaymentTimeLimitDateTime>
+      <ns0:BookingRef>
+        <ns0:BookingID>WGWMJA</ns0:BookingID>
+        <ns0:BookingEntity>
+          <ns0:Carrier>
+            <ns0:AirlineDesigCode>VY</ns0:AirlineDesigCode>
+          </ns0:Carrier>
+        </ns0:BookingEntity>
+      </ns0:BookingRef>
+      <ns0:BookingRef>
+        <ns0:BookingID>5EIHR6</ns0:BookingID>
+        <ns0:BookingEntity>
+          <ns0:Org OrgID="1A">
+            <ns0:Name>Amadeus</ns0:Name>
+          </ns0:Org>
+        </ns0:BookingEntity>
+      </ns0:BookingRef>
+      <ns0:OrderItem>
+        <ns0:OrderItemID>WGWMJA-BCNLGW-VY7830-ADT-FLIGHT_1APAX_A173349997</ns0:OrderItemID>
+        <ns0:OwnerCode>VY</ns0:OwnerCode>
+        <ns0:StatusCode>ACTIVE</ns0:StatusCode>
+        <ns0:PaymentTimeLimitDateTime>2024-01-10T15:20:18Z</ns0:PaymentTimeLimitDateTime>
+        <ns0:FareDetail>
+          <ns0:PassengerRefs>A173349997</ns0:PassengerRefs>
+          <ns0:Price>
+            <ns0:TotalAmount>
+              <ns0:DetailCurrencyPrice>
+                <ns0:Total Code="EUR">2984</ns0:Total>
+                <ns0:Fees>
+                  <ns0:Total Code="EUR">1606</ns0:Total>
+                  <ns0:Breakdown>
+                    <ns0:Fee>
+                      <ns0:Amount Code="EUR">1606</ns0:Amount>
+                      <ns0:Designator>JD</ns0:Designator>
+                      <ns0:Description>JD added</ns0:Description>
+                      <ns0:Nature>T02</ns0:Nature>
+                    </ns0:Fee>
+                  </ns0:Breakdown>
+                </ns0:Fees>
+              </ns0:DetailCurrencyPrice>
+            </ns0:TotalAmount>
+            <ns0:BaseAmount Code="EUR">2799</ns0:BaseAmount>
+            <ns0:Taxes>
+              <ns0:Total Code="EUR">185</ns0:Total>
+              <ns0:Breakdown>
+                <ns0:Tax>
+                  <ns0:Amount Code="EUR">185</ns0:Amount>
+                  <ns0:TaxCode>Q</ns0:TaxCode>
+                </ns0:Tax>
+              </ns0:Breakdown>
+            </ns0:Taxes>
+          </ns0:Price>
+          <ns0:FareComponent>
+            <ns0:FareBasis>
+              <ns0:FareBasisCode>
+                <ns0:Code>OQI3NDC1</ns0:Code>
+              </ns0:FareBasisCode>
+              <ns0:RBD>O</ns0:RBD>
+              <ns0:CabinType>
+                <ns0:CabinTypeCode>M</ns0:CabinTypeCode>
+                <ns0:CabinTypeName>Economy</ns0:CabinTypeName>
+              </ns0:CabinType>
+            </ns0:FareBasis>
+            <ns0:FareRules>
+              <ns0:Remarks>
+                <ns0:Remark>Non-Refundable / Changes Restricted</ns0:Remark>
+              </ns0:Remarks>
+            </ns0:FareRules>
+            <ns0:PriceClassRef>pc01358566553</ns0:PriceClassRef>
+            <ns0:SegmentRefs>seg01552383722</ns0:SegmentRefs>
+          </ns0:FareComponent>
+        </ns0:FareDetail>
+        <ns0:Price>
+          <ns0:TotalAmount CurCode="EUR">4590</ns0:TotalAmount>
+          <ns0:BaseAmount CurCode="EUR">2799</ns0:BaseAmount>
+          <ns0:TaxSummary>
+            <ns0:TotalTaxAmount>185</ns0:TotalTaxAmount>
+            <ns0:Tax>
+              <ns0:Amount CurCode="EUR">185</ns0:Amount>
+              <ns0:TaxCode>Q</ns0:TaxCode>
+            </ns0:Tax>
+          </ns0:TaxSummary>
+        </ns0:Price>
+        <ns0:Service>
+          <ns0:ServiceID>s-BCNLGW-VY7830-A173349997-FLT</ns0:ServiceID>
+          <ns0:StatusCode>HK</ns0:StatusCode>
+          <ns0:PaxRefID>A173349997</ns0:PaxRefID>
+          <ns0:ServiceAssociations>
+            <ns0:PaxSegmentRefID>seg01552383722</ns0:PaxSegmentRefID>
+          </ns0:ServiceAssociations>
+        </ns0:Service>
+      </ns0:OrderItem>
+      <ns0:OrderItem>
+        <ns0:OrderItemID>WGWMJA-BCNLGW-VY7830-ADT-FLIGHT_1APAX_A173349998</ns0:OrderItemID>
+        <ns0:OwnerCode>VY</ns0:OwnerCode>
+        <ns0:StatusCode>ACTIVE</ns0:StatusCode>
+        <ns0:PaymentTimeLimitDateTime>2024-01-10T15:20:18Z</ns0:PaymentTimeLimitDateTime>
+        <ns0:FareDetail>
+          <ns0:PassengerRefs>A173349998</ns0:PassengerRefs>
+          <ns0:Price>
+            <ns0:TotalAmount>
+              <ns0:DetailCurrencyPrice>
+                <ns0:Total Code="EUR">2984</ns0:Total>
+                <ns0:Fees>
+                  <ns0:Total Code="EUR">1606</ns0:Total>
+                  <ns0:Breakdown>
+                    <ns0:Fee>
+                      <ns0:Amount Code="EUR">1606</ns0:Amount>
+                      <ns0:Designator>JD</ns0:Designator>
+                      <ns0:Description>JD added</ns0:Description>
+                      <ns0:Nature>T02</ns0:Nature>
+                    </ns0:Fee>
+                  </ns0:Breakdown>
+                </ns0:Fees>
+              </ns0:DetailCurrencyPrice>
+            </ns0:TotalAmount>
+            <ns0:BaseAmount Code="EUR">2799</ns0:BaseAmount>
+            <ns0:Taxes>
+              <ns0:Total Code="EUR">185</ns0:Total>
+              <ns0:Breakdown>
+                <ns0:Tax>
+                  <ns0:Amount Code="EUR">185</ns0:Amount>
+                  <ns0:TaxCode>Q</ns0:TaxCode>
+                </ns0:Tax>
+              </ns0:Breakdown>
+            </ns0:Taxes>
+          </ns0:Price>
+          <ns0:FareComponent>
+            <ns0:FareBasis>
+              <ns0:FareBasisCode>
+                <ns0:Code>OQI3NDC1</ns0:Code>
+              </ns0:FareBasisCode>
+              <ns0:RBD>O</ns0:RBD>
+              <ns0:CabinType>
+                <ns0:CabinTypeCode>M</ns0:CabinTypeCode>
+                <ns0:CabinTypeName>Economy</ns0:CabinTypeName>
+              </ns0:CabinType>
+            </ns0:FareBasis>
+            <ns0:FareRules>
+              <ns0:Remarks>
+                <ns0:Remark>Non-Refundable / Changes Restricted</ns0:Remark>
+              </ns0:Remarks>
+            </ns0:FareRules>
+            <ns0:PriceClassRef>pc01358566553</ns0:PriceClassRef>
+            <ns0:SegmentRefs>seg01552383722</ns0:SegmentRefs>
+          </ns0:FareComponent>
+        </ns0:FareDetail>
+        <ns0:Price>
+          <ns0:TotalAmount CurCode="EUR">4590</ns0:TotalAmount>
+          <ns0:BaseAmount CurCode="EUR">2799</ns0:BaseAmount>
+          <ns0:TaxSummary>
+            <ns0:TotalTaxAmount>185</ns0:TotalTaxAmount>
+            <ns0:Tax>
+              <ns0:Amount CurCode="EUR">185</ns0:Amount>
+              <ns0:TaxCode>Q</ns0:TaxCode>
+            </ns0:Tax>
+          </ns0:TaxSummary>
+        </ns0:Price>
+        <ns0:Service>
+          <ns0:ServiceID>s-BCNLGW-VY7830-A173349998-FLT</ns0:ServiceID>
+          <ns0:StatusCode>HK</ns0:StatusCode>
+          <ns0:PaxRefID>A173349998</ns0:PaxRefID>
+          <ns0:ServiceAssociations>
+            <ns0:PaxSegmentRefID>seg01552383722</ns0:PaxSegmentRefID>
+          </ns0:ServiceAssociations>
+        </ns0:Service>
+      </ns0:OrderItem>
+      <ns0:OrderItem>
+        <ns0:OrderItemID>WGWMJA-BCNLGW-VY7830-CHD-FLIGHT_1APAX_C173349999</ns0:OrderItemID>
+        <ns0:OwnerCode>VY</ns0:OwnerCode>
+        <ns0:StatusCode>ACTIVE</ns0:StatusCode>
+        <ns0:PaymentTimeLimitDateTime>2024-01-10T15:20:18Z</ns0:PaymentTimeLimitDateTime>
+        <ns0:FareDetail>
+          <ns0:PassengerRefs>C173349999</ns0:PassengerRefs>
+          <ns0:Price>
+            <ns0:TotalAmount>
+              <ns0:DetailCurrencyPrice>
+                <ns0:Total Code="EUR">2984</ns0:Total>
+                <ns0:Fees>
+                  <ns0:Total Code="EUR">1606</ns0:Total>
+                  <ns0:Breakdown>
+                    <ns0:Fee>
+                      <ns0:Amount Code="EUR">1606</ns0:Amount>
+                      <ns0:Designator>JD</ns0:Designator>
+                      <ns0:Description>JD added</ns0:Description>
+                      <ns0:Nature>T02</ns0:Nature>
+                    </ns0:Fee>
+                  </ns0:Breakdown>
+                </ns0:Fees>
+              </ns0:DetailCurrencyPrice>
+            </ns0:TotalAmount>
+            <ns0:BaseAmount Code="EUR">2799</ns0:BaseAmount>
+            <ns0:Taxes>
+              <ns0:Total Code="EUR">185</ns0:Total>
+              <ns0:Breakdown>
+                <ns0:Tax>
+                  <ns0:Amount Code="EUR">185</ns0:Amount>
+                  <ns0:TaxCode>Q</ns0:TaxCode>
+                </ns0:Tax>
+              </ns0:Breakdown>
+            </ns0:Taxes>
+          </ns0:Price>
+          <ns0:FareComponent>
+            <ns0:FareBasis>
+              <ns0:FareBasisCode>
+                <ns0:Code>OQI3NDC1</ns0:Code>
+              </ns0:FareBasisCode>
+              <ns0:RBD>O</ns0:RBD>
+              <ns0:CabinType>
+                <ns0:CabinTypeCode>M</ns0:CabinTypeCode>
+                <ns0:CabinTypeName>Economy</ns0:CabinTypeName>
+              </ns0:CabinType>
+            </ns0:FareBasis>
+            <ns0:FareRules>
+              <ns0:Remarks>
+                <ns0:Remark>Non-Refundable / Changes Restricted</ns0:Remark>
+              </ns0:Remarks>
+            </ns0:FareRules>
+            <ns0:PriceClassRef>pc01358566553</ns0:PriceClassRef>
+            <ns0:SegmentRefs>seg01552383722</ns0:SegmentRefs>
+          </ns0:FareComponent>
+        </ns0:FareDetail>
+        <ns0:Price>
+          <ns0:TotalAmount CurCode="EUR">4590</ns0:TotalAmount>
+          <ns0:BaseAmount CurCode="EUR">2799</ns0:BaseAmount>
+          <ns0:TaxSummary>
+            <ns0:TotalTaxAmount>185</ns0:TotalTaxAmount>
+            <ns0:Tax>
+              <ns0:Amount CurCode="EUR">185</ns0:Amount>
+              <ns0:TaxCode>Q</ns0:TaxCode>
+            </ns0:Tax>
+          </ns0:TaxSummary>
+        </ns0:Price>
+        <ns0:Service>
+          <ns0:ServiceID>s-BCNLGW-VY7830-C173349999-FLT</ns0:ServiceID>
+          <ns0:StatusCode>HK</ns0:StatusCode>
+          <ns0:PaxRefID>C173349999</ns0:PaxRefID>
+          <ns0:ServiceAssociations>
+            <ns0:PaxSegmentRefID>seg01552383722</ns0:PaxSegmentRefID>
+          </ns0:ServiceAssociations>
+        </ns0:Service>
+      </ns0:OrderItem>
+      <ns0:OrderItem>
+        <ns0:OrderItemID>WGWMJA-LGWBCN-VY7825-ADT-FLIGHT_1APAX_A173349997</ns0:OrderItemID>
+        <ns0:OwnerCode>VY</ns0:OwnerCode>
+        <ns0:StatusCode>ACTIVE</ns0:StatusCode>
+        <ns0:PaymentTimeLimitDateTime>2024-01-10T15:20:18Z</ns0:PaymentTimeLimitDateTime>
+        <ns0:FareDetail>
+          <ns0:PassengerRefs>A173349997</ns0:PassengerRefs>
+          <ns0:Price>
+            <ns0:TotalAmount>
+              <ns0:DetailCurrencyPrice>
+                <ns0:Total Code="EUR">18484</ns0:Total>
+                <ns0:Fees>
+                  <ns0:Total Code="EUR">3444</ns0:Total>
+                  <ns0:Breakdown>
+                    <ns0:Fee>
+                      <ns0:Amount Code="EUR">3444</ns0:Amount>
+                      <ns0:Designator>JD</ns0:Designator>
+                      <ns0:Description>JD added</ns0:Description>
+                      <ns0:Nature>T02</ns0:Nature>
+                    </ns0:Fee>
+                  </ns0:Breakdown>
+                </ns0:Fees>
+              </ns0:DetailCurrencyPrice>
+            </ns0:TotalAmount>
+            <ns0:BaseAmount Code="EUR">18299</ns0:BaseAmount>
+            <ns0:Taxes>
+              <ns0:Total Code="EUR">185</ns0:Total>
+              <ns0:Breakdown>
+                <ns0:Tax>
+                  <ns0:Amount Code="EUR">185</ns0:Amount>
+                  <ns0:TaxCode>Q</ns0:TaxCode>
+                </ns0:Tax>
+              </ns0:Breakdown>
+            </ns0:Taxes>
+          </ns0:Price>
+          <ns0:FareComponent>
+            <ns0:FareBasis>
+              <ns0:FareBasisCode>
+                <ns0:Code>LQI3NDC1</ns0:Code>
+              </ns0:FareBasisCode>
+              <ns0:RBD>L</ns0:RBD>
+              <ns0:CabinType>
+                <ns0:CabinTypeCode>M</ns0:CabinTypeCode>
+                <ns0:CabinTypeName>Economy</ns0:CabinTypeName>
+              </ns0:CabinType>
+            </ns0:FareBasis>
+            <ns0:FareRules>
+              <ns0:Remarks>
+                <ns0:Remark>Non-Refundable / Changes Restricted</ns0:Remark>
+              </ns0:Remarks>
+            </ns0:FareRules>
+            <ns0:PriceClassRef>pc1252911195</ns0:PriceClassRef>
+            <ns0:SegmentRefs>seg01865446506</ns0:SegmentRefs>
+          </ns0:FareComponent>
+        </ns0:FareDetail>
+        <ns0:Price>
+          <ns0:TotalAmount CurCode="EUR">21928</ns0:TotalAmount>
+          <ns0:BaseAmount CurCode="EUR">18299</ns0:BaseAmount>
+          <ns0:TaxSummary>
+            <ns0:TotalTaxAmount>185</ns0:TotalTaxAmount>
+            <ns0:Tax>
+              <ns0:Amount CurCode="EUR">185</ns0:Amount>
+              <ns0:TaxCode>Q</ns0:TaxCode>
+            </ns0:Tax>
+          </ns0:TaxSummary>
+        </ns0:Price>
+        <ns0:Service>
+          <ns0:ServiceID>s-LGWBCN-VY7825-A173349997-FLT</ns0:ServiceID>
+          <ns0:StatusCode>HK</ns0:StatusCode>
+          <ns0:PaxRefID>A173349997</ns0:PaxRefID>
+          <ns0:ServiceAssociations>
+            <ns0:PaxSegmentRefID>seg01865446506</ns0:PaxSegmentRefID>
+          </ns0:ServiceAssociations>
+        </ns0:Service>
+      </ns0:OrderItem>
+      <ns0:OrderItem>
+        <ns0:OrderItemID>WGWMJA-LGWBCN-VY7825-ADT-FLIGHT_1APAX_A173349998</ns0:OrderItemID>
+        <ns0:OwnerCode>VY</ns0:OwnerCode>
+        <ns0:StatusCode>ACTIVE</ns0:StatusCode>
+        <ns0:PaymentTimeLimitDateTime>2024-01-10T15:20:18Z</ns0:PaymentTimeLimitDateTime>
+        <ns0:FareDetail>
+          <ns0:PassengerRefs>A173349998</ns0:PassengerRefs>
+          <ns0:Price>
+            <ns0:TotalAmount>
+              <ns0:DetailCurrencyPrice>
+                <ns0:Total Code="EUR">18484</ns0:Total>
+                <ns0:Fees>
+                  <ns0:Total Code="EUR">3444</ns0:Total>
+                  <ns0:Breakdown>
+                    <ns0:Fee>
+                      <ns0:Amount Code="EUR">3444</ns0:Amount>
+                      <ns0:Designator>JD</ns0:Designator>
+                      <ns0:Description>JD added</ns0:Description>
+                      <ns0:Nature>T02</ns0:Nature>
+                    </ns0:Fee>
+                  </ns0:Breakdown>
+                </ns0:Fees>
+              </ns0:DetailCurrencyPrice>
+            </ns0:TotalAmount>
+            <ns0:BaseAmount Code="EUR">18299</ns0:BaseAmount>
+            <ns0:Taxes>
+              <ns0:Total Code="EUR">185</ns0:Total>
+              <ns0:Breakdown>
+                <ns0:Tax>
+                  <ns0:Amount Code="EUR">185</ns0:Amount>
+                  <ns0:TaxCode>Q</ns0:TaxCode>
+                </ns0:Tax>
+              </ns0:Breakdown>
+            </ns0:Taxes>
+          </ns0:Price>
+          <ns0:FareComponent>
+            <ns0:FareBasis>
+              <ns0:FareBasisCode>
+                <ns0:Code>LQI3NDC1</ns0:Code>
+              </ns0:FareBasisCode>
+              <ns0:RBD>L</ns0:RBD>
+              <ns0:CabinType>
+                <ns0:CabinTypeCode>M</ns0:CabinTypeCode>
+                <ns0:CabinTypeName>Economy</ns0:CabinTypeName>
+              </ns0:CabinType>
+            </ns0:FareBasis>
+            <ns0:FareRules>
+              <ns0:Remarks>
+                <ns0:Remark>Non-Refundable / Changes Restricted</ns0:Remark>
+              </ns0:Remarks>
+            </ns0:FareRules>
+            <ns0:PriceClassRef>pc1252911195</ns0:PriceClassRef>
+            <ns0:SegmentRefs>seg01865446506</ns0:SegmentRefs>
+          </ns0:FareComponent>
+        </ns0:FareDetail>
+        <ns0:Price>
+          <ns0:TotalAmount CurCode="EUR">21928</ns0:TotalAmount>
+          <ns0:BaseAmount CurCode="EUR">18299</ns0:BaseAmount>
+          <ns0:TaxSummary>
+            <ns0:TotalTaxAmount>185</ns0:TotalTaxAmount>
+            <ns0:Tax>
+              <ns0:Amount CurCode="EUR">185</ns0:Amount>
+              <ns0:TaxCode>Q</ns0:TaxCode>
+            </ns0:Tax>
+          </ns0:TaxSummary>
+        </ns0:Price>
+        <ns0:Service>
+          <ns0:ServiceID>s-LGWBCN-VY7825-A173349998-FLT</ns0:ServiceID>
+          <ns0:StatusCode>HK</ns0:StatusCode>
+          <ns0:PaxRefID>A173349998</ns0:PaxRefID>
+          <ns0:ServiceAssociations>
+            <ns0:PaxSegmentRefID>seg01865446506</ns0:PaxSegmentRefID>
+          </ns0:ServiceAssociations>
+        </ns0:Service>
+      </ns0:OrderItem>
+      <ns0:OrderItem>
+        <ns0:OrderItemID>WGWMJA-LGWBCN-VY7825-CHD-FLIGHT_1APAX_C173349999</ns0:OrderItemID>
+        <ns0:OwnerCode>VY</ns0:OwnerCode>
+        <ns0:StatusCode>ACTIVE</ns0:StatusCode>
+        <ns0:PaymentTimeLimitDateTime>2024-01-10T15:20:18Z</ns0:PaymentTimeLimitDateTime>
+        <ns0:FareDetail>
+          <ns0:PassengerRefs>C173349999</ns0:PassengerRefs>
+          <ns0:Price>
+            <ns0:TotalAmount>
+              <ns0:DetailCurrencyPrice>
+                <ns0:Total Code="EUR">18484</ns0:Total>
+                <ns0:Fees>
+                  <ns0:Total Code="EUR">1637</ns0:Total>
+                  <ns0:Breakdown>
+                    <ns0:Fee>
+                      <ns0:Amount Code="EUR">3444</ns0:Amount>
+                      <ns0:Designator>JD</ns0:Designator>
+                      <ns0:Description>JD added</ns0:Description>
+                      <ns0:Nature>T02</ns0:Nature>
+                    </ns0:Fee>
+                    <ns0:Fee>
+                      <ns0:Amount Code="EUR">-1807</ns0:Amount>
+                      <ns0:Designator>JD</ns0:Designator>
+                      <ns0:Description>JD Discount</ns0:Description>
+                      <ns0:Nature>T02</ns0:Nature>
+                    </ns0:Fee>
+                  </ns0:Breakdown>
+                </ns0:Fees>
+              </ns0:DetailCurrencyPrice>
+            </ns0:TotalAmount>
+            <ns0:BaseAmount Code="EUR">18299</ns0:BaseAmount>
+            <ns0:Taxes>
+              <ns0:Total Code="EUR">185</ns0:Total>
+              <ns0:Breakdown>
+                <ns0:Tax>
+                  <ns0:Amount Code="EUR">185</ns0:Amount>
+                  <ns0:TaxCode>Q</ns0:TaxCode>
+                </ns0:Tax>
+              </ns0:Breakdown>
+            </ns0:Taxes>
+          </ns0:Price>
+          <ns0:FareComponent>
+            <ns0:FareBasis>
+              <ns0:FareBasisCode>
+                <ns0:Code>LQI3NDC1</ns0:Code>
+              </ns0:FareBasisCode>
+              <ns0:RBD>L</ns0:RBD>
+              <ns0:CabinType>
+                <ns0:CabinTypeCode>M</ns0:CabinTypeCode>
+                <ns0:CabinTypeName>Economy</ns0:CabinTypeName>
+              </ns0:CabinType>
+            </ns0:FareBasis>
+            <ns0:FareRules>
+              <ns0:Remarks>
+                <ns0:Remark>Non-Refundable / Changes Restricted</ns0:Remark>
+              </ns0:Remarks>
+            </ns0:FareRules>
+            <ns0:PriceClassRef>pc1252911195</ns0:PriceClassRef>
+            <ns0:SegmentRefs>seg01865446506</ns0:SegmentRefs>
+          </ns0:FareComponent>
+        </ns0:FareDetail>
+        <ns0:Price>
+          <ns0:TotalAmount CurCode="EUR">20121</ns0:TotalAmount>
+          <ns0:BaseAmount CurCode="EUR">18299</ns0:BaseAmount>
+          <ns0:TaxSummary>
+            <ns0:TotalTaxAmount>185</ns0:TotalTaxAmount>
+            <ns0:Tax>
+              <ns0:Amount CurCode="EUR">185</ns0:Amount>
+              <ns0:TaxCode>Q</ns0:TaxCode>
+            </ns0:Tax>
+          </ns0:TaxSummary>
+        </ns0:Price>
+        <ns0:Service>
+          <ns0:ServiceID>s-LGWBCN-VY7825-C173349999-FLT</ns0:ServiceID>
+          <ns0:StatusCode>HK</ns0:StatusCode>
+          <ns0:PaxRefID>C173349999</ns0:PaxRefID>
+          <ns0:ServiceAssociations>
+            <ns0:PaxSegmentRefID>seg01865446506</ns0:PaxSegmentRefID>
+          </ns0:ServiceAssociations>
+        </ns0:Service>
+      </ns0:OrderItem>
+      <ns0:TotalPrice>
+        <ns0:TotalAmount CurCode="EUR">77747</ns0:TotalAmount>
+      </ns0:TotalPrice>
+    </ns0:Order>
+    <ns0:Warning>
+      <ns0:Code>42375</ns0:Code>
+      <ns0:DescText>FOR CREDIT CARD PAYMENT ENTER CARD HOLDER NAME</ns0:DescText>
+    </ns0:Warning>
+  </ns0:Response>
+</ns0:AMA_TravelOrderViewRS>

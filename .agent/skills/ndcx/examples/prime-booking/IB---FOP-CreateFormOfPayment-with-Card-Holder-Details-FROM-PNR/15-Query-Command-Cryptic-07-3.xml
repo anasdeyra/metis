@@ -1,0 +1,32 @@
+<soap:Envelope xmlns:add="http://www.w3.org/2005/08/addressing" xmlns:link="http://wsdl.amadeus.com/2010/06/ws/Link_v1" xmlns:oas="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd" xmlns:oas1="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:sec="http://xml.amadeus.com/2010/06/Security_v1" xmlns:ses="http://xml.amadeus.com/2010/06/Session_v3" xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+  <soap:Header>
+    <ses:Session TransactionStatusCode="Start" />
+    <add:MessageID>7dfaf56f-1464-4e0d-9c73-15985b341b84</add:MessageID>
+    <add:Action>http://webservices.amadeus.com/HSFREQ_07_3_1A</add:Action>
+    <add:To>https://noded5.test.webservices.amadeus.com/WSAP</add:To>
+    <link:TransactionFlowLink />
+    <oas:Security>
+      <oas:UsernameToken oas1:Id="UsernameToken-1">
+        <oas:Username>YOUR_WS_USER</oas:Username>
+        <oas:Nonce EncodingType="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-soap-message-security-1.0#Base64Binary">REDACTED_NONCE</oas:Nonce>
+        <oas:Password Type="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-username-token-profile-1.0#PasswordDigest">REDACTED_DIGEST</oas:Password>
+        <oas1:Created>2024-08-26T14:15:29.244Z</oas1:Created>
+      </oas:UsernameToken>
+    </oas:Security>
+    <sec:AMA_SecurityHostedUser>
+      <sec:UserID AgentDutyCode="SU" POS_Type="1" PseudoCityCode="YOUR_OFFICE_ID" RequestorType="U" />
+    </sec:AMA_SecurityHostedUser>
+  </soap:Header>
+  <soap:Body>
+    <Command_Cryptic>
+      <messageAction>
+        <messageFunctionDetails>
+          <messageFunction>M</messageFunction>
+        </messageFunctionDetails>
+      </messageAction>
+      <longTextString>
+        <textStringDetails>RT5XJRDI</textStringDetails>
+      </longTextString>
+    </Command_Cryptic>
+  </soap:Body>
+</soap:Envelope>

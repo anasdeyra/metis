@@ -1,0 +1,124 @@
+--- TST RLR NDC ---                                               
+RP/OID/OID            FV/SU  30APR24/1352Z   6O7CZD   
+  1.SMITH/JANE(ADT/13AUG70)   2.SMITH/JOANNE(CNN/13AUG22)         
+  3.SMITH/JOHN(ADT/13AUG67)(INFSMITH/JIMMY/31DEC23)               
+  4  QF 012 Q 09JUN 7 LAXSYD HK3       B  2345 0810+2 NDC         
+  5  QF 011 Q 23JUN 7 SYDLAX HK3       1  1735 1420   NDC         
+  6 APA ALTEANDC_TEST@AMADEUS.COM                                 
+  7 APA 33 09723 0220                                             
+  8 APH 3054996000/P3                                             
+  9 TK OK30APR/OID                                          
+ 10 SSR CTCE QF HK1 JOHN.SMITH//MYMAIL.COM/P3                     
+ 11 SSR DOCS QF HK1 P/US/547896581//13AUG67/M/01NOV30/SMITH/JOHN  
+       /P3                                                        
+ 12 SSR DOCS QF HK1 P/US/547896592//31DEC23/M/01MAR28/SMITH/JIMM  
+       Y/P3                                                       
+ 13 SSR CTCE QF HK1 JANE.SMITH//MYMAIL.COM/P1                     
+ 14 SSR DOCS QF HK1 P/US/547896603//13AUG70/F/01NOV32/SMITH/JANE  
+       /P1                                                        
+ 15 SSR DOCS QF HK1 P/US/547896614//13AUG22/F/01NOV32/SMITH/JOAN  
+       NE/P2                                                      
+ 16 RM NOTIFY PASSENGER PRIOR TO TICKET PURCHASE & CHECK-IN:      
+       FEDERAL LAWS FORBID THE CARRIAGE OF HAZARDOUS MATERIALS -  
+	   GGAMAUSHAZ/S4-5                                     
+17 FA PAX 081-5750903741/ETQF/30APR24/OID/00022665  
+      /S4-5/P3                                            
+18 FA INF 081-5750903742/ETQF/30APR24/OID/00022665  
+      /S4-5/P3                                            
+19 FA PAX 081-5750903743/ETQF/30APR24/OID/00022665  
+      /S4-5/P1                                            
+20 FA PAX 081-5750903744/ETQF/30APR24/OID/00022665  
+      /S4-5/P2                                            
+21 MEP TYP-CARD/VCD-VI/NUM-XXXXXXXXXXXX0008/EXP-0139      
+22 FP PAX CCVIXXXXXXXXXXXX0008D0139/S4-5/P1               
+23 FP PAX CCVIXXXXXXXXXXXX0008D0139/S4-5/P2               
+24 FP PAX CCVIXXXXXXXXXXXX0008D0139/S4-5/P3               
+25 FP INF CCVIXXXXXXXXXXXX0008D0139/S4-5/P3               
+
+
+
+<!--TST -->
+
+T     P/S  NAME                   TOTAL            FOP                 SEGMENTS
+1    .1   SMITH/JANE              EUR      1705.96 CCVIXXXXXXXXXXXX0008D0+4-5  
+2    .2   SMITH/JOANNE            EUR      1669.29 CCVIXXXXXXXXXXXX0008D0+4-5  
+3    .3   SMITH/JOHN              EUR      1705.96 CCVIXXXXXXXXXXXX0008D0+4-5  
+4    .3 I SMITH/JIMMY(INF)        EUR       217.44 CCVIXXXXXXXXXXXX0008D0+4-5  
+                                                                               
+																			   
+	TST00001     OID SQ/30APR     LD 30APR24 1746  OD                       
+T-                                                                            
+   1.SMITH/JANE(ADT/13AUG70)                                                  
+ 1   LAX QF  012 Q 09JUN 2345  OK QLX8S                      1PC              
+ 2   SYD QF  011 Q 23JUN 1735  OK QLX8S                      1PC              
+     LAX                                                                      
+FARE  F USD    1636.00                                                        
+EQUIV   EUR    1530.00                                                        
+TX001 X EUR    11.00-YR   TX002 X EUR    11.00-YR   TX003 X EUR    36.67-AUAU 
+TX004 X EUR    24.82-WYAU TX005 X EUR    24.82-WYAU TX006 X EUR     5.24-AYUS 
+TX007 X EUR    20.77-USUS TX008 X EUR    20.77-USUS TX009 X EUR     3.59-XAUS 
+TX010 X EUR     4.21-XFUS TX011 X EUR     6.55-XYUS TX012 X EUR     6.52-YCUS 
+TOTAL   EUR    1705.96    BSR 0.93518445                                      
+GRAND TOTAL EUR    1705.96                                                    
+                                                                              
+ 22.FP CCVIXXXXXXXXXXXX0008D0139                                              
+
+
+
+
+TST00002     OID SQ/30APR     LD 30APR24 1746  OD                       
+T-                                                                            
+   2.SMITH/JOANNE(CNN/13AUG22)                                                
+ 1   LAX QF  012 Q 09JUN 2345  OK QLX8SCH                    1PC              
+ 2   SYD QF  011 Q 23JUN 1735  OK QLX8SCH                    1PC              
+     LAX                                                                      
+FARE  F USD    1636.00                                                        
+EQUIV   EUR    1530.00                                                        
+TX001 X EUR    11.00-YR   TX002 X EUR    11.00-YR   TX003 X EUR    24.82-WYAU 
+TX004 X EUR    24.82-WYAU TX005 X EUR     5.24-AYUS TX006 X EUR    20.77-USUS 
+TX007 X EUR    20.77-USUS TX008 X EUR     3.59-XAUS TX009 X EUR     4.21-XFUS 
+TX010 X EUR     6.55-XYUS TX011 X EUR     6.52-YCUS                           
+TOTAL   EUR    1669.29    BSR 0.93518445                                      
+GRAND TOTAL EUR    1669.29                                                    
+                                                                              
+ 23.FP CCVIXXXXXXXXXXXX0008D0139                                              
+
+
+
+TST00003     OID SQ/30APR     LD 30APR24 1746  OD                      
+T-                                                                           
+   3.SMITH/JOHN(ADT/13AUG67)                                                 
+ 1   LAX QF  012 Q 09JUN 2345  OK QLX8S                      1PC             
+ 2   SYD QF  011 Q 23JUN 1735  OK QLX8S                      1PC             
+     LAX                                                                     
+FARE  F USD    1636.00                                                       
+EQUIV   EUR    1530.00                                                       
+TX001 X EUR    11.00-YR   TX002 X EUR    11.00-YR   TX003 X EUR    36.67-AUAU
+TX004 X EUR    24.82-WYAU TX005 X EUR    24.82-WYAU TX006 X EUR     5.24-AYUS
+TX007 X EUR    20.77-USUS TX008 X EUR    20.77-USUS TX009 X EUR     3.59-XAUS
+TX010 X EUR     4.21-XFUS TX011 X EUR     6.55-XYUS TX012 X EUR     6.52-YCUS
+TOTAL   EUR    1705.96    BSR 0.93518445                                     
+GRAND TOTAL EUR    1705.96                                                   
+                                                                             
+ 24.FP CCVIXXXXXXXXXXXX0008D0139        
+
+
+
+
+TST00004     OID SQ/30APR     LD 30APR24 1746  OD                      
+T-                                                                           
+   3.SMITH/JIMMY(INF)                                                        
+ 1   LAX QF  012 Q 09JUN 2345  NS QLX8SIN                    1PC             
+ 2   SYD QF  011 Q 23JUN 1735  NS QLX8SIN                    1PC             
+     LAX                                                                     
+FARE  F USD     164.00                                                       
+EQUIV   EUR     154.00                                                       
+TX001 X EUR     5.24-AYUS TX002 X EUR    20.77-USUS TX003 X EUR    20.77-USUS
+TX004 X EUR     3.59-XAUS TX005 X EUR     6.55-XYUS TX006 X EUR     6.52-YCUS
+TOTAL   EUR     217.44    BSR 0.93518445                                     
+GRAND TOTAL EUR     217.44                                                   
+                                                                             
+ 25.FP CCVIXXXXXXXXXXXX0008D0139                                             
+
+
+ 

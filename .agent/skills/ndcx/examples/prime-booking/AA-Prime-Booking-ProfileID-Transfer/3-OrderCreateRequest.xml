@@ -1,0 +1,70 @@
+<soap:Envelope xmlns:ns4="http://xml.amadeus.com/2010/06/Security_v1" xmlns:ns5="http://xml.amadeus.com/2010/06/Travel_OrderCreateRQ_v1" xmlns:oas="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd" xmlns:oas1="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns:wsa="http://www.w3.org/2005/08/addressing">
+  <soap:Header>
+    <wsa:MessageID>61a63999-e9fc-48ba-9a70-56710abef8b3</wsa:MessageID>
+    <wsa:Action>http://webservices.amadeus.com/Travel_OrderCreate_1.5</wsa:Action>
+    <wsa:To>https://nodeD1.test.webservices.amadeus.com/WSAP</wsa:To>
+    <oas:Security>
+      <oas:UsernameToken oas1:Id="UsernameToken-1">
+        <oas:Username>YOUR_WS_USER</oas:Username>
+        <oas:Nonce EncodingType="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-soap-message-security-1.0#Base64Binary">REDACTED_NONCE</oas:Nonce>
+        <oas:Password Type="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-username-token-profile-1.0#PasswordDigest">REDACTED_DIGEST</oas:Password>
+        <oas1:Created>2023-05-25T10:55:11.252Z</oas1:Created>
+      </oas:UsernameToken>
+    </oas:Security>
+    <ns4:AMA_SecurityHostedUser>
+      <ns4:UserID AgentDutyCode="SU" POS_Type="1" PseudoCityCode="YOUR_OFFICE_ID" RequestorType="U" />
+    </ns4:AMA_SecurityHostedUser>
+  </soap:Header>
+  <soap:Body>
+    <ns5:AMA_TravelOrderCreateRQ>
+      <ns5:Party>
+        <ns5:Sender>
+          <ns5:TravelAgency>
+            <ns5:AgencyID>unused</ns5:AgencyID>
+            <ns5:PseudoCityID>unused</ns5:PseudoCityID>
+          </ns5:TravelAgency>
+        </ns5:Sender>
+      </ns5:Party>
+      <ns5:Request>
+        <ns5:CreateOrder>
+          <ns5:SelectedOffer>
+            <ns5:OfferID>ERJksWmlxcSHOUPQeBKVEdxC_1A_16ac5312-6359-45e3-8fbd-4488d39716d5_1A_PoP8226015-1A16-4E76-8F35-1</ns5:OfferID>
+            <ns5:OwnerCode>AA</ns5:OwnerCode>
+            <ns5:ShoppingResponseRefID>P8226015-1A16-4E76-8F35</ns5:ShoppingResponseRefID>
+            <ns5:SelectedOfferItem>
+              <ns5:OfferItemID>PoIP8226015-1A16-4E76-8F35-1-1</ns5:OfferItemID>
+              <ns5:PaxRefID>T1</ns5:PaxRefID>
+            </ns5:SelectedOfferItem>
+          </ns5:SelectedOffer>
+        </ns5:CreateOrder>
+        <ns5:DataLists>
+          <ns5:PaxList>
+            <ns5:Pax>
+              <ns5:PaxID>T1</ns5:PaxID>
+              <ns5:PTC>ADT</ns5:PTC>
+              <ns5:Birthdate>2001-01-01</ns5:Birthdate>
+              <ns5:ProfileID_Text>SY2377</ns5:ProfileID_Text>
+              <ns5:ContactInfo>
+                <ns5:EmailAddress>
+                  <ns5:LabelText>HOME</ns5:LabelText>
+                  <ns5:EmailAddressText>MYEMAIL@AMADEUS.COM</ns5:EmailAddressText>
+                </ns5:EmailAddress>
+              </ns5:ContactInfo>
+              <ns5:IdentityDoc>
+                <ns5:IdentityDocID>85478547</ns5:IdentityDocID>
+                <ns5:IdentityDocTypeCode>P</ns5:IdentityDocTypeCode>
+                <ns5:IssuingCountryCode>US</ns5:IssuingCountryCode>
+                <ns5:ExpiryDate>2028-02-02</ns5:ExpiryDate>
+              </ns5:IdentityDoc>
+              <ns5:Individual>
+                <ns5:GenderCode>M</ns5:GenderCode>
+                <ns5:GivenName>MIKE</ns5:GivenName>
+                <ns5:Surname>SMITH</ns5:Surname>
+              </ns5:Individual>
+            </ns5:Pax>
+          </ns5:PaxList>
+        </ns5:DataLists>
+      </ns5:Request>
+    </ns5:AMA_TravelOrderCreateRQ>
+  </soap:Body>
+</soap:Envelope>

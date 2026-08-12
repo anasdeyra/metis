@@ -1,0 +1,549 @@
+<soap:Envelope xmlns:awsse="http://xml.amadeus.com/2010/06/Session_v3" xmlns:ns3="http://xml.amadeus.com/2010/06/Travel_OfferPriceRS_v1" xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns:wsa="http://www.w3.org/2005/08/addressing">
+  <soap:Header>
+    <wsa:To>http://www.w3.org/2005/08/addressing/anonymous</wsa:To>
+    <wsa:From>
+      <wsa:Address>https://nodeD1.test.webservices.amadeus.com/WSAP</wsa:Address>
+    </wsa:From>
+    <wsa:Action>http://webservices.amadeus.com/Travel_OfferPrice_1.2</wsa:Action>
+    <wsa:MessageID>urn:uuid:ad115195-4499-a9b4-711d-855f7e0dd1fd</wsa:MessageID>
+    <wsa:RelatesTo RelationshipType="http://www.w3.org/2005/08/addressing/reply">fe9735b3-1800-439a-aaa8-0c65412ebf61</wsa:RelatesTo>
+    <awsse:Session TransactionStatusCode="End">
+      <awsse:SessionId>01KL63S8TS</awsse:SessionId>
+      <awsse:SequenceNumber>1</awsse:SequenceNumber>
+      <awsse:SecurityToken>REDACTED_TOKEN</awsse:SecurityToken>
+    </awsse:Session>
+  </soap:Header>
+  <soap:Body>
+    <ns3:AMA_TravelOfferPriceRS>
+      <ns3:Response>
+        <ns3:DataLists>
+          <ns3:BaggageAllowanceList>
+            <ns3:BaggageAllowance>
+              <ns3:BaggageAllowanceID>PcoIDTUP11QBD3PLSENR5H1LITWIMXC5DLOQRGVVSWRDQJXL2TAA4JUK</ns3:BaggageAllowanceID>
+              <ns3:TypeCode>CarryOnBag</ns3:TypeCode>
+              <ns3:ApplicablePartyText>Traveler</ns3:ApplicablePartyText>
+              <ns3:DescText>CARRY ON ALLOWANCE</ns3:DescText>
+              <ns3:PieceAllowance>
+                <ns3:ApplicablePartyText>Traveler</ns3:ApplicablePartyText>
+                <ns3:TotalQty>1</ns3:TotalQty>
+                <ns3:PieceDimensionAllowance>
+                  <ns3:Qty>1</ns3:Qty>
+                </ns3:PieceDimensionAllowance>
+                <ns3:PieceDimensionAllowance>
+                  <ns3:MaxMeasure UnitCode="Centimeter">115</ns3:MaxMeasure>
+                </ns3:PieceDimensionAllowance>
+                <ns3:PieceDimensionAllowance>
+                  <ns3:MaxMeasure UnitCode="Inch">45</ns3:MaxMeasure>
+                </ns3:PieceDimensionAllowance>
+              </ns3:PieceAllowance>
+            </ns3:BaggageAllowance>
+            <ns3:BaggageAllowance>
+              <ns3:BaggageAllowanceID>PbaIDGLY3SLMB32CEJRXVSPS03WDSJEMNRKKSZV2LJKEU3FLZIESYN2DH</ns3:BaggageAllowanceID>
+              <ns3:TypeCode>CheckedBag</ns3:TypeCode>
+              <ns3:ApplicablePartyText>Traveler</ns3:ApplicablePartyText>
+              <ns3:DescText>CHECKED ALLOWANCE</ns3:DescText>
+              <ns3:PieceAllowance>
+                <ns3:ApplicablePartyText>Traveler</ns3:ApplicablePartyText>
+                <ns3:TotalQty>0</ns3:TotalQty>
+                <ns3:PieceDimensionAllowance>
+                  <ns3:Qty>0</ns3:Qty>
+                </ns3:PieceDimensionAllowance>
+                <ns3:PieceDimensionAllowance>
+                  <ns3:MaxMeasure UnitCode="Inch">62</ns3:MaxMeasure>
+                </ns3:PieceDimensionAllowance>
+                <ns3:PieceDimensionAllowance>
+                  <ns3:MaxMeasure UnitCode="Centimeter">158</ns3:MaxMeasure>
+                </ns3:PieceDimensionAllowance>
+                <ns3:PieceWeightAllowance>
+                  <ns3:MaximumWeightMeasure UnitCode="KG">23</ns3:MaximumWeightMeasure>
+                </ns3:PieceWeightAllowance>
+                <ns3:PieceWeightAllowance>
+                  <ns3:MaximumWeightMeasure UnitCode="LBS">50</ns3:MaximumWeightMeasure>
+                </ns3:PieceWeightAllowance>
+              </ns3:PieceAllowance>
+            </ns3:BaggageAllowance>
+          </ns3:BaggageAllowanceList>
+          <ns3:FareList>
+            <ns3:FareGroup refs="FRKAAIDHPCIVKHW4Y3EFMFKLBPJIQQKLGZH2ZXRLD5H3RCVVXXGXDLAUWZB" ListKey="FGPAAIDHPCIVKHW4Y3EFMFKLBPJIQQKLGZH2ZXRLD5H3RCVVXXGXDLAUWZB">
+              <ns3:Fare>
+                <ns3:FareCode>70J</ns3:FareCode>
+              </ns3:Fare>
+              <ns3:FareBasisCode>
+                <ns3:Code>G3AZMNN1</ns3:Code>
+              </ns3:FareBasisCode>
+            </ns3:FareGroup>
+            <ns3:FareGroup refs="FRKAAID44QQCE3QNJJLGV0WWGF1ICW05IEWC24VUSTTSHMBD5FCNE4VTLJ" ListKey="FGPAAID44QQCE3QNJJLGV0WWGF1ICW05IEWC24VUSTTSHMBD5FCNE4VTLJ">
+              <ns3:Fare>
+                <ns3:FareCode>70J</ns3:FareCode>
+              </ns3:Fare>
+              <ns3:FareBasisCode>
+                <ns3:Code>V0AIZNN1</ns3:Code>
+              </ns3:FareBasisCode>
+            </ns3:FareGroup>
+          </ns3:FareList>
+          <ns3:OriginDestList>
+            <ns3:OriginDest>
+              <ns3:OriginDestID>OD1</ns3:OriginDestID>
+              <ns3:OriginCode>LAS</ns3:OriginCode>
+              <ns3:DestCode>LAX</ns3:DestCode>
+              <ns3:PaxJourneyRefID>FGTIDTQGSCFMVTPTABD2UPV2MOFI5LOQ2ESR55IEMFVGC5O2LMDURA0ZC</ns3:PaxJourneyRefID>
+            </ns3:OriginDest>
+          </ns3:OriginDestList>
+          <ns3:PaxJourneyList>
+            <ns3:PaxJourney>
+              <ns3:PaxJourneyID>FGTIDTQGSCFMVTPTABD2UPV2MOFI5LOQ2ESR55IEMFVGC5O2LMDURA0ZC</ns3:PaxJourneyID>
+              <ns3:Duration>PT6H58M</ns3:Duration>
+              <ns3:PaxSegmentRefID>Isgm5800dbd6f3e29</ns3:PaxSegmentRefID>
+              <ns3:PaxSegmentRefID>Isgm7e01dbd6f3e29</ns3:PaxSegmentRefID>
+              <ns3:PaxSegmentRefID>Isgm7f01dbd6f3e29</ns3:PaxSegmentRefID>
+            </ns3:PaxJourney>
+          </ns3:PaxJourneyList>
+          <ns3:PaxList>
+            <ns3:Pax>
+              <ns3:PaxID>T1</ns3:PaxID>
+              <ns3:PTC>ADT</ns3:PTC>
+            </ns3:Pax>
+          </ns3:PaxList>
+          <ns3:PaxSegmentList>
+            <ns3:PaxSegment>
+              <ns3:PaxSegmentID>Isgm5800dbd6f3e29</ns3:PaxSegmentID>
+              <ns3:SecureFlightInd>true</ns3:SecureFlightInd>
+              <ns3:Duration>PT1H13M</ns3:Duration>
+              <ns3:Dep>
+                <ns3:IATA_LocationCode>LAS</ns3:IATA_LocationCode>
+                <ns3:AircraftScheduledDateTime>2023-05-30T06:37:00</ns3:AircraftScheduledDateTime>
+                <ns3:TerminalName>1</ns3:TerminalName>
+                <ns3:StationName>Las Vegas Harry Reid Intl, US</ns3:StationName>
+              </ns3:Dep>
+              <ns3:Arrival>
+                <ns3:IATA_LocationCode>PHX</ns3:IATA_LocationCode>
+                <ns3:AircraftScheduledDateTime>2023-05-30T07:50:00</ns3:AircraftScheduledDateTime>
+                <ns3:TerminalName>4</ns3:TerminalName>
+                <ns3:StationName>Phoenix Sky Harbor Intl Apt, US</ns3:StationName>
+              </ns3:Arrival>
+              <ns3:MarketingCarrierInfo>
+                <ns3:CarrierDesigCode>AA</ns3:CarrierDesigCode>
+                <ns3:CarrierName>American Airlines</ns3:CarrierName>
+                <ns3:MarketingCarrierFlightNumberText>1808</ns3:MarketingCarrierFlightNumberText>
+              </ns3:MarketingCarrierInfo>
+              <ns3:DatedOperatingLeg>
+                <ns3:DatedOperatingLegID>S1</ns3:DatedOperatingLegID>
+                <ns3:CarrierAircraftType>
+                  <ns3:CarrierAircraftTypeCode>7M8</ns3:CarrierAircraftTypeCode>
+                  <ns3:CarrierAircraftTypeName>Boeing 737MAX 8 Passenger</ns3:CarrierAircraftTypeName>
+                </ns3:CarrierAircraftType>
+                <ns3:Dep>
+                  <ns3:IATA_LocationCode>LAS</ns3:IATA_LocationCode>
+                  <ns3:AircraftScheduledDateTime>2023-05-30T06:37:00</ns3:AircraftScheduledDateTime>
+                  <ns3:TerminalName>1</ns3:TerminalName>
+                  <ns3:StationName>Las Vegas Harry Reid Intl, US</ns3:StationName>
+                </ns3:Dep>
+                <ns3:Arrival>
+                  <ns3:IATA_LocationCode>PHX</ns3:IATA_LocationCode>
+                  <ns3:AircraftScheduledDateTime>2023-05-30T07:50:00</ns3:AircraftScheduledDateTime>
+                  <ns3:TerminalName>4</ns3:TerminalName>
+                  <ns3:StationName>Phoenix Sky Harbor Intl Apt, US</ns3:StationName>
+                </ns3:Arrival>
+              </ns3:DatedOperatingLeg>
+            </ns3:PaxSegment>
+            <ns3:PaxSegment>
+              <ns3:PaxSegmentID>Isgm7e01dbd6f3e29</ns3:PaxSegmentID>
+              <ns3:SecureFlightInd>true</ns3:SecureFlightInd>
+              <ns3:Duration>PT2H5M</ns3:Duration>
+              <ns3:Dep>
+                <ns3:IATA_LocationCode>PHX</ns3:IATA_LocationCode>
+                <ns3:AircraftScheduledDateTime>2023-05-30T08:27:00</ns3:AircraftScheduledDateTime>
+                <ns3:TerminalName>4</ns3:TerminalName>
+                <ns3:StationName>Phoenix Sky Harbor Intl Apt, US</ns3:StationName>
+              </ns3:Dep>
+              <ns3:Arrival>
+                <ns3:IATA_LocationCode>SMF</ns3:IATA_LocationCode>
+                <ns3:AircraftScheduledDateTime>2023-05-30T10:32:00</ns3:AircraftScheduledDateTime>
+                <ns3:TerminalName>A</ns3:TerminalName>
+                <ns3:StationName>Sacramento International Apt, US</ns3:StationName>
+              </ns3:Arrival>
+              <ns3:MarketingCarrierInfo>
+                <ns3:CarrierDesigCode>AA</ns3:CarrierDesigCode>
+                <ns3:CarrierName>American Airlines</ns3:CarrierName>
+                <ns3:MarketingCarrierFlightNumberText>2085</ns3:MarketingCarrierFlightNumberText>
+              </ns3:MarketingCarrierInfo>
+              <ns3:DatedOperatingLeg>
+                <ns3:DatedOperatingLegID>S2</ns3:DatedOperatingLegID>
+                <ns3:CarrierAircraftType>
+                  <ns3:CarrierAircraftTypeCode>320</ns3:CarrierAircraftTypeCode>
+                  <ns3:CarrierAircraftTypeName>Airbus A320</ns3:CarrierAircraftTypeName>
+                </ns3:CarrierAircraftType>
+                <ns3:Dep>
+                  <ns3:IATA_LocationCode>PHX</ns3:IATA_LocationCode>
+                  <ns3:AircraftScheduledDateTime>2023-05-30T08:27:00</ns3:AircraftScheduledDateTime>
+                  <ns3:TerminalName>4</ns3:TerminalName>
+                  <ns3:StationName>Phoenix Sky Harbor Intl Apt, US</ns3:StationName>
+                </ns3:Dep>
+                <ns3:Arrival>
+                  <ns3:IATA_LocationCode>SMF</ns3:IATA_LocationCode>
+                  <ns3:AircraftScheduledDateTime>2023-05-30T10:32:00</ns3:AircraftScheduledDateTime>
+                  <ns3:TerminalName>A</ns3:TerminalName>
+                  <ns3:StationName>Sacramento International Apt, US</ns3:StationName>
+                </ns3:Arrival>
+              </ns3:DatedOperatingLeg>
+            </ns3:PaxSegment>
+            <ns3:PaxSegment>
+              <ns3:PaxSegmentID>Isgm7f01dbd6f3e29</ns3:PaxSegmentID>
+              <ns3:SecureFlightInd>true</ns3:SecureFlightInd>
+              <ns3:Duration>PT1H35M</ns3:Duration>
+              <ns3:Dep>
+                <ns3:IATA_LocationCode>SMF</ns3:IATA_LocationCode>
+                <ns3:AircraftScheduledDateTime>2023-05-30T12:00:00</ns3:AircraftScheduledDateTime>
+                <ns3:TerminalName>A</ns3:TerminalName>
+                <ns3:StationName>Sacramento International Apt, US</ns3:StationName>
+              </ns3:Dep>
+              <ns3:Arrival>
+                <ns3:IATA_LocationCode>LAX</ns3:IATA_LocationCode>
+                <ns3:AircraftScheduledDateTime>2023-05-30T13:35:00</ns3:AircraftScheduledDateTime>
+                <ns3:TerminalName>0</ns3:TerminalName>
+                <ns3:StationName>Los Angeles International Apt, US</ns3:StationName>
+              </ns3:Arrival>
+              <ns3:MarketingCarrierInfo>
+                <ns3:CarrierDesigCode>AA</ns3:CarrierDesigCode>
+                <ns3:CarrierName>American Airlines</ns3:CarrierName>
+                <ns3:MarketingCarrierFlightNumberText>4889</ns3:MarketingCarrierFlightNumberText>
+              </ns3:MarketingCarrierInfo>
+              <ns3:DatedOperatingLeg>
+                <ns3:DatedOperatingLegID>S3</ns3:DatedOperatingLegID>
+                <ns3:CarrierAircraftType>
+                  <ns3:CarrierAircraftTypeCode>E75</ns3:CarrierAircraftTypeCode>
+                  <ns3:CarrierAircraftTypeName>Embraer 175</ns3:CarrierAircraftTypeName>
+                </ns3:CarrierAircraftType>
+                <ns3:Dep>
+                  <ns3:IATA_LocationCode>SMF</ns3:IATA_LocationCode>
+                  <ns3:AircraftScheduledDateTime>2023-05-30T12:00:00</ns3:AircraftScheduledDateTime>
+                  <ns3:TerminalName>A</ns3:TerminalName>
+                  <ns3:StationName>Sacramento International Apt, US</ns3:StationName>
+                </ns3:Dep>
+                <ns3:Arrival>
+                  <ns3:IATA_LocationCode>LAX</ns3:IATA_LocationCode>
+                  <ns3:AircraftScheduledDateTime>2023-05-30T13:35:00</ns3:AircraftScheduledDateTime>
+                  <ns3:TerminalName>0</ns3:TerminalName>
+                  <ns3:StationName>Los Angeles International Apt, US</ns3:StationName>
+                </ns3:Arrival>
+              </ns3:DatedOperatingLeg>
+            </ns3:PaxSegment>
+          </ns3:PaxSegmentList>
+          <ns3:PriceClassList>
+            <ns3:PriceClass>
+              <ns3:PriceClassID>MainCabin</ns3:PriceClassID>
+              <ns3:Code>AADOM-MAIN</ns3:Code>
+              <ns3:Name>Main Cabin</ns3:Name>
+              <ns3:DisplayOrderText>3</ns3:DisplayOrderText>
+              <ns3:Desc>
+                <ns3:DescID>FFM1-DESC1</ns3:DescID>
+                <ns3:DescText>No change fees (difference in ticket price may apply)</ns3:DescText>
+              </ns3:Desc>
+              <ns3:Desc>
+                <ns3:DescID>FFM1-DESC2</ns3:DescID>
+                <ns3:DescText>Choose your seat at no charge (fee may apply for preferred or Main Cabin Extra seats)</ns3:DescText>
+              </ns3:Desc>
+              <ns3:Desc>
+                <ns3:DescID>FFM1-DESC3</ns3:DescID>
+                <ns3:DescText>General boarding</ns3:DescText>
+              </ns3:Desc>
+              <ns3:Desc>
+                <ns3:DescID>FFM1-DESC4</ns3:DescID>
+                <ns3:DescText>Elite Qualifying\302\240 Credits (EQMs, EQSs or EQDs)</ns3:DescText>
+              </ns3:Desc>
+            </ns3:PriceClass>
+          </ns3:PriceClassList>
+        </ns3:DataLists>
+        <ns3:Metadata>
+          <ns3:Other>
+            <ns3:OtherMetadata>
+              <ns3:CurrencyMetadatas>
+                <ns3:CurrencyMetadata MetadataKey="USD">
+                  <ns3:Decimals>2</ns3:Decimals>
+                </ns3:CurrencyMetadata>
+              </ns3:CurrencyMetadatas>
+            </ns3:OtherMetadata>
+            <ns3:OtherMetadata>
+              <ns3:RuleMetadatas>
+                <ns3:RuleMetadata MetadataKey="CNCID3TND10WDUBWDPFAY4HVYDTIBCM2MOGA1ZOJPTIGPSC1HSQQVVZZJ">
+                  <ns3:RuleID>Cancel</ns3:RuleID>
+                  <ns3:Values>
+                    <ns3:Value>
+                      <ns3:Instruction>Not Allowed</ns3:Instruction>
+                    </ns3:Value>
+                  </ns3:Values>
+                </ns3:RuleMetadata>
+                <ns3:RuleMetadata MetadataKey="CHGID3TND10WDUBWDPFAY4HVYDTIBCM2MOGA1ZOJPTIGPSC1HSQQVVZZJ">
+                  <ns3:RuleID>Change</ns3:RuleID>
+                  <ns3:Values>
+                    <ns3:Value>
+                      <ns3:Instruction>Allowed</ns3:Instruction>
+                    </ns3:Value>
+                  </ns3:Values>
+                </ns3:RuleMetadata>
+              </ns3:RuleMetadatas>
+            </ns3:OtherMetadata>
+          </ns3:Other>
+        </ns3:Metadata>
+        <ns3:PricedOffer>
+          <ns3:Offer>
+            <ns3:OfferID>ERJksWmlxcSHOUPQeBKVEdxC_1A_16ac5312-6359-45e3-8fbd-4488d39716d5_1A_PoP8226015-1A16-4E76-8F35-1</ns3:OfferID>
+            <ns3:OwnerCode>AA</ns3:OwnerCode>
+            <ns3:ValidatingCarrierCode>AA</ns3:ValidatingCarrierCode>
+            <ns3:OfferExpirationDateTime>2023-05-25T11:24:25Z</ns3:OfferExpirationDateTime>
+            <ns3:PaymentTimeLimitDateTime>2023-05-26T23:59:00</ns3:PaymentTimeLimitDateTime>
+            <ns3:BaggageAllowance>
+              <ns3:PaxJourneyRefID>FGTIDTQGSCFMVTPTABD2UPV2MOFI5LOQ2ESR55IEMFVGC5O2LMDURA0ZC</ns3:PaxJourneyRefID>
+              <ns3:PaxRefID>T1</ns3:PaxRefID>
+              <ns3:BaggageAllowanceRefID>PcoIDTUP11QBD3PLSENR5H1LITWIMXC5DLOQRGVVSWRDQJXL2TAA4JUK</ns3:BaggageAllowanceRefID>
+            </ns3:BaggageAllowance>
+            <ns3:BaggageAllowance>
+              <ns3:PaxJourneyRefID>FGTIDTQGSCFMVTPTABD2UPV2MOFI5LOQ2ESR55IEMFVGC5O2LMDURA0ZC</ns3:PaxJourneyRefID>
+              <ns3:PaxRefID>T1</ns3:PaxRefID>
+              <ns3:BaggageAllowanceRefID>PbaIDGLY3SLMB32CEJRXVSPS03WDSJEMNRKKSZV2LJKEU3FLZIESYN2DH</ns3:BaggageAllowanceRefID>
+            </ns3:BaggageAllowance>
+            <ns3:JourneyOverview>
+              <ns3:JourneyPriceClass>
+                <ns3:PriceClassRefID>MainCabin</ns3:PriceClassRefID>
+                <ns3:PaxJourneyRefID>FGTIDTQGSCFMVTPTABD2UPV2MOFI5LOQ2ESR55IEMFVGC5O2LMDURA0ZC</ns3:PaxJourneyRefID>
+              </ns3:JourneyPriceClass>
+            </ns3:JourneyOverview>
+            <ns3:PTC_OfferParameters>
+              <ns3:PTC_PricedCode>ADT</ns3:PTC_PricedCode>
+              <ns3:PTC_RequestedCode>ADT</ns3:PTC_RequestedCode>
+              <ns3:RequestedPaxNumber>1</ns3:RequestedPaxNumber>
+              <ns3:PricedPaxNumber>1</ns3:PricedPaxNumber>
+            </ns3:PTC_OfferParameters>
+            <ns3:OfferItem>
+              <ns3:OfferItemID>PoIP8226015-1A16-4E76-8F35-1-1</ns3:OfferItemID>
+              <ns3:MandatoryInd>true</ns3:MandatoryInd>
+              <ns3:FareDetail>
+                <ns3:FareIndicatorCode>0</ns3:FareIndicatorCode>
+                <ns3:PassengerRefs>T1</ns3:PassengerRefs>
+                <ns3:Price>
+                  <ns3:BaseAmount Code="USD">37488</ns3:BaseAmount>
+                  <ns3:Taxes>
+                    <ns3:Total Code="USD">5712</ns3:Total>
+                    <ns3:Breakdown>
+                      <ns3:Tax>
+                        <ns3:Amount Code="USD">2812</ns3:Amount>
+                        <ns3:Nation>US</ns3:Nation>
+                        <ns3:TaxCode>US</ns3:TaxCode>
+                        <ns3:Description>U.S.A Transportation Tax</ns3:Description>
+                      </ns3:Tax>
+                      <ns3:Tax>
+                        <ns3:Amount Code="USD">1440</ns3:Amount>
+                        <ns3:Nation>US</ns3:Nation>
+                        <ns3:TaxCode>ZP</ns3:TaxCode>
+                        <ns3:Description>United States Flight Segment Tax Domestic</ns3:Description>
+                      </ns3:Tax>
+                      <ns3:Tax>
+                        <ns3:Amount Code="USD">560</ns3:Amount>
+                        <ns3:Nation>US</ns3:Nation>
+                        <ns3:TaxCode>AY</ns3:TaxCode>
+                        <ns3:Description>United States Passenger Civil Aviation Security Service Fee</ns3:Description>
+                      </ns3:Tax>
+                      <ns3:Tax>
+                        <ns3:Amount Code="USD">900</ns3:Amount>
+                        <ns3:Nation>US</ns3:Nation>
+                        <ns3:TaxCode>XF</ns3:TaxCode>
+                        <ns3:Description>US Passenger Facility Charge</ns3:Description>
+                      </ns3:Tax>
+                    </ns3:Breakdown>
+                  </ns3:Taxes>
+                </ns3:Price>
+                <ns3:FareComponent>
+                  <ns3:Price>
+                    <ns3:BaseAmount Code="USD">17116</ns3:BaseAmount>
+                    <ns3:Taxes>
+                      <ns3:Total Code="USD">3704</ns3:Total>
+                      <ns3:Breakdown>
+                        <ns3:Tax>
+                          <ns3:Amount Code="USD">1284</ns3:Amount>
+                          <ns3:Nation>US</ns3:Nation>
+                          <ns3:TaxCode>US</ns3:TaxCode>
+                          <ns3:Description>US Transportation Tax</ns3:Description>
+                        </ns3:Tax>
+                        <ns3:Tax>
+                          <ns3:Amount Code="USD">450</ns3:Amount>
+                          <ns3:Nation>US</ns3:Nation>
+                          <ns3:TaxCode>XF</ns3:TaxCode>
+                          <ns3:Description>US Passenger Facility Charge</ns3:Description>
+                        </ns3:Tax>
+                        <ns3:Tax>
+                          <ns3:Amount Code="USD">480</ns3:Amount>
+                          <ns3:Nation>US</ns3:Nation>
+                          <ns3:TaxCode>ZP</ns3:TaxCode>
+                          <ns3:Description>United States Flight Segment Tax Domestic</ns3:Description>
+                        </ns3:Tax>
+                        <ns3:Tax>
+                          <ns3:Amount Code="USD">560</ns3:Amount>
+                          <ns3:Nation>US</ns3:Nation>
+                          <ns3:TaxCode>AY</ns3:TaxCode>
+                          <ns3:Description>United States Passenger Civil Aviation Security Service Fee</ns3:Description>
+                        </ns3:Tax>
+                        <ns3:Tax>
+                          <ns3:Amount Code="USD">450</ns3:Amount>
+                          <ns3:Nation>US</ns3:Nation>
+                          <ns3:TaxCode>XF</ns3:TaxCode>
+                          <ns3:Description>US Passenger Facility Charge</ns3:Description>
+                        </ns3:Tax>
+                        <ns3:Tax>
+                          <ns3:Amount Code="USD">480</ns3:Amount>
+                          <ns3:Nation>US</ns3:Nation>
+                          <ns3:TaxCode>ZP</ns3:TaxCode>
+                          <ns3:Description>United States Flight Segment Tax Domestic</ns3:Description>
+                        </ns3:Tax>
+                      </ns3:Breakdown>
+                    </ns3:Taxes>
+                  </ns3:Price>
+                  <ns3:FareBasis>
+                    <ns3:FareBasisCode refs="FGPAAIDHPCIVKHW4Y3EFMFKLBPJIQQKLGZH2ZXRLD5H3RCVVXXGXDLAUWZB">
+                      <ns3:Code>G3AZMNN1</ns3:Code>
+                    </ns3:FareBasisCode>
+                    <ns3:FareBasisCityPair>LASSMFAA</ns3:FareBasisCityPair>
+                    <ns3:RBD>G G</ns3:RBD>
+                    <ns3:CabinType>
+                      <ns3:CabinTypeCode>Y Y</ns3:CabinTypeCode>
+                      <ns3:CabinTypeName>ECONOMY ECONOMY</ns3:CabinTypeName>
+                    </ns3:CabinType>
+                  </ns3:FareBasis>
+                  <ns3:FareRules>
+                    <ns3:Penalty CancelFeeInd="false" ChangeFeeInd="false" RefundableInd="false">
+                      <ns3:Details>
+                        <ns3:Detail refs="CNCID3TND10WDUBWDPFAY4HVYDTIBCM2MOGA1ZOJPTIGPSC1HSQQVVZZJ">
+                          <ns3:Type>Cancel</ns3:Type>
+                          <ns3:Amounts>
+                            <ns3:Amount>
+                              <ns3:CurrencyAmountValue Code="USD">0</ns3:CurrencyAmountValue>
+                              <ns3:AmountApplication>MIN</ns3:AmountApplication>
+                            </ns3:Amount>
+                            <ns3:Amount>
+                              <ns3:CurrencyAmountValue Code="USD">0</ns3:CurrencyAmountValue>
+                              <ns3:AmountApplication>MAX</ns3:AmountApplication>
+                            </ns3:Amount>
+                          </ns3:Amounts>
+                        </ns3:Detail>
+                        <ns3:Detail refs="CHGID3TND10WDUBWDPFAY4HVYDTIBCM2MOGA1ZOJPTIGPSC1HSQQVVZZJ">
+                          <ns3:Type>Change</ns3:Type>
+                          <ns3:Amounts>
+                            <ns3:Amount>
+                              <ns3:CurrencyAmountValue Code="USD">0</ns3:CurrencyAmountValue>
+                              <ns3:AmountApplication>MIN</ns3:AmountApplication>
+                            </ns3:Amount>
+                            <ns3:Amount>
+                              <ns3:CurrencyAmountValue Code="USD">0</ns3:CurrencyAmountValue>
+                              <ns3:AmountApplication>MAX</ns3:AmountApplication>
+                            </ns3:Amount>
+                          </ns3:Amounts>
+                        </ns3:Detail>
+                      </ns3:Details>
+                    </ns3:Penalty>
+                    <ns3:Ticketing>
+                      <ns3:Endorsements>
+                        <ns3:Endorsement>NONREF/FAREDIF/</ns3:Endorsement>
+                        <ns3:Endorsement>CXL BY FLT TIME OR NOVALUE</ns3:Endorsement>
+                      </ns3:Endorsements>
+                    </ns3:Ticketing>
+                  </ns3:FareRules>
+                  <ns3:PriceClassRef>MainCabin</ns3:PriceClassRef>
+                  <ns3:SegmentRefs>Isgm5800dbd6f3e29</ns3:SegmentRefs>
+                  <ns3:SegmentRefs>Isgm7e01dbd6f3e29</ns3:SegmentRefs>
+                </ns3:FareComponent>
+                <ns3:FareComponent>
+                  <ns3:Price>
+                    <ns3:BaseAmount Code="USD">20372</ns3:BaseAmount>
+                    <ns3:Taxes>
+                      <ns3:Total Code="USD">2008</ns3:Total>
+                      <ns3:Breakdown>
+                        <ns3:Tax>
+                          <ns3:Amount Code="USD">1528</ns3:Amount>
+                          <ns3:Nation>US</ns3:Nation>
+                          <ns3:TaxCode>US</ns3:TaxCode>
+                          <ns3:Description>US Transportation Tax</ns3:Description>
+                        </ns3:Tax>
+                        <ns3:Tax>
+                          <ns3:Amount Code="USD">480</ns3:Amount>
+                          <ns3:Nation>US</ns3:Nation>
+                          <ns3:TaxCode>ZP</ns3:TaxCode>
+                          <ns3:Description>United States Flight Segment Tax Domestic</ns3:Description>
+                        </ns3:Tax>
+                      </ns3:Breakdown>
+                    </ns3:Taxes>
+                  </ns3:Price>
+                  <ns3:FareBasis>
+                    <ns3:FareBasisCode refs="FGPAAID44QQCE3QNJJLGV0WWGF1ICW05IEWC24VUSTTSHMBD5FCNE4VTLJ">
+                      <ns3:Code>V0AIZNN1</ns3:Code>
+                    </ns3:FareBasisCode>
+                    <ns3:FareBasisCityPair>SMFLAXAA</ns3:FareBasisCityPair>
+                    <ns3:RBD>V</ns3:RBD>
+                    <ns3:CabinType>
+                      <ns3:CabinTypeCode>Y</ns3:CabinTypeCode>
+                      <ns3:CabinTypeName>ECONOMY</ns3:CabinTypeName>
+                    </ns3:CabinType>
+                  </ns3:FareBasis>
+                  <ns3:FareRules>
+                    <ns3:Penalty CancelFeeInd="false" ChangeFeeInd="false" RefundableInd="false">
+                      <ns3:Details>
+                        <ns3:Detail refs="CNCID3TND10WDUBWDPFAY4HVYDTIBCM2MOGA1ZOJPTIGPSC1HSQQVVZZJ">
+                          <ns3:Type>Cancel</ns3:Type>
+                          <ns3:Amounts>
+                            <ns3:Amount>
+                              <ns3:CurrencyAmountValue Code="USD">0</ns3:CurrencyAmountValue>
+                              <ns3:AmountApplication>MIN</ns3:AmountApplication>
+                            </ns3:Amount>
+                            <ns3:Amount>
+                              <ns3:CurrencyAmountValue Code="USD">0</ns3:CurrencyAmountValue>
+                              <ns3:AmountApplication>MAX</ns3:AmountApplication>
+                            </ns3:Amount>
+                          </ns3:Amounts>
+                        </ns3:Detail>
+                        <ns3:Detail refs="CHGID3TND10WDUBWDPFAY4HVYDTIBCM2MOGA1ZOJPTIGPSC1HSQQVVZZJ">
+                          <ns3:Type>Change</ns3:Type>
+                          <ns3:Amounts>
+                            <ns3:Amount>
+                              <ns3:CurrencyAmountValue Code="USD">0</ns3:CurrencyAmountValue>
+                              <ns3:AmountApplication>MIN</ns3:AmountApplication>
+                            </ns3:Amount>
+                            <ns3:Amount>
+                              <ns3:CurrencyAmountValue Code="USD">0</ns3:CurrencyAmountValue>
+                              <ns3:AmountApplication>MAX</ns3:AmountApplication>
+                            </ns3:Amount>
+                          </ns3:Amounts>
+                        </ns3:Detail>
+                      </ns3:Details>
+                    </ns3:Penalty>
+                    <ns3:Ticketing>
+                      <ns3:Endorsements>
+                        <ns3:Endorsement>NONREF/FAREDIF/</ns3:Endorsement>
+                        <ns3:Endorsement>CXL BY FLT TIME OR NOVALUE</ns3:Endorsement>
+                      </ns3:Endorsements>
+                    </ns3:Ticketing>
+                  </ns3:FareRules>
+                  <ns3:PriceClassRef>MainCabin</ns3:PriceClassRef>
+                  <ns3:SegmentRefs>Isgm7f01dbd6f3e29</ns3:SegmentRefs>
+                </ns3:FareComponent>
+              </ns3:FareDetail>
+              <ns3:Service>
+                <ns3:ServiceID>PsvFltP8226015-1A16-4E76-8F35-1-1</ns3:ServiceID>
+                <ns3:PaxRefID>T1</ns3:PaxRefID>
+                <ns3:ServiceAssociations>
+                  <ns3:PaxJourneyRefID>FGTIDTQGSCFMVTPTABD2UPV2MOFI5LOQ2ESR55IEMFVGC5O2LMDURA0ZC</ns3:PaxJourneyRefID>
+                </ns3:ServiceAssociations>
+              </ns3:Service>
+              <ns3:Price>
+                <ns3:TotalAmount CurCode="USD">43200</ns3:TotalAmount>
+              </ns3:Price>
+            </ns3:OfferItem>
+            <ns3:TotalPrice>
+              <ns3:TotalAmount CurCode="USD">43200</ns3:TotalAmount>
+            </ns3:TotalPrice>
+          </ns3:Offer>
+        </ns3:PricedOffer>
+        <ns3:ShoppingResponse>
+          <ns3:ShoppingResponseID>P8226015-1A16-4E76-8F35</ns3:ShoppingResponseID>
+        </ns3:ShoppingResponse>
+      </ns3:Response>
+    </ns3:AMA_TravelOfferPriceRS>
+  </soap:Body>
+</soap:Envelope>

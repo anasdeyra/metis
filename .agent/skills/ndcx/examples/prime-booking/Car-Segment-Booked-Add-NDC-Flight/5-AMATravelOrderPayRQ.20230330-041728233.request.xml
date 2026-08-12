@@ -1,0 +1,27 @@
+<ns0:AMA_TravelOrderPayRQ xmlns:ns0="http://xml.amadeus.com/2010/06/Travel_OrderPayRQ_v1">
+  <ns0:Party>
+    <ns0:Sender>
+      <ns0:TravelAgency>
+        <ns0:AgencyID>unused</ns0:AgencyID>
+        <ns0:PseudoCityID>unused</ns0:PseudoCityID>
+      </ns0:TravelAgency>
+    </ns0:Sender>
+  </ns0:Party>
+  <ns0:Request>
+    <ns0:PaymentInfo>
+      <ns0:Amount CurCode="USD">475.21</ns0:Amount>
+      <ns0:TypeCode>FROM_PNR</ns0:TypeCode>
+      <ns0:PaymentMethod>
+        <ns0:OtherPaymentMethod>
+          <ns0:Remark>
+            <ns0:RemarkText>7</ns0:RemarkText>
+          </ns0:Remark>
+        </ns0:OtherPaymentMethod>
+      </ns0:PaymentMethod>
+    </ns0:PaymentInfo>
+    <ns0:Order>
+      <ns0:OrderID>AA001H87KFXA2</ns0:OrderID>
+      <ns0:OwnerCode>AA</ns0:OwnerCode>
+    </ns0:Order>
+  </ns0:Request>
+</ns0:AMA_TravelOrderPayRQ>

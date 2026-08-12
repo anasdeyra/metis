@@ -1,0 +1,469 @@
+<ns0:AMA_TravelOfferPriceRS xmlns:ns0="http://xml.amadeus.com/2010/06/Travel_OfferPriceRS_v1">
+  <ns0:Response>
+    <ns0:DataLists>
+      <ns0:BaggageAllowanceList>
+        <ns0:BaggageAllowance>
+          <ns0:BaggageAllowanceID>BA1_CARRY_ON</ns0:BaggageAllowanceID>
+          <ns0:TypeCode>CarryOnBag</ns0:TypeCode>
+          <ns0:WeightAllowance>
+            <ns0:MaximumWeightMeasure UnitCode="KG">12</ns0:MaximumWeightMeasure>
+          </ns0:WeightAllowance>
+          <ns0:WeightAllowance>
+            <ns0:MaximumWeightMeasure UnitCode="LBS">26</ns0:MaximumWeightMeasure>
+          </ns0:WeightAllowance>
+          <ns0:DimensionAllowance>
+            <ns0:BaggageDimensionCategory>Height</ns0:BaggageDimensionCategory>
+            <ns0:MaxMeasure UnitCode="IN">13.8</ns0:MaxMeasure>
+          </ns0:DimensionAllowance>
+          <ns0:DimensionAllowance>
+            <ns0:BaggageDimensionCategory>Width</ns0:BaggageDimensionCategory>
+            <ns0:MaxMeasure UnitCode="IN">9.9</ns0:MaxMeasure>
+          </ns0:DimensionAllowance>
+          <ns0:DimensionAllowance>
+            <ns0:BaggageDimensionCategory>Length</ns0:BaggageDimensionCategory>
+            <ns0:MaxMeasure UnitCode="IN">21.7</ns0:MaxMeasure>
+          </ns0:DimensionAllowance>
+          <ns0:DimensionAllowance>
+            <ns0:BaggageDimensionCategory>Total Linear</ns0:BaggageDimensionCategory>
+            <ns0:MaxMeasure UnitCode="IN">45.4</ns0:MaxMeasure>
+          </ns0:DimensionAllowance>
+          <ns0:DimensionAllowance>
+            <ns0:BaggageDimensionCategory>Height</ns0:BaggageDimensionCategory>
+            <ns0:MaxMeasure UnitCode="CM">35</ns0:MaxMeasure>
+          </ns0:DimensionAllowance>
+          <ns0:DimensionAllowance>
+            <ns0:BaggageDimensionCategory>Width</ns0:BaggageDimensionCategory>
+            <ns0:MaxMeasure UnitCode="CM">25</ns0:MaxMeasure>
+          </ns0:DimensionAllowance>
+          <ns0:DimensionAllowance>
+            <ns0:BaggageDimensionCategory>Length</ns0:BaggageDimensionCategory>
+            <ns0:MaxMeasure UnitCode="CM">55</ns0:MaxMeasure>
+          </ns0:DimensionAllowance>
+          <ns0:DimensionAllowance>
+            <ns0:BaggageDimensionCategory>Total Linear</ns0:BaggageDimensionCategory>
+            <ns0:MaxMeasure UnitCode="CM">115</ns0:MaxMeasure>
+          </ns0:DimensionAllowance>
+          <ns0:PieceAllowance>
+            <ns0:ApplicablePartyText>Traveler</ns0:ApplicablePartyText>
+            <ns0:TotalQty>1</ns0:TotalQty>
+          </ns0:PieceAllowance>
+        </ns0:BaggageAllowance>
+        <ns0:BaggageAllowance>
+          <ns0:BaggageAllowanceID>BA2_CHECKED</ns0:BaggageAllowanceID>
+          <ns0:TypeCode>CheckedBag</ns0:TypeCode>
+          <ns0:WeightAllowance>
+            <ns0:MaximumWeightMeasure UnitCode="KG">23</ns0:MaximumWeightMeasure>
+          </ns0:WeightAllowance>
+          <ns0:WeightAllowance>
+            <ns0:MaximumWeightMeasure UnitCode="LBS">50</ns0:MaximumWeightMeasure>
+          </ns0:WeightAllowance>
+          <ns0:DimensionAllowance>
+            <ns0:BaggageDimensionCategory>Total Linear</ns0:BaggageDimensionCategory>
+            <ns0:MaxMeasure UnitCode="CM">158</ns0:MaxMeasure>
+          </ns0:DimensionAllowance>
+          <ns0:DimensionAllowance>
+            <ns0:BaggageDimensionCategory>Total Linear</ns0:BaggageDimensionCategory>
+            <ns0:MaxMeasure UnitCode="IN">62.2</ns0:MaxMeasure>
+          </ns0:DimensionAllowance>
+          <ns0:PieceAllowance>
+            <ns0:ApplicablePartyText>Traveler</ns0:ApplicablePartyText>
+            <ns0:TotalQty>1</ns0:TotalQty>
+          </ns0:PieceAllowance>
+        </ns0:BaggageAllowance>
+      </ns0:BaggageAllowanceList>
+      <ns0:FareList>
+        <ns0:FareGroup ListKey="10101">
+          <ns0:Fare>
+            <ns0:FareCode>70J</ns0:FareCode>
+          </ns0:Fare>
+        </ns0:FareGroup>
+        <ns0:FareGroup ListKey="10201">
+          <ns0:Fare>
+            <ns0:FareCode>70J</ns0:FareCode>
+          </ns0:Fare>
+        </ns0:FareGroup>
+      </ns0:FareList>
+      <ns0:OriginDestList>
+        <ns0:OriginDest>
+          <ns0:OriginDestID>OD1</ns0:OriginDestID>
+          <ns0:OriginCode>CDG</ns0:OriginCode>
+          <ns0:DestCode>MAD</ns0:DestCode>
+          <ns0:PaxJourneyRefID>PJ1</ns0:PaxJourneyRefID>
+        </ns0:OriginDest>
+      </ns0:OriginDestList>
+      <ns0:PaxJourneyList>
+        <ns0:PaxJourney>
+          <ns0:PaxJourneyID>PJ1</ns0:PaxJourneyID>
+          <ns0:Duration>PT2H15M</ns0:Duration>
+          <ns0:PaxSegmentRefID>SEG11</ns0:PaxSegmentRefID>
+        </ns0:PaxJourney>
+      </ns0:PaxJourneyList>
+      <ns0:PaxList>
+        <ns0:Pax>
+          <ns0:PaxID>1</ns0:PaxID>
+          <ns0:PTC>ADT</ns0:PTC>
+        </ns0:Pax>
+      </ns0:PaxList>
+      <ns0:PaxSegmentList>
+        <ns0:PaxSegment>
+          <ns0:PaxSegmentID>SEG11</ns0:PaxSegmentID>
+          <ns0:Duration>PT2H15M</ns0:Duration>
+          <ns0:Dep>
+            <ns0:IATA_LocationCode>CDG</ns0:IATA_LocationCode>
+            <ns0:AircraftScheduledDateTime>2024-10-23T20:55:00</ns0:AircraftScheduledDateTime>
+            <ns0:TerminalName>2F</ns0:TerminalName>
+          </ns0:Dep>
+          <ns0:Arrival>
+            <ns0:IATA_LocationCode>MAD</ns0:IATA_LocationCode>
+            <ns0:AircraftScheduledDateTime>2024-10-23T23:10:00</ns0:AircraftScheduledDateTime>
+            <ns0:TerminalName>2</ns0:TerminalName>
+          </ns0:Arrival>
+          <ns0:MarketingCarrierInfo>
+            <ns0:CarrierDesigCode>AF</ns0:CarrierDesigCode>
+            <ns0:MarketingCarrierFlightNumberText>1400</ns0:MarketingCarrierFlightNumberText>
+          </ns0:MarketingCarrierInfo>
+          <ns0:OperatingCarrierInfo>
+            <ns0:CarrierDesigCode>AF</ns0:CarrierDesigCode>
+          </ns0:OperatingCarrierInfo>
+          <ns0:DatedOperatingLeg>
+            <ns0:DatedOperatingLegID>S1</ns0:DatedOperatingLegID>
+            <ns0:CarrierAircraftType>
+              <ns0:CarrierAircraftTypeCode>319</ns0:CarrierAircraftTypeCode>
+            </ns0:CarrierAircraftType>
+            <ns0:Dep>
+              <ns0:IATA_LocationCode>CDG</ns0:IATA_LocationCode>
+              <ns0:AircraftScheduledDateTime>2024-10-23T20:55:00</ns0:AircraftScheduledDateTime>
+              <ns0:TerminalName>2F</ns0:TerminalName>
+            </ns0:Dep>
+            <ns0:Arrival>
+              <ns0:IATA_LocationCode>MAD</ns0:IATA_LocationCode>
+              <ns0:AircraftScheduledDateTime>2024-10-23T23:10:00</ns0:AircraftScheduledDateTime>
+              <ns0:TerminalName>2</ns0:TerminalName>
+            </ns0:Arrival>
+          </ns0:DatedOperatingLeg>
+        </ns0:PaxSegment>
+      </ns0:PaxSegmentList>
+      <ns0:PriceClassList>
+        <ns0:PriceClass>
+          <ns0:PriceClassID>PC1</ns0:PriceClassID>
+          <ns0:Name>StandardPlus</ns0:Name>
+          <ns0:Desc>
+            <ns0:DescID>FFM1-DESC1</ns0:DescID>
+            <ns0:DescText>CDG-MAD: The seat reclines to 118 degrees and is equipped with an adjustable headrest.</ns0:DescText>
+          </ns0:Desc>
+          <ns0:Desc>
+            <ns0:DescID>FFM1-DESC2</ns0:DescID>
+            <ns0:DescText>CDG-MAD: Download your favorite digital press onto your tablet or mobile free of charge, starting from 30 hours before your flight</ns0:DescText>
+          </ns0:Desc>
+          <ns0:Desc>
+            <ns0:DescID>FFM1-DESC3</ns0:DescID>
+            <ns0:DescText>CDG-MAD: Seats are arranged in rows of 2 x 3 seats, separated by 1 aisle.</ns0:DescText>
+          </ns0:Desc>
+        </ns0:PriceClass>
+      </ns0:PriceClassList>
+      <ns0:ServiceDefinitionList>
+        <ns0:ServiceDefinition>
+          <ns0:ServiceDefinitionID>SRV35-CH-O</ns0:ServiceDefinitionID>
+          <ns0:Name>SEAT</ns0:Name>
+          <ns0:Description>
+            <ns0:DescText>FRONT_SECTION_SEAT</ns0:DescText>
+          </ns0:Description>
+        </ns0:ServiceDefinition>
+      </ns0:ServiceDefinitionList>
+    </ns0:DataLists>
+    <ns0:Metadata>
+      <ns0:Other>
+        <ns0:OtherMetadata>
+          <ns0:CurrencyMetadatas>
+            <ns0:CurrencyMetadata MetadataKey="EUR">
+              <ns0:Decimals>2</ns0:Decimals>
+            </ns0:CurrencyMetadata>
+          </ns0:CurrencyMetadatas>
+        </ns0:OtherMetadata>
+        <ns0:OtherMetadata>
+          <ns0:RuleMetadatas>
+            <ns0:RuleMetadata MetadataKey="1_1_1_1_1_1">
+              <ns0:RuleID>NoShowNOSHOW_CHANGE</ns0:RuleID>
+              <ns0:Values>
+                <ns0:Value>
+                  <ns0:Instruction>Not Allowed</ns0:Instruction>
+                </ns0:Value>
+              </ns0:Values>
+            </ns0:RuleMetadata>
+            <ns0:RuleMetadata MetadataKey="1_1_1_1_1_2">
+              <ns0:RuleID>NoShowNOSHOW_CANCELLATION</ns0:RuleID>
+              <ns0:Values>
+                <ns0:Value>
+                  <ns0:Instruction>Not Allowed</ns0:Instruction>
+                </ns0:Value>
+              </ns0:Values>
+            </ns0:RuleMetadata>
+            <ns0:RuleMetadata MetadataKey="1_1_1_1_1_3">
+              <ns0:RuleID>CancellationPDE</ns0:RuleID>
+              <ns0:Values>
+                <ns0:Value>
+                  <ns0:Instruction>Not Allowed</ns0:Instruction>
+                </ns0:Value>
+              </ns0:Values>
+            </ns0:RuleMetadata>
+            <ns0:RuleMetadata MetadataKey="1_1_1_1_1_4">
+              <ns0:RuleID>CancellationADE</ns0:RuleID>
+              <ns0:Values>
+                <ns0:Value>
+                  <ns0:Instruction>Not Allowed</ns0:Instruction>
+                </ns0:Value>
+              </ns0:Values>
+            </ns0:RuleMetadata>
+            <ns0:RuleMetadata MetadataKey="1_1_1_1_1_5">
+              <ns0:RuleID>ChangePDE</ns0:RuleID>
+              <ns0:Values>
+                <ns0:Value>
+                  <ns0:Instruction>Allowed</ns0:Instruction>
+                </ns0:Value>
+              </ns0:Values>
+            </ns0:RuleMetadata>
+            <ns0:RuleMetadata MetadataKey="1_1_1_1_1_6">
+              <ns0:RuleID>ChangeADE</ns0:RuleID>
+              <ns0:Values>
+                <ns0:Value>
+                  <ns0:Instruction>Allowed</ns0:Instruction>
+                </ns0:Value>
+              </ns0:Values>
+            </ns0:RuleMetadata>
+          </ns0:RuleMetadatas>
+        </ns0:OtherMetadata>
+      </ns0:Other>
+    </ns0:Metadata>
+    <ns0:PricedOffer>
+      <ns0:Offer>
+        <ns0:OfferID>TOsvKNxxrlSiKNx7-CkFy6MD_1A_58cee9b8-0d4c-49d0-8760-a6ff857bec18_1A_ce1c68c6-0d82-4faa-9c68-c60d826f0023</ns0:OfferID>
+        <ns0:OwnerCode>AF</ns0:OwnerCode>
+        <ns0:ValidatingCarrierCode>AF</ns0:ValidatingCarrierCode>
+        <ns0:OfferExpirationDateTime>2024-08-06T07:58:31.863Z</ns0:OfferExpirationDateTime>
+        <ns0:PaymentTimeLimitDateTime>2024-08-09T10:00:00Z</ns0:PaymentTimeLimitDateTime>
+        <ns0:BaggageAllowance>
+          <ns0:PaxJourneyRefID>PJ1</ns0:PaxJourneyRefID>
+          <ns0:PaxRefID>1</ns0:PaxRefID>
+          <ns0:BaggageAllowanceRefID>BA1_CARRY_ON</ns0:BaggageAllowanceRefID>
+        </ns0:BaggageAllowance>
+        <ns0:BaggageAllowance>
+          <ns0:PaxJourneyRefID>PJ1</ns0:PaxJourneyRefID>
+          <ns0:PaxRefID>1</ns0:PaxRefID>
+          <ns0:BaggageAllowanceRefID>BA2_CHECKED</ns0:BaggageAllowanceRefID>
+        </ns0:BaggageAllowance>
+        <ns0:JourneyOverview>
+          <ns0:JourneyPriceClass>
+            <ns0:PriceClassRefID>PC1</ns0:PriceClassRefID>
+            <ns0:PaxJourneyRefID>PJ1</ns0:PaxJourneyRefID>
+          </ns0:JourneyPriceClass>
+        </ns0:JourneyOverview>
+        <ns0:OfferItem>
+          <ns0:OfferItemID>c42b2eb2-138a-4207-ab2e-b2138a720797</ns0:OfferItemID>
+          <ns0:MandatoryInd>true</ns0:MandatoryInd>
+          <ns0:FareDetail>
+            <ns0:PassengerRefs>1</ns0:PassengerRefs>
+            <ns0:Price>
+              <ns0:BaseAmount Code="EUR">17600</ns0:BaseAmount>
+              <ns0:Surcharges>
+                <ns0:Surcharge>
+                  <ns0:Total Code="EUR">169</ns0:Total>
+                  <ns0:Breakdown>
+                    <ns0:Fee>
+                      <ns0:Amount Code="EUR">169</ns0:Amount>
+                      <ns0:Description>AggregatorFee</ns0:Description>
+                      <ns0:Nature>T02</ns0:Nature>
+                    </ns0:Fee>
+                  </ns0:Breakdown>
+                </ns0:Surcharge>
+              </ns0:Surcharges>
+              <ns0:Taxes>
+                <ns0:Total Code="EUR">3593</ns0:Total>
+                <ns0:Breakdown>
+                  <ns0:Tax>
+                    <ns0:Amount Code="EUR">200</ns0:Amount>
+                    <ns0:TaxCode>YR</ns0:TaxCode>
+                  </ns0:Tax>
+                  <ns0:Tax>
+                    <ns0:Amount Code="EUR">505</ns0:Amount>
+                    <ns0:TaxCode>FR</ns0:TaxCode>
+                  </ns0:Tax>
+                  <ns0:Tax>
+                    <ns0:Amount Code="EUR">1280</ns0:Amount>
+                    <ns0:TaxCode>FR</ns0:TaxCode>
+                  </ns0:Tax>
+                  <ns0:Tax>
+                    <ns0:Amount Code="EUR">113</ns0:Amount>
+                    <ns0:TaxCode>IZ</ns0:TaxCode>
+                  </ns0:Tax>
+                  <ns0:Tax>
+                    <ns0:Amount Code="EUR">150</ns0:Amount>
+                    <ns0:TaxCode>O4</ns0:TaxCode>
+                  </ns0:Tax>
+                  <ns0:Tax>
+                    <ns0:Amount Code="EUR">1345</ns0:Amount>
+                    <ns0:TaxCode>QX</ns0:TaxCode>
+                  </ns0:Tax>
+                </ns0:Breakdown>
+              </ns0:Taxes>
+            </ns0:Price>
+            <ns0:FareComponent>
+              <ns0:FareBasis>
+                <ns0:FareBasisCode refs="10101">
+                  <ns0:Code>QYSABBSA</ns0:Code>
+                </ns0:FareBasisCode>
+                <ns0:RBD>Q</ns0:RBD>
+                <ns0:CabinType>
+                  <ns0:CabinTypeCode>Y</ns0:CabinTypeCode>
+                  <ns0:CabinTypeName>ECONOMY</ns0:CabinTypeName>
+                </ns0:CabinType>
+              </ns0:FareBasis>
+              <ns0:FareRules>
+                <ns0:Penalty CancelFeeInd="false" ChangeFeeInd="true">
+                  <ns0:Details>
+                    <ns0:Detail refs="1_1_1_1_1_1">
+                      <ns0:Type>NoShow</ns0:Type>
+                      <ns0:Application>4</ns0:Application>
+                      <ns0:Amounts>
+                        <ns0:Amount>
+                          <ns0:CurrencyAmountValue Code="EUR">0</ns0:CurrencyAmountValue>
+                          <ns0:AmountApplication>MIN</ns0:AmountApplication>
+                        </ns0:Amount>
+                        <ns0:Amount>
+                          <ns0:CurrencyAmountValue Code="EUR">0</ns0:CurrencyAmountValue>
+                          <ns0:AmountApplication>MAX</ns0:AmountApplication>
+                        </ns0:Amount>
+                      </ns0:Amounts>
+                    </ns0:Detail>
+                    <ns0:Detail refs="1_1_1_1_1_2">
+                      <ns0:Type>NoShow</ns0:Type>
+                      <ns0:Application>5</ns0:Application>
+                      <ns0:Amounts>
+                        <ns0:Amount>
+                          <ns0:CurrencyAmountValue Code="EUR">0</ns0:CurrencyAmountValue>
+                          <ns0:AmountApplication>MIN</ns0:AmountApplication>
+                        </ns0:Amount>
+                        <ns0:Amount>
+                          <ns0:CurrencyAmountValue Code="EUR">0</ns0:CurrencyAmountValue>
+                          <ns0:AmountApplication>MAX</ns0:AmountApplication>
+                        </ns0:Amount>
+                      </ns0:Amounts>
+                    </ns0:Detail>
+                    <ns0:Detail refs="1_1_1_1_1_3">
+                      <ns0:Type>Cancel</ns0:Type>
+                      <ns0:Application>2</ns0:Application>
+                      <ns0:Amounts>
+                        <ns0:Amount>
+                          <ns0:CurrencyAmountValue Code="EUR">0</ns0:CurrencyAmountValue>
+                          <ns0:AmountApplication>MIN</ns0:AmountApplication>
+                        </ns0:Amount>
+                        <ns0:Amount>
+                          <ns0:CurrencyAmountValue Code="EUR">0</ns0:CurrencyAmountValue>
+                          <ns0:AmountApplication>MAX</ns0:AmountApplication>
+                        </ns0:Amount>
+                      </ns0:Amounts>
+                    </ns0:Detail>
+                    <ns0:Detail refs="1_1_1_1_1_4">
+                      <ns0:Type>Cancel</ns0:Type>
+                      <ns0:Application>3</ns0:Application>
+                      <ns0:Amounts>
+                        <ns0:Amount>
+                          <ns0:CurrencyAmountValue Code="EUR">0</ns0:CurrencyAmountValue>
+                          <ns0:AmountApplication>MIN</ns0:AmountApplication>
+                        </ns0:Amount>
+                        <ns0:Amount>
+                          <ns0:CurrencyAmountValue Code="EUR">0</ns0:CurrencyAmountValue>
+                          <ns0:AmountApplication>MAX</ns0:AmountApplication>
+                        </ns0:Amount>
+                      </ns0:Amounts>
+                    </ns0:Detail>
+                    <ns0:Detail refs="1_1_1_1_1_5">
+                      <ns0:Type>Change</ns0:Type>
+                      <ns0:Application>2</ns0:Application>
+                      <ns0:Amounts>
+                        <ns0:Amount>
+                          <ns0:CurrencyAmountValue Code="EUR">7000</ns0:CurrencyAmountValue>
+                          <ns0:AmountApplication>MIN</ns0:AmountApplication>
+                        </ns0:Amount>
+                        <ns0:Amount>
+                          <ns0:CurrencyAmountValue Code="EUR">7000</ns0:CurrencyAmountValue>
+                          <ns0:AmountApplication>MAX</ns0:AmountApplication>
+                        </ns0:Amount>
+                      </ns0:Amounts>
+                    </ns0:Detail>
+                    <ns0:Detail refs="1_1_1_1_1_6">
+                      <ns0:Type>Change</ns0:Type>
+                      <ns0:Application>3</ns0:Application>
+                      <ns0:Amounts>
+                        <ns0:Amount>
+                          <ns0:CurrencyAmountValue Code="EUR">7000</ns0:CurrencyAmountValue>
+                          <ns0:AmountApplication>MIN</ns0:AmountApplication>
+                        </ns0:Amount>
+                        <ns0:Amount>
+                          <ns0:CurrencyAmountValue Code="EUR">7000</ns0:CurrencyAmountValue>
+                          <ns0:AmountApplication>MAX</ns0:AmountApplication>
+                        </ns0:Amount>
+                      </ns0:Amounts>
+                    </ns0:Detail>
+                  </ns0:Details>
+                </ns0:Penalty>
+                <ns0:Remarks>
+                  <ns0:Remark>END SALE PERIOD 2025-07-12</ns0:Remark>
+                  <ns0:Remark>BEGIN TRAVEL PERIOD 2024-08-26</ns0:Remark>
+                </ns0:Remarks>
+              </ns0:FareRules>
+              <ns0:PriceClassRef>PC1</ns0:PriceClassRef>
+              <ns0:SegmentRefs>SEG11</ns0:SegmentRefs>
+            </ns0:FareComponent>
+          </ns0:FareDetail>
+          <ns0:Service>
+            <ns0:ServiceID>SRV0</ns0:ServiceID>
+            <ns0:PaxRefID>1</ns0:PaxRefID>
+            <ns0:ServiceAssociations>
+              <ns0:PaxJourneyRefID>PJ1</ns0:PaxJourneyRefID>
+            </ns0:ServiceAssociations>
+          </ns0:Service>
+          <ns0:Price>
+            <ns0:TotalAmount CurCode="EUR">21362</ns0:TotalAmount>
+          </ns0:Price>
+        </ns0:OfferItem>
+        <ns0:OfferItem>
+          <ns0:OfferItemID>e1efce90-fef7-45fe-afce-90fef7f5fe06</ns0:OfferItemID>
+          <ns0:MandatoryInd>true</ns0:MandatoryInd>
+          <ns0:FareDetail>
+            <ns0:PassengerRefs>1</ns0:PassengerRefs>
+            <ns0:Price>
+              <ns0:BaseAmount Code="EUR">1700</ns0:BaseAmount>
+            </ns0:Price>
+            <ns0:FareComponent>
+              <ns0:FareBasis>
+                <ns0:FareBasisCode refs="10201" />
+              </ns0:FareBasis>
+            </ns0:FareComponent>
+          </ns0:FareDetail>
+          <ns0:Service>
+            <ns0:ServiceID>SRV1</ns0:ServiceID>
+            <ns0:PaxRefID>1</ns0:PaxRefID>
+            <ns0:ServiceAssociations>
+              <ns0:ServiceDefinitionRef>
+                <ns0:ServiceDefinitionRefID>SRV35-CH-O</ns0:ServiceDefinitionRefID>
+                <ns0:PaxSegmentRefID>SEG11</ns0:PaxSegmentRefID>
+              </ns0:ServiceDefinitionRef>
+            </ns0:ServiceAssociations>
+          </ns0:Service>
+          <ns0:Price>
+            <ns0:TotalAmount CurCode="EUR">1700</ns0:TotalAmount>
+          </ns0:Price>
+        </ns0:OfferItem>
+        <ns0:TotalPrice>
+          <ns0:TotalAmount CurCode="EUR">23062</ns0:TotalAmount>
+        </ns0:TotalPrice>
+      </ns0:Offer>
+    </ns0:PricedOffer>
+    <ns0:ShoppingResponse>
+      <ns0:ShoppingResponseID>58cee9b8-0d4c-49d0-8760-a6ff857bec18</ns0:ShoppingResponseID>
+    </ns0:ShoppingResponse>
+    <ns0:Warning>
+      <ns0:DescText>Number of seats is not sufficient</ns0:DescText>
+    </ns0:Warning>
+  </ns0:Response>
+</ns0:AMA_TravelOfferPriceRS>

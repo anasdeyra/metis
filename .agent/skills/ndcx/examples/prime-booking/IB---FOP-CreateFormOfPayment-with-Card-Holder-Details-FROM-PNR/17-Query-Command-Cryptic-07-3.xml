@@ -1,0 +1,25 @@
+<soap:Envelope xmlns:add="http://www.w3.org/2005/08/addressing" xmlns:link="http://wsdl.amadeus.com/2010/06/ws/Link_v1" xmlns:ses="http://xml.amadeus.com/2010/06/Session_v3" xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+  <soap:Header>
+    <ses:Session TransactionStatusCode="InSeries">
+      <ses:SessionId>0050XMWSSN</ses:SessionId>
+      <ses:SequenceNumber>3</ses:SequenceNumber>
+      <ses:SecurityToken>REDACTED_TOKEN</ses:SecurityToken>
+    </ses:Session>
+    <add:MessageID>2833f12a-a8df-4812-a07f-548d3ebf4074</add:MessageID>
+    <add:Action>http://webservices.amadeus.com/HSFREQ_07_3_1A</add:Action>
+    <add:To>https://noded5.test.webservices.amadeus.com/WSAP</add:To>
+    <link:TransactionFlowLink />
+  </soap:Header>
+  <soap:Body>
+    <Command_Cryptic>
+      <messageAction>
+        <messageFunctionDetails>
+          <messageFunction>M</messageFunction>
+        </messageFunctionDetails>
+      </messageAction>
+      <longTextString>
+        <textStringDetails>RH/ALL</textStringDetails>
+      </longTextString>
+    </Command_Cryptic>
+  </soap:Body>
+</soap:Envelope>

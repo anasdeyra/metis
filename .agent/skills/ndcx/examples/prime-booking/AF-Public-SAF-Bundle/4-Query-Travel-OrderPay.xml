@@ -1,0 +1,49 @@
+<soap:Envelope xmlns:add="http://www.w3.org/2005/08/addressing" xmlns:link="http://wsdl.amadeus.com/2010/06/ws/Link_v1" xmlns:ns5="http://xml.amadeus.com/2010/06/Security_v1" xmlns:ns6="http://xml.amadeus.com/2010/06/Travel_OrderPayRQ_v1" xmlns:oas="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd" xmlns:oas1="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+  <soap:Header>
+    <add:MessageID>62820c16-a49b-4540-9d36-a7475360635c</add:MessageID>
+    <add:Action>http://webservices.amadeus.com/Travel_OrderPay_1.6</add:Action>
+    <add:To>https://noded5.test.webservices.amadeus.com/WSAP</add:To>
+    <link:TransactionFlowLink />
+    <oas:Security>
+      <oas:UsernameToken oas1:Id="UsernameToken-1">
+        <oas:Username>YOUR_WS_USER</oas:Username>
+        <oas:Nonce EncodingType="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-soap-message-security-1.0#Base64Binary">REDACTED_NONCE</oas:Nonce>
+        <oas:Password Type="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-username-token-profile-1.0#PasswordDigest">REDACTED_DIGEST</oas:Password>
+        <oas1:Created>2024-07-08T23:39:14.225Z</oas1:Created>
+      </oas:UsernameToken>
+    </oas:Security>
+    <ns5:AMA_SecurityHostedUser>
+      <ns5:UserID AgentDutyCode="SU" POS_Type="1" PseudoCityCode="YOUR_OFFICE_ID" RequestorType="U" />
+    </ns5:AMA_SecurityHostedUser>
+  </soap:Header>
+  <soap:Body>
+    <ns6:AMA_TravelOrderPayRQ>
+      <ns6:Party>
+        <ns6:Sender>
+          <ns6:TravelAgency>
+            <ns6:AgencyID>UNUSED</ns6:AgencyID>
+            <ns6:PseudoCityID>UNUSED</ns6:PseudoCityID>
+          </ns6:TravelAgency>
+        </ns6:Sender>
+      </ns6:Party>
+      <ns6:Request>
+        <ns6:PaymentInfo>
+          <ns6:Amount CurCode="EUR">1644.18</ns6:Amount>
+          <ns6:TypeCode>CA</ns6:TypeCode>
+          <ns6:SecurePaymentVersion2>
+            <ns6:PaymentTrxChannelCode>MO</ns6:PaymentTrxChannelCode>
+          </ns6:SecurePaymentVersion2>
+          <ns6:PaymentMethod>
+            <ns6:Cash>
+              <ns6:CashInd>true</ns6:CashInd>
+            </ns6:Cash>
+          </ns6:PaymentMethod>
+        </ns6:PaymentInfo>
+        <ns6:Order>
+          <ns6:OrderID>AF057AV0086F6</ns6:OrderID>
+          <ns6:OwnerCode>AF</ns6:OwnerCode>
+        </ns6:Order>
+      </ns6:Request>
+    </ns6:AMA_TravelOrderPayRQ>
+  </soap:Body>
+</soap:Envelope>

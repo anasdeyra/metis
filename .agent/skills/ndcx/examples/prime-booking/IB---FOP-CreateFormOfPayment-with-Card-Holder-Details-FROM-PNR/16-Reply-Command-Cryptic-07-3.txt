@@ -1,0 +1,12 @@
+/$TST00001     OID FV/26AUG                      OD                        
+T-                                                                             
+   1.ALICAS/JUAN MISS(ADT)                                                     
+ 1   MAD IB 3034 A 09OCT 2135  OK AON0B5                     0PC               
+     BCN                                                                       
+FARE  F EUR       3.00                                                         
+TX001 X EUR    16.09-JDES TX002 X EUR     0.69-OGES TX003 X EUR     3.89-QVES  
+TOTAL   EUR      23.67                                                         
+GRAND TOTAL EUR      23.67                                                     
+                                                                               
+  9.FP CCVIXXXXXXXXXXXX7395D0330                                               
+ 

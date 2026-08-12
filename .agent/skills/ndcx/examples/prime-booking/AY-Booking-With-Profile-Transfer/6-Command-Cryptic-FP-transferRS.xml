@@ -1,0 +1,35 @@
+<soap:Envelope xmlns:awsse="http://xml.amadeus.com/2010/06/Session_v3" xmlns:ns3="http://xml.amadeus.com/HSFRES_07_3_1A" xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns:wsa="http://www.w3.org/2005/08/addressing">
+  <soap:Header>
+    <wsa:To>http://www.w3.org/2005/08/addressing/anonymous</wsa:To>
+    <wsa:From>
+      <wsa:Address>https://noded5.test.webservices.amadeus.com/CUSTOMER_WSAP</wsa:Address>
+    </wsa:From>
+    <wsa:Action>http://webservices.amadeus.com/HSFREQ_07_3_1A</wsa:Action>
+    <wsa:MessageID>urn:uuid:62789588-089c-29d4-8935-61caa406633c</wsa:MessageID>
+    <wsa:RelatesTo RelationshipType="http://www.w3.org/2005/08/addressing/reply">cea30bd3-51ba-4a20-b759-05db42c98b45</wsa:RelatesTo>
+    <awsse:Session TransactionStatusCode="InSeries">
+      <awsse:SessionId>00J8AI9NTW</awsse:SessionId>
+      <awsse:SequenceNumber>3</awsse:SequenceNumber>
+      <awsse:SecurityToken>REDACTED_TOKEN</awsse:SecurityToken>
+    </awsse:Session>
+  </soap:Header>
+  <soap:Body>
+    <ns3:Command_CrypticReply>
+      <ns3:longTextString>
+        <ns3:textStringDetails>/$--- TST RLR RLP NDC ---
+RP/OFFICE_ID/OFFICE_ID            WS/SU  22MAR24/1459Z   ORQPQX
+  1.GONZALEZ/SANDRA MRS(ADT)
+  2  AY1331 V 02APR 2 HELLHR HK1  0715    0800 0910   NDC
+  3  AY1338 Q 03APR 3 LHRHEL HK1  1725 3  1810 2300   NDC
+  4 APA AGENCY EMAIL CONTACT
+  5 APA AGENCY PHONE CONTACT
+  6 SSR CTCE AY HK1 MYMAIL@AMADEUS.COM
+  7 SSR DOCS AY HK1 P/CO/23434320//15JUN81/F/01JAN28/GONZALEZ/SA
+       NDRA
+  8 OPC-25MAR:1459/1C256/AY PAYMENT TIME LIMIT/S2-3
+  9 FP CCVIXXXXXXXXXXXX9062/0330
+ </ns3:textStringDetails>
+      </ns3:longTextString>
+    </ns3:Command_CrypticReply>
+  </soap:Body>
+</soap:Envelope>

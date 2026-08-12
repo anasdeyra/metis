@@ -1,0 +1,16 @@
+<soap:Envelope xmlns:add="http://www.w3.org/2005/08/addressing" xmlns:link="http://wsdl.amadeus.com/2010/06/ws/Link_v1" xmlns:ses="http://xml.amadeus.com/2010/06/Session_v3" xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+  <soap:Header>
+    <ses:Session TransactionStatusCode="InSeries">
+      <ses:SessionId>01GELFF39H</ses:SessionId>
+      <ses:SequenceNumber>4</ses:SequenceNumber>
+      <ses:SecurityToken>REDACTED_TOKEN</ses:SecurityToken>
+    </ses:Session>
+    <add:MessageID>b7f66919-c371-44a0-898c-ecf95ad2bf6e</add:MessageID>
+    <add:Action>http://webservices.amadeus.com/VLSSOQ_04_1_1A</add:Action>
+    <add:To>https://noded5.test.webservices.amadeus.com/WSAP</add:To>
+    <link:TransactionFlowLink />
+  </soap:Header>
+  <soap:Body>
+    <Security_SignOut />
+  </soap:Body>
+</soap:Envelope>

@@ -1,0 +1,12 @@
+<ns0:AMA_TravelOrderReshopRS xmlns:ns0="http://xml.amadeus.com/2010/06/Travel_OrderReshopRQ_v1">
+  <ns0:Response>
+    <ns0:ReshopResults>
+      <ns0:ReshopOffers>
+        <ns0:ReshopOffer>
+          <ns0:OfferID>ERlp2shnDaTdmWRrav1C1z3D_1A__1A_1A_TPID_Eg1DaGFuZ2VQYXhJbmZv</ns0:OfferID>
+          <ns0:OwnerCode>QF</ns0:OwnerCode>
+        </ns0:ReshopOffer>
+      </ns0:ReshopOffers>
+    </ns0:ReshopResults>
+  </ns0:Response>
+</ns0:AMA_TravelOrderReshopRS>

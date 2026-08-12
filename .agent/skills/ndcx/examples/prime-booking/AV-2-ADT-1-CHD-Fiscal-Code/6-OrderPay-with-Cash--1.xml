@@ -1,0 +1,25 @@
+<ns0:AMA_TravelOrderPayRQ xmlns:ns0="http://xml.amadeus.com/2010/06/Travel_OrderPayRQ_v1">
+  <ns0:Party>
+    <ns0:Sender>
+      <ns0:TravelAgency>
+        <ns0:AgencyID>27212216</ns0:AgencyID>
+        <ns0:PseudoCityID>AKWA</ns0:PseudoCityID>
+      </ns0:TravelAgency>
+    </ns0:Sender>
+  </ns0:Party>
+  <ns0:Request>
+    <ns0:PaymentInfo>
+      <ns0:Amount CurCode="EUR">268.77</ns0:Amount>
+      <ns0:TypeCode>CA</ns0:TypeCode>
+      <ns0:PaymentMethod>
+        <ns0:Cash>
+          <ns0:CashInd>true</ns0:CashInd>
+        </ns0:Cash>
+      </ns0:PaymentMethod>
+    </ns0:PaymentInfo>
+    <ns0:Order>
+      <ns0:OrderID>AV_3WO2T2</ns0:OrderID>
+      <ns0:OwnerCode>AV</ns0:OwnerCode>
+    </ns0:Order>
+  </ns0:Request>
+</ns0:AMA_TravelOrderPayRQ>

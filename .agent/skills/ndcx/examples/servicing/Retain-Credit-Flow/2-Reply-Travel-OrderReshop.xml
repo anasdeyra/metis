@@ -1,0 +1,206 @@
+<soap:Envelope xmlns:awsse="http://xml.amadeus.com/2010/06/Session_v3" xmlns:ns3="http://xml.amadeus.com/2010/06/Travel_OrderReshopRS_v1" xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns:wsa="http://www.w3.org/2005/08/addressing">
+  <soap:Header>
+    <wsa:To>http://www.w3.org/2005/08/addressing/anonymous</wsa:To>
+    <wsa:From>
+      <wsa:Address>https://noded5.test.webservices.amadeus.com/WSAP</wsa:Address>
+    </wsa:From>
+    <wsa:Action>http://webservices.amadeus.com/Travel_OrderReshop_1.4</wsa:Action>
+    <wsa:MessageID>urn:uuid:31714a85-2999-c8a4-311c-cabdf5f384f7</wsa:MessageID>
+    <wsa:RelatesTo RelationshipType="http://www.w3.org/2005/08/addressing/reply">06824fd6-5576-49e0-94f1-3abdf24cfeda</wsa:RelatesTo>
+    <awsse:Session TransactionStatusCode="End">
+      <awsse:SessionId>005BPOLX1T</awsse:SessionId>
+      <awsse:SequenceNumber>1</awsse:SequenceNumber>
+      <awsse:SecurityToken>REDACTED_TOKEN</awsse:SecurityToken>
+    </awsse:Session>
+  </soap:Header>
+  <soap:Body>
+    <ns3:AMA_TravelOrderReshopRS>
+      <ns3:Response>
+        <ns3:DataLists>
+          <ns3:PaxList>
+            <ns3:Pax>
+              <ns3:PaxID>T1</ns3:PaxID>
+              <ns3:PTC>ADT</ns3:PTC>
+              <ns3:Individual>
+                <ns3:IndividualID>T1</ns3:IndividualID>
+                <ns3:Birthdate>2005-01-21</ns3:Birthdate>
+                <ns3:GenderCode>M</ns3:GenderCode>
+                <ns3:TitleName>MR</ns3:TitleName>
+                <ns3:GivenName>DAVE THOMAS</ns3:GivenName>
+                <ns3:Surname>GAMO</ns3:Surname>
+              </ns3:Individual>
+            </ns3:Pax>
+          </ns3:PaxList>
+        </ns3:DataLists>
+        <ns3:Metadata>
+          <ns3:Other>
+            <ns3:OtherMetadata>
+              <ns3:CurrencyMetadatas>
+                <ns3:CurrencyMetadata MetadataKey="USD">
+                  <ns3:Decimals>2</ns3:Decimals>
+                </ns3:CurrencyMetadata>
+              </ns3:CurrencyMetadatas>
+            </ns3:OtherMetadata>
+          </ns3:Other>
+        </ns3:Metadata>
+        <ns3:ReshopResults UseCase="UNKNOWN">
+          <ns3:ReshopOffers>
+            <ns3:ReshopOffer>
+              <ns3:OfferID>RB9864071-5CF2-454B-B65F-1</ns3:OfferID>
+              <ns3:OwnerCode>AA</ns3:OwnerCode>
+              <ns3:ValidatingCarrierCode>AA</ns3:ValidatingCarrierCode>
+              <ns3:OfferExpirationDateTime>2023-11-15T13:28:21Z</ns3:OfferExpirationDateTime>
+              <ns3:Desc>
+                <ns3:DescID>0</ns3:DescID>
+                <ns3:DescText>REFUND</ns3:DescText>
+              </ns3:Desc>
+              <ns3:PTC_OfferParameters>
+                <ns3:PTC_PricedCode>ADT</ns3:PTC_PricedCode>
+                <ns3:PTC_RequestedCode>ADT</ns3:PTC_RequestedCode>
+                <ns3:RequestedPaxNumber>1</ns3:RequestedPaxNumber>
+                <ns3:PricedPaxNumber>1</ns3:PricedPaxNumber>
+              </ns3:PTC_OfferParameters>
+              <ns3:DeleteOrderItem>
+                <ns3:OrderItemRefID>PoIP478C1CFB-159C-488B-92E6-1-1_1APAX_T1</ns3:OrderItemRefID>
+                <ns3:OriginalOrderItemDifferential>
+                  <ns3:Amount CurCode="USD">11070</ns3:Amount>
+                  <ns3:TaxSummary>
+                    <ns3:TotalTaxAmount CurCode="USD">3250</ns3:TotalTaxAmount>
+                    <ns3:Tax>
+                      <ns3:Amount CurCode="USD">830</ns3:Amount>
+                      <ns3:TaxCode>US</ns3:TaxCode>
+                      <ns3:DescText>U.S.A Transportation Tax</ns3:DescText>
+                      <ns3:Country>
+                        <ns3:CountryCode>US</ns3:CountryCode>
+                      </ns3:Country>
+                    </ns3:Tax>
+                    <ns3:Tax>
+                      <ns3:Amount CurCode="USD">960</ns3:Amount>
+                      <ns3:TaxCode>ZP</ns3:TaxCode>
+                      <ns3:DescText>United States Flight Segment Tax Domestic</ns3:DescText>
+                      <ns3:CollectionPointTax>
+                        <ns3:AirportAmount CurCode="USD">480</ns3:AirportAmount>
+                        <ns3:IATA_StationCode>LAX</ns3:IATA_StationCode>
+                      </ns3:CollectionPointTax>
+                      <ns3:Country>
+                        <ns3:CountryCode>US</ns3:CountryCode>
+                      </ns3:Country>
+                    </ns3:Tax>
+                    <ns3:Tax>
+                      <ns3:Amount CurCode="USD">560</ns3:Amount>
+                      <ns3:TaxCode>AY</ns3:TaxCode>
+                      <ns3:DescText>United States Passenger Civil Aviation Security Service Fee</ns3:DescText>
+                      <ns3:Country>
+                        <ns3:CountryCode>US</ns3:CountryCode>
+                      </ns3:Country>
+                    </ns3:Tax>
+                    <ns3:Tax>
+                      <ns3:Amount CurCode="USD">900</ns3:Amount>
+                      <ns3:TaxCode>XF</ns3:TaxCode>
+                      <ns3:DescText>US Passenger Facility Charge</ns3:DescText>
+                      <ns3:CollectionPointTax>
+                        <ns3:AirportAmount CurCode="USD">450</ns3:AirportAmount>
+                        <ns3:IATA_StationCode>LAX</ns3:IATA_StationCode>
+                      </ns3:CollectionPointTax>
+                      <ns3:Country>
+                        <ns3:CountryCode>US</ns3:CountryCode>
+                      </ns3:Country>
+                    </ns3:Tax>
+                  </ns3:TaxSummary>
+                </ns3:OriginalOrderItemDifferential>
+                <ns3:PenaltyDifferential>
+                  <ns3:Amount CurCode="USD">11070</ns3:Amount>
+                </ns3:PenaltyDifferential>
+                <ns3:DifferentialAmountDue>
+                  <ns3:Amount CurCode="USD">0</ns3:Amount>
+                  <ns3:TaxSummary>
+                    <ns3:TotalTaxAmount CurCode="USD">0</ns3:TotalTaxAmount>
+                  </ns3:TaxSummary>
+                </ns3:DifferentialAmountDue>
+              </ns3:DeleteOrderItem>
+            </ns3:ReshopOffer>
+            <ns3:ReshopOffer>
+              <ns3:OfferID>RETAIN-OFFER</ns3:OfferID>
+              <ns3:OwnerCode>AA</ns3:OwnerCode>
+              <ns3:ValidatingCarrierCode>AA</ns3:ValidatingCarrierCode>
+              <ns3:OfferExpirationDateTime>2023-11-15T13:28:21Z</ns3:OfferExpirationDateTime>
+              <ns3:Desc>
+                <ns3:DescID>0</ns3:DescID>
+                <ns3:DescText>RETAIN</ns3:DescText>
+              </ns3:Desc>
+              <ns3:PTC_OfferParameters>
+                <ns3:PTC_PricedCode>ADT</ns3:PTC_PricedCode>
+                <ns3:PTC_RequestedCode>ADT</ns3:PTC_RequestedCode>
+                <ns3:RequestedPaxNumber>1</ns3:RequestedPaxNumber>
+                <ns3:PricedPaxNumber>1</ns3:PricedPaxNumber>
+              </ns3:PTC_OfferParameters>
+              <ns3:DeleteOrderItem>
+                <ns3:OrderItemRefID>PoIP478C1CFB-159C-488B-92E6-1-1_1APAX_T1</ns3:OrderItemRefID>
+                <ns3:OriginalOrderItemDifferential>
+                  <ns3:Amount CurCode="USD">11070</ns3:Amount>
+                  <ns3:TaxSummary>
+                    <ns3:TotalTaxAmount CurCode="USD">3250</ns3:TotalTaxAmount>
+                    <ns3:Tax>
+                      <ns3:Amount CurCode="USD">830</ns3:Amount>
+                      <ns3:TaxCode>US</ns3:TaxCode>
+                      <ns3:DescText>U.S.A Transportation Tax</ns3:DescText>
+                      <ns3:Country>
+                        <ns3:CountryCode>US</ns3:CountryCode>
+                      </ns3:Country>
+                    </ns3:Tax>
+                    <ns3:Tax>
+                      <ns3:Amount CurCode="USD">960</ns3:Amount>
+                      <ns3:TaxCode>ZP</ns3:TaxCode>
+                      <ns3:DescText>United States Flight Segment Tax Domestic</ns3:DescText>
+                      <ns3:CollectionPointTax>
+                        <ns3:AirportAmount CurCode="USD">480</ns3:AirportAmount>
+                        <ns3:IATA_StationCode>LAX</ns3:IATA_StationCode>
+                      </ns3:CollectionPointTax>
+                      <ns3:Country>
+                        <ns3:CountryCode>US</ns3:CountryCode>
+                      </ns3:Country>
+                    </ns3:Tax>
+                    <ns3:Tax>
+                      <ns3:Amount CurCode="USD">560</ns3:Amount>
+                      <ns3:TaxCode>AY</ns3:TaxCode>
+                      <ns3:DescText>United States Passenger Civil Aviation Security Service Fee</ns3:DescText>
+                      <ns3:Country>
+                        <ns3:CountryCode>US</ns3:CountryCode>
+                      </ns3:Country>
+                    </ns3:Tax>
+                    <ns3:Tax>
+                      <ns3:Amount CurCode="USD">900</ns3:Amount>
+                      <ns3:TaxCode>XF</ns3:TaxCode>
+                      <ns3:DescText>US Passenger Facility Charge</ns3:DescText>
+                      <ns3:CollectionPointTax>
+                        <ns3:AirportAmount CurCode="USD">450</ns3:AirportAmount>
+                        <ns3:IATA_StationCode>LAX</ns3:IATA_StationCode>
+                      </ns3:CollectionPointTax>
+                      <ns3:Country>
+                        <ns3:CountryCode>US</ns3:CountryCode>
+                      </ns3:Country>
+                    </ns3:Tax>
+                  </ns3:TaxSummary>
+                </ns3:OriginalOrderItemDifferential>
+                <ns3:DifferentialAmountDue>
+                  <ns3:Amount CurCode="USD">0</ns3:Amount>
+                  <ns3:TaxSummary>
+                    <ns3:TotalTaxAmount CurCode="USD">0</ns3:TotalTaxAmount>
+                  </ns3:TaxSummary>
+                </ns3:DifferentialAmountDue>
+              </ns3:DeleteOrderItem>
+            </ns3:ReshopOffer>
+          </ns3:ReshopOffers>
+        </ns3:ReshopResults>
+        <ns3:ShoppingResponse>
+          <ns3:ShoppingResponseID>RB9864071-5CF2-454B-B65F</ns3:ShoppingResponseID>
+        </ns3:ShoppingResponse>
+        <ns3:Warning>
+          <ns3:Code>42232</ns3:Code>
+          <ns3:DescText>Retain credit Offer pending airline confirmation at cancellation step. Change penalties may apply.</ns3:DescText>
+          <ns3:OwnerName>1A</ns3:OwnerName>
+        </ns3:Warning>
+      </ns3:Response>
+    </ns3:AMA_TravelOrderReshopRS>
+  </soap:Body>
+</soap:Envelope>

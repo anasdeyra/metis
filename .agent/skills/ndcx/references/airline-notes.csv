@@ -1,0 +1,198 @@
+note_ref,status,text
+A01,active,Confirmation received <2s after booking
+A02,active,"Piece and weight concept, depends on routes. Please check airline policy https://www.singaporeair.com/en_UK/gr/travel-info/baggage/checked-baggage/"
+A03,active,"piece and weight concepts, depends on routes"
+A04,active,"piece and weight concepts, depends on routes. Only piece is supported"
+B01,active,Max 1 phone/email per pax (can be 1 phone + 1 mail)
+B02,active,Passenger email is mandatory if contact is shared
+B06,active,Passport information not stored in UA PNR
+B07,active,Only stored in 1A PNR - Not in airline PNR
+B08,active,"only address at origin considered, destination ignored"
+B09,active,No label and country dialing code
+B11,active,Country dialing code concatenated with phone number
+B12,active,"Residence and citizenship country codes, birthdate and gender are mandatory"
+B15,active,"Stored in 1A PNR, only visa is also stored in Airline PNR"
+C01,active,VOID period until 6am GMT the next day
+C03,active,VOID is not available for split orders. If an order has been split please contact BA service desk.
+C04,active,Residual value returned as Future flight credit; TA needs to access airline.com to benefit from it.
+C05,active,"For codeshare flights, if a refund transaction fails, contact the operating airline for assistance."
+C06,active,Cancellation is supported by airline but reimbursement is subject to airline's rules
+C07,active,"Vueling offers a 2‑hour cancellation window after ticket issuance. Once cancelled via NDC API, airline to be contacted for full refund."
+C09,active,"Ancillaries will be refunded, seats will be refunded if canceled within 24 hours from issuance"
+C11,active,"In case of reissuance, refund is possible only for exchange with additional collection"
+C14,active,Cancellation of partially flown exchanged orders not supported by airline. SPRK needed
+C16,active,Refund of taxes on order with non-refundable fares must be requested through BSPLink or IAR (ARC)
+C18,active,"all markets except Colombia, Argentina, Chile, Uruguay, Ecuador, Mexico, Aruba and Curacao, for those markets TAs will have to ask for refund directly via BSP Link or IAR (ARC)."
+D05,active,Golite not supported. The airline only works with IATA numbers.
+D06,active,"Only applies for AFKL-When IATA's belong to the same market, please contact the Amadeus Account Team for EOS setup. Otherwise, refer to Note (D8) for guidance."
+D07,active,Delegation possible within the same agency. Airline to be contacted for set-up.
+D08,active,Agent should contact the airline to set-up the delegation flows on top of EOS agreements between Amadeus OIDs as ultimately airlines have their own security layer to control activity at IATA number
+E04,active,One way cannot become Round trip or Open jaw
+E06,active,"Airline to be contacted, services not returned in NDC APIs by airline"
+E07,active,Airline to be contacted to reassign the ancillary services to the new flights.
+E08,active,Development completed . Pending Certification with EK . Tentative ETA of PRD load is Early Q3-2025
+E09,active,Free ancillaries only
+I01,active,Manual synchronization only
+I02,active,"Acceptance is supported but when this is a minor change, BA rejects the accept. ERK is recommended to update Amadeus PNR."
+I11,active,Exchange possible but penalties are not waived via TP. Airline to be contacted.
+I12,active,Cancel possible but penalties are not waived via 1A TP. Airline to be contacted or cancellation to be done via BSP Link
+I14,active,One exchange is authorized for free by the airline. Penalties might apply for more than one exchange.
+M03,active,Travel_OrderViewRS from version 1.8
+M06,active,Indian GST is applied at booking level. It is not possible to specify diferent GST info per pax
+P01,active,"Only for Europe, Middle East, Africa and United States points of sale."
+P02,active,Some markets require approval code (EC and MX)
+P03,active,"Sales in cash will not be reported in the AIR, in the MBO and in the sales report, as the reconciliation with the ABR file agents will receive from IATA."
+P04,active,CC is not accepted in some LATAM countries - please check with the airline.
+P05,active,Reporting is done via BSP who send a RET to ARC
+P06,active,"At payment with WBS, AuthenticationTokenValue and DirectoryServerTrxID need to be base64 encoded"
+P07,active,EMDs are not reported to BSP
+P08,active,"-Billing Address is mandatory for payment with AMEX and from MX point of sale - For other location, billing Address is not mandatory but highly recommended"
+P09,active,Not required but highly recommended
+PB01,active,"Repricing not exposed to Travel Sellers, it is trigger at payment when Price Guarantee Time Limit is reach."
+PB02,active,"Repricing not exposed to Travel Sellers, it is trigger at payment systematically."
+PB03,active,Only Add frequent Flyer is supported by the airline
+PB04,active,"Reference of Original payment used during booking needs to be sent in the request, Waiver code required in input for Name update of paid AA orders"
+PB05,active,The airline allow the modification of an existing FQTV number but not adding a new one
+S01,active,"Supported PTC: ADT, CHD/CNN, C15"
+S02,active,"Possible values are: ADT, B15, BNN, C15, CHD, CMA, CMP, DIS, EMI, FFY, HOF, IIT, INF, INN, INS, ITF, ITS, ITX, JCB, JNF, JNN, JNS, LBR, LIF, LNN, MED, MIC, MIF, MIL, MIS, OFW, SEA, SPS, SNN, SRC, STR, STU, TUR, VFR, YSB, YTH."
+S03,active,"PTC supported: ADT, SRS, YTH, CHD/CNN, C15, INS, INF"
+S04,active,Itinerary level but no offer returned if the cabin is not the same on all bounds.
+S05,active,"Option not supported by the airline, post filtering is applied"
+S06,active,"For seaman fares, name of cruise, pork of embarkment date time or vessel name, next port must be sent offline to SQ assistance"
+S07,active,"If an infant (INF) is included in the booking, exchanges are not permitted due to airline (AA) restrictions."
+S09,active,"AY negotiated fares: TMC, Student, Seat Only, Marine, Tour operator, Visit Home"
+S13,active,Only first corporate code is taken by ANDC for content search
+S14,active,Upsells are available but without displaying the baggage allowance (airline limitation)
+S18,active,Only 1 corporate code. Should be associated to the airline.
+S22,active,"only one frequent flyer number per passenger is supported by Amadeus Travel Platform for a given airline; In case of multiple frequent flyer numbers of a given airline per passenger provided at shopping, they are ignored."
+SD01,active,Payment Time Limit is reduced by the airline
+SD03,active,Sellers can now create book and hold PNR’s within 25 hours of departure
+X01,active,Address must match country of POS
+A01,archived,Confirmation received <2s after booking
+A02,archived,"Only free ancillaries will be proposed | piece and weight concepts, depends on routes."
+A03,archived,piece concept - 1st bag only - only for AF/KL operating flights
+A04,archived,"piece and weight concepts, depends on routes. Only piece concept supported by TP"
+A05,archived,"Travel_API only, warning message returned at booking time as this AAS is not yet synchronised"
+A06,archived,"free meals only, available only post issuance"
+A07,archived,"free meals and passenger assistance (BLND, DEAF, WCHR, WCHS). Free meal can't be booked for CHD from 2 to 8, as a free meal is automatically assigned by AFKL at order booking."
+A08,archived,"Public AFKL SAF bundle are available, activation is done on airline side at IATA level. Once activated by AFKL this content is avalable as upsell at shopping or pricing."
+A09,archived,Pack of services without seat only
+A10,archived,Chargeable services supported are seats and bags
+B01,archived,Max 1 phone/email per pax (can be 1 phone + 1 mail)
+B02,archived,Passenger email is mandatory if contact is shared
+B03,archived,Only digits are allowed by the provider
+B04,archived,"Should not be entered for ADT in INF in the request, otherwise exchange will fail"
+B05,archived,Price guaranteed till payment time limit including surcharges and taxes
+B06,archived,Passport information not stored in UA PNR
+B07,archived,Only stored in 1A PNR - Not in airline PNR
+B08,archived,"only address at origin considered, destination ignored"
+B09,archived,No label and country dialing code
+B10,archived,Country dialing code different from input
+B11,archived,Country dialing code concatenated with phone number
+B12,archived,"Residence and citizenship country codes, birthdate and gender are mandatory"
+B14,archived,Booking fails if frequent flyer is not valid or not matching passenger name
+B15,archived,"At least 1 passenger contact (email or phone) should be shared with the airline. | Stored in 1A PNR, only visa is also stored in Airline PNR"
+C01,archived,VOID period until 6am GMT the next day
+C02,archived,VOID windows per airlines available in ASH: https://servicehub.amadeus.com/c/portal/view-solution/1059750357
+C03,archived,VOID is not available for split orders. If an order has been split please contact BA service desk.
+C04,archived,Residual value returned as Future flight credit; TA needs to access airline.com to benefit from it.
+C05,archived,"Except if order contains fares with different refund conditions or contains DO, HN, IN, K3, PA, PH or E3 tax codes."
+C06,archived,"If fare is not refundable, no tax is refunded (even refundable ones), AA to be contacted"
+C08,archived,"Following the airline policy, the ancillary services may not be refunded"
+C09,archived,"Ancillaries will be refunded, seats will be refunded if canceled within 24 hours from issuance | if 2 tickets in void period: new ticket voided, original ticket is refunded. Outside void period cancelation is not possible."
+C10,archived,"Refund applied on whole order even in void period, airline to be contacted in case penalty applies."
+C11,archived,"In case of reissuance, refund is possible only for exchange with additional collection"
+C13,archived,"Residual value can be used to buy a new ticket outside of NDC, airline to be contacted"
+C14,archived,Cancellation of partially flown exchanged orders not supported by airline. SPRK needed
+C15,archived,"Transaction reported/settled by the airline, transaction not reported to BSP/ARC."
+C16,archived,Refund of taxes on order with non-refundable fares must be requested through BSPLink or IAR (ARC)
+C18,archived,"all markets except Colombia, Argentina, Chile, Uruguay, Ecuador, Mexico, Aruba and Curacao, for those markets TAs will have to ask for refund directly via BSP Link or IAR (ARC)."
+C19,archived,Keep credit option not proposed when the fare is fully refundable
+D01,archived,IATA Number can be GoLite
+D02,archived,"Non IATA Agent can do a booking with IB with direct credit card payment, but not delegate payment to a IATA agent"
+D03,archived,Agent should contact the airline to set-up the delegation flows (same as D08)
+D04,archived,Delegation flow not discussed with the airline
+D05,archived,Golite not supported. The airline only works with IATA numbers.
+D06,archived,if correctly setup in New Skies
+D07,archived,Delegation possible within the same agency. Airline to be contacted for set-up.
+D08,archived,Agent should contact the airline to set-up the delegation flows on top of EOS agreements between Amadeus OIDs as ultimately airlines have their own security layer to control activity at IATA number
+E03,archived,Upgrade possible only if the itinerary stays the same
+E04,archived,One way cannot become Round trip or Open jaw
+E05,archived,No date of birth should be entered for the adult
+E06,archived,"Airline to be contacted, services not returned in NDC APIs by airline"
+E07,archived,Airline to be contacted to reassign the ancillary services to the new flights.
+E08,archived,Development completed . Pending Certification with EK . Tentative ETA of PRD load is Early Q3-2025
+G01,archived,Several shopping calls done to the airline for requests including private or corporate fares. Shopping configuration must be done to limit those parallel calls.
+G02,archived,different offer granularity
+I01,archived,"Synchronisation of flight, ticket and chargeable service elements of TravelOrder PNR | Unaccompanied minors for BA is up to 15 years old. A passenger younger than 16 years cannot travel alone"
+I02,archived,The synchronised PNR is placed in Q7 C257 with reason code 2
+I03,archived,The synchronised PNR is placed in Q7 C257 with reason code 1
+I04,archived,The synchronised PNR is placed in Q7 C257 with reason code 3
+I05,archived,The synchronised PNR is placed in Q1 C256 with reason code 104
+I06,archived,The synchronised PNR is placed in Q1 C260 with reason code 117
+I07,archived,The synchronised PNR is placed in Q7 C257 with reason code 15
+I08,archived,The synchronised PNR is placed in Q1 C259 with reason code 112
+I09,archived,auto acceptance done on airline side
+I10,archived,Airline should be contacted for services post disruption.
+I11,archived,Exchange possible but penalties are not waived via TP. Airline to be contacted.
+I12,archived,Cancel possible but penalties are not waived via 1A TP. Airline to be contacted or cancellation to be done via BSP Link
+I13,archived,activated by airline per PCC. Supported with auto-waiving when in airline waiving policies.
+I14,archived,One exchange is authorized for free by the airline. Penalties might apply for more than one exchange. | The synchronised PNR is placed in Q1 C261 with reason code 113
+I15,archived,"Cancel after disruption is not allowed as part of airline policy. Airline to be contacted | Servicing post disruption not possible via Travel Platform, should be done via ADO: https://www.aircanada.com/us/en/ado/profile/sign-in.html#/"
+M01,archived,"AR, BO, BZ, CO, CR, HN, GT, NI, PE SV, VE"
+M02,archived,Also available for Ecuador
+M03,archived,Tax identifier for infant passengers is not returned by IB and thus not stored in the FS element of the PNR | Travel_OrderViewRS from version 1.8
+M04,archived,"verification status is not sent back from the provider, and thus the Travel Order PNR will always display NOVERIFICADO. Travellers will be able to verify their status on https://tickets.vueling.com/CheckResident.aspx"
+M05,archived,available at shopping and pricing but not from order as not recieving flight number from the provider
+M06,archived,Indian GST is applied at booking level. It is not possible to specify diferent GST info per pax
+P01,archived,"Only for Europe, Middle East, Africa and United States points of sale."
+P02,archived,Some markets require approval code (EC and MX)
+P03,archived,"Direct settlement for credit cards. Credit card holder name, billing adress and payer email address needed for airline fraud checks"
+P04,archived,To correctly compute OB fees the complete credit card number must be provided at pricing time. | CC is not accepted in some LATAM countries - please check with the airline.
+P05,archived,Reporting is done via BSP who send a RET to ARC
+P06,archived,Void can be made until midnight next day
+P07,archived,EMDs are not reported to BSP
+P08,archived,NDC sales closure is based on HKG time zone
+P09,archived,NDC sales closure is 1AM GMT
+P10,archived,NDC Sale closure at midnight at the POS
+P11,archived,"Additional fraud data information (cardholder name, billing address and email) are usually required. If such information is not provided agency will be potentially subject to ADM in case of payment frauds."
+P12,archived,"Additional fraud data information (cardholder name, billing address and email) are required to pay a BA order with CC"
+PB01,archived,"Repricing not exposed to Travel Sellers, it is trigger at payment when Price Guarantee Time Limit is reach."
+PB02,archived,available for Travel_API users only
+PB03,archived,Only Add frequent Flyer is supported by the airline
+PB04,archived,"Reference of Original payment used during booking needs to be sent in the request, Waiver code required in input for Name update of paid AA orders"
+PB05,archived,Add and Delete of passenger contact details is supported by the airline. Update need to be be performed with a delete and add.
+PB06,archived,Add and Delete of passenger contact details is supported by the airline. Update need to be be performed with a delete and add. TA email in office profile is a pre-requisit to have the feature correctly with SQ.
+S01,archived,"PTC supported: ADT, SRS, YTH, CHD/CNN, C15, INS, INF"
+S02,archived,"Possible values are: ADT, B15, BNN, C15, CHD, CMA, CMP, DIS, EMI, FFY, HOF, IIT, INF, INN, INS, ITF, ITS, ITX, JCB, JNF, JNN, JNS, LBR, LIF, LNN, MED, MIC, MIF, MIL, MIS, OFW, SEA, SPS, SNN, SRC, STR, STU, TUR, VFR, YSB, YTH."
+S03,archived,"option not supported by the airline, but offers with matching currencies will be returned"
+S04,archived,Itinerary level but no offer returned if the cabin is not the same on all bounds.
+S05,archived,"Option not supported by the airline, post filtering is applied"
+S06,archived,"For seaman fares, name of cruise, pork of embarkment date time or vessel name, next port must be sent offline to SQ assistance"
+S07,archived,Option not supported by the airline; post-filtering is applied DUPE from S05
+S08,archived,Option supported only for departure by the airline
+S09,archived,"AY negotiated fares: TMC, Student, Seat Only, Marine, Tour operator, Visit Home"
+S10,archived,no fare type exist for the best available fare (private or public) will be automatically sent to the office doing the request
+S11,archived,AFKL private fares are available on request
+S12,archived,corporate fares can be requested with promocode
+S13,archived,Only first corporate code is taken by ANDC for content search
+S14,archived,Upsells are available but without displaying the baggage allowance (airline limitation)
+S15,archived,Upsells are returned in Master Pricer response if QF return upsells for the requested search scenario
+S16,archived,Time window option is supported by the airline
+S17,archived,NDConly public fares are filled by SQ as negotiated fares
+S18,archived,Only 1 corporate code. Should be associated to the airline.
+S19,archived,"options are supported by the airline. Options will be sent to airlines except the following case: only Direct and Non-Stop options are requested, because they are not compatible on airlines' side; Instead, post-filtering is applied."
+S21,archived,Non-stop option is supported by the airline. the other options are done by post-filtering
+S22,archived,"only one frequent flyer number per passenger is supported by Amadeus Travel Platform for a given airline; In case of multiple frequent flyer numbers of a given airline per passenger provided at shopping, they are ignored."
+SD01,archived,Payment Time Limit is reduced by the airline
+SD02,archived,OrderCreate is blocked by the airline.
+SD03,archived,Not possible to book and pay a flight within 25 hours prior departure
+SE01,archived,Confirmation received <5s after booking
+SE02,archived,Seat booking fails for CHD as seat is automatically added by AA at order creation time
+SE03,archived,T_OfferPrice call mandatory after T_SeatAvailability (cf. flag in T_SeatAvailRS)
+SE04,archived,Setting on airline side to allow differed payment by agent. Should be done by BA each time a new agent is implemented
+SE05,archived,Seat confirmation received few minutes after payment. Agent should ask for record synchronisation - No BO AIR sent for the seat.
+SE06,archived,A free seat is automatically assigned by the airline at booking time
+SE07,archived,"booking of seat post-ticketing allowed only in WBS, not available in SECO | If there is a seat preference in the frequent flyer program, a seat is assigned by default at booking time, and it is not possible for now to change it via NDC"
+S20,archived,options are not supported by the airline. Post-filtering is applied DUPE from S05
+X01,archived,Address must match country of POS

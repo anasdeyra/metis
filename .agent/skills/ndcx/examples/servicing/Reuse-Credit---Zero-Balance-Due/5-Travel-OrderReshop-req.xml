@@ -1,0 +1,35 @@
+<ns0:AMA_TravelOrderReshopRQ xmlns:ns0="http://xml.amadeus.com/2010/06/Travel_OrderReshopRQ_v1">
+  <ns0:Party>
+    <ns0:Sender>
+      <ns0:TravelAgency>
+        <ns0:AgencyID>AMADMIA</ns0:AgencyID>
+        <ns0:PseudoCityID>MIA</ns0:PseudoCityID>
+      </ns0:TravelAgency>
+    </ns0:Sender>
+  </ns0:Party>
+  <ns0:Request>
+    <ns0:OrderItemRefID>AA001H7K345A2</ns0:OrderItemRefID>
+    <ns0:BookingRef>
+      <ns0:BookingID />
+      <ns0:BookingEntity>
+        <ns0:Carrier>
+          <ns0:AirlineDesigCode>AA</ns0:AirlineDesigCode>
+        </ns0:Carrier>
+      </ns0:BookingEntity>
+    </ns0:BookingRef>
+    <ns0:UpdateOrder>
+      <ns0:ReuseTickets>
+        <ns0:RetainedTicketDoc>
+          <ns0:TicketNumber>0015754985375</ns0:TicketNumber>
+          <ns0:PaxID>T1</ns0:PaxID>
+          <ns0:Type>702</ns0:Type>
+        </ns0:RetainedTicketDoc>
+        <ns0:RetainedTicketDoc>
+          <ns0:TicketNumber>0015754985376</ns0:TicketNumber>
+          <ns0:PaxID>T2</ns0:PaxID>
+          <ns0:Type>702</ns0:Type>
+        </ns0:RetainedTicketDoc>
+      </ns0:ReuseTickets>
+    </ns0:UpdateOrder>
+  </ns0:Request>
+</ns0:AMA_TravelOrderReshopRQ>

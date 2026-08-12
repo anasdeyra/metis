@@ -1,0 +1,1518 @@
+<!-- NOTE: this file is a FRAGMENT exactly as captured in the Amadeus sample
+     pack; it is not standalone well-formed XML (not well-formed (invalid token): line 1508, column 92).
+     Usually it is a body or header block lifted out of its SOAP envelope, or it
+     contains an unescaped character. Kept verbatim rather than repaired so the
+     original is not misrepresented. Read it for field shapes, do not parse it. -->
+<ns2:AMA_TravelOrderReshopRS xmlns="http://xml.amadeus.com/2010/06/Travel_OrderReshopRQ_v1" xmlns:ns2="http://xml.amadeus.com/2010/06/Travel_OrderReshopRS_v1">
+	<ns2:Response>
+		<ns2:DataLists>
+			<ns2:BaggageAllowanceList>
+				<ns2:BaggageAllowance>
+					<ns2:BaggageAllowanceID>BA76481D3F-CO</ns2:BaggageAllowanceID>
+					<ns2:TypeCode>CarryOnBag</ns2:TypeCode>
+					<ns2:ApplicablePartyText>Traveler</ns2:ApplicablePartyText>
+					<ns2:DescText>CARRYON HAND BAGGAGE ALLOWANCE</ns2:DescText>
+					<ns2:BDC>
+						<ns2:CarrierName>QF</ns2:CarrierName>
+					</ns2:BDC>
+					<ns2:PieceAllowance>
+						<ns2:ApplicablePartyText>Traveler</ns2:ApplicablePartyText>
+						<ns2:TotalQty>2</ns2:TotalQty>
+					</ns2:PieceAllowance>
+				</ns2:BaggageAllowance>
+				<ns2:BaggageAllowance>
+					<ns2:BaggageAllowanceID>BACFC9115D-CO</ns2:BaggageAllowanceID>
+					<ns2:TypeCode>CarryOnBag</ns2:TypeCode>
+					<ns2:ApplicablePartyText>Traveler</ns2:ApplicablePartyText>
+					<ns2:DescText>CARRYON HAND BAGGAGE ALLOWANCE</ns2:DescText>
+					<ns2:BDC>
+						<ns2:CarrierName>QF</ns2:CarrierName>
+					</ns2:BDC>
+					<ns2:PieceAllowance>
+						<ns2:ApplicablePartyText>Traveler</ns2:ApplicablePartyText>
+						<ns2:TotalQty>0</ns2:TotalQty>
+					</ns2:PieceAllowance>
+				</ns2:BaggageAllowance>
+				<ns2:BaggageAllowance>
+					<ns2:BaggageAllowanceID>BA96B756B2</ns2:BaggageAllowanceID>
+					<ns2:TypeCode>CheckedBag</ns2:TypeCode>
+					<ns2:ApplicablePartyText>Traveler</ns2:ApplicablePartyText>
+					<ns2:DescText>CHECKED ALLOWANCE</ns2:DescText>
+					<ns2:BDC>
+						<ns2:CarrierName>QF</ns2:CarrierName>
+					</ns2:BDC>
+					<ns2:PieceAllowance>
+						<ns2:ApplicablePartyText>Traveler</ns2:ApplicablePartyText>
+						<ns2:TotalQty>1</ns2:TotalQty>
+						<ns2:PieceDimensionAllowance>
+							<ns2:BaggageDimensionCategory>Length</ns2:BaggageDimensionCategory>
+							<ns2:MaxMeasure UnitCode="Centimeter">158</ns2:MaxMeasure>
+							<ns2:Qty>1</ns2:Qty>
+						</ns2:PieceDimensionAllowance>
+						<ns2:PieceDimensionAllowance>
+							<ns2:BaggageDimensionCategory>Length</ns2:BaggageDimensionCategory>
+							<ns2:MaxMeasure UnitCode="Inch">62</ns2:MaxMeasure>
+							<ns2:Qty>1</ns2:Qty>
+						</ns2:PieceDimensionAllowance>
+						<ns2:PieceWeightAllowance>
+							<ns2:MaximumWeightMeasure UnitCode="KG">23</ns2:MaximumWeightMeasure>
+						</ns2:PieceWeightAllowance>
+						<ns2:PieceWeightAllowance>
+							<ns2:MaximumWeightMeasure UnitCode="LBS">50</ns2:MaximumWeightMeasure>
+						</ns2:PieceWeightAllowance>
+					</ns2:PieceAllowance>
+				</ns2:BaggageAllowance>
+				<ns2:BaggageAllowance>
+					<ns2:BaggageAllowanceID>BA33C16ADF</ns2:BaggageAllowanceID>
+					<ns2:TypeCode>CheckedBag</ns2:TypeCode>
+					<ns2:ApplicablePartyText>Traveler</ns2:ApplicablePartyText>
+					<ns2:DescText>CHECKED ALLOWANCE</ns2:DescText>
+					<ns2:WeightAllowance>
+						<ns2:MaximumWeightMeasure UnitCode="KG">10</ns2:MaximumWeightMeasure>
+					</ns2:WeightAllowance>
+					<ns2:BDC>
+						<ns2:CarrierName>QF</ns2:CarrierName>
+					</ns2:BDC>
+				</ns2:BaggageAllowance>
+			</ns2:BaggageAllowanceList>
+			<ns2:BaggageDisclosureList>
+				<ns2:BaggageDisclosure>
+					<ns2:BaggageDisclosureID>BaggageKey-1</ns2:BaggageDisclosureID>
+					<ns2:RuleTypeCode>N</ns2:RuleTypeCode>
+					<ns2:Desc>
+						<ns2:DescID>DESC11</ns2:DescID>
+						<ns2:DescText>Not subject to US DOT and CTA Reservation or Disclosure</ns2:DescText>
+					</ns2:Desc>
+				</ns2:BaggageDisclosure>
+				<ns2:BaggageDisclosure>
+					<ns2:BaggageDisclosureID>BaggageKey-2</ns2:BaggageDisclosureID>
+					<ns2:RuleTypeCode>N</ns2:RuleTypeCode>
+					<ns2:Desc>
+						<ns2:DescID>DESC21</ns2:DescID>
+						<ns2:DescText>Not subject to US DOT and CTA Reservation or Disclosure</ns2:DescText>
+					</ns2:Desc>
+				</ns2:BaggageDisclosure>
+			</ns2:BaggageDisclosureList>
+			<ns2:FareList>
+				<ns2:FareGroup refs="FRK25B5D60A" ListKey="FG1">
+					<ns2:Fare>
+						<ns2:FareCode>70J</ns2:FareCode>
+					</ns2:Fare>
+					<ns2:FareBasisCode>
+						<ns2:Code>QDQA</ns2:Code>
+					</ns2:FareBasisCode>
+				</ns2:FareGroup>
+				<ns2:FareGroup refs="FRK53A97A72" ListKey="FG2">
+					<ns2:Fare>
+						<ns2:FareCode>70J</ns2:FareCode>
+					</ns2:Fare>
+					<ns2:FareBasisCode>
+						<ns2:Code>ODQ60A</ns2:Code>
+					</ns2:FareBasisCode>
+				</ns2:FareGroup>
+				<ns2:FareGroup refs="FRKDB62FCC3" ListKey="FG3">
+					<ns2:Fare>
+						<ns2:FareCode>70J</ns2:FareCode>
+					</ns2:Fare>
+					<ns2:FareBasisCode>
+						<ns2:Code>QDQACH</ns2:Code>
+					</ns2:FareBasisCode>
+				</ns2:FareGroup>
+				<ns2:FareGroup refs="FRK5650065D" ListKey="FG4">
+					<ns2:Fare>
+						<ns2:FareCode>70J</ns2:FareCode>
+					</ns2:Fare>
+					<ns2:FareBasisCode>
+						<ns2:Code>ODQ60ACH</ns2:Code>
+					</ns2:FareBasisCode>
+				</ns2:FareGroup>
+				<ns2:FareGroup refs="FRKE72541D9" ListKey="FG5">
+					<ns2:Fare>
+						<ns2:FareCode>70J</ns2:FareCode>
+					</ns2:Fare>
+					<ns2:FareBasisCode>
+						<ns2:Code>QDQAIN</ns2:Code>
+					</ns2:FareBasisCode>
+				</ns2:FareGroup>
+				<ns2:FareGroup refs="FRKBECB6313" ListKey="FG6">
+					<ns2:Fare>
+						<ns2:FareCode>70J</ns2:FareCode>
+					</ns2:Fare>
+					<ns2:FareBasisCode>
+						<ns2:Code>ODQ60AIN</ns2:Code>
+					</ns2:FareBasisCode>
+				</ns2:FareGroup>
+			</ns2:FareList>
+			<ns2:OriginDestList>
+				<ns2:OriginDest>
+					<ns2:OriginDestID>O1</ns2:OriginDestID>
+					<ns2:ArrivalStationCode>PER</ns2:ArrivalStationCode>
+					<ns2:DepStationCode>SYD</ns2:DepStationCode>
+					<ns2:PaxJourneyRefID>F1</ns2:PaxJourneyRefID>
+				</ns2:OriginDest>
+				<ns2:OriginDest>
+					<ns2:OriginDestID>O2</ns2:OriginDestID>
+					<ns2:ArrivalStationCode>SYD</ns2:ArrivalStationCode>
+					<ns2:DepStationCode>PER</ns2:DepStationCode>
+					<ns2:PaxJourneyRefID>F2</ns2:PaxJourneyRefID>
+				</ns2:OriginDest>
+			</ns2:OriginDestList>
+			<ns2:PaxJourneyList>
+				<ns2:PaxJourney>
+					<ns2:PaxJourneyID>F1</ns2:PaxJourneyID>
+					<ns2:PaxSegmentRefID>S1</ns2:PaxSegmentRefID>
+				</ns2:PaxJourney>
+				<ns2:PaxJourney>
+					<ns2:PaxJourneyID>F2</ns2:PaxJourneyID>
+					<ns2:PaxSegmentRefID>S4</ns2:PaxSegmentRefID>
+				</ns2:PaxJourney>
+			</ns2:PaxJourneyList>
+			<ns2:PaxList>
+				<ns2:Pax>
+					<ns2:PaxID>T1</ns2:PaxID>
+					<ns2:PTC>ADT</ns2:PTC>
+					<ns2:PaxRefID>T1.1</ns2:PaxRefID>
+					<ns2:Individual>
+						<ns2:IndividualID>T1</ns2:IndividualID>
+						<ns2:Birthdate>1985-03-23</ns2:Birthdate>
+						<ns2:GenderCode>F</ns2:GenderCode>
+						<ns2:TitleName>MRS</ns2:TitleName>
+						<ns2:GivenName>AALYJK</ns2:GivenName>
+						<ns2:Surname>NDCX</ns2:Surname>
+					</ns2:Individual>
+				</ns2:Pax>
+				<ns2:Pax>
+					<ns2:PaxID>T1.1</ns2:PaxID>
+					<ns2:PTC>INF</ns2:PTC>
+					<ns2:Individual>
+						<ns2:IndividualID>T1.1</ns2:IndividualID>
+						<ns2:Birthdate>2021-11-26</ns2:Birthdate>
+						<ns2:GenderCode>F</ns2:GenderCode>
+						<ns2:GivenName>FHTEDF</ns2:GivenName>
+						<ns2:Surname>NDCX</ns2:Surname>
+					</ns2:Individual>
+				</ns2:Pax>
+				<ns2:Pax>
+					<ns2:PaxID>T2</ns2:PaxID>
+					<ns2:PTC>CHD</ns2:PTC>
+					<ns2:Individual>
+						<ns2:IndividualID>T2</ns2:IndividualID>
+						<ns2:Birthdate>2013-05-07</ns2:Birthdate>
+						<ns2:GenderCode>M</ns2:GenderCode>
+						<ns2:TitleName>MR</ns2:TitleName>
+						<ns2:GivenName>CKLPCX</ns2:GivenName>
+						<ns2:Surname>NDCX</ns2:Surname>
+					</ns2:Individual>
+				</ns2:Pax>
+			</ns2:PaxList>
+			<ns2:PaxSegmentList>
+				<ns2:PaxSegment>
+					<ns2:PaxSegmentID>S1</ns2:PaxSegmentID>
+					<ns2:Dep>
+						<ns2:IATA_LocationCode>SYD</ns2:IATA_LocationCode>
+						<ns2:AircraftScheduledDateTime>2023-05-02T19:45:00</ns2:AircraftScheduledDateTime>
+					</ns2:Dep>
+					<ns2:Arrival>
+						<ns2:IATA_LocationCode>PER</ns2:IATA_LocationCode>
+						<ns2:AircraftScheduledDateTime>2023-05-02T22:45:00</ns2:AircraftScheduledDateTime>
+					</ns2:Arrival>
+					<ns2:MarketingCarrierInfo>
+						<ns2:CarrierDesigCode>QF</ns2:CarrierDesigCode>
+						<ns2:MarketingCarrierFlightNumberText>653</ns2:MarketingCarrierFlightNumberText>
+						<ns2:RBD_Code>Q</ns2:RBD_Code>
+					</ns2:MarketingCarrierInfo>
+				</ns2:PaxSegment>
+				<ns2:PaxSegment>
+					<ns2:PaxSegmentID>S4</ns2:PaxSegmentID>
+					<ns2:Dep>
+						<ns2:IATA_LocationCode>PER</ns2:IATA_LocationCode>
+						<ns2:AircraftScheduledDateTime>2023-06-02T11:15:00</ns2:AircraftScheduledDateTime>
+					</ns2:Dep>
+					<ns2:Arrival>
+						<ns2:IATA_LocationCode>SYD</ns2:IATA_LocationCode>
+						<ns2:AircraftScheduledDateTime>2023-06-02T17:15:00</ns2:AircraftScheduledDateTime>
+					</ns2:Arrival>
+					<ns2:MarketingCarrierInfo>
+						<ns2:CarrierDesigCode>QF</ns2:CarrierDesigCode>
+						<ns2:MarketingCarrierFlightNumberText>646</ns2:MarketingCarrierFlightNumberText>
+						<ns2:RBD_Code>O</ns2:RBD_Code>
+					</ns2:MarketingCarrierInfo>
+				</ns2:PaxSegment>
+			</ns2:PaxSegmentList>
+			<ns2:PriceClassList>
+				<ns2:PriceClass>
+					<ns2:PriceClassID>QFREDeDeal-1</ns2:PriceClassID>
+					<ns2:Code>DEAL</ns2:Code>
+					<ns2:Name>RED eDeal</ns2:Name>
+					<ns2:Desc>
+						<ns2:DescText>1. Changes:</ns2:DescText>
+					</ns2:Desc>
+					<ns2:Desc>
+						<ns2:DescText>Before day of scheduled departure:</ns2:DescText>
+					</ns2:Desc>
+					<ns2:Desc>
+						<ns2:DescText>- Permitted at a charge of AUD99.00, inclusive of GST</ns2:DescText>
+					</ns2:Desc>
+					<ns2:Desc>
+						<ns2:DescText>- New fare must be of equal or higher value</ns2:DescText>
+					</ns2:Desc>
+					<ns2:Desc>
+						<ns2:DescText>- No show results in loss of fare</ns2:DescText>
+					</ns2:Desc>
+					<ns2:Desc>
+						<ns2:DescText>Day of departure:</ns2:DescText>
+					</ns2:Desc>
+					<ns2:Desc>
+						<ns2:DescText>- Changes not permitted and results in loss of fare</ns2:DescText>
+					</ns2:Desc>
+					<ns2:Desc>
+						<ns2:DescText>- No show results in loss of fare</ns2:DescText>
+					</ns2:Desc>
+					<ns2:Desc>
+						<ns2:DescText>2. Cancellations:</ns2:DescText>
+					</ns2:Desc>
+					<ns2:Desc>
+						<ns2:DescText>- Non-refundable</ns2:DescText>
+					</ns2:Desc>
+					<ns2:Desc>
+						<ns2:DescText>- Ticket value can be held in credit, change fee applies</ns2:DescText>
+					</ns2:Desc>
+					<ns2:Desc>
+						<ns2:DescText>- No show results in loss of fare</ns2:DescText>
+					</ns2:Desc>
+					<ns2:Desc>
+						<ns2:DescText>3. Name changes:</ns2:DescText>
+					</ns2:Desc>
+					<ns2:Desc>
+						<ns2:DescText>- Permitted with a name change fee of AUD99.00, inclusive of GST</ns2:DescText>
+					</ns2:Desc>
+					<ns2:Desc>
+						<ns2:DescText>- New fare must be Economy Flex fare or higher</ns2:DescText>
+					</ns2:Desc>
+					<ns2:Desc>
+						<ns2:DescText>- Fare difference and change fee applies</ns2:DescText>
+					</ns2:Desc>
+					<ns2:Desc>
+						<ns2:DescText>4. Inclusions on Qantas operated flights:</ns2:DescText>
+					</ns2:Desc>
+					<ns2:Desc>
+						<ns2:DescText>- Included bags</ns2:DescText>
+					</ns2:Desc>
+					<ns2:Desc>
+						<ns2:DescText>- Carry On Baggage Allowance - All classes, one piece up to 10kgs and up to 7kgs Dash 8 services</ns2:DescText>
+					</ns2:Desc>
+					<ns2:Desc>
+						<ns2:DescText>- Complimentary standard seat selection</ns2:DescText>
+					</ns2:Desc>
+					<ns2:Desc>
+						<ns2:DescText>- Complimentary food and beverage</ns2:DescText>
+					</ns2:Desc>
+					<ns2:Desc>
+						<ns2:DescText>- Complimentary in-flight entertainment where available</ns2:DescText>
+					</ns2:Desc>
+					<ns2:Desc>
+						<ns2:DescText>5.Qantas Frequent Flyer benefits:</ns2:DescText>
+					</ns2:Desc>
+					<ns2:Desc>
+						<ns2:DescText>Points:</ns2:DescText>
+					</ns2:Desc>
+					<ns2:Desc>
+						<ns2:DescText>- Earn category is discounted economy</ns2:DescText>
+					</ns2:Desc>
+					<ns2:Desc>
+						<ns2:DescText>- Minimum points guarantee applies</ns2:DescText>
+					</ns2:Desc>
+					<ns2:Desc>
+						<ns2:DescText>Status Credits:</ns2:DescText>
+					</ns2:Desc>
+					<ns2:Desc>
+						<ns2:DescText>- Earn category is discounted economy</ns2:DescText>
+					</ns2:Desc>
+					<ns2:Desc>
+						<ns2:DescText>- Minimum Status Credits earnt is 10</ns2:DescText>
+					</ns2:Desc>
+					<ns2:Desc>
+						<ns2:DescText>Upgrade eligibility:</ns2:DescText>
+					</ns2:Desc>
+					<ns2:Desc>
+						<ns2:DescText>- Eligible for upgrade</ns2:DescText>
+					</ns2:Desc>
+					<ns2:Desc>
+						<ns2:DescText>- Subject to availability</ns2:DescText>
+					</ns2:Desc>
+					<ns2:Desc>
+						<ns2:DescText>Lounge access:</ns2:DescText>
+					</ns2:Desc>
+					<ns2:Desc>
+						<ns2:DescText>- May be applicable based on Tier</ns2:DescText>
+					</ns2:Desc>
+				</ns2:PriceClass>
+			</ns2:PriceClassList>
+		</ns2:DataLists>
+		<ns2:Metadata>
+			<ns2:Other>
+				<ns2:OtherMetadata>
+					<ns2:RuleMetadatas>
+						<ns2:RuleMetadata MetadataKey="RM6AC7D82B">
+							<ns2:RuleID>Change</ns2:RuleID>
+							<ns2:Values>
+								<ns2:Value>
+									<ns2:Instruction>Allowed</ns2:Instruction>
+								</ns2:Value>
+							</ns2:Values>
+						</ns2:RuleMetadata>
+						<ns2:RuleMetadata MetadataKey="RM3FD2D7F7">
+							<ns2:RuleID>Cancel</ns2:RuleID>
+							<ns2:Values>
+								<ns2:Value>
+									<ns2:Instruction>Not Allowed</ns2:Instruction>
+								</ns2:Value>
+							</ns2:Values>
+						</ns2:RuleMetadata>
+					</ns2:RuleMetadatas>
+				</ns2:OtherMetadata>
+				<ns2:OtherMetadata>
+					<ns2:CurrencyMetadatas>
+						<ns2:CurrencyMetadata MetadataKey="EUR">
+							<ns2:Decimals>2</ns2:Decimals>
+						</ns2:CurrencyMetadata>
+						<ns2:CurrencyMetadata MetadataKey="AUD">
+							<ns2:Decimals>2</ns2:Decimals>
+						</ns2:CurrencyMetadata>
+					</ns2:CurrencyMetadatas>
+				</ns2:OtherMetadata>
+			</ns2:Other>
+		</ns2:Metadata>
+		<ns2:ReshopResults UseCase="EXCHANGE">
+			<ns2:ReshopOffers>
+				<ns2:ReshopOffer>
+					<ns2:OfferID>ERIxNaEYWcTGiKVByBRtL8NC_1A_1A_TPID_CiQIARIaUkQwNEQwRDhBLUYzMDctNEU3NS1CRkY3LTEYARgCGAMSCEV4Y2hhbmdl</ns2:OfferID>
+					<ns2:OwnerCode>QF</ns2:OwnerCode>
+					<ns2:ValidatingCarrierCode>QF</ns2:ValidatingCarrierCode>
+					<ns2:OfferExpirationDateTime>2023-02-22T16:49:28Z</ns2:OfferExpirationDateTime>
+					<ns2:PaymentTimeLimitDateTime>2023-02-22T23:59:00</ns2:PaymentTimeLimitDateTime>
+					<ns2:BaggageAllowance>
+						<ns2:PaxJourneyRefID>F1</ns2:PaxJourneyRefID>
+						<ns2:PaxRefID>T1</ns2:PaxRefID>
+						<ns2:BaggageAllowanceRefID>BA76481D3F-CO</ns2:BaggageAllowanceRefID>
+					</ns2:BaggageAllowance>
+					<ns2:BaggageAllowance>
+						<ns2:PaxJourneyRefID>F1</ns2:PaxJourneyRefID>
+						<ns2:PaxRefID>T2</ns2:PaxRefID>
+						<ns2:BaggageAllowanceRefID>BA76481D3F-CO</ns2:BaggageAllowanceRefID>
+					</ns2:BaggageAllowance>
+					<ns2:BaggageAllowance>
+						<ns2:PaxJourneyRefID>F1</ns2:PaxJourneyRefID>
+						<ns2:PaxRefID>T1.1</ns2:PaxRefID>
+						<ns2:BaggageAllowanceRefID>BACFC9115D-CO</ns2:BaggageAllowanceRefID>
+					</ns2:BaggageAllowance>
+					<ns2:BaggageAllowance>
+						<ns2:PaxJourneyRefID>F2</ns2:PaxJourneyRefID>
+						<ns2:PaxRefID>T1</ns2:PaxRefID>
+						<ns2:BaggageAllowanceRefID>BA76481D3F-CO</ns2:BaggageAllowanceRefID>
+					</ns2:BaggageAllowance>
+					<ns2:BaggageAllowance>
+						<ns2:PaxJourneyRefID>F2</ns2:PaxJourneyRefID>
+						<ns2:PaxRefID>T2</ns2:PaxRefID>
+						<ns2:BaggageAllowanceRefID>BA76481D3F-CO</ns2:BaggageAllowanceRefID>
+					</ns2:BaggageAllowance>
+					<ns2:BaggageAllowance>
+						<ns2:PaxJourneyRefID>F2</ns2:PaxJourneyRefID>
+						<ns2:PaxRefID>T1.1</ns2:PaxRefID>
+						<ns2:BaggageAllowanceRefID>BACFC9115D-CO</ns2:BaggageAllowanceRefID>
+					</ns2:BaggageAllowance>
+					<ns2:BaggageAllowance>
+						<ns2:PaxJourneyRefID>F1</ns2:PaxJourneyRefID>
+						<ns2:PaxRefID>T1</ns2:PaxRefID>
+						<ns2:BaggageAllowanceRefID>BA96B756B2</ns2:BaggageAllowanceRefID>
+					</ns2:BaggageAllowance>
+					<ns2:BaggageAllowance>
+						<ns2:PaxJourneyRefID>F1</ns2:PaxJourneyRefID>
+						<ns2:PaxRefID>T2</ns2:PaxRefID>
+						<ns2:BaggageAllowanceRefID>BA96B756B2</ns2:BaggageAllowanceRefID>
+					</ns2:BaggageAllowance>
+					<ns2:BaggageAllowance>
+						<ns2:PaxJourneyRefID>F1</ns2:PaxJourneyRefID>
+						<ns2:PaxRefID>T1.1</ns2:PaxRefID>
+						<ns2:BaggageAllowanceRefID>BA33C16ADF</ns2:BaggageAllowanceRefID>
+					</ns2:BaggageAllowance>
+					<ns2:BaggageAllowance>
+						<ns2:PaxJourneyRefID>F2</ns2:PaxJourneyRefID>
+						<ns2:PaxRefID>T1</ns2:PaxRefID>
+						<ns2:BaggageAllowanceRefID>BA96B756B2</ns2:BaggageAllowanceRefID>
+					</ns2:BaggageAllowance>
+					<ns2:BaggageAllowance>
+						<ns2:PaxJourneyRefID>F2</ns2:PaxJourneyRefID>
+						<ns2:PaxRefID>T2</ns2:PaxRefID>
+						<ns2:BaggageAllowanceRefID>BA96B756B2</ns2:BaggageAllowanceRefID>
+					</ns2:BaggageAllowance>
+					<ns2:BaggageAllowance>
+						<ns2:PaxJourneyRefID>F2</ns2:PaxJourneyRefID>
+						<ns2:PaxRefID>T1.1</ns2:PaxRefID>
+						<ns2:BaggageAllowanceRefID>BA33C16ADF</ns2:BaggageAllowanceRefID>
+					</ns2:BaggageAllowance>
+					<ns2:JourneyOverview>
+						<ns2:JourneyPriceClass>
+							<ns2:PriceClassRefID>QFREDeDeal-1</ns2:PriceClassRefID>
+							<ns2:PaxJourneyRefID>F1</ns2:PaxJourneyRefID>
+						</ns2:JourneyPriceClass>
+						<ns2:JourneyPriceClass>
+							<ns2:PriceClassRefID>QFREDeDeal-1</ns2:PriceClassRefID>
+							<ns2:PaxJourneyRefID>F2</ns2:PaxJourneyRefID>
+						</ns2:JourneyPriceClass>
+					</ns2:JourneyOverview>
+					<ns2:PTC_OfferParameters>
+						<ns2:PTC_PricedCode>ADT</ns2:PTC_PricedCode>
+						<ns2:PTC_RequestedCode>ADT</ns2:PTC_RequestedCode>
+						<ns2:RequestedPaxNumber>1</ns2:RequestedPaxNumber>
+						<ns2:PricedPaxNumber>1</ns2:PricedPaxNumber>
+					</ns2:PTC_OfferParameters>
+					<ns2:PTC_OfferParameters>
+						<ns2:PTC_PricedCode>CNN</ns2:PTC_PricedCode>
+						<ns2:PTC_RequestedCode>CNN</ns2:PTC_RequestedCode>
+						<ns2:RequestedPaxNumber>1</ns2:RequestedPaxNumber>
+						<ns2:PricedPaxNumber>1</ns2:PricedPaxNumber>
+					</ns2:PTC_OfferParameters>
+					<ns2:PTC_OfferParameters>
+						<ns2:PTC_PricedCode>INF</ns2:PTC_PricedCode>
+						<ns2:PTC_RequestedCode>INF</ns2:PTC_RequestedCode>
+						<ns2:RequestedPaxNumber>1</ns2:RequestedPaxNumber>
+						<ns2:PricedPaxNumber>1</ns2:PricedPaxNumber>
+					</ns2:PTC_OfferParameters>
+					<ns2:TotalPrice>
+						<ns2:TotalAmount CurCode="EUR">126960</ns2:TotalAmount>
+					</ns2:TotalPrice>
+					<ns2:AddOfferItem>
+						<ns2:OfferItemID>1A_TPID_CAESHFJEMDREMEQ4QS1GMzA3LTRFNzUtQkZGNy0xLTE=</ns2:OfferItemID>
+						<ns2:MandatoryInd>true</ns2:MandatoryInd>
+						<ns2:OrderItemRefID>P58953DE3-3D0E-4E7E-9015lzl0wpww8fvwx-1-1_1APAX_T1</ns2:OrderItemRefID>
+						<ns2:FareDetail>
+							<ns2:PassengerRefs>T1</ns2:PassengerRefs>
+							<ns2:Price>
+								<ns2:TotalAmount>
+									<ns2:DetailCurrencyPrice>
+										<ns2:Total Code="EUR">63480</ns2:Total>
+									</ns2:DetailCurrencyPrice>
+								</ns2:TotalAmount>
+								<ns2:BaseAmount Code="EUR">58000</ns2:BaseAmount>
+								<ns2:FareFiledIn>
+									<ns2:BaseAmount Code="AUD">89709</ns2:BaseAmount>
+									<ns2:ExchangeRate>0.64604219</ns2:ExchangeRate>
+								</ns2:FareFiledIn>
+								<ns2:Taxes>
+									<ns2:Total Code="EUR">5480</ns2:Total>
+									<ns2:Breakdown>
+										<ns2:Tax RefundInd="true">
+											<ns2:Qualifier>701</ns2:Qualifier>
+											<ns2:Amount Code="EUR">1100</ns2:Amount>
+											<ns2:TaxCode>YR</ns2:TaxCode>
+											<ns2:CollectionPoint>
+												<ns2:CurrCode>EUR</ns2:CurrCode>
+												<ns2:AirportAmount xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">1100</ns2:AirportAmount>
+												<ns2:AirportCode>SYD</ns2:AirportCode>
+											</ns2:CollectionPoint>
+											<ns2:LocalAmount Code="EUR">1100</ns2:LocalAmount>
+											<ns2:Description>YRI QF CARRIER IMPOSED MISC FEE</ns2:Description>
+										</ns2:Tax>
+										<ns2:Tax RefundInd="true">
+											<ns2:Qualifier>701</ns2:Qualifier>
+											<ns2:Amount Code="EUR">1100</ns2:Amount>
+											<ns2:TaxCode>YR</ns2:TaxCode>
+											<ns2:CollectionPoint>
+												<ns2:CurrCode>EUR</ns2:CurrCode>
+												<ns2:AirportAmount xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">1100</ns2:AirportAmount>
+												<ns2:AirportCode>PER</ns2:AirportCode>
+											</ns2:CollectionPoint>
+											<ns2:LocalAmount Code="EUR">1100</ns2:LocalAmount>
+											<ns2:Description>YRI QF CARRIER IMPOSED MISC FEE</ns2:Description>
+										</ns2:Tax>
+										<ns2:Tax RefundInd="true">
+											<ns2:Qualifier>701</ns2:Qualifier>
+											<ns2:Amount Code="EUR">1220</ns2:Amount>
+											<ns2:Nation>AU</ns2:Nation>
+											<ns2:TaxCode>QR</ns2:TaxCode>
+											<ns2:LocalAmount Code="AUD">1886</ns2:LocalAmount>
+											<ns2:Description>PASSENGER SERVICE CHARGE DOMESTIC DEPARTURE</ns2:Description>
+										</ns2:Tax>
+										<ns2:Tax RefundInd="true">
+											<ns2:Qualifier>701</ns2:Qualifier>
+											<ns2:Amount Code="EUR">1220</ns2:Amount>
+											<ns2:Nation>AU</ns2:Nation>
+											<ns2:TaxCode>QR</ns2:TaxCode>
+											<ns2:LocalAmount Code="AUD">1886</ns2:LocalAmount>
+											<ns2:Description>PASSENGER SERVICE CHARGE DOMESTIC ARRIVAL</ns2:Description>
+										</ns2:Tax>
+										<ns2:Tax RefundInd="true">
+											<ns2:Qualifier>701</ns2:Qualifier>
+											<ns2:Amount Code="EUR">840</ns2:Amount>
+											<ns2:Nation>AU</ns2:Nation>
+											<ns2:TaxCode>WG</ns2:TaxCode>
+											<ns2:LocalAmount Code="AUD">1300</ns2:LocalAmount>
+											<ns2:Description>SAFETY AND SECURITY CHARGE DEPARTURE</ns2:Description>
+										</ns2:Tax>
+									</ns2:Breakdown>
+								</ns2:Taxes>
+							</ns2:Price>
+							<ns2:FareComponent>
+								<ns2:Price>
+									<ns2:TotalAmount>
+										<ns2:DetailCurrencyPrice>
+											<ns2:Total Code="EUR">34187</ns2:Total>
+										</ns2:DetailCurrencyPrice>
+									</ns2:TotalAmount>
+									<ns2:BaseAmount Code="EUR">31447</ns2:BaseAmount>
+									<ns2:FareFiledIn>
+										<ns2:BaseAmount Code="AUD">38942</ns2:BaseAmount>
+									</ns2:FareFiledIn>
+									<ns2:Taxes>
+										<ns2:Total Code="EUR">2740</ns2:Total>
+										<ns2:Breakdown>
+											<ns2:Tax>
+												<ns2:Amount Code="EUR">1100</ns2:Amount>
+												<ns2:TaxCode>YR</ns2:TaxCode>
+												<ns2:CollectionPoint>
+													<ns2:CurrCode>EUR</ns2:CurrCode>
+													<ns2:AirportAmount xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">1100</ns2:AirportAmount>
+													<ns2:AirportCode>SYD</ns2:AirportCode>
+												</ns2:CollectionPoint>
+												<ns2:LocalAmount Code="EUR">1100</ns2:LocalAmount>
+												<ns2:Description>YRI QF CARRIER IMPOSED MISC FEE</ns2:Description>
+											</ns2:Tax>
+											<ns2:Tax>
+												<ns2:Amount Code="EUR">621</ns2:Amount>
+												<ns2:Nation>AU</ns2:Nation>
+												<ns2:TaxCode>QR</ns2:TaxCode>
+												<ns2:LocalAmount Code="AUD">960</ns2:LocalAmount>
+												<ns2:Description>PASSENGER SERVICE CHARGE DOMESTIC DEPARTURE</ns2:Description>
+											</ns2:Tax>
+											<ns2:Tax>
+												<ns2:Amount Code="EUR">599</ns2:Amount>
+												<ns2:Nation>AU</ns2:Nation>
+												<ns2:TaxCode>QR</ns2:TaxCode>
+												<ns2:LocalAmount Code="AUD">926</ns2:LocalAmount>
+												<ns2:Description>PASSENGER SERVICE CHARGE DOMESTIC ARRIVAL</ns2:Description>
+											</ns2:Tax>
+											<ns2:Tax>
+												<ns2:Amount Code="EUR">420</ns2:Amount>
+												<ns2:Nation>AU</ns2:Nation>
+												<ns2:TaxCode>WG</ns2:TaxCode>
+												<ns2:LocalAmount Code="AUD">650</ns2:LocalAmount>
+												<ns2:Description>SAFETY AND SECURITY CHARGE DEPARTURE</ns2:Description>
+											</ns2:Tax>
+										</ns2:Breakdown>
+									</ns2:Taxes>
+								</ns2:Price>
+								<ns2:FareBasis>
+									<ns2:FareBasisCode refs="FG1">
+										<ns2:Code>QDQA</ns2:Code>
+									</ns2:FareBasisCode>
+									<ns2:RBD>Q</ns2:RBD>
+									<ns2:CabinType>
+										<ns2:CabinTypeCode xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">Y</ns2:CabinTypeCode>
+										<ns2:CabinTypeName xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">Economy</ns2:CabinTypeName>
+									</ns2:CabinType>
+								</ns2:FareBasis>
+								<ns2:FareRules>
+									<ns2:Penalty CancelFeeInd="false" ChangeFeeInd="true" RefundableInd="false">
+										<ns2:Details>
+											<ns2:Detail>
+												<ns2:Type>Change</ns2:Type>
+												<ns2:Application>2</ns2:Application>
+												<ns2:Amounts>
+													<ns2:Amount>
+														<ns2:CurrencyAmountValue Code="AUD">9000</ns2:CurrencyAmountValue>
+														<ns2:AmountApplication>MAX</ns2:AmountApplication>
+													</ns2:Amount>
+													<ns2:Amount>
+														<ns2:CurrencyAmountValue Code="AUD">9000</ns2:CurrencyAmountValue>
+														<ns2:AmountApplication>MIN</ns2:AmountApplication>
+													</ns2:Amount>
+												</ns2:Amounts>
+											</ns2:Detail>
+											<ns2:Detail>
+												<ns2:Type>Change</ns2:Type>
+												<ns2:Application>3</ns2:Application>
+												<ns2:Amounts>
+													<ns2:Amount>
+														<ns2:CurrencyAmountValue Code="AUD">9900</ns2:CurrencyAmountValue>
+														<ns2:AmountApplication>MAX</ns2:AmountApplication>
+													</ns2:Amount>
+													<ns2:Amount>
+														<ns2:CurrencyAmountValue Code="AUD">9900</ns2:CurrencyAmountValue>
+														<ns2:AmountApplication>MIN</ns2:AmountApplication>
+													</ns2:Amount>
+												</ns2:Amounts>
+											</ns2:Detail>
+											<ns2:Detail refs="RM6AC7D82B">
+												<ns2:Type>Change</ns2:Type>
+											</ns2:Detail>
+											<ns2:Detail refs="RM3FD2D7F7">
+												<ns2:Type>Cancel</ns2:Type>
+											</ns2:Detail>
+										</ns2:Details>
+									</ns2:Penalty>
+									<ns2:Ticketing>
+										<ns2:Endorsements>
+											<ns2:Endorsement>QFSKEDCHG</ns2:Endorsement>
+											<ns2:Endorsement>NON-REF/NON-END</ns2:Endorsement>
+											<ns2:Endorsement>SPECIAL FARE CONDITIONS</ns2:Endorsement>
+										</ns2:Endorsements>
+									</ns2:Ticketing>
+								</ns2:FareRules>
+								<ns2:PriceClassRef>QFREDeDeal-1</ns2:PriceClassRef>
+								<ns2:SegmentRefs>S1</ns2:SegmentRefs>
+							</ns2:FareComponent>
+							<ns2:FareComponent>
+								<ns2:Price>
+									<ns2:TotalAmount>
+										<ns2:DetailCurrencyPrice>
+											<ns2:Total Code="EUR">29249</ns2:Total>
+										</ns2:DetailCurrencyPrice>
+									</ns2:TotalAmount>
+									<ns2:BaseAmount Code="EUR">26509</ns2:BaseAmount>
+									<ns2:FareFiledIn>
+										<ns2:BaseAmount Code="AUD">32827</ns2:BaseAmount>
+									</ns2:FareFiledIn>
+									<ns2:Taxes>
+										<ns2:Total Code="EUR">2740</ns2:Total>
+										<ns2:Breakdown>
+											<ns2:Tax>
+												<ns2:Amount Code="EUR">1100</ns2:Amount>
+												<ns2:TaxCode>YR</ns2:TaxCode>
+												<ns2:CollectionPoint>
+													<ns2:CurrCode>EUR</ns2:CurrCode>
+													<ns2:AirportAmount xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">1100</ns2:AirportAmount>
+													<ns2:AirportCode>PER</ns2:AirportCode>
+												</ns2:CollectionPoint>
+												<ns2:LocalAmount Code="EUR">1100</ns2:LocalAmount>
+												<ns2:Description>YRI QF CARRIER IMPOSED MISC FEE</ns2:Description>
+											</ns2:Tax>
+											<ns2:Tax>
+												<ns2:Amount Code="EUR">599</ns2:Amount>
+												<ns2:Nation>AU</ns2:Nation>
+												<ns2:TaxCode>QR</ns2:TaxCode>
+												<ns2:LocalAmount Code="AUD">926</ns2:LocalAmount>
+												<ns2:Description>PASSENGER SERVICE CHARGE DOMESTIC DEPARTURE</ns2:Description>
+											</ns2:Tax>
+											<ns2:Tax>
+												<ns2:Amount Code="EUR">621</ns2:Amount>
+												<ns2:Nation>AU</ns2:Nation>
+												<ns2:TaxCode>QR</ns2:TaxCode>
+												<ns2:LocalAmount Code="AUD">960</ns2:LocalAmount>
+												<ns2:Description>PASSENGER SERVICE CHARGE DOMESTIC ARRIVAL</ns2:Description>
+											</ns2:Tax>
+											<ns2:Tax>
+												<ns2:Amount Code="EUR">420</ns2:Amount>
+												<ns2:Nation>AU</ns2:Nation>
+												<ns2:TaxCode>WG</ns2:TaxCode>
+												<ns2:LocalAmount Code="AUD">650</ns2:LocalAmount>
+												<ns2:Description>SAFETY AND SECURITY CHARGE DEPARTURE</ns2:Description>
+											</ns2:Tax>
+										</ns2:Breakdown>
+									</ns2:Taxes>
+								</ns2:Price>
+								<ns2:FareBasis>
+									<ns2:FareBasisCode refs="FG2">
+										<ns2:Code>ODQ60A</ns2:Code>
+									</ns2:FareBasisCode>
+									<ns2:RBD>O</ns2:RBD>
+									<ns2:CabinType>
+										<ns2:CabinTypeCode xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">Y</ns2:CabinTypeCode>
+										<ns2:CabinTypeName xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">Economy</ns2:CabinTypeName>
+									</ns2:CabinType>
+								</ns2:FareBasis>
+								<ns2:FareRules>
+									<ns2:Penalty CancelFeeInd="false" ChangeFeeInd="true" RefundableInd="false">
+										<ns2:Details>
+											<ns2:Detail>
+												<ns2:Type>Change</ns2:Type>
+												<ns2:Application>2</ns2:Application>
+												<ns2:Amounts>
+													<ns2:Amount>
+														<ns2:CurrencyAmountValue Code="AUD">9000</ns2:CurrencyAmountValue>
+														<ns2:AmountApplication>MAX</ns2:AmountApplication>
+													</ns2:Amount>
+													<ns2:Amount>
+														<ns2:CurrencyAmountValue Code="AUD">9000</ns2:CurrencyAmountValue>
+														<ns2:AmountApplication>MIN</ns2:AmountApplication>
+													</ns2:Amount>
+												</ns2:Amounts>
+											</ns2:Detail>
+											<ns2:Detail>
+												<ns2:Type>Change</ns2:Type>
+												<ns2:Application>3</ns2:Application>
+												<ns2:Amounts>
+													<ns2:Amount>
+														<ns2:CurrencyAmountValue Code="AUD">9900</ns2:CurrencyAmountValue>
+														<ns2:AmountApplication>MAX</ns2:AmountApplication>
+													</ns2:Amount>
+													<ns2:Amount>
+														<ns2:CurrencyAmountValue Code="AUD">9900</ns2:CurrencyAmountValue>
+														<ns2:AmountApplication>MIN</ns2:AmountApplication>
+													</ns2:Amount>
+												</ns2:Amounts>
+											</ns2:Detail>
+											<ns2:Detail refs="RM6AC7D82B">
+												<ns2:Type>Change</ns2:Type>
+											</ns2:Detail>
+											<ns2:Detail refs="RM3FD2D7F7">
+												<ns2:Type>Cancel</ns2:Type>
+											</ns2:Detail>
+										</ns2:Details>
+									</ns2:Penalty>
+									<ns2:AdvanceStay>
+										<ns2:AdvancePurchase Context="LATEST">P60D</ns2:AdvancePurchase>
+									</ns2:AdvanceStay>
+									<ns2:Ticketing>
+										<ns2:Endorsements>
+											<ns2:Endorsement>QFSKEDCHG</ns2:Endorsement>
+											<ns2:Endorsement>NON-REF/NON-END</ns2:Endorsement>
+											<ns2:Endorsement>SPECIAL FARE CONDITIONS</ns2:Endorsement>
+										</ns2:Endorsements>
+									</ns2:Ticketing>
+								</ns2:FareRules>
+								<ns2:PriceClassRef>QFREDeDeal-1</ns2:PriceClassRef>
+								<ns2:SegmentRefs>S4</ns2:SegmentRefs>
+							</ns2:FareComponent>
+							<ns2:FlightMileage>
+								<ns2:Value>4072</ns2:Value>
+							</ns2:FlightMileage>
+						</ns2:FareDetail>
+						<ns2:Service>
+							<ns2:ServiceID>ServiceID1</ns2:ServiceID>
+							<ns2:PaxRefID>T1</ns2:PaxRefID>
+							<ns2:ServiceAssociations>
+								<ns2:PaxJourneyRefID>F1</ns2:PaxJourneyRefID>
+								<ns2:PaxJourneyRefID>F2</ns2:PaxJourneyRefID>
+							</ns2:ServiceAssociations>
+						</ns2:Service>
+						<ns2:Price>
+							<ns2:TotalAmount CurCode="EUR">63480</ns2:TotalAmount>
+							<ns2:BaseAmount CurCode="EUR">58000</ns2:BaseAmount>
+							<ns2:TaxSummary>
+								<ns2:TotalTaxAmount CurCode="EUR">5480</ns2:TotalTaxAmount>
+							</ns2:TaxSummary>
+						</ns2:Price>
+						<ns2:OriginalOrderItemDifferential>
+							<ns2:Amount CurCode="EUR">58000</ns2:Amount>
+							<ns2:TaxSummary>
+								<ns2:TotalTaxAmount CurCode="EUR">5480</ns2:TotalTaxAmount>
+								<ns2:Tax>
+									<ns2:Amount CurCode="EUR">1100</ns2:Amount>
+									<ns2:TaxCode>YR</ns2:TaxCode>
+									<ns2:DescText>YRI QF CARRIER IMPOSED MISC FEE</ns2:DescText>
+									<ns2:CollectionPointTax>
+										<ns2:AirportAmount CurCode="EUR">1100</ns2:AirportAmount>
+										<ns2:IATA_StationCode>SYD</ns2:IATA_StationCode>
+									</ns2:CollectionPointTax>
+								</ns2:Tax>
+								<ns2:Tax>
+									<ns2:Amount CurCode="EUR">1100</ns2:Amount>
+									<ns2:TaxCode>YR</ns2:TaxCode>
+									<ns2:DescText>YRI QF CARRIER IMPOSED MISC FEE</ns2:DescText>
+									<ns2:CollectionPointTax>
+										<ns2:AirportAmount CurCode="EUR">1100</ns2:AirportAmount>
+										<ns2:IATA_StationCode>PER</ns2:IATA_StationCode>
+									</ns2:CollectionPointTax>
+								</ns2:Tax>
+								<ns2:Tax>
+									<ns2:Amount CurCode="EUR">1220</ns2:Amount>
+									<ns2:TaxCode>QR</ns2:TaxCode>
+									<ns2:DescText>PASSENGER SERVICE CHARGE DOMESTIC DEPARTURE</ns2:DescText>
+									<ns2:Country>
+										<ns2:CountryCode>AU</ns2:CountryCode>
+									</ns2:Country>
+								</ns2:Tax>
+								<ns2:Tax>
+									<ns2:Amount CurCode="EUR">1220</ns2:Amount>
+									<ns2:TaxCode>QR</ns2:TaxCode>
+									<ns2:DescText>PASSENGER SERVICE CHARGE DOMESTIC ARRIVAL</ns2:DescText>
+									<ns2:Country>
+										<ns2:CountryCode>AU</ns2:CountryCode>
+									</ns2:Country>
+								</ns2:Tax>
+								<ns2:Tax>
+									<ns2:Amount CurCode="EUR">840</ns2:Amount>
+									<ns2:TaxCode>WG</ns2:TaxCode>
+									<ns2:DescText>SAFETY AND SECURITY CHARGE DEPARTURE</ns2:DescText>
+									<ns2:Country>
+										<ns2:CountryCode>AU</ns2:CountryCode>
+									</ns2:Country>
+								</ns2:Tax>
+							</ns2:TaxSummary>
+						</ns2:OriginalOrderItemDifferential>
+						<ns2:NewOfferItemDifferential>
+							<ns2:Amount CurCode="EUR">58000</ns2:Amount>
+							<ns2:TaxSummary>
+								<ns2:TotalTaxAmount CurCode="EUR">5480</ns2:TotalTaxAmount>
+								<ns2:Tax>
+									<ns2:Amount CurCode="EUR">1100</ns2:Amount>
+									<ns2:TaxCode>YR</ns2:TaxCode>
+									<ns2:DescText>YRI QF CARRIER IMPOSED MISC FEE</ns2:DescText>
+									<ns2:CollectionPointTax>
+										<ns2:AirportAmount CurCode="EUR">1100</ns2:AirportAmount>
+										<ns2:IATA_StationCode>SYD</ns2:IATA_StationCode>
+									</ns2:CollectionPointTax>
+								</ns2:Tax>
+								<ns2:Tax>
+									<ns2:Amount CurCode="EUR">1100</ns2:Amount>
+									<ns2:TaxCode>YR</ns2:TaxCode>
+									<ns2:DescText>YRI QF CARRIER IMPOSED MISC FEE</ns2:DescText>
+									<ns2:CollectionPointTax>
+										<ns2:AirportAmount CurCode="EUR">1100</ns2:AirportAmount>
+										<ns2:IATA_StationCode>PER</ns2:IATA_StationCode>
+									</ns2:CollectionPointTax>
+								</ns2:Tax>
+								<ns2:Tax>
+									<ns2:Amount CurCode="EUR">1220</ns2:Amount>
+									<ns2:TaxCode>QR</ns2:TaxCode>
+									<ns2:DescText>PASSENGER SERVICE CHARGE DOMESTIC DEPARTURE</ns2:DescText>
+									<ns2:Country>
+										<ns2:CountryCode>AU</ns2:CountryCode>
+									</ns2:Country>
+								</ns2:Tax>
+								<ns2:Tax>
+									<ns2:Amount CurCode="EUR">1220</ns2:Amount>
+									<ns2:TaxCode>QR</ns2:TaxCode>
+									<ns2:DescText>PASSENGER SERVICE CHARGE DOMESTIC ARRIVAL</ns2:DescText>
+									<ns2:Country>
+										<ns2:CountryCode>AU</ns2:CountryCode>
+									</ns2:Country>
+								</ns2:Tax>
+								<ns2:Tax>
+									<ns2:Amount CurCode="EUR">840</ns2:Amount>
+									<ns2:TaxCode>WG</ns2:TaxCode>
+									<ns2:DescText>SAFETY AND SECURITY CHARGE DEPARTURE</ns2:DescText>
+									<ns2:Country>
+										<ns2:CountryCode>AU</ns2:CountryCode>
+									</ns2:Country>
+								</ns2:Tax>
+							</ns2:TaxSummary>
+						</ns2:NewOfferItemDifferential>
+						<ns2:DifferentialAmountDue>
+							<ns2:Amount CurCode="EUR">0</ns2:Amount>
+						</ns2:DifferentialAmountDue>
+					</ns2:AddOfferItem>
+					<ns2:AddOfferItem>
+						<ns2:OfferItemID>1A_TPID_CAISHFJEMDREMEQ4QS1GMzA3LTRFNzUtQkZGNy0xLTI=</ns2:OfferItemID>
+						<ns2:MandatoryInd>true</ns2:MandatoryInd>
+						<ns2:OrderItemRefID>P58953DE3-3D0E-4E7E-9015lzl0wpww8fvwx-1-2_1APAX_T2</ns2:OrderItemRefID>
+						<ns2:FareDetail>
+							<ns2:PassengerRefs>T2</ns2:PassengerRefs>
+							<ns2:Price>
+								<ns2:TotalAmount>
+									<ns2:DetailCurrencyPrice>
+										<ns2:Total Code="EUR">63480</ns2:Total>
+									</ns2:DetailCurrencyPrice>
+								</ns2:TotalAmount>
+								<ns2:BaseAmount Code="EUR">58000</ns2:BaseAmount>
+								<ns2:FareFiledIn>
+									<ns2:BaseAmount Code="AUD">89709</ns2:BaseAmount>
+									<ns2:ExchangeRate>0.64604219</ns2:ExchangeRate>
+								</ns2:FareFiledIn>
+								<ns2:Taxes>
+									<ns2:Total Code="EUR">5480</ns2:Total>
+									<ns2:Breakdown>
+										<ns2:Tax RefundInd="true">
+											<ns2:Qualifier>701</ns2:Qualifier>
+											<ns2:Amount Code="EUR">1100</ns2:Amount>
+											<ns2:TaxCode>YR</ns2:TaxCode>
+											<ns2:CollectionPoint>
+												<ns2:CurrCode>EUR</ns2:CurrCode>
+												<ns2:AirportAmount xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">1100</ns2:AirportAmount>
+												<ns2:AirportCode>SYD</ns2:AirportCode>
+											</ns2:CollectionPoint>
+											<ns2:LocalAmount Code="EUR">1100</ns2:LocalAmount>
+											<ns2:Description>YRI QF CARRIER IMPOSED MISC FEE</ns2:Description>
+										</ns2:Tax>
+										<ns2:Tax RefundInd="true">
+											<ns2:Qualifier>701</ns2:Qualifier>
+											<ns2:Amount Code="EUR">1100</ns2:Amount>
+											<ns2:TaxCode>YR</ns2:TaxCode>
+											<ns2:CollectionPoint>
+												<ns2:CurrCode>EUR</ns2:CurrCode>
+												<ns2:AirportAmount xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">1100</ns2:AirportAmount>
+												<ns2:AirportCode>PER</ns2:AirportCode>
+											</ns2:CollectionPoint>
+											<ns2:LocalAmount Code="EUR">1100</ns2:LocalAmount>
+											<ns2:Description>YRI QF CARRIER IMPOSED MISC FEE</ns2:Description>
+										</ns2:Tax>
+										<ns2:Tax RefundInd="true">
+											<ns2:Qualifier>701</ns2:Qualifier>
+											<ns2:Amount Code="EUR">1220</ns2:Amount>
+											<ns2:Nation>AU</ns2:Nation>
+											<ns2:TaxCode>QR</ns2:TaxCode>
+											<ns2:LocalAmount Code="AUD">1886</ns2:LocalAmount>
+											<ns2:Description>PASSENGER SERVICE CHARGE DOMESTIC DEPARTURE</ns2:Description>
+										</ns2:Tax>
+										<ns2:Tax RefundInd="true">
+											<ns2:Qualifier>701</ns2:Qualifier>
+											<ns2:Amount Code="EUR">1220</ns2:Amount>
+											<ns2:Nation>AU</ns2:Nation>
+											<ns2:TaxCode>QR</ns2:TaxCode>
+											<ns2:LocalAmount Code="AUD">1886</ns2:LocalAmount>
+											<ns2:Description>PASSENGER SERVICE CHARGE DOMESTIC ARRIVAL</ns2:Description>
+										</ns2:Tax>
+										<ns2:Tax RefundInd="true">
+											<ns2:Qualifier>701</ns2:Qualifier>
+											<ns2:Amount Code="EUR">840</ns2:Amount>
+											<ns2:Nation>AU</ns2:Nation>
+											<ns2:TaxCode>WG</ns2:TaxCode>
+											<ns2:LocalAmount Code="AUD">1300</ns2:LocalAmount>
+											<ns2:Description>SAFETY AND SECURITY CHARGE DEPARTURE</ns2:Description>
+										</ns2:Tax>
+									</ns2:Breakdown>
+								</ns2:Taxes>
+							</ns2:Price>
+							<ns2:FareComponent>
+								<ns2:Price>
+									<ns2:TotalAmount>
+										<ns2:DetailCurrencyPrice>
+											<ns2:Total Code="EUR">34187</ns2:Total>
+										</ns2:DetailCurrencyPrice>
+									</ns2:TotalAmount>
+									<ns2:BaseAmount Code="EUR">31447</ns2:BaseAmount>
+									<ns2:FareFiledIn>
+										<ns2:BaseAmount Code="AUD">38942</ns2:BaseAmount>
+									</ns2:FareFiledIn>
+									<ns2:Taxes>
+										<ns2:Total Code="EUR">2740</ns2:Total>
+										<ns2:Breakdown>
+											<ns2:Tax>
+												<ns2:Amount Code="EUR">1100</ns2:Amount>
+												<ns2:TaxCode>YR</ns2:TaxCode>
+												<ns2:CollectionPoint>
+													<ns2:CurrCode>EUR</ns2:CurrCode>
+													<ns2:AirportAmount xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">1100</ns2:AirportAmount>
+													<ns2:AirportCode>SYD</ns2:AirportCode>
+												</ns2:CollectionPoint>
+												<ns2:LocalAmount Code="EUR">1100</ns2:LocalAmount>
+												<ns2:Description>YRI QF CARRIER IMPOSED MISC FEE</ns2:Description>
+											</ns2:Tax>
+											<ns2:Tax>
+												<ns2:Amount Code="EUR">621</ns2:Amount>
+												<ns2:Nation>AU</ns2:Nation>
+												<ns2:TaxCode>QR</ns2:TaxCode>
+												<ns2:LocalAmount Code="AUD">960</ns2:LocalAmount>
+												<ns2:Description>PASSENGER SERVICE CHARGE DOMESTIC DEPARTURE</ns2:Description>
+											</ns2:Tax>
+											<ns2:Tax>
+												<ns2:Amount Code="EUR">599</ns2:Amount>
+												<ns2:Nation>AU</ns2:Nation>
+												<ns2:TaxCode>QR</ns2:TaxCode>
+												<ns2:LocalAmount Code="AUD">926</ns2:LocalAmount>
+												<ns2:Description>PASSENGER SERVICE CHARGE DOMESTIC ARRIVAL</ns2:Description>
+											</ns2:Tax>
+											<ns2:Tax>
+												<ns2:Amount Code="EUR">420</ns2:Amount>
+												<ns2:Nation>AU</ns2:Nation>
+												<ns2:TaxCode>WG</ns2:TaxCode>
+												<ns2:LocalAmount Code="AUD">650</ns2:LocalAmount>
+												<ns2:Description>SAFETY AND SECURITY CHARGE DEPARTURE</ns2:Description>
+											</ns2:Tax>
+										</ns2:Breakdown>
+									</ns2:Taxes>
+								</ns2:Price>
+								<ns2:FareBasis>
+									<ns2:FareBasisCode refs="FG3">
+										<ns2:Code>QDQACH</ns2:Code>
+									</ns2:FareBasisCode>
+									<ns2:RBD>Q</ns2:RBD>
+									<ns2:CabinType>
+										<ns2:CabinTypeCode xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">Y</ns2:CabinTypeCode>
+										<ns2:CabinTypeName xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">Economy</ns2:CabinTypeName>
+									</ns2:CabinType>
+								</ns2:FareBasis>
+								<ns2:FareRules>
+									<ns2:Penalty CancelFeeInd="false" ChangeFeeInd="true" RefundableInd="false">
+										<ns2:Details>
+											<ns2:Detail>
+												<ns2:Type>Change</ns2:Type>
+												<ns2:Application>2</ns2:Application>
+												<ns2:Amounts>
+													<ns2:Amount>
+														<ns2:CurrencyAmountValue Code="AUD">9000</ns2:CurrencyAmountValue>
+														<ns2:AmountApplication>MAX</ns2:AmountApplication>
+													</ns2:Amount>
+													<ns2:Amount>
+														<ns2:CurrencyAmountValue Code="AUD">9000</ns2:CurrencyAmountValue>
+														<ns2:AmountApplication>MIN</ns2:AmountApplication>
+													</ns2:Amount>
+												</ns2:Amounts>
+											</ns2:Detail>
+											<ns2:Detail>
+												<ns2:Type>Change</ns2:Type>
+												<ns2:Application>3</ns2:Application>
+												<ns2:Amounts>
+													<ns2:Amount>
+														<ns2:CurrencyAmountValue Code="AUD">9900</ns2:CurrencyAmountValue>
+														<ns2:AmountApplication>MAX</ns2:AmountApplication>
+													</ns2:Amount>
+													<ns2:Amount>
+														<ns2:CurrencyAmountValue Code="AUD">9900</ns2:CurrencyAmountValue>
+														<ns2:AmountApplication>MIN</ns2:AmountApplication>
+													</ns2:Amount>
+												</ns2:Amounts>
+											</ns2:Detail>
+											<ns2:Detail refs="RM6AC7D82B">
+												<ns2:Type>Change</ns2:Type>
+											</ns2:Detail>
+											<ns2:Detail refs="RM3FD2D7F7">
+												<ns2:Type>Cancel</ns2:Type>
+											</ns2:Detail>
+										</ns2:Details>
+									</ns2:Penalty>
+									<ns2:Ticketing>
+										<ns2:Endorsements>
+											<ns2:Endorsement>QFSKEDCHG</ns2:Endorsement>
+											<ns2:Endorsement>NON-REF/NON-END</ns2:Endorsement>
+											<ns2:Endorsement>SPECIAL FARE CONDITIONS</ns2:Endorsement>
+										</ns2:Endorsements>
+									</ns2:Ticketing>
+								</ns2:FareRules>
+								<ns2:PriceClassRef>QFREDeDeal-1</ns2:PriceClassRef>
+								<ns2:SegmentRefs>S1</ns2:SegmentRefs>
+							</ns2:FareComponent>
+							<ns2:FareComponent>
+								<ns2:Price>
+									<ns2:TotalAmount>
+										<ns2:DetailCurrencyPrice>
+											<ns2:Total Code="EUR">29249</ns2:Total>
+										</ns2:DetailCurrencyPrice>
+									</ns2:TotalAmount>
+									<ns2:BaseAmount Code="EUR">26509</ns2:BaseAmount>
+									<ns2:FareFiledIn>
+										<ns2:BaseAmount Code="AUD">32827</ns2:BaseAmount>
+									</ns2:FareFiledIn>
+									<ns2:Taxes>
+										<ns2:Total Code="EUR">2740</ns2:Total>
+										<ns2:Breakdown>
+											<ns2:Tax>
+												<ns2:Amount Code="EUR">1100</ns2:Amount>
+												<ns2:TaxCode>YR</ns2:TaxCode>
+												<ns2:CollectionPoint>
+													<ns2:CurrCode>EUR</ns2:CurrCode>
+													<ns2:AirportAmount xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">1100</ns2:AirportAmount>
+													<ns2:AirportCode>PER</ns2:AirportCode>
+												</ns2:CollectionPoint>
+												<ns2:LocalAmount Code="EUR">1100</ns2:LocalAmount>
+												<ns2:Description>YRI QF CARRIER IMPOSED MISC FEE</ns2:Description>
+											</ns2:Tax>
+											<ns2:Tax>
+												<ns2:Amount Code="EUR">599</ns2:Amount>
+												<ns2:Nation>AU</ns2:Nation>
+												<ns2:TaxCode>QR</ns2:TaxCode>
+												<ns2:LocalAmount Code="AUD">926</ns2:LocalAmount>
+												<ns2:Description>PASSENGER SERVICE CHARGE DOMESTIC DEPARTURE</ns2:Description>
+											</ns2:Tax>
+											<ns2:Tax>
+												<ns2:Amount Code="EUR">621</ns2:Amount>
+												<ns2:Nation>AU</ns2:Nation>
+												<ns2:TaxCode>QR</ns2:TaxCode>
+												<ns2:LocalAmount Code="AUD">960</ns2:LocalAmount>
+												<ns2:Description>PASSENGER SERVICE CHARGE DOMESTIC ARRIVAL</ns2:Description>
+											</ns2:Tax>
+											<ns2:Tax>
+												<ns2:Amount Code="EUR">420</ns2:Amount>
+												<ns2:Nation>AU</ns2:Nation>
+												<ns2:TaxCode>WG</ns2:TaxCode>
+												<ns2:LocalAmount Code="AUD">650</ns2:LocalAmount>
+												<ns2:Description>SAFETY AND SECURITY CHARGE DEPARTURE</ns2:Description>
+											</ns2:Tax>
+										</ns2:Breakdown>
+									</ns2:Taxes>
+								</ns2:Price>
+								<ns2:FareBasis>
+									<ns2:FareBasisCode refs="FG4">
+										<ns2:Code>ODQ60ACH</ns2:Code>
+									</ns2:FareBasisCode>
+									<ns2:RBD>O</ns2:RBD>
+									<ns2:CabinType>
+										<ns2:CabinTypeCode xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">Y</ns2:CabinTypeCode>
+										<ns2:CabinTypeName xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">Economy</ns2:CabinTypeName>
+									</ns2:CabinType>
+								</ns2:FareBasis>
+								<ns2:FareRules>
+									<ns2:Penalty CancelFeeInd="false" ChangeFeeInd="true" RefundableInd="false">
+										<ns2:Details>
+											<ns2:Detail>
+												<ns2:Type>Change</ns2:Type>
+												<ns2:Application>2</ns2:Application>
+												<ns2:Amounts>
+													<ns2:Amount>
+														<ns2:CurrencyAmountValue Code="AUD">9000</ns2:CurrencyAmountValue>
+														<ns2:AmountApplication>MAX</ns2:AmountApplication>
+													</ns2:Amount>
+													<ns2:Amount>
+														<ns2:CurrencyAmountValue Code="AUD">9000</ns2:CurrencyAmountValue>
+														<ns2:AmountApplication>MIN</ns2:AmountApplication>
+													</ns2:Amount>
+												</ns2:Amounts>
+											</ns2:Detail>
+											<ns2:Detail>
+												<ns2:Type>Change</ns2:Type>
+												<ns2:Application>3</ns2:Application>
+												<ns2:Amounts>
+													<ns2:Amount>
+														<ns2:CurrencyAmountValue Code="AUD">9900</ns2:CurrencyAmountValue>
+														<ns2:AmountApplication>MAX</ns2:AmountApplication>
+													</ns2:Amount>
+													<ns2:Amount>
+														<ns2:CurrencyAmountValue Code="AUD">9900</ns2:CurrencyAmountValue>
+														<ns2:AmountApplication>MIN</ns2:AmountApplication>
+													</ns2:Amount>
+												</ns2:Amounts>
+											</ns2:Detail>
+											<ns2:Detail refs="RM6AC7D82B">
+												<ns2:Type>Change</ns2:Type>
+											</ns2:Detail>
+											<ns2:Detail refs="RM3FD2D7F7">
+												<ns2:Type>Cancel</ns2:Type>
+											</ns2:Detail>
+										</ns2:Details>
+									</ns2:Penalty>
+									<ns2:AdvanceStay>
+										<ns2:AdvancePurchase Context="LATEST">P60D</ns2:AdvancePurchase>
+									</ns2:AdvanceStay>
+									<ns2:Ticketing>
+										<ns2:Endorsements>
+											<ns2:Endorsement>QFSKEDCHG</ns2:Endorsement>
+											<ns2:Endorsement>NON-REF/NON-END</ns2:Endorsement>
+											<ns2:Endorsement>SPECIAL FARE CONDITIONS</ns2:Endorsement>
+										</ns2:Endorsements>
+									</ns2:Ticketing>
+								</ns2:FareRules>
+								<ns2:PriceClassRef>QFREDeDeal-1</ns2:PriceClassRef>
+								<ns2:SegmentRefs>S4</ns2:SegmentRefs>
+							</ns2:FareComponent>
+							<ns2:FlightMileage>
+								<ns2:Value>4072</ns2:Value>
+							</ns2:FlightMileage>
+						</ns2:FareDetail>
+						<ns2:Service>
+							<ns2:ServiceID>ServiceID2</ns2:ServiceID>
+							<ns2:PaxRefID>T2</ns2:PaxRefID>
+							<ns2:ServiceAssociations>
+								<ns2:PaxJourneyRefID>F1</ns2:PaxJourneyRefID>
+								<ns2:PaxJourneyRefID>F2</ns2:PaxJourneyRefID>
+							</ns2:ServiceAssociations>
+						</ns2:Service>
+						<ns2:Price>
+							<ns2:TotalAmount CurCode="EUR">63480</ns2:TotalAmount>
+							<ns2:BaseAmount CurCode="EUR">58000</ns2:BaseAmount>
+							<ns2:TaxSummary>
+								<ns2:TotalTaxAmount CurCode="EUR">5480</ns2:TotalTaxAmount>
+							</ns2:TaxSummary>
+						</ns2:Price>
+						<ns2:OriginalOrderItemDifferential>
+							<ns2:Amount CurCode="EUR">58000</ns2:Amount>
+							<ns2:TaxSummary>
+								<ns2:TotalTaxAmount CurCode="EUR">5480</ns2:TotalTaxAmount>
+								<ns2:Tax>
+									<ns2:Amount CurCode="EUR">1100</ns2:Amount>
+									<ns2:TaxCode>YR</ns2:TaxCode>
+									<ns2:DescText>YRI QF CARRIER IMPOSED MISC FEE</ns2:DescText>
+									<ns2:CollectionPointTax>
+										<ns2:AirportAmount CurCode="EUR">1100</ns2:AirportAmount>
+										<ns2:IATA_StationCode>SYD</ns2:IATA_StationCode>
+									</ns2:CollectionPointTax>
+								</ns2:Tax>
+								<ns2:Tax>
+									<ns2:Amount CurCode="EUR">1100</ns2:Amount>
+									<ns2:TaxCode>YR</ns2:TaxCode>
+									<ns2:DescText>YRI QF CARRIER IMPOSED MISC FEE</ns2:DescText>
+									<ns2:CollectionPointTax>
+										<ns2:AirportAmount CurCode="EUR">1100</ns2:AirportAmount>
+										<ns2:IATA_StationCode>PER</ns2:IATA_StationCode>
+									</ns2:CollectionPointTax>
+								</ns2:Tax>
+								<ns2:Tax>
+									<ns2:Amount CurCode="EUR">1220</ns2:Amount>
+									<ns2:TaxCode>QR</ns2:TaxCode>
+									<ns2:DescText>PASSENGER SERVICE CHARGE DOMESTIC DEPARTURE</ns2:DescText>
+									<ns2:Country>
+										<ns2:CountryCode>AU</ns2:CountryCode>
+									</ns2:Country>
+								</ns2:Tax>
+								<ns2:Tax>
+									<ns2:Amount CurCode="EUR">1220</ns2:Amount>
+									<ns2:TaxCode>QR</ns2:TaxCode>
+									<ns2:DescText>PASSENGER SERVICE CHARGE DOMESTIC ARRIVAL</ns2:DescText>
+									<ns2:Country>
+										<ns2:CountryCode>AU</ns2:CountryCode>
+									</ns2:Country>
+								</ns2:Tax>
+								<ns2:Tax>
+									<ns2:Amount CurCode="EUR">840</ns2:Amount>
+									<ns2:TaxCode>WG</ns2:TaxCode>
+									<ns2:DescText>SAFETY AND SECURITY CHARGE DEPARTURE</ns2:DescText>
+									<ns2:Country>
+										<ns2:CountryCode>AU</ns2:CountryCode>
+									</ns2:Country>
+								</ns2:Tax>
+							</ns2:TaxSummary>
+						</ns2:OriginalOrderItemDifferential>
+						<ns2:NewOfferItemDifferential>
+							<ns2:Amount CurCode="EUR">58000</ns2:Amount>
+							<ns2:TaxSummary>
+								<ns2:TotalTaxAmount CurCode="EUR">5480</ns2:TotalTaxAmount>
+								<ns2:Tax>
+									<ns2:Amount CurCode="EUR">1100</ns2:Amount>
+									<ns2:TaxCode>YR</ns2:TaxCode>
+									<ns2:DescText>YRI QF CARRIER IMPOSED MISC FEE</ns2:DescText>
+									<ns2:CollectionPointTax>
+										<ns2:AirportAmount CurCode="EUR">1100</ns2:AirportAmount>
+										<ns2:IATA_StationCode>SYD</ns2:IATA_StationCode>
+									</ns2:CollectionPointTax>
+								</ns2:Tax>
+								<ns2:Tax>
+									<ns2:Amount CurCode="EUR">1100</ns2:Amount>
+									<ns2:TaxCode>YR</ns2:TaxCode>
+									<ns2:DescText>YRI QF CARRIER IMPOSED MISC FEE</ns2:DescText>
+									<ns2:CollectionPointTax>
+										<ns2:AirportAmount CurCode="EUR">1100</ns2:AirportAmount>
+										<ns2:IATA_StationCode>PER</ns2:IATA_StationCode>
+									</ns2:CollectionPointTax>
+								</ns2:Tax>
+								<ns2:Tax>
+									<ns2:Amount CurCode="EUR">1220</ns2:Amount>
+									<ns2:TaxCode>QR</ns2:TaxCode>
+									<ns2:DescText>PASSENGER SERVICE CHARGE DOMESTIC DEPARTURE</ns2:DescText>
+									<ns2:Country>
+										<ns2:CountryCode>AU</ns2:CountryCode>
+									</ns2:Country>
+								</ns2:Tax>
+								<ns2:Tax>
+									<ns2:Amount CurCode="EUR">1220</ns2:Amount>
+									<ns2:TaxCode>QR</ns2:TaxCode>
+									<ns2:DescText>PASSENGER SERVICE CHARGE DOMESTIC ARRIVAL</ns2:DescText>
+									<ns2:Country>
+										<ns2:CountryCode>AU</ns2:CountryCode>
+									</ns2:Country>
+								</ns2:Tax>
+								<ns2:Tax>
+									<ns2:Amount CurCode="EUR">840</ns2:Amount>
+									<ns2:TaxCode>WG</ns2:TaxCode>
+									<ns2:DescText>SAFETY AND SECURITY CHARGE DEPARTURE</ns2:DescText>
+									<ns2:Country>
+										<ns2:CountryCode>AU</ns2:CountryCode>
+									</ns2:Country>
+								</ns2:Tax>
+							</ns2:TaxSummary>
+						</ns2:NewOfferItemDifferential>
+						<ns2:DifferentialAmountDue>
+							<ns2:Amount CurCode="EUR">0</ns2:Amount>
+						</ns2:DifferentialAmountDue>
+					</ns2:AddOfferItem>
+					<ns2:AddOfferItem>
+						<ns2:OfferItemID>1A_TPID_CAMSHFJEMDREMEQ4QS1GMzA3LTRFNzUtQkZGNy0xLTM=</ns2:OfferItemID>
+						<ns2:MandatoryInd>true</ns2:MandatoryInd>
+						<ns2:OrderItemRefID>P58953DE3-3D0E-4E7E-9015lzl0wpww8fvwx-1-3_1APAX_T1.1</ns2:OrderItemRefID>
+						<ns2:FareDetail>
+							<ns2:PassengerRefs>T1.1</ns2:PassengerRefs>
+							<ns2:Price>
+								<ns2:TotalAmount>
+									<ns2:DetailCurrencyPrice>
+										<ns2:Total Code="EUR">0</ns2:Total>
+									</ns2:DetailCurrencyPrice>
+								</ns2:TotalAmount>
+								<ns2:BaseAmount Code="EUR">0</ns2:BaseAmount>
+								<ns2:Taxes>
+									<ns2:Total Code="EUR">0</ns2:Total>
+								</ns2:Taxes>
+							</ns2:Price>
+							<ns2:FareComponent>
+								<ns2:Price>
+									<ns2:TotalAmount>
+										<ns2:DetailCurrencyPrice>
+											<ns2:Total Code="EUR">0</ns2:Total>
+										</ns2:DetailCurrencyPrice>
+									</ns2:TotalAmount>
+									<ns2:BaseAmount Code="EUR">0</ns2:BaseAmount>
+									<ns2:FareFiledIn>
+										<ns2:BaseAmount Code="AUD">0</ns2:BaseAmount>
+									</ns2:FareFiledIn>
+									<ns2:Taxes>
+										<ns2:Total Code="EUR">0</ns2:Total>
+									</ns2:Taxes>
+								</ns2:Price>
+								<ns2:FareBasis>
+									<ns2:FareBasisCode refs="FG5">
+										<ns2:Code>QDQAIN</ns2:Code>
+									</ns2:FareBasisCode>
+									<ns2:RBD>Q</ns2:RBD>
+									<ns2:CabinType>
+										<ns2:CabinTypeCode xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">Y</ns2:CabinTypeCode>
+										<ns2:CabinTypeName xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">Economy</ns2:CabinTypeName>
+									</ns2:CabinType>
+								</ns2:FareBasis>
+								<ns2:FareRules>
+									<ns2:Penalty CancelFeeInd="false" ChangeFeeInd="false" RefundableInd="false">
+										<ns2:Details>
+											<ns2:Detail>
+												<ns2:Type>Change</ns2:Type>
+												<ns2:Application>2</ns2:Application>
+												<ns2:Amounts>
+													<ns2:Amount>
+														<ns2:CurrencyAmountValue Code="AUD">0</ns2:CurrencyAmountValue>
+														<ns2:AmountApplication>MAX</ns2:AmountApplication>
+													</ns2:Amount>
+													<ns2:Amount>
+														<ns2:CurrencyAmountValue Code="AUD">0</ns2:CurrencyAmountValue>
+														<ns2:AmountApplication>MIN</ns2:AmountApplication>
+													</ns2:Amount>
+												</ns2:Amounts>
+											</ns2:Detail>
+											<ns2:Detail>
+												<ns2:Type>Change</ns2:Type>
+												<ns2:Application>3</ns2:Application>
+												<ns2:Amounts>
+													<ns2:Amount>
+														<ns2:CurrencyAmountValue Code="AUD">0</ns2:CurrencyAmountValue>
+														<ns2:AmountApplication>MAX</ns2:AmountApplication>
+													</ns2:Amount>
+													<ns2:Amount>
+														<ns2:CurrencyAmountValue Code="AUD">0</ns2:CurrencyAmountValue>
+														<ns2:AmountApplication>MIN</ns2:AmountApplication>
+													</ns2:Amount>
+												</ns2:Amounts>
+											</ns2:Detail>
+											<ns2:Detail refs="RM6AC7D82B">
+												<ns2:Type>Change</ns2:Type>
+											</ns2:Detail>
+											<ns2:Detail refs="RM3FD2D7F7">
+												<ns2:Type>Cancel</ns2:Type>
+											</ns2:Detail>
+										</ns2:Details>
+									</ns2:Penalty>
+									<ns2:Ticketing>
+										<ns2:Endorsements>
+											<ns2:Endorsement>QFSKEDCHG</ns2:Endorsement>
+											<ns2:Endorsement>NON-REF/NON-END</ns2:Endorsement>
+											<ns2:Endorsement>SPECIAL FARE CONDITIONS</ns2:Endorsement>
+										</ns2:Endorsements>
+									</ns2:Ticketing>
+								</ns2:FareRules>
+								<ns2:PriceClassRef>QFREDeDeal-1</ns2:PriceClassRef>
+								<ns2:SegmentRefs>S1</ns2:SegmentRefs>
+							</ns2:FareComponent>
+							<ns2:FareComponent>
+								<ns2:Price>
+									<ns2:TotalAmount>
+										<ns2:DetailCurrencyPrice>
+											<ns2:Total Code="EUR">0</ns2:Total>
+										</ns2:DetailCurrencyPrice>
+									</ns2:TotalAmount>
+									<ns2:BaseAmount Code="EUR">0</ns2:BaseAmount>
+									<ns2:FareFiledIn>
+										<ns2:BaseAmount Code="AUD">0</ns2:BaseAmount>
+									</ns2:FareFiledIn>
+									<ns2:Taxes>
+										<ns2:Total Code="EUR">0</ns2:Total>
+									</ns2:Taxes>
+								</ns2:Price>
+								<ns2:FareBasis>
+									<ns2:FareBasisCode refs="FG6">
+										<ns2:Code>ODQ60AIN</ns2:Code>
+									</ns2:FareBasisCode>
+									<ns2:RBD>O</ns2:RBD>
+									<ns2:CabinType>
+										<ns2:CabinTypeCode xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">Y</ns2:CabinTypeCode>
+										<ns2:CabinTypeName xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">Economy</ns2:CabinTypeName>
+									</ns2:CabinType>
+								</ns2:FareBasis>
+								<ns2:FareRules>
+									<ns2:Penalty CancelFeeInd="false" ChangeFeeInd="false" RefundableInd="false">
+										<ns2:Details>
+											<ns2:Detail>
+												<ns2:Type>Change</ns2:Type>
+												<ns2:Application>2</ns2:Application>
+												<ns2:Amounts>
+													<ns2:Amount>
+														<ns2:CurrencyAmountValue Code="AUD">0</ns2:CurrencyAmountValue>
+														<ns2:AmountApplication>MAX</ns2:AmountApplication>
+													</ns2:Amount>
+													<ns2:Amount>
+														<ns2:CurrencyAmountValue Code="AUD">0</ns2:CurrencyAmountValue>
+														<ns2:AmountApplication>MIN</ns2:AmountApplication>
+													</ns2:Amount>
+												</ns2:Amounts>
+											</ns2:Detail>
+											<ns2:Detail>
+												<ns2:Type>Change</ns2:Type>
+												<ns2:Application>3</ns2:Application>
+												<ns2:Amounts>
+													<ns2:Amount>
+														<ns2:CurrencyAmountValue Code="AUD">0</ns2:CurrencyAmountValue>
+														<ns2:AmountApplication>MAX</ns2:AmountApplication>
+													</ns2:Amount>
+													<ns2:Amount>
+														<ns2:CurrencyAmountValue Code="AUD">0</ns2:CurrencyAmountValue>
+														<ns2:AmountApplication>MIN</ns2:AmountApplication>
+													</ns2:Amount>
+												</ns2:Amounts>
+											</ns2:Detail>
+											<ns2:Detail refs="RM6AC7D82B">
+												<ns2:Type>Change</ns2:Type>
+											</ns2:Detail>
+											<ns2:Detail refs="RM3FD2D7F7">
+												<ns2:Type>Cancel</ns2:Type>
+											</ns2:Detail>
+										</ns2:Details>
+									</ns2:Penalty>
+									<ns2:AdvanceStay>
+										<ns2:AdvancePurchase Context="LATEST">P60D</ns2:AdvancePurchase>
+									</ns2:AdvanceStay>
+									<ns2:Ticketing>
+										<ns2:Endorsements>
+											<ns2:Endorsement>QFSKEDCHG</ns2:Endorsement>
+											<ns2:Endorsement>NON-REF/NON-END</ns2:Endorsement>
+											<ns2:Endorsement>SPECIAL FARE CONDITIONS</ns2:Endorsement>
+										</ns2:Endorsements>
+									</ns2:Ticketing>
+								</ns2:FareRules>
+								<ns2:PriceClassRef>QFREDeDeal-1</ns2:PriceClassRef>
+								<ns2:SegmentRefs>S4</ns2:SegmentRefs>
+							</ns2:FareComponent>
+							<ns2:FlightMileage>
+								<ns2:Value>4072</ns2:Value>
+							</ns2:FlightMileage>
+						</ns2:FareDetail>
+						<ns2:Service>
+							<ns2:ServiceID>ServiceID3</ns2:ServiceID>
+							<ns2:PaxRefID>T1.1</ns2:PaxRefID>
+							<ns2:ServiceAssociations>
+								<ns2:PaxJourneyRefID>F1</ns2:PaxJourneyRefID>
+								<ns2:PaxJourneyRefID>F2</ns2:PaxJourneyRefID>
+							</ns2:ServiceAssociations>
+						</ns2:Service>
+						<ns2:Price>
+							<ns2:TotalAmount CurCode="EUR">0</ns2:TotalAmount>
+							<ns2:BaseAmount CurCode="EUR">0</ns2:BaseAmount>
+							<ns2:TaxSummary>
+								<ns2:TotalTaxAmount CurCode="EUR">0</ns2:TotalTaxAmount>
+							</ns2:TaxSummary>
+						</ns2:Price>
+						<ns2:OriginalOrderItemDifferential>
+							<ns2:Amount CurCode="EUR">0</ns2:Amount>
+						</ns2:OriginalOrderItemDifferential>
+						<ns2:NewOfferItemDifferential>
+							<ns2:Amount CurCode="EUR">0</ns2:Amount>
+						</ns2:NewOfferItemDifferential>
+						<ns2:DifferentialAmountDue>
+							<ns2:Amount CurCode="EUR">0</ns2:Amount>
+						</ns2:DifferentialAmountDue>
+					</ns2:AddOfferItem>
+				</ns2:ReshopOffer>
+			</ns2:ReshopOffers>
+		</ns2:ReshopResults>
+		<ns2:ShoppingResponse>
+			<ns2:ShoppingResponseID>RD04D0D8A-F307-4E75-BFF7</ns2:ShoppingResponseID>
+		</ns2:ShoppingResponse>
+		<ns2:Warning>
+			<ns2:DescText>Please refer to the schedule change policy for additional details. <a href=https://www.qantas.com/agencyconnect/au/en/policy-and-guidelines/changes-reissues-and-refunds/qantas-and-other-airline-schedule-change-policy-.html target=_blank>Schedule Change Policy.</a>
+			</ns2:DescText>
+			<ns2:OwnerName>QF</ns2:OwnerName>
+		</ns2:Warning>
+	</ns2:Response>
+</ns2:AMA_TravelOrderReshopRS>

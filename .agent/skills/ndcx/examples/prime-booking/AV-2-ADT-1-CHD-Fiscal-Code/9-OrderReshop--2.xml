@@ -1,0 +1,87 @@
+<ns0:AMA_TravelOrderReshopRS xmlns:ns0="http://xml.amadeus.com/2010/06/Travel_OrderReshopRS_v1">
+  <ns0:Response>
+    <ns0:Metadata>
+      <ns0:Other>
+        <ns0:OtherMetadata>
+          <ns0:CurrencyMetadatas>
+            <ns0:CurrencyMetadata MetadataKey="EUR">
+              <ns0:Decimals>2</ns0:Decimals>
+            </ns0:CurrencyMetadata>
+          </ns0:CurrencyMetadatas>
+        </ns0:OtherMetadata>
+      </ns0:Other>
+    </ns0:Metadata>
+    <ns0:ReshopResults UseCase="VOID">
+      <ns0:ReshopOffers>
+        <ns0:ReshopOffer>
+          <ns0:OfferID>Void</ns0:OfferID>
+          <ns0:OwnerCode>AV</ns0:OwnerCode>
+          <ns0:Desc>
+            <ns0:DescID>0</ns0:DescID>
+            <ns0:DescText>VOID</ns0:DescText>
+          </ns0:Desc>
+          <ns0:DeleteOrderItem>
+            <ns0:OrderItemRefID>AV_3WO2T2_AIR-1-2_1APAX_PAX2</ns0:OrderItemRefID>
+            <ns0:OriginalOrderItemDifferential>
+              <ns0:Amount CurCode="EUR">8400</ns0:Amount>
+              <ns0:TaxSummary>
+                <ns0:TotalTaxAmount CurCode="EUR">1294</ns0:TotalTaxAmount>
+                <ns0:Tax>
+                  <ns0:Amount CurCode="EUR">874</ns0:Amount>
+                  <ns0:TaxCode>CO</ns0:TaxCode>
+                </ns0:Tax>
+                <ns0:Tax>
+                  <ns0:Amount CurCode="EUR">420</ns0:Amount>
+                  <ns0:TaxCode>YS</ns0:TaxCode>
+                </ns0:Tax>
+              </ns0:TaxSummary>
+            </ns0:OriginalOrderItemDifferential>
+            <ns0:DifferentialAmountDue>
+              <ns0:Amount CurCode="EUR">0</ns0:Amount>
+            </ns0:DifferentialAmountDue>
+          </ns0:DeleteOrderItem>
+          <ns0:DeleteOrderItem>
+            <ns0:OrderItemRefID>AV_3WO2T2_AIR-1-2_1APAX_PAX3</ns0:OrderItemRefID>
+            <ns0:OriginalOrderItemDifferential>
+              <ns0:Amount CurCode="EUR">8400</ns0:Amount>
+              <ns0:TaxSummary>
+                <ns0:TotalTaxAmount CurCode="EUR">1294</ns0:TotalTaxAmount>
+                <ns0:Tax>
+                  <ns0:Amount CurCode="EUR">874</ns0:Amount>
+                  <ns0:TaxCode>CO</ns0:TaxCode>
+                </ns0:Tax>
+                <ns0:Tax>
+                  <ns0:Amount CurCode="EUR">420</ns0:Amount>
+                  <ns0:TaxCode>YS</ns0:TaxCode>
+                </ns0:Tax>
+              </ns0:TaxSummary>
+            </ns0:OriginalOrderItemDifferential>
+            <ns0:DifferentialAmountDue>
+              <ns0:Amount CurCode="EUR">0</ns0:Amount>
+            </ns0:DifferentialAmountDue>
+          </ns0:DeleteOrderItem>
+          <ns0:DeleteOrderItem>
+            <ns0:OrderItemRefID>AV_3WO2T2_AIR-1-2_1APAX_PAX4</ns0:OrderItemRefID>
+            <ns0:OriginalOrderItemDifferential>
+              <ns0:Amount CurCode="EUR">6300</ns0:Amount>
+              <ns0:TaxSummary>
+                <ns0:TotalTaxAmount CurCode="EUR">1189</ns0:TotalTaxAmount>
+                <ns0:Tax>
+                  <ns0:Amount CurCode="EUR">874</ns0:Amount>
+                  <ns0:TaxCode>CO</ns0:TaxCode>
+                </ns0:Tax>
+                <ns0:Tax>
+                  <ns0:Amount CurCode="EUR">315</ns0:Amount>
+                  <ns0:TaxCode>YS</ns0:TaxCode>
+                </ns0:Tax>
+              </ns0:TaxSummary>
+            </ns0:OriginalOrderItemDifferential>
+            <ns0:DifferentialAmountDue>
+              <ns0:Amount CurCode="EUR">0</ns0:Amount>
+            </ns0:DifferentialAmountDue>
+          </ns0:DeleteOrderItem>
+        </ns0:ReshopOffer>
+      </ns0:ReshopOffers>
+    </ns0:ReshopResults>
+  </ns0:Response>
+</ns0:AMA_TravelOrderReshopRS>

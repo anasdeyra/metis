@@ -1,0 +1,23 @@
+<soap:Envelope xmlns:awsse="http://xml.amadeus.com/2010/06/Session_v3" xmlns:ns3="http://xml.amadeus.com/VLSSOR_04_1_1A" xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns:wsa="http://www.w3.org/2005/08/addressing">
+  <soap:Header>
+    <wsa:To>http://www.w3.org/2005/08/addressing/anonymous</wsa:To>
+    <wsa:From>
+      <wsa:Address>https://noded5.test.webservices.amadeus.com/CUSTOMER_WSAP</wsa:Address>
+    </wsa:From>
+    <wsa:Action>http://webservices.amadeus.com/VLSSOQ_04_1_1A</wsa:Action>
+    <wsa:MessageID>urn:uuid:9ffddf63-c6ba-f4f4-5100-6e32976e7c93</wsa:MessageID>
+    <wsa:RelatesTo RelationshipType="http://www.w3.org/2005/08/addressing/reply">2c21461a-390b-4f84-b40d-498ac3611380</wsa:RelatesTo>
+    <awsse:Session TransactionStatusCode="End">
+      <awsse:SessionId>00J8AI9NTW</awsse:SessionId>
+      <awsse:SequenceNumber>5</awsse:SequenceNumber>
+      <awsse:SecurityToken>REDACTED_TOKEN</awsse:SecurityToken>
+    </awsse:Session>
+  </soap:Header>
+  <soap:Body>
+    <ns3:Security_SignOutReply>
+      <ns3:processStatus>
+        <ns3:statusCode>P</ns3:statusCode>
+      </ns3:processStatus>
+    </ns3:Security_SignOutReply>
+  </soap:Body>
+</soap:Envelope>

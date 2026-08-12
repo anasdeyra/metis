@@ -1,0 +1,31 @@
+<!-- NOTE: this file is a FRAGMENT exactly as captured in the Amadeus sample
+     pack; it is not standalone well-formed XML (no element found: line 26, column 15).
+     Usually it is a body or header block lifted out of its SOAP envelope, or it
+     contains an unescaped character. Kept verbatim rather than repaired so the
+     original is not misrepresented. Read it for field shapes, do not parse it. -->
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns:wsa="http://www.w3.org/2005/08/addressing">
+    <soap:Header>
+        <AMA_SecurityHostedUser xmlns="http://xml.amadeus.com/2010/06/Security_v1">
+            <UserID POS_Type="1" PseudoCityCode="YOUR_OFFICE_ID" RequestorType="U"/>
+        </AMA_SecurityHostedUser>
+        <oas:Security xmlns:oas="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd">
+            <oas:UsernameToken xmlns:oas1="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" oas1:Id="UsernameToken-1">
+                <oas:Username>YOUR_WS_USER</oas:Username>
+                <oas:Nonce EncodingType="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-soap-message-security-1.0#Base64Binary">REDACTED_NONCE</oas:Nonce>
+                <oas:Password Type="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-username-token-profile-1.0#PasswordDigest">REDACTED_DIGEST</oas:Password>
+                <oas1:Created>2023-05-25T10:53:27.219Z</oas1:Created>
+            </oas:UsernameToken>
+        </oas:Security>
+        <awsl:TransactionFlowLink xmlns:awsl="http://wsdl.amadeus.com/2010/06/ws/Link_v1">
+            <awsl:Consumer>
+                <awsl:UniqueID>123123123</awsl:UniqueID>
+            </awsl:Consumer>
+        </awsl:TransactionFlowLink>
+        <wsa:Action>http://webservices.amadeus.com/FMPTBQ_20_2_1A</wsa:Action>
+        <wsa:MessageID>143b38be-c795-4852-a067-6f5ea3c4f3c0</wsa:MessageID>
+        <wsa:To>https://nodeD1.test.webservices.amadeus.com/WSAP</wsa:To>
+        <wsa:ReplyTo>
+            <wsa:Address>http://www.w3.org/2005/08/addressing/anonymous</wsa:Address>
+        </wsa:ReplyTo>
+    </soap:Header>
+    <soap:Body>

@@ -1,0 +1,97 @@
+<soap:Envelope xmlns:add="http://www.w3.org/2005/08/addressing" xmlns:link="http://wsdl.amadeus.com/2010/06/ws/Link_v1" xmlns:ns6="http://xml.amadeus.com/2010/06/Travel_OrderCreateRQ_v1" xmlns:oas="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd" xmlns:oas1="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:sec="http://xml.amadeus.com/2010/06/Security_v1" xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+  <soap:Header>
+    <add:MessageID>9f2357ea-523c-4eae-86bc-65ae33f8a542</add:MessageID>
+    <add:Action>http://webservices.amadeus.com/Travel_OrderCreate_1.3</add:Action>
+    <add:To>https://noded5.test.webservices.amadeus.com/WSAP</add:To>
+    <link:TransactionFlowLink />
+    <oas:Security>
+      <oas:UsernameToken oas1:Id="UsernameToken-1">
+        <oas:Username>YOUR_WS_USER</oas:Username>
+        <oas:Nonce EncodingType="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-soap-message-security-1.0#Base64Binary">REDACTED_NONCE</oas:Nonce>
+        <oas:Password Type="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-username-token-profile-1.0#PasswordDigest">REDACTED_DIGEST</oas:Password>
+        <oas1:Created>2024-07-09T13:55:30.741Z</oas1:Created>
+      </oas:UsernameToken>
+    </oas:Security>
+    <sec:AMA_SecurityHostedUser>
+      <sec:UserID AgentDutyCode="SU" POS_Type="1" PseudoCityCode="YOUR_OFFICE_ID" RequestorType="U" />
+    </sec:AMA_SecurityHostedUser>
+  </soap:Header>
+  <soap:Body>
+    <ns6:AMA_TravelOrderCreateRQ>
+      <ns6:Party>
+        <ns6:Sender>
+          <ns6:TravelAgency>
+            <ns6:AgencyID>unused</ns6:AgencyID>
+            <ns6:PseudoCityID>unused</ns6:PseudoCityID>
+          </ns6:TravelAgency>
+        </ns6:Sender>
+      </ns6:Party>
+      <ns6:Request>
+        <ns6:CreateOrder>
+          <ns6:SelectedOffer>
+            <ns6:OfferID>TOOSjNCOJnSlqKFFAPrQkucC_1A_aa57bd3f-87cc-49a7-8e02-6772d802c2a8_1A_OF-8b428da3-5b36-477d-995e-2a873ad47140</ns6:OfferID>
+            <ns6:OwnerCode>BA</ns6:OwnerCode>
+            <ns6:ShoppingResponseRefID>ac2.tx-e2e-04-7649cd87-adad-4e04-8b5c-170e1eafcabe</ns6:ShoppingResponseRefID>
+            <ns6:SelectedOfferItem>
+              <ns6:OfferItemID>OF-8b428da3-5b36-477d-995e-2a873ad47140-OI-1</ns6:OfferItemID>
+              <ns6:PaxRefID>P1</ns6:PaxRefID>
+            </ns6:SelectedOfferItem>
+          </ns6:SelectedOffer>
+        </ns6:CreateOrder>
+        <ns6:DataLists>
+          <ns6:PaxList>
+            <ns6:Pax>
+              <ns6:PaxID>P1</ns6:PaxID>
+              <ns6:PTC>ADT</ns6:PTC>
+              <ns6:Birthdate>1993-02-25</ns6:Birthdate>
+              <ns6:ContactInfo>
+                <ns6:ContactRefusedInd>false</ns6:ContactRefusedInd>
+                <ns6:Phone>
+                  <ns6:LabelText>Mobile</ns6:LabelText>
+                  <ns6:PhoneNumber>3054996000</ns6:PhoneNumber>
+                </ns6:Phone>
+              </ns6:ContactInfo>
+              <ns6:ContactInfo>
+                <ns6:ContactRefusedInd>false</ns6:ContactRefusedInd>
+                <ns6:EmailAddress>
+                  <ns6:EmailAddressText>MSMITH@AMADEUS.COM</ns6:EmailAddressText>
+                </ns6:EmailAddress>
+              </ns6:ContactInfo>
+              <ns6:ContactInfo>
+                <ns6:ContactRefusedInd>false</ns6:ContactRefusedInd>
+                <ns6:PostalAddress>
+                  <ns6:LabelText>R</ns6:LabelText>
+                  <ns6:StreetText>3470 NW 82nd Ave</ns6:StreetText>
+                  <ns6:PostalCode>33196</ns6:PostalCode>
+                  <ns6:CityName>MIAMI</ns6:CityName>
+                  <ns6:CountrySubDivisionName>FL</ns6:CountrySubDivisionName>
+                  <ns6:CountryCode>USA</ns6:CountryCode>
+                </ns6:PostalAddress>
+              </ns6:ContactInfo>
+              <ns6:IdentityDoc>
+                <ns6:IdentityDocID>15478569</ns6:IdentityDocID>
+                <ns6:IdentityDocTypeCode>PT</ns6:IdentityDocTypeCode>
+                <ns6:IssuingCountryCode>USA</ns6:IssuingCountryCode>
+                <ns6:CitizenshipCountryCode>USA</ns6:CitizenshipCountryCode>
+                <ns6:ExpiryDate>2029-05-25</ns6:ExpiryDate>
+                <ns6:Visa>
+                  <ns6:VisaID>87458999</ns6:VisaID>
+                  <ns6:VisaTypeCode>R</ns6:VisaTypeCode>
+                  <ns6:EnterBeforeDate>2025-03-01</ns6:EnterBeforeDate>
+                  <ns6:HostCountryCode>USA</ns6:HostCountryCode>
+                  <ns6:IssueDate>2024-03-01</ns6:IssueDate>
+                </ns6:Visa>
+              </ns6:IdentityDoc>
+              <ns6:Individual>
+                <ns6:GenderCode>M</ns6:GenderCode>
+                <ns6:TitleName>MR</ns6:TitleName>
+                <ns6:GivenName>MIKE</ns6:GivenName>
+                <ns6:Surname>SMITH</ns6:Surname>
+              </ns6:Individual>
+            </ns6:Pax>
+          </ns6:PaxList>
+        </ns6:DataLists>
+      </ns6:Request>
+    </ns6:AMA_TravelOrderCreateRQ>
+  </soap:Body>
+</soap:Envelope>

@@ -1,0 +1,36 @@
+/$FOR CREDIT CARD PAYMENT ENTER CARD HOLDER NAME, ADDRESS AND EMAIL
+--- TST RLR NDC ---
+RP/OID/OID            WS/SU   9JUL24/1418Z   O7R387
+OID/WSUSER/9JUL24
+  1.SMITH/MIKE MR(ADT)
+  2  BA2273 B 24SEP 2 LGWJFK HK1       S  1505 1805   NDC
+  3 APA AGENCYEMAIL@MYEMAIL.COM
+  4 APA 3054996000
+  5 TK OK09JUL/OID
+  6 SSR CTCM BA HK1 3054996000
+  7 SSR CTCE BA HK1 MSMITH//AMADEUS.COM
+  8 SSR DOCA BA HK1 R/USA/3470 NW 82ND AVE/MIAMI/FL/33196
+  9 SSR DOCS BA HK1 P/USA/15478569/USA/25FEB93/M/25MAY29/SMITH/M
+       IKE
+ 10 SSR DOCO BA HK1 /R/87458999//01MAR24/USA//01MAR25
+ 11 RM NOTIFY PASSENGER PRIOR TO TICKET PURCHASE & CHECK-IN:
+       FEDERAL LAWS FORBID THE CARRIAGE OF HAZARDOUS MATERIALS -
+       GGAMAUSHAZ/S2
+ 12 FA PAX 125-2183156292/ETBA/09JUL24/OID/12345678/S2
+ 13 FP PAX CCVIXXXXXXXXXXXX5803/0330/S2/P1
+ 
+ 
+ <!-- TST -->
+ /$TST00002     OFFICEID WS/09JUL                      OD                        
+T-                                                                             
+   1.SMITH/MIKE MR(ADT)                                                        
+ 1   LGW BA 2273 B 24SEP 1505  OK BLX5C5B4                   0PC               
+     JFK                                                                       
+FARE  F GBP     862.00                                                         
+TX001 X GBP     1.60-OAAG TX002 X GBP   115.00-YQAD TX003 X GBP    88.00-GBAD  
+TX004 X GBP    20.18-UBAS TX005 X GBP    17.40-USAS TX006 X GBP     3.00-XACO  
+TX007 X GBP     5.50-XYCR TX008 X GBP     5.50-YCAE TX009 X GBP    17.89-DUGB  
+TOTAL   GBP    1136.07                                                         
+GRAND TOTAL GBP    1136.07                                                     
+                                                                               
+ 13.FP CCVIXXXXXXXXXXXX5803/0330        

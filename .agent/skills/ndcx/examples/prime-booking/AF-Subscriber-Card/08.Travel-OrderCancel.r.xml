@@ -1,0 +1,35 @@
+<soap:Envelope xmlns:awsse="http://xml.amadeus.com/2010/06/Session_v3" xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns:wsa="http://www.w3.org/2005/08/addressing">
+  <soap:Header>
+    <wsa:To>http://www.w3.org/2005/08/addressing/anonymous</wsa:To>
+    <wsa:From>
+      <wsa:Address>https://nodeD1.test.webservices.amadeus.com/WSAP</wsa:Address>
+    </wsa:From>
+    <wsa:Action>http://webservices.amadeus.com/Travel_OrderCancel_1.0</wsa:Action>
+    <wsa:MessageID>urn:uuid:e3f68590-0540-80a4-7d3b-aa895011e5e7</wsa:MessageID>
+    <wsa:RelatesTo RelationshipType="http://www.w3.org/2005/08/addressing/reply">NDCX-AMA-DevPack-wrCaroYXdIXjbuw3ILpUjpFCStsw7qF-rJGdkC38J</wsa:RelatesTo>
+    <awsse:Session TransactionStatusCode="End">
+      <awsse:SessionId>01N2LHR9KI</awsse:SessionId>
+      <awsse:SequenceNumber>1</awsse:SequenceNumber>
+      <awsse:SecurityToken>REDACTED_TOKEN</awsse:SecurityToken>
+    </awsse:Session>
+  </soap:Header>
+  <soap:Body>
+    <AMA_TravelOrderCancelRS>
+      <Response>
+        <OrderRefID>AF057U207031D</OrderRefID>
+        <TicketDocInfo>
+          <TicketDocument>
+            <TicketDocNbr>0571470405304</TicketDocNbr>
+            <Type>T</Type>
+            <NumberofBooklets>1</NumberofBooklets>
+            <ReportingType>BSP</ReportingType>
+            <CouponInfo>
+              <CouponNumber>1</CouponNumber>
+              <Status>V</Status>
+            </CouponInfo>
+          </TicketDocument>
+        </TicketDocInfo>
+      </Response>
+    </AMA_TravelOrderCancelRS>
+  </soap:Body>
+</soap:Envelope>

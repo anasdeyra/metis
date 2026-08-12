@@ -1,0 +1,933 @@
+<ns0:AMA_TravelOfferPriceRS xmlns:ns0="http://xml.amadeus.com/2010/06/Travel_OfferPriceRS_v1">
+  <ns0:Response>
+    <ns0:DataLists>
+      <ns0:BaggageAllowanceList>
+        <ns0:BaggageAllowance>
+          <ns0:BaggageAllowanceID>FBA1</ns0:BaggageAllowanceID>
+          <ns0:TypeCode>CheckedBag</ns0:TypeCode>
+          <ns0:PieceAllowance>
+            <ns0:ApplicablePartyText>Traveler</ns0:ApplicablePartyText>
+            <ns0:TotalQty>0</ns0:TotalQty>
+          </ns0:PieceAllowance>
+        </ns0:BaggageAllowance>
+      </ns0:BaggageAllowanceList>
+      <ns0:FareList>
+        <ns0:FareGroup ListKey="FB1000101Ref">
+          <ns0:Fare>
+            <ns0:FareCode>70J</ns0:FareCode>
+          </ns0:Fare>
+          <ns0:FareBasisCode>
+            <ns0:Code>SEOB0BRK</ns0:Code>
+          </ns0:FareBasisCode>
+        </ns0:FareGroup>
+        <ns0:FareGroup ListKey="FB1000102Ref">
+          <ns0:Fare>
+            <ns0:FareCode>70J</ns0:FareCode>
+          </ns0:Fare>
+          <ns0:FareBasisCode>
+            <ns0:Code>SEOB0BRK</ns0:Code>
+          </ns0:FareBasisCode>
+        </ns0:FareGroup>
+        <ns0:FareGroup ListKey="FB1000201Ref">
+          <ns0:Fare>
+            <ns0:FareCode>70J</ns0:FareCode>
+          </ns0:Fare>
+          <ns0:FareBasisCode>
+            <ns0:Code>SEOB0BRK</ns0:Code>
+          </ns0:FareBasisCode>
+        </ns0:FareGroup>
+        <ns0:FareGroup ListKey="FB1000202Ref">
+          <ns0:Fare>
+            <ns0:FareCode>70J</ns0:FareCode>
+          </ns0:Fare>
+          <ns0:FareBasisCode>
+            <ns0:Code>SEOB0BRK</ns0:Code>
+          </ns0:FareBasisCode>
+        </ns0:FareGroup>
+      </ns0:FareList>
+      <ns0:OriginDestList>
+        <ns0:OriginDest>
+          <ns0:OriginDestID>BOGBGA</ns0:OriginDestID>
+          <ns0:OriginCode>BOG</ns0:OriginCode>
+          <ns0:DestCode>BGA</ns0:DestCode>
+          <ns0:PaxJourneyRefID>FLT0</ns0:PaxJourneyRefID>
+        </ns0:OriginDest>
+        <ns0:OriginDest>
+          <ns0:OriginDestID>BGABOG</ns0:OriginDestID>
+          <ns0:OriginCode>BGA</ns0:OriginCode>
+          <ns0:DestCode>BOG</ns0:DestCode>
+          <ns0:PaxJourneyRefID>FLT1</ns0:PaxJourneyRefID>
+        </ns0:OriginDest>
+      </ns0:OriginDestList>
+      <ns0:PaxJourneyList>
+        <ns0:PaxJourney>
+          <ns0:PaxJourneyID>FLT0</ns0:PaxJourneyID>
+          <ns0:Duration>PT1H1M</ns0:Duration>
+          <ns0:PaxSegmentRefID>SEG3</ns0:PaxSegmentRefID>
+        </ns0:PaxJourney>
+        <ns0:PaxJourney>
+          <ns0:PaxJourneyID>FLT1</ns0:PaxJourneyID>
+          <ns0:Duration>PT1H</ns0:Duration>
+          <ns0:PaxSegmentRefID>SEG16</ns0:PaxSegmentRefID>
+        </ns0:PaxJourney>
+      </ns0:PaxJourneyList>
+      <ns0:PaxList>
+        <ns0:Pax>
+          <ns0:PaxID>1</ns0:PaxID>
+          <ns0:PTC>ADT</ns0:PTC>
+        </ns0:Pax>
+        <ns0:Pax>
+          <ns0:PaxID>2</ns0:PaxID>
+          <ns0:PTC>ADT</ns0:PTC>
+        </ns0:Pax>
+        <ns0:Pax>
+          <ns0:PaxID>3</ns0:PaxID>
+          <ns0:PTC>CHD</ns0:PTC>
+        </ns0:Pax>
+      </ns0:PaxList>
+      <ns0:PaxSegmentList>
+        <ns0:PaxSegment>
+          <ns0:PaxSegmentID>SEG3</ns0:PaxSegmentID>
+          <ns0:Duration>PT1H1M</ns0:Duration>
+          <ns0:Dep>
+            <ns0:IATA_LocationCode>BOG</ns0:IATA_LocationCode>
+            <ns0:AircraftScheduledDateTime>2022-11-10T06:00:00</ns0:AircraftScheduledDateTime>
+            <ns0:TerminalName>1</ns0:TerminalName>
+          </ns0:Dep>
+          <ns0:Arrival>
+            <ns0:IATA_LocationCode>BGA</ns0:IATA_LocationCode>
+            <ns0:AircraftScheduledDateTime>2022-11-10T07:01:00</ns0:AircraftScheduledDateTime>
+          </ns0:Arrival>
+          <ns0:MarketingCarrierInfo>
+            <ns0:CarrierDesigCode>AV</ns0:CarrierDesigCode>
+            <ns0:CarrierName>AVIANCA</ns0:CarrierName>
+            <ns0:MarketingCarrierFlightNumberText>8572</ns0:MarketingCarrierFlightNumberText>
+          </ns0:MarketingCarrierInfo>
+          <ns0:DatedOperatingLeg>
+            <ns0:DatedOperatingLegID>S1</ns0:DatedOperatingLegID>
+            <ns0:CarrierAircraftType>
+              <ns0:CarrierAircraftTypeCode>320</ns0:CarrierAircraftTypeCode>
+            </ns0:CarrierAircraftType>
+            <ns0:Dep>
+              <ns0:IATA_LocationCode>BOG</ns0:IATA_LocationCode>
+              <ns0:AircraftScheduledDateTime>2022-11-10T06:00:00</ns0:AircraftScheduledDateTime>
+              <ns0:TerminalName>1</ns0:TerminalName>
+            </ns0:Dep>
+            <ns0:Arrival>
+              <ns0:IATA_LocationCode>BGA</ns0:IATA_LocationCode>
+              <ns0:AircraftScheduledDateTime>2022-11-10T07:01:00</ns0:AircraftScheduledDateTime>
+            </ns0:Arrival>
+          </ns0:DatedOperatingLeg>
+        </ns0:PaxSegment>
+        <ns0:PaxSegment>
+          <ns0:PaxSegmentID>SEG16</ns0:PaxSegmentID>
+          <ns0:Duration>PT1H</ns0:Duration>
+          <ns0:Dep>
+            <ns0:IATA_LocationCode>BGA</ns0:IATA_LocationCode>
+            <ns0:AircraftScheduledDateTime>2022-12-05T09:01:00</ns0:AircraftScheduledDateTime>
+          </ns0:Dep>
+          <ns0:Arrival>
+            <ns0:IATA_LocationCode>BOG</ns0:IATA_LocationCode>
+            <ns0:AircraftScheduledDateTime>2022-12-05T10:01:00</ns0:AircraftScheduledDateTime>
+            <ns0:TerminalName>1</ns0:TerminalName>
+          </ns0:Arrival>
+          <ns0:MarketingCarrierInfo>
+            <ns0:CarrierDesigCode>AV</ns0:CarrierDesigCode>
+            <ns0:CarrierName>AVIANCA</ns0:CarrierName>
+            <ns0:MarketingCarrierFlightNumberText>9461</ns0:MarketingCarrierFlightNumberText>
+          </ns0:MarketingCarrierInfo>
+          <ns0:DatedOperatingLeg>
+            <ns0:DatedOperatingLegID>S2</ns0:DatedOperatingLegID>
+            <ns0:CarrierAircraftType>
+              <ns0:CarrierAircraftTypeCode>320</ns0:CarrierAircraftTypeCode>
+            </ns0:CarrierAircraftType>
+            <ns0:Dep>
+              <ns0:IATA_LocationCode>BGA</ns0:IATA_LocationCode>
+              <ns0:AircraftScheduledDateTime>2022-12-05T09:01:00</ns0:AircraftScheduledDateTime>
+            </ns0:Dep>
+            <ns0:Arrival>
+              <ns0:IATA_LocationCode>BOG</ns0:IATA_LocationCode>
+              <ns0:AircraftScheduledDateTime>2022-12-05T10:01:00</ns0:AircraftScheduledDateTime>
+              <ns0:TerminalName>1</ns0:TerminalName>
+            </ns0:Arrival>
+          </ns0:DatedOperatingLeg>
+        </ns0:PaxSegment>
+      </ns0:PaxSegmentList>
+      <ns0:PriceClassList>
+        <ns0:PriceClass>
+          <ns0:PriceClassID>XS</ns0:PriceClassID>
+          <ns0:Name>XS</ns0:Name>
+          <ns0:Desc>
+            <ns0:DescID>LABEL1</ns0:DescID>
+            <ns0:DescText>Personal Item: Included</ns0:DescText>
+          </ns0:Desc>
+          <ns0:Desc>
+            <ns0:DescID>LABEL10</ns0:DescID>
+            <ns0:DescText>Refund (Penalty) After departure: Not permitted</ns0:DescText>
+          </ns0:Desc>
+          <ns0:Desc>
+            <ns0:DescID>LABEL11</ns0:DescID>
+            <ns0:DescText>Web check-in / App or Kiosks: Included</ns0:DescText>
+          </ns0:Desc>
+          <ns0:Desc>
+            <ns0:DescID>LABEL12</ns0:DescID>
+            <ns0:DescText>Check-In at the airport counter: $</ns0:DescText>
+          </ns0:Desc>
+          <ns0:Desc>
+            <ns0:DescID>LABEL13</ns0:DescID>
+            <ns0:DescText>Priority boarding: Not permitted Silver, Gold, Diamond: Included</ns0:DescText>
+          </ns0:Desc>
+          <ns0:Desc>
+            <ns0:DescID>LABEL14</ns0:DescID>
+            <ns0:DescText>Mileage accrual (LifeMiles): Not included</ns0:DescText>
+          </ns0:Desc>
+          <ns0:Desc>
+            <ns0:DescID>LABEL2</ns0:DescID>
+            <ns0:DescText>Carry on Baggage: $ Silver, Gold, Diamond: included</ns0:DescText>
+          </ns0:Desc>
+          <ns0:Desc>
+            <ns0:DescID>LABEL3</ns0:DescID>
+            <ns0:DescText>Baggage: $</ns0:DescText>
+          </ns0:Desc>
+          <ns0:Desc>
+            <ns0:DescID>LABEL4</ns0:DescID>
+            <ns0:DescText>Economy seat selection: $</ns0:DescText>
+          </ns0:Desc>
+          <ns0:Desc>
+            <ns0:DescID>LABEL5</ns0:DescID>
+            <ns0:DescText>Plus seat selection: $ Red Plus, Silver, Gold, Diamond: Elite Points</ns0:DescText>
+          </ns0:Desc>
+          <ns0:Desc>
+            <ns0:DescID>LABEL6</ns0:DescID>
+            <ns0:DescText>Emergency exit seat selection: $ Red Plus, Silver, Gold, Diamond: Elite Points</ns0:DescText>
+          </ns0:Desc>
+          <ns0:Desc>
+            <ns0:DescID>LABEL7</ns0:DescID>
+            <ns0:DescText>Itinerary changes (penalty) Before departure: Not permitted</ns0:DescText>
+          </ns0:Desc>
+          <ns0:Desc>
+            <ns0:DescID>LABEL8</ns0:DescID>
+            <ns0:DescText>Itinerary changes (penalty) After departure: Not permitted</ns0:DescText>
+          </ns0:Desc>
+          <ns0:Desc>
+            <ns0:DescID>LABEL9</ns0:DescID>
+            <ns0:DescText>Refund (Penalty) Before departure: Not permitted</ns0:DescText>
+          </ns0:Desc>
+        </ns0:PriceClass>
+      </ns0:PriceClassList>
+    </ns0:DataLists>
+    <ns0:Metadata>
+      <ns0:Other>
+        <ns0:OtherMetadata>
+          <ns0:CurrencyMetadatas>
+            <ns0:CurrencyMetadata MetadataKey="EUR">
+              <ns0:Decimals>2</ns0:Decimals>
+            </ns0:CurrencyMetadata>
+          </ns0:CurrencyMetadatas>
+        </ns0:OtherMetadata>
+        <ns0:OtherMetadata>
+          <ns0:RuleMetadatas>
+            <ns0:RuleMetadata MetadataKey="RULE1">
+              <ns0:RuleID>Change after departure - No Show</ns0:RuleID>
+              <ns0:Values>
+                <ns0:Value>
+                  <ns0:Instruction>Not Allowed</ns0:Instruction>
+                </ns0:Value>
+              </ns0:Values>
+            </ns0:RuleMetadata>
+            <ns0:RuleMetadata MetadataKey="RULE2">
+              <ns0:RuleID>Cancel after departure</ns0:RuleID>
+              <ns0:Values>
+                <ns0:Value>
+                  <ns0:Instruction>Not Allowed</ns0:Instruction>
+                </ns0:Value>
+              </ns0:Values>
+            </ns0:RuleMetadata>
+            <ns0:RuleMetadata MetadataKey="RULE3">
+              <ns0:RuleID>Change after departure</ns0:RuleID>
+              <ns0:Values>
+                <ns0:Value>
+                  <ns0:Instruction>Not Allowed</ns0:Instruction>
+                </ns0:Value>
+              </ns0:Values>
+            </ns0:RuleMetadata>
+            <ns0:RuleMetadata MetadataKey="RULE4">
+              <ns0:RuleID>Cancel after departure - No Show</ns0:RuleID>
+              <ns0:Values>
+                <ns0:Value>
+                  <ns0:Instruction>Not Allowed</ns0:Instruction>
+                </ns0:Value>
+              </ns0:Values>
+            </ns0:RuleMetadata>
+            <ns0:RuleMetadata MetadataKey="RULE5">
+              <ns0:RuleID>Change before departure</ns0:RuleID>
+              <ns0:Values>
+                <ns0:Value>
+                  <ns0:Instruction>Not Allowed</ns0:Instruction>
+                </ns0:Value>
+              </ns0:Values>
+            </ns0:RuleMetadata>
+            <ns0:RuleMetadata MetadataKey="RULE6">
+              <ns0:RuleID>Cancel before departure</ns0:RuleID>
+              <ns0:Values>
+                <ns0:Value>
+                  <ns0:Instruction>Not Allowed</ns0:Instruction>
+                </ns0:Value>
+              </ns0:Values>
+            </ns0:RuleMetadata>
+            <ns0:RuleMetadata MetadataKey="RULE7">
+              <ns0:RuleID>Change before departure - No Show</ns0:RuleID>
+              <ns0:Values>
+                <ns0:Value>
+                  <ns0:Instruction>Not Allowed</ns0:Instruction>
+                </ns0:Value>
+              </ns0:Values>
+            </ns0:RuleMetadata>
+            <ns0:RuleMetadata MetadataKey="RULE8">
+              <ns0:RuleID>Cancel before departure - No Show</ns0:RuleID>
+              <ns0:Values>
+                <ns0:Value>
+                  <ns0:Instruction>Not Allowed</ns0:Instruction>
+                </ns0:Value>
+              </ns0:Values>
+            </ns0:RuleMetadata>
+          </ns0:RuleMetadatas>
+        </ns0:OtherMetadata>
+      </ns0:Other>
+    </ns0:Metadata>
+    <ns0:PricedOffer>
+      <ns0:Offer>
+        <ns0:OfferID>ER0zX9DkJUSFiZaSoITeOQ9C_1A_d3c0cbe1-371b-4b55-88a5-339cdb3b9ca1_1A_1A_TPID_CiESG1NVTEgtMTA1MzMxMDAwNzU0MDgzNTAyNjYtMRgBGAI=</ns0:OfferID>
+        <ns0:OwnerCode>AV</ns0:OwnerCode>
+        <ns0:OfferExpirationDateTime>2022-09-02T11:32:28Z</ns0:OfferExpirationDateTime>
+        <ns0:PaymentTimeLimitDateTime>2022-09-02T15:02:00Z</ns0:PaymentTimeLimitDateTime>
+        <ns0:BaggageAllowance>
+          <ns0:PaxJourneyRefID>FLT0</ns0:PaxJourneyRefID>
+          <ns0:PaxJourneyRefID>FLT1</ns0:PaxJourneyRefID>
+          <ns0:PaxRefID>1</ns0:PaxRefID>
+          <ns0:PaxRefID>2</ns0:PaxRefID>
+          <ns0:PaxRefID>3</ns0:PaxRefID>
+          <ns0:BaggageAllowanceRefID>FBA1</ns0:BaggageAllowanceRefID>
+        </ns0:BaggageAllowance>
+        <ns0:JourneyOverview>
+          <ns0:JourneyPriceClass>
+            <ns0:PriceClassRefID>XS</ns0:PriceClassRefID>
+            <ns0:PaxJourneyRefID>FLT0</ns0:PaxJourneyRefID>
+          </ns0:JourneyPriceClass>
+          <ns0:JourneyPriceClass>
+            <ns0:PriceClassRefID>XS</ns0:PriceClassRefID>
+            <ns0:PaxJourneyRefID>FLT1</ns0:PaxJourneyRefID>
+          </ns0:JourneyPriceClass>
+        </ns0:JourneyOverview>
+        <ns0:OfferItem>
+          <ns0:OfferItemID>1A_TPID_CAESHVNVTEgtMTA1MzMxMDAwNzU0MDgzNTAyNjYtMS0x</ns0:OfferItemID>
+          <ns0:MandatoryInd>true</ns0:MandatoryInd>
+          <ns0:FareDetail>
+            <ns0:PassengerRefs>1</ns0:PassengerRefs>
+            <ns0:PassengerRefs>2</ns0:PassengerRefs>
+            <ns0:Price>
+              <ns0:BaseAmount Code="EUR">8400</ns0:BaseAmount>
+              <ns0:Taxes>
+                <ns0:Total Code="EUR">1294</ns0:Total>
+                <ns0:Breakdown>
+                  <ns0:Tax>
+                    <ns0:Amount Code="EUR">874</ns0:Amount>
+                    <ns0:Nation>AE</ns0:Nation>
+                    <ns0:TaxCode>CO</ns0:TaxCode>
+                  </ns0:Tax>
+                  <ns0:Tax>
+                    <ns0:Amount Code="EUR">420</ns0:Amount>
+                    <ns0:Nation>TR</ns0:Nation>
+                    <ns0:TaxCode>YS</ns0:TaxCode>
+                  </ns0:Tax>
+                </ns0:Breakdown>
+              </ns0:Taxes>
+            </ns0:Price>
+            <ns0:FareComponent>
+              <ns0:FareBasis>
+                <ns0:FareBasisCode refs="FB1000101Ref">
+                  <ns0:Code>SEOB0BRK</ns0:Code>
+                </ns0:FareBasisCode>
+                <ns0:RBD>S</ns0:RBD>
+                <ns0:CabinType>
+                  <ns0:CabinTypeCode>M</ns0:CabinTypeCode>
+                  <ns0:CabinTypeName>ECO</ns0:CabinTypeName>
+                </ns0:CabinType>
+              </ns0:FareBasis>
+              <ns0:FareRules>
+                <ns0:Penalty CancelFeeInd="false" ChangeFeeInd="false">
+                  <ns0:Details>
+                    <ns0:Detail refs="RULE1">
+                      <ns0:Type>Change</ns0:Type>
+                      <ns0:Application>13</ns0:Application>
+                      <ns0:Amounts>
+                        <ns0:Amount>
+                          <ns0:CurrencyAmountValue Code="EUR">0</ns0:CurrencyAmountValue>
+                          <ns0:AmountApplication>MAX</ns0:AmountApplication>
+                        </ns0:Amount>
+                        <ns0:Amount>
+                          <ns0:CurrencyAmountValue Code="EUR">0</ns0:CurrencyAmountValue>
+                          <ns0:AmountApplication>MIN</ns0:AmountApplication>
+                        </ns0:Amount>
+                      </ns0:Amounts>
+                    </ns0:Detail>
+                    <ns0:Detail refs="RULE2">
+                      <ns0:Type>Cancel</ns0:Type>
+                      <ns0:Application>3</ns0:Application>
+                      <ns0:Amounts>
+                        <ns0:Amount>
+                          <ns0:CurrencyAmountValue Code="EUR">0</ns0:CurrencyAmountValue>
+                          <ns0:AmountApplication>MAX</ns0:AmountApplication>
+                        </ns0:Amount>
+                        <ns0:Amount>
+                          <ns0:CurrencyAmountValue Code="EUR">0</ns0:CurrencyAmountValue>
+                          <ns0:AmountApplication>MIN</ns0:AmountApplication>
+                        </ns0:Amount>
+                      </ns0:Amounts>
+                    </ns0:Detail>
+                    <ns0:Detail refs="RULE3">
+                      <ns0:Type>Change</ns0:Type>
+                      <ns0:Application>3</ns0:Application>
+                      <ns0:Amounts>
+                        <ns0:Amount>
+                          <ns0:CurrencyAmountValue Code="EUR">0</ns0:CurrencyAmountValue>
+                          <ns0:AmountApplication>MAX</ns0:AmountApplication>
+                        </ns0:Amount>
+                        <ns0:Amount>
+                          <ns0:CurrencyAmountValue Code="EUR">0</ns0:CurrencyAmountValue>
+                          <ns0:AmountApplication>MIN</ns0:AmountApplication>
+                        </ns0:Amount>
+                      </ns0:Amounts>
+                    </ns0:Detail>
+                    <ns0:Detail refs="RULE4">
+                      <ns0:Type>Cancel</ns0:Type>
+                      <ns0:Application>13</ns0:Application>
+                      <ns0:Amounts>
+                        <ns0:Amount>
+                          <ns0:CurrencyAmountValue Code="EUR">0</ns0:CurrencyAmountValue>
+                          <ns0:AmountApplication>MAX</ns0:AmountApplication>
+                        </ns0:Amount>
+                        <ns0:Amount>
+                          <ns0:CurrencyAmountValue Code="EUR">0</ns0:CurrencyAmountValue>
+                          <ns0:AmountApplication>MIN</ns0:AmountApplication>
+                        </ns0:Amount>
+                      </ns0:Amounts>
+                    </ns0:Detail>
+                    <ns0:Detail refs="RULE5">
+                      <ns0:Type>Change</ns0:Type>
+                      <ns0:Application>2</ns0:Application>
+                      <ns0:Amounts>
+                        <ns0:Amount>
+                          <ns0:CurrencyAmountValue Code="EUR">0</ns0:CurrencyAmountValue>
+                          <ns0:AmountApplication>MIN</ns0:AmountApplication>
+                        </ns0:Amount>
+                        <ns0:Amount>
+                          <ns0:CurrencyAmountValue Code="EUR">0</ns0:CurrencyAmountValue>
+                          <ns0:AmountApplication>MAX</ns0:AmountApplication>
+                        </ns0:Amount>
+                      </ns0:Amounts>
+                    </ns0:Detail>
+                    <ns0:Detail refs="RULE6">
+                      <ns0:Type>Cancel</ns0:Type>
+                      <ns0:Application>2</ns0:Application>
+                      <ns0:Amounts>
+                        <ns0:Amount>
+                          <ns0:CurrencyAmountValue Code="EUR">0</ns0:CurrencyAmountValue>
+                          <ns0:AmountApplication>MAX</ns0:AmountApplication>
+                        </ns0:Amount>
+                        <ns0:Amount>
+                          <ns0:CurrencyAmountValue Code="EUR">0</ns0:CurrencyAmountValue>
+                          <ns0:AmountApplication>MIN</ns0:AmountApplication>
+                        </ns0:Amount>
+                      </ns0:Amounts>
+                    </ns0:Detail>
+                    <ns0:Detail refs="RULE7">
+                      <ns0:Type>Change</ns0:Type>
+                      <ns0:Application>12</ns0:Application>
+                      <ns0:Amounts>
+                        <ns0:Amount>
+                          <ns0:CurrencyAmountValue Code="EUR">0</ns0:CurrencyAmountValue>
+                          <ns0:AmountApplication>MIN</ns0:AmountApplication>
+                        </ns0:Amount>
+                        <ns0:Amount>
+                          <ns0:CurrencyAmountValue Code="EUR">0</ns0:CurrencyAmountValue>
+                          <ns0:AmountApplication>MAX</ns0:AmountApplication>
+                        </ns0:Amount>
+                      </ns0:Amounts>
+                    </ns0:Detail>
+                    <ns0:Detail refs="RULE8">
+                      <ns0:Type>Cancel</ns0:Type>
+                      <ns0:Application>12</ns0:Application>
+                      <ns0:Amounts>
+                        <ns0:Amount>
+                          <ns0:CurrencyAmountValue Code="EUR">0</ns0:CurrencyAmountValue>
+                          <ns0:AmountApplication>MIN</ns0:AmountApplication>
+                        </ns0:Amount>
+                        <ns0:Amount>
+                          <ns0:CurrencyAmountValue Code="EUR">0</ns0:CurrencyAmountValue>
+                          <ns0:AmountApplication>MAX</ns0:AmountApplication>
+                        </ns0:Amount>
+                      </ns0:Amounts>
+                    </ns0:Detail>
+                  </ns0:Details>
+                </ns0:Penalty>
+              </ns0:FareRules>
+              <ns0:PriceClassRef>XS</ns0:PriceClassRef>
+              <ns0:SegmentRefs>SEG3</ns0:SegmentRefs>
+            </ns0:FareComponent>
+            <ns0:FareComponent>
+              <ns0:FareBasis>
+                <ns0:FareBasisCode refs="FB1000102Ref">
+                  <ns0:Code>SEOB0BRK</ns0:Code>
+                </ns0:FareBasisCode>
+                <ns0:RBD>S</ns0:RBD>
+                <ns0:CabinType>
+                  <ns0:CabinTypeCode>M</ns0:CabinTypeCode>
+                  <ns0:CabinTypeName>ECO</ns0:CabinTypeName>
+                </ns0:CabinType>
+              </ns0:FareBasis>
+              <ns0:FareRules>
+                <ns0:Penalty CancelFeeInd="false" ChangeFeeInd="false">
+                  <ns0:Details>
+                    <ns0:Detail refs="RULE1">
+                      <ns0:Type>Change</ns0:Type>
+                      <ns0:Application>13</ns0:Application>
+                      <ns0:Amounts>
+                        <ns0:Amount>
+                          <ns0:CurrencyAmountValue Code="EUR">0</ns0:CurrencyAmountValue>
+                          <ns0:AmountApplication>MAX</ns0:AmountApplication>
+                        </ns0:Amount>
+                        <ns0:Amount>
+                          <ns0:CurrencyAmountValue Code="EUR">0</ns0:CurrencyAmountValue>
+                          <ns0:AmountApplication>MIN</ns0:AmountApplication>
+                        </ns0:Amount>
+                      </ns0:Amounts>
+                    </ns0:Detail>
+                    <ns0:Detail refs="RULE2">
+                      <ns0:Type>Cancel</ns0:Type>
+                      <ns0:Application>3</ns0:Application>
+                      <ns0:Amounts>
+                        <ns0:Amount>
+                          <ns0:CurrencyAmountValue Code="EUR">0</ns0:CurrencyAmountValue>
+                          <ns0:AmountApplication>MAX</ns0:AmountApplication>
+                        </ns0:Amount>
+                        <ns0:Amount>
+                          <ns0:CurrencyAmountValue Code="EUR">0</ns0:CurrencyAmountValue>
+                          <ns0:AmountApplication>MIN</ns0:AmountApplication>
+                        </ns0:Amount>
+                      </ns0:Amounts>
+                    </ns0:Detail>
+                    <ns0:Detail refs="RULE3">
+                      <ns0:Type>Change</ns0:Type>
+                      <ns0:Application>3</ns0:Application>
+                      <ns0:Amounts>
+                        <ns0:Amount>
+                          <ns0:CurrencyAmountValue Code="EUR">0</ns0:CurrencyAmountValue>
+                          <ns0:AmountApplication>MAX</ns0:AmountApplication>
+                        </ns0:Amount>
+                        <ns0:Amount>
+                          <ns0:CurrencyAmountValue Code="EUR">0</ns0:CurrencyAmountValue>
+                          <ns0:AmountApplication>MIN</ns0:AmountApplication>
+                        </ns0:Amount>
+                      </ns0:Amounts>
+                    </ns0:Detail>
+                    <ns0:Detail refs="RULE4">
+                      <ns0:Type>Cancel</ns0:Type>
+                      <ns0:Application>13</ns0:Application>
+                      <ns0:Amounts>
+                        <ns0:Amount>
+                          <ns0:CurrencyAmountValue Code="EUR">0</ns0:CurrencyAmountValue>
+                          <ns0:AmountApplication>MAX</ns0:AmountApplication>
+                        </ns0:Amount>
+                        <ns0:Amount>
+                          <ns0:CurrencyAmountValue Code="EUR">0</ns0:CurrencyAmountValue>
+                          <ns0:AmountApplication>MIN</ns0:AmountApplication>
+                        </ns0:Amount>
+                      </ns0:Amounts>
+                    </ns0:Detail>
+                    <ns0:Detail refs="RULE5">
+                      <ns0:Type>Change</ns0:Type>
+                      <ns0:Application>2</ns0:Application>
+                      <ns0:Amounts>
+                        <ns0:Amount>
+                          <ns0:CurrencyAmountValue Code="EUR">0</ns0:CurrencyAmountValue>
+                          <ns0:AmountApplication>MIN</ns0:AmountApplication>
+                        </ns0:Amount>
+                        <ns0:Amount>
+                          <ns0:CurrencyAmountValue Code="EUR">0</ns0:CurrencyAmountValue>
+                          <ns0:AmountApplication>MAX</ns0:AmountApplication>
+                        </ns0:Amount>
+                      </ns0:Amounts>
+                    </ns0:Detail>
+                    <ns0:Detail refs="RULE6">
+                      <ns0:Type>Cancel</ns0:Type>
+                      <ns0:Application>2</ns0:Application>
+                      <ns0:Amounts>
+                        <ns0:Amount>
+                          <ns0:CurrencyAmountValue Code="EUR">0</ns0:CurrencyAmountValue>
+                          <ns0:AmountApplication>MAX</ns0:AmountApplication>
+                        </ns0:Amount>
+                        <ns0:Amount>
+                          <ns0:CurrencyAmountValue Code="EUR">0</ns0:CurrencyAmountValue>
+                          <ns0:AmountApplication>MIN</ns0:AmountApplication>
+                        </ns0:Amount>
+                      </ns0:Amounts>
+                    </ns0:Detail>
+                    <ns0:Detail refs="RULE7">
+                      <ns0:Type>Change</ns0:Type>
+                      <ns0:Application>12</ns0:Application>
+                      <ns0:Amounts>
+                        <ns0:Amount>
+                          <ns0:CurrencyAmountValue Code="EUR">0</ns0:CurrencyAmountValue>
+                          <ns0:AmountApplication>MIN</ns0:AmountApplication>
+                        </ns0:Amount>
+                        <ns0:Amount>
+                          <ns0:CurrencyAmountValue Code="EUR">0</ns0:CurrencyAmountValue>
+                          <ns0:AmountApplication>MAX</ns0:AmountApplication>
+                        </ns0:Amount>
+                      </ns0:Amounts>
+                    </ns0:Detail>
+                    <ns0:Detail refs="RULE8">
+                      <ns0:Type>Cancel</ns0:Type>
+                      <ns0:Application>12</ns0:Application>
+                      <ns0:Amounts>
+                        <ns0:Amount>
+                          <ns0:CurrencyAmountValue Code="EUR">0</ns0:CurrencyAmountValue>
+                          <ns0:AmountApplication>MIN</ns0:AmountApplication>
+                        </ns0:Amount>
+                        <ns0:Amount>
+                          <ns0:CurrencyAmountValue Code="EUR">0</ns0:CurrencyAmountValue>
+                          <ns0:AmountApplication>MAX</ns0:AmountApplication>
+                        </ns0:Amount>
+                      </ns0:Amounts>
+                    </ns0:Detail>
+                  </ns0:Details>
+                </ns0:Penalty>
+              </ns0:FareRules>
+              <ns0:PriceClassRef>XS</ns0:PriceClassRef>
+              <ns0:SegmentRefs>SEG16</ns0:SegmentRefs>
+            </ns0:FareComponent>
+          </ns0:FareDetail>
+          <ns0:Service>
+            <ns0:ServiceID>1</ns0:ServiceID>
+            <ns0:PaxRefID>1</ns0:PaxRefID>
+            <ns0:PaxRefID>2</ns0:PaxRefID>
+            <ns0:ServiceAssociations>
+              <ns0:PaxJourneyRefID>FLT0</ns0:PaxJourneyRefID>
+              <ns0:PaxJourneyRefID>FLT1</ns0:PaxJourneyRefID>
+            </ns0:ServiceAssociations>
+          </ns0:Service>
+          <ns0:Price>
+            <ns0:TotalAmount CurCode="EUR">19388</ns0:TotalAmount>
+          </ns0:Price>
+        </ns0:OfferItem>
+        <ns0:OfferItem>
+          <ns0:OfferItemID>1A_TPID_CAISHVNVTEgtMTA1MzMxMDAwNzU0MDgzNTAyNjYtMS0x</ns0:OfferItemID>
+          <ns0:MandatoryInd>true</ns0:MandatoryInd>
+          <ns0:FareDetail>
+            <ns0:PassengerRefs>3</ns0:PassengerRefs>
+            <ns0:Price>
+              <ns0:BaseAmount Code="EUR">6300</ns0:BaseAmount>
+              <ns0:Taxes>
+                <ns0:Total Code="EUR">1189</ns0:Total>
+                <ns0:Breakdown>
+                  <ns0:Tax>
+                    <ns0:Amount Code="EUR">874</ns0:Amount>
+                    <ns0:Nation>AE</ns0:Nation>
+                    <ns0:TaxCode>CO</ns0:TaxCode>
+                  </ns0:Tax>
+                  <ns0:Tax>
+                    <ns0:Amount Code="EUR">315</ns0:Amount>
+                    <ns0:Nation>TR</ns0:Nation>
+                    <ns0:TaxCode>YS</ns0:TaxCode>
+                  </ns0:Tax>
+                </ns0:Breakdown>
+              </ns0:Taxes>
+            </ns0:Price>
+            <ns0:FareComponent>
+              <ns0:FareBasis>
+                <ns0:FareBasisCode refs="FB1000201Ref">
+                  <ns0:Code>SEOB0BRK</ns0:Code>
+                </ns0:FareBasisCode>
+                <ns0:RBD>S</ns0:RBD>
+                <ns0:CabinType>
+                  <ns0:CabinTypeCode>M</ns0:CabinTypeCode>
+                  <ns0:CabinTypeName>ECO</ns0:CabinTypeName>
+                </ns0:CabinType>
+              </ns0:FareBasis>
+              <ns0:FareRules>
+                <ns0:Penalty CancelFeeInd="false" ChangeFeeInd="false">
+                  <ns0:Details>
+                    <ns0:Detail refs="RULE1">
+                      <ns0:Type>Change</ns0:Type>
+                      <ns0:Application>13</ns0:Application>
+                      <ns0:Amounts>
+                        <ns0:Amount>
+                          <ns0:CurrencyAmountValue Code="EUR">0</ns0:CurrencyAmountValue>
+                          <ns0:AmountApplication>MAX</ns0:AmountApplication>
+                        </ns0:Amount>
+                        <ns0:Amount>
+                          <ns0:CurrencyAmountValue Code="EUR">0</ns0:CurrencyAmountValue>
+                          <ns0:AmountApplication>MIN</ns0:AmountApplication>
+                        </ns0:Amount>
+                      </ns0:Amounts>
+                    </ns0:Detail>
+                    <ns0:Detail refs="RULE2">
+                      <ns0:Type>Cancel</ns0:Type>
+                      <ns0:Application>3</ns0:Application>
+                      <ns0:Amounts>
+                        <ns0:Amount>
+                          <ns0:CurrencyAmountValue Code="EUR">0</ns0:CurrencyAmountValue>
+                          <ns0:AmountApplication>MAX</ns0:AmountApplication>
+                        </ns0:Amount>
+                        <ns0:Amount>
+                          <ns0:CurrencyAmountValue Code="EUR">0</ns0:CurrencyAmountValue>
+                          <ns0:AmountApplication>MIN</ns0:AmountApplication>
+                        </ns0:Amount>
+                      </ns0:Amounts>
+                    </ns0:Detail>
+                    <ns0:Detail refs="RULE3">
+                      <ns0:Type>Change</ns0:Type>
+                      <ns0:Application>3</ns0:Application>
+                      <ns0:Amounts>
+                        <ns0:Amount>
+                          <ns0:CurrencyAmountValue Code="EUR">0</ns0:CurrencyAmountValue>
+                          <ns0:AmountApplication>MAX</ns0:AmountApplication>
+                        </ns0:Amount>
+                        <ns0:Amount>
+                          <ns0:CurrencyAmountValue Code="EUR">0</ns0:CurrencyAmountValue>
+                          <ns0:AmountApplication>MIN</ns0:AmountApplication>
+                        </ns0:Amount>
+                      </ns0:Amounts>
+                    </ns0:Detail>
+                    <ns0:Detail refs="RULE4">
+                      <ns0:Type>Cancel</ns0:Type>
+                      <ns0:Application>13</ns0:Application>
+                      <ns0:Amounts>
+                        <ns0:Amount>
+                          <ns0:CurrencyAmountValue Code="EUR">0</ns0:CurrencyAmountValue>
+                          <ns0:AmountApplication>MAX</ns0:AmountApplication>
+                        </ns0:Amount>
+                        <ns0:Amount>
+                          <ns0:CurrencyAmountValue Code="EUR">0</ns0:CurrencyAmountValue>
+                          <ns0:AmountApplication>MIN</ns0:AmountApplication>
+                        </ns0:Amount>
+                      </ns0:Amounts>
+                    </ns0:Detail>
+                    <ns0:Detail refs="RULE5">
+                      <ns0:Type>Change</ns0:Type>
+                      <ns0:Application>2</ns0:Application>
+                      <ns0:Amounts>
+                        <ns0:Amount>
+                          <ns0:CurrencyAmountValue Code="EUR">0</ns0:CurrencyAmountValue>
+                          <ns0:AmountApplication>MIN</ns0:AmountApplication>
+                        </ns0:Amount>
+                        <ns0:Amount>
+                          <ns0:CurrencyAmountValue Code="EUR">0</ns0:CurrencyAmountValue>
+                          <ns0:AmountApplication>MAX</ns0:AmountApplication>
+                        </ns0:Amount>
+                      </ns0:Amounts>
+                    </ns0:Detail>
+                    <ns0:Detail refs="RULE6">
+                      <ns0:Type>Cancel</ns0:Type>
+                      <ns0:Application>2</ns0:Application>
+                      <ns0:Amounts>
+                        <ns0:Amount>
+                          <ns0:CurrencyAmountValue Code="EUR">0</ns0:CurrencyAmountValue>
+                          <ns0:AmountApplication>MAX</ns0:AmountApplication>
+                        </ns0:Amount>
+                        <ns0:Amount>
+                          <ns0:CurrencyAmountValue Code="EUR">0</ns0:CurrencyAmountValue>
+                          <ns0:AmountApplication>MIN</ns0:AmountApplication>
+                        </ns0:Amount>
+                      </ns0:Amounts>
+                    </ns0:Detail>
+                    <ns0:Detail refs="RULE7">
+                      <ns0:Type>Change</ns0:Type>
+                      <ns0:Application>12</ns0:Application>
+                      <ns0:Amounts>
+                        <ns0:Amount>
+                          <ns0:CurrencyAmountValue Code="EUR">0</ns0:CurrencyAmountValue>
+                          <ns0:AmountApplication>MIN</ns0:AmountApplication>
+                        </ns0:Amount>
+                        <ns0:Amount>
+                          <ns0:CurrencyAmountValue Code="EUR">0</ns0:CurrencyAmountValue>
+                          <ns0:AmountApplication>MAX</ns0:AmountApplication>
+                        </ns0:Amount>
+                      </ns0:Amounts>
+                    </ns0:Detail>
+                    <ns0:Detail refs="RULE8">
+                      <ns0:Type>Cancel</ns0:Type>
+                      <ns0:Application>12</ns0:Application>
+                      <ns0:Amounts>
+                        <ns0:Amount>
+                          <ns0:CurrencyAmountValue Code="EUR">0</ns0:CurrencyAmountValue>
+                          <ns0:AmountApplication>MIN</ns0:AmountApplication>
+                        </ns0:Amount>
+                        <ns0:Amount>
+                          <ns0:CurrencyAmountValue Code="EUR">0</ns0:CurrencyAmountValue>
+                          <ns0:AmountApplication>MAX</ns0:AmountApplication>
+                        </ns0:Amount>
+                      </ns0:Amounts>
+                    </ns0:Detail>
+                  </ns0:Details>
+                </ns0:Penalty>
+              </ns0:FareRules>
+              <ns0:PriceClassRef>XS</ns0:PriceClassRef>
+              <ns0:SegmentRefs>SEG3</ns0:SegmentRefs>
+            </ns0:FareComponent>
+            <ns0:FareComponent>
+              <ns0:FareBasis>
+                <ns0:FareBasisCode refs="FB1000202Ref">
+                  <ns0:Code>SEOB0BRK</ns0:Code>
+                </ns0:FareBasisCode>
+                <ns0:RBD>S</ns0:RBD>
+                <ns0:CabinType>
+                  <ns0:CabinTypeCode>M</ns0:CabinTypeCode>
+                  <ns0:CabinTypeName>ECO</ns0:CabinTypeName>
+                </ns0:CabinType>
+              </ns0:FareBasis>
+              <ns0:FareRules>
+                <ns0:Penalty CancelFeeInd="false" ChangeFeeInd="false">
+                  <ns0:Details>
+                    <ns0:Detail refs="RULE1">
+                      <ns0:Type>Change</ns0:Type>
+                      <ns0:Application>13</ns0:Application>
+                      <ns0:Amounts>
+                        <ns0:Amount>
+                          <ns0:CurrencyAmountValue Code="EUR">0</ns0:CurrencyAmountValue>
+                          <ns0:AmountApplication>MAX</ns0:AmountApplication>
+                        </ns0:Amount>
+                        <ns0:Amount>
+                          <ns0:CurrencyAmountValue Code="EUR">0</ns0:CurrencyAmountValue>
+                          <ns0:AmountApplication>MIN</ns0:AmountApplication>
+                        </ns0:Amount>
+                      </ns0:Amounts>
+                    </ns0:Detail>
+                    <ns0:Detail refs="RULE2">
+                      <ns0:Type>Cancel</ns0:Type>
+                      <ns0:Application>3</ns0:Application>
+                      <ns0:Amounts>
+                        <ns0:Amount>
+                          <ns0:CurrencyAmountValue Code="EUR">0</ns0:CurrencyAmountValue>
+                          <ns0:AmountApplication>MAX</ns0:AmountApplication>
+                        </ns0:Amount>
+                        <ns0:Amount>
+                          <ns0:CurrencyAmountValue Code="EUR">0</ns0:CurrencyAmountValue>
+                          <ns0:AmountApplication>MIN</ns0:AmountApplication>
+                        </ns0:Amount>
+                      </ns0:Amounts>
+                    </ns0:Detail>
+                    <ns0:Detail refs="RULE3">
+                      <ns0:Type>Change</ns0:Type>
+                      <ns0:Application>3</ns0:Application>
+                      <ns0:Amounts>
+                        <ns0:Amount>
+                          <ns0:CurrencyAmountValue Code="EUR">0</ns0:CurrencyAmountValue>
+                          <ns0:AmountApplication>MAX</ns0:AmountApplication>
+                        </ns0:Amount>
+                        <ns0:Amount>
+                          <ns0:CurrencyAmountValue Code="EUR">0</ns0:CurrencyAmountValue>
+                          <ns0:AmountApplication>MIN</ns0:AmountApplication>
+                        </ns0:Amount>
+                      </ns0:Amounts>
+                    </ns0:Detail>
+                    <ns0:Detail refs="RULE4">
+                      <ns0:Type>Cancel</ns0:Type>
+                      <ns0:Application>13</ns0:Application>
+                      <ns0:Amounts>
+                        <ns0:Amount>
+                          <ns0:CurrencyAmountValue Code="EUR">0</ns0:CurrencyAmountValue>
+                          <ns0:AmountApplication>MAX</ns0:AmountApplication>
+                        </ns0:Amount>
+                        <ns0:Amount>
+                          <ns0:CurrencyAmountValue Code="EUR">0</ns0:CurrencyAmountValue>
+                          <ns0:AmountApplication>MIN</ns0:AmountApplication>
+                        </ns0:Amount>
+                      </ns0:Amounts>
+                    </ns0:Detail>
+                    <ns0:Detail refs="RULE5">
+                      <ns0:Type>Change</ns0:Type>
+                      <ns0:Application>2</ns0:Application>
+                      <ns0:Amounts>
+                        <ns0:Amount>
+                          <ns0:CurrencyAmountValue Code="EUR">0</ns0:CurrencyAmountValue>
+                          <ns0:AmountApplication>MIN</ns0:AmountApplication>
+                        </ns0:Amount>
+                        <ns0:Amount>
+                          <ns0:CurrencyAmountValue Code="EUR">0</ns0:CurrencyAmountValue>
+                          <ns0:AmountApplication>MAX</ns0:AmountApplication>
+                        </ns0:Amount>
+                      </ns0:Amounts>
+                    </ns0:Detail>
+                    <ns0:Detail refs="RULE6">
+                      <ns0:Type>Cancel</ns0:Type>
+                      <ns0:Application>2</ns0:Application>
+                      <ns0:Amounts>
+                        <ns0:Amount>
+                          <ns0:CurrencyAmountValue Code="EUR">0</ns0:CurrencyAmountValue>
+                          <ns0:AmountApplication>MAX</ns0:AmountApplication>
+                        </ns0:Amount>
+                        <ns0:Amount>
+                          <ns0:CurrencyAmountValue Code="EUR">0</ns0:CurrencyAmountValue>
+                          <ns0:AmountApplication>MIN</ns0:AmountApplication>
+                        </ns0:Amount>
+                      </ns0:Amounts>
+                    </ns0:Detail>
+                    <ns0:Detail refs="RULE7">
+                      <ns0:Type>Change</ns0:Type>
+                      <ns0:Application>12</ns0:Application>
+                      <ns0:Amounts>
+                        <ns0:Amount>
+                          <ns0:CurrencyAmountValue Code="EUR">0</ns0:CurrencyAmountValue>
+                          <ns0:AmountApplication>MIN</ns0:AmountApplication>
+                        </ns0:Amount>
+                        <ns0:Amount>
+                          <ns0:CurrencyAmountValue Code="EUR">0</ns0:CurrencyAmountValue>
+                          <ns0:AmountApplication>MAX</ns0:AmountApplication>
+                        </ns0:Amount>
+                      </ns0:Amounts>
+                    </ns0:Detail>
+                    <ns0:Detail refs="RULE8">
+                      <ns0:Type>Cancel</ns0:Type>
+                      <ns0:Application>12</ns0:Application>
+                      <ns0:Amounts>
+                        <ns0:Amount>
+                          <ns0:CurrencyAmountValue Code="EUR">0</ns0:CurrencyAmountValue>
+                          <ns0:AmountApplication>MIN</ns0:AmountApplication>
+                        </ns0:Amount>
+                        <ns0:Amount>
+                          <ns0:CurrencyAmountValue Code="EUR">0</ns0:CurrencyAmountValue>
+                          <ns0:AmountApplication>MAX</ns0:AmountApplication>
+                        </ns0:Amount>
+                      </ns0:Amounts>
+                    </ns0:Detail>
+                  </ns0:Details>
+                </ns0:Penalty>
+              </ns0:FareRules>
+              <ns0:PriceClassRef>XS</ns0:PriceClassRef>
+              <ns0:SegmentRefs>SEG16</ns0:SegmentRefs>
+            </ns0:FareComponent>
+          </ns0:FareDetail>
+          <ns0:Service>
+            <ns0:ServiceID>1</ns0:ServiceID>
+            <ns0:PaxRefID>3</ns0:PaxRefID>
+            <ns0:ServiceAssociations>
+              <ns0:PaxJourneyRefID>FLT0</ns0:PaxJourneyRefID>
+              <ns0:PaxJourneyRefID>FLT1</ns0:PaxJourneyRefID>
+            </ns0:ServiceAssociations>
+          </ns0:Service>
+          <ns0:Price>
+            <ns0:TotalAmount CurCode="EUR">7489</ns0:TotalAmount>
+          </ns0:Price>
+        </ns0:OfferItem>
+        <ns0:TotalPrice>
+          <ns0:TotalAmount CurCode="EUR">26877</ns0:TotalAmount>
+        </ns0:TotalPrice>
+      </ns0:Offer>
+    </ns0:PricedOffer>
+    <ns0:ShoppingResponse>
+      <ns0:ShoppingResponseID>SULH-10533100075408350266</ns0:ShoppingResponseID>
+    </ns0:ShoppingResponse>
+  </ns0:Response>
+</ns0:AMA_TravelOfferPriceRS>

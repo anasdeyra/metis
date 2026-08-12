@@ -1,0 +1,36 @@
+<soapenv:Envelope xmlns:add="http://www.w3.org/2005/08/addressing" xmlns:ns5="http://xml.amadeus.com/2010/06/Travel_OrderCancelRQ_v1" xmlns:oas="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd" xmlns:oas1="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:sec="http://xml.amadeus.com/2010/06/Security_v1" xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
+  <soapenv:Header>
+    <add:MessageID>NDCX-AMA-DevPack-wrCaroYXdIXjbuw3ILpUjpFCStsw7qF-rJGdkC38J</add:MessageID>
+    <add:Action>http://webservices.amadeus.com/Travel_OrderCancel_1.0</add:Action>
+    <add:To>https://nodeD1.test.webservices.amadeus.com/WSAP</add:To>
+    <oas:Security>
+      <oas:UsernameToken oas1:Id="UsernameToken-1">
+        <oas:Username>YOUR_WS_USER</oas:Username>
+        <oas:Nonce EncodingType="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-soap-message-security-1.0#Base64Binary">REDACTED_NONCE</oas:Nonce>
+        <oas:Password Type="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-username-token-profile-1.0#PasswordDigest">REDACTED_DIGEST</oas:Password>
+        <oas1:Created>2022-03-11T13:38:48.743Z</oas1:Created>
+      </oas:UsernameToken>
+    </oas:Security>
+    <sec:AMA_SecurityHostedUser>
+      <sec:UserID AgentDutyCode="SU" RequestorType="U" PseudoCityCode="YOUR_OFFICE_ID" POS_Type="1" />
+    </sec:AMA_SecurityHostedUser>
+  </soapenv:Header>
+  <soapenv:Body>
+    <ns5:AMA_TravelOrderCancelRQ>
+      <ns5:Party>
+        <ns5:Sender>
+          <ns5:TravelAgency>
+            <ns5:AgencyID>unused</ns5:AgencyID>
+            <ns5:PseudoCityID>unused</ns5:PseudoCityID>
+          </ns5:TravelAgency>
+        </ns5:Sender>
+      </ns5:Party>
+      <ns5:Request>
+        <ns5:Order>
+          <ns5:OrderID>AF057U207031D</ns5:OrderID>
+          <ns5:OwnerCode>AF</ns5:OwnerCode>
+        </ns5:Order>
+      </ns5:Request>
+    </ns5:AMA_TravelOrderCancelRQ>
+  </soapenv:Body>
+</soapenv:Envelope>

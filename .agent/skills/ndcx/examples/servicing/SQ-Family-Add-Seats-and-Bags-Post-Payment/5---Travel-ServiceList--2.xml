@@ -1,0 +1,337 @@
+<!-- TRIMMED FOR SIZE by the skill build: repeating elements reduced to 3 (ALaCarteOfferItem x184 -> 3; BaggageAllowance x13 -> 3; ServiceDefinition x178 -> 3). Structure is intact; counts are not representative. -->
+<ns0:AMA_TravelServiceListRS xmlns:ns0="http://xml.amadeus.com/2010/06/Travel_ServiceListRQ_v1">
+  <ns0:Response>
+    <ns0:ALaCarteOffer>
+      <ns0:OfferID>SP1P-1203570882247835878-1</ns0:OfferID>
+      <ns0:OwnerCode>SQ</ns0:OwnerCode>
+      <ns0:ValidatingCarrierCode>SQ</ns0:ValidatingCarrierCode>
+      <ns0:PenaltyRefID>PENSP1P-1203570882247835878-1</ns0:PenaltyRefID>
+      <ns0:ALaCarteOfferItem>
+        <ns0:OfferItemID>SP1P-1203570882247835878-1-3</ns0:OfferItemID>
+        <ns0:UnitPrice>
+          <ns0:TotalAmount CurCode="USD">600</ns0:TotalAmount>
+          <ns0:BaseAmount CurCode="USD">600</ns0:BaseAmount>
+          <ns0:TaxSummary>
+            <ns0:TotalTaxAmount CurCode="USD">0</ns0:TotalTaxAmount>
+          </ns0:TaxSummary>
+        </ns0:UnitPrice>
+        <ns0:Service>
+          <ns0:ServiceID>1</ns0:ServiceID>
+          <ns0:ServiceDefinitionRefID>SRV1</ns0:ServiceDefinitionRefID>
+        </ns0:Service>
+        <ns0:Eligibility>
+          <ns0:PaxRefID>PAX2</ns0:PaxRefID>
+          <ns0:FlightAssociations>
+            <ns0:PaxSegmentRefID>SEG2</ns0:PaxSegmentRefID>
+          </ns0:FlightAssociations>
+        </ns0:Eligibility>
+      </ns0:ALaCarteOfferItem>
+      <ns0:ALaCarteOfferItem>
+        <ns0:OfferItemID>SP1P-1203570882247835878-1-4</ns0:OfferItemID>
+        <ns0:UnitPrice>
+          <ns0:TotalAmount CurCode="USD">8000</ns0:TotalAmount>
+          <ns0:BaseAmount CurCode="USD">8000</ns0:BaseAmount>
+          <ns0:TaxSummary>
+            <ns0:TotalTaxAmount CurCode="USD">0</ns0:TotalTaxAmount>
+          </ns0:TaxSummary>
+        </ns0:UnitPrice>
+        <ns0:Service>
+          <ns0:ServiceID>1</ns0:ServiceID>
+          <ns0:ServiceDefinitionRefID>SRV2</ns0:ServiceDefinitionRefID>
+        </ns0:Service>
+        <ns0:Eligibility>
+          <ns0:PaxRefID>PAX2</ns0:PaxRefID>
+          <ns0:FlightAssociations>
+            <ns0:PaxSegmentRefID>SEG1</ns0:PaxSegmentRefID>
+            <ns0:PaxSegmentRefID>SEG2</ns0:PaxSegmentRefID>
+          </ns0:FlightAssociations>
+        </ns0:Eligibility>
+      </ns0:ALaCarteOfferItem>
+      <ns0:ALaCarteOfferItem>
+        <ns0:OfferItemID>SP1P-1203570882247835878-1-5</ns0:OfferItemID>
+        <ns0:UnitPrice>
+          <ns0:TotalAmount CurCode="USD">4000</ns0:TotalAmount>
+          <ns0:BaseAmount CurCode="USD">4000</ns0:BaseAmount>
+          <ns0:TaxSummary>
+            <ns0:TotalTaxAmount CurCode="USD">0</ns0:TotalTaxAmount>
+          </ns0:TaxSummary>
+        </ns0:UnitPrice>
+        <ns0:Service>
+          <ns0:ServiceID>1</ns0:ServiceID>
+          <ns0:ServiceDefinitionRefID>SRV3</ns0:ServiceDefinitionRefID>
+        </ns0:Service>
+        <ns0:Eligibility>
+          <ns0:PaxRefID>PAX2</ns0:PaxRefID>
+          <ns0:FlightAssociations>
+            <ns0:PaxSegmentRefID>SEG1</ns0:PaxSegmentRefID>
+          </ns0:FlightAssociations>
+        </ns0:Eligibility>
+      </ns0:ALaCarteOfferItem>
+    </ns0:ALaCarteOffer>
+    <ns0:DataLists>
+      <ns0:BaggageAllowanceList>
+        <ns0:BaggageAllowance>
+          <ns0:BaggageAllowanceID>CBA1</ns0:BaggageAllowanceID>
+          <ns0:TypeCode>CheckedBag</ns0:TypeCode>
+          <ns0:WeightAllowance>
+            <ns0:MaximumWeightMeasure UnitCode="Default">1</ns0:MaximumWeightMeasure>
+          </ns0:WeightAllowance>
+        </ns0:BaggageAllowance>
+        <ns0:BaggageAllowance>
+          <ns0:BaggageAllowanceID>CBA2</ns0:BaggageAllowanceID>
+          <ns0:TypeCode>CheckedBag</ns0:TypeCode>
+          <ns0:WeightAllowance>
+            <ns0:MaximumWeightMeasure UnitCode="Default">1</ns0:MaximumWeightMeasure>
+          </ns0:WeightAllowance>
+        </ns0:BaggageAllowance>
+        <ns0:BaggageAllowance>
+          <ns0:BaggageAllowanceID>CBA3</ns0:BaggageAllowanceID>
+          <ns0:TypeCode>CheckedBag</ns0:TypeCode>
+          <ns0:WeightAllowance>
+            <ns0:MaximumWeightMeasure UnitCode="Default">1</ns0:MaximumWeightMeasure>
+          </ns0:WeightAllowance>
+        </ns0:BaggageAllowance>
+      </ns0:BaggageAllowanceList>
+      <ns0:MediaList>
+        <ns0:Media>
+          <ns0:MediaID>13232214</ns0:MediaID>
+        </ns0:Media>
+      </ns0:MediaList>
+      <ns0:PaxJourneyList>
+        <ns0:PaxJourney>
+          <ns0:PaxJourneyID>JRN1</ns0:PaxJourneyID>
+          <ns0:PaxSegmentRefID>SEG1</ns0:PaxSegmentRefID>
+        </ns0:PaxJourney>
+        <ns0:PaxJourney>
+          <ns0:PaxJourneyID>JRN2</ns0:PaxJourneyID>
+          <ns0:PaxSegmentRefID>SEG2</ns0:PaxSegmentRefID>
+        </ns0:PaxJourney>
+      </ns0:PaxJourneyList>
+      <ns0:PaxList>
+        <ns0:Pax>
+          <ns0:PaxID>PAX2</ns0:PaxID>
+          <ns0:PTC>ADT</ns0:PTC>
+          <ns0:Individual>
+            <ns0:GivenName>JOHN</ns0:GivenName>
+            <ns0:Surname>SMITH</ns0:Surname>
+          </ns0:Individual>
+        </ns0:Pax>
+        <ns0:Pax>
+          <ns0:PaxID>PAX3</ns0:PaxID>
+          <ns0:PTC>INF</ns0:PTC>
+          <ns0:Individual>
+            <ns0:GivenName>JIMMY</ns0:GivenName>
+            <ns0:Surname>SMITH</ns0:Surname>
+          </ns0:Individual>
+        </ns0:Pax>
+        <ns0:Pax>
+          <ns0:PaxID>PAX4</ns0:PaxID>
+          <ns0:PTC>ADT</ns0:PTC>
+          <ns0:Individual>
+            <ns0:GivenName>JANE</ns0:GivenName>
+            <ns0:Surname>SMITH</ns0:Surname>
+          </ns0:Individual>
+        </ns0:Pax>
+        <ns0:Pax>
+          <ns0:PaxID>PAX5</ns0:PaxID>
+          <ns0:PTC>CHD</ns0:PTC>
+          <ns0:Individual>
+            <ns0:GivenName>JOANNE</ns0:GivenName>
+            <ns0:Surname>SMITH</ns0:Surname>
+          </ns0:Individual>
+        </ns0:Pax>
+      </ns0:PaxList>
+      <ns0:PaxSegmentList>
+        <ns0:PaxSegment>
+          <ns0:PaxSegmentID>SEG1</ns0:PaxSegmentID>
+          <ns0:Dep>
+            <ns0:IATA_LocationCode>SIN</ns0:IATA_LocationCode>
+            <ns0:TerminalName>3</ns0:TerminalName>
+            <ns0:AircraftScheduledDateTime>2022-09-14T16:00:00</ns0:AircraftScheduledDateTime>
+          </ns0:Dep>
+          <ns0:Arrival>
+            <ns0:IATA_LocationCode>BKK</ns0:IATA_LocationCode>
+            <ns0:AircraftScheduledDateTime>2022-09-14T17:25:00</ns0:AircraftScheduledDateTime>
+          </ns0:Arrival>
+          <ns0:MarketingCarrierInfo>
+            <ns0:CarrierDesigCode>SQ</ns0:CarrierDesigCode>
+            <ns0:CarrierName>SINGAPORE AIRLINES</ns0:CarrierName>
+            <ns0:MarketingCarrierFlightNumberText>712</ns0:MarketingCarrierFlightNumberText>
+            <ns0:RBD_Code>N</ns0:RBD_Code>
+          </ns0:MarketingCarrierInfo>
+          <ns0:DatedOperatingLeg>
+            <ns0:DatedOperatingLegID>S1</ns0:DatedOperatingLegID>
+            <ns0:Dep>
+              <ns0:IATA_LocationCode>SIN</ns0:IATA_LocationCode>
+              <ns0:TerminalName>3</ns0:TerminalName>
+              <ns0:AircraftScheduledDateTime>2022-09-14T16:00:00</ns0:AircraftScheduledDateTime>
+            </ns0:Dep>
+            <ns0:Arrival>
+              <ns0:IATA_LocationCode>BKK</ns0:IATA_LocationCode>
+              <ns0:AircraftScheduledDateTime>2022-09-14T17:25:00</ns0:AircraftScheduledDateTime>
+            </ns0:Arrival>
+          </ns0:DatedOperatingLeg>
+        </ns0:PaxSegment>
+        <ns0:PaxSegment>
+          <ns0:PaxSegmentID>SEG2</ns0:PaxSegmentID>
+          <ns0:Dep>
+            <ns0:IATA_LocationCode>BKK</ns0:IATA_LocationCode>
+            <ns0:AircraftScheduledDateTime>2022-09-24T20:10:00</ns0:AircraftScheduledDateTime>
+          </ns0:Dep>
+          <ns0:Arrival>
+            <ns0:IATA_LocationCode>SIN</ns0:IATA_LocationCode>
+            <ns0:TerminalName>0</ns0:TerminalName>
+            <ns0:AircraftScheduledDateTime>2022-09-24T23:30:00</ns0:AircraftScheduledDateTime>
+          </ns0:Arrival>
+          <ns0:MarketingCarrierInfo>
+            <ns0:CarrierDesigCode>SQ</ns0:CarrierDesigCode>
+            <ns0:CarrierName>SINGAPORE AIRLINES</ns0:CarrierName>
+            <ns0:MarketingCarrierFlightNumberText>713</ns0:MarketingCarrierFlightNumberText>
+            <ns0:RBD_Code>N</ns0:RBD_Code>
+          </ns0:MarketingCarrierInfo>
+          <ns0:DatedOperatingLeg>
+            <ns0:DatedOperatingLegID>S2</ns0:DatedOperatingLegID>
+            <ns0:Dep>
+              <ns0:IATA_LocationCode>BKK</ns0:IATA_LocationCode>
+              <ns0:AircraftScheduledDateTime>2022-09-24T20:10:00</ns0:AircraftScheduledDateTime>
+            </ns0:Dep>
+            <ns0:Arrival>
+              <ns0:IATA_LocationCode>SIN</ns0:IATA_LocationCode>
+              <ns0:TerminalName>0</ns0:TerminalName>
+              <ns0:AircraftScheduledDateTime>2022-09-24T23:30:00</ns0:AircraftScheduledDateTime>
+            </ns0:Arrival>
+          </ns0:DatedOperatingLeg>
+        </ns0:PaxSegment>
+      </ns0:PaxSegmentList>
+      <ns0:ServiceDefinitionList>
+        <ns0:ServiceDefinition>
+          <ns0:ServiceDefinitionID>SRV1</ns0:ServiceDefinitionID>
+          <ns0:OwnerCode>SQ</ns0:OwnerCode>
+          <ns0:Name>ONE KILOGRAM BAGGAGE</ns0:Name>
+          <ns0:ReasonForIssuanceCode>C</ns0:ReasonForIssuanceCode>
+          <ns0:ReasonForIssuanceSubCode>0AA</ns0:ReasonForIssuanceSubCode>
+          <ns0:ValidatingCarrierCode>SQ</ns0:ValidatingCarrierCode>
+          <ns0:Description>
+            <ns0:DescID>1</ns0:DescID>
+            <ns0:DescText>ONE KILOGRAM BAGGAGE</ns0:DescText>
+          </ns0:Description>
+          <ns0:Description>
+            <ns0:DescID>2</ns0:DescID>
+            <ns0:DescText>ONE KILOGRAM BAGGAGE</ns0:DescText>
+          </ns0:Description>
+          <ns0:Description>
+            <ns0:DescID>3</ns0:DescID>
+            <ns0:DescText>ONE KILOGRAM BAGGAGE</ns0:DescText>
+          </ns0:Description>
+          <ns0:Description>
+            <ns0:DescID>4</ns0:DescID>
+            <ns0:DescText>ONE KILOGRAM BAGGAGE</ns0:DescText>
+          </ns0:Description>
+          <ns0:Description>
+            <ns0:DescID>5</ns0:DescID>
+            <ns0:DescText>ONE KILOGRAM BAGGAGE</ns0:DescText>
+            <ns0:Media>
+              <ns0:MediaID>13232214</ns0:MediaID>
+            </ns0:Media>
+          </ns0:Description>
+          <ns0:BookingInstructions>
+            <ns0:SSRCode>XBAG</ns0:SSRCode>
+            <ns0:AddlDataMeasure UnitCode="kg">1</ns0:AddlDataMeasure>
+          </ns0:BookingInstructions>
+        </ns0:ServiceDefinition>
+        <ns0:ServiceDefinition>
+          <ns0:ServiceDefinitionID>SRV2</ns0:ServiceDefinitionID>
+          <ns0:OwnerCode>SQ</ns0:OwnerCode>
+          <ns0:Name>EXCESS SIZE</ns0:Name>
+          <ns0:ReasonForIssuanceCode>C</ns0:ReasonForIssuanceCode>
+          <ns0:ReasonForIssuanceSubCode>0ID</ns0:ReasonForIssuanceSubCode>
+          <ns0:ValidatingCarrierCode>SQ</ns0:ValidatingCarrierCode>
+          <ns0:Description>
+            <ns0:DescID>1</ns0:DescID>
+            <ns0:DescText>EXCESS SIZE</ns0:DescText>
+          </ns0:Description>
+          <ns0:Description>
+            <ns0:DescID>2</ns0:DescID>
+            <ns0:DescText>EXCESS SIZE</ns0:DescText>
+          </ns0:Description>
+          <ns0:Description>
+            <ns0:DescID>3</ns0:DescID>
+            <ns0:DescText>EXCESS SIZE</ns0:DescText>
+          </ns0:Description>
+          <ns0:Description>
+            <ns0:DescID>4</ns0:DescID>
+            <ns0:DescText>EXCESS SIZE</ns0:DescText>
+          </ns0:Description>
+          <ns0:Description>
+            <ns0:DescID>5</ns0:DescID>
+            <ns0:DescText>EXCESS SIZE</ns0:DescText>
+            <ns0:Media>
+              <ns0:MediaID>13232214</ns0:MediaID>
+            </ns0:Media>
+          </ns0:Description>
+          <ns0:Description>
+            <ns0:DescID>6</ns0:DescID>
+            <ns0:DescText>EXCESS SIZE</ns0:DescText>
+          </ns0:Description>
+          <ns0:BookingInstructions>
+            <ns0:SSRCode>BULK</ns0:SSRCode>
+            <ns0:AddlDataMeasure UnitCode="n">1</ns0:AddlDataMeasure>
+          </ns0:BookingInstructions>
+        </ns0:ServiceDefinition>
+        <ns0:ServiceDefinition>
+          <ns0:ServiceDefinitionID>SRV3</ns0:ServiceDefinitionID>
+          <ns0:OwnerCode>SQ</ns0:OwnerCode>
+          <ns0:Name>EXCESS SIZE</ns0:Name>
+          <ns0:ReasonForIssuanceCode>C</ns0:ReasonForIssuanceCode>
+          <ns0:ReasonForIssuanceSubCode>0ID</ns0:ReasonForIssuanceSubCode>
+          <ns0:ValidatingCarrierCode>SQ</ns0:ValidatingCarrierCode>
+          <ns0:Description>
+            <ns0:DescID>1</ns0:DescID>
+            <ns0:DescText>EXCESS SIZE</ns0:DescText>
+          </ns0:Description>
+          <ns0:Description>
+            <ns0:DescID>2</ns0:DescID>
+            <ns0:DescText>EXCESS SIZE</ns0:DescText>
+          </ns0:Description>
+          <ns0:Description>
+            <ns0:DescID>3</ns0:DescID>
+            <ns0:DescText>EXCESS SIZE</ns0:DescText>
+          </ns0:Description>
+          <ns0:Description>
+            <ns0:DescID>4</ns0:DescID>
+            <ns0:DescText>EXCESS SIZE</ns0:DescText>
+          </ns0:Description>
+          <ns0:Description>
+            <ns0:DescID>5</ns0:DescID>
+            <ns0:DescText>EXCESS SIZE</ns0:DescText>
+            <ns0:Media>
+              <ns0:MediaID>13232214</ns0:MediaID>
+            </ns0:Media>
+          </ns0:Description>
+          <ns0:Description>
+            <ns0:DescID>6</ns0:DescID>
+            <ns0:DescText>EXCESS SIZE</ns0:DescText>
+          </ns0:Description>
+          <ns0:BookingInstructions>
+            <ns0:SSRCode>BULK</ns0:SSRCode>
+            <ns0:AddlDataMeasure UnitCode="n">1</ns0:AddlDataMeasure>
+          </ns0:BookingInstructions>
+        </ns0:ServiceDefinition>
+      </ns0:ServiceDefinitionList>
+    </ns0:DataLists>
+    <ns0:Metadata>
+      <ns0:Other>
+        <ns0:OtherMetadata>
+          <ns0:CurrencyMetadatas>
+            <ns0:CurrencyMetadata MetadataKey="USD">
+              <ns0:Decimals>2</ns0:Decimals>
+            </ns0:CurrencyMetadata>
+          </ns0:CurrencyMetadatas>
+        </ns0:OtherMetadata>
+      </ns0:Other>
+    </ns0:Metadata>
+    <ns0:ShoppingResponse>
+      <ns0:ShoppingResponseID>SP1P-1203570882247835878</ns0:ShoppingResponseID>
+    </ns0:ShoppingResponse>
+  </ns0:Response>
+</ns0:AMA_TravelServiceListRS>

@@ -1,0 +1,124 @@
+<soap:Envelope xmlns:awsse="http://xml.amadeus.com/2010/06/Session_v3" xmlns:ns3="http://xml.amadeus.com/2010/06/Travel_OrderReshopRS_v1" xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns:wsa="http://www.w3.org/2005/08/addressing">
+  <soap:Header>
+    <wsa:To>http://www.w3.org/2005/08/addressing/anonymous</wsa:To>
+    <wsa:From>
+      <wsa:Address>https://noded5.test.webservices.amadeus.com/WSAP</wsa:Address>
+    </wsa:From>
+    <wsa:Action>http://webservices.amadeus.com/Travel_OrderReshop_1.2</wsa:Action>
+    <wsa:MessageID>urn:uuid:d1ea906a-672e-d0f4-1134-7daac5a7f200</wsa:MessageID>
+    <wsa:RelatesTo RelationshipType="http://www.w3.org/2005/08/addressing/reply">1c2ebf5c-ac16-4a50-a009-54db85cea6cc</wsa:RelatesTo>
+    <awsse:Session TransactionStatusCode="End">
+      <awsse:SessionId>018XJC2FZJ</awsse:SessionId>
+      <awsse:SequenceNumber>1</awsse:SequenceNumber>
+      <awsse:SecurityToken>REDACTED_TOKEN</awsse:SecurityToken>
+    </awsse:Session>
+  </soap:Header>
+  <soap:Body>
+    <ns3:AMA_TravelOrderReshopRS>
+      <ns3:Response>
+        <ns3:DataLists>
+          <ns3:PaxList>
+            <ns3:Pax>
+              <ns3:PaxID>T1</ns3:PaxID>
+              <ns3:PTC>ADT</ns3:PTC>
+              <ns3:Individual>
+                <ns3:IndividualID>T1</ns3:IndividualID>
+                <ns3:Birthdate>2009-03-14</ns3:Birthdate>
+                <ns3:GenderCode>M</ns3:GenderCode>
+                <ns3:TitleName>MR</ns3:TitleName>
+                <ns3:GivenName>FERMIN</ns3:GivenName>
+                <ns3:Surname>ARACO</ns3:Surname>
+              </ns3:Individual>
+            </ns3:Pax>
+          </ns3:PaxList>
+        </ns3:DataLists>
+        <ns3:Metadata>
+          <ns3:Other>
+            <ns3:OtherMetadata>
+              <ns3:CurrencyMetadatas>
+                <ns3:CurrencyMetadata MetadataKey="USD">
+                  <ns3:Decimals>2</ns3:Decimals>
+                </ns3:CurrencyMetadata>
+              </ns3:CurrencyMetadatas>
+            </ns3:OtherMetadata>
+          </ns3:Other>
+        </ns3:Metadata>
+        <ns3:ReshopResults UseCase="VOID">
+          <ns3:ReshopOffers>
+            <ns3:ReshopOffer>
+              <ns3:OfferID>RB71506D6-E044-4D76-86A3-1</ns3:OfferID>
+              <ns3:OwnerCode>AA</ns3:OwnerCode>
+              <ns3:ValidatingCarrierCode>AA</ns3:ValidatingCarrierCode>
+              <ns3:OfferExpirationDateTime>2024-01-17T19:10:53Z</ns3:OfferExpirationDateTime>
+              <ns3:Desc>
+                <ns3:DescID>0</ns3:DescID>
+                <ns3:DescText>VOID</ns3:DescText>
+              </ns3:Desc>
+              <ns3:PTC_OfferParameters>
+                <ns3:PTC_PricedCode>ADT</ns3:PTC_PricedCode>
+                <ns3:PTC_RequestedCode>ADT</ns3:PTC_RequestedCode>
+                <ns3:RequestedPaxNumber>1</ns3:RequestedPaxNumber>
+                <ns3:PricedPaxNumber>1</ns3:PricedPaxNumber>
+              </ns3:PTC_OfferParameters>
+              <ns3:DeleteOrderItem>
+                <ns3:OrderItemRefID>P2B27FBC8-83B8-40AE-B877-1-1_1APAX_T1</ns3:OrderItemRefID>
+                <ns3:OriginalOrderItemDifferential>
+                  <ns3:Amount CurCode="USD">43256</ns3:Amount>
+                  <ns3:TaxSummary>
+                    <ns3:TotalTaxAmount CurCode="USD">6264</ns3:TotalTaxAmount>
+                    <ns3:Tax>
+                      <ns3:Amount CurCode="USD">3244</ns3:Amount>
+                      <ns3:TaxCode>US</ns3:TaxCode>
+                      <ns3:DescText>U.S.A Transportation Tax</ns3:DescText>
+                      <ns3:Country>
+                        <ns3:CountryCode>US</ns3:CountryCode>
+                      </ns3:Country>
+                    </ns3:Tax>
+                    <ns3:Tax>
+                      <ns3:Amount CurCode="USD">1000</ns3:Amount>
+                      <ns3:TaxCode>ZP</ns3:TaxCode>
+                      <ns3:DescText>United States Flight Segment Tax Domestic</ns3:DescText>
+                      <ns3:CollectionPointTax>
+                        <ns3:AirportAmount CurCode="USD">500</ns3:AirportAmount>
+                        <ns3:IATA_StationCode>LAX</ns3:IATA_StationCode>
+                      </ns3:CollectionPointTax>
+                      <ns3:Country>
+                        <ns3:CountryCode>US</ns3:CountryCode>
+                      </ns3:Country>
+                    </ns3:Tax>
+                    <ns3:Tax>
+                      <ns3:Amount CurCode="USD">1120</ns3:Amount>
+                      <ns3:TaxCode>AY</ns3:TaxCode>
+                      <ns3:DescText>United States Passenger Civil Aviation Security Service Fee</ns3:DescText>
+                      <ns3:Country>
+                        <ns3:CountryCode>US</ns3:CountryCode>
+                      </ns3:Country>
+                    </ns3:Tax>
+                    <ns3:Tax>
+                      <ns3:Amount CurCode="USD">900</ns3:Amount>
+                      <ns3:TaxCode>XF</ns3:TaxCode>
+                      <ns3:DescText>US Passenger Facility Charge</ns3:DescText>
+                      <ns3:CollectionPointTax>
+                        <ns3:AirportAmount CurCode="USD">450</ns3:AirportAmount>
+                        <ns3:IATA_StationCode>LAX</ns3:IATA_StationCode>
+                      </ns3:CollectionPointTax>
+                      <ns3:Country>
+                        <ns3:CountryCode>US</ns3:CountryCode>
+                      </ns3:Country>
+                    </ns3:Tax>
+                  </ns3:TaxSummary>
+                </ns3:OriginalOrderItemDifferential>
+                <ns3:DifferentialAmountDue>
+                  <ns3:Amount CurCode="USD">0</ns3:Amount>
+                </ns3:DifferentialAmountDue>
+              </ns3:DeleteOrderItem>
+            </ns3:ReshopOffer>
+          </ns3:ReshopOffers>
+        </ns3:ReshopResults>
+        <ns3:ShoppingResponse>
+          <ns3:ShoppingResponseID>RB71506D6-E044-4D76-86A3</ns3:ShoppingResponseID>
+        </ns3:ShoppingResponse>
+      </ns3:Response>
+    </ns3:AMA_TravelOrderReshopRS>
+  </soap:Body>
+</soap:Envelope>

@@ -1,0 +1,2 @@
+<!-- The OIN number example is for reference only.  To test OIN, customers will need to use their dedicated OIN number assigned by the carrier.
+If the OIN number does not exists on the test environment, the validation will need to managed on production.  -->

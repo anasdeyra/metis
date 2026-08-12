@@ -1,0 +1,85 @@
+<ns0:AMA_TravelOrderReshopRS xmlns:ns0="http://xml.amadeus.com/2010/06/Travel_OrderReshopRS_v1">
+  <ns0:Response>
+    <ns0:Metadata>
+      <ns0:Other>
+        <ns0:OtherMetadata>
+          <ns0:CurrencyMetadatas>
+            <ns0:CurrencyMetadata MetadataKey="EUR">
+              <ns0:Decimals>2</ns0:Decimals>
+            </ns0:CurrencyMetadata>
+          </ns0:CurrencyMetadatas>
+        </ns0:OtherMetadata>
+      </ns0:Other>
+    </ns0:Metadata>
+    <ns0:ReshopResults UseCase="UNKNOWN">
+      <ns0:ReshopOffers>
+        <ns0:ReshopOffer>
+          <ns0:OfferID>id-V0dXTUpB-o-1</ns0:OfferID>
+          <ns0:OwnerCode>VY</ns0:OwnerCode>
+          <ns0:OfferExpirationDateTime>2024-01-10T14:30:36.73686Z</ns0:OfferExpirationDateTime>
+          <ns0:Desc>
+            <ns0:DescID>0</ns0:DescID>
+            <ns0:DescText>UNKNOWN</ns0:DescText>
+          </ns0:Desc>
+          <ns0:TotalPrice>
+            <ns0:TotalAmount CurCode="EUR">0</ns0:TotalAmount>
+          </ns0:TotalPrice>
+          <ns0:DeleteOrderItem>
+            <ns0:OrderItemRefID>WGWMJA-BCNLGW-VY7830-ADT-FLIGHT_1APAX_A173349997</ns0:OrderItemRefID>
+            <ns0:OriginalOrderItemDifferential>
+              <ns0:Amount CurCode="EUR">4590</ns0:Amount>
+            </ns0:OriginalOrderItemDifferential>
+            <ns0:DifferentialAmountDue>
+              <ns0:Amount CurCode="EUR">0</ns0:Amount>
+            </ns0:DifferentialAmountDue>
+          </ns0:DeleteOrderItem>
+          <ns0:DeleteOrderItem>
+            <ns0:OrderItemRefID>WGWMJA-BCNLGW-VY7830-ADT-FLIGHT_1APAX_A173349998</ns0:OrderItemRefID>
+            <ns0:OriginalOrderItemDifferential>
+              <ns0:Amount CurCode="EUR">4590</ns0:Amount>
+            </ns0:OriginalOrderItemDifferential>
+            <ns0:DifferentialAmountDue>
+              <ns0:Amount CurCode="EUR">0</ns0:Amount>
+            </ns0:DifferentialAmountDue>
+          </ns0:DeleteOrderItem>
+          <ns0:DeleteOrderItem>
+            <ns0:OrderItemRefID>WGWMJA-BCNLGW-VY7830-CHD-FLIGHT_1APAX_C173349999</ns0:OrderItemRefID>
+            <ns0:OriginalOrderItemDifferential>
+              <ns0:Amount CurCode="EUR">4590</ns0:Amount>
+            </ns0:OriginalOrderItemDifferential>
+            <ns0:DifferentialAmountDue>
+              <ns0:Amount CurCode="EUR">0</ns0:Amount>
+            </ns0:DifferentialAmountDue>
+          </ns0:DeleteOrderItem>
+          <ns0:DeleteOrderItem>
+            <ns0:OrderItemRefID>WGWMJA-LGWBCN-VY7825-ADT-FLIGHT_1APAX_A173349997</ns0:OrderItemRefID>
+            <ns0:OriginalOrderItemDifferential>
+              <ns0:Amount CurCode="EUR">21928</ns0:Amount>
+            </ns0:OriginalOrderItemDifferential>
+            <ns0:DifferentialAmountDue>
+              <ns0:Amount CurCode="EUR">0</ns0:Amount>
+            </ns0:DifferentialAmountDue>
+          </ns0:DeleteOrderItem>
+          <ns0:DeleteOrderItem>
+            <ns0:OrderItemRefID>WGWMJA-LGWBCN-VY7825-ADT-FLIGHT_1APAX_A173349998</ns0:OrderItemRefID>
+            <ns0:OriginalOrderItemDifferential>
+              <ns0:Amount CurCode="EUR">21928</ns0:Amount>
+            </ns0:OriginalOrderItemDifferential>
+            <ns0:DifferentialAmountDue>
+              <ns0:Amount CurCode="EUR">0</ns0:Amount>
+            </ns0:DifferentialAmountDue>
+          </ns0:DeleteOrderItem>
+          <ns0:DeleteOrderItem>
+            <ns0:OrderItemRefID>WGWMJA-LGWBCN-VY7825-CHD-FLIGHT_1APAX_C173349999</ns0:OrderItemRefID>
+            <ns0:OriginalOrderItemDifferential>
+              <ns0:Amount CurCode="EUR">20121</ns0:Amount>
+            </ns0:OriginalOrderItemDifferential>
+            <ns0:DifferentialAmountDue>
+              <ns0:Amount CurCode="EUR">0</ns0:Amount>
+            </ns0:DifferentialAmountDue>
+          </ns0:DeleteOrderItem>
+        </ns0:ReshopOffer>
+      </ns0:ReshopOffers>
+    </ns0:ReshopResults>
+  </ns0:Response>
+</ns0:AMA_TravelOrderReshopRS>

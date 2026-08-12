@@ -1,0 +1,1221 @@
+<!-- TRIMMED FOR SIZE by the skill build: repeating elements reduced to 3 (Detail x8 -> 3; OrderItem x16 -> 3; RuleMetadata x13 -> 3; ServiceDefinition x8 -> 3; Tax x8 -> 3; TicketDocInfo x8 -> 3). Structure is intact; counts are not representative. -->
+<ns0:AMA_TravelOrderViewRS xmlns:ns0="http://xml.amadeus.com/2010/06/Travel_OrderViewRS_v1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xml.amadeus.com/2010/06/Travel_OrderViewRS_v1 file:///Y:/grammar/NDCX/FLX/xsd/AMA_TravelOrderViewRS.xsd">
+  <ns0:PayloadAttributes>
+    <ns0:Version>18.1</ns0:Version>
+  </ns0:PayloadAttributes>
+  <ns0:Response>
+    <ns0:DataLists>
+      <ns0:BaggageAllowanceList>
+        <ns0:BaggageAllowance>
+          <ns0:BaggageAllowanceID>FBA1</ns0:BaggageAllowanceID>
+          <ns0:TypeCode>Checked</ns0:TypeCode>
+          <ns0:WeightAllowance>
+            <ns0:MaximumWeightMeasure UnitCode="Kilogram">10</ns0:MaximumWeightMeasure>
+            <ns0:ApplicablePartyText>Traveler</ns0:ApplicablePartyText>
+          </ns0:WeightAllowance>
+        </ns0:BaggageAllowance>
+        <ns0:BaggageAllowance>
+          <ns0:BaggageAllowanceID>FBA2</ns0:BaggageAllowanceID>
+          <ns0:TypeCode>Checked</ns0:TypeCode>
+          <ns0:WeightAllowance>
+            <ns0:MaximumWeightMeasure UnitCode="Kilogram">25</ns0:MaximumWeightMeasure>
+            <ns0:ApplicablePartyText>Traveler</ns0:ApplicablePartyText>
+          </ns0:WeightAllowance>
+        </ns0:BaggageAllowance>
+      </ns0:BaggageAllowanceList>
+      <ns0:ContactInfoList>
+        <ns0:ContactInfo>
+          <ns0:ContactInfoID>CTCPAX2_1</ns0:ContactInfoID>
+          <ns0:ContactTypeText>NOTIFICATION</ns0:ContactTypeText>
+          <ns0:IndividualRef>PAX2</ns0:IndividualRef>
+          <ns0:EmailAddress>
+            <ns0:EmailAddressText>myemail@mail.COM</ns0:EmailAddressText>
+          </ns0:EmailAddress>
+          <ns0:EmailAddress>
+            <ns0:EmailAddressText>JOHN.SMITH@MYMAIL.COM</ns0:EmailAddressText>
+          </ns0:EmailAddress>
+        </ns0:ContactInfo>
+        <ns0:ContactInfo>
+          <ns0:ContactInfoID>CTCPAX4_1</ns0:ContactInfoID>
+          <ns0:ContactTypeText>NOTIFICATION</ns0:ContactTypeText>
+          <ns0:IndividualRef>PAX4</ns0:IndividualRef>
+          <ns0:EmailAddress>
+            <ns0:EmailAddressText>JANE.SMITH@MYMAIL.COM</ns0:EmailAddressText>
+          </ns0:EmailAddress>
+          <ns0:EmailAddress>
+            <ns0:EmailAddressText>myemail@mail.COM</ns0:EmailAddressText>
+          </ns0:EmailAddress>
+        </ns0:ContactInfo>
+        <ns0:ContactInfo>
+          <ns0:ContactInfoID>CTCPAX5_1</ns0:ContactInfoID>
+          <ns0:ContactTypeText>NOTIFICATION</ns0:ContactTypeText>
+          <ns0:IndividualRef>PAX5</ns0:IndividualRef>
+          <ns0:EmailAddress>
+            <ns0:EmailAddressText>JANE.SMITH@MYMAIL.COM</ns0:EmailAddressText>
+          </ns0:EmailAddress>
+          <ns0:EmailAddress>
+            <ns0:EmailAddressText>myemail@mail.COM</ns0:EmailAddressText>
+          </ns0:EmailAddress>
+        </ns0:ContactInfo>
+        <ns0:ContactInfo>
+          <ns0:ContactInfoID>CTC_1</ns0:ContactInfoID>
+          <ns0:ContactTypeText>NOTIFICATION</ns0:ContactTypeText>
+          <ns0:EmailAddress>
+            <ns0:EmailAddressText>myemail@mail.COM</ns0:EmailAddressText>
+          </ns0:EmailAddress>
+        </ns0:ContactInfo>
+        <ns0:ContactInfo>
+          <ns0:ContactInfoID>CTC_2</ns0:ContactInfoID>
+          <ns0:ContactTypeText>STANDARD</ns0:ContactTypeText>
+          <ns0:OtherAddress>
+            <ns0:LabelText>Other</ns0:LabelText>
+            <ns0:OtherAddressText>3054996000</ns0:OtherAddressText>
+          </ns0:OtherAddress>
+          <ns0:EmailAddress>
+            <ns0:EmailAddressText>myemail@mail.COM</ns0:EmailAddressText>
+          </ns0:EmailAddress>
+        </ns0:ContactInfo>
+      </ns0:ContactInfoList>
+      <ns0:InstructionsList>
+        <ns0:Instruction ListKey="OSI_56">
+          <ns0:FreeFormTextInstruction>
+            <ns0:Remark>BOOKING SITE US</ns0:Remark>
+          </ns0:FreeFormTextInstruction>
+        </ns0:Instruction>
+      </ns0:InstructionsList>
+      <ns0:OriginDestList>
+        <ns0:OriginDest>
+          <ns0:OriginDestID>OD1</ns0:OriginDestID>
+          <ns0:OriginCode>SIN</ns0:OriginCode>
+          <ns0:DestCode>BKK</ns0:DestCode>
+          <ns0:PaxJourneyRefID>FLT1</ns0:PaxJourneyRefID>
+        </ns0:OriginDest>
+        <ns0:OriginDest>
+          <ns0:OriginDestID>OD2</ns0:OriginDestID>
+          <ns0:OriginCode>BKK</ns0:OriginCode>
+          <ns0:DestCode>SIN</ns0:DestCode>
+          <ns0:PaxJourneyRefID>FLT2</ns0:PaxJourneyRefID>
+        </ns0:OriginDest>
+      </ns0:OriginDestList>
+      <ns0:PaxJourneyList>
+        <ns0:PaxJourney>
+          <ns0:PaxJourneyID>FLT1</ns0:PaxJourneyID>
+          <ns0:Duration>PT2H25M</ns0:Duration>
+          <ns0:PaxSegmentRefID>SEG1</ns0:PaxSegmentRefID>
+        </ns0:PaxJourney>
+        <ns0:PaxJourney>
+          <ns0:PaxJourneyID>FLT2</ns0:PaxJourneyID>
+          <ns0:Duration>PT2H20M</ns0:Duration>
+          <ns0:PaxSegmentRefID>SEG2</ns0:PaxSegmentRefID>
+        </ns0:PaxJourney>
+      </ns0:PaxJourneyList>
+      <ns0:PaxList>
+        <ns0:Pax>
+          <ns0:PaxID>PAX3</ns0:PaxID>
+          <ns0:PTC>INF</ns0:PTC>
+          <ns0:IdentityDoc>
+            <ns0:IdentityDocID>547896592</ns0:IdentityDocID>
+            <ns0:IdentityDocTypeCode>PT</ns0:IdentityDocTypeCode>
+            <ns0:IssuingCountryCode>US</ns0:IssuingCountryCode>
+            <ns0:ExpiryDate>2026-11-01</ns0:ExpiryDate>
+          </ns0:IdentityDoc>
+          <ns0:Individual>
+            <ns0:IndividualID>PAX3</ns0:IndividualID>
+            <ns0:Birthdate>2021-08-14</ns0:Birthdate>
+            <ns0:GivenName>JIMMY</ns0:GivenName>
+            <ns0:Surname>SMITH</ns0:Surname>
+          </ns0:Individual>
+        </ns0:Pax>
+        <ns0:Pax>
+          <ns0:PaxID>PAX2</ns0:PaxID>
+          <ns0:PTC>ADT</ns0:PTC>
+          <ns0:PaxRefID>PAX3</ns0:PaxRefID>
+          <ns0:IdentityDoc>
+            <ns0:IdentityDocID>547896581</ns0:IdentityDocID>
+            <ns0:IdentityDocTypeCode>PT</ns0:IdentityDocTypeCode>
+            <ns0:IssuingCountryCode>US</ns0:IssuingCountryCode>
+            <ns0:ExpiryDate>2026-11-01</ns0:ExpiryDate>
+          </ns0:IdentityDoc>
+          <ns0:Individual>
+            <ns0:IndividualID>PAX2</ns0:IndividualID>
+            <ns0:Birthdate>1967-08-13</ns0:Birthdate>
+            <ns0:GivenName>JOHN</ns0:GivenName>
+            <ns0:Surname>SMITH</ns0:Surname>
+          </ns0:Individual>
+        </ns0:Pax>
+        <ns0:Pax>
+          <ns0:PaxID>PAX4</ns0:PaxID>
+          <ns0:PTC>ADT</ns0:PTC>
+          <ns0:IdentityDoc>
+            <ns0:IdentityDocID>547896603</ns0:IdentityDocID>
+            <ns0:IdentityDocTypeCode>PT</ns0:IdentityDocTypeCode>
+            <ns0:IssuingCountryCode>US</ns0:IssuingCountryCode>
+            <ns0:ExpiryDate>2026-11-01</ns0:ExpiryDate>
+          </ns0:IdentityDoc>
+          <ns0:Individual>
+            <ns0:IndividualID>PAX4</ns0:IndividualID>
+            <ns0:Birthdate>1970-08-13</ns0:Birthdate>
+            <ns0:GivenName>JANE</ns0:GivenName>
+            <ns0:Surname>SMITH</ns0:Surname>
+          </ns0:Individual>
+        </ns0:Pax>
+        <ns0:Pax>
+          <ns0:PaxID>PAX5</ns0:PaxID>
+          <ns0:PTC>CHD</ns0:PTC>
+          <ns0:IdentityDoc>
+            <ns0:IdentityDocID>547896614</ns0:IdentityDocID>
+            <ns0:IdentityDocTypeCode>PT</ns0:IdentityDocTypeCode>
+            <ns0:IssuingCountryCode>US</ns0:IssuingCountryCode>
+            <ns0:ExpiryDate>2026-11-01</ns0:ExpiryDate>
+          </ns0:IdentityDoc>
+          <ns0:Individual>
+            <ns0:IndividualID>PAX5</ns0:IndividualID>
+            <ns0:Birthdate>2011-08-13</ns0:Birthdate>
+            <ns0:GivenName>JOANNE</ns0:GivenName>
+            <ns0:Surname>SMITH</ns0:Surname>
+          </ns0:Individual>
+        </ns0:Pax>
+      </ns0:PaxList>
+      <ns0:PaxSegmentList>
+        <ns0:PaxSegment>
+          <ns0:PaxSegmentID>SEG1</ns0:PaxSegmentID>
+          <ns0:Dep>
+            <ns0:IATA_LocationCode>SIN</ns0:IATA_LocationCode>
+            <ns0:TerminalName>3</ns0:TerminalName>
+            <ns0:AircraftScheduledDateTime>2022-09-14T16:00:00</ns0:AircraftScheduledDateTime>
+          </ns0:Dep>
+          <ns0:Arrival>
+            <ns0:IATA_LocationCode>BKK</ns0:IATA_LocationCode>
+            <ns0:AircraftScheduledDateTime>2022-09-14T17:25:00</ns0:AircraftScheduledDateTime>
+          </ns0:Arrival>
+          <ns0:MarketingCarrierInfo>
+            <ns0:CarrierDesigCode>SQ</ns0:CarrierDesigCode>
+            <ns0:CarrierName>SINGAPORE AIRLINES</ns0:CarrierName>
+            <ns0:MarketingCarrierFlightNumberText>712</ns0:MarketingCarrierFlightNumberText>
+            <ns0:RBD_Code>N</ns0:RBD_Code>
+          </ns0:MarketingCarrierInfo>
+          <ns0:DatedOperatingLeg>
+            <ns0:DatedOperatingLegID>LEG1</ns0:DatedOperatingLegID>
+            <ns0:Dep>
+              <ns0:IATA_LocationCode>SIN</ns0:IATA_LocationCode>
+              <ns0:AircraftScheduledDateTime>2022-09-14T16:00:00</ns0:AircraftScheduledDateTime>
+            </ns0:Dep>
+            <ns0:Arrival>
+              <ns0:IATA_LocationCode>BKK</ns0:IATA_LocationCode>
+              <ns0:AircraftScheduledDateTime>2022-09-14T17:25:00</ns0:AircraftScheduledDateTime>
+            </ns0:Arrival>
+            <ns0:IATA_AircraftType>
+              <ns0:IATA_AircraftTypeCode>359</ns0:IATA_AircraftTypeCode>
+            </ns0:IATA_AircraftType>
+          </ns0:DatedOperatingLeg>
+          <ns0:Duration>PT2H25M</ns0:Duration>
+        </ns0:PaxSegment>
+        <ns0:PaxSegment>
+          <ns0:PaxSegmentID>SEG2</ns0:PaxSegmentID>
+          <ns0:Dep>
+            <ns0:IATA_LocationCode>BKK</ns0:IATA_LocationCode>
+            <ns0:AircraftScheduledDateTime>2022-09-24T20:10:00</ns0:AircraftScheduledDateTime>
+          </ns0:Dep>
+          <ns0:Arrival>
+            <ns0:IATA_LocationCode>SIN</ns0:IATA_LocationCode>
+            <ns0:TerminalName>0</ns0:TerminalName>
+            <ns0:AircraftScheduledDateTime>2022-09-24T23:30:00</ns0:AircraftScheduledDateTime>
+          </ns0:Arrival>
+          <ns0:MarketingCarrierInfo>
+            <ns0:CarrierDesigCode>SQ</ns0:CarrierDesigCode>
+            <ns0:CarrierName>SINGAPORE AIRLINES</ns0:CarrierName>
+            <ns0:MarketingCarrierFlightNumberText>713</ns0:MarketingCarrierFlightNumberText>
+            <ns0:RBD_Code>N</ns0:RBD_Code>
+          </ns0:MarketingCarrierInfo>
+          <ns0:DatedOperatingLeg>
+            <ns0:DatedOperatingLegID>LEG2</ns0:DatedOperatingLegID>
+            <ns0:Dep>
+              <ns0:IATA_LocationCode>BKK</ns0:IATA_LocationCode>
+              <ns0:AircraftScheduledDateTime>2022-09-24T20:10:00</ns0:AircraftScheduledDateTime>
+            </ns0:Dep>
+            <ns0:Arrival>
+              <ns0:IATA_LocationCode>SIN</ns0:IATA_LocationCode>
+              <ns0:AircraftScheduledDateTime>2022-09-24T23:30:00</ns0:AircraftScheduledDateTime>
+            </ns0:Arrival>
+            <ns0:IATA_AircraftType>
+              <ns0:IATA_AircraftTypeCode>359</ns0:IATA_AircraftTypeCode>
+            </ns0:IATA_AircraftType>
+          </ns0:DatedOperatingLeg>
+          <ns0:Duration>PT2H20M</ns0:Duration>
+        </ns0:PaxSegment>
+      </ns0:PaxSegmentList>
+      <ns0:SeatProfileList>
+        <ns0:SeatProfile>
+          <ns0:SeatProfileID>RQST_1</ns0:SeatProfileID>
+          <ns0:CharacteristicCode>A</ns0:CharacteristicCode>
+          <ns0:CharacteristicCode>CH</ns0:CharacteristicCode>
+          <ns0:CharacteristicCode>I</ns0:CharacteristicCode>
+          <ns0:CharacteristicCode>FC</ns0:CharacteristicCode>
+          <ns0:CharacteristicCode>N</ns0:CharacteristicCode>
+          <ns0:DescText>Specific Seat Request</ns0:DescText>
+        </ns0:SeatProfile>
+        <ns0:SeatProfile>
+          <ns0:SeatProfileID>RQST_2</ns0:SeatProfileID>
+          <ns0:CharacteristicCode>CH</ns0:CharacteristicCode>
+          <ns0:CharacteristicCode>FC</ns0:CharacteristicCode>
+          <ns0:CharacteristicCode>N</ns0:CharacteristicCode>
+          <ns0:DescText>Specific Seat Request</ns0:DescText>
+        </ns0:SeatProfile>
+        <ns0:SeatProfile>
+          <ns0:SeatProfileID>RQST_3</ns0:SeatProfileID>
+          <ns0:CharacteristicCode>CH</ns0:CharacteristicCode>
+          <ns0:CharacteristicCode>W</ns0:CharacteristicCode>
+          <ns0:CharacteristicCode>FC</ns0:CharacteristicCode>
+          <ns0:CharacteristicCode>N</ns0:CharacteristicCode>
+          <ns0:DescText>Specific Seat Request</ns0:DescText>
+        </ns0:SeatProfile>
+      </ns0:SeatProfileList>
+      <ns0:ServiceDefinitionList>
+        <ns0:ServiceDefinition>
+          <ns0:ServiceDefinitionID>XBAG_1</ns0:ServiceDefinitionID>
+          <ns0:OwnerCode>SQ</ns0:OwnerCode>
+          <ns0:Name>EXCESS BAGGAGE WEIGHT</ns0:Name>
+          <ns0:ServiceCode>XBAG</ns0:ServiceCode>
+          <ns0:ReasonForIssuanceCode>C</ns0:ReasonForIssuanceCode>
+          <ns0:ReasonForIssuanceSubCode>0AA</ns0:ReasonForIssuanceSubCode>
+          <ns0:ValidatingCarrierCode>SQ</ns0:ValidatingCarrierCode>
+          <ns0:Description>
+            <ns0:DescID>-185045617</ns0:DescID>
+            <ns0:DescText>TTL 10KG</ns0:DescText>
+          </ns0:Description>
+        </ns0:ServiceDefinition>
+        <ns0:ServiceDefinition>
+          <ns0:ServiceDefinitionID>RQST_1</ns0:ServiceDefinitionID>
+          <ns0:Name>Specific Seat Request</ns0:Name>
+          <ns0:ServiceCode>RQST</ns0:ServiceCode>
+          <ns0:ReasonForIssuanceCode>A</ns0:ReasonForIssuanceCode>
+          <ns0:ReasonForIssuanceSubCode>0B5</ns0:ReasonForIssuanceSubCode>
+          <ns0:ValidatingCarrierCode>SQ</ns0:ValidatingCarrierCode>
+          <ns0:Description>
+            <ns0:DescID>RQST</ns0:DescID>
+          </ns0:Description>
+          <ns0:ServiceDefinitionAssociation>
+            <ns0:SeatProfileRefID>RQST_1</ns0:SeatProfileRefID>
+          </ns0:ServiceDefinitionAssociation>
+        </ns0:ServiceDefinition>
+        <ns0:ServiceDefinition>
+          <ns0:ServiceDefinitionID>RQST_2</ns0:ServiceDefinitionID>
+          <ns0:Name>Specific Seat Request</ns0:Name>
+          <ns0:ServiceCode>RQST</ns0:ServiceCode>
+          <ns0:ReasonForIssuanceCode>A</ns0:ReasonForIssuanceCode>
+          <ns0:ReasonForIssuanceSubCode>0B5</ns0:ReasonForIssuanceSubCode>
+          <ns0:ValidatingCarrierCode>SQ</ns0:ValidatingCarrierCode>
+          <ns0:Description>
+            <ns0:DescID>RQST</ns0:DescID>
+          </ns0:Description>
+          <ns0:ServiceDefinitionAssociation>
+            <ns0:SeatProfileRefID>RQST_2</ns0:SeatProfileRefID>
+          </ns0:ServiceDefinitionAssociation>
+        </ns0:ServiceDefinition>
+      </ns0:ServiceDefinitionList>
+    </ns0:DataLists>
+    <ns0:Metadata>
+      <ns0:Other>
+        <ns0:OtherMetadata>
+          <ns0:CurrencyMetadatas>
+            <ns0:CurrencyMetadata MetadataKey="USD">
+              <ns0:Decimals>2</ns0:Decimals>
+            </ns0:CurrencyMetadata>
+          </ns0:CurrencyMetadatas>
+        </ns0:OtherMetadata>
+        <ns0:OtherMetadata>
+          <ns0:RuleMetadatas>
+            <ns0:RuleMetadata MetadataKey="RULE1">
+              <ns0:RuleID>Cancel before departure</ns0:RuleID>
+              <ns0:Values>
+                <ns0:Value>
+                  <ns0:Instruction>Allowed with Restriction</ns0:Instruction>
+                </ns0:Value>
+              </ns0:Values>
+            </ns0:RuleMetadata>
+            <ns0:RuleMetadata MetadataKey="RULE2">
+              <ns0:RuleID>Cancel after departure</ns0:RuleID>
+              <ns0:Values>
+                <ns0:Value>
+                  <ns0:Instruction>Allowed with Restriction</ns0:Instruction>
+                </ns0:Value>
+              </ns0:Values>
+            </ns0:RuleMetadata>
+            <ns0:RuleMetadata MetadataKey="RULE3">
+              <ns0:RuleID>Cancel before departure - No Show</ns0:RuleID>
+              <ns0:Values>
+                <ns0:Value>
+                  <ns0:Instruction>Allowed with Restriction</ns0:Instruction>
+                </ns0:Value>
+              </ns0:Values>
+            </ns0:RuleMetadata>
+          </ns0:RuleMetadatas>
+        </ns0:OtherMetadata>
+      </ns0:Other>
+    </ns0:Metadata>
+    <ns0:Order>
+      <ns0:OrderID>SQ_6RUS54</ns0:OrderID>
+      <ns0:OwnerCode>SQ</ns0:OwnerCode>
+      <ns0:BookingRef>
+        <ns0:BookingID>6RUS54</ns0:BookingID>
+        <ns0:BookingEntity>
+          <ns0:Carrier>
+            <ns0:AirlineDesigCode>SQ</ns0:AirlineDesigCode>
+          </ns0:Carrier>
+        </ns0:BookingEntity>
+      </ns0:BookingRef>
+      <ns0:BookingRef>
+        <ns0:BookingID>23BMPA</ns0:BookingID>
+        <ns0:BookingEntity>
+          <ns0:Org OrgID="1A">
+            <ns0:Name>Amadeus</ns0:Name>
+          </ns0:Org>
+        </ns0:BookingEntity>
+      </ns0:BookingRef>
+      <ns0:OrderItem>
+        <ns0:OrderItemID>SQ_6RUS54_AIR-1-2_1APAX_PAX3</ns0:OrderItemID>
+        <ns0:OwnerCode>SQ</ns0:OwnerCode>
+        <ns0:FareDetail>
+          <ns0:PassengerRefs>PAX3</ns0:PassengerRefs>
+          <ns0:Price>
+            <ns0:TotalAmount>
+              <ns0:DetailCurrencyPrice>
+                <ns0:Total Code="USD">3180</ns0:Total>
+              </ns0:DetailCurrencyPrice>
+            </ns0:TotalAmount>
+            <ns0:BaseAmount Code="USD">2900</ns0:BaseAmount>
+            <ns0:Taxes>
+              <ns0:Total Code="USD">280</ns0:Total>
+              <ns0:Breakdown>
+                <ns0:Tax>
+                  <ns0:Amount Code="USD">100</ns0:Amount>
+                  <ns0:TaxCode>E7</ns0:TaxCode>
+                </ns0:Tax>
+                <ns0:Tax>
+                  <ns0:Amount Code="USD">100</ns0:Amount>
+                  <ns0:TaxCode>E7</ns0:TaxCode>
+                </ns0:Tax>
+                <ns0:Tax>
+                  <ns0:Amount Code="USD">040</ns0:Amount>
+                  <ns0:TaxCode>G8</ns0:TaxCode>
+                </ns0:Tax>
+                <ns0:Tax>
+                  <ns0:Amount Code="USD">040</ns0:Amount>
+                  <ns0:TaxCode>G8</ns0:TaxCode>
+                </ns0:Tax>
+              </ns0:Breakdown>
+            </ns0:Taxes>
+          </ns0:Price>
+          <ns0:FareComponent>
+            <ns0:FareBasis>
+              <ns0:FareBasisCode>
+                <ns0:Code>N16SGRPO/IN90</ns0:Code>
+              </ns0:FareBasisCode>
+              <ns0:RBD>N</ns0:RBD>
+              <ns0:CabinType>
+                <ns0:CabinTypeCode>M</ns0:CabinTypeCode>
+                <ns0:CabinTypeName>ECONOMY</ns0:CabinTypeName>
+              </ns0:CabinType>
+            </ns0:FareBasis>
+            <ns0:FareRules>
+              <ns0:Penalty CancelFeeInd="true" ChangeFeeInd="true">
+                <ns0:Details>
+                  <ns0:Detail refs="RULE1">
+                    <ns0:Type>Cancel</ns0:Type>
+                    <ns0:Application>2</ns0:Application>
+                    <ns0:Amounts>
+                      <ns0:Amount>
+                        <ns0:CurrencyAmountValue Code="USD">000</ns0:CurrencyAmountValue>
+                        <ns0:AmountApplication>MIN</ns0:AmountApplication>
+                        <ns0:ApplicableFeeRemarks>
+                          <ns0:Remark>Reissue/Refund minimum penalty amount before departure</ns0:Remark>
+                        </ns0:ApplicableFeeRemarks>
+                      </ns0:Amount>
+                      <ns0:Amount>
+                        <ns0:CurrencyAmountValue Code="USD">000</ns0:CurrencyAmountValue>
+                        <ns0:AmountApplication>MAX</ns0:AmountApplication>
+                        <ns0:ApplicableFeeRemarks>
+                          <ns0:Remark>Reissue/Refund maximum penalty amount before departure</ns0:Remark>
+                        </ns0:ApplicableFeeRemarks>
+                      </ns0:Amount>
+                    </ns0:Amounts>
+                  </ns0:Detail>
+                  <ns0:Detail refs="RULE9">
+                    <ns0:Type>Change</ns0:Type>
+                    <ns0:Application>2</ns0:Application>
+                    <ns0:Amounts>
+                      <ns0:Amount>
+                        <ns0:CurrencyAmountValue Code="USD">000</ns0:CurrencyAmountValue>
+                        <ns0:AmountApplication>MIN</ns0:AmountApplication>
+                        <ns0:ApplicableFeeRemarks>
+                          <ns0:Remark>Reissue/Refund minimum penalty amount before departure</ns0:Remark>
+                        </ns0:ApplicableFeeRemarks>
+                      </ns0:Amount>
+                      <ns0:Amount>
+                        <ns0:CurrencyAmountValue Code="USD">000</ns0:CurrencyAmountValue>
+                        <ns0:AmountApplication>MAX</ns0:AmountApplication>
+                        <ns0:ApplicableFeeRemarks>
+                          <ns0:Remark>Reissue/Refund maximum penalty amount before departure</ns0:Remark>
+                        </ns0:ApplicableFeeRemarks>
+                      </ns0:Amount>
+                    </ns0:Amounts>
+                  </ns0:Detail>
+                  <ns0:Detail refs="RULE6">
+                    <ns0:Type>Cancel</ns0:Type>
+                    <ns0:Application>3</ns0:Application>
+                    <ns0:Amounts>
+                      <ns0:Amount>
+                        <ns0:CurrencyAmountValue Code="USD">000</ns0:CurrencyAmountValue>
+                        <ns0:AmountApplication>MIN</ns0:AmountApplication>
+                        <ns0:ApplicableFeeRemarks>
+                          <ns0:Remark>Reissue/Refund minimum penalty amount after departure</ns0:Remark>
+                        </ns0:ApplicableFeeRemarks>
+                      </ns0:Amount>
+                      <ns0:Amount>
+                        <ns0:CurrencyAmountValue Code="USD">000</ns0:CurrencyAmountValue>
+                        <ns0:AmountApplication>MAX</ns0:AmountApplication>
+                        <ns0:ApplicableFeeRemarks>
+                          <ns0:Remark>Reissue/Refund maximum penalty amount with sale currency</ns0:Remark>
+                        </ns0:ApplicableFeeRemarks>
+                      </ns0:Amount>
+                    </ns0:Amounts>
+                  </ns0:Detail>
+                </ns0:Details>
+              </ns0:Penalty>
+            </ns0:FareRules>
+            <ns0:SegmentRefs>SEG1</ns0:SegmentRefs>
+          </ns0:FareComponent>
+          <ns0:FareComponent>
+            <ns0:FareBasis>
+              <ns0:FareBasisCode>
+                <ns0:Code>N16SGRPO/IN90</ns0:Code>
+              </ns0:FareBasisCode>
+              <ns0:RBD>N</ns0:RBD>
+              <ns0:CabinType>
+                <ns0:CabinTypeCode>M</ns0:CabinTypeCode>
+                <ns0:CabinTypeName>ECONOMY</ns0:CabinTypeName>
+              </ns0:CabinType>
+            </ns0:FareBasis>
+            <ns0:FareRules>
+              <ns0:Penalty CancelFeeInd="true" ChangeFeeInd="true">
+                <ns0:Details>
+                  <ns0:Detail refs="RULE1">
+                    <ns0:Type>Cancel</ns0:Type>
+                    <ns0:Application>2</ns0:Application>
+                    <ns0:Amounts>
+                      <ns0:Amount>
+                        <ns0:CurrencyAmountValue Code="USD">000</ns0:CurrencyAmountValue>
+                        <ns0:AmountApplication>MIN</ns0:AmountApplication>
+                        <ns0:ApplicableFeeRemarks>
+                          <ns0:Remark>Reissue/Refund minimum penalty amount before departure</ns0:Remark>
+                        </ns0:ApplicableFeeRemarks>
+                      </ns0:Amount>
+                      <ns0:Amount>
+                        <ns0:CurrencyAmountValue Code="USD">000</ns0:CurrencyAmountValue>
+                        <ns0:AmountApplication>MAX</ns0:AmountApplication>
+                        <ns0:ApplicableFeeRemarks>
+                          <ns0:Remark>Reissue/Refund maximum penalty amount before departure</ns0:Remark>
+                        </ns0:ApplicableFeeRemarks>
+                      </ns0:Amount>
+                    </ns0:Amounts>
+                  </ns0:Detail>
+                  <ns0:Detail refs="RULE9">
+                    <ns0:Type>Change</ns0:Type>
+                    <ns0:Application>2</ns0:Application>
+                    <ns0:Amounts>
+                      <ns0:Amount>
+                        <ns0:CurrencyAmountValue Code="USD">000</ns0:CurrencyAmountValue>
+                        <ns0:AmountApplication>MIN</ns0:AmountApplication>
+                        <ns0:ApplicableFeeRemarks>
+                          <ns0:Remark>Reissue/Refund minimum penalty amount before departure</ns0:Remark>
+                        </ns0:ApplicableFeeRemarks>
+                      </ns0:Amount>
+                      <ns0:Amount>
+                        <ns0:CurrencyAmountValue Code="USD">000</ns0:CurrencyAmountValue>
+                        <ns0:AmountApplication>MAX</ns0:AmountApplication>
+                        <ns0:ApplicableFeeRemarks>
+                          <ns0:Remark>Reissue/Refund maximum penalty amount before departure</ns0:Remark>
+                        </ns0:ApplicableFeeRemarks>
+                      </ns0:Amount>
+                    </ns0:Amounts>
+                  </ns0:Detail>
+                  <ns0:Detail refs="RULE2">
+                    <ns0:Type>Cancel</ns0:Type>
+                    <ns0:Application>3</ns0:Application>
+                    <ns0:Amounts>
+                      <ns0:Amount>
+                        <ns0:CurrencyAmountValue Code="USD">000</ns0:CurrencyAmountValue>
+                        <ns0:AmountApplication>MIN</ns0:AmountApplication>
+                        <ns0:ApplicableFeeRemarks>
+                          <ns0:Remark>Reissue/Refund minimum penalty amount after departure</ns0:Remark>
+                        </ns0:ApplicableFeeRemarks>
+                      </ns0:Amount>
+                      <ns0:Amount>
+                        <ns0:CurrencyAmountValue Code="USD">000</ns0:CurrencyAmountValue>
+                        <ns0:AmountApplication>MAX</ns0:AmountApplication>
+                        <ns0:ApplicableFeeRemarks>
+                          <ns0:Remark>Reissue/Refund maximum penalty amount with sale currency</ns0:Remark>
+                        </ns0:ApplicableFeeRemarks>
+                      </ns0:Amount>
+                    </ns0:Amounts>
+                  </ns0:Detail>
+                </ns0:Details>
+              </ns0:Penalty>
+            </ns0:FareRules>
+            <ns0:SegmentRefs>SEG2</ns0:SegmentRefs>
+          </ns0:FareComponent>
+          <ns0:Remarks>
+            <ns0:Remark>FC-SIN SQ BKK14.38SQ SIN14.38NUC28.76END ROE1.376351</ns0:Remark>
+            <ns0:Remark>FE-CHNG FEE APPLY /REFUND FEE APPLY /NO SHOW FEE APPLY 33895934</ns0:Remark>
+          </ns0:Remarks>
+        </ns0:FareDetail>
+        <ns0:Price>
+          <ns0:TotalAmount CurCode="USD">3180</ns0:TotalAmount>
+          <ns0:BaseAmount CurCode="USD">2900</ns0:BaseAmount>
+          <ns0:TaxSummary>
+            <ns0:TotalTaxAmount CurCode="USD">280</ns0:TotalTaxAmount>
+          </ns0:TaxSummary>
+        </ns0:Price>
+        <ns0:Service>
+          <ns0:ServiceID>SEG1_PAX3</ns0:ServiceID>
+          <ns0:StatusCode>HK</ns0:StatusCode>
+          <ns0:PaxRefID>PAX3</ns0:PaxRefID>
+          <ns0:ServiceAssociations>
+            <ns0:ServiceDefinitionRef>
+              <ns0:ServiceDefinitionRefID>BAGALLOW_1</ns0:ServiceDefinitionRefID>
+              <ns0:PaxSegmentRefID>SEG1</ns0:PaxSegmentRefID>
+            </ns0:ServiceDefinitionRef>
+          </ns0:ServiceAssociations>
+        </ns0:Service>
+        <ns0:Service>
+          <ns0:ServiceID>SEG2_PAX3</ns0:ServiceID>
+          <ns0:StatusCode>HK</ns0:StatusCode>
+          <ns0:PaxRefID>PAX3</ns0:PaxRefID>
+          <ns0:ServiceAssociations>
+            <ns0:ServiceDefinitionRef>
+              <ns0:ServiceDefinitionRefID>BAGALLOW_1</ns0:ServiceDefinitionRefID>
+              <ns0:PaxSegmentRefID>SEG2</ns0:PaxSegmentRefID>
+            </ns0:ServiceDefinitionRef>
+          </ns0:ServiceAssociations>
+        </ns0:Service>
+        <ns0:Service>
+          <ns0:ServiceID>SEG1_PAX3_1</ns0:ServiceID>
+          <ns0:StatusCode>HK</ns0:StatusCode>
+          <ns0:PaxRefID>PAX3</ns0:PaxRefID>
+          <ns0:ServiceAssociations>
+            <ns0:PaxSegmentRefID>SEG1</ns0:PaxSegmentRefID>
+          </ns0:ServiceAssociations>
+        </ns0:Service>
+        <ns0:Service>
+          <ns0:ServiceID>SEG2_PAX3_1</ns0:ServiceID>
+          <ns0:StatusCode>HK</ns0:StatusCode>
+          <ns0:PaxRefID>PAX3</ns0:PaxRefID>
+          <ns0:ServiceAssociations>
+            <ns0:PaxSegmentRefID>SEG2</ns0:PaxSegmentRefID>
+          </ns0:ServiceAssociations>
+        </ns0:Service>
+      </ns0:OrderItem>
+      <ns0:OrderItem>
+        <ns0:OrderItemID>SQ_6RUS54_AIR-1-2_1APAX_PAX2</ns0:OrderItemID>
+        <ns0:OwnerCode>SQ</ns0:OwnerCode>
+        <ns0:FareDetail>
+          <ns0:PassengerRefs>PAX2</ns0:PassengerRefs>
+          <ns0:Price>
+            <ns0:TotalAmount>
+              <ns0:DetailCurrencyPrice>
+                <ns0:Total Code="USD">34520</ns0:Total>
+              </ns0:DetailCurrencyPrice>
+            </ns0:TotalAmount>
+            <ns0:BaseAmount Code="USD">28500</ns0:BaseAmount>
+            <ns0:Taxes>
+              <ns0:Total Code="USD">6020</ns0:Total>
+              <ns0:Breakdown>
+                <ns0:Tax>
+                  <ns0:Amount Code="USD">780</ns0:Amount>
+                  <ns0:TaxCode>L7</ns0:TaxCode>
+                </ns0:Tax>
+                <ns0:Tax>
+                  <ns0:Amount Code="USD">440</ns0:Amount>
+                  <ns0:TaxCode>OP</ns0:TaxCode>
+                </ns0:Tax>
+                <ns0:Tax>
+                  <ns0:Amount Code="USD">2540</ns0:Amount>
+                  <ns0:TaxCode>SG</ns0:TaxCode>
+                </ns0:Tax>
+              </ns0:Breakdown>
+            </ns0:Taxes>
+          </ns0:Price>
+          <ns0:FareComponent>
+            <ns0:FareBasis>
+              <ns0:FareBasisCode>
+                <ns0:Code>N16SGRPO</ns0:Code>
+              </ns0:FareBasisCode>
+              <ns0:RBD>N</ns0:RBD>
+              <ns0:CabinType>
+                <ns0:CabinTypeCode>M</ns0:CabinTypeCode>
+                <ns0:CabinTypeName>ECONOMY</ns0:CabinTypeName>
+              </ns0:CabinType>
+            </ns0:FareBasis>
+            <ns0:FareRules>
+              <ns0:Penalty CancelFeeInd="true" ChangeFeeInd="true">
+                <ns0:Details>
+                  <ns0:Detail refs="RULE1">
+                    <ns0:Type>Cancel</ns0:Type>
+                    <ns0:Application>2</ns0:Application>
+                    <ns0:Amounts>
+                      <ns0:Amount>
+                        <ns0:CurrencyAmountValue Code="USD">14400</ns0:CurrencyAmountValue>
+                        <ns0:AmountApplication>MIN</ns0:AmountApplication>
+                        <ns0:ApplicableFeeRemarks>
+                          <ns0:Remark>Reissue/Refund minimum penalty amount before departure</ns0:Remark>
+                        </ns0:ApplicableFeeRemarks>
+                      </ns0:Amount>
+                      <ns0:Amount>
+                        <ns0:CurrencyAmountValue Code="USD">14400</ns0:CurrencyAmountValue>
+                        <ns0:AmountApplication>MAX</ns0:AmountApplication>
+                        <ns0:ApplicableFeeRemarks>
+                          <ns0:Remark>Reissue/Refund maximum penalty amount before departure</ns0:Remark>
+                        </ns0:ApplicableFeeRemarks>
+                      </ns0:Amount>
+                    </ns0:Amounts>
+                  </ns0:Detail>
+                  <ns0:Detail refs="RULE9">
+                    <ns0:Type>Change</ns0:Type>
+                    <ns0:Application>2</ns0:Application>
+                    <ns0:Amounts>
+                      <ns0:Amount>
+                        <ns0:CurrencyAmountValue Code="USD">000</ns0:CurrencyAmountValue>
+                        <ns0:AmountApplication>MIN</ns0:AmountApplication>
+                        <ns0:ApplicableFeeRemarks>
+                          <ns0:Remark>Reissue/Refund minimum penalty amount before departure</ns0:Remark>
+                        </ns0:ApplicableFeeRemarks>
+                      </ns0:Amount>
+                      <ns0:Amount>
+                        <ns0:CurrencyAmountValue Code="USD">000</ns0:CurrencyAmountValue>
+                        <ns0:AmountApplication>MAX</ns0:AmountApplication>
+                        <ns0:ApplicableFeeRemarks>
+                          <ns0:Remark>Reissue/Refund maximum penalty amount before departure</ns0:Remark>
+                        </ns0:ApplicableFeeRemarks>
+                      </ns0:Amount>
+                    </ns0:Amounts>
+                  </ns0:Detail>
+                  <ns0:Detail refs="RULE6">
+                    <ns0:Type>Cancel</ns0:Type>
+                    <ns0:Application>3</ns0:Application>
+                    <ns0:Amounts>
+                      <ns0:Amount>
+                        <ns0:CurrencyAmountValue Code="USD">000</ns0:CurrencyAmountValue>
+                        <ns0:AmountApplication>MIN</ns0:AmountApplication>
+                        <ns0:ApplicableFeeRemarks>
+                          <ns0:Remark>Reissue/Refund minimum penalty amount after departure</ns0:Remark>
+                        </ns0:ApplicableFeeRemarks>
+                      </ns0:Amount>
+                      <ns0:Amount>
+                        <ns0:CurrencyAmountValue Code="USD">000</ns0:CurrencyAmountValue>
+                        <ns0:AmountApplication>MAX</ns0:AmountApplication>
+                        <ns0:ApplicableFeeRemarks>
+                          <ns0:Remark>Reissue/Refund maximum penalty amount with sale currency</ns0:Remark>
+                        </ns0:ApplicableFeeRemarks>
+                      </ns0:Amount>
+                    </ns0:Amounts>
+                  </ns0:Detail>
+                </ns0:Details>
+              </ns0:Penalty>
+            </ns0:FareRules>
+            <ns0:SegmentRefs>SEG1</ns0:SegmentRefs>
+          </ns0:FareComponent>
+          <ns0:FareComponent>
+            <ns0:FareBasis>
+              <ns0:FareBasisCode>
+                <ns0:Code>N16SGRPO</ns0:Code>
+              </ns0:FareBasisCode>
+              <ns0:RBD>N</ns0:RBD>
+              <ns0:CabinType>
+                <ns0:CabinTypeCode>M</ns0:CabinTypeCode>
+                <ns0:CabinTypeName>ECONOMY</ns0:CabinTypeName>
+              </ns0:CabinType>
+            </ns0:FareBasis>
+            <ns0:FareRules>
+              <ns0:Penalty CancelFeeInd="true" ChangeFeeInd="true">
+                <ns0:Details>
+                  <ns0:Detail refs="RULE1">
+                    <ns0:Type>Cancel</ns0:Type>
+                    <ns0:Application>2</ns0:Application>
+                    <ns0:Amounts>
+                      <ns0:Amount>
+                        <ns0:CurrencyAmountValue Code="USD">14400</ns0:CurrencyAmountValue>
+                        <ns0:AmountApplication>MIN</ns0:AmountApplication>
+                        <ns0:ApplicableFeeRemarks>
+                          <ns0:Remark>Reissue/Refund minimum penalty amount before departure</ns0:Remark>
+                        </ns0:ApplicableFeeRemarks>
+                      </ns0:Amount>
+                      <ns0:Amount>
+                        <ns0:CurrencyAmountValue Code="USD">14400</ns0:CurrencyAmountValue>
+                        <ns0:AmountApplication>MAX</ns0:AmountApplication>
+                        <ns0:ApplicableFeeRemarks>
+                          <ns0:Remark>Reissue/Refund maximum penalty amount before departure</ns0:Remark>
+                        </ns0:ApplicableFeeRemarks>
+                      </ns0:Amount>
+                    </ns0:Amounts>
+                  </ns0:Detail>
+                  <ns0:Detail refs="RULE9">
+                    <ns0:Type>Change</ns0:Type>
+                    <ns0:Application>2</ns0:Application>
+                    <ns0:Amounts>
+                      <ns0:Amount>
+                        <ns0:CurrencyAmountValue Code="USD">000</ns0:CurrencyAmountValue>
+                        <ns0:AmountApplication>MIN</ns0:AmountApplication>
+                        <ns0:ApplicableFeeRemarks>
+                          <ns0:Remark>Reissue/Refund minimum penalty amount before departure</ns0:Remark>
+                        </ns0:ApplicableFeeRemarks>
+                      </ns0:Amount>
+                      <ns0:Amount>
+                        <ns0:CurrencyAmountValue Code="USD">000</ns0:CurrencyAmountValue>
+                        <ns0:AmountApplication>MAX</ns0:AmountApplication>
+                        <ns0:ApplicableFeeRemarks>
+                          <ns0:Remark>Reissue/Refund maximum penalty amount before departure</ns0:Remark>
+                        </ns0:ApplicableFeeRemarks>
+                      </ns0:Amount>
+                    </ns0:Amounts>
+                  </ns0:Detail>
+                  <ns0:Detail refs="RULE2">
+                    <ns0:Type>Cancel</ns0:Type>
+                    <ns0:Application>3</ns0:Application>
+                    <ns0:Amounts>
+                      <ns0:Amount>
+                        <ns0:CurrencyAmountValue Code="USD">000</ns0:CurrencyAmountValue>
+                        <ns0:AmountApplication>MIN</ns0:AmountApplication>
+                        <ns0:ApplicableFeeRemarks>
+                          <ns0:Remark>Reissue/Refund minimum penalty amount after departure</ns0:Remark>
+                        </ns0:ApplicableFeeRemarks>
+                      </ns0:Amount>
+                      <ns0:Amount>
+                        <ns0:CurrencyAmountValue Code="USD">000</ns0:CurrencyAmountValue>
+                        <ns0:AmountApplication>MAX</ns0:AmountApplication>
+                        <ns0:ApplicableFeeRemarks>
+                          <ns0:Remark>Reissue/Refund maximum penalty amount with sale currency</ns0:Remark>
+                        </ns0:ApplicableFeeRemarks>
+                      </ns0:Amount>
+                    </ns0:Amounts>
+                  </ns0:Detail>
+                </ns0:Details>
+              </ns0:Penalty>
+            </ns0:FareRules>
+            <ns0:SegmentRefs>SEG2</ns0:SegmentRefs>
+          </ns0:FareComponent>
+          <ns0:Remarks>
+            <ns0:Remark>FC-SIN SQ BKK143.86SQ SIN143.86NUC287.72END ROE1.376351</ns0:Remark>
+            <ns0:Remark>FE-CHNG FEE APPLY /REFUND FEE APPLY /NO SHOW FEE APPLY 33895934</ns0:Remark>
+          </ns0:Remarks>
+        </ns0:FareDetail>
+        <ns0:Price>
+          <ns0:TotalAmount CurCode="USD">34520</ns0:TotalAmount>
+          <ns0:BaseAmount CurCode="USD">28500</ns0:BaseAmount>
+          <ns0:TaxSummary>
+            <ns0:TotalTaxAmount CurCode="USD">6020</ns0:TotalTaxAmount>
+          </ns0:TaxSummary>
+        </ns0:Price>
+        <ns0:Service>
+          <ns0:ServiceID>SEG1_PAX2</ns0:ServiceID>
+          <ns0:StatusCode>HK</ns0:StatusCode>
+          <ns0:PaxRefID>PAX2</ns0:PaxRefID>
+          <ns0:ServiceAssociations>
+            <ns0:ServiceDefinitionRef>
+              <ns0:ServiceDefinitionRefID>BAGALLOW_2</ns0:ServiceDefinitionRefID>
+              <ns0:PaxSegmentRefID>SEG1</ns0:PaxSegmentRefID>
+            </ns0:ServiceDefinitionRef>
+          </ns0:ServiceAssociations>
+        </ns0:Service>
+        <ns0:Service>
+          <ns0:ServiceID>SEG2_PAX2</ns0:ServiceID>
+          <ns0:StatusCode>HK</ns0:StatusCode>
+          <ns0:PaxRefID>PAX2</ns0:PaxRefID>
+          <ns0:ServiceAssociations>
+            <ns0:ServiceDefinitionRef>
+              <ns0:ServiceDefinitionRefID>BAGALLOW_2</ns0:ServiceDefinitionRefID>
+              <ns0:PaxSegmentRefID>SEG2</ns0:PaxSegmentRefID>
+            </ns0:ServiceDefinitionRef>
+          </ns0:ServiceAssociations>
+        </ns0:Service>
+        <ns0:Service>
+          <ns0:ServiceID>SEG1_PAX2_1</ns0:ServiceID>
+          <ns0:StatusCode>HK</ns0:StatusCode>
+          <ns0:PaxRefID>PAX2</ns0:PaxRefID>
+          <ns0:ServiceAssociations>
+            <ns0:PaxSegmentRefID>SEG1</ns0:PaxSegmentRefID>
+          </ns0:ServiceAssociations>
+        </ns0:Service>
+        <ns0:Service>
+          <ns0:ServiceID>SEG2_PAX2_1</ns0:ServiceID>
+          <ns0:StatusCode>HK</ns0:StatusCode>
+          <ns0:PaxRefID>PAX2</ns0:PaxRefID>
+          <ns0:ServiceAssociations>
+            <ns0:PaxSegmentRefID>SEG2</ns0:PaxSegmentRefID>
+          </ns0:ServiceAssociations>
+        </ns0:Service>
+      </ns0:OrderItem>
+      <ns0:OrderItem>
+        <ns0:OrderItemID>SQ_6RUS54_AIR-1-2_1APAX_PAX4</ns0:OrderItemID>
+        <ns0:OwnerCode>SQ</ns0:OwnerCode>
+        <ns0:FareDetail>
+          <ns0:PassengerRefs>PAX4</ns0:PassengerRefs>
+          <ns0:Price>
+            <ns0:TotalAmount>
+              <ns0:DetailCurrencyPrice>
+                <ns0:Total Code="USD">34520</ns0:Total>
+              </ns0:DetailCurrencyPrice>
+            </ns0:TotalAmount>
+            <ns0:BaseAmount Code="USD">28500</ns0:BaseAmount>
+            <ns0:Taxes>
+              <ns0:Total Code="USD">6020</ns0:Total>
+              <ns0:Breakdown>
+                <ns0:Tax>
+                  <ns0:Amount Code="USD">780</ns0:Amount>
+                  <ns0:TaxCode>L7</ns0:TaxCode>
+                </ns0:Tax>
+                <ns0:Tax>
+                  <ns0:Amount Code="USD">440</ns0:Amount>
+                  <ns0:TaxCode>OP</ns0:TaxCode>
+                </ns0:Tax>
+                <ns0:Tax>
+                  <ns0:Amount Code="USD">2540</ns0:Amount>
+                  <ns0:TaxCode>SG</ns0:TaxCode>
+                </ns0:Tax>
+              </ns0:Breakdown>
+            </ns0:Taxes>
+          </ns0:Price>
+          <ns0:FareComponent>
+            <ns0:FareBasis>
+              <ns0:FareBasisCode>
+                <ns0:Code>N16SGRPO</ns0:Code>
+              </ns0:FareBasisCode>
+              <ns0:RBD>N</ns0:RBD>
+              <ns0:CabinType>
+                <ns0:CabinTypeCode>M</ns0:CabinTypeCode>
+                <ns0:CabinTypeName>ECONOMY</ns0:CabinTypeName>
+              </ns0:CabinType>
+            </ns0:FareBasis>
+            <ns0:FareRules>
+              <ns0:Penalty CancelFeeInd="true" ChangeFeeInd="true">
+                <ns0:Details>
+                  <ns0:Detail refs="RULE1">
+                    <ns0:Type>Cancel</ns0:Type>
+                    <ns0:Application>2</ns0:Application>
+                    <ns0:Amounts>
+                      <ns0:Amount>
+                        <ns0:CurrencyAmountValue Code="USD">14400</ns0:CurrencyAmountValue>
+                        <ns0:AmountApplication>MIN</ns0:AmountApplication>
+                        <ns0:ApplicableFeeRemarks>
+                          <ns0:Remark>Reissue/Refund minimum penalty amount before departure</ns0:Remark>
+                        </ns0:ApplicableFeeRemarks>
+                      </ns0:Amount>
+                      <ns0:Amount>
+                        <ns0:CurrencyAmountValue Code="USD">14400</ns0:CurrencyAmountValue>
+                        <ns0:AmountApplication>MAX</ns0:AmountApplication>
+                        <ns0:ApplicableFeeRemarks>
+                          <ns0:Remark>Reissue/Refund maximum penalty amount before departure</ns0:Remark>
+                        </ns0:ApplicableFeeRemarks>
+                      </ns0:Amount>
+                    </ns0:Amounts>
+                  </ns0:Detail>
+                  <ns0:Detail refs="RULE9">
+                    <ns0:Type>Change</ns0:Type>
+                    <ns0:Application>2</ns0:Application>
+                    <ns0:Amounts>
+                      <ns0:Amount>
+                        <ns0:CurrencyAmountValue Code="USD">000</ns0:CurrencyAmountValue>
+                        <ns0:AmountApplication>MIN</ns0:AmountApplication>
+                        <ns0:ApplicableFeeRemarks>
+                          <ns0:Remark>Reissue/Refund minimum penalty amount before departure</ns0:Remark>
+                        </ns0:ApplicableFeeRemarks>
+                      </ns0:Amount>
+                      <ns0:Amount>
+                        <ns0:CurrencyAmountValue Code="USD">000</ns0:CurrencyAmountValue>
+                        <ns0:AmountApplication>MAX</ns0:AmountApplication>
+                        <ns0:ApplicableFeeRemarks>
+                          <ns0:Remark>Reissue/Refund maximum penalty amount before departure</ns0:Remark>
+                        </ns0:ApplicableFeeRemarks>
+                      </ns0:Amount>
+                    </ns0:Amounts>
+                  </ns0:Detail>
+                  <ns0:Detail refs="RULE6">
+                    <ns0:Type>Cancel</ns0:Type>
+                    <ns0:Application>3</ns0:Application>
+                    <ns0:Amounts>
+                      <ns0:Amount>
+                        <ns0:CurrencyAmountValue Code="USD">000</ns0:CurrencyAmountValue>
+                        <ns0:AmountApplication>MIN</ns0:AmountApplication>
+                        <ns0:ApplicableFeeRemarks>
+                          <ns0:Remark>Reissue/Refund minimum penalty amount after departure</ns0:Remark>
+                        </ns0:ApplicableFeeRemarks>
+                      </ns0:Amount>
+                      <ns0:Amount>
+                        <ns0:CurrencyAmountValue Code="USD">000</ns0:CurrencyAmountValue>
+                        <ns0:AmountApplication>MAX</ns0:AmountApplication>
+                        <ns0:ApplicableFeeRemarks>
+                          <ns0:Remark>Reissue/Refund maximum penalty amount with sale currency</ns0:Remark>
+                        </ns0:ApplicableFeeRemarks>
+                      </ns0:Amount>
+                    </ns0:Amounts>
+                  </ns0:Detail>
+                </ns0:Details>
+              </ns0:Penalty>
+            </ns0:FareRules>
+            <ns0:SegmentRefs>SEG1</ns0:SegmentRefs>
+          </ns0:FareComponent>
+          <ns0:FareComponent>
+            <ns0:FareBasis>
+              <ns0:FareBasisCode>
+                <ns0:Code>N16SGRPO</ns0:Code>
+              </ns0:FareBasisCode>
+              <ns0:RBD>N</ns0:RBD>
+              <ns0:CabinType>
+                <ns0:CabinTypeCode>M</ns0:CabinTypeCode>
+                <ns0:CabinTypeName>ECONOMY</ns0:CabinTypeName>
+              </ns0:CabinType>
+            </ns0:FareBasis>
+            <ns0:FareRules>
+              <ns0:Penalty CancelFeeInd="true" ChangeFeeInd="true">
+                <ns0:Details>
+                  <ns0:Detail refs="RULE1">
+                    <ns0:Type>Cancel</ns0:Type>
+                    <ns0:Application>2</ns0:Application>
+                    <ns0:Amounts>
+                      <ns0:Amount>
+                        <ns0:CurrencyAmountValue Code="USD">14400</ns0:CurrencyAmountValue>
+                        <ns0:AmountApplication>MIN</ns0:AmountApplication>
+                        <ns0:ApplicableFeeRemarks>
+                          <ns0:Remark>Reissue/Refund minimum penalty amount before departure</ns0:Remark>
+                        </ns0:ApplicableFeeRemarks>
+                      </ns0:Amount>
+                      <ns0:Amount>
+                        <ns0:CurrencyAmountValue Code="USD">14400</ns0:CurrencyAmountValue>
+                        <ns0:AmountApplication>MAX</ns0:AmountApplication>
+                        <ns0:ApplicableFeeRemarks>
+                          <ns0:Remark>Reissue/Refund maximum penalty amount before departure</ns0:Remark>
+                        </ns0:ApplicableFeeRemarks>
+                      </ns0:Amount>
+                    </ns0:Amounts>
+                  </ns0:Detail>
+                  <ns0:Detail refs="RULE9">
+                    <ns0:Type>Change</ns0:Type>
+                    <ns0:Application>2</ns0:Application>
+                    <ns0:Amounts>
+                      <ns0:Amount>
+                        <ns0:CurrencyAmountValue Code="USD">000</ns0:CurrencyAmountValue>
+                        <ns0:AmountApplication>MIN</ns0:AmountApplication>
+                        <ns0:ApplicableFeeRemarks>
+                          <ns0:Remark>Reissue/Refund minimum penalty amount before departure</ns0:Remark>
+                        </ns0:ApplicableFeeRemarks>
+                      </ns0:Amount>
+                      <ns0:Amount>
+                        <ns0:CurrencyAmountValue Code="USD">000</ns0:CurrencyAmountValue>
+                        <ns0:AmountApplication>MAX</ns0:AmountApplication>
+                        <ns0:ApplicableFeeRemarks>
+                          <ns0:Remark>Reissue/Refund maximum penalty amount before departure</ns0:Remark>
+                        </ns0:ApplicableFeeRemarks>
+                      </ns0:Amount>
+                    </ns0:Amounts>
+                  </ns0:Detail>
+                  <ns0:Detail refs="RULE2">
+                    <ns0:Type>Cancel</ns0:Type>
+                    <ns0:Application>3</ns0:Application>
+                    <ns0:Amounts>
+                      <ns0:Amount>
+                        <ns0:CurrencyAmountValue Code="USD">000</ns0:CurrencyAmountValue>
+                        <ns0:AmountApplication>MIN</ns0:AmountApplication>
+                        <ns0:ApplicableFeeRemarks>
+                          <ns0:Remark>Reissue/Refund minimum penalty amount after departure</ns0:Remark>
+                        </ns0:ApplicableFeeRemarks>
+                      </ns0:Amount>
+                      <ns0:Amount>
+                        <ns0:CurrencyAmountValue Code="USD">000</ns0:CurrencyAmountValue>
+                        <ns0:AmountApplication>MAX</ns0:AmountApplication>
+                        <ns0:ApplicableFeeRemarks>
+                          <ns0:Remark>Reissue/Refund maximum penalty amount with sale currency</ns0:Remark>
+                        </ns0:ApplicableFeeRemarks>
+                      </ns0:Amount>
+                    </ns0:Amounts>
+                  </ns0:Detail>
+                </ns0:Details>
+              </ns0:Penalty>
+            </ns0:FareRules>
+            <ns0:SegmentRefs>SEG2</ns0:SegmentRefs>
+          </ns0:FareComponent>
+          <ns0:Remarks>
+            <ns0:Remark>FC-SIN SQ BKK143.86SQ SIN143.86NUC287.72END ROE1.376351</ns0:Remark>
+            <ns0:Remark>FE-CHNG FEE APPLY /REFUND FEE APPLY /NO SHOW FEE APPLY 33895934</ns0:Remark>
+          </ns0:Remarks>
+        </ns0:FareDetail>
+        <ns0:Price>
+          <ns0:TotalAmount CurCode="USD">34520</ns0:TotalAmount>
+          <ns0:BaseAmount CurCode="USD">28500</ns0:BaseAmount>
+          <ns0:TaxSummary>
+            <ns0:TotalTaxAmount CurCode="USD">6020</ns0:TotalTaxAmount>
+          </ns0:TaxSummary>
+        </ns0:Price>
+        <ns0:Service>
+          <ns0:ServiceID>SEG1_PAX4</ns0:ServiceID>
+          <ns0:StatusCode>HK</ns0:StatusCode>
+          <ns0:PaxRefID>PAX4</ns0:PaxRefID>
+          <ns0:ServiceAssociations>
+            <ns0:ServiceDefinitionRef>
+              <ns0:ServiceDefinitionRefID>BAGALLOW_2</ns0:ServiceDefinitionRefID>
+              <ns0:PaxSegmentRefID>SEG1</ns0:PaxSegmentRefID>
+            </ns0:ServiceDefinitionRef>
+          </ns0:ServiceAssociations>
+        </ns0:Service>
+        <ns0:Service>
+          <ns0:ServiceID>SEG2_PAX4</ns0:ServiceID>
+          <ns0:StatusCode>HK</ns0:StatusCode>
+          <ns0:PaxRefID>PAX4</ns0:PaxRefID>
+          <ns0:ServiceAssociations>
+            <ns0:ServiceDefinitionRef>
+              <ns0:ServiceDefinitionRefID>BAGALLOW_2</ns0:ServiceDefinitionRefID>
+              <ns0:PaxSegmentRefID>SEG2</ns0:PaxSegmentRefID>
+            </ns0:ServiceDefinitionRef>
+          </ns0:ServiceAssociations>
+        </ns0:Service>
+        <ns0:Service>
+          <ns0:ServiceID>SEG1_PAX4_1</ns0:ServiceID>
+          <ns0:StatusCode>HK</ns0:StatusCode>
+          <ns0:PaxRefID>PAX4</ns0:PaxRefID>
+          <ns0:ServiceAssociations>
+            <ns0:PaxSegmentRefID>SEG1</ns0:PaxSegmentRefID>
+          </ns0:ServiceAssociations>
+        </ns0:Service>
+        <ns0:Service>
+          <ns0:ServiceID>SEG2_PAX4_1</ns0:ServiceID>
+          <ns0:StatusCode>HK</ns0:StatusCode>
+          <ns0:PaxRefID>PAX4</ns0:PaxRefID>
+          <ns0:ServiceAssociations>
+            <ns0:PaxSegmentRefID>SEG2</ns0:PaxSegmentRefID>
+          </ns0:ServiceAssociations>
+        </ns0:Service>
+      </ns0:OrderItem>
+      <ns0:TotalPrice>
+        <ns0:TotalAmount CurCode="USD">110140</ns0:TotalAmount>
+        <ns0:BaseAmount CurCode="USD">91800</ns0:BaseAmount>
+        <ns0:TaxSummary>
+          <ns0:TotalTaxAmount CurCode="USD">18340</ns0:TotalTaxAmount>
+        </ns0:TaxSummary>
+      </ns0:TotalPrice>
+    </ns0:Order>
+    <ns0:TicketDocInfos>
+      <ns0:TicketDocInfo>
+        <ns0:AgentIDs>
+          <ns0:AgentID>
+            <ns0:Type>B</ns0:Type>
+            <ns0:ID>9999WS/SU</ns0:ID>
+          </ns0:AgentID>
+        </ns0:AgentIDs>
+        <ns0:TicketDocument>
+          <ns0:TicketDocNbr>6182435337672</ns0:TicketDocNbr>
+          <ns0:Type>T</ns0:Type>
+          <ns0:NumberofBooklets>1</ns0:NumberofBooklets>
+          <ns0:DateOfIssue>2022-07-06</ns0:DateOfIssue>
+          <ns0:CouponInfo>
+            <ns0:CouponNumber>1</ns0:CouponNumber>
+            <ns0:CouponReference>SEG1</ns0:CouponReference>
+            <ns0:FareBasisCode>
+              <ns0:Code>N16SGRPO</ns0:Code>
+            </ns0:FareBasisCode>
+            <ns0:Status>T</ns0:Status>
+            <ns0:AddlBaggageInfo>
+              <ns0:CheckedFree MaxBagWght="25K" />
+            </ns0:AddlBaggageInfo>
+          </ns0:CouponInfo>
+          <ns0:CouponInfo>
+            <ns0:CouponNumber>2</ns0:CouponNumber>
+            <ns0:CouponReference>SEG2</ns0:CouponReference>
+            <ns0:FareBasisCode>
+              <ns0:Code>N16SGRPO</ns0:Code>
+            </ns0:FareBasisCode>
+            <ns0:Status>T</ns0:Status>
+            <ns0:AddlBaggageInfo>
+              <ns0:CheckedFree MaxBagWght="25K" />
+            </ns0:AddlBaggageInfo>
+          </ns0:CouponInfo>
+          <ns0:ReportingType>ARC</ns0:ReportingType>
+        </ns0:TicketDocument>
+        <ns0:PassengerReference>PAX2</ns0:PassengerReference>
+      </ns0:TicketDocInfo>
+      <ns0:TicketDocInfo>
+        <ns0:AgentIDs>
+          <ns0:AgentID>
+            <ns0:Type>B</ns0:Type>
+            <ns0:ID>9999WS/SU</ns0:ID>
+          </ns0:AgentID>
+        </ns0:AgentIDs>
+        <ns0:TicketDocument>
+          <ns0:TicketDocNbr>6182435337675</ns0:TicketDocNbr>
+          <ns0:Type>T</ns0:Type>
+          <ns0:NumberofBooklets>1</ns0:NumberofBooklets>
+          <ns0:DateOfIssue>2022-07-06</ns0:DateOfIssue>
+          <ns0:CouponInfo>
+            <ns0:CouponNumber>1</ns0:CouponNumber>
+            <ns0:CouponReference>SEG1</ns0:CouponReference>
+            <ns0:FareBasisCode>
+              <ns0:Code>N16SGRPO/IN90</ns0:Code>
+            </ns0:FareBasisCode>
+            <ns0:Status>T</ns0:Status>
+            <ns0:AddlBaggageInfo>
+              <ns0:CheckedFree MaxBagWght="10K" />
+            </ns0:AddlBaggageInfo>
+          </ns0:CouponInfo>
+          <ns0:CouponInfo>
+            <ns0:CouponNumber>2</ns0:CouponNumber>
+            <ns0:CouponReference>SEG2</ns0:CouponReference>
+            <ns0:FareBasisCode>
+              <ns0:Code>N16SGRPO/IN90</ns0:Code>
+            </ns0:FareBasisCode>
+            <ns0:Status>T</ns0:Status>
+            <ns0:AddlBaggageInfo>
+              <ns0:CheckedFree MaxBagWght="10K" />
+            </ns0:AddlBaggageInfo>
+          </ns0:CouponInfo>
+          <ns0:ReportingType>ARC</ns0:ReportingType>
+        </ns0:TicketDocument>
+        <ns0:PassengerReference>PAX3</ns0:PassengerReference>
+      </ns0:TicketDocInfo>
+      <ns0:TicketDocInfo>
+        <ns0:AgentIDs>
+          <ns0:AgentID>
+            <ns0:Type>B</ns0:Type>
+            <ns0:ID>9999WS/SU</ns0:ID>
+          </ns0:AgentID>
+        </ns0:AgentIDs>
+        <ns0:TicketDocument>
+          <ns0:TicketDocNbr>6182435337673</ns0:TicketDocNbr>
+          <ns0:Type>T</ns0:Type>
+          <ns0:NumberofBooklets>1</ns0:NumberofBooklets>
+          <ns0:DateOfIssue>2022-07-06</ns0:DateOfIssue>
+          <ns0:CouponInfo>
+            <ns0:CouponNumber>1</ns0:CouponNumber>
+            <ns0:CouponReference>SEG1</ns0:CouponReference>
+            <ns0:FareBasisCode>
+              <ns0:Code>N16SGRPO</ns0:Code>
+            </ns0:FareBasisCode>
+            <ns0:Status>T</ns0:Status>
+            <ns0:AddlBaggageInfo>
+              <ns0:CheckedFree MaxBagWght="25K" />
+            </ns0:AddlBaggageInfo>
+          </ns0:CouponInfo>
+          <ns0:CouponInfo>
+            <ns0:CouponNumber>2</ns0:CouponNumber>
+            <ns0:CouponReference>SEG2</ns0:CouponReference>
+            <ns0:FareBasisCode>
+              <ns0:Code>N16SGRPO</ns0:Code>
+            </ns0:FareBasisCode>
+            <ns0:Status>T</ns0:Status>
+            <ns0:AddlBaggageInfo>
+              <ns0:CheckedFree MaxBagWght="25K" />
+            </ns0:AddlBaggageInfo>
+          </ns0:CouponInfo>
+          <ns0:ReportingType>ARC</ns0:ReportingType>
+        </ns0:TicketDocument>
+        <ns0:PassengerReference>PAX4</ns0:PassengerReference>
+      </ns0:TicketDocInfo>
+    </ns0:TicketDocInfos>
+  </ns0:Response>
+</ns0:AMA_TravelOrderViewRS>

@@ -1,0 +1,22 @@
+<soap:Envelope xmlns:awsse="http://xml.amadeus.com/2010/06/Session_v3" xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns:wsa="http://www.w3.org/2005/08/addressing">
+  <soap:Header>
+    <wsa:To>http://www.w3.org/2005/08/addressing/anonymous</wsa:To>
+    <wsa:From>
+      <wsa:Address>https://nodeD5.test.webservices.amadeus.com/1ASIWNDC1A</wsa:Address>
+    </wsa:From>
+    <wsa:Action>http://webservices.amadeus.com/PNRRET_17_1_1A</wsa:Action>
+    <wsa:MessageID>urn:uuid:dc34f833-f000-3904-416c-804dcce30211</wsa:MessageID>
+    <wsa:RelatesTo RelationshipType="http://www.w3.org/2005/08/addressing/reply">NDCX-AMA-DevPack-3zjQRQEWaSze8AD19KCWsCjPsi2wjRc-hZm2S4RZL</wsa:RelatesTo>
+    <awsse:Session TransactionStatusCode="End">
+      <awsse:SessionId>01N23QH92G</awsse:SessionId>
+      <awsse:SequenceNumber>1</awsse:SequenceNumber>
+      <awsse:SecurityToken>REDACTED_TOKEN</awsse:SecurityToken>
+    </awsse:Session>
+  </soap:Header>
+  <soap:Body>
+    <soap:Fault>
+      <faultcode>soap:Client</faultcode>
+      <faultstring>17|Session|No agreement on destination</faultstring>
+    </soap:Fault>
+  </soap:Body>
+</soap:Envelope>

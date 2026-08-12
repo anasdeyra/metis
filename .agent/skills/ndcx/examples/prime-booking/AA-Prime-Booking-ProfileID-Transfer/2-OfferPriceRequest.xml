@@ -1,0 +1,51 @@
+<soap:Envelope xmlns:ns4="http://xml.amadeus.com/2010/06/Security_v1" xmlns:ns5="http://xml.amadeus.com/2010/06/Travel_OfferPriceRQ_v1" xmlns:oas="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd" xmlns:oas1="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns:wsa="http://www.w3.org/2005/08/addressing">
+  <soap:Header>
+    <wsa:MessageID>fe9735b3-1800-439a-aaa8-0c65412ebf61</wsa:MessageID>
+    <wsa:Action>http://webservices.amadeus.com/Travel_OfferPrice_1.2</wsa:Action>
+    <wsa:To>https://nodeD1.test.webservices.amadeus.com/WSAP</wsa:To>
+    <oas:Security>
+      <oas:UsernameToken oas1:Id="UsernameToken-1">
+        <oas:Username>YOUR_WS_USER</oas:Username>
+        <oas:Nonce EncodingType="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-soap-message-security-1.0#Base64Binary">REDACTED_NONCE</oas:Nonce>
+        <oas:Password Type="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-username-token-profile-1.0#PasswordDigest">REDACTED_DIGEST</oas:Password>
+        <oas1:Created>2023-05-25T10:54:23.506Z</oas1:Created>
+      </oas:UsernameToken>
+    </oas:Security>
+    <ns4:AMA_SecurityHostedUser>
+      <ns4:UserID AgentDutyCode="SU" POS_Type="1" PseudoCityCode="YOUR_OFFICE_ID" RequestorType="U" />
+    </ns4:AMA_SecurityHostedUser>
+  </soap:Header>
+  <soap:Body>
+    <ns5:AMA_TravelOfferPriceRQ>
+      <ns5:Party>
+        <ns5:Sender>
+          <ns5:TravelAgency>
+            <ns5:AgencyID>unused</ns5:AgencyID>
+            <ns5:PseudoCityID>unused</ns5:PseudoCityID>
+          </ns5:TravelAgency>
+        </ns5:Sender>
+      </ns5:Party>
+      <ns5:Request>
+        <ns5:DataLists>
+          <ns5:PaxList>
+            <ns5:Pax>
+              <ns5:PaxID>T1</ns5:PaxID>
+              <ns5:PTC>ADT</ns5:PTC>
+            </ns5:Pax>
+          </ns5:PaxList>
+        </ns5:DataLists>
+        <ns5:PricedOffer>
+          <ns5:SelectedOffer>
+            <ns5:OfferRefID>ERjRv5I75gTvipoLvpGkQmyA_1A_16ac5312-6359-45e3-8fbd-4488d39716d5_1A_X5AE6FDC1-2C4F-455C-9DED-148</ns5:OfferRefID>
+            <ns5:OwnerCode>AA</ns5:OwnerCode>
+            <ns5:ShoppingResponseRefID>X5AE6FDC1-2C4F-455C-9DED</ns5:ShoppingResponseRefID>
+            <ns5:SelectedOfferItem>
+              <ns5:OfferItemRefID>X5AE6FDC1-2C4F-455C-9DED-148-1</ns5:OfferItemRefID>
+              <ns5:PaxRefID>T1</ns5:PaxRefID>
+            </ns5:SelectedOfferItem>
+          </ns5:SelectedOffer>
+        </ns5:PricedOffer>
+      </ns5:Request>
+    </ns5:AMA_TravelOfferPriceRQ>
+  </soap:Body>
+</soap:Envelope>

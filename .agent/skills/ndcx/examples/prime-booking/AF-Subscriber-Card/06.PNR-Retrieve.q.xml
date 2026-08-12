@@ -1,0 +1,32 @@
+<soapenv:Envelope xmlns:add="http://www.w3.org/2005/08/addressing" xmlns:oas="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd" xmlns:oas1="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:pnr="http://xml.amadeus.com/PNRRET_17_1_1A" xmlns:sec="http://xml.amadeus.com/2010/06/Security_v1" xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
+  <soapenv:Header>
+    <add:MessageID>NDCX-AMA-DevPack-3zjQRQEWaSze8AD19KCWsCjPsi2wjRc-hZm2S4RZL</add:MessageID>
+    <add:Action>http://webservices.amadeus.com/PNRRET_17_1_1A</add:Action>
+    <add:To>https://nodeD5.test.webservices.amadeus.com/WSAP</add:To>
+    <oas:Security>
+      <oas:UsernameToken oas1:Id="UsernameToken-1">
+        <oas:Username>YOUR_WS_USER</oas:Username>
+        <oas:Nonce EncodingType="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-soap-message-security-1.0#Base64Binary">REDACTED_NONCE</oas:Nonce>
+        <oas:Password Type="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-username-token-profile-1.0#PasswordDigest">REDACTED_DIGEST</oas:Password>
+        <oas1:Created>2022-03-11T13:38:38.463Z</oas1:Created>
+      </oas:UsernameToken>
+    </oas:Security>
+    <sec:AMA_SecurityHostedUser>
+      <sec:UserID AgentDutyCode="SU" RequestorType="U" PseudoCityCode="YOUR_OFFICE_ID" POS_Type="1" />
+    </sec:AMA_SecurityHostedUser>
+  </soapenv:Header>
+  <soapenv:Body>
+    <pnr:PNR_Retrieve>
+      <pnr:retrievalFacts>
+        <pnr:retrieve>
+          <pnr:type>2</pnr:type>
+        </pnr:retrieve>
+        <pnr:reservationOrProfileIdentifier>
+          <pnr:reservation>
+            <pnr:controlNumber>QJWO7U</pnr:controlNumber>
+          </pnr:reservation>
+        </pnr:reservationOrProfileIdentifier>
+      </pnr:retrievalFacts>
+    </pnr:PNR_Retrieve>
+  </soapenv:Body>
+</soapenv:Envelope>

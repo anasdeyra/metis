@@ -1,0 +1,735 @@
+<soap:Envelope xmlns:awsse="http://xml.amadeus.com/2010/06/Session_v3" xmlns:ns3="http://xml.amadeus.com/2010/06/Travel_OfferPriceRS_v1" xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns:wsa="http://www.w3.org/2005/08/addressing">
+  <soap:Header>
+    <wsa:To>http://www.w3.org/2005/08/addressing/anonymous</wsa:To>
+    <wsa:From>
+      <wsa:Address>https://noded5.test.webservices.amadeus.com/WSAP</wsa:Address>
+    </wsa:From>
+    <wsa:Action>http://webservices.amadeus.com/Travel_OfferPrice_1.2</wsa:Action>
+    <wsa:MessageID>urn:uuid:b83c1cab-f06d-ea34-e5ff-90de8b25b6ba</wsa:MessageID>
+    <wsa:RelatesTo RelationshipType="http://www.w3.org/2005/08/addressing/reply">5d06a7e4-f8b2-4ed6-94a1-44d1108f7176</wsa:RelatesTo>
+    <awsse:Session TransactionStatusCode="End">
+      <awsse:SessionId>014JFF9KDL</awsse:SessionId>
+      <awsse:SequenceNumber>1</awsse:SequenceNumber>
+      <awsse:SecurityToken>REDACTED_TOKEN</awsse:SecurityToken>
+    </awsse:Session>
+  </soap:Header>
+  <soap:Body>
+    <ns3:AMA_TravelOfferPriceRS>
+      <ns3:Response>
+        <ns3:DataLists>
+          <ns3:BaggageAllowanceList>
+            <ns3:BaggageAllowance>
+              <ns3:BaggageAllowanceID>FBA1</ns3:BaggageAllowanceID>
+              <ns3:TypeCode>CheckedBag</ns3:TypeCode>
+              <ns3:WeightAllowance>
+                <ns3:MaximumWeightMeasure UnitCode="Kilogram">25</ns3:MaximumWeightMeasure>
+              </ns3:WeightAllowance>
+            </ns3:BaggageAllowance>
+          </ns3:BaggageAllowanceList>
+          <ns3:FareList>
+            <ns3:FareGroup ListKey="FB1000101Ref">
+              <ns3:Fare>
+                <ns3:FareCode>70E</ns3:FareCode>
+              </ns3:Fare>
+              <ns3:FareBasisCode>
+                <ns3:Code>K16SGRL0</ns3:Code>
+              </ns3:FareBasisCode>
+            </ns3:FareGroup>
+            <ns3:FareGroup ListKey="FB1000102Ref">
+              <ns3:Fare>
+                <ns3:FareCode>70E</ns3:FareCode>
+              </ns3:Fare>
+              <ns3:FareBasisCode>
+                <ns3:Code>K16SGRL0</ns3:Code>
+              </ns3:FareBasisCode>
+            </ns3:FareGroup>
+          </ns3:FareList>
+          <ns3:OriginDestList>
+            <ns3:OriginDest>
+              <ns3:OriginDestID>SINSYD</ns3:OriginDestID>
+              <ns3:OriginCode>SIN</ns3:OriginCode>
+              <ns3:DestCode>SYD</ns3:DestCode>
+              <ns3:PaxJourneyRefID>FLT0</ns3:PaxJourneyRefID>
+            </ns3:OriginDest>
+            <ns3:OriginDest>
+              <ns3:OriginDestID>SYDSIN</ns3:OriginDestID>
+              <ns3:OriginCode>SYD</ns3:OriginCode>
+              <ns3:DestCode>SIN</ns3:DestCode>
+              <ns3:PaxJourneyRefID>FLT1</ns3:PaxJourneyRefID>
+            </ns3:OriginDest>
+          </ns3:OriginDestList>
+          <ns3:PaxJourneyList>
+            <ns3:PaxJourney>
+              <ns3:PaxJourneyID>FLT0</ns3:PaxJourneyID>
+              <ns3:Duration>PT7H50M</ns3:Duration>
+              <ns3:PaxSegmentRefID>SEG3</ns3:PaxSegmentRefID>
+            </ns3:PaxJourney>
+            <ns3:PaxJourney>
+              <ns3:PaxJourneyID>FLT1</ns3:PaxJourneyID>
+              <ns3:Duration>PT8H10M</ns3:Duration>
+              <ns3:PaxSegmentRefID>SEG17</ns3:PaxSegmentRefID>
+            </ns3:PaxJourney>
+          </ns3:PaxJourneyList>
+          <ns3:PaxList>
+            <ns3:Pax>
+              <ns3:PaxID>P1</ns3:PaxID>
+              <ns3:PTC>ADT</ns3:PTC>
+            </ns3:Pax>
+          </ns3:PaxList>
+          <ns3:PaxSegmentList>
+            <ns3:PaxSegment>
+              <ns3:PaxSegmentID>SEG3</ns3:PaxSegmentID>
+              <ns3:Duration>PT7H50M</ns3:Duration>
+              <ns3:Dep>
+                <ns3:IATA_LocationCode>SIN</ns3:IATA_LocationCode>
+                <ns3:AircraftScheduledDateTime>2024-03-06T07:05:00</ns3:AircraftScheduledDateTime>
+                <ns3:TerminalName>3</ns3:TerminalName>
+              </ns3:Dep>
+              <ns3:Arrival>
+                <ns3:IATA_LocationCode>SYD</ns3:IATA_LocationCode>
+                <ns3:AircraftScheduledDateTime>2024-03-06T17:55:00</ns3:AircraftScheduledDateTime>
+                <ns3:TerminalName>1</ns3:TerminalName>
+              </ns3:Arrival>
+              <ns3:MarketingCarrierInfo>
+                <ns3:CarrierDesigCode>SQ</ns3:CarrierDesigCode>
+                <ns3:CarrierName>SINGAPORE AIRLINES</ns3:CarrierName>
+                <ns3:MarketingCarrierFlightNumberText>241</ns3:MarketingCarrierFlightNumberText>
+              </ns3:MarketingCarrierInfo>
+              <ns3:OperatingCarrierInfo>
+                <ns3:CarrierDesigCode>SQ</ns3:CarrierDesigCode>
+                <ns3:CarrierName>SINGAPORE AIRLINES</ns3:CarrierName>
+              </ns3:OperatingCarrierInfo>
+              <ns3:DatedOperatingLeg>
+                <ns3:DatedOperatingLegID>S1</ns3:DatedOperatingLegID>
+                <ns3:CarrierAircraftType>
+                  <ns3:CarrierAircraftTypeCode>359</ns3:CarrierAircraftTypeCode>
+                </ns3:CarrierAircraftType>
+                <ns3:Dep>
+                  <ns3:IATA_LocationCode>SIN</ns3:IATA_LocationCode>
+                  <ns3:AircraftScheduledDateTime>2024-03-06T07:05:00</ns3:AircraftScheduledDateTime>
+                  <ns3:TerminalName>3</ns3:TerminalName>
+                </ns3:Dep>
+                <ns3:Arrival>
+                  <ns3:IATA_LocationCode>SYD</ns3:IATA_LocationCode>
+                  <ns3:AircraftScheduledDateTime>2024-03-06T17:55:00</ns3:AircraftScheduledDateTime>
+                  <ns3:TerminalName>1</ns3:TerminalName>
+                </ns3:Arrival>
+              </ns3:DatedOperatingLeg>
+            </ns3:PaxSegment>
+            <ns3:PaxSegment>
+              <ns3:PaxSegmentID>SEG17</ns3:PaxSegmentID>
+              <ns3:Duration>PT8H10M</ns3:Duration>
+              <ns3:Dep>
+                <ns3:IATA_LocationCode>SYD</ns3:IATA_LocationCode>
+                <ns3:AircraftScheduledDateTime>2024-03-13T09:05:00</ns3:AircraftScheduledDateTime>
+                <ns3:TerminalName>1</ns3:TerminalName>
+              </ns3:Dep>
+              <ns3:Arrival>
+                <ns3:IATA_LocationCode>SIN</ns3:IATA_LocationCode>
+                <ns3:AircraftScheduledDateTime>2024-03-13T14:15:00</ns3:AircraftScheduledDateTime>
+                <ns3:TerminalName>0</ns3:TerminalName>
+              </ns3:Arrival>
+              <ns3:MarketingCarrierInfo>
+                <ns3:CarrierDesigCode>SQ</ns3:CarrierDesigCode>
+                <ns3:CarrierName>SINGAPORE AIRLINES</ns3:CarrierName>
+                <ns3:MarketingCarrierFlightNumberText>212</ns3:MarketingCarrierFlightNumberText>
+              </ns3:MarketingCarrierInfo>
+              <ns3:OperatingCarrierInfo>
+                <ns3:CarrierDesigCode>SQ</ns3:CarrierDesigCode>
+                <ns3:CarrierName>SINGAPORE AIRLINES</ns3:CarrierName>
+              </ns3:OperatingCarrierInfo>
+              <ns3:DatedOperatingLeg>
+                <ns3:DatedOperatingLegID>S2</ns3:DatedOperatingLegID>
+                <ns3:CarrierAircraftType>
+                  <ns3:CarrierAircraftTypeCode>77W</ns3:CarrierAircraftTypeCode>
+                </ns3:CarrierAircraftType>
+                <ns3:Dep>
+                  <ns3:IATA_LocationCode>SYD</ns3:IATA_LocationCode>
+                  <ns3:AircraftScheduledDateTime>2024-03-13T09:05:00</ns3:AircraftScheduledDateTime>
+                  <ns3:TerminalName>1</ns3:TerminalName>
+                </ns3:Dep>
+                <ns3:Arrival>
+                  <ns3:IATA_LocationCode>SIN</ns3:IATA_LocationCode>
+                  <ns3:AircraftScheduledDateTime>2024-03-13T14:15:00</ns3:AircraftScheduledDateTime>
+                  <ns3:TerminalName>0</ns3:TerminalName>
+                </ns3:Arrival>
+              </ns3:DatedOperatingLeg>
+            </ns3:PaxSegment>
+          </ns3:PaxSegmentList>
+          <ns3:PriceClassList>
+            <ns3:PriceClass>
+              <ns3:PriceClassID>FFM1</ns3:PriceClassID>
+              <ns3:Name>Economy Lite</ns3:Name>
+              <ns3:Desc>
+                <ns3:DescID>AWARD_ACCRUAL</ns3:DescID>
+                <ns3:DescText>AWARD ACCRUAL: 1956</ns3:DescText>
+              </ns3:Desc>
+              <ns3:Desc>
+                <ns3:DescID>AWARD_ACCRUAL_FULL</ns3:DescID>
+                <ns3:DescText>AWARD ACCRUAL FULL: SINGAPORE AIRLINES OPERATED FLIGHTS KrisFlyer: 50% of actual flown distance. Partner frequent flyer programmes: Accrual levels may differ on Singapore Airlines operated flights. For ticket(s) partially paid for using KrisFlyer miles, the miles earned are proportionate to the amount paid using credit/debit card. These miles can only be credited to KrisFlyer membership accounts. FLIGHTS OPERATED BY OTHER AIRLINES KrisFlyer mileage accrual levels on flights operated by KrisFlyer partner airlines may differ. Codeshare flights operated by non-KrisFlyer partner airlines are not accruable to KrisFlyer. For details, visit http://www.singaporeair.com/en_UK/sg/ppsclub-krisflyer/earn-miles/earn-when-you-fly/</ns3:DescText>
+              </ns3:Desc>
+              <ns3:Desc>
+                <ns3:DescID>AWARD_UPGRADE</ns3:DescID>
+                <ns3:DescText>AWARD UPGRADE: Not Allowed</ns3:DescText>
+              </ns3:Desc>
+              <ns3:Desc>
+                <ns3:DescID>AWARD_UPGRADE_FULL</ns3:DescID>
+                <ns3:DescText>AWARD UPGRADE FULL: KrisFlyer Upgrade Awards on Singapore Airlines: Not allowed. Star Alliance Upgrade Awards on Singapore Airlines: Not allowed.</ns3:DescText>
+              </ns3:Desc>
+              <ns3:Desc>
+                <ns3:DescID>CANCEL_BEFOREDEPARTURE</ns3:DescID>
+                <ns3:DescText>CANCEL BEFOREDEPARTURE: Not Allowed</ns3:DescText>
+              </ns3:Desc>
+              <ns3:Desc>
+                <ns3:DescID>CANCEL_BEFOREDEPARTURE_FULL</ns3:DescID>
+                <ns3:DescText>CANCEL BEFOREDEPARTURE FULL: For non-refundable fares, fuel and insurance surcharges are non-refundable.</ns3:DescText>
+              </ns3:Desc>
+              <ns3:Desc>
+                <ns3:DescID>CANCEL_NOSHOWFIRST</ns3:DescID>
+                <ns3:DescText>CANCEL NOSHOWFIRST: Not Allowed</ns3:DescText>
+              </ns3:Desc>
+              <ns3:Desc>
+                <ns3:DescID>CANCEL_NOSHOWFIRST_FULL</ns3:DescID>
+                <ns3:DescText>CANCEL NOSHOWFIRST FULL: Not Allowed</ns3:DescText>
+              </ns3:Desc>
+              <ns3:Desc>
+                <ns3:DescID>CHANGE_BEFOREDEPARTURE</ns3:DescID>
+                <ns3:DescText>CHANGE BEFOREDEPARTURE: Not Allowed</ns3:DescText>
+              </ns3:Desc>
+              <ns3:Desc>
+                <ns3:DescID>CHANGE_BEFOREDEPARTURE_FULL</ns3:DescID>
+                <ns3:DescText>CHANGE BEFOREDEPARTURE FULL: Not Allowed</ns3:DescText>
+              </ns3:Desc>
+              <ns3:Desc>
+                <ns3:DescID>CHANGE_NOSHOWFIRST</ns3:DescID>
+                <ns3:DescText>CHANGE NOSHOWFIRST: Not Allowed</ns3:DescText>
+              </ns3:Desc>
+              <ns3:Desc>
+                <ns3:DescID>CHANGE_NOSHOWFIRST_FULL</ns3:DescID>
+                <ns3:DescText>CHANGE NOSHOWFIRST FULL: Not Allowed</ns3:DescText>
+              </ns3:Desc>
+              <ns3:Desc>
+                <ns3:DescID>DISCLAIMER_FULL</ns3:DescID>
+                <ns3:DescText>DISCLAIMER FULL: If payment was made with a mix of cash and KrisFlyer miles, you will only earn miles on the part of the fare that was paid with a credit / debit card. Full fare rules and KrisFlyer terms and conditions apply.</ns3:DescText>
+              </ns3:Desc>
+              <ns3:Desc>
+                <ns3:DescID>MIXEDFARETYPE_FULL</ns3:DescID>
+                <ns3:DescText>MIXEDFARETYPE FULL: Cancellation and no-show fees will follow the more restrictive fare type. If you change more than one flight in the same transaction, only the higher change fee will be applied.</ns3:DescText>
+              </ns3:Desc>
+              <ns3:Desc>
+                <ns3:DescID>TRAVELITINERARYSEQUENCE_FULL</ns3:DescID>
+                <ns3:DescText>TRAVELITINERARYSEQUENCE FULL: Fares are valid only if all flight coupons / sectors in the ticket are used in sequence. If you start your journey at any stopover or stopping place, Singapore Airlines will recompute the fares based on actual flight sequence flown and you will need to pay the fare difference, if any.</ns3:DescText>
+              </ns3:Desc>
+            </ns3:PriceClass>
+            <ns3:PriceClass>
+              <ns3:PriceClassID>FFM2</ns3:PriceClassID>
+              <ns3:Name>Economy Lite</ns3:Name>
+              <ns3:Desc>
+                <ns3:DescID>AWARD_ACCRUAL</ns3:DescID>
+                <ns3:DescText>AWARD ACCRUAL: 1956</ns3:DescText>
+              </ns3:Desc>
+              <ns3:Desc>
+                <ns3:DescID>AWARD_ACCRUAL_FULL</ns3:DescID>
+                <ns3:DescText>AWARD ACCRUAL FULL: SINGAPORE AIRLINES OPERATED FLIGHTS KrisFlyer: 50% of actual flown distance. Partner frequent flyer programmes: Accrual levels may differ on Singapore Airlines operated flights. For ticket(s) partially paid for using KrisFlyer miles, the miles earned are proportionate to the amount paid using credit/debit card. These miles can only be credited to KrisFlyer membership accounts. FLIGHTS OPERATED BY OTHER AIRLINES KrisFlyer mileage accrual levels on flights operated by KrisFlyer partner airlines may differ. Codeshare flights operated by non-KrisFlyer partner airlines are not accruable to KrisFlyer. For details, visit http://www.singaporeair.com/en_UK/sg/ppsclub-krisflyer/earn-miles/earn-when-you-fly/</ns3:DescText>
+              </ns3:Desc>
+              <ns3:Desc>
+                <ns3:DescID>AWARD_UPGRADE</ns3:DescID>
+                <ns3:DescText>AWARD UPGRADE: Not Allowed</ns3:DescText>
+              </ns3:Desc>
+              <ns3:Desc>
+                <ns3:DescID>AWARD_UPGRADE_FULL</ns3:DescID>
+                <ns3:DescText>AWARD UPGRADE FULL: KrisFlyer Upgrade Awards on Singapore Airlines: Not allowed. Star Alliance Upgrade Awards on Singapore Airlines: Not allowed.</ns3:DescText>
+              </ns3:Desc>
+              <ns3:Desc>
+                <ns3:DescID>CANCEL_BEFOREDEPARTURE</ns3:DescID>
+                <ns3:DescText>CANCEL BEFOREDEPARTURE: Not Allowed</ns3:DescText>
+              </ns3:Desc>
+              <ns3:Desc>
+                <ns3:DescID>CANCEL_BEFOREDEPARTURE_FULL</ns3:DescID>
+                <ns3:DescText>CANCEL BEFOREDEPARTURE FULL: For non-refundable fares, fuel and insurance surcharges are non-refundable.</ns3:DescText>
+              </ns3:Desc>
+              <ns3:Desc>
+                <ns3:DescID>CANCEL_NOSHOWFIRST</ns3:DescID>
+                <ns3:DescText>CANCEL NOSHOWFIRST: Not Allowed</ns3:DescText>
+              </ns3:Desc>
+              <ns3:Desc>
+                <ns3:DescID>CANCEL_NOSHOWFIRST_FULL</ns3:DescID>
+                <ns3:DescText>CANCEL NOSHOWFIRST FULL: Not Allowed</ns3:DescText>
+              </ns3:Desc>
+              <ns3:Desc>
+                <ns3:DescID>CHANGE_BEFOREDEPARTURE</ns3:DescID>
+                <ns3:DescText>CHANGE BEFOREDEPARTURE: Not Allowed</ns3:DescText>
+              </ns3:Desc>
+              <ns3:Desc>
+                <ns3:DescID>CHANGE_BEFOREDEPARTURE_FULL</ns3:DescID>
+                <ns3:DescText>CHANGE BEFOREDEPARTURE FULL: Not Allowed</ns3:DescText>
+              </ns3:Desc>
+              <ns3:Desc>
+                <ns3:DescID>CHANGE_NOSHOWFIRST</ns3:DescID>
+                <ns3:DescText>CHANGE NOSHOWFIRST: Not Allowed</ns3:DescText>
+              </ns3:Desc>
+              <ns3:Desc>
+                <ns3:DescID>CHANGE_NOSHOWFIRST_FULL</ns3:DescID>
+                <ns3:DescText>CHANGE NOSHOWFIRST FULL: Not Allowed</ns3:DescText>
+              </ns3:Desc>
+              <ns3:Desc>
+                <ns3:DescID>DISCLAIMER_FULL</ns3:DescID>
+                <ns3:DescText>DISCLAIMER FULL: If payment was made with a mix of cash and KrisFlyer miles, you will only earn miles on the part of the fare that was paid with a credit / debit card. Full fare rules and KrisFlyer terms and conditions apply.</ns3:DescText>
+              </ns3:Desc>
+              <ns3:Desc>
+                <ns3:DescID>MIXEDFARETYPE_FULL</ns3:DescID>
+                <ns3:DescText>MIXEDFARETYPE FULL: Cancellation and no-show fees will follow the more restrictive fare type. If you change more than one flight in the same transaction, only the higher change fee will be applied.</ns3:DescText>
+              </ns3:Desc>
+              <ns3:Desc>
+                <ns3:DescID>TRAVELITINERARYSEQUENCE_FULL</ns3:DescID>
+                <ns3:DescText>TRAVELITINERARYSEQUENCE FULL: Fares are valid only if all flight coupons / sectors in the ticket are used in sequence. If you start your journey at any stopover or stopping place, Singapore Airlines will recompute the fares based on actual flight sequence flown and you will need to pay the fare difference, if any.</ns3:DescText>
+              </ns3:Desc>
+            </ns3:PriceClass>
+          </ns3:PriceClassList>
+        </ns3:DataLists>
+        <ns3:Metadata>
+          <ns3:Other>
+            <ns3:OtherMetadata>
+              <ns3:CurrencyMetadatas>
+                <ns3:CurrencyMetadata MetadataKey="SGD">
+                  <ns3:Decimals>2</ns3:Decimals>
+                </ns3:CurrencyMetadata>
+              </ns3:CurrencyMetadatas>
+            </ns3:OtherMetadata>
+            <ns3:OtherMetadata>
+              <ns3:RuleMetadatas>
+                <ns3:RuleMetadata MetadataKey="RULE1">
+                  <ns3:RuleID>Cancel after departure</ns3:RuleID>
+                  <ns3:Values>
+                    <ns3:Value>
+                      <ns3:Instruction>Not Allowed</ns3:Instruction>
+                    </ns3:Value>
+                  </ns3:Values>
+                </ns3:RuleMetadata>
+                <ns3:RuleMetadata MetadataKey="RULE2">
+                  <ns3:RuleID>Change before departure - No Show</ns3:RuleID>
+                  <ns3:Values>
+                    <ns3:Value>
+                      <ns3:Instruction>Not Allowed</ns3:Instruction>
+                    </ns3:Value>
+                  </ns3:Values>
+                </ns3:RuleMetadata>
+                <ns3:RuleMetadata MetadataKey="RULE3">
+                  <ns3:RuleID>Change after departure</ns3:RuleID>
+                  <ns3:Values>
+                    <ns3:Value>
+                      <ns3:Instruction>Not Allowed</ns3:Instruction>
+                    </ns3:Value>
+                  </ns3:Values>
+                </ns3:RuleMetadata>
+                <ns3:RuleMetadata MetadataKey="RULE4">
+                  <ns3:RuleID>Cancel before departure - No Show</ns3:RuleID>
+                  <ns3:Values>
+                    <ns3:Value>
+                      <ns3:Instruction>Not Allowed</ns3:Instruction>
+                    </ns3:Value>
+                  </ns3:Values>
+                </ns3:RuleMetadata>
+                <ns3:RuleMetadata MetadataKey="RULE5">
+                  <ns3:RuleID>Change before departure</ns3:RuleID>
+                  <ns3:Values>
+                    <ns3:Value>
+                      <ns3:Instruction>Not Allowed</ns3:Instruction>
+                    </ns3:Value>
+                  </ns3:Values>
+                </ns3:RuleMetadata>
+                <ns3:RuleMetadata MetadataKey="RULE6">
+                  <ns3:RuleID>Cancel after departure - No Show</ns3:RuleID>
+                  <ns3:Values>
+                    <ns3:Value>
+                      <ns3:Instruction>Not Allowed</ns3:Instruction>
+                    </ns3:Value>
+                  </ns3:Values>
+                </ns3:RuleMetadata>
+                <ns3:RuleMetadata MetadataKey="RULE7">
+                  <ns3:RuleID>Change after departure - No Show</ns3:RuleID>
+                  <ns3:Values>
+                    <ns3:Value>
+                      <ns3:Instruction>Not Allowed</ns3:Instruction>
+                    </ns3:Value>
+                  </ns3:Values>
+                </ns3:RuleMetadata>
+                <ns3:RuleMetadata MetadataKey="RULE8">
+                  <ns3:RuleID>Cancel before departure</ns3:RuleID>
+                  <ns3:Values>
+                    <ns3:Value>
+                      <ns3:Instruction>Not Allowed</ns3:Instruction>
+                    </ns3:Value>
+                  </ns3:Values>
+                </ns3:RuleMetadata>
+              </ns3:RuleMetadatas>
+            </ns3:OtherMetadata>
+          </ns3:Other>
+        </ns3:Metadata>
+        <ns3:PricedOffer>
+          <ns3:Offer>
+            <ns3:OfferID>ER3JpYx9gDScCsIZKJ7C9zzB_1A_9ef98c07-bfde-451c-95be-d40922632299_1A_1A_TPID_Ch8SG1NVTDQtMTM3MDk3NDAwNzc1MDc3MDE2MDMtMRgB</ns3:OfferID>
+            <ns3:OwnerCode>SQ</ns3:OwnerCode>
+            <ns3:OfferExpirationDateTime>2024-02-02T17:49:41Z</ns3:OfferExpirationDateTime>
+            <ns3:PaymentTimeLimitDateTime>2024-02-05T17:19:00Z</ns3:PaymentTimeLimitDateTime>
+            <ns3:BaggageAllowance>
+              <ns3:PaxJourneyRefID>FLT0</ns3:PaxJourneyRefID>
+              <ns3:PaxJourneyRefID>FLT1</ns3:PaxJourneyRefID>
+              <ns3:PaxRefID>P1</ns3:PaxRefID>
+              <ns3:BaggageAllowanceRefID>FBA1</ns3:BaggageAllowanceRefID>
+            </ns3:BaggageAllowance>
+            <ns3:JourneyOverview>
+              <ns3:JourneyPriceClass>
+                <ns3:PriceClassRefID>FFM1</ns3:PriceClassRefID>
+                <ns3:PaxJourneyRefID>FLT0</ns3:PaxJourneyRefID>
+              </ns3:JourneyPriceClass>
+              <ns3:JourneyPriceClass>
+                <ns3:PriceClassRefID>FFM2</ns3:PriceClassRefID>
+                <ns3:PaxJourneyRefID>FLT1</ns3:PaxJourneyRefID>
+              </ns3:JourneyPriceClass>
+            </ns3:JourneyOverview>
+            <ns3:OfferItem>
+              <ns3:OfferItemID>1A_TPID_CAESHVNVTDQtMTM3MDk3NDAwNzc1MDc3MDE2MDMtMS0x</ns3:OfferItemID>
+              <ns3:MandatoryInd>true</ns3:MandatoryInd>
+              <ns3:FareDetail>
+                <ns3:PassengerRefs>P1</ns3:PassengerRefs>
+                <ns3:Price>
+                  <ns3:BaseAmount Code="SGD">38500</ns3:BaseAmount>
+                  <ns3:Taxes>
+                    <ns3:Total Code="SGD">17200</ns3:Total>
+                    <ns3:Breakdown>
+                      <ns3:Tax>
+                        <ns3:Amount Code="SGD">1080</ns3:Amount>
+                        <ns3:Nation>DE</ns3:Nation>
+                        <ns3:TaxCode>L7</ns3:TaxCode>
+                      </ns3:Tax>
+                      <ns3:Tax>
+                        <ns3:Amount Code="SGD">800</ns3:Amount>
+                        <ns3:Nation>AE</ns3:Nation>
+                        <ns3:TaxCode>OP</ns3:TaxCode>
+                      </ns3:Tax>
+                      <ns3:Tax>
+                        <ns3:Amount Code="SGD">4340</ns3:Amount>
+                        <ns3:Nation>AD</ns3:Nation>
+                        <ns3:TaxCode>SG</ns3:TaxCode>
+                      </ns3:Tax>
+                      <ns3:Tax>
+                        <ns3:Amount Code="SGD">5300</ns3:Amount>
+                        <ns3:Nation>DP</ns3:Nation>
+                        <ns3:TaxCode>AU</ns3:TaxCode>
+                      </ns3:Tax>
+                      <ns3:Tax>
+                        <ns3:Amount Code="SGD">370</ns3:Amount>
+                        <ns3:Nation>SE</ns3:Nation>
+                        <ns3:TaxCode>WG</ns3:TaxCode>
+                      </ns3:Tax>
+                      <ns3:Tax>
+                        <ns3:Amount Code="SGD">370</ns3:Amount>
+                        <ns3:Nation>VY</ns3:Nation>
+                        <ns3:TaxCode>WG</ns3:TaxCode>
+                      </ns3:Tax>
+                      <ns3:Tax>
+                        <ns3:Amount Code="SGD">4940</ns3:Amount>
+                        <ns3:Nation>DE</ns3:Nation>
+                        <ns3:TaxCode>WY</ns3:TaxCode>
+                      </ns3:Tax>
+                    </ns3:Breakdown>
+                  </ns3:Taxes>
+                </ns3:Price>
+                <ns3:FareComponent>
+                  <ns3:FareBasis>
+                    <ns3:FareBasisCode refs="FB1000101Ref">
+                      <ns3:Code>K16SGRL0</ns3:Code>
+                    </ns3:FareBasisCode>
+                    <ns3:RBD>K</ns3:RBD>
+                    <ns3:CabinType>
+                      <ns3:CabinTypeCode>M</ns3:CabinTypeCode>
+                      <ns3:CabinTypeName>ECO</ns3:CabinTypeName>
+                    </ns3:CabinType>
+                  </ns3:FareBasis>
+                  <ns3:FareRules>
+                    <ns3:Penalty CancelFeeInd="false" ChangeFeeInd="false">
+                      <ns3:Details>
+                        <ns3:Detail refs="RULE1">
+                          <ns3:Type>Cancel</ns3:Type>
+                          <ns3:Application>3</ns3:Application>
+                          <ns3:Amounts>
+                            <ns3:Amount>
+                              <ns3:CurrencyAmountValue Code="SGD">0</ns3:CurrencyAmountValue>
+                              <ns3:AmountApplication>MAX</ns3:AmountApplication>
+                            </ns3:Amount>
+                            <ns3:Amount>
+                              <ns3:CurrencyAmountValue Code="SGD">0</ns3:CurrencyAmountValue>
+                              <ns3:AmountApplication>MIN</ns3:AmountApplication>
+                            </ns3:Amount>
+                          </ns3:Amounts>
+                        </ns3:Detail>
+                        <ns3:Detail refs="RULE2">
+                          <ns3:Type>Change</ns3:Type>
+                          <ns3:Application>12</ns3:Application>
+                          <ns3:Amounts>
+                            <ns3:Amount>
+                              <ns3:CurrencyAmountValue Code="SGD">0</ns3:CurrencyAmountValue>
+                              <ns3:AmountApplication>MIN</ns3:AmountApplication>
+                            </ns3:Amount>
+                            <ns3:Amount>
+                              <ns3:CurrencyAmountValue Code="SGD">0</ns3:CurrencyAmountValue>
+                              <ns3:AmountApplication>MAX</ns3:AmountApplication>
+                            </ns3:Amount>
+                          </ns3:Amounts>
+                        </ns3:Detail>
+                        <ns3:Detail refs="RULE3">
+                          <ns3:Type>Change</ns3:Type>
+                          <ns3:Application>3</ns3:Application>
+                          <ns3:Amounts>
+                            <ns3:Amount>
+                              <ns3:CurrencyAmountValue Code="SGD">0</ns3:CurrencyAmountValue>
+                              <ns3:AmountApplication>MAX</ns3:AmountApplication>
+                            </ns3:Amount>
+                            <ns3:Amount>
+                              <ns3:CurrencyAmountValue Code="SGD">0</ns3:CurrencyAmountValue>
+                              <ns3:AmountApplication>MIN</ns3:AmountApplication>
+                            </ns3:Amount>
+                          </ns3:Amounts>
+                        </ns3:Detail>
+                        <ns3:Detail refs="RULE4">
+                          <ns3:Type>Cancel</ns3:Type>
+                          <ns3:Application>12</ns3:Application>
+                          <ns3:Amounts>
+                            <ns3:Amount>
+                              <ns3:CurrencyAmountValue Code="SGD">0</ns3:CurrencyAmountValue>
+                              <ns3:AmountApplication>MIN</ns3:AmountApplication>
+                            </ns3:Amount>
+                            <ns3:Amount>
+                              <ns3:CurrencyAmountValue Code="SGD">0</ns3:CurrencyAmountValue>
+                              <ns3:AmountApplication>MAX</ns3:AmountApplication>
+                            </ns3:Amount>
+                          </ns3:Amounts>
+                        </ns3:Detail>
+                        <ns3:Detail refs="RULE5">
+                          <ns3:Type>Change</ns3:Type>
+                          <ns3:Application>2</ns3:Application>
+                          <ns3:Amounts>
+                            <ns3:Amount>
+                              <ns3:CurrencyAmountValue Code="SGD">0</ns3:CurrencyAmountValue>
+                              <ns3:AmountApplication>MAX</ns3:AmountApplication>
+                            </ns3:Amount>
+                            <ns3:Amount>
+                              <ns3:CurrencyAmountValue Code="SGD">0</ns3:CurrencyAmountValue>
+                              <ns3:AmountApplication>MIN</ns3:AmountApplication>
+                            </ns3:Amount>
+                          </ns3:Amounts>
+                        </ns3:Detail>
+                        <ns3:Detail refs="RULE6">
+                          <ns3:Type>Cancel</ns3:Type>
+                          <ns3:Application>13</ns3:Application>
+                          <ns3:Amounts>
+                            <ns3:Amount>
+                              <ns3:CurrencyAmountValue Code="SGD">0</ns3:CurrencyAmountValue>
+                              <ns3:AmountApplication>MAX</ns3:AmountApplication>
+                            </ns3:Amount>
+                            <ns3:Amount>
+                              <ns3:CurrencyAmountValue Code="SGD">0</ns3:CurrencyAmountValue>
+                              <ns3:AmountApplication>MIN</ns3:AmountApplication>
+                            </ns3:Amount>
+                          </ns3:Amounts>
+                        </ns3:Detail>
+                        <ns3:Detail refs="RULE7">
+                          <ns3:Type>Change</ns3:Type>
+                          <ns3:Application>13</ns3:Application>
+                          <ns3:Amounts>
+                            <ns3:Amount>
+                              <ns3:CurrencyAmountValue Code="SGD">0</ns3:CurrencyAmountValue>
+                              <ns3:AmountApplication>MAX</ns3:AmountApplication>
+                            </ns3:Amount>
+                            <ns3:Amount>
+                              <ns3:CurrencyAmountValue Code="SGD">0</ns3:CurrencyAmountValue>
+                              <ns3:AmountApplication>MIN</ns3:AmountApplication>
+                            </ns3:Amount>
+                          </ns3:Amounts>
+                        </ns3:Detail>
+                        <ns3:Detail refs="RULE8">
+                          <ns3:Type>Cancel</ns3:Type>
+                          <ns3:Application>2</ns3:Application>
+                          <ns3:Amounts>
+                            <ns3:Amount>
+                              <ns3:CurrencyAmountValue Code="SGD">0</ns3:CurrencyAmountValue>
+                              <ns3:AmountApplication>MAX</ns3:AmountApplication>
+                            </ns3:Amount>
+                            <ns3:Amount>
+                              <ns3:CurrencyAmountValue Code="SGD">0</ns3:CurrencyAmountValue>
+                              <ns3:AmountApplication>MIN</ns3:AmountApplication>
+                            </ns3:Amount>
+                          </ns3:Amounts>
+                        </ns3:Detail>
+                      </ns3:Details>
+                    </ns3:Penalty>
+                  </ns3:FareRules>
+                  <ns3:PriceClassRef>FFM1</ns3:PriceClassRef>
+                  <ns3:SegmentRefs>SEG3</ns3:SegmentRefs>
+                </ns3:FareComponent>
+                <ns3:FareComponent>
+                  <ns3:FareBasis>
+                    <ns3:FareBasisCode refs="FB1000102Ref">
+                      <ns3:Code>K16SGRL0</ns3:Code>
+                    </ns3:FareBasisCode>
+                    <ns3:RBD>K</ns3:RBD>
+                    <ns3:CabinType>
+                      <ns3:CabinTypeCode>M</ns3:CabinTypeCode>
+                      <ns3:CabinTypeName>ECO</ns3:CabinTypeName>
+                    </ns3:CabinType>
+                  </ns3:FareBasis>
+                  <ns3:FareRules>
+                    <ns3:Penalty CancelFeeInd="false" ChangeFeeInd="false">
+                      <ns3:Details>
+                        <ns3:Detail refs="RULE1">
+                          <ns3:Type>Cancel</ns3:Type>
+                          <ns3:Application>3</ns3:Application>
+                          <ns3:Amounts>
+                            <ns3:Amount>
+                              <ns3:CurrencyAmountValue Code="SGD">0</ns3:CurrencyAmountValue>
+                              <ns3:AmountApplication>MAX</ns3:AmountApplication>
+                            </ns3:Amount>
+                            <ns3:Amount>
+                              <ns3:CurrencyAmountValue Code="SGD">0</ns3:CurrencyAmountValue>
+                              <ns3:AmountApplication>MIN</ns3:AmountApplication>
+                            </ns3:Amount>
+                          </ns3:Amounts>
+                        </ns3:Detail>
+                        <ns3:Detail refs="RULE2">
+                          <ns3:Type>Change</ns3:Type>
+                          <ns3:Application>12</ns3:Application>
+                          <ns3:Amounts>
+                            <ns3:Amount>
+                              <ns3:CurrencyAmountValue Code="SGD">0</ns3:CurrencyAmountValue>
+                              <ns3:AmountApplication>MIN</ns3:AmountApplication>
+                            </ns3:Amount>
+                            <ns3:Amount>
+                              <ns3:CurrencyAmountValue Code="SGD">0</ns3:CurrencyAmountValue>
+                              <ns3:AmountApplication>MAX</ns3:AmountApplication>
+                            </ns3:Amount>
+                          </ns3:Amounts>
+                        </ns3:Detail>
+                        <ns3:Detail refs="RULE3">
+                          <ns3:Type>Change</ns3:Type>
+                          <ns3:Application>3</ns3:Application>
+                          <ns3:Amounts>
+                            <ns3:Amount>
+                              <ns3:CurrencyAmountValue Code="SGD">0</ns3:CurrencyAmountValue>
+                              <ns3:AmountApplication>MAX</ns3:AmountApplication>
+                            </ns3:Amount>
+                            <ns3:Amount>
+                              <ns3:CurrencyAmountValue Code="SGD">0</ns3:CurrencyAmountValue>
+                              <ns3:AmountApplication>MIN</ns3:AmountApplication>
+                            </ns3:Amount>
+                          </ns3:Amounts>
+                        </ns3:Detail>
+                        <ns3:Detail refs="RULE4">
+                          <ns3:Type>Cancel</ns3:Type>
+                          <ns3:Application>12</ns3:Application>
+                          <ns3:Amounts>
+                            <ns3:Amount>
+                              <ns3:CurrencyAmountValue Code="SGD">0</ns3:CurrencyAmountValue>
+                              <ns3:AmountApplication>MIN</ns3:AmountApplication>
+                            </ns3:Amount>
+                            <ns3:Amount>
+                              <ns3:CurrencyAmountValue Code="SGD">0</ns3:CurrencyAmountValue>
+                              <ns3:AmountApplication>MAX</ns3:AmountApplication>
+                            </ns3:Amount>
+                          </ns3:Amounts>
+                        </ns3:Detail>
+                        <ns3:Detail refs="RULE5">
+                          <ns3:Type>Change</ns3:Type>
+                          <ns3:Application>2</ns3:Application>
+                          <ns3:Amounts>
+                            <ns3:Amount>
+                              <ns3:CurrencyAmountValue Code="SGD">0</ns3:CurrencyAmountValue>
+                              <ns3:AmountApplication>MAX</ns3:AmountApplication>
+                            </ns3:Amount>
+                            <ns3:Amount>
+                              <ns3:CurrencyAmountValue Code="SGD">0</ns3:CurrencyAmountValue>
+                              <ns3:AmountApplication>MIN</ns3:AmountApplication>
+                            </ns3:Amount>
+                          </ns3:Amounts>
+                        </ns3:Detail>
+                        <ns3:Detail refs="RULE6">
+                          <ns3:Type>Cancel</ns3:Type>
+                          <ns3:Application>13</ns3:Application>
+                          <ns3:Amounts>
+                            <ns3:Amount>
+                              <ns3:CurrencyAmountValue Code="SGD">0</ns3:CurrencyAmountValue>
+                              <ns3:AmountApplication>MAX</ns3:AmountApplication>
+                            </ns3:Amount>
+                            <ns3:Amount>
+                              <ns3:CurrencyAmountValue Code="SGD">0</ns3:CurrencyAmountValue>
+                              <ns3:AmountApplication>MIN</ns3:AmountApplication>
+                            </ns3:Amount>
+                          </ns3:Amounts>
+                        </ns3:Detail>
+                        <ns3:Detail refs="RULE7">
+                          <ns3:Type>Change</ns3:Type>
+                          <ns3:Application>13</ns3:Application>
+                          <ns3:Amounts>
+                            <ns3:Amount>
+                              <ns3:CurrencyAmountValue Code="SGD">0</ns3:CurrencyAmountValue>
+                              <ns3:AmountApplication>MAX</ns3:AmountApplication>
+                            </ns3:Amount>
+                            <ns3:Amount>
+                              <ns3:CurrencyAmountValue Code="SGD">0</ns3:CurrencyAmountValue>
+                              <ns3:AmountApplication>MIN</ns3:AmountApplication>
+                            </ns3:Amount>
+                          </ns3:Amounts>
+                        </ns3:Detail>
+                        <ns3:Detail refs="RULE8">
+                          <ns3:Type>Cancel</ns3:Type>
+                          <ns3:Application>2</ns3:Application>
+                          <ns3:Amounts>
+                            <ns3:Amount>
+                              <ns3:CurrencyAmountValue Code="SGD">0</ns3:CurrencyAmountValue>
+                              <ns3:AmountApplication>MAX</ns3:AmountApplication>
+                            </ns3:Amount>
+                            <ns3:Amount>
+                              <ns3:CurrencyAmountValue Code="SGD">0</ns3:CurrencyAmountValue>
+                              <ns3:AmountApplication>MIN</ns3:AmountApplication>
+                            </ns3:Amount>
+                          </ns3:Amounts>
+                        </ns3:Detail>
+                      </ns3:Details>
+                    </ns3:Penalty>
+                  </ns3:FareRules>
+                  <ns3:PriceClassRef>FFM2</ns3:PriceClassRef>
+                  <ns3:SegmentRefs>SEG17</ns3:SegmentRefs>
+                </ns3:FareComponent>
+              </ns3:FareDetail>
+              <ns3:Service>
+                <ns3:ServiceID>1</ns3:ServiceID>
+                <ns3:PaxRefID>P1</ns3:PaxRefID>
+                <ns3:ServiceAssociations>
+                  <ns3:PaxJourneyRefID>FLT0</ns3:PaxJourneyRefID>
+                  <ns3:PaxJourneyRefID>FLT1</ns3:PaxJourneyRefID>
+                </ns3:ServiceAssociations>
+              </ns3:Service>
+              <ns3:Price>
+                <ns3:TotalAmount CurCode="SGD">55700</ns3:TotalAmount>
+                <ns3:Discount>
+                  <ns3:PreDiscountedAmount CurCode="SGD">94200</ns3:PreDiscountedAmount>
+                  <ns3:DescText>SQPNDCDISC50PC</ns3:DescText>
+                  <ns3:DiscountContext>
+                    <ns3:KeyWordText>SQPNDCDISC50PC</ns3:KeyWordText>
+                    <ns3:ValueText>DISCOUNT</ns3:ValueText>
+                  </ns3:DiscountContext>
+                </ns3:Discount>
+              </ns3:Price>
+            </ns3:OfferItem>
+            <ns3:TotalPrice>
+              <ns3:TotalAmount CurCode="SGD">55700</ns3:TotalAmount>
+            </ns3:TotalPrice>
+          </ns3:Offer>
+        </ns3:PricedOffer>
+        <ns3:ShoppingResponse>
+          <ns3:ShoppingResponseID>SUL4-13709740077507701603</ns3:ShoppingResponseID>
+        </ns3:ShoppingResponse>
+      </ns3:Response>
+    </ns3:AMA_TravelOfferPriceRS>
+  </soap:Body>
+</soap:Envelope>

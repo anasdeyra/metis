@@ -1,0 +1,1900 @@
+<!-- TRIMMED FOR SIZE by the skill build: repeating elements reduced to 3 (FareGroup x20 -> 3; Offer x4 -> 3; OfferItem x83 -> 3; ServiceDefinition x41 -> 3; Tax x8 -> 3). Structure is intact; counts are not representative. -->
+<soap:Envelope xmlns:awsse="http://xml.amadeus.com/2010/06/Session_v3" xmlns:ns3="http://xml.amadeus.com/2010/06/Travel_OfferPriceRS_v1" xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns:wsa="http://www.w3.org/2005/08/addressing">
+  <soap:Header>
+    <wsa:To>http://www.w3.org/2005/08/addressing/anonymous</wsa:To>
+    <wsa:From>
+      <wsa:Address>https://noded5.test.webservices.amadeus.com/WSAP</wsa:Address>
+    </wsa:From>
+    <wsa:Action>http://webservices.amadeus.com/Travel_OfferPrice_1.2</wsa:Action>
+    <wsa:MessageID>urn:uuid:92c93bca-59cc-6d24-51b1-c170342c95bd</wsa:MessageID>
+    <wsa:RelatesTo RelationshipType="http://www.w3.org/2005/08/addressing/reply">f297f4fd-4fc0-4db3-90ec-56d63069767a</wsa:RelatesTo>
+    <awsse:Session TransactionStatusCode="End">
+      <awsse:SessionId>01D5JED8S0</awsse:SessionId>
+      <awsse:SequenceNumber>1</awsse:SequenceNumber>
+      <awsse:SecurityToken>REDACTED_TOKEN</awsse:SecurityToken>
+    </awsse:Session>
+  </soap:Header>
+  <soap:Body>
+    <ns3:AMA_TravelOfferPriceRS>
+      <ns3:Response>
+        <ns3:DataLists>
+          <ns3:BaggageAllowanceList>
+            <ns3:BaggageAllowance>
+              <ns3:BaggageAllowanceID>Pbgaloi3aimxphdtm</ns3:BaggageAllowanceID>
+              <ns3:TypeCode>CheckedBag</ns3:TypeCode>
+              <ns3:ApplicablePartyText>Traveler</ns3:ApplicablePartyText>
+              <ns3:DescText>CHECKED ALLOWANCE</ns3:DescText>
+              <ns3:PieceAllowance>
+                <ns3:ApplicablePartyText>Traveler</ns3:ApplicablePartyText>
+                <ns3:TotalQty>0</ns3:TotalQty>
+                <ns3:PieceDimensionAllowance>
+                  <ns3:Qty>0</ns3:Qty>
+                </ns3:PieceDimensionAllowance>
+              </ns3:PieceAllowance>
+            </ns3:BaggageAllowance>
+            <ns3:BaggageAllowance>
+              <ns3:BaggageAllowanceID>Pbgau780v1lyt03x2</ns3:BaggageAllowanceID>
+              <ns3:TypeCode>CheckedBag</ns3:TypeCode>
+              <ns3:ApplicablePartyText>Traveler</ns3:ApplicablePartyText>
+              <ns3:DescText>CHECKED ALLOWANCE</ns3:DescText>
+              <ns3:PieceAllowance>
+                <ns3:ApplicablePartyText>Traveler</ns3:ApplicablePartyText>
+                <ns3:TotalQty>0</ns3:TotalQty>
+                <ns3:PieceDimensionAllowance>
+                  <ns3:Qty>0</ns3:Qty>
+                </ns3:PieceDimensionAllowance>
+              </ns3:PieceAllowance>
+            </ns3:BaggageAllowance>
+            <ns3:BaggageAllowance>
+              <ns3:BaggageAllowanceID>Pbgamf088mbaqdpr3</ns3:BaggageAllowanceID>
+              <ns3:TypeCode>CheckedBag</ns3:TypeCode>
+              <ns3:ApplicablePartyText>Traveler</ns3:ApplicablePartyText>
+              <ns3:DescText>CHECKED ALLOWANCE</ns3:DescText>
+              <ns3:PieceAllowance>
+                <ns3:ApplicablePartyText>Traveler</ns3:ApplicablePartyText>
+                <ns3:TotalQty>0</ns3:TotalQty>
+                <ns3:PieceDimensionAllowance>
+                  <ns3:Qty>0</ns3:Qty>
+                </ns3:PieceDimensionAllowance>
+              </ns3:PieceAllowance>
+            </ns3:BaggageAllowance>
+            <ns3:BaggageAllowance>
+              <ns3:BaggageAllowanceID>Pbgaihofiszegdvv0</ns3:BaggageAllowanceID>
+              <ns3:TypeCode>CheckedBag</ns3:TypeCode>
+              <ns3:ApplicablePartyText>Traveler</ns3:ApplicablePartyText>
+              <ns3:DescText>CHECKED ALLOWANCE</ns3:DescText>
+              <ns3:PieceAllowance>
+                <ns3:ApplicablePartyText>Traveler</ns3:ApplicablePartyText>
+                <ns3:TotalQty>0</ns3:TotalQty>
+                <ns3:PieceDimensionAllowance>
+                  <ns3:Qty>0</ns3:Qty>
+                </ns3:PieceDimensionAllowance>
+              </ns3:PieceAllowance>
+            </ns3:BaggageAllowance>
+            <ns3:BaggageAllowance>
+              <ns3:BaggageAllowanceID>Pbgae4ohk7bthtq96</ns3:BaggageAllowanceID>
+              <ns3:TypeCode>CheckedBag</ns3:TypeCode>
+              <ns3:ApplicablePartyText>Traveler</ns3:ApplicablePartyText>
+              <ns3:DescText>First Checked Bag</ns3:DescText>
+              <ns3:WeightAllowance>
+                <ns3:MaximumWeightMeasure UnitCode="KG">23</ns3:MaximumWeightMeasure>
+              </ns3:WeightAllowance>
+              <ns3:WeightAllowance>
+                <ns3:MaximumWeightMeasure UnitCode="LBS">50</ns3:MaximumWeightMeasure>
+              </ns3:WeightAllowance>
+              <ns3:DimensionAllowance>
+                <ns3:BaggageDimensionCategory>Length</ns3:BaggageDimensionCategory>
+                <ns3:MaxMeasure UnitCode="Centimeter">157</ns3:MaxMeasure>
+              </ns3:DimensionAllowance>
+              <ns3:DimensionAllowance>
+                <ns3:BaggageDimensionCategory>Length</ns3:BaggageDimensionCategory>
+                <ns3:MaxMeasure UnitCode="Inch">62</ns3:MaxMeasure>
+              </ns3:DimensionAllowance>
+            </ns3:BaggageAllowance>
+            <ns3:BaggageAllowance>
+              <ns3:BaggageAllowanceID>Pbgasns6fk8t6ael1</ns3:BaggageAllowanceID>
+              <ns3:TypeCode>CheckedBag</ns3:TypeCode>
+              <ns3:ApplicablePartyText>Traveler</ns3:ApplicablePartyText>
+              <ns3:DescText>Second Checked Bag</ns3:DescText>
+              <ns3:WeightAllowance>
+                <ns3:MaximumWeightMeasure UnitCode="KG">23</ns3:MaximumWeightMeasure>
+              </ns3:WeightAllowance>
+              <ns3:WeightAllowance>
+                <ns3:MaximumWeightMeasure UnitCode="LBS">50</ns3:MaximumWeightMeasure>
+              </ns3:WeightAllowance>
+              <ns3:DimensionAllowance>
+                <ns3:BaggageDimensionCategory>Length</ns3:BaggageDimensionCategory>
+                <ns3:MaxMeasure UnitCode="Centimeter">157</ns3:MaxMeasure>
+              </ns3:DimensionAllowance>
+              <ns3:DimensionAllowance>
+                <ns3:BaggageDimensionCategory>Length</ns3:BaggageDimensionCategory>
+                <ns3:MaxMeasure UnitCode="Inch">62</ns3:MaxMeasure>
+              </ns3:DimensionAllowance>
+            </ns3:BaggageAllowance>
+          </ns3:BaggageAllowanceList>
+          <ns3:FareList>
+            <ns3:FareGroup refs="Pfrk6h16c5051fpot" ListKey="Pfcp6h16c5051fpot">
+              <ns3:Fare>
+                <ns3:FareCode>70J</ns3:FareCode>
+              </ns3:Fare>
+              <ns3:FareBasisCode>
+                <ns3:Code>LAU7AWBN</ns3:Code>
+              </ns3:FareBasisCode>
+            </ns3:FareGroup>
+            <ns3:FareGroup refs="Pfrk6k389og4xykdm" ListKey="Pfcp6k389og4xykdm">
+              <ns3:Fare>
+                <ns3:FareCode>70J</ns3:FareCode>
+              </ns3:Fare>
+              <ns3:FareBasisCode>
+                <ns3:Code>KAA2AWBN</ns3:Code>
+              </ns3:FareBasisCode>
+            </ns3:FareGroup>
+            <ns3:FareGroup refs="Pfrkbfwtl40lk61pg" ListKey="Pfcpbfwtl40lk61pg">
+              <ns3:Fare>
+                <ns3:FareCode>70J</ns3:FareCode>
+              </ns3:Fare>
+              <ns3:FareBasisCode>
+                <ns3:Code>LAU7AWBN</ns3:Code>
+              </ns3:FareBasisCode>
+            </ns3:FareGroup>
+          </ns3:FareList>
+          <ns3:OriginDestList>
+            <ns3:OriginDest>
+              <ns3:OriginDestID>OD1</ns3:OriginDestID>
+              <ns3:OriginCode>ORD</ns3:OriginCode>
+              <ns3:DestCode>MIA</ns3:DestCode>
+              <ns3:PaxJourneyRefID>Pfltg1gt4kfe3wn79</ns3:PaxJourneyRefID>
+            </ns3:OriginDest>
+            <ns3:OriginDest>
+              <ns3:OriginDestID>OD2</ns3:OriginDestID>
+              <ns3:OriginCode>MIA</ns3:OriginCode>
+              <ns3:DestCode>ORD</ns3:DestCode>
+              <ns3:PaxJourneyRefID>Pfltv118r9wh4y9wn</ns3:PaxJourneyRefID>
+            </ns3:OriginDest>
+          </ns3:OriginDestList>
+          <ns3:PaxJourneyList>
+            <ns3:PaxJourney>
+              <ns3:PaxJourneyID>Pfltg1gt4kfe3wn79</ns3:PaxJourneyID>
+              <ns3:Duration>PT3H15M</ns3:Duration>
+              <ns3:PaxSegmentRefID>Isgm01008b79c8d7f</ns3:PaxSegmentRefID>
+            </ns3:PaxJourney>
+            <ns3:PaxJourney>
+              <ns3:PaxJourneyID>Pfltv118r9wh4y9wn</ns3:PaxJourneyID>
+              <ns3:Duration>PT3H39M</ns3:Duration>
+              <ns3:PaxSegmentRefID>Isgm1d008b79c8d7f</ns3:PaxSegmentRefID>
+            </ns3:PaxJourney>
+          </ns3:PaxJourneyList>
+          <ns3:PaxList>
+            <ns3:Pax>
+              <ns3:PaxID>P1</ns3:PaxID>
+              <ns3:PTC>ADT</ns3:PTC>
+            </ns3:Pax>
+            <ns3:Pax>
+              <ns3:PaxID>P2</ns3:PaxID>
+              <ns3:PTC>ADT</ns3:PTC>
+            </ns3:Pax>
+            <ns3:Pax>
+              <ns3:PaxID>P3</ns3:PaxID>
+              <ns3:PTC>CNN</ns3:PTC>
+            </ns3:Pax>
+          </ns3:PaxList>
+          <ns3:PaxSegmentList>
+            <ns3:PaxSegment>
+              <ns3:PaxSegmentID>Isgm01008b79c8d7f</ns3:PaxSegmentID>
+              <ns3:Duration>PT3H15M</ns3:Duration>
+              <ns3:Dep>
+                <ns3:IATA_LocationCode>ORD</ns3:IATA_LocationCode>
+                <ns3:AircraftScheduledDateTime>2023-08-08T07:22:00</ns3:AircraftScheduledDateTime>
+                <ns3:TerminalName>1</ns3:TerminalName>
+                <ns3:StationName>Chicago O\'Hare</ns3:StationName>
+              </ns3:Dep>
+              <ns3:Arrival>
+                <ns3:IATA_LocationCode>MIA</ns3:IATA_LocationCode>
+                <ns3:AircraftScheduledDateTime>2023-08-08T11:37:00</ns3:AircraftScheduledDateTime>
+                <ns3:StationName>Miami International</ns3:StationName>
+              </ns3:Arrival>
+              <ns3:MarketingCarrierInfo>
+                <ns3:CarrierDesigCode>UA</ns3:CarrierDesigCode>
+                <ns3:CarrierName>United Airlines</ns3:CarrierName>
+                <ns3:MarketingCarrierFlightNumberText>2090</ns3:MarketingCarrierFlightNumberText>
+              </ns3:MarketingCarrierInfo>
+              <ns3:DatedOperatingLeg>
+                <ns3:DatedOperatingLegID>S1</ns3:DatedOperatingLegID>
+                <ns3:CarrierAircraftType>
+                  <ns3:CarrierAircraftTypeCode>319</ns3:CarrierAircraftTypeCode>
+                  <ns3:CarrierAircraftTypeName>Airbus A319</ns3:CarrierAircraftTypeName>
+                </ns3:CarrierAircraftType>
+                <ns3:Dep>
+                  <ns3:IATA_LocationCode>ORD</ns3:IATA_LocationCode>
+                  <ns3:AircraftScheduledDateTime>2023-08-08T07:22:00</ns3:AircraftScheduledDateTime>
+                  <ns3:TerminalName>1</ns3:TerminalName>
+                  <ns3:StationName>Chicago O\'Hare</ns3:StationName>
+                </ns3:Dep>
+                <ns3:Arrival>
+                  <ns3:IATA_LocationCode>MIA</ns3:IATA_LocationCode>
+                  <ns3:AircraftScheduledDateTime>2023-08-08T11:37:00</ns3:AircraftScheduledDateTime>
+                  <ns3:StationName>Miami International</ns3:StationName>
+                </ns3:Arrival>
+              </ns3:DatedOperatingLeg>
+            </ns3:PaxSegment>
+            <ns3:PaxSegment>
+              <ns3:PaxSegmentID>Isgm1d008b79c8d7f</ns3:PaxSegmentID>
+              <ns3:Duration>PT3H39M</ns3:Duration>
+              <ns3:Dep>
+                <ns3:IATA_LocationCode>MIA</ns3:IATA_LocationCode>
+                <ns3:AircraftScheduledDateTime>2023-08-22T16:01:00</ns3:AircraftScheduledDateTime>
+                <ns3:StationName>Miami International</ns3:StationName>
+              </ns3:Dep>
+              <ns3:Arrival>
+                <ns3:IATA_LocationCode>ORD</ns3:IATA_LocationCode>
+                <ns3:AircraftScheduledDateTime>2023-08-22T18:40:00</ns3:AircraftScheduledDateTime>
+                <ns3:TerminalName>1</ns3:TerminalName>
+                <ns3:StationName>Chicago O\'Hare</ns3:StationName>
+              </ns3:Arrival>
+              <ns3:MarketingCarrierInfo>
+                <ns3:CarrierDesigCode>UA</ns3:CarrierDesigCode>
+                <ns3:CarrierName>United Airlines</ns3:CarrierName>
+                <ns3:MarketingCarrierFlightNumberText>2362</ns3:MarketingCarrierFlightNumberText>
+              </ns3:MarketingCarrierInfo>
+              <ns3:DatedOperatingLeg>
+                <ns3:DatedOperatingLegID>S2</ns3:DatedOperatingLegID>
+                <ns3:CarrierAircraftType>
+                  <ns3:CarrierAircraftTypeCode>319</ns3:CarrierAircraftTypeCode>
+                  <ns3:CarrierAircraftTypeName>Airbus A319</ns3:CarrierAircraftTypeName>
+                </ns3:CarrierAircraftType>
+                <ns3:Dep>
+                  <ns3:IATA_LocationCode>MIA</ns3:IATA_LocationCode>
+                  <ns3:AircraftScheduledDateTime>2023-08-22T16:01:00</ns3:AircraftScheduledDateTime>
+                  <ns3:StationName>Miami International</ns3:StationName>
+                </ns3:Dep>
+                <ns3:Arrival>
+                  <ns3:IATA_LocationCode>ORD</ns3:IATA_LocationCode>
+                  <ns3:AircraftScheduledDateTime>2023-08-22T18:40:00</ns3:AircraftScheduledDateTime>
+                  <ns3:TerminalName>1</ns3:TerminalName>
+                  <ns3:StationName>Chicago O\'Hare</ns3:StationName>
+                </ns3:Arrival>
+              </ns3:DatedOperatingLeg>
+            </ns3:PaxSegment>
+          </ns3:PaxSegmentList>
+          <ns3:PriceClassList>
+            <ns3:PriceClass>
+              <ns3:PriceClassID>Ppcyy7fy1vl8sfcd</ns3:PriceClassID>
+              <ns3:Code>2_eco</ns3:Code>
+              <ns3:Name>Economy</ns3:Name>
+            </ns3:PriceClass>
+            <ns3:PriceClass>
+              <ns3:PriceClassID>Ppcawe34d4cxwxzq</ns3:PriceClassID>
+              <ns3:Code>6_ecoflex</ns3:Code>
+              <ns3:Name>Economy Flexible</ns3:Name>
+            </ns3:PriceClass>
+            <ns3:PriceClass>
+              <ns3:PriceClassID>Ppcy2ip3i19xkhsu</ns3:PriceClassID>
+              <ns3:Code>3_biz</ns3:Code>
+              <ns3:Name>Business</ns3:Name>
+            </ns3:PriceClass>
+            <ns3:PriceClass>
+              <ns3:PriceClassID>Ppcenuzbfrlsa2pk</ns3:PriceClassID>
+              <ns3:Code>10_bizflex</ns3:Code>
+              <ns3:Name>Business Flexible</ns3:Name>
+            </ns3:PriceClass>
+            <ns3:PriceClass>
+              <ns3:PriceClassID>Ppce1tp0zyrcc0d8</ns3:PriceClassID>
+              <ns3:Code>1_basiceco</ns3:Code>
+              <ns3:Name>Basic Economy</ns3:Name>
+            </ns3:PriceClass>
+          </ns3:PriceClassList>
+          <ns3:ServiceDefinitionList>
+            <ns3:ServiceDefinition>
+              <ns3:ServiceDefinitionID>Psvcrqe4nttbkpn14</ns3:ServiceDefinitionID>
+              <ns3:OwnerCode>UAD</ns3:OwnerCode>
+              <ns3:Name>Extra Bag and Club Trip Pass</ns3:Name>
+              <ns3:ServiceCode>B06</ns3:ServiceCode>
+              <ns3:ReasonForIssuanceCode>J</ns3:ReasonForIssuanceCode>
+              <ns3:ReasonForIssuanceSubCode>B06</ns3:ReasonForIssuanceSubCode>
+              <ns3:ValidatingCarrierCode>UA</ns3:ValidatingCarrierCode>
+              <ns3:Description>
+                <ns3:DescID>Details</ns3:DescID>
+                <ns3:DescText>Extra Bag and Club Trip Pass</ns3:DescText>
+              </ns3:Description>
+              <ns3:BookingInstructions>
+                <ns3:Method>API</ns3:Method>
+              </ns3:BookingInstructions>
+            </ns3:ServiceDefinition>
+            <ns3:ServiceDefinition>
+              <ns3:ServiceDefinitionID>Psvc2zyud03onr1ci</ns3:ServiceDefinitionID>
+              <ns3:OwnerCode>UAD</ns3:OwnerCode>
+              <ns3:Name>Extra Bag and Club Trip Pass</ns3:Name>
+              <ns3:ServiceCode>B06</ns3:ServiceCode>
+              <ns3:ReasonForIssuanceCode>J</ns3:ReasonForIssuanceCode>
+              <ns3:ReasonForIssuanceSubCode>B06</ns3:ReasonForIssuanceSubCode>
+              <ns3:ValidatingCarrierCode>UA</ns3:ValidatingCarrierCode>
+              <ns3:Description>
+                <ns3:DescID>Details</ns3:DescID>
+                <ns3:DescText>Extra Bag and Club Trip Pass</ns3:DescText>
+              </ns3:Description>
+              <ns3:BookingInstructions>
+                <ns3:Method>API</ns3:Method>
+              </ns3:BookingInstructions>
+            </ns3:ServiceDefinition>
+            <ns3:ServiceDefinition>
+              <ns3:ServiceDefinitionID>Psvc6rfv5ebj4dkdg</ns3:ServiceDefinitionID>
+              <ns3:OwnerCode>UAD</ns3:OwnerCode>
+              <ns3:Name>Extra Bag and Club Trip Pass</ns3:Name>
+              <ns3:ServiceCode>B06</ns3:ServiceCode>
+              <ns3:ReasonForIssuanceCode>J</ns3:ReasonForIssuanceCode>
+              <ns3:ReasonForIssuanceSubCode>B06</ns3:ReasonForIssuanceSubCode>
+              <ns3:ValidatingCarrierCode>UA</ns3:ValidatingCarrierCode>
+              <ns3:Description>
+                <ns3:DescID>Details</ns3:DescID>
+                <ns3:DescText>Extra Bag and Club Trip Pass</ns3:DescText>
+              </ns3:Description>
+              <ns3:BookingInstructions>
+                <ns3:Method>API</ns3:Method>
+              </ns3:BookingInstructions>
+            </ns3:ServiceDefinition>
+          </ns3:ServiceDefinitionList>
+        </ns3:DataLists>
+        <ns3:Metadata>
+          <ns3:Other>
+            <ns3:OtherMetadata>
+              <ns3:CurrencyMetadatas>
+                <ns3:CurrencyMetadata MetadataKey="USD">
+                  <ns3:Decimals>2</ns3:Decimals>
+                </ns3:CurrencyMetadata>
+              </ns3:CurrencyMetadatas>
+            </ns3:OtherMetadata>
+            <ns3:OtherMetadata>
+              <ns3:RuleMetadatas>
+                <ns3:RuleMetadata MetadataKey="PcncPD359F1C8-E590-441B-9F11N">
+                  <ns3:RuleID>Cancel</ns3:RuleID>
+                  <ns3:Values>
+                    <ns3:Value>
+                      <ns3:Instruction>Not Allowed</ns3:Instruction>
+                    </ns3:Value>
+                  </ns3:Values>
+                </ns3:RuleMetadata>
+                <ns3:RuleMetadata MetadataKey="PchgPD359F1C8-E590-441B-9F11N">
+                  <ns3:RuleID>Change</ns3:RuleID>
+                  <ns3:Values>
+                    <ns3:Value>
+                      <ns3:Instruction>Not Allowed</ns3:Instruction>
+                    </ns3:Value>
+                  </ns3:Values>
+                </ns3:RuleMetadata>
+              </ns3:RuleMetadatas>
+            </ns3:OtherMetadata>
+          </ns3:Other>
+        </ns3:Metadata>
+        <ns3:OtherOffers>
+          <ns3:Offer>
+            <ns3:OfferID>ERAedP7yYrS9Svh~D2Z3H2PC_1A_f79dc3fc-f9f5-462f-9989-e94ec9b1aa64_1A_PD359F1C8-E590-441B-9F11879n7llhf25s9-2</ns3:OfferID>
+            <ns3:OwnerCode>UAD</ns3:OwnerCode>
+            <ns3:ValidatingCarrierCode>UA</ns3:ValidatingCarrierCode>
+            <ns3:OfferExpirationDateTime>2023-06-28T20:16:27Z</ns3:OfferExpirationDateTime>
+            <ns3:PaymentTimeLimitDateTime>2023-06-29T23:59:00</ns3:PaymentTimeLimitDateTime>
+            <ns3:JourneyOverview>
+              <ns3:JourneyPriceClass>
+                <ns3:PriceClassRefID>Ppcenuzbfrlsa2pk</ns3:PriceClassRefID>
+                <ns3:PaxJourneyRefID>Pfltg1gt4kfe3wn79</ns3:PaxJourneyRefID>
+              </ns3:JourneyPriceClass>
+              <ns3:JourneyPriceClass>
+                <ns3:PriceClassRefID>Ppcenuzbfrlsa2pk</ns3:PriceClassRefID>
+                <ns3:PaxJourneyRefID>Pfltv118r9wh4y9wn</ns3:PaxJourneyRefID>
+              </ns3:JourneyPriceClass>
+            </ns3:JourneyOverview>
+            <ns3:PTC_OfferParameters>
+              <ns3:PTC_PricedCode>ADT</ns3:PTC_PricedCode>
+              <ns3:PTC_RequestedCode>ADT</ns3:PTC_RequestedCode>
+              <ns3:RequestedPaxNumber>2</ns3:RequestedPaxNumber>
+              <ns3:PricedPaxNumber>2</ns3:PricedPaxNumber>
+            </ns3:PTC_OfferParameters>
+            <ns3:PTC_OfferParameters>
+              <ns3:PTC_PricedCode>CNN</ns3:PTC_PricedCode>
+              <ns3:PTC_RequestedCode>CNN</ns3:PTC_RequestedCode>
+              <ns3:RequestedPaxNumber>1</ns3:RequestedPaxNumber>
+              <ns3:PricedPaxNumber>1</ns3:PricedPaxNumber>
+            </ns3:PTC_OfferParameters>
+            <ns3:OfferItem>
+              <ns3:OfferItemID>PD359F1C8-E590-441B-9F11879n7llhf25s9-2-1</ns3:OfferItemID>
+              <ns3:MandatoryInd>true</ns3:MandatoryInd>
+              <ns3:FareDetail>
+                <ns3:FareIndicatorCode>0</ns3:FareIndicatorCode>
+                <ns3:PassengerRefs>P1</ns3:PassengerRefs>
+                <ns3:PassengerRefs>P2</ns3:PassengerRefs>
+                <ns3:Price>
+                  <ns3:BaseAmount Code="USD">152372</ns3:BaseAmount>
+                  <ns3:Taxes>
+                    <ns3:Total Code="USD">14408</ns3:Total>
+                    <ns3:Breakdown>
+                      <ns3:Tax>
+                        <ns3:Amount Code="USD">4563</ns3:Amount>
+                        <ns3:Nation>US</ns3:Nation>
+                        <ns3:TaxCode>US</ns3:TaxCode>
+                        <ns3:Description>US Transportation Tax</ns3:Description>
+                      </ns3:Tax>
+                      <ns3:Tax>
+                        <ns3:Amount Code="USD">6865</ns3:Amount>
+                        <ns3:Nation>US</ns3:Nation>
+                        <ns3:TaxCode>US</ns3:TaxCode>
+                        <ns3:Description>US Transportation Tax</ns3:Description>
+                      </ns3:Tax>
+                      <ns3:Tax>
+                        <ns3:Amount Code="USD">450</ns3:Amount>
+                        <ns3:Nation>US</ns3:Nation>
+                        <ns3:TaxCode>XF</ns3:TaxCode>
+                        <ns3:Description>US Passenger Facility Charge</ns3:Description>
+                      </ns3:Tax>
+                    </ns3:Breakdown>
+                  </ns3:Taxes>
+                </ns3:Price>
+                <ns3:FareComponent>
+                  <ns3:Price>
+                    <ns3:BaseAmount Code="USD">60837</ns3:BaseAmount>
+                    <ns3:Taxes>
+                      <ns3:Total Code="USD">6053</ns3:Total>
+                      <ns3:Breakdown>
+                        <ns3:Tax>
+                          <ns3:Amount Code="USD">4563</ns3:Amount>
+                          <ns3:Nation>US</ns3:Nation>
+                          <ns3:TaxCode>US</ns3:TaxCode>
+                          <ns3:Description>US Transportation Tax</ns3:Description>
+                        </ns3:Tax>
+                        <ns3:Tax>
+                          <ns3:Amount Code="USD">450</ns3:Amount>
+                          <ns3:Nation>US</ns3:Nation>
+                          <ns3:TaxCode>XF</ns3:TaxCode>
+                          <ns3:Description>US Passenger Facility Charge</ns3:Description>
+                        </ns3:Tax>
+                        <ns3:Tax>
+                          <ns3:Amount Code="USD">480</ns3:Amount>
+                          <ns3:Nation>US</ns3:Nation>
+                          <ns3:TaxCode>ZP</ns3:TaxCode>
+                          <ns3:Description>United States Flight Segment Tax Domestic</ns3:Description>
+                        </ns3:Tax>
+                        <ns3:Tax>
+                          <ns3:Amount Code="USD">560</ns3:Amount>
+                          <ns3:Nation>US</ns3:Nation>
+                          <ns3:TaxCode>AY</ns3:TaxCode>
+                          <ns3:Description>United States Passenger Civil Aviation Security Service Fee</ns3:Description>
+                        </ns3:Tax>
+                      </ns3:Breakdown>
+                    </ns3:Taxes>
+                  </ns3:Price>
+                  <ns3:FareBasis>
+                    <ns3:FareBasisCode refs="Pfcpp4ebn2ukhe2xd">
+                      <ns3:Code>VAA4OKFM</ns3:Code>
+                    </ns3:FareBasisCode>
+                    <ns3:FareBasisCityPair>CHIMIAUA</ns3:FareBasisCityPair>
+                    <ns3:RBD>Z</ns3:RBD>
+                    <ns3:CabinType>
+                      <ns3:CabinTypeCode>F</ns3:CabinTypeCode>
+                      <ns3:CabinTypeName>FIRST</ns3:CabinTypeName>
+                    </ns3:CabinType>
+                  </ns3:FareBasis>
+                  <ns3:FareRules>
+                    <ns3:AdvanceStay>
+                      <ns3:AdvancePurchase Context="Latest">P14D</ns3:AdvancePurchase>
+                    </ns3:AdvanceStay>
+                    <ns3:Ticketing>
+                      <ns3:Endorsements>
+                        <ns3:Endorsement>REFUNDABLE</ns3:Endorsement>
+                      </ns3:Endorsements>
+                    </ns3:Ticketing>
+                  </ns3:FareRules>
+                  <ns3:PriceClassRef>Ppcenuzbfrlsa2pk</ns3:PriceClassRef>
+                  <ns3:SegmentRefs>Isgm01008b79c8d7f</ns3:SegmentRefs>
+                </ns3:FareComponent>
+                <ns3:FareComponent>
+                  <ns3:Price>
+                    <ns3:BaseAmount Code="USD">91535</ns3:BaseAmount>
+                    <ns3:Taxes>
+                      <ns3:Total Code="USD">8355</ns3:Total>
+                      <ns3:Breakdown>
+                        <ns3:Tax>
+                          <ns3:Amount Code="USD">6865</ns3:Amount>
+                          <ns3:Nation>US</ns3:Nation>
+                          <ns3:TaxCode>US</ns3:TaxCode>
+                          <ns3:Description>US Transportation Tax</ns3:Description>
+                        </ns3:Tax>
+                        <ns3:Tax>
+                          <ns3:Amount Code="USD">450</ns3:Amount>
+                          <ns3:Nation>US</ns3:Nation>
+                          <ns3:TaxCode>XF</ns3:TaxCode>
+                          <ns3:Description>US Passenger Facility Charge</ns3:Description>
+                        </ns3:Tax>
+                        <ns3:Tax>
+                          <ns3:Amount Code="USD">480</ns3:Amount>
+                          <ns3:Nation>US</ns3:Nation>
+                          <ns3:TaxCode>ZP</ns3:TaxCode>
+                          <ns3:Description>United States Flight Segment Tax Domestic</ns3:Description>
+                        </ns3:Tax>
+                        <ns3:Tax>
+                          <ns3:Amount Code="USD">560</ns3:Amount>
+                          <ns3:Nation>US</ns3:Nation>
+                          <ns3:TaxCode>AY</ns3:TaxCode>
+                          <ns3:Description>United States Passenger Civil Aviation Security Service Fee</ns3:Description>
+                        </ns3:Tax>
+                      </ns3:Breakdown>
+                    </ns3:Taxes>
+                  </ns3:Price>
+                  <ns3:FareBasis>
+                    <ns3:FareBasisCode refs="Pfcppwfzw8l73jf3t">
+                      <ns3:Code>EAA0OKFM</ns3:Code>
+                    </ns3:FareBasisCode>
+                    <ns3:FareBasisCityPair>MIACHIUA</ns3:FareBasisCityPair>
+                    <ns3:RBD>D</ns3:RBD>
+                    <ns3:CabinType>
+                      <ns3:CabinTypeCode>F</ns3:CabinTypeCode>
+                      <ns3:CabinTypeName>FIRST</ns3:CabinTypeName>
+                    </ns3:CabinType>
+                  </ns3:FareBasis>
+                  <ns3:FareRules>
+                    <ns3:AdvanceStay>
+                      <ns3:AdvancePurchase Context="Latest">P14D</ns3:AdvancePurchase>
+                    </ns3:AdvanceStay>
+                    <ns3:Ticketing>
+                      <ns3:Endorsements>
+                        <ns3:Endorsement>REFUNDABLE</ns3:Endorsement>
+                      </ns3:Endorsements>
+                    </ns3:Ticketing>
+                  </ns3:FareRules>
+                  <ns3:PriceClassRef>Ppcenuzbfrlsa2pk</ns3:PriceClassRef>
+                  <ns3:SegmentRefs>Isgm1d008b79c8d7f</ns3:SegmentRefs>
+                </ns3:FareComponent>
+              </ns3:FareDetail>
+              <ns3:Service>
+                <ns3:ServiceID>Psvcjx309tfu2tcnp</ns3:ServiceID>
+                <ns3:PaxRefID>P1</ns3:PaxRefID>
+                <ns3:PaxRefID>P2</ns3:PaxRefID>
+                <ns3:ServiceAssociations>
+                  <ns3:PaxJourneyRefID>Pfltg1gt4kfe3wn79</ns3:PaxJourneyRefID>
+                  <ns3:PaxJourneyRefID>Pfltv118r9wh4y9wn</ns3:PaxJourneyRefID>
+                </ns3:ServiceAssociations>
+              </ns3:Service>
+              <ns3:Price>
+                <ns3:TotalAmount CurCode="USD">333560</ns3:TotalAmount>
+              </ns3:Price>
+            </ns3:OfferItem>
+            <ns3:OfferItem>
+              <ns3:OfferItemID>PD359F1C8-E590-441B-9F11879n7llhf25s9-2-2</ns3:OfferItemID>
+              <ns3:MandatoryInd>true</ns3:MandatoryInd>
+              <ns3:FareDetail>
+                <ns3:FareIndicatorCode>0</ns3:FareIndicatorCode>
+                <ns3:PassengerRefs>P3</ns3:PassengerRefs>
+                <ns3:Price>
+                  <ns3:BaseAmount Code="USD">152372</ns3:BaseAmount>
+                  <ns3:Taxes>
+                    <ns3:Total Code="USD">14408</ns3:Total>
+                    <ns3:Breakdown>
+                      <ns3:Tax>
+                        <ns3:Amount Code="USD">4563</ns3:Amount>
+                        <ns3:Nation>US</ns3:Nation>
+                        <ns3:TaxCode>US</ns3:TaxCode>
+                        <ns3:Description>US Transportation Tax</ns3:Description>
+                      </ns3:Tax>
+                      <ns3:Tax>
+                        <ns3:Amount Code="USD">6865</ns3:Amount>
+                        <ns3:Nation>US</ns3:Nation>
+                        <ns3:TaxCode>US</ns3:TaxCode>
+                        <ns3:Description>US Transportation Tax</ns3:Description>
+                      </ns3:Tax>
+                      <ns3:Tax>
+                        <ns3:Amount Code="USD">450</ns3:Amount>
+                        <ns3:Nation>US</ns3:Nation>
+                        <ns3:TaxCode>XF</ns3:TaxCode>
+                        <ns3:Description>US Passenger Facility Charge</ns3:Description>
+                      </ns3:Tax>
+                    </ns3:Breakdown>
+                  </ns3:Taxes>
+                </ns3:Price>
+                <ns3:FareComponent>
+                  <ns3:Price>
+                    <ns3:BaseAmount Code="USD">60837</ns3:BaseAmount>
+                    <ns3:Taxes>
+                      <ns3:Total Code="USD">6053</ns3:Total>
+                      <ns3:Breakdown>
+                        <ns3:Tax>
+                          <ns3:Amount Code="USD">4563</ns3:Amount>
+                          <ns3:Nation>US</ns3:Nation>
+                          <ns3:TaxCode>US</ns3:TaxCode>
+                          <ns3:Description>US Transportation Tax</ns3:Description>
+                        </ns3:Tax>
+                        <ns3:Tax>
+                          <ns3:Amount Code="USD">450</ns3:Amount>
+                          <ns3:Nation>US</ns3:Nation>
+                          <ns3:TaxCode>XF</ns3:TaxCode>
+                          <ns3:Description>US Passenger Facility Charge</ns3:Description>
+                        </ns3:Tax>
+                        <ns3:Tax>
+                          <ns3:Amount Code="USD">480</ns3:Amount>
+                          <ns3:Nation>US</ns3:Nation>
+                          <ns3:TaxCode>ZP</ns3:TaxCode>
+                          <ns3:Description>United States Flight Segment Tax Domestic</ns3:Description>
+                        </ns3:Tax>
+                        <ns3:Tax>
+                          <ns3:Amount Code="USD">560</ns3:Amount>
+                          <ns3:Nation>US</ns3:Nation>
+                          <ns3:TaxCode>AY</ns3:TaxCode>
+                          <ns3:Description>United States Passenger Civil Aviation Security Service Fee</ns3:Description>
+                        </ns3:Tax>
+                      </ns3:Breakdown>
+                    </ns3:Taxes>
+                  </ns3:Price>
+                  <ns3:FareBasis>
+                    <ns3:FareBasisCode refs="Pfcp2zi0hd2mfv43q">
+                      <ns3:Code>VAA4OKFM</ns3:Code>
+                    </ns3:FareBasisCode>
+                    <ns3:FareBasisCityPair>CHIMIAUA</ns3:FareBasisCityPair>
+                    <ns3:RBD>Z</ns3:RBD>
+                    <ns3:CabinType>
+                      <ns3:CabinTypeCode>F</ns3:CabinTypeCode>
+                      <ns3:CabinTypeName>FIRST</ns3:CabinTypeName>
+                    </ns3:CabinType>
+                  </ns3:FareBasis>
+                  <ns3:TicketDesig>CH00</ns3:TicketDesig>
+                  <ns3:FareRules>
+                    <ns3:AdvanceStay>
+                      <ns3:AdvancePurchase Context="Latest">P14D</ns3:AdvancePurchase>
+                    </ns3:AdvanceStay>
+                    <ns3:Ticketing>
+                      <ns3:Endorsements>
+                        <ns3:Endorsement>REFUNDABLE</ns3:Endorsement>
+                      </ns3:Endorsements>
+                    </ns3:Ticketing>
+                  </ns3:FareRules>
+                  <ns3:PriceClassRef>Ppcenuzbfrlsa2pk</ns3:PriceClassRef>
+                  <ns3:SegmentRefs>Isgm01008b79c8d7f</ns3:SegmentRefs>
+                </ns3:FareComponent>
+                <ns3:FareComponent>
+                  <ns3:Price>
+                    <ns3:BaseAmount Code="USD">91535</ns3:BaseAmount>
+                    <ns3:Taxes>
+                      <ns3:Total Code="USD">8355</ns3:Total>
+                      <ns3:Breakdown>
+                        <ns3:Tax>
+                          <ns3:Amount Code="USD">6865</ns3:Amount>
+                          <ns3:Nation>US</ns3:Nation>
+                          <ns3:TaxCode>US</ns3:TaxCode>
+                          <ns3:Description>US Transportation Tax</ns3:Description>
+                        </ns3:Tax>
+                        <ns3:Tax>
+                          <ns3:Amount Code="USD">450</ns3:Amount>
+                          <ns3:Nation>US</ns3:Nation>
+                          <ns3:TaxCode>XF</ns3:TaxCode>
+                          <ns3:Description>US Passenger Facility Charge</ns3:Description>
+                        </ns3:Tax>
+                        <ns3:Tax>
+                          <ns3:Amount Code="USD">480</ns3:Amount>
+                          <ns3:Nation>US</ns3:Nation>
+                          <ns3:TaxCode>ZP</ns3:TaxCode>
+                          <ns3:Description>United States Flight Segment Tax Domestic</ns3:Description>
+                        </ns3:Tax>
+                        <ns3:Tax>
+                          <ns3:Amount Code="USD">560</ns3:Amount>
+                          <ns3:Nation>US</ns3:Nation>
+                          <ns3:TaxCode>AY</ns3:TaxCode>
+                          <ns3:Description>United States Passenger Civil Aviation Security Service Fee</ns3:Description>
+                        </ns3:Tax>
+                      </ns3:Breakdown>
+                    </ns3:Taxes>
+                  </ns3:Price>
+                  <ns3:FareBasis>
+                    <ns3:FareBasisCode refs="Pfcp6isref0f1g5bk">
+                      <ns3:Code>EAA0OKFM</ns3:Code>
+                    </ns3:FareBasisCode>
+                    <ns3:FareBasisCityPair>MIACHIUA</ns3:FareBasisCityPair>
+                    <ns3:RBD>D</ns3:RBD>
+                    <ns3:CabinType>
+                      <ns3:CabinTypeCode>F</ns3:CabinTypeCode>
+                      <ns3:CabinTypeName>FIRST</ns3:CabinTypeName>
+                    </ns3:CabinType>
+                  </ns3:FareBasis>
+                  <ns3:TicketDesig>CH00</ns3:TicketDesig>
+                  <ns3:FareRules>
+                    <ns3:AdvanceStay>
+                      <ns3:AdvancePurchase Context="Latest">P14D</ns3:AdvancePurchase>
+                    </ns3:AdvanceStay>
+                    <ns3:Ticketing>
+                      <ns3:Endorsements>
+                        <ns3:Endorsement>REFUNDABLE</ns3:Endorsement>
+                      </ns3:Endorsements>
+                    </ns3:Ticketing>
+                  </ns3:FareRules>
+                  <ns3:PriceClassRef>Ppcenuzbfrlsa2pk</ns3:PriceClassRef>
+                  <ns3:SegmentRefs>Isgm1d008b79c8d7f</ns3:SegmentRefs>
+                </ns3:FareComponent>
+              </ns3:FareDetail>
+              <ns3:Service>
+                <ns3:ServiceID>Psvc2qzsdelbk5fjy</ns3:ServiceID>
+                <ns3:PaxRefID>P3</ns3:PaxRefID>
+                <ns3:ServiceAssociations>
+                  <ns3:PaxJourneyRefID>Pfltg1gt4kfe3wn79</ns3:PaxJourneyRefID>
+                  <ns3:PaxJourneyRefID>Pfltv118r9wh4y9wn</ns3:PaxJourneyRefID>
+                </ns3:ServiceAssociations>
+              </ns3:Service>
+              <ns3:Price>
+                <ns3:TotalAmount CurCode="USD">166780</ns3:TotalAmount>
+              </ns3:Price>
+            </ns3:OfferItem>
+            <ns3:TotalPrice>
+              <ns3:TotalAmount CurCode="USD">500340</ns3:TotalAmount>
+            </ns3:TotalPrice>
+          </ns3:Offer>
+          <ns3:Offer>
+            <ns3:OfferID>ERAedP7yYrS9Svh~D2Z3H2PC_1A_f79dc3fc-f9f5-462f-9989-e94ec9b1aa64_1A_PD359F1C8-E590-441B-9F1196gtirwumbpj7-3</ns3:OfferID>
+            <ns3:OwnerCode>UAD</ns3:OwnerCode>
+            <ns3:ValidatingCarrierCode>UA</ns3:ValidatingCarrierCode>
+            <ns3:OfferExpirationDateTime>2023-06-28T20:16:27Z</ns3:OfferExpirationDateTime>
+            <ns3:PaymentTimeLimitDateTime>2023-06-29T23:59:00</ns3:PaymentTimeLimitDateTime>
+            <ns3:JourneyOverview>
+              <ns3:JourneyPriceClass>
+                <ns3:PriceClassRefID>Ppcyy7fy1vl8sfcd</ns3:PriceClassRefID>
+                <ns3:PaxJourneyRefID>Pfltg1gt4kfe3wn79</ns3:PaxJourneyRefID>
+              </ns3:JourneyPriceClass>
+              <ns3:JourneyPriceClass>
+                <ns3:PriceClassRefID>Ppcyy7fy1vl8sfcd</ns3:PriceClassRefID>
+                <ns3:PaxJourneyRefID>Pfltv118r9wh4y9wn</ns3:PaxJourneyRefID>
+              </ns3:JourneyPriceClass>
+            </ns3:JourneyOverview>
+            <ns3:PTC_OfferParameters>
+              <ns3:PTC_PricedCode>ADT</ns3:PTC_PricedCode>
+              <ns3:PTC_RequestedCode>ADT</ns3:PTC_RequestedCode>
+              <ns3:RequestedPaxNumber>2</ns3:RequestedPaxNumber>
+              <ns3:PricedPaxNumber>2</ns3:PricedPaxNumber>
+            </ns3:PTC_OfferParameters>
+            <ns3:PTC_OfferParameters>
+              <ns3:PTC_PricedCode>CNN</ns3:PTC_PricedCode>
+              <ns3:PTC_RequestedCode>CNN</ns3:PTC_RequestedCode>
+              <ns3:RequestedPaxNumber>1</ns3:RequestedPaxNumber>
+              <ns3:PricedPaxNumber>1</ns3:PricedPaxNumber>
+            </ns3:PTC_OfferParameters>
+            <ns3:OfferItem>
+              <ns3:OfferItemID>PD359F1C8-E590-441B-9F1196gtirwumbpj7-3-1</ns3:OfferItemID>
+              <ns3:MandatoryInd>true</ns3:MandatoryInd>
+              <ns3:FareDetail>
+                <ns3:FareIndicatorCode>0</ns3:FareIndicatorCode>
+                <ns3:PassengerRefs>P1</ns3:PassengerRefs>
+                <ns3:PassengerRefs>P2</ns3:PassengerRefs>
+                <ns3:Price>
+                  <ns3:BaseAmount Code="USD">29531</ns3:BaseAmount>
+                  <ns3:Taxes>
+                    <ns3:Total Code="USD">5194</ns3:Total>
+                    <ns3:Breakdown>
+                      <ns3:Tax>
+                        <ns3:Amount Code="USD">1109</ns3:Amount>
+                        <ns3:Nation>US</ns3:Nation>
+                        <ns3:TaxCode>US</ns3:TaxCode>
+                        <ns3:Description>US Transportation Tax</ns3:Description>
+                      </ns3:Tax>
+                      <ns3:Tax>
+                        <ns3:Amount Code="USD">1105</ns3:Amount>
+                        <ns3:Nation>US</ns3:Nation>
+                        <ns3:TaxCode>US</ns3:TaxCode>
+                        <ns3:Description>US Transportation Tax</ns3:Description>
+                      </ns3:Tax>
+                      <ns3:Tax>
+                        <ns3:Amount Code="USD">450</ns3:Amount>
+                        <ns3:Nation>US</ns3:Nation>
+                        <ns3:TaxCode>XF</ns3:TaxCode>
+                        <ns3:Description>US Passenger Facility Charge</ns3:Description>
+                      </ns3:Tax>
+                    </ns3:Breakdown>
+                  </ns3:Taxes>
+                </ns3:Price>
+                <ns3:FareComponent>
+                  <ns3:Price>
+                    <ns3:BaseAmount Code="USD">14791</ns3:BaseAmount>
+                    <ns3:Taxes>
+                      <ns3:Total Code="USD">2599</ns3:Total>
+                      <ns3:Breakdown>
+                        <ns3:Tax>
+                          <ns3:Amount Code="USD">1109</ns3:Amount>
+                          <ns3:Nation>US</ns3:Nation>
+                          <ns3:TaxCode>US</ns3:TaxCode>
+                          <ns3:Description>US Transportation Tax</ns3:Description>
+                        </ns3:Tax>
+                        <ns3:Tax>
+                          <ns3:Amount Code="USD">450</ns3:Amount>
+                          <ns3:Nation>US</ns3:Nation>
+                          <ns3:TaxCode>XF</ns3:TaxCode>
+                          <ns3:Description>US Passenger Facility Charge</ns3:Description>
+                        </ns3:Tax>
+                        <ns3:Tax>
+                          <ns3:Amount Code="USD">480</ns3:Amount>
+                          <ns3:Nation>US</ns3:Nation>
+                          <ns3:TaxCode>ZP</ns3:TaxCode>
+                          <ns3:Description>United States Flight Segment Tax Domestic</ns3:Description>
+                        </ns3:Tax>
+                        <ns3:Tax>
+                          <ns3:Amount Code="USD">560</ns3:Amount>
+                          <ns3:Nation>US</ns3:Nation>
+                          <ns3:TaxCode>AY</ns3:TaxCode>
+                          <ns3:Description>United States Passenger Civil Aviation Security Service Fee</ns3:Description>
+                        </ns3:Tax>
+                      </ns3:Breakdown>
+                    </ns3:Taxes>
+                  </ns3:Price>
+                  <ns3:FareBasis>
+                    <ns3:FareBasisCode refs="Pfcpxb996zfynvsze">
+                      <ns3:Code>LAU7AWDN</ns3:Code>
+                    </ns3:FareBasisCode>
+                    <ns3:FareBasisCityPair>CHIMIAUA</ns3:FareBasisCityPair>
+                    <ns3:RBD>L</ns3:RBD>
+                    <ns3:CabinType>
+                      <ns3:CabinTypeCode>Y</ns3:CabinTypeCode>
+                      <ns3:CabinTypeName>ECONOMY</ns3:CabinTypeName>
+                    </ns3:CabinType>
+                  </ns3:FareBasis>
+                  <ns3:FareRules>
+                    <ns3:Penalty RefundableInd="false">
+                      <ns3:Details>
+                        <ns3:Detail refs="PcncPD359F1C8-E590-441B-9F11N">
+                          <ns3:Type>Cancel</ns3:Type>
+                          <ns3:Amounts>
+                            <ns3:Amount>
+                              <ns3:CurrencyAmountValue Code="USD">0</ns3:CurrencyAmountValue>
+                              <ns3:AmountApplication>MIN</ns3:AmountApplication>
+                            </ns3:Amount>
+                            <ns3:Amount>
+                              <ns3:CurrencyAmountValue Code="USD">0</ns3:CurrencyAmountValue>
+                              <ns3:AmountApplication>MAX</ns3:AmountApplication>
+                            </ns3:Amount>
+                          </ns3:Amounts>
+                        </ns3:Detail>
+                      </ns3:Details>
+                    </ns3:Penalty>
+                    <ns3:AdvanceStay>
+                      <ns3:AdvancePurchase Context="Latest">P7D</ns3:AdvancePurchase>
+                    </ns3:AdvanceStay>
+                    <ns3:Ticketing>
+                      <ns3:Endorsements>
+                        <ns3:Endorsement>NONREF/0VALUAFTDPT</ns3:Endorsement>
+                      </ns3:Endorsements>
+                    </ns3:Ticketing>
+                  </ns3:FareRules>
+                  <ns3:PriceClassRef>Ppcyy7fy1vl8sfcd</ns3:PriceClassRef>
+                  <ns3:SegmentRefs>Isgm01008b79c8d7f</ns3:SegmentRefs>
+                </ns3:FareComponent>
+                <ns3:FareComponent>
+                  <ns3:Price>
+                    <ns3:BaseAmount Code="USD">14740</ns3:BaseAmount>
+                    <ns3:Taxes>
+                      <ns3:Total Code="USD">2595</ns3:Total>
+                      <ns3:Breakdown>
+                        <ns3:Tax>
+                          <ns3:Amount Code="USD">1105</ns3:Amount>
+                          <ns3:Nation>US</ns3:Nation>
+                          <ns3:TaxCode>US</ns3:TaxCode>
+                          <ns3:Description>US Transportation Tax</ns3:Description>
+                        </ns3:Tax>
+                        <ns3:Tax>
+                          <ns3:Amount Code="USD">450</ns3:Amount>
+                          <ns3:Nation>US</ns3:Nation>
+                          <ns3:TaxCode>XF</ns3:TaxCode>
+                          <ns3:Description>US Passenger Facility Charge</ns3:Description>
+                        </ns3:Tax>
+                        <ns3:Tax>
+                          <ns3:Amount Code="USD">480</ns3:Amount>
+                          <ns3:Nation>US</ns3:Nation>
+                          <ns3:TaxCode>ZP</ns3:TaxCode>
+                          <ns3:Description>United States Flight Segment Tax Domestic</ns3:Description>
+                        </ns3:Tax>
+                        <ns3:Tax>
+                          <ns3:Amount Code="USD">560</ns3:Amount>
+                          <ns3:Nation>US</ns3:Nation>
+                          <ns3:TaxCode>AY</ns3:TaxCode>
+                          <ns3:Description>United States Passenger Civil Aviation Security Service Fee</ns3:Description>
+                        </ns3:Tax>
+                      </ns3:Breakdown>
+                    </ns3:Taxes>
+                  </ns3:Price>
+                  <ns3:FareBasis>
+                    <ns3:FareBasisCode refs="Pfcp3f6wvbogp0wf6">
+                      <ns3:Code>KAA2AWDN</ns3:Code>
+                    </ns3:FareBasisCode>
+                    <ns3:FareBasisCityPair>MIACHIUA</ns3:FareBasisCityPair>
+                    <ns3:RBD>K</ns3:RBD>
+                    <ns3:CabinType>
+                      <ns3:CabinTypeCode>Y</ns3:CabinTypeCode>
+                      <ns3:CabinTypeName>ECONOMY</ns3:CabinTypeName>
+                    </ns3:CabinType>
+                  </ns3:FareBasis>
+                  <ns3:FareRules>
+                    <ns3:Penalty RefundableInd="false">
+                      <ns3:Details>
+                        <ns3:Detail refs="PcncPD359F1C8-E590-441B-9F11N">
+                          <ns3:Type>Cancel</ns3:Type>
+                          <ns3:Amounts>
+                            <ns3:Amount>
+                              <ns3:CurrencyAmountValue Code="USD">0</ns3:CurrencyAmountValue>
+                              <ns3:AmountApplication>MIN</ns3:AmountApplication>
+                            </ns3:Amount>
+                            <ns3:Amount>
+                              <ns3:CurrencyAmountValue Code="USD">0</ns3:CurrencyAmountValue>
+                              <ns3:AmountApplication>MAX</ns3:AmountApplication>
+                            </ns3:Amount>
+                          </ns3:Amounts>
+                        </ns3:Detail>
+                      </ns3:Details>
+                    </ns3:Penalty>
+                    <ns3:AdvanceStay>
+                      <ns3:AdvancePurchase Context="Latest">P7D</ns3:AdvancePurchase>
+                    </ns3:AdvanceStay>
+                    <ns3:Ticketing>
+                      <ns3:Endorsements>
+                        <ns3:Endorsement>NONREF/0VALUAFTDPT</ns3:Endorsement>
+                      </ns3:Endorsements>
+                    </ns3:Ticketing>
+                  </ns3:FareRules>
+                  <ns3:PriceClassRef>Ppcyy7fy1vl8sfcd</ns3:PriceClassRef>
+                  <ns3:SegmentRefs>Isgm1d008b79c8d7f</ns3:SegmentRefs>
+                </ns3:FareComponent>
+              </ns3:FareDetail>
+              <ns3:Service>
+                <ns3:ServiceID>Psvc49su4c3zo9jto</ns3:ServiceID>
+                <ns3:PaxRefID>P1</ns3:PaxRefID>
+                <ns3:PaxRefID>P2</ns3:PaxRefID>
+                <ns3:ServiceAssociations>
+                  <ns3:PaxJourneyRefID>Pfltg1gt4kfe3wn79</ns3:PaxJourneyRefID>
+                  <ns3:PaxJourneyRefID>Pfltv118r9wh4y9wn</ns3:PaxJourneyRefID>
+                </ns3:ServiceAssociations>
+              </ns3:Service>
+              <ns3:Price>
+                <ns3:TotalAmount CurCode="USD">69450</ns3:TotalAmount>
+              </ns3:Price>
+            </ns3:OfferItem>
+            <ns3:OfferItem>
+              <ns3:OfferItemID>PD359F1C8-E590-441B-9F1196gtirwumbpj7-3-2</ns3:OfferItemID>
+              <ns3:MandatoryInd>true</ns3:MandatoryInd>
+              <ns3:FareDetail>
+                <ns3:FareIndicatorCode>0</ns3:FareIndicatorCode>
+                <ns3:PassengerRefs>P3</ns3:PassengerRefs>
+                <ns3:Price>
+                  <ns3:BaseAmount Code="USD">29531</ns3:BaseAmount>
+                  <ns3:Taxes>
+                    <ns3:Total Code="USD">5194</ns3:Total>
+                    <ns3:Breakdown>
+                      <ns3:Tax>
+                        <ns3:Amount Code="USD">1109</ns3:Amount>
+                        <ns3:Nation>US</ns3:Nation>
+                        <ns3:TaxCode>US</ns3:TaxCode>
+                        <ns3:Description>US Transportation Tax</ns3:Description>
+                      </ns3:Tax>
+                      <ns3:Tax>
+                        <ns3:Amount Code="USD">1105</ns3:Amount>
+                        <ns3:Nation>US</ns3:Nation>
+                        <ns3:TaxCode>US</ns3:TaxCode>
+                        <ns3:Description>US Transportation Tax</ns3:Description>
+                      </ns3:Tax>
+                      <ns3:Tax>
+                        <ns3:Amount Code="USD">450</ns3:Amount>
+                        <ns3:Nation>US</ns3:Nation>
+                        <ns3:TaxCode>XF</ns3:TaxCode>
+                        <ns3:Description>US Passenger Facility Charge</ns3:Description>
+                      </ns3:Tax>
+                    </ns3:Breakdown>
+                  </ns3:Taxes>
+                </ns3:Price>
+                <ns3:FareComponent>
+                  <ns3:Price>
+                    <ns3:BaseAmount Code="USD">14791</ns3:BaseAmount>
+                    <ns3:Taxes>
+                      <ns3:Total Code="USD">2599</ns3:Total>
+                      <ns3:Breakdown>
+                        <ns3:Tax>
+                          <ns3:Amount Code="USD">1109</ns3:Amount>
+                          <ns3:Nation>US</ns3:Nation>
+                          <ns3:TaxCode>US</ns3:TaxCode>
+                          <ns3:Description>US Transportation Tax</ns3:Description>
+                        </ns3:Tax>
+                        <ns3:Tax>
+                          <ns3:Amount Code="USD">450</ns3:Amount>
+                          <ns3:Nation>US</ns3:Nation>
+                          <ns3:TaxCode>XF</ns3:TaxCode>
+                          <ns3:Description>US Passenger Facility Charge</ns3:Description>
+                        </ns3:Tax>
+                        <ns3:Tax>
+                          <ns3:Amount Code="USD">480</ns3:Amount>
+                          <ns3:Nation>US</ns3:Nation>
+                          <ns3:TaxCode>ZP</ns3:TaxCode>
+                          <ns3:Description>United States Flight Segment Tax Domestic</ns3:Description>
+                        </ns3:Tax>
+                        <ns3:Tax>
+                          <ns3:Amount Code="USD">560</ns3:Amount>
+                          <ns3:Nation>US</ns3:Nation>
+                          <ns3:TaxCode>AY</ns3:TaxCode>
+                          <ns3:Description>United States Passenger Civil Aviation Security Service Fee</ns3:Description>
+                        </ns3:Tax>
+                      </ns3:Breakdown>
+                    </ns3:Taxes>
+                  </ns3:Price>
+                  <ns3:FareBasis>
+                    <ns3:FareBasisCode refs="Pfcpxh0xtbnclhc9o">
+                      <ns3:Code>LAU7AWDN</ns3:Code>
+                    </ns3:FareBasisCode>
+                    <ns3:FareBasisCityPair>CHIMIAUA</ns3:FareBasisCityPair>
+                    <ns3:RBD>L</ns3:RBD>
+                    <ns3:CabinType>
+                      <ns3:CabinTypeCode>Y</ns3:CabinTypeCode>
+                      <ns3:CabinTypeName>ECONOMY</ns3:CabinTypeName>
+                    </ns3:CabinType>
+                  </ns3:FareBasis>
+                  <ns3:TicketDesig>CH00</ns3:TicketDesig>
+                  <ns3:FareRules>
+                    <ns3:Penalty RefundableInd="false">
+                      <ns3:Details>
+                        <ns3:Detail refs="PcncPD359F1C8-E590-441B-9F11N">
+                          <ns3:Type>Cancel</ns3:Type>
+                          <ns3:Amounts>
+                            <ns3:Amount>
+                              <ns3:CurrencyAmountValue Code="USD">0</ns3:CurrencyAmountValue>
+                              <ns3:AmountApplication>MIN</ns3:AmountApplication>
+                            </ns3:Amount>
+                            <ns3:Amount>
+                              <ns3:CurrencyAmountValue Code="USD">0</ns3:CurrencyAmountValue>
+                              <ns3:AmountApplication>MAX</ns3:AmountApplication>
+                            </ns3:Amount>
+                          </ns3:Amounts>
+                        </ns3:Detail>
+                      </ns3:Details>
+                    </ns3:Penalty>
+                    <ns3:AdvanceStay>
+                      <ns3:AdvancePurchase Context="Latest">P7D</ns3:AdvancePurchase>
+                    </ns3:AdvanceStay>
+                    <ns3:Ticketing>
+                      <ns3:Endorsements>
+                        <ns3:Endorsement>NONREF/0VALUAFTDPT</ns3:Endorsement>
+                      </ns3:Endorsements>
+                    </ns3:Ticketing>
+                  </ns3:FareRules>
+                  <ns3:PriceClassRef>Ppcyy7fy1vl8sfcd</ns3:PriceClassRef>
+                  <ns3:SegmentRefs>Isgm01008b79c8d7f</ns3:SegmentRefs>
+                </ns3:FareComponent>
+                <ns3:FareComponent>
+                  <ns3:Price>
+                    <ns3:BaseAmount Code="USD">14740</ns3:BaseAmount>
+                    <ns3:Taxes>
+                      <ns3:Total Code="USD">2595</ns3:Total>
+                      <ns3:Breakdown>
+                        <ns3:Tax>
+                          <ns3:Amount Code="USD">1105</ns3:Amount>
+                          <ns3:Nation>US</ns3:Nation>
+                          <ns3:TaxCode>US</ns3:TaxCode>
+                          <ns3:Description>US Transportation Tax</ns3:Description>
+                        </ns3:Tax>
+                        <ns3:Tax>
+                          <ns3:Amount Code="USD">450</ns3:Amount>
+                          <ns3:Nation>US</ns3:Nation>
+                          <ns3:TaxCode>XF</ns3:TaxCode>
+                          <ns3:Description>US Passenger Facility Charge</ns3:Description>
+                        </ns3:Tax>
+                        <ns3:Tax>
+                          <ns3:Amount Code="USD">480</ns3:Amount>
+                          <ns3:Nation>US</ns3:Nation>
+                          <ns3:TaxCode>ZP</ns3:TaxCode>
+                          <ns3:Description>United States Flight Segment Tax Domestic</ns3:Description>
+                        </ns3:Tax>
+                        <ns3:Tax>
+                          <ns3:Amount Code="USD">560</ns3:Amount>
+                          <ns3:Nation>US</ns3:Nation>
+                          <ns3:TaxCode>AY</ns3:TaxCode>
+                          <ns3:Description>United States Passenger Civil Aviation Security Service Fee</ns3:Description>
+                        </ns3:Tax>
+                      </ns3:Breakdown>
+                    </ns3:Taxes>
+                  </ns3:Price>
+                  <ns3:FareBasis>
+                    <ns3:FareBasisCode refs="Pfcpd6n0x00pywcwo">
+                      <ns3:Code>KAA2AWDN</ns3:Code>
+                    </ns3:FareBasisCode>
+                    <ns3:FareBasisCityPair>MIACHIUA</ns3:FareBasisCityPair>
+                    <ns3:RBD>K</ns3:RBD>
+                    <ns3:CabinType>
+                      <ns3:CabinTypeCode>Y</ns3:CabinTypeCode>
+                      <ns3:CabinTypeName>ECONOMY</ns3:CabinTypeName>
+                    </ns3:CabinType>
+                  </ns3:FareBasis>
+                  <ns3:TicketDesig>CH00</ns3:TicketDesig>
+                  <ns3:FareRules>
+                    <ns3:Penalty RefundableInd="false">
+                      <ns3:Details>
+                        <ns3:Detail refs="PcncPD359F1C8-E590-441B-9F11N">
+                          <ns3:Type>Cancel</ns3:Type>
+                          <ns3:Amounts>
+                            <ns3:Amount>
+                              <ns3:CurrencyAmountValue Code="USD">0</ns3:CurrencyAmountValue>
+                              <ns3:AmountApplication>MIN</ns3:AmountApplication>
+                            </ns3:Amount>
+                            <ns3:Amount>
+                              <ns3:CurrencyAmountValue Code="USD">0</ns3:CurrencyAmountValue>
+                              <ns3:AmountApplication>MAX</ns3:AmountApplication>
+                            </ns3:Amount>
+                          </ns3:Amounts>
+                        </ns3:Detail>
+                      </ns3:Details>
+                    </ns3:Penalty>
+                    <ns3:AdvanceStay>
+                      <ns3:AdvancePurchase Context="Latest">P7D</ns3:AdvancePurchase>
+                    </ns3:AdvanceStay>
+                    <ns3:Ticketing>
+                      <ns3:Endorsements>
+                        <ns3:Endorsement>NONREF/0VALUAFTDPT</ns3:Endorsement>
+                      </ns3:Endorsements>
+                    </ns3:Ticketing>
+                  </ns3:FareRules>
+                  <ns3:PriceClassRef>Ppcyy7fy1vl8sfcd</ns3:PriceClassRef>
+                  <ns3:SegmentRefs>Isgm1d008b79c8d7f</ns3:SegmentRefs>
+                </ns3:FareComponent>
+              </ns3:FareDetail>
+              <ns3:Service>
+                <ns3:ServiceID>Psvch7ht9ct0zynx7</ns3:ServiceID>
+                <ns3:PaxRefID>P3</ns3:PaxRefID>
+                <ns3:ServiceAssociations>
+                  <ns3:PaxJourneyRefID>Pfltg1gt4kfe3wn79</ns3:PaxJourneyRefID>
+                  <ns3:PaxJourneyRefID>Pfltv118r9wh4y9wn</ns3:PaxJourneyRefID>
+                </ns3:ServiceAssociations>
+              </ns3:Service>
+              <ns3:Price>
+                <ns3:TotalAmount CurCode="USD">34725</ns3:TotalAmount>
+              </ns3:Price>
+            </ns3:OfferItem>
+            <ns3:TotalPrice>
+              <ns3:TotalAmount CurCode="USD">104175</ns3:TotalAmount>
+            </ns3:TotalPrice>
+          </ns3:Offer>
+          <ns3:Offer>
+            <ns3:OfferID>ERAedP7yYrS9Svh~D2Z3H2PC_1A_f79dc3fc-f9f5-462f-9989-e94ec9b1aa64_1A_PD359F1C8-E590-441B-9F115gzvv92fbisoy-4</ns3:OfferID>
+            <ns3:OwnerCode>UAD</ns3:OwnerCode>
+            <ns3:ValidatingCarrierCode>UA</ns3:ValidatingCarrierCode>
+            <ns3:OfferExpirationDateTime>2023-06-28T20:16:27Z</ns3:OfferExpirationDateTime>
+            <ns3:PaymentTimeLimitDateTime>2023-06-29T23:59:00</ns3:PaymentTimeLimitDateTime>
+            <ns3:JourneyOverview>
+              <ns3:JourneyPriceClass>
+                <ns3:PriceClassRefID>Ppcy2ip3i19xkhsu</ns3:PriceClassRefID>
+                <ns3:PaxJourneyRefID>Pfltg1gt4kfe3wn79</ns3:PaxJourneyRefID>
+              </ns3:JourneyPriceClass>
+              <ns3:JourneyPriceClass>
+                <ns3:PriceClassRefID>Ppcy2ip3i19xkhsu</ns3:PriceClassRefID>
+                <ns3:PaxJourneyRefID>Pfltv118r9wh4y9wn</ns3:PaxJourneyRefID>
+              </ns3:JourneyPriceClass>
+            </ns3:JourneyOverview>
+            <ns3:PTC_OfferParameters>
+              <ns3:PTC_PricedCode>ADT</ns3:PTC_PricedCode>
+              <ns3:PTC_RequestedCode>ADT</ns3:PTC_RequestedCode>
+              <ns3:RequestedPaxNumber>2</ns3:RequestedPaxNumber>
+              <ns3:PricedPaxNumber>2</ns3:PricedPaxNumber>
+            </ns3:PTC_OfferParameters>
+            <ns3:PTC_OfferParameters>
+              <ns3:PTC_PricedCode>CNN</ns3:PTC_PricedCode>
+              <ns3:PTC_RequestedCode>CNN</ns3:PTC_RequestedCode>
+              <ns3:RequestedPaxNumber>1</ns3:RequestedPaxNumber>
+              <ns3:PricedPaxNumber>1</ns3:PricedPaxNumber>
+            </ns3:PTC_OfferParameters>
+            <ns3:OfferItem>
+              <ns3:OfferItemID>PD359F1C8-E590-441B-9F115gzvv92fbisoy-4-1</ns3:OfferItemID>
+              <ns3:MandatoryInd>true</ns3:MandatoryInd>
+              <ns3:FareDetail>
+                <ns3:FareIndicatorCode>0</ns3:FareIndicatorCode>
+                <ns3:PassengerRefs>P1</ns3:PassengerRefs>
+                <ns3:PassengerRefs>P2</ns3:PassengerRefs>
+                <ns3:Price>
+                  <ns3:BaseAmount Code="USD">115502</ns3:BaseAmount>
+                  <ns3:Taxes>
+                    <ns3:Total Code="USD">11643</ns3:Total>
+                    <ns3:Breakdown>
+                      <ns3:Tax>
+                        <ns3:Amount Code="USD">3123</ns3:Amount>
+                        <ns3:Nation>US</ns3:Nation>
+                        <ns3:TaxCode>US</ns3:TaxCode>
+                        <ns3:Description>US Transportation Tax</ns3:Description>
+                      </ns3:Tax>
+                      <ns3:Tax>
+                        <ns3:Amount Code="USD">5540</ns3:Amount>
+                        <ns3:Nation>US</ns3:Nation>
+                        <ns3:TaxCode>US</ns3:TaxCode>
+                        <ns3:Description>US Transportation Tax</ns3:Description>
+                      </ns3:Tax>
+                      <ns3:Tax>
+                        <ns3:Amount Code="USD">450</ns3:Amount>
+                        <ns3:Nation>US</ns3:Nation>
+                        <ns3:TaxCode>XF</ns3:TaxCode>
+                        <ns3:Description>US Passenger Facility Charge</ns3:Description>
+                      </ns3:Tax>
+                    </ns3:Breakdown>
+                  </ns3:Taxes>
+                </ns3:Price>
+                <ns3:FareComponent>
+                  <ns3:Price>
+                    <ns3:BaseAmount Code="USD">41644</ns3:BaseAmount>
+                    <ns3:Taxes>
+                      <ns3:Total Code="USD">4613</ns3:Total>
+                      <ns3:Breakdown>
+                        <ns3:Tax>
+                          <ns3:Amount Code="USD">3123</ns3:Amount>
+                          <ns3:Nation>US</ns3:Nation>
+                          <ns3:TaxCode>US</ns3:TaxCode>
+                          <ns3:Description>US Transportation Tax</ns3:Description>
+                        </ns3:Tax>
+                        <ns3:Tax>
+                          <ns3:Amount Code="USD">450</ns3:Amount>
+                          <ns3:Nation>US</ns3:Nation>
+                          <ns3:TaxCode>XF</ns3:TaxCode>
+                          <ns3:Description>US Passenger Facility Charge</ns3:Description>
+                        </ns3:Tax>
+                        <ns3:Tax>
+                          <ns3:Amount Code="USD">480</ns3:Amount>
+                          <ns3:Nation>US</ns3:Nation>
+                          <ns3:TaxCode>ZP</ns3:TaxCode>
+                          <ns3:Description>United States Flight Segment Tax Domestic</ns3:Description>
+                        </ns3:Tax>
+                        <ns3:Tax>
+                          <ns3:Amount Code="USD">560</ns3:Amount>
+                          <ns3:Nation>US</ns3:Nation>
+                          <ns3:TaxCode>AY</ns3:TaxCode>
+                          <ns3:Description>United States Passenger Civil Aviation Security Service Fee</ns3:Description>
+                        </ns3:Tax>
+                      </ns3:Breakdown>
+                    </ns3:Taxes>
+                  </ns3:Price>
+                  <ns3:FareBasis>
+                    <ns3:FareBasisCode refs="Pfcpwg6bo01ide5bt">
+                      <ns3:Code>KAU2AWFN</ns3:Code>
+                    </ns3:FareBasisCode>
+                    <ns3:FareBasisCityPair>CHIMIAUA</ns3:FareBasisCityPair>
+                    <ns3:RBD>P</ns3:RBD>
+                    <ns3:CabinType>
+                      <ns3:CabinTypeCode>F</ns3:CabinTypeCode>
+                      <ns3:CabinTypeName>FIRST</ns3:CabinTypeName>
+                    </ns3:CabinType>
+                  </ns3:FareBasis>
+                  <ns3:FareRules>
+                    <ns3:Penalty RefundableInd="false">
+                      <ns3:Details>
+                        <ns3:Detail refs="PcncPD359F1C8-E590-441B-9F11N">
+                          <ns3:Type>Cancel</ns3:Type>
+                          <ns3:Amounts>
+                            <ns3:Amount>
+                              <ns3:CurrencyAmountValue Code="USD">0</ns3:CurrencyAmountValue>
+                              <ns3:AmountApplication>MIN</ns3:AmountApplication>
+                            </ns3:Amount>
+                            <ns3:Amount>
+                              <ns3:CurrencyAmountValue Code="USD">0</ns3:CurrencyAmountValue>
+                              <ns3:AmountApplication>MAX</ns3:AmountApplication>
+                            </ns3:Amount>
+                          </ns3:Amounts>
+                        </ns3:Detail>
+                      </ns3:Details>
+                    </ns3:Penalty>
+                    <ns3:AdvanceStay>
+                      <ns3:AdvancePurchase Context="Latest">P21D</ns3:AdvancePurchase>
+                    </ns3:AdvanceStay>
+                    <ns3:Ticketing>
+                      <ns3:Endorsements>
+                        <ns3:Endorsement>NONREF/0VALUAFTDPT</ns3:Endorsement>
+                      </ns3:Endorsements>
+                    </ns3:Ticketing>
+                  </ns3:FareRules>
+                  <ns3:PriceClassRef>Ppcy2ip3i19xkhsu</ns3:PriceClassRef>
+                  <ns3:SegmentRefs>Isgm01008b79c8d7f</ns3:SegmentRefs>
+                </ns3:FareComponent>
+                <ns3:FareComponent>
+                  <ns3:Price>
+                    <ns3:BaseAmount Code="USD">73858</ns3:BaseAmount>
+                    <ns3:Taxes>
+                      <ns3:Total Code="USD">7030</ns3:Total>
+                      <ns3:Breakdown>
+                        <ns3:Tax>
+                          <ns3:Amount Code="USD">5540</ns3:Amount>
+                          <ns3:Nation>US</ns3:Nation>
+                          <ns3:TaxCode>US</ns3:TaxCode>
+                          <ns3:Description>US Transportation Tax</ns3:Description>
+                        </ns3:Tax>
+                        <ns3:Tax>
+                          <ns3:Amount Code="USD">450</ns3:Amount>
+                          <ns3:Nation>US</ns3:Nation>
+                          <ns3:TaxCode>XF</ns3:TaxCode>
+                          <ns3:Description>US Passenger Facility Charge</ns3:Description>
+                        </ns3:Tax>
+                        <ns3:Tax>
+                          <ns3:Amount Code="USD">480</ns3:Amount>
+                          <ns3:Nation>US</ns3:Nation>
+                          <ns3:TaxCode>ZP</ns3:TaxCode>
+                          <ns3:Description>United States Flight Segment Tax Domestic</ns3:Description>
+                        </ns3:Tax>
+                        <ns3:Tax>
+                          <ns3:Amount Code="USD">560</ns3:Amount>
+                          <ns3:Nation>US</ns3:Nation>
+                          <ns3:TaxCode>AY</ns3:TaxCode>
+                          <ns3:Description>United States Passenger Civil Aviation Security Service Fee</ns3:Description>
+                        </ns3:Tax>
+                      </ns3:Breakdown>
+                    </ns3:Taxes>
+                  </ns3:Price>
+                  <ns3:FareBasis>
+                    <ns3:FareBasisCode refs="Pfcpc6dp9p1tii5by">
+                      <ns3:Code>VAU4AFFN</ns3:Code>
+                    </ns3:FareBasisCode>
+                    <ns3:FareBasisCityPair>MIACHIUA</ns3:FareBasisCityPair>
+                    <ns3:RBD>Z</ns3:RBD>
+                    <ns3:CabinType>
+                      <ns3:CabinTypeCode>F</ns3:CabinTypeCode>
+                      <ns3:CabinTypeName>FIRST</ns3:CabinTypeName>
+                    </ns3:CabinType>
+                  </ns3:FareBasis>
+                  <ns3:FareRules>
+                    <ns3:Penalty RefundableInd="false">
+                      <ns3:Details>
+                        <ns3:Detail refs="PcncPD359F1C8-E590-441B-9F11N">
+                          <ns3:Type>Cancel</ns3:Type>
+                          <ns3:Amounts>
+                            <ns3:Amount>
+                              <ns3:CurrencyAmountValue Code="USD">0</ns3:CurrencyAmountValue>
+                              <ns3:AmountApplication>MIN</ns3:AmountApplication>
+                            </ns3:Amount>
+                            <ns3:Amount>
+                              <ns3:CurrencyAmountValue Code="USD">0</ns3:CurrencyAmountValue>
+                              <ns3:AmountApplication>MAX</ns3:AmountApplication>
+                            </ns3:Amount>
+                          </ns3:Amounts>
+                        </ns3:Detail>
+                      </ns3:Details>
+                    </ns3:Penalty>
+                    <ns3:AdvanceStay>
+                      <ns3:AdvancePurchase Context="Latest">P21D</ns3:AdvancePurchase>
+                    </ns3:AdvanceStay>
+                    <ns3:Ticketing>
+                      <ns3:Endorsements>
+                        <ns3:Endorsement>NONREF/0VALUAFTDPT</ns3:Endorsement>
+                      </ns3:Endorsements>
+                    </ns3:Ticketing>
+                  </ns3:FareRules>
+                  <ns3:PriceClassRef>Ppcy2ip3i19xkhsu</ns3:PriceClassRef>
+                  <ns3:SegmentRefs>Isgm1d008b79c8d7f</ns3:SegmentRefs>
+                </ns3:FareComponent>
+              </ns3:FareDetail>
+              <ns3:Service>
+                <ns3:ServiceID>Psvcmug7umqxi4wke</ns3:ServiceID>
+                <ns3:PaxRefID>P1</ns3:PaxRefID>
+                <ns3:PaxRefID>P2</ns3:PaxRefID>
+                <ns3:ServiceAssociations>
+                  <ns3:PaxJourneyRefID>Pfltg1gt4kfe3wn79</ns3:PaxJourneyRefID>
+                  <ns3:PaxJourneyRefID>Pfltv118r9wh4y9wn</ns3:PaxJourneyRefID>
+                </ns3:ServiceAssociations>
+              </ns3:Service>
+              <ns3:Price>
+                <ns3:TotalAmount CurCode="USD">254290</ns3:TotalAmount>
+              </ns3:Price>
+            </ns3:OfferItem>
+            <ns3:OfferItem>
+              <ns3:OfferItemID>PD359F1C8-E590-441B-9F115gzvv92fbisoy-4-2</ns3:OfferItemID>
+              <ns3:MandatoryInd>true</ns3:MandatoryInd>
+              <ns3:FareDetail>
+                <ns3:FareIndicatorCode>0</ns3:FareIndicatorCode>
+                <ns3:PassengerRefs>P3</ns3:PassengerRefs>
+                <ns3:Price>
+                  <ns3:BaseAmount Code="USD">115502</ns3:BaseAmount>
+                  <ns3:Taxes>
+                    <ns3:Total Code="USD">11643</ns3:Total>
+                    <ns3:Breakdown>
+                      <ns3:Tax>
+                        <ns3:Amount Code="USD">3123</ns3:Amount>
+                        <ns3:Nation>US</ns3:Nation>
+                        <ns3:TaxCode>US</ns3:TaxCode>
+                        <ns3:Description>US Transportation Tax</ns3:Description>
+                      </ns3:Tax>
+                      <ns3:Tax>
+                        <ns3:Amount Code="USD">5540</ns3:Amount>
+                        <ns3:Nation>US</ns3:Nation>
+                        <ns3:TaxCode>US</ns3:TaxCode>
+                        <ns3:Description>US Transportation Tax</ns3:Description>
+                      </ns3:Tax>
+                      <ns3:Tax>
+                        <ns3:Amount Code="USD">450</ns3:Amount>
+                        <ns3:Nation>US</ns3:Nation>
+                        <ns3:TaxCode>XF</ns3:TaxCode>
+                        <ns3:Description>US Passenger Facility Charge</ns3:Description>
+                      </ns3:Tax>
+                    </ns3:Breakdown>
+                  </ns3:Taxes>
+                </ns3:Price>
+                <ns3:FareComponent>
+                  <ns3:Price>
+                    <ns3:BaseAmount Code="USD">41644</ns3:BaseAmount>
+                    <ns3:Taxes>
+                      <ns3:Total Code="USD">4613</ns3:Total>
+                      <ns3:Breakdown>
+                        <ns3:Tax>
+                          <ns3:Amount Code="USD">3123</ns3:Amount>
+                          <ns3:Nation>US</ns3:Nation>
+                          <ns3:TaxCode>US</ns3:TaxCode>
+                          <ns3:Description>US Transportation Tax</ns3:Description>
+                        </ns3:Tax>
+                        <ns3:Tax>
+                          <ns3:Amount Code="USD">450</ns3:Amount>
+                          <ns3:Nation>US</ns3:Nation>
+                          <ns3:TaxCode>XF</ns3:TaxCode>
+                          <ns3:Description>US Passenger Facility Charge</ns3:Description>
+                        </ns3:Tax>
+                        <ns3:Tax>
+                          <ns3:Amount Code="USD">480</ns3:Amount>
+                          <ns3:Nation>US</ns3:Nation>
+                          <ns3:TaxCode>ZP</ns3:TaxCode>
+                          <ns3:Description>United States Flight Segment Tax Domestic</ns3:Description>
+                        </ns3:Tax>
+                        <ns3:Tax>
+                          <ns3:Amount Code="USD">560</ns3:Amount>
+                          <ns3:Nation>US</ns3:Nation>
+                          <ns3:TaxCode>AY</ns3:TaxCode>
+                          <ns3:Description>United States Passenger Civil Aviation Security Service Fee</ns3:Description>
+                        </ns3:Tax>
+                      </ns3:Breakdown>
+                    </ns3:Taxes>
+                  </ns3:Price>
+                  <ns3:FareBasis>
+                    <ns3:FareBasisCode refs="Pfcpordlnw9igcr19">
+                      <ns3:Code>KAU2AWFN</ns3:Code>
+                    </ns3:FareBasisCode>
+                    <ns3:FareBasisCityPair>CHIMIAUA</ns3:FareBasisCityPair>
+                    <ns3:RBD>P</ns3:RBD>
+                    <ns3:CabinType>
+                      <ns3:CabinTypeCode>F</ns3:CabinTypeCode>
+                      <ns3:CabinTypeName>FIRST</ns3:CabinTypeName>
+                    </ns3:CabinType>
+                  </ns3:FareBasis>
+                  <ns3:TicketDesig>CH00</ns3:TicketDesig>
+                  <ns3:FareRules>
+                    <ns3:Penalty RefundableInd="false">
+                      <ns3:Details>
+                        <ns3:Detail refs="PcncPD359F1C8-E590-441B-9F11N">
+                          <ns3:Type>Cancel</ns3:Type>
+                          <ns3:Amounts>
+                            <ns3:Amount>
+                              <ns3:CurrencyAmountValue Code="USD">0</ns3:CurrencyAmountValue>
+                              <ns3:AmountApplication>MIN</ns3:AmountApplication>
+                            </ns3:Amount>
+                            <ns3:Amount>
+                              <ns3:CurrencyAmountValue Code="USD">0</ns3:CurrencyAmountValue>
+                              <ns3:AmountApplication>MAX</ns3:AmountApplication>
+                            </ns3:Amount>
+                          </ns3:Amounts>
+                        </ns3:Detail>
+                      </ns3:Details>
+                    </ns3:Penalty>
+                    <ns3:AdvanceStay>
+                      <ns3:AdvancePurchase Context="Latest">P21D</ns3:AdvancePurchase>
+                    </ns3:AdvanceStay>
+                    <ns3:Ticketing>
+                      <ns3:Endorsements>
+                        <ns3:Endorsement>NONREF/0VALUAFTDPT</ns3:Endorsement>
+                      </ns3:Endorsements>
+                    </ns3:Ticketing>
+                  </ns3:FareRules>
+                  <ns3:PriceClassRef>Ppcy2ip3i19xkhsu</ns3:PriceClassRef>
+                  <ns3:SegmentRefs>Isgm01008b79c8d7f</ns3:SegmentRefs>
+                </ns3:FareComponent>
+                <ns3:FareComponent>
+                  <ns3:Price>
+                    <ns3:BaseAmount Code="USD">73858</ns3:BaseAmount>
+                    <ns3:Taxes>
+                      <ns3:Total Code="USD">7030</ns3:Total>
+                      <ns3:Breakdown>
+                        <ns3:Tax>
+                          <ns3:Amount Code="USD">5540</ns3:Amount>
+                          <ns3:Nation>US</ns3:Nation>
+                          <ns3:TaxCode>US</ns3:TaxCode>
+                          <ns3:Description>US Transportation Tax</ns3:Description>
+                        </ns3:Tax>
+                        <ns3:Tax>
+                          <ns3:Amount Code="USD">450</ns3:Amount>
+                          <ns3:Nation>US</ns3:Nation>
+                          <ns3:TaxCode>XF</ns3:TaxCode>
+                          <ns3:Description>US Passenger Facility Charge</ns3:Description>
+                        </ns3:Tax>
+                        <ns3:Tax>
+                          <ns3:Amount Code="USD">480</ns3:Amount>
+                          <ns3:Nation>US</ns3:Nation>
+                          <ns3:TaxCode>ZP</ns3:TaxCode>
+                          <ns3:Description>United States Flight Segment Tax Domestic</ns3:Description>
+                        </ns3:Tax>
+                        <ns3:Tax>
+                          <ns3:Amount Code="USD">560</ns3:Amount>
+                          <ns3:Nation>US</ns3:Nation>
+                          <ns3:TaxCode>AY</ns3:TaxCode>
+                          <ns3:Description>United States Passenger Civil Aviation Security Service Fee</ns3:Description>
+                        </ns3:Tax>
+                      </ns3:Breakdown>
+                    </ns3:Taxes>
+                  </ns3:Price>
+                  <ns3:FareBasis>
+                    <ns3:FareBasisCode refs="Pfcp2to1aamv4gox1">
+                      <ns3:Code>VAU4AFFN</ns3:Code>
+                    </ns3:FareBasisCode>
+                    <ns3:FareBasisCityPair>MIACHIUA</ns3:FareBasisCityPair>
+                    <ns3:RBD>Z</ns3:RBD>
+                    <ns3:CabinType>
+                      <ns3:CabinTypeCode>F</ns3:CabinTypeCode>
+                      <ns3:CabinTypeName>FIRST</ns3:CabinTypeName>
+                    </ns3:CabinType>
+                  </ns3:FareBasis>
+                  <ns3:TicketDesig>CH00</ns3:TicketDesig>
+                  <ns3:FareRules>
+                    <ns3:Penalty RefundableInd="false">
+                      <ns3:Details>
+                        <ns3:Detail refs="PcncPD359F1C8-E590-441B-9F11N">
+                          <ns3:Type>Cancel</ns3:Type>
+                          <ns3:Amounts>
+                            <ns3:Amount>
+                              <ns3:CurrencyAmountValue Code="USD">0</ns3:CurrencyAmountValue>
+                              <ns3:AmountApplication>MIN</ns3:AmountApplication>
+                            </ns3:Amount>
+                            <ns3:Amount>
+                              <ns3:CurrencyAmountValue Code="USD">0</ns3:CurrencyAmountValue>
+                              <ns3:AmountApplication>MAX</ns3:AmountApplication>
+                            </ns3:Amount>
+                          </ns3:Amounts>
+                        </ns3:Detail>
+                      </ns3:Details>
+                    </ns3:Penalty>
+                    <ns3:AdvanceStay>
+                      <ns3:AdvancePurchase Context="Latest">P21D</ns3:AdvancePurchase>
+                    </ns3:AdvanceStay>
+                    <ns3:Ticketing>
+                      <ns3:Endorsements>
+                        <ns3:Endorsement>NONREF/0VALUAFTDPT</ns3:Endorsement>
+                      </ns3:Endorsements>
+                    </ns3:Ticketing>
+                  </ns3:FareRules>
+                  <ns3:PriceClassRef>Ppcy2ip3i19xkhsu</ns3:PriceClassRef>
+                  <ns3:SegmentRefs>Isgm1d008b79c8d7f</ns3:SegmentRefs>
+                </ns3:FareComponent>
+              </ns3:FareDetail>
+              <ns3:Service>
+                <ns3:ServiceID>Psvcev12srn29n9s3</ns3:ServiceID>
+                <ns3:PaxRefID>P3</ns3:PaxRefID>
+                <ns3:ServiceAssociations>
+                  <ns3:PaxJourneyRefID>Pfltg1gt4kfe3wn79</ns3:PaxJourneyRefID>
+                  <ns3:PaxJourneyRefID>Pfltv118r9wh4y9wn</ns3:PaxJourneyRefID>
+                </ns3:ServiceAssociations>
+              </ns3:Service>
+              <ns3:Price>
+                <ns3:TotalAmount CurCode="USD">127145</ns3:TotalAmount>
+              </ns3:Price>
+            </ns3:OfferItem>
+            <ns3:TotalPrice>
+              <ns3:TotalAmount CurCode="USD">381435</ns3:TotalAmount>
+            </ns3:TotalPrice>
+          </ns3:Offer>
+        </ns3:OtherOffers>
+        <ns3:PricedOffer>
+          <ns3:Offer>
+            <ns3:OfferID>ERAedP7yYrS9Svh~D2Z3H2PC_1A_f79dc3fc-f9f5-462f-9989-e94ec9b1aa64_1A_PD359F1C8-E590-441B-9F11d91z3e4wqp0ff-1</ns3:OfferID>
+            <ns3:OwnerCode>UAD</ns3:OwnerCode>
+            <ns3:ValidatingCarrierCode>UA</ns3:ValidatingCarrierCode>
+            <ns3:OfferExpirationDateTime>2023-06-28T20:16:27Z</ns3:OfferExpirationDateTime>
+            <ns3:PaymentTimeLimitDateTime>2023-06-29T23:59:00</ns3:PaymentTimeLimitDateTime>
+            <ns3:BaggageAllowance>
+              <ns3:PaxJourneyRefID>Pfltg1gt4kfe3wn79</ns3:PaxJourneyRefID>
+              <ns3:PaxRefID>P1</ns3:PaxRefID>
+              <ns3:PaxRefID>P2</ns3:PaxRefID>
+              <ns3:PaxRefID>P3</ns3:PaxRefID>
+              <ns3:BaggageAllowanceRefID>Pbgae4ohk7bthtq96</ns3:BaggageAllowanceRefID>
+            </ns3:BaggageAllowance>
+            <ns3:JourneyOverview>
+              <ns3:JourneyPriceClass>
+                <ns3:PriceClassRefID>Ppce1tp0zyrcc0d8</ns3:PriceClassRefID>
+                <ns3:PaxJourneyRefID>Pfltg1gt4kfe3wn79</ns3:PaxJourneyRefID>
+              </ns3:JourneyPriceClass>
+              <ns3:JourneyPriceClass>
+                <ns3:PriceClassRefID>Ppce1tp0zyrcc0d8</ns3:PriceClassRefID>
+                <ns3:PaxJourneyRefID>Pfltv118r9wh4y9wn</ns3:PaxJourneyRefID>
+              </ns3:JourneyPriceClass>
+            </ns3:JourneyOverview>
+            <ns3:PTC_OfferParameters>
+              <ns3:PTC_PricedCode>ADT</ns3:PTC_PricedCode>
+              <ns3:PTC_RequestedCode>ADT</ns3:PTC_RequestedCode>
+              <ns3:RequestedPaxNumber>2</ns3:RequestedPaxNumber>
+              <ns3:PricedPaxNumber>2</ns3:PricedPaxNumber>
+            </ns3:PTC_OfferParameters>
+            <ns3:PTC_OfferParameters>
+              <ns3:PTC_PricedCode>CNN</ns3:PTC_PricedCode>
+              <ns3:PTC_RequestedCode>CNN</ns3:PTC_RequestedCode>
+              <ns3:RequestedPaxNumber>1</ns3:RequestedPaxNumber>
+              <ns3:PricedPaxNumber>1</ns3:PricedPaxNumber>
+            </ns3:PTC_OfferParameters>
+            <ns3:OfferItem>
+              <ns3:OfferItemID>PD359F1C8-E590-441B-9F11d91z3e4wqp0ff-1-1</ns3:OfferItemID>
+              <ns3:MandatoryInd>true</ns3:MandatoryInd>
+              <ns3:FareDetail>
+                <ns3:FareIndicatorCode>0</ns3:FareIndicatorCode>
+                <ns3:PassengerRefs>P1</ns3:PassengerRefs>
+                <ns3:PassengerRefs>P2</ns3:PassengerRefs>
+                <ns3:Price>
+                  <ns3:BaseAmount Code="USD">23019</ns3:BaseAmount>
+                  <ns3:Taxes>
+                    <ns3:Total Code="USD">4706</ns3:Total>
+                    <ns3:Breakdown>
+                      <ns3:Tax>
+                        <ns3:Amount Code="USD">865</ns3:Amount>
+                        <ns3:Nation>US</ns3:Nation>
+                        <ns3:TaxCode>US</ns3:TaxCode>
+                        <ns3:Description>US Transportation Tax</ns3:Description>
+                      </ns3:Tax>
+                      <ns3:Tax>
+                        <ns3:Amount Code="USD">861</ns3:Amount>
+                        <ns3:Nation>US</ns3:Nation>
+                        <ns3:TaxCode>US</ns3:TaxCode>
+                        <ns3:Description>US Transportation Tax</ns3:Description>
+                      </ns3:Tax>
+                      <ns3:Tax>
+                        <ns3:Amount Code="USD">450</ns3:Amount>
+                        <ns3:Nation>US</ns3:Nation>
+                        <ns3:TaxCode>XF</ns3:TaxCode>
+                        <ns3:Description>US Passenger Facility Charge</ns3:Description>
+                      </ns3:Tax>
+                    </ns3:Breakdown>
+                  </ns3:Taxes>
+                </ns3:Price>
+                <ns3:FareComponent>
+                  <ns3:Price>
+                    <ns3:BaseAmount Code="USD">11535</ns3:BaseAmount>
+                    <ns3:Taxes>
+                      <ns3:Total Code="USD">2355</ns3:Total>
+                      <ns3:Breakdown>
+                        <ns3:Tax>
+                          <ns3:Amount Code="USD">865</ns3:Amount>
+                          <ns3:Nation>US</ns3:Nation>
+                          <ns3:TaxCode>US</ns3:TaxCode>
+                          <ns3:Description>US Transportation Tax</ns3:Description>
+                        </ns3:Tax>
+                        <ns3:Tax>
+                          <ns3:Amount Code="USD">450</ns3:Amount>
+                          <ns3:Nation>US</ns3:Nation>
+                          <ns3:TaxCode>XF</ns3:TaxCode>
+                          <ns3:Description>US Passenger Facility Charge</ns3:Description>
+                        </ns3:Tax>
+                        <ns3:Tax>
+                          <ns3:Amount Code="USD">480</ns3:Amount>
+                          <ns3:Nation>US</ns3:Nation>
+                          <ns3:TaxCode>ZP</ns3:TaxCode>
+                          <ns3:Description>United States Flight Segment Tax Domestic</ns3:Description>
+                        </ns3:Tax>
+                        <ns3:Tax>
+                          <ns3:Amount Code="USD">560</ns3:Amount>
+                          <ns3:Nation>US</ns3:Nation>
+                          <ns3:TaxCode>AY</ns3:TaxCode>
+                          <ns3:Description>United States Passenger Civil Aviation Security Service Fee</ns3:Description>
+                        </ns3:Tax>
+                      </ns3:Breakdown>
+                    </ns3:Taxes>
+                  </ns3:Price>
+                  <ns3:FareBasis>
+                    <ns3:FareBasisCode refs="Pfcp6h16c5051fpot">
+                      <ns3:Code>LAU7AWBN</ns3:Code>
+                    </ns3:FareBasisCode>
+                    <ns3:FareBasisCityPair>CHIMIAUA</ns3:FareBasisCityPair>
+                    <ns3:RBD>N</ns3:RBD>
+                    <ns3:CabinType>
+                      <ns3:CabinTypeCode>Y</ns3:CabinTypeCode>
+                      <ns3:CabinTypeName>ECONOMY</ns3:CabinTypeName>
+                    </ns3:CabinType>
+                  </ns3:FareBasis>
+                  <ns3:FareRules>
+                    <ns3:Penalty CancelFeeInd="false" ChangeFeeInd="true" RefundableInd="false">
+                      <ns3:Details>
+                        <ns3:Detail refs="PcncPD359F1C8-E590-441B-9F11N">
+                          <ns3:Type>Cancel</ns3:Type>
+                          <ns3:Amounts>
+                            <ns3:Amount>
+                              <ns3:CurrencyAmountValue Code="USD">0</ns3:CurrencyAmountValue>
+                              <ns3:AmountApplication>MIN</ns3:AmountApplication>
+                            </ns3:Amount>
+                            <ns3:Amount>
+                              <ns3:CurrencyAmountValue Code="USD">0</ns3:CurrencyAmountValue>
+                              <ns3:AmountApplication>MAX</ns3:AmountApplication>
+                            </ns3:Amount>
+                          </ns3:Amounts>
+                        </ns3:Detail>
+                        <ns3:Detail refs="PchgPD359F1C8-E590-441B-9F11N">
+                          <ns3:Type>Change</ns3:Type>
+                          <ns3:Amounts>
+                            <ns3:Amount>
+                              <ns3:CurrencyAmountValue Code="USD">0</ns3:CurrencyAmountValue>
+                              <ns3:AmountApplication>MIN</ns3:AmountApplication>
+                            </ns3:Amount>
+                            <ns3:Amount>
+                              <ns3:CurrencyAmountValue Code="USD">0</ns3:CurrencyAmountValue>
+                              <ns3:AmountApplication>MAX</ns3:AmountApplication>
+                            </ns3:Amount>
+                          </ns3:Amounts>
+                        </ns3:Detail>
+                        <ns3:Detail>
+                          <ns3:Type>Change</ns3:Type>
+                          <ns3:Application>2</ns3:Application>
+                          <ns3:Amounts>
+                            <ns3:Amount>
+                              <ns3:CurrencyAmountValue Code="USD">9900</ns3:CurrencyAmountValue>
+                              <ns3:AmountApplication>MIN</ns3:AmountApplication>
+                            </ns3:Amount>
+                            <ns3:Amount>
+                              <ns3:CurrencyAmountValue Code="USD">9900</ns3:CurrencyAmountValue>
+                              <ns3:AmountApplication>MAX</ns3:AmountApplication>
+                            </ns3:Amount>
+                          </ns3:Amounts>
+                        </ns3:Detail>
+                      </ns3:Details>
+                    </ns3:Penalty>
+                    <ns3:AdvanceStay>
+                      <ns3:AdvancePurchase Context="Latest">P7D</ns3:AdvancePurchase>
+                    </ns3:AdvanceStay>
+                    <ns3:Ticketing>
+                      <ns3:Endorsements>
+                        <ns3:Endorsement>NRF-BE/NOCHGDAFTDPT</ns3:Endorsement>
+                        <ns3:Endorsement>NOCBBG/NOASR</ns3:Endorsement>
+                      </ns3:Endorsements>
+                    </ns3:Ticketing>
+                  </ns3:FareRules>
+                  <ns3:PriceClassRef>Ppce1tp0zyrcc0d8</ns3:PriceClassRef>
+                  <ns3:SegmentRefs>Isgm01008b79c8d7f</ns3:SegmentRefs>
+                </ns3:FareComponent>
+                <ns3:FareComponent>
+                  <ns3:Price>
+                    <ns3:BaseAmount Code="USD">11484</ns3:BaseAmount>
+                    <ns3:Taxes>
+                      <ns3:Total Code="USD">2351</ns3:Total>
+                      <ns3:Breakdown>
+                        <ns3:Tax>
+                          <ns3:Amount Code="USD">861</ns3:Amount>
+                          <ns3:Nation>US</ns3:Nation>
+                          <ns3:TaxCode>US</ns3:TaxCode>
+                          <ns3:Description>US Transportation Tax</ns3:Description>
+                        </ns3:Tax>
+                        <ns3:Tax>
+                          <ns3:Amount Code="USD">450</ns3:Amount>
+                          <ns3:Nation>US</ns3:Nation>
+                          <ns3:TaxCode>XF</ns3:TaxCode>
+                          <ns3:Description>US Passenger Facility Charge</ns3:Description>
+                        </ns3:Tax>
+                        <ns3:Tax>
+                          <ns3:Amount Code="USD">480</ns3:Amount>
+                          <ns3:Nation>US</ns3:Nation>
+                          <ns3:TaxCode>ZP</ns3:TaxCode>
+                          <ns3:Description>United States Flight Segment Tax Domestic</ns3:Description>
+                        </ns3:Tax>
+                        <ns3:Tax>
+                          <ns3:Amount Code="USD">560</ns3:Amount>
+                          <ns3:Nation>US</ns3:Nation>
+                          <ns3:TaxCode>AY</ns3:TaxCode>
+                          <ns3:Description>United States Passenger Civil Aviation Security Service Fee</ns3:Description>
+                        </ns3:Tax>
+                      </ns3:Breakdown>
+                    </ns3:Taxes>
+                  </ns3:Price>
+                  <ns3:FareBasis>
+                    <ns3:FareBasisCode refs="Pfcp6k389og4xykdm">
+                      <ns3:Code>KAA2AWBN</ns3:Code>
+                    </ns3:FareBasisCode>
+                    <ns3:FareBasisCityPair>MIACHIUA</ns3:FareBasisCityPair>
+                    <ns3:RBD>N</ns3:RBD>
+                    <ns3:CabinType>
+                      <ns3:CabinTypeCode>Y</ns3:CabinTypeCode>
+                      <ns3:CabinTypeName>ECONOMY</ns3:CabinTypeName>
+                    </ns3:CabinType>
+                  </ns3:FareBasis>
+                  <ns3:FareRules>
+                    <ns3:Penalty CancelFeeInd="false" ChangeFeeInd="true" RefundableInd="false">
+                      <ns3:Details>
+                        <ns3:Detail refs="PcncPD359F1C8-E590-441B-9F11N">
+                          <ns3:Type>Cancel</ns3:Type>
+                          <ns3:Amounts>
+                            <ns3:Amount>
+                              <ns3:CurrencyAmountValue Code="USD">0</ns3:CurrencyAmountValue>
+                              <ns3:AmountApplication>MIN</ns3:AmountApplication>
+                            </ns3:Amount>
+                            <ns3:Amount>
+                              <ns3:CurrencyAmountValue Code="USD">0</ns3:CurrencyAmountValue>
+                              <ns3:AmountApplication>MAX</ns3:AmountApplication>
+                            </ns3:Amount>
+                          </ns3:Amounts>
+                        </ns3:Detail>
+                        <ns3:Detail refs="PchgPD359F1C8-E590-441B-9F11N">
+                          <ns3:Type>Change</ns3:Type>
+                          <ns3:Amounts>
+                            <ns3:Amount>
+                              <ns3:CurrencyAmountValue Code="USD">0</ns3:CurrencyAmountValue>
+                              <ns3:AmountApplication>MIN</ns3:AmountApplication>
+                            </ns3:Amount>
+                            <ns3:Amount>
+                              <ns3:CurrencyAmountValue Code="USD">0</ns3:CurrencyAmountValue>
+                              <ns3:AmountApplication>MAX</ns3:AmountApplication>
+                            </ns3:Amount>
+                          </ns3:Amounts>
+                        </ns3:Detail>
+                        <ns3:Detail>
+                          <ns3:Type>Change</ns3:Type>
+                          <ns3:Application>2</ns3:Application>
+                          <ns3:Amounts>
+                            <ns3:Amount>
+                              <ns3:CurrencyAmountValue Code="USD">9900</ns3:CurrencyAmountValue>
+                              <ns3:AmountApplication>MIN</ns3:AmountApplication>
+                            </ns3:Amount>
+                            <ns3:Amount>
+                              <ns3:CurrencyAmountValue Code="USD">9900</ns3:CurrencyAmountValue>
+                              <ns3:AmountApplication>MAX</ns3:AmountApplication>
+                            </ns3:Amount>
+                          </ns3:Amounts>
+                        </ns3:Detail>
+                      </ns3:Details>
+                    </ns3:Penalty>
+                    <ns3:AdvanceStay>
+                      <ns3:AdvancePurchase Context="Latest">P7D</ns3:AdvancePurchase>
+                    </ns3:AdvanceStay>
+                    <ns3:Ticketing>
+                      <ns3:Endorsements>
+                        <ns3:Endorsement>NRF-BE/NOCHGDAFTDPT</ns3:Endorsement>
+                        <ns3:Endorsement>NOCBBG/NOASR</ns3:Endorsement>
+                      </ns3:Endorsements>
+                    </ns3:Ticketing>
+                  </ns3:FareRules>
+                  <ns3:PriceClassRef>Ppce1tp0zyrcc0d8</ns3:PriceClassRef>
+                  <ns3:SegmentRefs>Isgm1d008b79c8d7f</ns3:SegmentRefs>
+                </ns3:FareComponent>
+              </ns3:FareDetail>
+              <ns3:Service>
+                <ns3:ServiceID>Psvc79zhcsndienf5</ns3:ServiceID>
+                <ns3:PaxRefID>P1</ns3:PaxRefID>
+                <ns3:PaxRefID>P2</ns3:PaxRefID>
+                <ns3:ServiceAssociations>
+                  <ns3:PaxJourneyRefID>Pfltg1gt4kfe3wn79</ns3:PaxJourneyRefID>
+                  <ns3:PaxJourneyRefID>Pfltv118r9wh4y9wn</ns3:PaxJourneyRefID>
+                </ns3:ServiceAssociations>
+              </ns3:Service>
+              <ns3:Price>
+                <ns3:TotalAmount CurCode="USD">55450</ns3:TotalAmount>
+              </ns3:Price>
+            </ns3:OfferItem>
+            <ns3:OfferItem>
+              <ns3:OfferItemID>PD359F1C8-E590-441B-9F11d91z3e4wqp0ff-1-2</ns3:OfferItemID>
+              <ns3:MandatoryInd>false</ns3:MandatoryInd>
+              <ns3:Service>
+                <ns3:ServiceID>Psvd6rfv5ebj4dkdg-d91z3e4wqp0ff-2</ns3:ServiceID>
+                <ns3:PaxRefID>P1</ns3:PaxRefID>
+                <ns3:ServiceAssociations>
+                  <ns3:ServiceDefinitionRef>
+                    <ns3:ServiceDefinitionRefID>Psvc6rfv5ebj4dkdg</ns3:ServiceDefinitionRefID>
+                    <ns3:PaxSegmentRefID>Isgm1d008b79c8d7f</ns3:PaxSegmentRefID>
+                  </ns3:ServiceDefinitionRef>
+                </ns3:ServiceAssociations>
+              </ns3:Service>
+              <ns3:Price>
+                <ns3:TotalAmount CurCode="USD">6700</ns3:TotalAmount>
+              </ns3:Price>
+            </ns3:OfferItem>
+            <ns3:OfferItem>
+              <ns3:OfferItemID>PD359F1C8-E590-441B-9F11d91z3e4wqp0ff-1-3</ns3:OfferItemID>
+              <ns3:MandatoryInd>false</ns3:MandatoryInd>
+              <ns3:Service>
+                <ns3:ServiceID>Psvdqx06nae63dt9w-d91z3e4wqp0ff-3</ns3:ServiceID>
+                <ns3:PaxRefID>P1</ns3:PaxRefID>
+                <ns3:ServiceAssociations>
+                  <ns3:ServiceDefinitionRef>
+                    <ns3:ServiceDefinitionRefID>Psvcqx06nae63dt9w</ns3:ServiceDefinitionRefID>
+                    <ns3:PaxSegmentRefID>Isgm01008b79c8d7f</ns3:PaxSegmentRefID>
+                  </ns3:ServiceDefinitionRef>
+                </ns3:ServiceAssociations>
+              </ns3:Service>
+              <ns3:Price>
+                <ns3:TotalAmount CurCode="USD">7700</ns3:TotalAmount>
+              </ns3:Price>
+            </ns3:OfferItem>
+            <ns3:TotalPrice>
+              <ns3:TotalAmount CurCode="USD">486348</ns3:TotalAmount>
+            </ns3:TotalPrice>
+          </ns3:Offer>
+        </ns3:PricedOffer>
+        <ns3:ShoppingResponse>
+          <ns3:ShoppingResponseID>PD359F1C8-E590-441B-9F11</ns3:ShoppingResponseID>
+        </ns3:ShoppingResponse>
+      </ns3:Response>
+    </ns3:AMA_TravelOfferPriceRS>
+  </soap:Body>
+</soap:Envelope>

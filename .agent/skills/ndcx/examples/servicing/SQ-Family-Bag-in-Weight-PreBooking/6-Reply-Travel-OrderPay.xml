@@ -1,0 +1,1214 @@
+<!-- TRIMMED FOR SIZE by the skill build: repeating elements reduced to 3 (Detail x8 -> 3; OrderItem x8 -> 3; PaymentInfo x8 -> 3; RuleMetadata x12 -> 3; ServiceDefinition x4 -> 3; Tax x8 -> 3; TicketDocInfo x8 -> 3). Structure is intact; counts are not representative. -->
+<ns0:AMA_TravelOrderViewRS xmlns:ns0="http://xml.amadeus.com/2010/06/Travel_OrderViewRS_v1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xml.amadeus.com/2010/06/Travel_OrderViewRS_v1 file:///Y:/grammar/NDCX/FLX/xsd/AMA_TravelOrderViewRS.xsd">
+  <ns0:PayloadAttributes>
+    <ns0:Version>18.1</ns0:Version>
+  </ns0:PayloadAttributes>
+  <ns0:Response>
+    <ns0:DataLists>
+      <ns0:BaggageAllowanceList>
+        <ns0:BaggageAllowance>
+          <ns0:BaggageAllowanceID>FBA1</ns0:BaggageAllowanceID>
+          <ns0:TypeCode>Checked</ns0:TypeCode>
+          <ns0:WeightAllowance>
+            <ns0:MaximumWeightMeasure UnitCode="Kilogram">30</ns0:MaximumWeightMeasure>
+            <ns0:ApplicablePartyText>Traveler</ns0:ApplicablePartyText>
+          </ns0:WeightAllowance>
+        </ns0:BaggageAllowance>
+        <ns0:BaggageAllowance>
+          <ns0:BaggageAllowanceID>FBA2</ns0:BaggageAllowanceID>
+          <ns0:TypeCode>Checked</ns0:TypeCode>
+          <ns0:WeightAllowance>
+            <ns0:MaximumWeightMeasure UnitCode="Kilogram">10</ns0:MaximumWeightMeasure>
+            <ns0:ApplicablePartyText>Traveler</ns0:ApplicablePartyText>
+          </ns0:WeightAllowance>
+        </ns0:BaggageAllowance>
+      </ns0:BaggageAllowanceList>
+      <ns0:ContactInfoList>
+        <ns0:ContactInfo>
+          <ns0:ContactInfoID>CTCPAX2_1</ns0:ContactInfoID>
+          <ns0:ContactTypeText>NOTIFICATION</ns0:ContactTypeText>
+          <ns0:IndividualRef>PAX2</ns0:IndividualRef>
+          <ns0:EmailAddress>
+            <ns0:EmailAddressText>MQUIN@MYEMAIL.COM</ns0:EmailAddressText>
+          </ns0:EmailAddress>
+        </ns0:ContactInfo>
+        <ns0:ContactInfo>
+          <ns0:ContactInfoID>CTCPAX4_1</ns0:ContactInfoID>
+          <ns0:ContactTypeText>NOTIFICATION</ns0:ContactTypeText>
+          <ns0:IndividualRef>PAX4</ns0:IndividualRef>
+          <ns0:EmailAddress>
+            <ns0:EmailAddressText>MQUIN@MYEMAIL.COM</ns0:EmailAddressText>
+          </ns0:EmailAddress>
+        </ns0:ContactInfo>
+        <ns0:ContactInfo>
+          <ns0:ContactInfoID>CTCPAX5_1</ns0:ContactInfoID>
+          <ns0:ContactTypeText>NOTIFICATION</ns0:ContactTypeText>
+          <ns0:IndividualRef>PAX5</ns0:IndividualRef>
+          <ns0:EmailAddress>
+            <ns0:EmailAddressText>MQUIN@MYEMAIL.COM</ns0:EmailAddressText>
+          </ns0:EmailAddress>
+        </ns0:ContactInfo>
+        <ns0:ContactInfo>
+          <ns0:ContactInfoID>CTC_1</ns0:ContactInfoID>
+          <ns0:ContactTypeText>STANDARD</ns0:ContactTypeText>
+          <ns0:Phone>
+            <ns0:LabelText>AGENCY</ns0:LabelText>
+            <ns0:PhoneNumber>5148568256</ns0:PhoneNumber>
+          </ns0:Phone>
+        </ns0:ContactInfo>
+      </ns0:ContactInfoList>
+      <ns0:InstructionsList>
+        <ns0:Instruction ListKey="OSI_87">
+          <ns0:FreeFormTextInstruction>
+            <ns0:Remark>BOOKING SITE CA</ns0:Remark>
+          </ns0:FreeFormTextInstruction>
+        </ns0:Instruction>
+      </ns0:InstructionsList>
+      <ns0:OriginDestList>
+        <ns0:OriginDest>
+          <ns0:OriginDestID>OD1</ns0:OriginDestID>
+          <ns0:OriginCode>BKK</ns0:OriginCode>
+          <ns0:DestCode>SIN</ns0:DestCode>
+          <ns0:PaxJourneyRefID>FLT1</ns0:PaxJourneyRefID>
+        </ns0:OriginDest>
+        <ns0:OriginDest>
+          <ns0:OriginDestID>OD2</ns0:OriginDestID>
+          <ns0:OriginCode>SIN</ns0:OriginCode>
+          <ns0:DestCode>BKK</ns0:DestCode>
+          <ns0:PaxJourneyRefID>FLT2</ns0:PaxJourneyRefID>
+        </ns0:OriginDest>
+      </ns0:OriginDestList>
+      <ns0:PaxJourneyList>
+        <ns0:PaxJourney>
+          <ns0:PaxJourneyID>FLT1</ns0:PaxJourneyID>
+          <ns0:Duration>PT2H20M</ns0:Duration>
+          <ns0:PaxSegmentRefID>SEG1</ns0:PaxSegmentRefID>
+        </ns0:PaxJourney>
+        <ns0:PaxJourney>
+          <ns0:PaxJourneyID>FLT2</ns0:PaxJourneyID>
+          <ns0:Duration>PT2H25M</ns0:Duration>
+          <ns0:PaxSegmentRefID>SEG2</ns0:PaxSegmentRefID>
+        </ns0:PaxJourney>
+      </ns0:PaxJourneyList>
+      <ns0:PaxList>
+        <ns0:Pax>
+          <ns0:PaxID>PAX3</ns0:PaxID>
+          <ns0:PTC>INF</ns0:PTC>
+          <ns0:Individual>
+            <ns0:IndividualID>PAX3</ns0:IndividualID>
+            <ns0:Birthdate>2023-07-11</ns0:Birthdate>
+            <ns0:GivenName>MARK</ns0:GivenName>
+            <ns0:Surname>QUIN</ns0:Surname>
+          </ns0:Individual>
+        </ns0:Pax>
+        <ns0:Pax>
+          <ns0:PaxID>PAX2</ns0:PaxID>
+          <ns0:PTC>ADT</ns0:PTC>
+          <ns0:PaxRefID>PAX3</ns0:PaxRefID>
+          <ns0:Individual>
+            <ns0:IndividualID>PAX2</ns0:IndividualID>
+            <ns0:Birthdate>1992-03-07</ns0:Birthdate>
+            <ns0:GivenName>MIKE</ns0:GivenName>
+            <ns0:Surname>QUIN</ns0:Surname>
+          </ns0:Individual>
+        </ns0:Pax>
+        <ns0:Pax>
+          <ns0:PaxID>PAX4</ns0:PaxID>
+          <ns0:PTC>ADT</ns0:PTC>
+          <ns0:Individual>
+            <ns0:IndividualID>PAX4</ns0:IndividualID>
+            <ns0:Birthdate>1986-09-29</ns0:Birthdate>
+            <ns0:GivenName>SYL</ns0:GivenName>
+            <ns0:Surname>QUIN</ns0:Surname>
+          </ns0:Individual>
+        </ns0:Pax>
+        <ns0:Pax>
+          <ns0:PaxID>PAX5</ns0:PaxID>
+          <ns0:PTC>CHD</ns0:PTC>
+          <ns0:Individual>
+            <ns0:IndividualID>PAX5</ns0:IndividualID>
+            <ns0:Birthdate>2020-05-11</ns0:Birthdate>
+            <ns0:GivenName>SARAH</ns0:GivenName>
+            <ns0:Surname>QUIN</ns0:Surname>
+          </ns0:Individual>
+        </ns0:Pax>
+      </ns0:PaxList>
+      <ns0:PaxSegmentList>
+        <ns0:PaxSegment>
+          <ns0:PaxSegmentID>SEG1</ns0:PaxSegmentID>
+          <ns0:Duration>PT2H20M</ns0:Duration>
+          <ns0:Dep>
+            <ns0:IATA_LocationCode>BKK</ns0:IATA_LocationCode>
+            <ns0:AircraftScheduledDateTime>2024-10-14T21:15:00</ns0:AircraftScheduledDateTime>
+          </ns0:Dep>
+          <ns0:Arrival>
+            <ns0:IATA_LocationCode>SIN</ns0:IATA_LocationCode>
+            <ns0:TerminalName>0</ns0:TerminalName>
+            <ns0:AircraftScheduledDateTime>2024-10-15T00:35:00</ns0:AircraftScheduledDateTime>
+          </ns0:Arrival>
+          <ns0:MarketingCarrierInfo>
+            <ns0:CarrierDesigCode>SQ</ns0:CarrierDesigCode>
+            <ns0:CarrierName>SINGAPORE AIRLINES</ns0:CarrierName>
+            <ns0:MarketingCarrierFlightNumberText>719</ns0:MarketingCarrierFlightNumberText>
+            <ns0:RBD_Code>W</ns0:RBD_Code>
+          </ns0:MarketingCarrierInfo>
+          <ns0:OperatingCarrierInfo>
+            <ns0:CarrierDesigCode>SQ</ns0:CarrierDesigCode>
+            <ns0:CarrierName>SINGAPORE AIRLINES</ns0:CarrierName>
+            <ns0:Disclosure>
+              <ns0:DisclosureID>DIS1</ns0:DisclosureID>
+              <ns0:Desc>
+                <ns0:DescID>DES1</ns0:DescID>
+                <ns0:DescText>SINGAPORE AIRLINES</ns0:DescText>
+              </ns0:Desc>
+            </ns0:Disclosure>
+          </ns0:OperatingCarrierInfo>
+          <ns0:DatedOperatingLeg>
+            <ns0:DatedOperatingLegID>LEG1</ns0:DatedOperatingLegID>
+            <ns0:Dep>
+              <ns0:IATA_LocationCode>BKK</ns0:IATA_LocationCode>
+              <ns0:AircraftScheduledDateTime>2024-10-14T21:15:00</ns0:AircraftScheduledDateTime>
+            </ns0:Dep>
+            <ns0:Arrival>
+              <ns0:IATA_LocationCode>SIN</ns0:IATA_LocationCode>
+              <ns0:AircraftScheduledDateTime>2024-10-15T00:35:00</ns0:AircraftScheduledDateTime>
+            </ns0:Arrival>
+            <ns0:IATA_AircraftType>
+              <ns0:IATA_AircraftTypeCode>359</ns0:IATA_AircraftTypeCode>
+            </ns0:IATA_AircraftType>
+          </ns0:DatedOperatingLeg>
+        </ns0:PaxSegment>
+        <ns0:PaxSegment>
+          <ns0:PaxSegmentID>SEG2</ns0:PaxSegmentID>
+          <ns0:Duration>PT2H25M</ns0:Duration>
+          <ns0:Dep>
+            <ns0:IATA_LocationCode>SIN</ns0:IATA_LocationCode>
+            <ns0:TerminalName>2</ns0:TerminalName>
+            <ns0:AircraftScheduledDateTime>2024-10-28T07:05:00</ns0:AircraftScheduledDateTime>
+          </ns0:Dep>
+          <ns0:Arrival>
+            <ns0:IATA_LocationCode>BKK</ns0:IATA_LocationCode>
+            <ns0:AircraftScheduledDateTime>2024-10-28T08:30:00</ns0:AircraftScheduledDateTime>
+          </ns0:Arrival>
+          <ns0:MarketingCarrierInfo>
+            <ns0:CarrierDesigCode>SQ</ns0:CarrierDesigCode>
+            <ns0:CarrierName>SINGAPORE AIRLINES</ns0:CarrierName>
+            <ns0:MarketingCarrierFlightNumberText>706</ns0:MarketingCarrierFlightNumberText>
+            <ns0:RBD_Code>W</ns0:RBD_Code>
+          </ns0:MarketingCarrierInfo>
+          <ns0:OperatingCarrierInfo>
+            <ns0:CarrierDesigCode>SQ</ns0:CarrierDesigCode>
+            <ns0:CarrierName>SINGAPORE AIRLINES</ns0:CarrierName>
+            <ns0:Disclosure>
+              <ns0:DisclosureID>DIS2</ns0:DisclosureID>
+              <ns0:Desc>
+                <ns0:DescID>DES2</ns0:DescID>
+                <ns0:DescText>SINGAPORE AIRLINES</ns0:DescText>
+              </ns0:Desc>
+            </ns0:Disclosure>
+          </ns0:OperatingCarrierInfo>
+          <ns0:DatedOperatingLeg>
+            <ns0:DatedOperatingLegID>LEG2</ns0:DatedOperatingLegID>
+            <ns0:Dep>
+              <ns0:IATA_LocationCode>SIN</ns0:IATA_LocationCode>
+              <ns0:AircraftScheduledDateTime>2024-10-28T07:05:00</ns0:AircraftScheduledDateTime>
+            </ns0:Dep>
+            <ns0:Arrival>
+              <ns0:IATA_LocationCode>BKK</ns0:IATA_LocationCode>
+              <ns0:AircraftScheduledDateTime>2024-10-28T08:30:00</ns0:AircraftScheduledDateTime>
+            </ns0:Arrival>
+            <ns0:IATA_AircraftType>
+              <ns0:IATA_AircraftTypeCode>359</ns0:IATA_AircraftTypeCode>
+            </ns0:IATA_AircraftType>
+          </ns0:DatedOperatingLeg>
+        </ns0:PaxSegment>
+      </ns0:PaxSegmentList>
+      <ns0:PriceClassList>
+        <ns0:PriceClass>
+          <ns0:PriceClassID>FF31</ns0:PriceClassID>
+          <ns0:Name>SIN - ECON STANDARD FF3</ns0:Name>
+        </ns0:PriceClass>
+      </ns0:PriceClassList>
+      <ns0:ServiceDefinitionList>
+        <ns0:ServiceDefinition>
+          <ns0:ServiceDefinitionID>XBAG_1</ns0:ServiceDefinitionID>
+          <ns0:OwnerCode>SQ</ns0:OwnerCode>
+          <ns0:Name>EXCESS BAGGAGE WEIGHT</ns0:Name>
+          <ns0:ServiceCode>XBAG</ns0:ServiceCode>
+          <ns0:ReasonForIssuanceCode>C</ns0:ReasonForIssuanceCode>
+          <ns0:ReasonForIssuanceSubCode>0AA</ns0:ReasonForIssuanceSubCode>
+          <ns0:ValidatingCarrierCode>SQ</ns0:ValidatingCarrierCode>
+          <ns0:Description>
+            <ns0:DescID>-185045617</ns0:DescID>
+            <ns0:DescText>TTL 10KG</ns0:DescText>
+          </ns0:Description>
+        </ns0:ServiceDefinition>
+        <ns0:ServiceDefinition>
+          <ns0:ServiceDefinitionID>XBAG_2</ns0:ServiceDefinitionID>
+          <ns0:OwnerCode>SQ</ns0:OwnerCode>
+          <ns0:Name>EXCESS BAGGAGE WEIGHT</ns0:Name>
+          <ns0:ServiceCode>XBAG</ns0:ServiceCode>
+          <ns0:ReasonForIssuanceCode>C</ns0:ReasonForIssuanceCode>
+          <ns0:ReasonForIssuanceSubCode>0AA</ns0:ReasonForIssuanceSubCode>
+          <ns0:ValidatingCarrierCode>SQ</ns0:ValidatingCarrierCode>
+          <ns0:Description>
+            <ns0:DescID>-283059203</ns0:DescID>
+            <ns0:DescText>TTL 5KG</ns0:DescText>
+          </ns0:Description>
+        </ns0:ServiceDefinition>
+        <ns0:ServiceDefinition>
+          <ns0:ServiceDefinitionID>BAGALLOW_1</ns0:ServiceDefinitionID>
+          <ns0:Name>Bag allowances</ns0:Name>
+          <ns0:Description>
+            <ns0:DescID>Bag allowances</ns0:DescID>
+          </ns0:Description>
+          <ns0:ServiceDefinitionAssociation>
+            <ns0:BaggageAllowanceRefID>FBA1</ns0:BaggageAllowanceRefID>
+          </ns0:ServiceDefinitionAssociation>
+        </ns0:ServiceDefinition>
+      </ns0:ServiceDefinitionList>
+    </ns0:DataLists>
+    <ns0:Metadata>
+      <ns0:Other>
+        <ns0:OtherMetadata>
+          <ns0:CurrencyMetadatas>
+            <ns0:CurrencyMetadata MetadataKey="CAD">
+              <ns0:Decimals>2</ns0:Decimals>
+            </ns0:CurrencyMetadata>
+          </ns0:CurrencyMetadatas>
+        </ns0:OtherMetadata>
+        <ns0:OtherMetadata>
+          <ns0:RuleMetadatas>
+            <ns0:RuleMetadata MetadataKey="RULE1">
+              <ns0:RuleID>Cancel before departure</ns0:RuleID>
+              <ns0:Values>
+                <ns0:Value>
+                  <ns0:Instruction>Allowed with Restriction</ns0:Instruction>
+                </ns0:Value>
+              </ns0:Values>
+            </ns0:RuleMetadata>
+            <ns0:RuleMetadata MetadataKey="RULE2">
+              <ns0:RuleID>Cancel after departure</ns0:RuleID>
+              <ns0:Values>
+                <ns0:Value>
+                  <ns0:Instruction>Allowed with Restriction</ns0:Instruction>
+                </ns0:Value>
+              </ns0:Values>
+            </ns0:RuleMetadata>
+            <ns0:RuleMetadata MetadataKey="RULE3">
+              <ns0:RuleID>Cancel before departure - No Show</ns0:RuleID>
+              <ns0:Values>
+                <ns0:Value>
+                  <ns0:Instruction>Allowed with Restriction</ns0:Instruction>
+                </ns0:Value>
+              </ns0:Values>
+            </ns0:RuleMetadata>
+          </ns0:RuleMetadatas>
+        </ns0:OtherMetadata>
+      </ns0:Other>
+    </ns0:Metadata>
+    <ns0:Order>
+      <ns0:OrderID>SQ_6WGPWA</ns0:OrderID>
+      <ns0:OwnerCode>SQ</ns0:OwnerCode>
+      <ns0:BookingRef>
+        <ns0:BookingID>6WGPWA</ns0:BookingID>
+        <ns0:BookingEntity>
+          <ns0:Carrier>
+            <ns0:AirlineDesigCode>SQ</ns0:AirlineDesigCode>
+          </ns0:Carrier>
+        </ns0:BookingEntity>
+      </ns0:BookingRef>
+      <ns0:BookingRef>
+        <ns0:BookingID>3FY4J2</ns0:BookingID>
+        <ns0:BookingEntity>
+          <ns0:Org OrgID="1A">
+            <ns0:Name>Amadeus</ns0:Name>
+          </ns0:Org>
+        </ns0:BookingEntity>
+      </ns0:BookingRef>
+      <ns0:OrderItem>
+        <ns0:OrderItemID>SQ_6WGPWA_AIR-1-2_1APAX_PAX3</ns0:OrderItemID>
+        <ns0:OwnerCode>SQ</ns0:OwnerCode>
+        <ns0:FareDetail>
+          <ns0:PassengerRefs>PAX3</ns0:PassengerRefs>
+          <ns0:Price>
+            <ns0:TotalAmount>
+              <ns0:DetailCurrencyPrice>
+                <ns0:Total Code="CAD">3580</ns0:Total>
+              </ns0:DetailCurrencyPrice>
+            </ns0:TotalAmount>
+            <ns0:BaseAmount Code="CAD">3200</ns0:BaseAmount>
+            <ns0:Taxes>
+              <ns0:Total Code="CAD">380</ns0:Total>
+              <ns0:Breakdown>
+                <ns0:Tax>
+                  <ns0:Amount Code="CAD">130</ns0:Amount>
+                  <ns0:TaxCode>E7</ns0:TaxCode>
+                </ns0:Tax>
+                <ns0:Tax>
+                  <ns0:Amount Code="CAD">130</ns0:Amount>
+                  <ns0:TaxCode>E7</ns0:TaxCode>
+                </ns0:Tax>
+                <ns0:Tax>
+                  <ns0:Amount Code="CAD">060</ns0:Amount>
+                  <ns0:TaxCode>G8</ns0:TaxCode>
+                </ns0:Tax>
+                <ns0:Tax>
+                  <ns0:Amount Code="CAD">060</ns0:Amount>
+                  <ns0:TaxCode>G8</ns0:TaxCode>
+                </ns0:Tax>
+              </ns0:Breakdown>
+            </ns0:Taxes>
+          </ns0:Price>
+          <ns0:FareComponent>
+            <ns0:FareBasis>
+              <ns0:FareBasisCode>
+                <ns0:Code>W14THRPO/IN90DP</ns0:Code>
+              </ns0:FareBasisCode>
+              <ns0:RBD>W</ns0:RBD>
+              <ns0:CabinType>
+                <ns0:CabinTypeCode>M</ns0:CabinTypeCode>
+                <ns0:CabinTypeName>ECONOMY</ns0:CabinTypeName>
+              </ns0:CabinType>
+            </ns0:FareBasis>
+            <ns0:FareRules>
+              <ns0:Penalty CancelFeeInd="true" ChangeFeeInd="true">
+                <ns0:Details>
+                  <ns0:Detail refs="RULE1">
+                    <ns0:Type>Cancel</ns0:Type>
+                    <ns0:Application>2</ns0:Application>
+                    <ns0:Amounts>
+                      <ns0:Amount>
+                        <ns0:CurrencyAmountValue Code="CAD">000</ns0:CurrencyAmountValue>
+                        <ns0:AmountApplication>MIN</ns0:AmountApplication>
+                        <ns0:ApplicableFeeRemarks>
+                          <ns0:Remark>Reissue/Refund minimum penalty amount before departure</ns0:Remark>
+                        </ns0:ApplicableFeeRemarks>
+                      </ns0:Amount>
+                      <ns0:Amount>
+                        <ns0:CurrencyAmountValue Code="CAD">000</ns0:CurrencyAmountValue>
+                        <ns0:AmountApplication>MAX</ns0:AmountApplication>
+                        <ns0:ApplicableFeeRemarks>
+                          <ns0:Remark>Reissue/Refund maximum penalty amount before departure</ns0:Remark>
+                        </ns0:ApplicableFeeRemarks>
+                      </ns0:Amount>
+                    </ns0:Amounts>
+                  </ns0:Detail>
+                  <ns0:Detail refs="RULE9">
+                    <ns0:Type>Change</ns0:Type>
+                    <ns0:Application>2</ns0:Application>
+                    <ns0:Amounts>
+                      <ns0:Amount>
+                        <ns0:CurrencyAmountValue Code="CAD">000</ns0:CurrencyAmountValue>
+                        <ns0:AmountApplication>MIN</ns0:AmountApplication>
+                        <ns0:ApplicableFeeRemarks>
+                          <ns0:Remark>Reissue/Refund minimum penalty amount before departure</ns0:Remark>
+                        </ns0:ApplicableFeeRemarks>
+                      </ns0:Amount>
+                      <ns0:Amount>
+                        <ns0:CurrencyAmountValue Code="CAD">2700</ns0:CurrencyAmountValue>
+                        <ns0:AmountApplication>MAX</ns0:AmountApplication>
+                        <ns0:ApplicableFeeRemarks>
+                          <ns0:Remark>Reissue/Refund maximum penalty amount before departure</ns0:Remark>
+                        </ns0:ApplicableFeeRemarks>
+                      </ns0:Amount>
+                    </ns0:Amounts>
+                  </ns0:Detail>
+                  <ns0:Detail refs="RULE6">
+                    <ns0:Type>Cancel</ns0:Type>
+                    <ns0:Application>3</ns0:Application>
+                    <ns0:Amounts>
+                      <ns0:Amount>
+                        <ns0:CurrencyAmountValue Code="CAD">000</ns0:CurrencyAmountValue>
+                        <ns0:AmountApplication>MIN</ns0:AmountApplication>
+                        <ns0:ApplicableFeeRemarks>
+                          <ns0:Remark>Reissue/Refund minimum penalty amount after departure</ns0:Remark>
+                        </ns0:ApplicableFeeRemarks>
+                      </ns0:Amount>
+                      <ns0:Amount>
+                        <ns0:CurrencyAmountValue Code="CAD">000</ns0:CurrencyAmountValue>
+                        <ns0:AmountApplication>MAX</ns0:AmountApplication>
+                        <ns0:ApplicableFeeRemarks>
+                          <ns0:Remark>Reissue/Refund maximum penalty amount with sale currency</ns0:Remark>
+                        </ns0:ApplicableFeeRemarks>
+                      </ns0:Amount>
+                    </ns0:Amounts>
+                  </ns0:Detail>
+                </ns0:Details>
+              </ns0:Penalty>
+            </ns0:FareRules>
+            <ns0:PriceClassRef>FF31</ns0:PriceClassRef>
+            <ns0:SegmentRefs>SEG1</ns0:SegmentRefs>
+          </ns0:FareComponent>
+          <ns0:FareComponent>
+            <ns0:FareBasis>
+              <ns0:FareBasisCode>
+                <ns0:Code>W14THRPO/IN90DP</ns0:Code>
+              </ns0:FareBasisCode>
+              <ns0:RBD>W</ns0:RBD>
+              <ns0:CabinType>
+                <ns0:CabinTypeCode>M</ns0:CabinTypeCode>
+                <ns0:CabinTypeName>ECONOMY</ns0:CabinTypeName>
+              </ns0:CabinType>
+            </ns0:FareBasis>
+            <ns0:FareRules>
+              <ns0:Penalty CancelFeeInd="true" ChangeFeeInd="true">
+                <ns0:Details>
+                  <ns0:Detail refs="RULE1">
+                    <ns0:Type>Cancel</ns0:Type>
+                    <ns0:Application>2</ns0:Application>
+                    <ns0:Amounts>
+                      <ns0:Amount>
+                        <ns0:CurrencyAmountValue Code="CAD">000</ns0:CurrencyAmountValue>
+                        <ns0:AmountApplication>MIN</ns0:AmountApplication>
+                        <ns0:ApplicableFeeRemarks>
+                          <ns0:Remark>Reissue/Refund minimum penalty amount before departure</ns0:Remark>
+                        </ns0:ApplicableFeeRemarks>
+                      </ns0:Amount>
+                      <ns0:Amount>
+                        <ns0:CurrencyAmountValue Code="CAD">000</ns0:CurrencyAmountValue>
+                        <ns0:AmountApplication>MAX</ns0:AmountApplication>
+                        <ns0:ApplicableFeeRemarks>
+                          <ns0:Remark>Reissue/Refund maximum penalty amount before departure</ns0:Remark>
+                        </ns0:ApplicableFeeRemarks>
+                      </ns0:Amount>
+                    </ns0:Amounts>
+                  </ns0:Detail>
+                  <ns0:Detail refs="RULE9">
+                    <ns0:Type>Change</ns0:Type>
+                    <ns0:Application>2</ns0:Application>
+                    <ns0:Amounts>
+                      <ns0:Amount>
+                        <ns0:CurrencyAmountValue Code="CAD">000</ns0:CurrencyAmountValue>
+                        <ns0:AmountApplication>MIN</ns0:AmountApplication>
+                        <ns0:ApplicableFeeRemarks>
+                          <ns0:Remark>Reissue/Refund minimum penalty amount before departure</ns0:Remark>
+                        </ns0:ApplicableFeeRemarks>
+                      </ns0:Amount>
+                      <ns0:Amount>
+                        <ns0:CurrencyAmountValue Code="CAD">2700</ns0:CurrencyAmountValue>
+                        <ns0:AmountApplication>MAX</ns0:AmountApplication>
+                        <ns0:ApplicableFeeRemarks>
+                          <ns0:Remark>Reissue/Refund maximum penalty amount before departure</ns0:Remark>
+                        </ns0:ApplicableFeeRemarks>
+                      </ns0:Amount>
+                    </ns0:Amounts>
+                  </ns0:Detail>
+                  <ns0:Detail refs="RULE2">
+                    <ns0:Type>Cancel</ns0:Type>
+                    <ns0:Application>3</ns0:Application>
+                    <ns0:Amounts>
+                      <ns0:Amount>
+                        <ns0:CurrencyAmountValue Code="CAD">000</ns0:CurrencyAmountValue>
+                        <ns0:AmountApplication>MIN</ns0:AmountApplication>
+                        <ns0:ApplicableFeeRemarks>
+                          <ns0:Remark>Reissue/Refund minimum penalty amount after departure</ns0:Remark>
+                        </ns0:ApplicableFeeRemarks>
+                      </ns0:Amount>
+                      <ns0:Amount>
+                        <ns0:CurrencyAmountValue Code="CAD">000</ns0:CurrencyAmountValue>
+                        <ns0:AmountApplication>MAX</ns0:AmountApplication>
+                        <ns0:ApplicableFeeRemarks>
+                          <ns0:Remark>Reissue/Refund maximum penalty amount with sale currency</ns0:Remark>
+                        </ns0:ApplicableFeeRemarks>
+                      </ns0:Amount>
+                    </ns0:Amounts>
+                  </ns0:Detail>
+                </ns0:Details>
+              </ns0:Penalty>
+            </ns0:FareRules>
+            <ns0:PriceClassRef>FF31</ns0:PriceClassRef>
+            <ns0:SegmentRefs>SEG2</ns0:SegmentRefs>
+          </ns0:FareComponent>
+          <ns0:Remarks>
+            <ns0:Remark>FC-BKK SQ SIN11.46SQ BKK11.46NUC22.92END ROE36.82566</ns0:Remark>
+            <ns0:Remark>FE-CHNG FEE APPLY / REFUND FEE APPLY / NO SHOW FEE APPLY IATA #</ns0:Remark>
+          </ns0:Remarks>
+        </ns0:FareDetail>
+        <ns0:Price>
+          <ns0:TotalAmount CurCode="CAD">3580</ns0:TotalAmount>
+          <ns0:BaseAmount CurCode="CAD">3200</ns0:BaseAmount>
+          <ns0:TaxSummary>
+            <ns0:TotalTaxAmount CurCode="CAD">380</ns0:TotalTaxAmount>
+          </ns0:TaxSummary>
+        </ns0:Price>
+        <ns0:Service>
+          <ns0:ServiceID>SEG1_PAX3_1</ns0:ServiceID>
+          <ns0:StatusCode>HK</ns0:StatusCode>
+          <ns0:PaxRefID>PAX3</ns0:PaxRefID>
+          <ns0:ServiceAssociations>
+            <ns0:ServiceDefinitionRef>
+              <ns0:ServiceDefinitionRefID>BAGALLOW_2</ns0:ServiceDefinitionRefID>
+              <ns0:PaxSegmentRefID>SEG1</ns0:PaxSegmentRefID>
+            </ns0:ServiceDefinitionRef>
+          </ns0:ServiceAssociations>
+        </ns0:Service>
+        <ns0:Service>
+          <ns0:ServiceID>SEG2_PAX3_1</ns0:ServiceID>
+          <ns0:StatusCode>HK</ns0:StatusCode>
+          <ns0:PaxRefID>PAX3</ns0:PaxRefID>
+          <ns0:ServiceAssociations>
+            <ns0:ServiceDefinitionRef>
+              <ns0:ServiceDefinitionRefID>BAGALLOW_2</ns0:ServiceDefinitionRefID>
+              <ns0:PaxSegmentRefID>SEG2</ns0:PaxSegmentRefID>
+            </ns0:ServiceDefinitionRef>
+          </ns0:ServiceAssociations>
+        </ns0:Service>
+        <ns0:Service>
+          <ns0:ServiceID>SEG1_PAX3</ns0:ServiceID>
+          <ns0:StatusCode>HK</ns0:StatusCode>
+          <ns0:PaxRefID>PAX3</ns0:PaxRefID>
+          <ns0:ServiceAssociations>
+            <ns0:PaxSegmentRefID>SEG1</ns0:PaxSegmentRefID>
+          </ns0:ServiceAssociations>
+        </ns0:Service>
+        <ns0:Service>
+          <ns0:ServiceID>SEG2_PAX3</ns0:ServiceID>
+          <ns0:StatusCode>HK</ns0:StatusCode>
+          <ns0:PaxRefID>PAX3</ns0:PaxRefID>
+          <ns0:ServiceAssociations>
+            <ns0:PaxSegmentRefID>SEG2</ns0:PaxSegmentRefID>
+          </ns0:ServiceAssociations>
+        </ns0:Service>
+      </ns0:OrderItem>
+      <ns0:OrderItem>
+        <ns0:OrderItemID>SQ_6WGPWA_AIR-1-2_1APAX_PAX2</ns0:OrderItemID>
+        <ns0:OwnerCode>SQ</ns0:OwnerCode>
+        <ns0:FareDetail>
+          <ns0:PassengerRefs>PAX2</ns0:PassengerRefs>
+          <ns0:Price>
+            <ns0:TotalAmount>
+              <ns0:DetailCurrencyPrice>
+                <ns0:Total Code="CAD">41910</ns0:Total>
+              </ns0:DetailCurrencyPrice>
+            </ns0:TotalAmount>
+            <ns0:BaseAmount Code="CAD">32100</ns0:BaseAmount>
+            <ns0:Taxes>
+              <ns0:Total Code="CAD">9810</ns0:Total>
+              <ns0:Breakdown>
+                <ns0:Tax>
+                  <ns0:Amount Code="CAD">130</ns0:Amount>
+                  <ns0:TaxCode>E7</ns0:TaxCode>
+                </ns0:Tax>
+                <ns0:Tax>
+                  <ns0:Amount Code="CAD">130</ns0:Amount>
+                  <ns0:TaxCode>E7</ns0:TaxCode>
+                </ns0:Tax>
+                <ns0:Tax>
+                  <ns0:Amount Code="CAD">060</ns0:Amount>
+                  <ns0:TaxCode>G8</ns0:TaxCode>
+                </ns0:Tax>
+              </ns0:Breakdown>
+            </ns0:Taxes>
+          </ns0:Price>
+          <ns0:FareComponent>
+            <ns0:FareBasis>
+              <ns0:FareBasisCode>
+                <ns0:Code>W14THRPO/DP</ns0:Code>
+              </ns0:FareBasisCode>
+              <ns0:RBD>W</ns0:RBD>
+              <ns0:CabinType>
+                <ns0:CabinTypeCode>M</ns0:CabinTypeCode>
+                <ns0:CabinTypeName>ECONOMY</ns0:CabinTypeName>
+              </ns0:CabinType>
+            </ns0:FareBasis>
+            <ns0:FareRules>
+              <ns0:Penalty CancelFeeInd="true" ChangeFeeInd="true">
+                <ns0:Details>
+                  <ns0:Detail refs="RULE1">
+                    <ns0:Type>Cancel</ns0:Type>
+                    <ns0:Application>2</ns0:Application>
+                    <ns0:Amounts>
+                      <ns0:Amount>
+                        <ns0:CurrencyAmountValue Code="CAD">13700</ns0:CurrencyAmountValue>
+                        <ns0:AmountApplication>MIN</ns0:AmountApplication>
+                        <ns0:ApplicableFeeRemarks>
+                          <ns0:Remark>Reissue/Refund minimum penalty amount before departure</ns0:Remark>
+                        </ns0:ApplicableFeeRemarks>
+                      </ns0:Amount>
+                      <ns0:Amount>
+                        <ns0:CurrencyAmountValue Code="CAD">13700</ns0:CurrencyAmountValue>
+                        <ns0:AmountApplication>MAX</ns0:AmountApplication>
+                        <ns0:ApplicableFeeRemarks>
+                          <ns0:Remark>Reissue/Refund maximum penalty amount before departure</ns0:Remark>
+                        </ns0:ApplicableFeeRemarks>
+                      </ns0:Amount>
+                    </ns0:Amounts>
+                  </ns0:Detail>
+                  <ns0:Detail refs="RULE9">
+                    <ns0:Type>Change</ns0:Type>
+                    <ns0:Application>2</ns0:Application>
+                    <ns0:Amounts>
+                      <ns0:Amount>
+                        <ns0:CurrencyAmountValue Code="CAD">000</ns0:CurrencyAmountValue>
+                        <ns0:AmountApplication>MIN</ns0:AmountApplication>
+                        <ns0:ApplicableFeeRemarks>
+                          <ns0:Remark>Reissue/Refund minimum penalty amount before departure</ns0:Remark>
+                        </ns0:ApplicableFeeRemarks>
+                      </ns0:Amount>
+                      <ns0:Amount>
+                        <ns0:CurrencyAmountValue Code="CAD">2700</ns0:CurrencyAmountValue>
+                        <ns0:AmountApplication>MAX</ns0:AmountApplication>
+                        <ns0:ApplicableFeeRemarks>
+                          <ns0:Remark>Reissue/Refund maximum penalty amount before departure</ns0:Remark>
+                        </ns0:ApplicableFeeRemarks>
+                      </ns0:Amount>
+                    </ns0:Amounts>
+                  </ns0:Detail>
+                  <ns0:Detail refs="RULE6">
+                    <ns0:Type>Cancel</ns0:Type>
+                    <ns0:Application>3</ns0:Application>
+                    <ns0:Amounts>
+                      <ns0:Amount>
+                        <ns0:CurrencyAmountValue Code="CAD">000</ns0:CurrencyAmountValue>
+                        <ns0:AmountApplication>MIN</ns0:AmountApplication>
+                        <ns0:ApplicableFeeRemarks>
+                          <ns0:Remark>Reissue/Refund minimum penalty amount after departure</ns0:Remark>
+                        </ns0:ApplicableFeeRemarks>
+                      </ns0:Amount>
+                      <ns0:Amount>
+                        <ns0:CurrencyAmountValue Code="CAD">000</ns0:CurrencyAmountValue>
+                        <ns0:AmountApplication>MAX</ns0:AmountApplication>
+                        <ns0:ApplicableFeeRemarks>
+                          <ns0:Remark>Reissue/Refund maximum penalty amount with sale currency</ns0:Remark>
+                        </ns0:ApplicableFeeRemarks>
+                      </ns0:Amount>
+                    </ns0:Amounts>
+                  </ns0:Detail>
+                </ns0:Details>
+              </ns0:Penalty>
+            </ns0:FareRules>
+            <ns0:PriceClassRef>FF31</ns0:PriceClassRef>
+            <ns0:SegmentRefs>SEG1</ns0:SegmentRefs>
+          </ns0:FareComponent>
+          <ns0:FareComponent>
+            <ns0:FareBasis>
+              <ns0:FareBasisCode>
+                <ns0:Code>W14THRPO/DP</ns0:Code>
+              </ns0:FareBasisCode>
+              <ns0:RBD>W</ns0:RBD>
+              <ns0:CabinType>
+                <ns0:CabinTypeCode>M</ns0:CabinTypeCode>
+                <ns0:CabinTypeName>ECONOMY</ns0:CabinTypeName>
+              </ns0:CabinType>
+            </ns0:FareBasis>
+            <ns0:FareRules>
+              <ns0:Penalty CancelFeeInd="true" ChangeFeeInd="true">
+                <ns0:Details>
+                  <ns0:Detail refs="RULE1">
+                    <ns0:Type>Cancel</ns0:Type>
+                    <ns0:Application>2</ns0:Application>
+                    <ns0:Amounts>
+                      <ns0:Amount>
+                        <ns0:CurrencyAmountValue Code="CAD">13700</ns0:CurrencyAmountValue>
+                        <ns0:AmountApplication>MIN</ns0:AmountApplication>
+                        <ns0:ApplicableFeeRemarks>
+                          <ns0:Remark>Reissue/Refund minimum penalty amount before departure</ns0:Remark>
+                        </ns0:ApplicableFeeRemarks>
+                      </ns0:Amount>
+                      <ns0:Amount>
+                        <ns0:CurrencyAmountValue Code="CAD">13700</ns0:CurrencyAmountValue>
+                        <ns0:AmountApplication>MAX</ns0:AmountApplication>
+                        <ns0:ApplicableFeeRemarks>
+                          <ns0:Remark>Reissue/Refund maximum penalty amount before departure</ns0:Remark>
+                        </ns0:ApplicableFeeRemarks>
+                      </ns0:Amount>
+                    </ns0:Amounts>
+                  </ns0:Detail>
+                  <ns0:Detail refs="RULE9">
+                    <ns0:Type>Change</ns0:Type>
+                    <ns0:Application>2</ns0:Application>
+                    <ns0:Amounts>
+                      <ns0:Amount>
+                        <ns0:CurrencyAmountValue Code="CAD">000</ns0:CurrencyAmountValue>
+                        <ns0:AmountApplication>MIN</ns0:AmountApplication>
+                        <ns0:ApplicableFeeRemarks>
+                          <ns0:Remark>Reissue/Refund minimum penalty amount before departure</ns0:Remark>
+                        </ns0:ApplicableFeeRemarks>
+                      </ns0:Amount>
+                      <ns0:Amount>
+                        <ns0:CurrencyAmountValue Code="CAD">2700</ns0:CurrencyAmountValue>
+                        <ns0:AmountApplication>MAX</ns0:AmountApplication>
+                        <ns0:ApplicableFeeRemarks>
+                          <ns0:Remark>Reissue/Refund maximum penalty amount before departure</ns0:Remark>
+                        </ns0:ApplicableFeeRemarks>
+                      </ns0:Amount>
+                    </ns0:Amounts>
+                  </ns0:Detail>
+                  <ns0:Detail refs="RULE2">
+                    <ns0:Type>Cancel</ns0:Type>
+                    <ns0:Application>3</ns0:Application>
+                    <ns0:Amounts>
+                      <ns0:Amount>
+                        <ns0:CurrencyAmountValue Code="CAD">13700</ns0:CurrencyAmountValue>
+                        <ns0:AmountApplication>MIN</ns0:AmountApplication>
+                        <ns0:ApplicableFeeRemarks>
+                          <ns0:Remark>Reissue/Refund minimum penalty amount after departure</ns0:Remark>
+                        </ns0:ApplicableFeeRemarks>
+                      </ns0:Amount>
+                      <ns0:Amount>
+                        <ns0:CurrencyAmountValue Code="CAD">27400</ns0:CurrencyAmountValue>
+                        <ns0:AmountApplication>MAX</ns0:AmountApplication>
+                        <ns0:ApplicableFeeRemarks>
+                          <ns0:Remark>Reissue/Refund maximum penalty amount with sale currency</ns0:Remark>
+                        </ns0:ApplicableFeeRemarks>
+                      </ns0:Amount>
+                    </ns0:Amounts>
+                  </ns0:Detail>
+                </ns0:Details>
+              </ns0:Penalty>
+            </ns0:FareRules>
+            <ns0:PriceClassRef>FF31</ns0:PriceClassRef>
+            <ns0:SegmentRefs>SEG2</ns0:SegmentRefs>
+          </ns0:FareComponent>
+          <ns0:Remarks>
+            <ns0:Remark>FC-BKK SQ SIN114.66SQ BKK114.66NUC229.32END ROE36.82566</ns0:Remark>
+            <ns0:Remark>FE-CHNG FEE APPLY / REFUND FEE APPLY / NO SHOW FEE APPLY IATA #</ns0:Remark>
+          </ns0:Remarks>
+        </ns0:FareDetail>
+        <ns0:Price>
+          <ns0:TotalAmount CurCode="CAD">41910</ns0:TotalAmount>
+          <ns0:BaseAmount CurCode="CAD">32100</ns0:BaseAmount>
+          <ns0:TaxSummary>
+            <ns0:TotalTaxAmount CurCode="CAD">9810</ns0:TotalTaxAmount>
+          </ns0:TaxSummary>
+        </ns0:Price>
+        <ns0:Service>
+          <ns0:ServiceID>SEG1_PAX2_1</ns0:ServiceID>
+          <ns0:StatusCode>HK</ns0:StatusCode>
+          <ns0:PaxRefID>PAX2</ns0:PaxRefID>
+          <ns0:ServiceAssociations>
+            <ns0:ServiceDefinitionRef>
+              <ns0:ServiceDefinitionRefID>BAGALLOW_1</ns0:ServiceDefinitionRefID>
+              <ns0:PaxSegmentRefID>SEG1</ns0:PaxSegmentRefID>
+            </ns0:ServiceDefinitionRef>
+          </ns0:ServiceAssociations>
+        </ns0:Service>
+        <ns0:Service>
+          <ns0:ServiceID>SEG2_PAX2_1</ns0:ServiceID>
+          <ns0:StatusCode>HK</ns0:StatusCode>
+          <ns0:PaxRefID>PAX2</ns0:PaxRefID>
+          <ns0:ServiceAssociations>
+            <ns0:ServiceDefinitionRef>
+              <ns0:ServiceDefinitionRefID>BAGALLOW_1</ns0:ServiceDefinitionRefID>
+              <ns0:PaxSegmentRefID>SEG2</ns0:PaxSegmentRefID>
+            </ns0:ServiceDefinitionRef>
+          </ns0:ServiceAssociations>
+        </ns0:Service>
+        <ns0:Service>
+          <ns0:ServiceID>SEG1_PAX2</ns0:ServiceID>
+          <ns0:StatusCode>HK</ns0:StatusCode>
+          <ns0:PaxRefID>PAX2</ns0:PaxRefID>
+          <ns0:ServiceAssociations>
+            <ns0:PaxSegmentRefID>SEG1</ns0:PaxSegmentRefID>
+          </ns0:ServiceAssociations>
+        </ns0:Service>
+        <ns0:Service>
+          <ns0:ServiceID>SEG2_PAX2</ns0:ServiceID>
+          <ns0:StatusCode>HK</ns0:StatusCode>
+          <ns0:PaxRefID>PAX2</ns0:PaxRefID>
+          <ns0:ServiceAssociations>
+            <ns0:PaxSegmentRefID>SEG2</ns0:PaxSegmentRefID>
+          </ns0:ServiceAssociations>
+        </ns0:Service>
+      </ns0:OrderItem>
+      <ns0:OrderItem>
+        <ns0:OrderItemID>SQ_6WGPWA_AIR-1-2_1APAX_PAX4</ns0:OrderItemID>
+        <ns0:OwnerCode>SQ</ns0:OwnerCode>
+        <ns0:FareDetail>
+          <ns0:PassengerRefs>PAX4</ns0:PassengerRefs>
+          <ns0:Price>
+            <ns0:TotalAmount>
+              <ns0:DetailCurrencyPrice>
+                <ns0:Total Code="CAD">41910</ns0:Total>
+              </ns0:DetailCurrencyPrice>
+            </ns0:TotalAmount>
+            <ns0:BaseAmount Code="CAD">32100</ns0:BaseAmount>
+            <ns0:Taxes>
+              <ns0:Total Code="CAD">9810</ns0:Total>
+              <ns0:Breakdown>
+                <ns0:Tax>
+                  <ns0:Amount Code="CAD">130</ns0:Amount>
+                  <ns0:TaxCode>E7</ns0:TaxCode>
+                </ns0:Tax>
+                <ns0:Tax>
+                  <ns0:Amount Code="CAD">130</ns0:Amount>
+                  <ns0:TaxCode>E7</ns0:TaxCode>
+                </ns0:Tax>
+                <ns0:Tax>
+                  <ns0:Amount Code="CAD">060</ns0:Amount>
+                  <ns0:TaxCode>G8</ns0:TaxCode>
+                </ns0:Tax>
+              </ns0:Breakdown>
+            </ns0:Taxes>
+          </ns0:Price>
+          <ns0:FareComponent>
+            <ns0:FareBasis>
+              <ns0:FareBasisCode>
+                <ns0:Code>W14THRPO/DP</ns0:Code>
+              </ns0:FareBasisCode>
+              <ns0:RBD>W</ns0:RBD>
+              <ns0:CabinType>
+                <ns0:CabinTypeCode>M</ns0:CabinTypeCode>
+                <ns0:CabinTypeName>ECONOMY</ns0:CabinTypeName>
+              </ns0:CabinType>
+            </ns0:FareBasis>
+            <ns0:FareRules>
+              <ns0:Penalty CancelFeeInd="true" ChangeFeeInd="true">
+                <ns0:Details>
+                  <ns0:Detail refs="RULE1">
+                    <ns0:Type>Cancel</ns0:Type>
+                    <ns0:Application>2</ns0:Application>
+                    <ns0:Amounts>
+                      <ns0:Amount>
+                        <ns0:CurrencyAmountValue Code="CAD">13700</ns0:CurrencyAmountValue>
+                        <ns0:AmountApplication>MIN</ns0:AmountApplication>
+                        <ns0:ApplicableFeeRemarks>
+                          <ns0:Remark>Reissue/Refund minimum penalty amount before departure</ns0:Remark>
+                        </ns0:ApplicableFeeRemarks>
+                      </ns0:Amount>
+                      <ns0:Amount>
+                        <ns0:CurrencyAmountValue Code="CAD">13700</ns0:CurrencyAmountValue>
+                        <ns0:AmountApplication>MAX</ns0:AmountApplication>
+                        <ns0:ApplicableFeeRemarks>
+                          <ns0:Remark>Reissue/Refund maximum penalty amount before departure</ns0:Remark>
+                        </ns0:ApplicableFeeRemarks>
+                      </ns0:Amount>
+                    </ns0:Amounts>
+                  </ns0:Detail>
+                  <ns0:Detail refs="RULE9">
+                    <ns0:Type>Change</ns0:Type>
+                    <ns0:Application>2</ns0:Application>
+                    <ns0:Amounts>
+                      <ns0:Amount>
+                        <ns0:CurrencyAmountValue Code="CAD">000</ns0:CurrencyAmountValue>
+                        <ns0:AmountApplication>MIN</ns0:AmountApplication>
+                        <ns0:ApplicableFeeRemarks>
+                          <ns0:Remark>Reissue/Refund minimum penalty amount before departure</ns0:Remark>
+                        </ns0:ApplicableFeeRemarks>
+                      </ns0:Amount>
+                      <ns0:Amount>
+                        <ns0:CurrencyAmountValue Code="CAD">2700</ns0:CurrencyAmountValue>
+                        <ns0:AmountApplication>MAX</ns0:AmountApplication>
+                        <ns0:ApplicableFeeRemarks>
+                          <ns0:Remark>Reissue/Refund maximum penalty amount before departure</ns0:Remark>
+                        </ns0:ApplicableFeeRemarks>
+                      </ns0:Amount>
+                    </ns0:Amounts>
+                  </ns0:Detail>
+                  <ns0:Detail refs="RULE6">
+                    <ns0:Type>Cancel</ns0:Type>
+                    <ns0:Application>3</ns0:Application>
+                    <ns0:Amounts>
+                      <ns0:Amount>
+                        <ns0:CurrencyAmountValue Code="CAD">000</ns0:CurrencyAmountValue>
+                        <ns0:AmountApplication>MIN</ns0:AmountApplication>
+                        <ns0:ApplicableFeeRemarks>
+                          <ns0:Remark>Reissue/Refund minimum penalty amount after departure</ns0:Remark>
+                        </ns0:ApplicableFeeRemarks>
+                      </ns0:Amount>
+                      <ns0:Amount>
+                        <ns0:CurrencyAmountValue Code="CAD">000</ns0:CurrencyAmountValue>
+                        <ns0:AmountApplication>MAX</ns0:AmountApplication>
+                        <ns0:ApplicableFeeRemarks>
+                          <ns0:Remark>Reissue/Refund maximum penalty amount with sale currency</ns0:Remark>
+                        </ns0:ApplicableFeeRemarks>
+                      </ns0:Amount>
+                    </ns0:Amounts>
+                  </ns0:Detail>
+                </ns0:Details>
+              </ns0:Penalty>
+            </ns0:FareRules>
+            <ns0:PriceClassRef>FF31</ns0:PriceClassRef>
+            <ns0:SegmentRefs>SEG1</ns0:SegmentRefs>
+          </ns0:FareComponent>
+          <ns0:FareComponent>
+            <ns0:FareBasis>
+              <ns0:FareBasisCode>
+                <ns0:Code>W14THRPO/DP</ns0:Code>
+              </ns0:FareBasisCode>
+              <ns0:RBD>W</ns0:RBD>
+              <ns0:CabinType>
+                <ns0:CabinTypeCode>M</ns0:CabinTypeCode>
+                <ns0:CabinTypeName>ECONOMY</ns0:CabinTypeName>
+              </ns0:CabinType>
+            </ns0:FareBasis>
+            <ns0:FareRules>
+              <ns0:Penalty CancelFeeInd="true" ChangeFeeInd="true">
+                <ns0:Details>
+                  <ns0:Detail refs="RULE1">
+                    <ns0:Type>Cancel</ns0:Type>
+                    <ns0:Application>2</ns0:Application>
+                    <ns0:Amounts>
+                      <ns0:Amount>
+                        <ns0:CurrencyAmountValue Code="CAD">13700</ns0:CurrencyAmountValue>
+                        <ns0:AmountApplication>MIN</ns0:AmountApplication>
+                        <ns0:ApplicableFeeRemarks>
+                          <ns0:Remark>Reissue/Refund minimum penalty amount before departure</ns0:Remark>
+                        </ns0:ApplicableFeeRemarks>
+                      </ns0:Amount>
+                      <ns0:Amount>
+                        <ns0:CurrencyAmountValue Code="CAD">13700</ns0:CurrencyAmountValue>
+                        <ns0:AmountApplication>MAX</ns0:AmountApplication>
+                        <ns0:ApplicableFeeRemarks>
+                          <ns0:Remark>Reissue/Refund maximum penalty amount before departure</ns0:Remark>
+                        </ns0:ApplicableFeeRemarks>
+                      </ns0:Amount>
+                    </ns0:Amounts>
+                  </ns0:Detail>
+                  <ns0:Detail refs="RULE9">
+                    <ns0:Type>Change</ns0:Type>
+                    <ns0:Application>2</ns0:Application>
+                    <ns0:Amounts>
+                      <ns0:Amount>
+                        <ns0:CurrencyAmountValue Code="CAD">000</ns0:CurrencyAmountValue>
+                        <ns0:AmountApplication>MIN</ns0:AmountApplication>
+                        <ns0:ApplicableFeeRemarks>
+                          <ns0:Remark>Reissue/Refund minimum penalty amount before departure</ns0:Remark>
+                        </ns0:ApplicableFeeRemarks>
+                      </ns0:Amount>
+                      <ns0:Amount>
+                        <ns0:CurrencyAmountValue Code="CAD">2700</ns0:CurrencyAmountValue>
+                        <ns0:AmountApplication>MAX</ns0:AmountApplication>
+                        <ns0:ApplicableFeeRemarks>
+                          <ns0:Remark>Reissue/Refund maximum penalty amount before departure</ns0:Remark>
+                        </ns0:ApplicableFeeRemarks>
+                      </ns0:Amount>
+                    </ns0:Amounts>
+                  </ns0:Detail>
+                  <ns0:Detail refs="RULE2">
+                    <ns0:Type>Cancel</ns0:Type>
+                    <ns0:Application>3</ns0:Application>
+                    <ns0:Amounts>
+                      <ns0:Amount>
+                        <ns0:CurrencyAmountValue Code="CAD">13700</ns0:CurrencyAmountValue>
+                        <ns0:AmountApplication>MIN</ns0:AmountApplication>
+                        <ns0:ApplicableFeeRemarks>
+                          <ns0:Remark>Reissue/Refund minimum penalty amount after departure</ns0:Remark>
+                        </ns0:ApplicableFeeRemarks>
+                      </ns0:Amount>
+                      <ns0:Amount>
+                        <ns0:CurrencyAmountValue Code="CAD">27400</ns0:CurrencyAmountValue>
+                        <ns0:AmountApplication>MAX</ns0:AmountApplication>
+                        <ns0:ApplicableFeeRemarks>
+                          <ns0:Remark>Reissue/Refund maximum penalty amount with sale currency</ns0:Remark>
+                        </ns0:ApplicableFeeRemarks>
+                      </ns0:Amount>
+                    </ns0:Amounts>
+                  </ns0:Detail>
+                </ns0:Details>
+              </ns0:Penalty>
+            </ns0:FareRules>
+            <ns0:PriceClassRef>FF31</ns0:PriceClassRef>
+            <ns0:SegmentRefs>SEG2</ns0:SegmentRefs>
+          </ns0:FareComponent>
+          <ns0:Remarks>
+            <ns0:Remark>FC-BKK SQ SIN114.66SQ BKK114.66NUC229.32END ROE36.82566</ns0:Remark>
+            <ns0:Remark>FE-CHNG FEE APPLY / REFUND FEE APPLY / NO SHOW FEE APPLY IATA #</ns0:Remark>
+          </ns0:Remarks>
+        </ns0:FareDetail>
+        <ns0:Price>
+          <ns0:TotalAmount CurCode="CAD">41910</ns0:TotalAmount>
+          <ns0:BaseAmount CurCode="CAD">32100</ns0:BaseAmount>
+          <ns0:TaxSummary>
+            <ns0:TotalTaxAmount CurCode="CAD">9810</ns0:TotalTaxAmount>
+          </ns0:TaxSummary>
+        </ns0:Price>
+        <ns0:Service>
+          <ns0:ServiceID>SEG1_PAX4_1</ns0:ServiceID>
+          <ns0:StatusCode>HK</ns0:StatusCode>
+          <ns0:PaxRefID>PAX4</ns0:PaxRefID>
+          <ns0:ServiceAssociations>
+            <ns0:ServiceDefinitionRef>
+              <ns0:ServiceDefinitionRefID>BAGALLOW_1</ns0:ServiceDefinitionRefID>
+              <ns0:PaxSegmentRefID>SEG1</ns0:PaxSegmentRefID>
+            </ns0:ServiceDefinitionRef>
+          </ns0:ServiceAssociations>
+        </ns0:Service>
+        <ns0:Service>
+          <ns0:ServiceID>SEG2_PAX4_1</ns0:ServiceID>
+          <ns0:StatusCode>HK</ns0:StatusCode>
+          <ns0:PaxRefID>PAX4</ns0:PaxRefID>
+          <ns0:ServiceAssociations>
+            <ns0:ServiceDefinitionRef>
+              <ns0:ServiceDefinitionRefID>BAGALLOW_1</ns0:ServiceDefinitionRefID>
+              <ns0:PaxSegmentRefID>SEG2</ns0:PaxSegmentRefID>
+            </ns0:ServiceDefinitionRef>
+          </ns0:ServiceAssociations>
+        </ns0:Service>
+        <ns0:Service>
+          <ns0:ServiceID>SEG1_PAX4</ns0:ServiceID>
+          <ns0:StatusCode>HK</ns0:StatusCode>
+          <ns0:PaxRefID>PAX4</ns0:PaxRefID>
+          <ns0:ServiceAssociations>
+            <ns0:PaxSegmentRefID>SEG1</ns0:PaxSegmentRefID>
+          </ns0:ServiceAssociations>
+        </ns0:Service>
+        <ns0:Service>
+          <ns0:ServiceID>SEG2_PAX4</ns0:ServiceID>
+          <ns0:StatusCode>HK</ns0:StatusCode>
+          <ns0:PaxRefID>PAX4</ns0:PaxRefID>
+          <ns0:ServiceAssociations>
+            <ns0:PaxSegmentRefID>SEG2</ns0:PaxSegmentRefID>
+          </ns0:ServiceAssociations>
+        </ns0:Service>
+      </ns0:OrderItem>
+      <ns0:PaymentInfo>
+        <ns0:Amount CurCode="CAD">16400</ns0:Amount>
+        <ns0:TypeCode>CC</ns0:TypeCode>
+        <ns0:PaymentMethod>
+          <ns0:PaymentCard>
+            <ns0:MaskedCardID>XXXXXXXXXXXX0008</ns0:MaskedCardID>
+            <ns0:CreditCardVendorCode>CA</ns0:CreditCardVendorCode>
+            <ns0:ExpirationDate>0139</ns0:ExpirationDate>
+          </ns0:PaymentCard>
+        </ns0:PaymentMethod>
+      </ns0:PaymentInfo>
+      <ns0:PaymentInfo>
+        <ns0:Amount CurCode="CAD">8200</ns0:Amount>
+        <ns0:TypeCode>CC</ns0:TypeCode>
+        <ns0:PaymentMethod>
+          <ns0:PaymentCard>
+            <ns0:MaskedCardID>XXXXXXXXXXXX0008</ns0:MaskedCardID>
+            <ns0:CreditCardVendorCode>CA</ns0:CreditCardVendorCode>
+            <ns0:ExpirationDate>0139</ns0:ExpirationDate>
+          </ns0:PaymentCard>
+        </ns0:PaymentMethod>
+      </ns0:PaymentInfo>
+      <ns0:PaymentInfo>
+        <ns0:Amount CurCode="CAD">8200</ns0:Amount>
+        <ns0:TypeCode>CC</ns0:TypeCode>
+        <ns0:PaymentMethod>
+          <ns0:PaymentCard>
+            <ns0:MaskedCardID>XXXXXXXXXXXX0008</ns0:MaskedCardID>
+            <ns0:CreditCardVendorCode>CA</ns0:CreditCardVendorCode>
+            <ns0:ExpirationDate>0139</ns0:ExpirationDate>
+          </ns0:PaymentCard>
+        </ns0:PaymentMethod>
+      </ns0:PaymentInfo>
+      <ns0:TotalPrice>
+        <ns0:TotalAmount CurCode="CAD">165110</ns0:TotalAmount>
+        <ns0:BaseAmount CurCode="CAD">135300</ns0:BaseAmount>
+        <ns0:TaxSummary>
+          <ns0:TotalTaxAmount CurCode="CAD">29810</ns0:TotalTaxAmount>
+        </ns0:TaxSummary>
+      </ns0:TotalPrice>
+    </ns0:Order>
+    <ns0:TicketDocInfos>
+      <ns0:TicketDocInfo>
+        <ns0:AgentIDs>
+          <ns0:AgentID>
+            <ns0:Type>B</ns0:Type>
+            <ns0:ID>9999WS/SU</ns0:ID>
+          </ns0:AgentID>
+        </ns0:AgentIDs>
+        <ns0:TicketDocument>
+          <ns0:TicketDocNbr>6182452796209</ns0:TicketDocNbr>
+          <ns0:Type>T</ns0:Type>
+          <ns0:NumberofBooklets>1</ns0:NumberofBooklets>
+          <ns0:DateOfIssue>2024-07-26</ns0:DateOfIssue>
+          <ns0:CouponInfo>
+            <ns0:CouponNumber>1</ns0:CouponNumber>
+            <ns0:CouponReference>SEG1</ns0:CouponReference>
+            <ns0:FareBasisCode>
+              <ns0:Code>W14THRPO/DP</ns0:Code>
+            </ns0:FareBasisCode>
+            <ns0:Status>O</ns0:Status>
+            <ns0:AddlBaggageInfo>
+              <ns0:CheckedFree MaxBagWght="30K" />
+            </ns0:AddlBaggageInfo>
+          </ns0:CouponInfo>
+          <ns0:CouponInfo>
+            <ns0:CouponNumber>2</ns0:CouponNumber>
+            <ns0:CouponReference>SEG2</ns0:CouponReference>
+            <ns0:FareBasisCode>
+              <ns0:Code>W14THRPO/DP</ns0:Code>
+            </ns0:FareBasisCode>
+            <ns0:Status>O</ns0:Status>
+            <ns0:AddlBaggageInfo>
+              <ns0:CheckedFree MaxBagWght="30K" />
+            </ns0:AddlBaggageInfo>
+          </ns0:CouponInfo>
+          <ns0:ReportingType>BSP</ns0:ReportingType>
+        </ns0:TicketDocument>
+        <ns0:PassengerReference>PAX2</ns0:PassengerReference>
+      </ns0:TicketDocInfo>
+      <ns0:TicketDocInfo>
+        <ns0:AgentIDs>
+          <ns0:AgentID>
+            <ns0:Type>B</ns0:Type>
+            <ns0:ID>9999WS/SU</ns0:ID>
+          </ns0:AgentID>
+        </ns0:AgentIDs>
+        <ns0:TicketDocument>
+          <ns0:TicketDocNbr>6182452796212</ns0:TicketDocNbr>
+          <ns0:Type>T</ns0:Type>
+          <ns0:NumberofBooklets>1</ns0:NumberofBooklets>
+          <ns0:DateOfIssue>2024-07-26</ns0:DateOfIssue>
+          <ns0:CouponInfo>
+            <ns0:CouponNumber>1</ns0:CouponNumber>
+            <ns0:CouponReference>SEG1</ns0:CouponReference>
+            <ns0:FareBasisCode>
+              <ns0:Code>W14THRPO/IN90DP</ns0:Code>
+            </ns0:FareBasisCode>
+            <ns0:Status>O</ns0:Status>
+            <ns0:AddlBaggageInfo>
+              <ns0:CheckedFree MaxBagWght="10K" />
+            </ns0:AddlBaggageInfo>
+          </ns0:CouponInfo>
+          <ns0:CouponInfo>
+            <ns0:CouponNumber>2</ns0:CouponNumber>
+            <ns0:CouponReference>SEG2</ns0:CouponReference>
+            <ns0:FareBasisCode>
+              <ns0:Code>W14THRPO/IN90DP</ns0:Code>
+            </ns0:FareBasisCode>
+            <ns0:Status>O</ns0:Status>
+            <ns0:AddlBaggageInfo>
+              <ns0:CheckedFree MaxBagWght="10K" />
+            </ns0:AddlBaggageInfo>
+          </ns0:CouponInfo>
+          <ns0:ReportingType>BSP</ns0:ReportingType>
+        </ns0:TicketDocument>
+        <ns0:PassengerReference>PAX3</ns0:PassengerReference>
+      </ns0:TicketDocInfo>
+      <ns0:TicketDocInfo>
+        <ns0:AgentIDs>
+          <ns0:AgentID>
+            <ns0:Type>B</ns0:Type>
+            <ns0:ID>9999WS/SU</ns0:ID>
+          </ns0:AgentID>
+        </ns0:AgentIDs>
+        <ns0:TicketDocument>
+          <ns0:TicketDocNbr>6182452796210</ns0:TicketDocNbr>
+          <ns0:Type>T</ns0:Type>
+          <ns0:NumberofBooklets>1</ns0:NumberofBooklets>
+          <ns0:DateOfIssue>2024-07-26</ns0:DateOfIssue>
+          <ns0:CouponInfo>
+            <ns0:CouponNumber>1</ns0:CouponNumber>
+            <ns0:CouponReference>SEG1</ns0:CouponReference>
+            <ns0:FareBasisCode>
+              <ns0:Code>W14THRPO/DP</ns0:Code>
+            </ns0:FareBasisCode>
+            <ns0:Status>O</ns0:Status>
+            <ns0:AddlBaggageInfo>
+              <ns0:CheckedFree MaxBagWght="30K" />
+            </ns0:AddlBaggageInfo>
+          </ns0:CouponInfo>
+          <ns0:CouponInfo>
+            <ns0:CouponNumber>2</ns0:CouponNumber>
+            <ns0:CouponReference>SEG2</ns0:CouponReference>
+            <ns0:FareBasisCode>
+              <ns0:Code>W14THRPO/DP</ns0:Code>
+            </ns0:FareBasisCode>
+            <ns0:Status>O</ns0:Status>
+            <ns0:AddlBaggageInfo>
+              <ns0:CheckedFree MaxBagWght="30K" />
+            </ns0:AddlBaggageInfo>
+          </ns0:CouponInfo>
+          <ns0:ReportingType>BSP</ns0:ReportingType>
+        </ns0:TicketDocument>
+        <ns0:PassengerReference>PAX4</ns0:PassengerReference>
+      </ns0:TicketDocInfo>
+    </ns0:TicketDocInfos>
+  </ns0:Response>
+</ns0:AMA_TravelOrderViewRS>

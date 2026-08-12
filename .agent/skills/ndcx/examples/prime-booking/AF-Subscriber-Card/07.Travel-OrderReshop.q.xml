@@ -1,0 +1,55 @@
+<soapenv:Envelope xmlns:add="http://www.w3.org/2005/08/addressing" xmlns:ns5="http://xml.amadeus.com/2010/06/Travel_OrderReshopRQ_v1" xmlns:oas="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd" xmlns:oas1="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:sec="http://xml.amadeus.com/2010/06/Security_v1" xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
+  <soapenv:Header>
+    <add:MessageID>NDCX-AMA-DevPack-9kR9IeFAsu8Qr140KxuTSbhQaUczxBW-1DDz3fOfA</add:MessageID>
+    <add:Action>http://webservices.amadeus.com/Travel_OrderReshop_1.1</add:Action>
+    <add:To>https://nodeD5.test.webservices.amadeus.com/WSAP</add:To>
+    <oas:Security>
+      <oas:UsernameToken oas1:Id="UsernameToken-1">
+        <oas:Username>YOUR_WS_USER</oas:Username>
+        <oas:Nonce EncodingType="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-soap-message-security-1.0#Base64Binary">REDACTED_NONCE</oas:Nonce>
+        <oas:Password Type="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-username-token-profile-1.0#PasswordDigest">REDACTED_DIGEST</oas:Password>
+        <oas1:Created>2022-03-11T13:38:46.658Z</oas1:Created>
+      </oas:UsernameToken>
+    </oas:Security>
+    <sec:AMA_SecurityHostedUser>
+      <sec:UserID AgentDutyCode="SU" RequestorType="U" PseudoCityCode="YOUR_OFFICE_ID" POS_Type="1" />
+    </sec:AMA_SecurityHostedUser>
+  </soapenv:Header>
+  <soapenv:Body>
+    <ns5:AMA_TravelOrderReshopRQ>
+      <ns5:Party>
+        <ns5:Sender>
+          <ns5:TravelAgency>
+            <ns5:AgencyID>NotUsed</ns5:AgencyID>
+            <ns5:PseudoCityID>NotUsed</ns5:PseudoCityID>
+          </ns5:TravelAgency>
+        </ns5:Sender>
+      </ns5:Party>
+      <ns5:Request>
+        <ns5:OrderItemRefID>AF057U207031D</ns5:OrderItemRefID>
+        <ns5:BookingRef>
+          <ns5:BookingID />
+          <ns5:BookingEntity>
+            <ns5:Carrier>
+              <ns5:AirlineDesigCode>AF</ns5:AirlineDesigCode>
+            </ns5:Carrier>
+          </ns5:BookingEntity>
+        </ns5:BookingRef>
+        <ns5:ReshopParameters>
+          <ns5:Notices>
+            <ns5:PricingParameters AutoExchRequestInd="false" />
+          </ns5:Notices>
+        </ns5:ReshopParameters>
+        <ns5:UpdateOrder>
+          <ns5:ReshopOrder>
+            <ns5:ServiceOrder>
+              <ns5:DeleteOrderItem>
+                <ns5:OrderItemRefID>fb76fe2e-0828-47c6-8a11-51e1b689bc3a_1APAX_PAX1</ns5:OrderItemRefID>
+              </ns5:DeleteOrderItem>
+            </ns5:ServiceOrder>
+          </ns5:ReshopOrder>
+        </ns5:UpdateOrder>
+      </ns5:Request>
+    </ns5:AMA_TravelOrderReshopRQ>
+  </soapenv:Body>
+</soapenv:Envelope>

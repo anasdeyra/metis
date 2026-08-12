@@ -1,0 +1,93 @@
+<soap:Envelope xmlns:add="http://www.w3.org/2005/08/addressing" xmlns:link="http://wsdl.amadeus.com/2010/06/ws/Link_v1" xmlns:ses="http://xml.amadeus.com/2010/06/Session_v3" xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+  <soap:Header>
+    <ses:Session TransactionStatusCode="InSeries">
+      <ses:SessionId>01GELFF39H</ses:SessionId>
+      <ses:SequenceNumber>2</ses:SequenceNumber>
+      <ses:SecurityToken>REDACTED_TOKEN</ses:SecurityToken>
+    </ses:Session>
+    <add:MessageID>85475124-ba3a-4f37-ab0a-3d00891c9e35</add:MessageID>
+    <add:Action>http://webservices.amadeus.com/TFOPCQ_19_2_1A</add:Action>
+    <add:To>https://noded5.test.webservices.amadeus.com/WSAP</add:To>
+    <link:TransactionFlowLink />
+  </soap:Header>
+  <soap:Body>
+    <FOP_CreateFormOfPayment>
+      <transactionContext>
+        <transactionDetails>
+          <code>FP</code>
+        </transactionDetails>
+      </transactionContext>
+      <fopGroup>
+        <fopReference />
+        <mopDescription>
+          <fopSequenceNumber>
+            <sequenceDetails>
+              <number>1</number>
+            </sequenceDetails>
+          </fopSequenceNumber>
+          <paymentModule>
+            <groupUsage>
+              <attributeDetails>
+                <attributeType>FP</attributeType>
+              </attributeDetails>
+            </groupUsage>
+            <paymentData>
+              <merchantInformation>
+                <companyCode>IB</companyCode>
+              </merchantInformation>
+              <fraudScreeningData>
+                <fraudScreening>
+                  <statusInformation>
+                    <indicator>FRA</indicator>
+                    <action>Y</action>
+                  </statusInformation>
+                </fraudScreening>
+                <payerPhoneOrEmail>
+                  <phoneOrEmailType>E</phoneOrEmailType>
+                  <emailAddress>msmith@amadeus.com</emailAddress>
+                </payerPhoneOrEmail>
+                <payerName>
+                  <ccHolderNameDetails>
+                    <surname>SMITH</surname>
+                  </ccHolderNameDetails>
+                  <otherNameDetails>
+                    <givenName>MIKE</givenName>
+                  </otherNameDetails>
+                </payerName>
+                <billingAddress>
+                  <addressDetails>
+                    <format>5</format>
+                    <line1>3470 NW 82 AVENUE</line1>
+                  </addressDetails>
+                  <city>MIAMI</city>
+                  <zipCode>33122</zipCode>
+                  <countryCode>US</countryCode>
+                </billingAddress>
+              </fraudScreeningData>
+            </paymentData>
+            <mopInformation>
+              <fopInformation>
+                <formOfPayment>
+                  <type>CC</type>
+                </formOfPayment>
+              </fopInformation>
+              <dummy />
+              <creditCardData>
+                <creditCardDetails>
+                  <ccInfo>
+                    <vendorCode>VI</vendorCode>
+                    <cardNumber>XXXXXXXXXXXX7395</cardNumber>
+                    <securityId>123</securityId>
+                    <expiryDate>0330</expiryDate>
+                    <ccHolderName>MIKE SMITH</ccHolderName>
+                  </ccInfo>
+                </creditCardDetails>
+              </creditCardData>
+            </mopInformation>
+            <dummy />
+          </paymentModule>
+        </mopDescription>
+      </fopGroup>
+    </FOP_CreateFormOfPayment>
+  </soap:Body>
+</soap:Envelope>

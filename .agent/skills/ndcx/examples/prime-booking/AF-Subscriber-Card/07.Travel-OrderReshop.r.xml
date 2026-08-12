@@ -1,0 +1,38 @@
+<soap:Envelope xmlns:awsse="http://xml.amadeus.com/2010/06/Session_v3" xmlns:ns3="http://xml.amadeus.com/2010/06/Travel_OrderReshopRS_v1" xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns:wsa="http://www.w3.org/2005/08/addressing">
+  <soap:Header>
+    <wsa:To>http://www.w3.org/2005/08/addressing/anonymous</wsa:To>
+    <wsa:From>
+      <wsa:Address>https://nodeD5.test.webservices.amadeus.com/WSAP</wsa:Address>
+    </wsa:From>
+    <wsa:Action>http://webservices.amadeus.com/Travel_OrderReshop_1.1</wsa:Action>
+    <wsa:MessageID>urn:uuid:7766da36-f940-6894-0d57-5724bf678bb8</wsa:MessageID>
+    <wsa:RelatesTo RelationshipType="http://www.w3.org/2005/08/addressing/reply">NDCX-AMA-DevPack-9kR9IeFAsu8Qr140KxuTSbhQaUczxBW-1DDz3fOfA</wsa:RelatesTo>
+    <awsse:Session TransactionStatusCode="End">
+      <awsse:SessionId>00IXMNR7FR</awsse:SessionId>
+      <awsse:SequenceNumber>1</awsse:SequenceNumber>
+      <awsse:SecurityToken>REDACTED_TOKEN</awsse:SecurityToken>
+    </awsse:Session>
+  </soap:Header>
+  <soap:Body>
+    <ns3:AMA_TravelOrderReshopRS>
+      <ns3:Response>
+        <ns3:ReshopResults UseCase="VOID">
+          <ns3:ReshopOffers>
+            <ns3:ReshopOffer>
+              <ns3:OfferID>d755879d-1786-4b8a-9587-719362</ns3:OfferID>
+              <ns3:OwnerCode>AF</ns3:OwnerCode>
+              <ns3:OfferExpirationDateTime>2022-03-11T14:08:48.562Z</ns3:OfferExpirationDateTime>
+              <ns3:Desc>
+                <ns3:DescID>0</ns3:DescID>
+                <ns3:DescText>VOID</ns3:DescText>
+              </ns3:Desc>
+              <ns3:DeleteOrderItem>
+                <ns3:OrderItemRefID>fb76fe2e-0828-47c6-8a11-51e1b689bc3a_1APAX_PAX1</ns3:OrderItemRefID>
+              </ns3:DeleteOrderItem>
+            </ns3:ReshopOffer>
+          </ns3:ReshopOffers>
+        </ns3:ReshopResults>
+      </ns3:Response>
+    </ns3:AMA_TravelOrderReshopRS>
+  </soap:Body>
+</soap:Envelope>

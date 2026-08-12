@@ -1,0 +1,79 @@
+<soap:Envelope xmlns:add="http://www.w3.org/2005/08/addressing" xmlns:link="http://wsdl.amadeus.com/2010/06/ws/Link_v1" xmlns:oas="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd" xmlns:oas1="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:sec="http://xml.amadeus.com/2010/06/Security_v1" xmlns:ses="http://xml.amadeus.com/2010/06/Session_v3" xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+  <soap:Header>
+    <ses:Session TransactionStatusCode="Start" />
+    <add:MessageID>bd9773c1-a6c1-404f-9bb3-aa7ad8169849</add:MessageID>
+    <add:Action>http://webservices.amadeus.com/FMPTBQ_21_4_1A</add:Action>
+    <add:To>https://noded5.test.webservices.amadeus.com/WSAP</add:To>
+    <link:TransactionFlowLink />
+    <oas:Security>
+      <oas:UsernameToken oas1:Id="UsernameToken-1">
+        <oas:Username>YOUR_WS_USER</oas:Username>
+        <oas:Nonce EncodingType="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-soap-message-security-1.0#Base64Binary">REDACTED_NONCE</oas:Nonce>
+        <oas:Password Type="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-username-token-profile-1.0#PasswordDigest">REDACTED_DIGEST</oas:Password>
+        <oas1:Created>2024-07-09T13:54:14.259Z</oas1:Created>
+      </oas:UsernameToken>
+    </oas:Security>
+    <sec:AMA_SecurityHostedUser>
+      <sec:UserID AgentDutyCode="SU" POS_Type="1" PseudoCityCode="YOUR_OFFICE_ID" RequestorType="U" />
+    </sec:AMA_SecurityHostedUser>
+  </soap:Header>
+  <soap:Body>
+    <Fare_MasterPricerTravelBoardSearch>
+      <numberOfUnit>
+        <unitNumberDetail>
+          <numberOfUnits>250</numberOfUnits>
+          <typeOfUnit>RC</typeOfUnit>
+        </unitNumberDetail>
+        <unitNumberDetail>
+          <numberOfUnits>100</numberOfUnits>
+          <typeOfUnit>NDC</typeOfUnit>
+        </unitNumberDetail>
+        <unitNumberDetail>
+          <numberOfUnits>1</numberOfUnits>
+          <typeOfUnit>PX</typeOfUnit>
+        </unitNumberDetail>
+      </numberOfUnit>
+      <paxReference>
+        <ptc>ADT</ptc>
+        <traveller>
+          <ref>1</ref>
+        </traveller>
+      </paxReference>
+      <fareOptions>
+        <pricingTickInfo>
+          <pricingTicketing>
+            <priceType>ET</priceType>
+            <priceType>RP</priceType>
+            <priceType>RU</priceType>
+          </pricingTicketing>
+        </pricingTickInfo>
+      </fareOptions>
+      <travelFlightInfo>
+        <companyIdentity>
+          <carrierQualifier>M</carrierQualifier>
+          <carrierId>BA</carrierId>
+        </companyIdentity>
+      </travelFlightInfo>
+      <itinerary>
+        <requestedSegmentRef>
+          <segRef>1</segRef>
+        </requestedSegmentRef>
+        <departureLocalization>
+          <departurePoint>
+            <locationId>LON</locationId>
+          </departurePoint>
+        </departureLocalization>
+        <arrivalLocalization>
+          <arrivalPointDetails>
+            <locationId>NYC</locationId>
+          </arrivalPointDetails>
+        </arrivalLocalization>
+        <timeDetails>
+          <firstDateTimeDetail>
+            <date>240924</date>
+          </firstDateTimeDetail>
+        </timeDetails>
+      </itinerary>
+    </Fare_MasterPricerTravelBoardSearch>
+  </soap:Body>
+</soap:Envelope>

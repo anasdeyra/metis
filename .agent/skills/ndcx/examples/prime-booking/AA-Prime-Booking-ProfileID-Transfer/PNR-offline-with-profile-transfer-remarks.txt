@@ -1,0 +1,51 @@
+<!--PROFILE ID SY2377 -->
+
+
+*T* SMITH/MIKE            C AMADEUS NDC             SY2377   
+------- PNR TRANSFERABLE DATA                       OID      
+       1  A  NM  1SMITH/MIKE                                      
+       2  A  AP  3054996000                                        
+       3  A  AP  E MYEMAIL.AMADEUS.COM                          
+       4  A  SR  *DOCSYYHK1-////10JUN80/M//SMITH/MIKE             
+       5 *A  RM  THIS A TRAVELLER PROFILE                          
+       6 *A  FP  CCVIXXXXXXXXXXXX0008/0139                         
+       7 *A  RII PLEASE CHECK IN 2 HOURS BEFORE FLIGHT             
+------- GENERAL INFORMATION                                        
+ C     8 PCN/ AMADEUS NDC                                            
+END OF DISPLAY                                                     
+*PROFILE MODE*                                                     
+
+
+
+
+<!--TRAVELLER DECIDED TO PAY IN CASH INSTEAD OF THE CC ON FILE.  
+IF PAYING WITH CC ON FILE, TRAVEL_ORDERPAY WOULD USE FROM_PNR 
+
+REMARKS, AIAN WERE TRANSFERRED TO THE OFFLINE PNR -->
+
+
+
+--- TST RLR RLP NDC ---                                          
+RP/OID/OID            WS/SU  25MAY23/1055Z   QAW5V8  
+OID/1234WS/25MAY23                                         
+  1.SMITH/MIKE                                                  
+  2  AA1808 G 30MAY 2 LASPHX HK1  0637 0750  30MAY       N       
+  3  AA2085 G 30MAY 2 PHXSMF HK1  0828 1033  30MAY       N       
+  4  AA4889 V 30MAY 2 SMFLAX HK1  1145 1320  30MAY       N       
+  5 AP 3054996000                                                
+  6 AP E MYEMAIL.AMADEUS.COM                                   
+  7 APA +305 499-6000                                            
+  8 TK OK25MAY/OID                                         
+  9 SSR CTCE AA HK1 MYEMAIL.AMADEUS.COM            
+ 10 SSR DOCS AA HK1 P/US/85478547//01JAN01/M/02FEB28/SMITH/MIKE                                                         
+ 11 AI AN12345                                                   
+ 12 RM THIS A TRAVELLER PROFILE                                  
+ 13 RM THIS IS A TEST REMARK                                     
+ 14 RM NOTIFY PASSENGER PRIOR TO TICKET PURCHASE & CHECK-IN:     
+       FEDERAL LAWS FORBID THE CARRIAGE OF HAZARDOUS MATERIALS - 
+       GGAMAUSHAZ/S2-4                                           
+ 15 RII PLEASE CHECK IN 2 HOURS BEFORE FLIGHT                    
+ 16 FA PAX 001-5744874085/ETAA/25MAY23/OID/11111111/S2-4   
+ 17 FP CASH                   
+ * ES/G 25MAY/WSSU/OID 
+   OID-R               

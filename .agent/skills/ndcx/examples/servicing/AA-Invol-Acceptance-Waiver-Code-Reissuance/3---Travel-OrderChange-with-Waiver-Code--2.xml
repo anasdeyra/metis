@@ -1,0 +1,908 @@
+<ns0:AMA_TravelOrderViewRS xmlns:ns0="http://xml.amadeus.com/2010/06/Travel_OrderViewRS_v1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xml.amadeus.com/2010/06/Travel_OrderViewRS_v1 file://X:/it2rail/NDCX/FLX/xsd/AMA_TravelOrderViewRS.xsd">
+  <ns0:Party>
+    <ns0:Sender>
+      <ns0:Aggregator>
+        <ns0:AggregatorID>F1</ns0:AggregatorID>
+      </ns0:Aggregator>
+    </ns0:Sender>
+  </ns0:Party>
+  <ns0:Response>
+    <ns0:DataLists>
+      <ns0:BaggageAllowanceList>
+        <ns0:BaggageAllowance>
+          <ns0:BaggageAllowanceID>BAF2485D10-CO</ns0:BaggageAllowanceID>
+          <ns0:TypeCode>CarryOn</ns0:TypeCode>
+          <ns0:ApplicablePartyText>Traveler</ns0:ApplicablePartyText>
+          <ns0:DescText>CARRY ON ALLOWANCE</ns0:DescText>
+          <ns0:BDC>
+            <ns0:CarrierDesigCode>AA</ns0:CarrierDesigCode>
+          </ns0:BDC>
+          <ns0:DimensionAllowance>
+            <ns0:BaggageDimensionCategory>Length</ns0:BaggageDimensionCategory>
+            <ns0:MaxMeasure UnitCode="Centimeter">115</ns0:MaxMeasure>
+          </ns0:DimensionAllowance>
+          <ns0:PieceAllowance>
+            <ns0:ApplicablePartyText>Traveler</ns0:ApplicablePartyText>
+            <ns0:TotalQty>1</ns0:TotalQty>
+            <ns0:ApplicableBagText>CARRY ON UP TO 45 LI 115 LCM</ns0:ApplicableBagText>
+            <ns0:PieceDimensionAllowance>
+              <ns0:BaggageDimensionCategory>Length</ns0:BaggageDimensionCategory>
+              <ns0:MaxMeasure UnitCode="Centimeter">115</ns0:MaxMeasure>
+            </ns0:PieceDimensionAllowance>
+          </ns0:PieceAllowance>
+          <ns0:PieceAllowance>
+            <ns0:ApplicablePartyText>Traveler</ns0:ApplicablePartyText>
+            <ns0:TotalQty>1</ns0:TotalQty>
+            <ns0:ApplicableBagText>PERSONAL ITEM UP TO 40 LI</ns0:ApplicableBagText>
+            <ns0:PieceDimensionAllowance>
+              <ns0:BaggageDimensionCategory>Length</ns0:BaggageDimensionCategory>
+              <ns0:MaxMeasure UnitCode="Centimeter">115</ns0:MaxMeasure>
+            </ns0:PieceDimensionAllowance>
+          </ns0:PieceAllowance>
+        </ns0:BaggageAllowance>
+        <ns0:BaggageAllowance>
+          <ns0:BaggageAllowanceID>BA584ED21B-CO</ns0:BaggageAllowanceID>
+          <ns0:TypeCode>CarryOn</ns0:TypeCode>
+          <ns0:ApplicablePartyText>Traveler</ns0:ApplicablePartyText>
+          <ns0:DescText>CARRY ON ALLOWANCE</ns0:DescText>
+          <ns0:BDC>
+            <ns0:CarrierDesigCode>AA</ns0:CarrierDesigCode>
+          </ns0:BDC>
+          <ns0:DimensionAllowance>
+            <ns0:BaggageDimensionCategory>Length</ns0:BaggageDimensionCategory>
+            <ns0:MaxMeasure UnitCode="Centimeter">115</ns0:MaxMeasure>
+          </ns0:DimensionAllowance>
+          <ns0:PieceAllowance>
+            <ns0:ApplicablePartyText>Traveler</ns0:ApplicablePartyText>
+            <ns0:TotalQty>1</ns0:TotalQty>
+            <ns0:ApplicableBagText>CARRY ON UP TO 45 LI 115 LCM</ns0:ApplicableBagText>
+            <ns0:PieceDimensionAllowance>
+              <ns0:BaggageDimensionCategory>Length</ns0:BaggageDimensionCategory>
+              <ns0:MaxMeasure UnitCode="Centimeter">115</ns0:MaxMeasure>
+            </ns0:PieceDimensionAllowance>
+          </ns0:PieceAllowance>
+          <ns0:PieceAllowance>
+            <ns0:ApplicablePartyText>Traveler</ns0:ApplicablePartyText>
+            <ns0:TotalQty>1</ns0:TotalQty>
+            <ns0:ApplicableBagText>PERSONAL ITEM UP TO 40 LI</ns0:ApplicableBagText>
+            <ns0:PieceDimensionAllowance>
+              <ns0:BaggageDimensionCategory>Length</ns0:BaggageDimensionCategory>
+              <ns0:MaxMeasure UnitCode="Centimeter">115</ns0:MaxMeasure>
+            </ns0:PieceDimensionAllowance>
+          </ns0:PieceAllowance>
+        </ns0:BaggageAllowance>
+        <ns0:BaggageAllowance>
+          <ns0:BaggageAllowanceID>BA86BC92BE</ns0:BaggageAllowanceID>
+          <ns0:TypeCode>Checked</ns0:TypeCode>
+          <ns0:ApplicablePartyText>Traveler</ns0:ApplicablePartyText>
+          <ns0:DescText>CHECKED ALLOWANCE</ns0:DescText>
+          <ns0:BDC>
+            <ns0:CarrierDesigCode>AA</ns0:CarrierDesigCode>
+          </ns0:BDC>
+          <ns0:PieceAllowance>
+            <ns0:ApplicablePartyText>Traveler</ns0:ApplicablePartyText>
+            <ns0:TotalQty>2</ns0:TotalQty>
+            <ns0:PieceDimensionAllowance>
+              <ns0:BaggageDimensionCategory>Length</ns0:BaggageDimensionCategory>
+              <ns0:MaxMeasure UnitCode="Inch">62</ns0:MaxMeasure>
+            </ns0:PieceDimensionAllowance>
+            <ns0:PieceDimensionAllowance>
+              <ns0:BaggageDimensionCategory>Length</ns0:BaggageDimensionCategory>
+              <ns0:MaxMeasure UnitCode="Centimeter">158</ns0:MaxMeasure>
+            </ns0:PieceDimensionAllowance>
+            <ns0:PieceWeightAllowance>
+              <ns0:MaximumWeightMeasure UnitCode="KG">32</ns0:MaximumWeightMeasure>
+            </ns0:PieceWeightAllowance>
+            <ns0:PieceWeightAllowance>
+              <ns0:MaximumWeightMeasure UnitCode="LBS">70</ns0:MaximumWeightMeasure>
+            </ns0:PieceWeightAllowance>
+          </ns0:PieceAllowance>
+          <ns0:PieceAllowance>
+            <ns0:ApplicablePartyText>Traveler</ns0:ApplicablePartyText>
+            <ns0:TotalQty>2</ns0:TotalQty>
+            <ns0:ApplicableBagText>UPTO70LB 32KG AND62LI 158LCM</ns0:ApplicableBagText>
+            <ns0:PieceDimensionAllowance>
+              <ns0:BaggageDimensionCategory>Length</ns0:BaggageDimensionCategory>
+              <ns0:MaxMeasure UnitCode="Inch">62</ns0:MaxMeasure>
+            </ns0:PieceDimensionAllowance>
+            <ns0:PieceWeightAllowance>
+              <ns0:MaximumWeightMeasure UnitCode="KG">32</ns0:MaximumWeightMeasure>
+            </ns0:PieceWeightAllowance>
+          </ns0:PieceAllowance>
+          <ns0:PieceAllowance>
+            <ns0:ApplicablePartyText>Traveler</ns0:ApplicablePartyText>
+            <ns0:TotalQty>2</ns0:TotalQty>
+            <ns0:ApplicableBagText>UPTO50LB 23KG AND62LI 158LCM</ns0:ApplicableBagText>
+            <ns0:PieceDimensionAllowance>
+              <ns0:BaggageDimensionCategory>Length</ns0:BaggageDimensionCategory>
+              <ns0:MaxMeasure UnitCode="Inch">62</ns0:MaxMeasure>
+            </ns0:PieceDimensionAllowance>
+            <ns0:PieceWeightAllowance>
+              <ns0:MaximumWeightMeasure UnitCode="KG">32</ns0:MaximumWeightMeasure>
+            </ns0:PieceWeightAllowance>
+          </ns0:PieceAllowance>
+        </ns0:BaggageAllowance>
+        <ns0:BaggageAllowance>
+          <ns0:BaggageAllowanceID>BAEAF499B2</ns0:BaggageAllowanceID>
+          <ns0:TypeCode>Checked</ns0:TypeCode>
+          <ns0:ApplicablePartyText>Traveler</ns0:ApplicablePartyText>
+          <ns0:DescText>CHECKED ALLOWANCE</ns0:DescText>
+          <ns0:BDC>
+            <ns0:CarrierDesigCode>AA</ns0:CarrierDesigCode>
+          </ns0:BDC>
+          <ns0:PieceAllowance>
+            <ns0:ApplicablePartyText>Traveler</ns0:ApplicablePartyText>
+            <ns0:TotalQty>2</ns0:TotalQty>
+            <ns0:PieceDimensionAllowance>
+              <ns0:BaggageDimensionCategory>Length</ns0:BaggageDimensionCategory>
+              <ns0:MaxMeasure UnitCode="Inch">62</ns0:MaxMeasure>
+            </ns0:PieceDimensionAllowance>
+            <ns0:PieceDimensionAllowance>
+              <ns0:BaggageDimensionCategory>Length</ns0:BaggageDimensionCategory>
+              <ns0:MaxMeasure UnitCode="Centimeter">158</ns0:MaxMeasure>
+            </ns0:PieceDimensionAllowance>
+            <ns0:PieceWeightAllowance>
+              <ns0:MaximumWeightMeasure UnitCode="KG">32</ns0:MaximumWeightMeasure>
+            </ns0:PieceWeightAllowance>
+            <ns0:PieceWeightAllowance>
+              <ns0:MaximumWeightMeasure UnitCode="LBS">70</ns0:MaximumWeightMeasure>
+            </ns0:PieceWeightAllowance>
+          </ns0:PieceAllowance>
+          <ns0:PieceAllowance>
+            <ns0:ApplicablePartyText>Traveler</ns0:ApplicablePartyText>
+            <ns0:TotalQty>2</ns0:TotalQty>
+            <ns0:ApplicableBagText>UPTO70LB 32KG AND62LI 158LCM</ns0:ApplicableBagText>
+            <ns0:PieceDimensionAllowance>
+              <ns0:BaggageDimensionCategory>Length</ns0:BaggageDimensionCategory>
+              <ns0:MaxMeasure UnitCode="Inch">62</ns0:MaxMeasure>
+            </ns0:PieceDimensionAllowance>
+            <ns0:PieceWeightAllowance>
+              <ns0:MaximumWeightMeasure UnitCode="KG">32</ns0:MaximumWeightMeasure>
+            </ns0:PieceWeightAllowance>
+          </ns0:PieceAllowance>
+          <ns0:PieceAllowance>
+            <ns0:ApplicablePartyText>Traveler</ns0:ApplicablePartyText>
+            <ns0:TotalQty>2</ns0:TotalQty>
+            <ns0:ApplicableBagText>UPTO50LB 23KG AND62LI 158LCM</ns0:ApplicableBagText>
+            <ns0:PieceDimensionAllowance>
+              <ns0:BaggageDimensionCategory>Length</ns0:BaggageDimensionCategory>
+              <ns0:MaxMeasure UnitCode="Inch">62</ns0:MaxMeasure>
+            </ns0:PieceDimensionAllowance>
+            <ns0:PieceWeightAllowance>
+              <ns0:MaximumWeightMeasure UnitCode="KG">32</ns0:MaximumWeightMeasure>
+            </ns0:PieceWeightAllowance>
+          </ns0:PieceAllowance>
+        </ns0:BaggageAllowance>
+      </ns0:BaggageAllowanceList>
+      <ns0:ContactInfoList>
+        <ns0:ContactInfo>
+          <ns0:ContactInfoID>CI1</ns0:ContactInfoID>
+          <ns0:Phone>
+            <ns0:PhoneNumber>33402390543</ns0:PhoneNumber>
+          </ns0:Phone>
+          <ns0:EmailAddress>
+            <ns0:EmailAddressText>NAME_SURNAME_ADT@MYMAIL.COM</ns0:EmailAddressText>
+          </ns0:EmailAddress>
+        </ns0:ContactInfo>
+      </ns0:ContactInfoList>
+      <ns0:FareList>
+        <ns0:FareGroup refs="FRK0FFAE404" ListKey="FG1">
+          <ns0:Fare>
+            <ns0:FareCode>70J</ns0:FareCode>
+          </ns0:Fare>
+          <ns0:FareBasisCode>
+            <ns0:Code>SVAWZNIZ</ns0:Code>
+          </ns0:FareBasisCode>
+        </ns0:FareGroup>
+        <ns0:FareGroup refs="FRK7B4C519C" ListKey="FG2">
+          <ns0:Fare>
+            <ns0:FareCode>70J</ns0:FareCode>
+          </ns0:Fare>
+          <ns0:FareBasisCode>
+            <ns0:Code>SVAWZNIZ</ns0:Code>
+          </ns0:FareBasisCode>
+        </ns0:FareGroup>
+      </ns0:FareList>
+      <ns0:InstructionsList>
+        <ns0:Instruction ListKey="I3">
+          <ns0:FreeFormTextInstruction refs="S3">
+            <ns0:Remark>010 QR 7631</ns0:Remark>
+            <ns0:Remark>011 ONEWORLD</ns0:Remark>
+            <ns0:Remark>503 4 12 18 22 23 26</ns0:Remark>
+          </ns0:FreeFormTextInstruction>
+        </ns0:Instruction>
+      </ns0:InstructionsList>
+      <ns0:OriginDestList>
+        <ns0:OriginDest>
+          <ns0:OriginDestID>O1</ns0:OriginDestID>
+          <ns0:OriginCode>SNA</ns0:OriginCode>
+          <ns0:DestCode>DFW</ns0:DestCode>
+          <ns0:PaxJourneyRefID>F1</ns0:PaxJourneyRefID>
+        </ns0:OriginDest>
+        <ns0:OriginDest>
+          <ns0:OriginDestID>O2</ns0:OriginDestID>
+          <ns0:OriginCode>DFW</ns0:OriginCode>
+          <ns0:DestCode>SNA</ns0:DestCode>
+          <ns0:PaxJourneyRefID>F2</ns0:PaxJourneyRefID>
+        </ns0:OriginDest>
+      </ns0:OriginDestList>
+      <ns0:PaxJourneyList>
+        <ns0:PaxJourney>
+          <ns0:PaxJourneyID>F1</ns0:PaxJourneyID>
+          <ns0:Duration>PT3H10M</ns0:Duration>
+          <ns0:PaxSegmentRefID>S2</ns0:PaxSegmentRefID>
+        </ns0:PaxJourney>
+        <ns0:PaxJourney>
+          <ns0:PaxJourneyID>F2</ns0:PaxJourneyID>
+          <ns0:Duration>PT3H3M</ns0:Duration>
+          <ns0:PaxSegmentRefID>S3</ns0:PaxSegmentRefID>
+        </ns0:PaxJourney>
+      </ns0:PaxJourneyList>
+      <ns0:PaxList>
+        <ns0:Pax>
+          <ns0:PaxID>T1</ns0:PaxID>
+          <ns0:PTC>ADT</ns0:PTC>
+          <ns0:Birthdate>1988-02-29</ns0:Birthdate>
+          <ns0:ContactInfoRefID>CI1</ns0:ContactInfoRefID>
+          <ns0:IdentityDoc>
+            <ns0:IdentityDocID>PA1661541</ns0:IdentityDocID>
+            <ns0:IdentityDocTypeCode>PT</ns0:IdentityDocTypeCode>
+            <ns0:IssuingCountryCode>FR</ns0:IssuingCountryCode>
+            <ns0:CitizenshipCountryCode>FR</ns0:CitizenshipCountryCode>
+            <ns0:ExpiryDate>2030-10-22</ns0:ExpiryDate>
+            <ns0:GivenName>AOAGTH</ns0:GivenName>
+            <ns0:Surname>NDCX</ns0:Surname>
+            <ns0:Birthdate>1988-02-29</ns0:Birthdate>
+            <ns0:GenderCode>F</ns0:GenderCode>
+          </ns0:IdentityDoc>
+          <ns0:Individual>
+            <ns0:IndividualID>ID1</ns0:IndividualID>
+            <ns0:Birthdate>1988-02-29</ns0:Birthdate>
+            <ns0:GenderCode>F</ns0:GenderCode>
+            <ns0:TitleName>MRS</ns0:TitleName>
+            <ns0:GivenName>AOAGTH</ns0:GivenName>
+            <ns0:Surname>NDCX</ns0:Surname>
+          </ns0:Individual>
+        </ns0:Pax>
+      </ns0:PaxList>
+      <ns0:PaxSegmentList>
+        <ns0:PaxSegment>
+          <ns0:PaxSegmentID>S2</ns0:PaxSegmentID>
+          <ns0:SecureFlightInd>true</ns0:SecureFlightInd>
+          <ns0:Duration>PT3H10M</ns0:Duration>
+          <ns0:CabinType>
+            <ns0:CabinTypeCode>I</ns0:CabinTypeCode>
+          </ns0:CabinType>
+          <ns0:Dep>
+            <ns0:IATA_LocationCode>SNA</ns0:IATA_LocationCode>
+            <ns0:StationName>Santa Ana, US</ns0:StationName>
+            <ns0:AircraftScheduledDateTime>2023-05-20T07:55:00</ns0:AircraftScheduledDateTime>
+          </ns0:Dep>
+          <ns0:Arrival>
+            <ns0:IATA_LocationCode>DFW</ns0:IATA_LocationCode>
+            <ns0:StationName>Dallas Dallas-Fort Worth Intl Apt, US</ns0:StationName>
+            <ns0:TerminalName>0</ns0:TerminalName>
+            <ns0:AircraftScheduledDateTime>2023-05-20T13:05:00</ns0:AircraftScheduledDateTime>
+          </ns0:Arrival>
+          <ns0:MarketingCarrierInfo>
+            <ns0:CarrierDesigCode>AA</ns0:CarrierDesigCode>
+            <ns0:CarrierName>American Airlines</ns0:CarrierName>
+            <ns0:MarketingCarrierFlightNumberText>2626</ns0:MarketingCarrierFlightNumberText>
+          </ns0:MarketingCarrierInfo>
+          <ns0:DatedOperatingLeg>
+            <ns0:DatedOperatingLegID>LEG1</ns0:DatedOperatingLegID>
+            <ns0:CarrierAircraftType>
+              <ns0:CarrierAircraftTypeCode>738</ns0:CarrierAircraftTypeCode>
+              <ns0:CarrierAircraftTypeName>Boeing 737-800 Passenger</ns0:CarrierAircraftTypeName>
+            </ns0:CarrierAircraftType>
+            <ns0:Dep>
+              <ns0:IATA_LocationCode>SNA</ns0:IATA_LocationCode>
+              <ns0:AircraftScheduledDateTime>2023-05-20T07:55:00</ns0:AircraftScheduledDateTime>
+            </ns0:Dep>
+            <ns0:Arrival>
+              <ns0:IATA_LocationCode>DFW</ns0:IATA_LocationCode>
+              <ns0:AircraftScheduledDateTime>2023-05-20T13:05:00</ns0:AircraftScheduledDateTime>
+            </ns0:Arrival>
+          </ns0:DatedOperatingLeg>
+        </ns0:PaxSegment>
+        <ns0:PaxSegment>
+          <ns0:PaxSegmentID>S3</ns0:PaxSegmentID>
+          <ns0:SecureFlightInd>true</ns0:SecureFlightInd>
+          <ns0:Duration>PT3H3M</ns0:Duration>
+          <ns0:CabinType>
+            <ns0:CabinTypeCode>I</ns0:CabinTypeCode>
+          </ns0:CabinType>
+          <ns0:Dep>
+            <ns0:IATA_LocationCode>DFW</ns0:IATA_LocationCode>
+            <ns0:StationName>Dallas Dallas-Fort Worth Intl Apt, US</ns0:StationName>
+            <ns0:TerminalName>0</ns0:TerminalName>
+            <ns0:AircraftScheduledDateTime>2023-06-27T11:30:00</ns0:AircraftScheduledDateTime>
+          </ns0:Dep>
+          <ns0:Arrival>
+            <ns0:IATA_LocationCode>SNA</ns0:IATA_LocationCode>
+            <ns0:StationName>Santa Ana, US</ns0:StationName>
+            <ns0:AircraftScheduledDateTime>2023-06-27T12:33:00</ns0:AircraftScheduledDateTime>
+          </ns0:Arrival>
+          <ns0:MarketingCarrierInfo>
+            <ns0:CarrierDesigCode>AA</ns0:CarrierDesigCode>
+            <ns0:CarrierName>American Airlines</ns0:CarrierName>
+            <ns0:MarketingCarrierFlightNumberText>2647</ns0:MarketingCarrierFlightNumberText>
+          </ns0:MarketingCarrierInfo>
+          <ns0:DatedOperatingLeg>
+            <ns0:DatedOperatingLegID>LEG1</ns0:DatedOperatingLegID>
+            <ns0:CarrierAircraftType>
+              <ns0:CarrierAircraftTypeCode>738</ns0:CarrierAircraftTypeCode>
+              <ns0:CarrierAircraftTypeName>Boeing 737-800 Passenger</ns0:CarrierAircraftTypeName>
+            </ns0:CarrierAircraftType>
+            <ns0:Dep>
+              <ns0:IATA_LocationCode>DFW</ns0:IATA_LocationCode>
+              <ns0:AircraftScheduledDateTime>2023-06-27T11:30:00</ns0:AircraftScheduledDateTime>
+            </ns0:Dep>
+            <ns0:Arrival>
+              <ns0:IATA_LocationCode>SNA</ns0:IATA_LocationCode>
+              <ns0:AircraftScheduledDateTime>2023-06-27T12:33:00</ns0:AircraftScheduledDateTime>
+            </ns0:Arrival>
+          </ns0:DatedOperatingLeg>
+        </ns0:PaxSegment>
+      </ns0:PaxSegmentList>
+      <ns0:PriceClassList>
+        <ns0:PriceClass>
+          <ns0:PriceClassID>First-1</ns0:PriceClassID>
+          <ns0:Code>AADOM-FIR</ns0:Code>
+          <ns0:Name>First</ns0:Name>
+        </ns0:PriceClass>
+      </ns0:PriceClassList>
+      <ns0:ServiceDefinitionList>
+        <ns0:ServiceDefinition>
+          <ns0:ServiceDefinitionID>BASRVEBFA650C-CO</ns0:ServiceDefinitionID>
+          <ns0:Name>Carry On Bag Allowance</ns0:Name>
+          <ns0:Description>
+            <ns0:DescID>SerDescID</ns0:DescID>
+            <ns0:DescText>Carry On Bag Allowance</ns0:DescText>
+          </ns0:Description>
+          <ns0:ServiceDefinitionAssociation>
+            <ns0:BaggageAllowanceRefID>BAF2485D10-CO</ns0:BaggageAllowanceRefID>
+          </ns0:ServiceDefinitionAssociation>
+        </ns0:ServiceDefinition>
+        <ns0:ServiceDefinition>
+          <ns0:ServiceDefinitionID>BASRV50D44BE4-CO</ns0:ServiceDefinitionID>
+          <ns0:Name>Carry On Bag Allowance</ns0:Name>
+          <ns0:Description>
+            <ns0:DescID>SerDescID</ns0:DescID>
+            <ns0:DescText>Carry On Bag Allowance</ns0:DescText>
+          </ns0:Description>
+          <ns0:ServiceDefinitionAssociation>
+            <ns0:BaggageAllowanceRefID>BA584ED21B-CO</ns0:BaggageAllowanceRefID>
+          </ns0:ServiceDefinitionAssociation>
+        </ns0:ServiceDefinition>
+        <ns0:ServiceDefinition>
+          <ns0:ServiceDefinitionID>BASRVAA4703C8</ns0:ServiceDefinitionID>
+          <ns0:Name>Checked Bag Allowance</ns0:Name>
+          <ns0:Description>
+            <ns0:DescID>SerDescID</ns0:DescID>
+            <ns0:DescText>Checked Bag Allowance</ns0:DescText>
+          </ns0:Description>
+          <ns0:ServiceDefinitionAssociation>
+            <ns0:BaggageAllowanceRefID>BA86BC92BE</ns0:BaggageAllowanceRefID>
+          </ns0:ServiceDefinitionAssociation>
+        </ns0:ServiceDefinition>
+        <ns0:ServiceDefinition>
+          <ns0:ServiceDefinitionID>BASRVB3A4CB56</ns0:ServiceDefinitionID>
+          <ns0:Name>Checked Bag Allowance</ns0:Name>
+          <ns0:Description>
+            <ns0:DescID>SerDescID</ns0:DescID>
+            <ns0:DescText>Checked Bag Allowance</ns0:DescText>
+          </ns0:Description>
+          <ns0:ServiceDefinitionAssociation>
+            <ns0:BaggageAllowanceRefID>BAEAF499B2</ns0:BaggageAllowanceRefID>
+          </ns0:ServiceDefinitionAssociation>
+        </ns0:ServiceDefinition>
+      </ns0:ServiceDefinitionList>
+      <ns0:DisclosureList>
+        <ns0:Disclosure>
+          <ns0:DisclosureID>GDPR</ns0:DisclosureID>
+          <ns0:Desc>
+            <ns0:DescID>D1</ns0:DescID>
+            <ns0:DescText>Data Protection Notice: Your personal data will be processed in accordance with the applicable carriers privacy policy and, if your booking is made via a reservation system provider ("GDS" ), with its privacy policy. These are available at http://www.iatatravelcenter.com/privacy or from the carrier, GDS or TSP directly. You should read this documentation, which applies to your booking and specifies, for example, how your personal data is collected, stored, used, disclosed and transferred.</ns0:DescText>
+            <ns0:URL>http://www.iatatravelcenter.com/privacy</ns0:URL>
+          </ns0:Desc>
+        </ns0:Disclosure>
+      </ns0:DisclosureList>
+    </ns0:DataLists>
+    <ns0:Metadata>
+      <ns0:PassengerMetadata MetadataKey="M3" />
+      <ns0:PassengerMetadata MetadataKey="M2" />
+      <ns0:PassengerMetadata MetadataKey="M1" />
+      <ns0:PassengerMetadata MetadataKey="M0" />
+      <ns0:Other>
+        <ns0:OtherMetadata>
+          <ns0:CurrencyMetadatas>
+            <ns0:CurrencyMetadata MetadataKey="EUR">
+              <ns0:Decimals>2</ns0:Decimals>
+            </ns0:CurrencyMetadata>
+            <ns0:CurrencyMetadata MetadataKey="USD">
+              <ns0:Decimals>2</ns0:Decimals>
+            </ns0:CurrencyMetadata>
+          </ns0:CurrencyMetadatas>
+        </ns0:OtherMetadata>
+        <ns0:OtherMetadata>
+          <ns0:PriceMetadatas>
+            <ns0:PriceMetadata MetadataKey="FRK0FFAE404" />
+            <ns0:PriceMetadata MetadataKey="FRK7B4C519C" />
+          </ns0:PriceMetadatas>
+        </ns0:OtherMetadata>
+        <ns0:OtherMetadata>
+          <ns0:RuleMetadatas>
+            <ns0:RuleMetadata MetadataKey="RM9B20DD7F">
+              <ns0:RuleID>Change</ns0:RuleID>
+              <ns0:Values>
+                <ns0:Value>
+                  <ns0:Instruction>Allowed</ns0:Instruction>
+                </ns0:Value>
+              </ns0:Values>
+            </ns0:RuleMetadata>
+            <ns0:RuleMetadata MetadataKey="RM6F6FF5F">
+              <ns0:RuleID>Cancel</ns0:RuleID>
+              <ns0:Values>
+                <ns0:Value>
+                  <ns0:Instruction>Not Allowed</ns0:Instruction>
+                </ns0:Value>
+              </ns0:Values>
+            </ns0:RuleMetadata>
+          </ns0:RuleMetadatas>
+        </ns0:OtherMetadata>
+      </ns0:Other>
+    </ns0:Metadata>
+    <ns0:Order>
+      <ns0:OrderID>AA001H2JZUWA6</ns0:OrderID>
+      <ns0:OwnerCode>AA</ns0:OwnerCode>
+      <ns0:BookingRef>
+        <ns0:BookingID>32JZUW</ns0:BookingID>
+        <ns0:BookingEntity>
+          <ns0:Org OrgID="F1">
+            <ns0:Name>Farelogix</ns0:Name>
+          </ns0:Org>
+        </ns0:BookingEntity>
+      </ns0:BookingRef>
+      <ns0:BookingRef>
+        <ns0:BookingID>OBXRKY</ns0:BookingID>
+        <ns0:BookingEntity>
+          <ns0:Carrier>
+            <ns0:AirlineDesigCode>AA</ns0:AirlineDesigCode>
+            <ns0:Name>American</ns0:Name>
+          </ns0:Carrier>
+        </ns0:BookingEntity>
+      </ns0:BookingRef>
+      <ns0:BookingRef>
+        <ns0:BookingID>6NJDL7</ns0:BookingID>
+        <ns0:BookingEntity>
+          <ns0:Org OrgID="1A">
+            <ns0:Name>Amadeus</ns0:Name>
+          </ns0:Org>
+        </ns0:BookingEntity>
+      </ns0:BookingRef>
+      <ns0:OrderItem>
+        <ns0:OrderItemID>PoPE0CD5253-BEA4-4FA6-AD62-3-OI1_1APAX_T1</ns0:OrderItemID>
+        <ns0:CreationDateTime>2023-04-12T05:03:00</ns0:CreationDateTime>
+        <ns0:PaymentTimeLimitDateTime>2023-04-13T23:59:00</ns0:PaymentTimeLimitDateTime>
+        <ns0:TicketingTimeLimitDateTime>2023-04-13T23:59:00</ns0:TicketingTimeLimitDateTime>
+        <ns0:FareDetail>
+          <ns0:FareIndicatorCode>0</ns0:FareIndicatorCode>
+          <ns0:PassengerRefs>T1</ns0:PassengerRefs>
+          <ns0:Price>
+            <ns0:TotalAmount>
+              <ns0:DetailCurrencyPrice>
+                <ns0:Total Code="EUR">118410</ns0:Total>
+              </ns0:DetailCurrencyPrice>
+            </ns0:TotalAmount>
+            <ns0:BaseAmount Code="EUR">107600</ns0:BaseAmount>
+            <ns0:FareFiledIn>
+              <ns0:BaseAmount Code="USD">117024</ns0:BaseAmount>
+              <ns0:ExchangeRate>0.91923909</ns0:ExchangeRate>
+            </ns0:FareFiledIn>
+            <ns0:Taxes>
+              <ns0:Total Code="EUR">10810</ns0:Total>
+              <ns0:Breakdown>
+                <ns0:Tax>
+                  <ns0:Amount Code="EUR">8068</ns0:Amount>
+                  <ns0:Nation>US</ns0:Nation>
+                  <ns0:TaxCode>US</ns0:TaxCode>
+                  <ns0:LocalAmount Code="USD">8776</ns0:LocalAmount>
+                  <ns0:Description>U.S.A Transportation Tax</ns0:Description>
+                </ns0:Tax>
+                <ns0:Tax>
+                  <ns0:Amount Code="EUR">884</ns0:Amount>
+                  <ns0:Nation>US</ns0:Nation>
+                  <ns0:TaxCode>ZP</ns0:TaxCode>
+                  <ns0:CollectionPoint>
+                    <ns0:CurrCode NumberOfDecimals="2">USD</ns0:CurrCode>
+                    <ns0:AirportAmount>480</ns0:AirportAmount>
+                    <ns0:AirportCode>SNA</ns0:AirportCode>
+                  </ns0:CollectionPoint>
+                  <ns0:LocalAmount Code="USD">960</ns0:LocalAmount>
+                  <ns0:Description>United States Flight Segment Tax Domestic</ns0:Description>
+                </ns0:Tax>
+                <ns0:Tax>
+                  <ns0:Amount Code="EUR">1030</ns0:Amount>
+                  <ns0:Nation>US</ns0:Nation>
+                  <ns0:TaxCode>AY</ns0:TaxCode>
+                  <ns0:LocalAmount Code="USD">1120</ns0:LocalAmount>
+                  <ns0:Description>United States Passenger Civil Aviation Security Service Fee</ns0:Description>
+                </ns0:Tax>
+                <ns0:Tax>
+                  <ns0:Amount Code="EUR">828</ns0:Amount>
+                  <ns0:Nation>US</ns0:Nation>
+                  <ns0:TaxCode>XF</ns0:TaxCode>
+                  <ns0:CollectionPoint>
+                    <ns0:CurrCode NumberOfDecimals="2">USD</ns0:CurrCode>
+                    <ns0:AirportAmount>450</ns0:AirportAmount>
+                    <ns0:AirportCode>SNA</ns0:AirportCode>
+                  </ns0:CollectionPoint>
+                  <ns0:LocalAmount Code="USD">900</ns0:LocalAmount>
+                  <ns0:Description>US Passenger Facility Charge</ns0:Description>
+                </ns0:Tax>
+              </ns0:Breakdown>
+            </ns0:Taxes>
+          </ns0:Price>
+          <ns0:FareComponent>
+            <ns0:Price>
+              <ns0:TotalAmount>
+                <ns0:DetailCurrencyPrice>
+                  <ns0:Total Code="EUR">59191</ns0:Total>
+                </ns0:DetailCurrencyPrice>
+              </ns0:TotalAmount>
+              <ns0:BaseAmount Code="EUR">53786</ns0:BaseAmount>
+              <ns0:Taxes>
+                <ns0:Total Code="EUR">5405</ns0:Total>
+                <ns0:Breakdown>
+                  <ns0:Tax>
+                    <ns0:Amount Code="EUR">4034</ns0:Amount>
+                    <ns0:Nation>US</ns0:Nation>
+                    <ns0:TaxCode>US</ns0:TaxCode>
+                    <ns0:LocalAmount Code="USD">4388</ns0:LocalAmount>
+                    <ns0:Description>US Transportation Tax</ns0:Description>
+                  </ns0:Tax>
+                  <ns0:Tax>
+                    <ns0:Amount Code="EUR">414</ns0:Amount>
+                    <ns0:Nation>US</ns0:Nation>
+                    <ns0:TaxCode>XF</ns0:TaxCode>
+                    <ns0:LocalAmount Code="USD">450</ns0:LocalAmount>
+                    <ns0:Description>US Passenger Facility Charge</ns0:Description>
+                  </ns0:Tax>
+                  <ns0:Tax>
+                    <ns0:Amount Code="EUR">442</ns0:Amount>
+                    <ns0:Nation>US</ns0:Nation>
+                    <ns0:TaxCode>ZP</ns0:TaxCode>
+                    <ns0:LocalAmount Code="USD">480</ns0:LocalAmount>
+                    <ns0:Description>United States Flight Segment Tax Domestic</ns0:Description>
+                  </ns0:Tax>
+                  <ns0:Tax>
+                    <ns0:Amount Code="EUR">515</ns0:Amount>
+                    <ns0:Nation>US</ns0:Nation>
+                    <ns0:TaxCode>AY</ns0:TaxCode>
+                    <ns0:LocalAmount Code="USD">560</ns0:LocalAmount>
+                    <ns0:Description>United States Passenger Civil Aviation Security Service Fee</ns0:Description>
+                  </ns0:Tax>
+                </ns0:Breakdown>
+              </ns0:Taxes>
+            </ns0:Price>
+            <ns0:FareBasis>
+              <ns0:FareBasisCode refs="FG1">
+                <ns0:Code>SVAWZNIZ</ns0:Code>
+              </ns0:FareBasisCode>
+              <ns0:RBD>I</ns0:RBD>
+              <ns0:CabinType>
+                <ns0:CabinTypeCode>F</ns0:CabinTypeCode>
+                <ns0:CabinTypeName>First</ns0:CabinTypeName>
+              </ns0:CabinType>
+            </ns0:FareBasis>
+            <ns0:FareRules>
+              <ns0:Penalty CancelFeeInd="false" ChangeFeeInd="false" RefundableInd="false">
+                <ns0:Details>
+                  <ns0:Detail refs="RM9B20DD7F">
+                    <ns0:Type>Change</ns0:Type>
+                  </ns0:Detail>
+                  <ns0:Detail refs="RM6F6FF5F">
+                    <ns0:Type>Cancel</ns0:Type>
+                  </ns0:Detail>
+                </ns0:Details>
+              </ns0:Penalty>
+              <ns0:Ticketing>
+                <ns0:Endorsements>
+                  <ns0:Endorsement>NONREF/FAREDIF/</ns0:Endorsement>
+                  <ns0:Endorsement>CXL BY FLT TIME OR NOVALUE</ns0:Endorsement>
+                </ns0:Endorsements>
+              </ns0:Ticketing>
+            </ns0:FareRules>
+            <ns0:PriceClassRef>First-1</ns0:PriceClassRef>
+            <ns0:SegmentRefs>S2</ns0:SegmentRefs>
+          </ns0:FareComponent>
+          <ns0:FareComponent>
+            <ns0:Price>
+              <ns0:TotalAmount>
+                <ns0:DetailCurrencyPrice>
+                  <ns0:Total Code="EUR">59191</ns0:Total>
+                </ns0:DetailCurrencyPrice>
+              </ns0:TotalAmount>
+              <ns0:BaseAmount Code="EUR">53786</ns0:BaseAmount>
+              <ns0:Taxes>
+                <ns0:Total Code="EUR">5405</ns0:Total>
+                <ns0:Breakdown>
+                  <ns0:Tax>
+                    <ns0:Amount Code="EUR">4034</ns0:Amount>
+                    <ns0:Nation>US</ns0:Nation>
+                    <ns0:TaxCode>US</ns0:TaxCode>
+                    <ns0:LocalAmount Code="USD">4388</ns0:LocalAmount>
+                    <ns0:Description>US Transportation Tax</ns0:Description>
+                  </ns0:Tax>
+                  <ns0:Tax>
+                    <ns0:Amount Code="EUR">414</ns0:Amount>
+                    <ns0:Nation>US</ns0:Nation>
+                    <ns0:TaxCode>XF</ns0:TaxCode>
+                    <ns0:LocalAmount Code="USD">450</ns0:LocalAmount>
+                    <ns0:Description>US Passenger Facility Charge</ns0:Description>
+                  </ns0:Tax>
+                  <ns0:Tax>
+                    <ns0:Amount Code="EUR">442</ns0:Amount>
+                    <ns0:Nation>US</ns0:Nation>
+                    <ns0:TaxCode>ZP</ns0:TaxCode>
+                    <ns0:LocalAmount Code="USD">480</ns0:LocalAmount>
+                    <ns0:Description>United States Flight Segment Tax Domestic</ns0:Description>
+                  </ns0:Tax>
+                  <ns0:Tax>
+                    <ns0:Amount Code="EUR">515</ns0:Amount>
+                    <ns0:Nation>US</ns0:Nation>
+                    <ns0:TaxCode>AY</ns0:TaxCode>
+                    <ns0:LocalAmount Code="USD">560</ns0:LocalAmount>
+                    <ns0:Description>United States Passenger Civil Aviation Security Service Fee</ns0:Description>
+                  </ns0:Tax>
+                </ns0:Breakdown>
+              </ns0:Taxes>
+            </ns0:Price>
+            <ns0:FareBasis>
+              <ns0:FareBasisCode refs="FG2">
+                <ns0:Code>SVAWZNIZ</ns0:Code>
+              </ns0:FareBasisCode>
+              <ns0:RBD>I</ns0:RBD>
+              <ns0:CabinType>
+                <ns0:CabinTypeCode>F</ns0:CabinTypeCode>
+                <ns0:CabinTypeName>First</ns0:CabinTypeName>
+              </ns0:CabinType>
+            </ns0:FareBasis>
+            <ns0:FareRules>
+              <ns0:Penalty CancelFeeInd="false" ChangeFeeInd="false" RefundableInd="false">
+                <ns0:Details>
+                  <ns0:Detail refs="RM9B20DD7F">
+                    <ns0:Type>Change</ns0:Type>
+                  </ns0:Detail>
+                  <ns0:Detail refs="RM6F6FF5F">
+                    <ns0:Type>Cancel</ns0:Type>
+                  </ns0:Detail>
+                </ns0:Details>
+              </ns0:Penalty>
+              <ns0:Ticketing>
+                <ns0:Endorsements>
+                  <ns0:Endorsement>NONREF/FAREDIF/</ns0:Endorsement>
+                  <ns0:Endorsement>CXL BY FLT TIME OR NOVALUE</ns0:Endorsement>
+                </ns0:Endorsements>
+              </ns0:Ticketing>
+            </ns0:FareRules>
+            <ns0:PriceClassRef>First-1</ns0:PriceClassRef>
+            <ns0:SegmentRefs>S3</ns0:SegmentRefs>
+          </ns0:FareComponent>
+        </ns0:FareDetail>
+        <ns0:Price>
+          <ns0:TotalAmount CurCode="EUR">118410</ns0:TotalAmount>
+          <ns0:BaseAmount CurCode="EUR">107600</ns0:BaseAmount>
+          <ns0:TaxSummary>
+            <ns0:TotalTaxAmount CurCode="EUR">10810</ns0:TotalTaxAmount>
+          </ns0:TaxSummary>
+        </ns0:Price>
+        <ns0:Service>
+          <ns0:ServiceID>BAGGAGESRV1-T1</ns0:ServiceID>
+          <ns0:PaxRefID>T1</ns0:PaxRefID>
+          <ns0:ServiceAssociations>
+            <ns0:ServiceDefinitionRef>
+              <ns0:ServiceDefinitionRefID>BASRVAA4703C8</ns0:ServiceDefinitionRefID>
+              <ns0:PaxSegmentRefID>S2</ns0:PaxSegmentRefID>
+            </ns0:ServiceDefinitionRef>
+          </ns0:ServiceAssociations>
+        </ns0:Service>
+        <ns0:Service>
+          <ns0:ServiceID>BAGGAGESRV2-T1</ns0:ServiceID>
+          <ns0:PaxRefID>T1</ns0:PaxRefID>
+          <ns0:ServiceAssociations>
+            <ns0:ServiceDefinitionRef>
+              <ns0:ServiceDefinitionRefID>BASRVB3A4CB56</ns0:ServiceDefinitionRefID>
+              <ns0:PaxSegmentRefID>S3</ns0:PaxSegmentRefID>
+            </ns0:ServiceDefinitionRef>
+          </ns0:ServiceAssociations>
+        </ns0:Service>
+        <ns0:Service>
+          <ns0:ServiceID>BAGGAGESRV3-T1</ns0:ServiceID>
+          <ns0:PaxRefID>T1</ns0:PaxRefID>
+          <ns0:ServiceAssociations>
+            <ns0:ServiceDefinitionRef>
+              <ns0:ServiceDefinitionRefID>BASRV50D44BE4-CO</ns0:ServiceDefinitionRefID>
+              <ns0:PaxSegmentRefID>S3</ns0:PaxSegmentRefID>
+            </ns0:ServiceDefinitionRef>
+          </ns0:ServiceAssociations>
+        </ns0:Service>
+        <ns0:Service>
+          <ns0:ServiceID>BAGGAGESRV4-T1</ns0:ServiceID>
+          <ns0:PaxRefID>T1</ns0:PaxRefID>
+          <ns0:ServiceAssociations>
+            <ns0:ServiceDefinitionRef>
+              <ns0:ServiceDefinitionRefID>BASRVEBFA650C-CO</ns0:ServiceDefinitionRefID>
+              <ns0:PaxSegmentRefID>S2</ns0:PaxSegmentRefID>
+            </ns0:ServiceDefinitionRef>
+          </ns0:ServiceAssociations>
+        </ns0:Service>
+        <ns0:Service>
+          <ns0:ServiceID>SRV1-T1-S2</ns0:ServiceID>
+          <ns0:StatusCode>HK</ns0:StatusCode>
+          <ns0:PaxRefID>T1</ns0:PaxRefID>
+          <ns0:ServiceAssociations>
+            <ns0:PaxSegmentRefID>S2</ns0:PaxSegmentRefID>
+          </ns0:ServiceAssociations>
+        </ns0:Service>
+        <ns0:Service>
+          <ns0:ServiceID>SRV1-T1-S3</ns0:ServiceID>
+          <ns0:StatusCode>HK</ns0:StatusCode>
+          <ns0:PaxRefID>T1</ns0:PaxRefID>
+          <ns0:ServiceAssociations>
+            <ns0:PaxSegmentRefID>S3</ns0:PaxSegmentRefID>
+          </ns0:ServiceAssociations>
+        </ns0:Service>
+      </ns0:OrderItem>
+      <ns0:PaymentInfo>
+        <ns0:Amount CurCode="EUR">118410</ns0:Amount>
+        <ns0:TypeCode>CA</ns0:TypeCode>
+        <ns0:PaymentStatusCode>COMMITTED</ns0:PaymentStatusCode>
+        <ns0:PaymentMethod>
+          <ns0:Cash />
+        </ns0:PaymentMethod>
+      </ns0:PaymentInfo>
+      <ns0:TotalPrice>
+        <ns0:TotalAmount CurCode="EUR">118410</ns0:TotalAmount>
+      </ns0:TotalPrice>
+    </ns0:Order>
+    <ns0:TicketDocInfos>
+      <ns0:TicketDocInfo>
+        <ns0:AgentIDs>
+          <ns0:AgentID>
+            <ns0:Type>706</ns0:Type>
+            <ns0:ID>00022665</ns0:ID>
+          </ns0:AgentID>
+        </ns0:AgentIDs>
+        <ns0:IssuingAirlineInfo>
+          <ns0:AirlineName>American Airlines</ns0:AirlineName>
+          <ns0:Place>Nice, FR</ns0:Place>
+        </ns0:IssuingAirlineInfo>
+        <ns0:TicketDocument>
+          <ns0:TicketDocNbr>0015741997759</ns0:TicketDocNbr>
+          <ns0:Type>T</ns0:Type>
+          <ns0:NumberofBooklets>1</ns0:NumberofBooklets>
+          <ns0:DateOfIssue>2023-04-12</ns0:DateOfIssue>
+          <ns0:TimeOfIssue>11:03</ns0:TimeOfIssue>
+          <ns0:CouponInfo>
+            <ns0:CouponNumber>1</ns0:CouponNumber>
+            <ns0:Status>E</ns0:Status>
+          </ns0:CouponInfo>
+          <ns0:CouponInfo>
+            <ns0:CouponNumber>2</ns0:CouponNumber>
+            <ns0:CouponReference>S3</ns0:CouponReference>
+            <ns0:Status>E</ns0:Status>
+          </ns0:CouponInfo>
+          <ns0:ReportingType>BSP</ns0:ReportingType>
+        </ns0:TicketDocument>
+        <ns0:Price>
+          <ns0:Total Code="EUR">118410</ns0:Total>
+          <ns0:Details>
+            <ns0:Detail>
+              <ns0:Amount Code="EUR">107600</ns0:Amount>
+            </ns0:Detail>
+          </ns0:Details>
+          <ns0:Taxes>
+            <ns0:Total Code="EUR">10810</ns0:Total>
+            <ns0:Breakdown>
+              <ns0:Tax>
+                <ns0:Amount Code="EUR">8068</ns0:Amount>
+                <ns0:TaxCode>US</ns0:TaxCode>
+                <ns0:Description>U.S.A Transportation Tax</ns0:Description>
+              </ns0:Tax>
+              <ns0:Tax>
+                <ns0:Amount Code="EUR">884</ns0:Amount>
+                <ns0:TaxCode>ZP</ns0:TaxCode>
+                <ns0:Description>United States Flight Segment Tax Domestic</ns0:Description>
+              </ns0:Tax>
+              <ns0:Tax>
+                <ns0:Amount Code="EUR">1030</ns0:Amount>
+                <ns0:TaxCode>AY</ns0:TaxCode>
+                <ns0:Description>United States Passenger Civil Aviation Security Service Fee</ns0:Description>
+              </ns0:Tax>
+              <ns0:Tax>
+                <ns0:Amount Code="EUR">828</ns0:Amount>
+                <ns0:TaxCode>XF</ns0:TaxCode>
+                <ns0:Description>US Passenger Facility Charge</ns0:Description>
+              </ns0:Tax>
+            </ns0:Breakdown>
+          </ns0:Taxes>
+        </ns0:Price>
+        <ns0:PassengerReference>T1</ns0:PassengerReference>
+      </ns0:TicketDocInfo>
+      <ns0:TicketDocInfo>
+        <ns0:AgentIDs>
+          <ns0:AgentID>
+            <ns0:Type>706</ns0:Type>
+            <ns0:ID>00022665</ns0:ID>
+          </ns0:AgentID>
+        </ns0:AgentIDs>
+        <ns0:IssuingAirlineInfo>
+          <ns0:AirlineName>American Airlines</ns0:AirlineName>
+          <ns0:Place>Nice, FR</ns0:Place>
+        </ns0:IssuingAirlineInfo>
+        <ns0:TicketDocument>
+          <ns0:TicketDocNbr>0015742019781</ns0:TicketDocNbr>
+          <ns0:Type>T</ns0:Type>
+          <ns0:NumberofBooklets>1</ns0:NumberofBooklets>
+          <ns0:DateOfIssue>2023-04-19</ns0:DateOfIssue>
+          <ns0:TimeOfIssue>12:45</ns0:TimeOfIssue>
+          <ns0:CouponInfo>
+            <ns0:CouponNumber>1</ns0:CouponNumber>
+            <ns0:CouponReference>S2</ns0:CouponReference>
+            <ns0:Status>T</ns0:Status>
+            <ns0:SettlementAuthCode>C0018KGR5AO1QY</ns0:SettlementAuthCode>
+          </ns0:CouponInfo>
+          <ns0:CouponInfo>
+            <ns0:CouponNumber>2</ns0:CouponNumber>
+            <ns0:CouponReference>S3</ns0:CouponReference>
+            <ns0:Status>T</ns0:Status>
+            <ns0:SettlementAuthCode>C0018KGR5AO1QY</ns0:SettlementAuthCode>
+          </ns0:CouponInfo>
+          <ns0:ReportingType>BSP</ns0:ReportingType>
+        </ns0:TicketDocument>
+        <ns0:Price>
+          <ns0:Total Code="EUR">0</ns0:Total>
+          <ns0:Details>
+            <ns0:Detail>
+              <ns0:Amount Code="EUR">107600</ns0:Amount>
+            </ns0:Detail>
+          </ns0:Details>
+          <ns0:Taxes>
+            <ns0:Total Code="EUR">10810</ns0:Total>
+            <ns0:Breakdown>
+              <ns0:Tax>
+                <ns0:Amount Code="EUR">8068</ns0:Amount>
+                <ns0:TaxCode>US</ns0:TaxCode>
+                <ns0:Description>U.S.A Transportation Tax</ns0:Description>
+              </ns0:Tax>
+              <ns0:Tax>
+                <ns0:Amount Code="EUR">884</ns0:Amount>
+                <ns0:TaxCode>ZP</ns0:TaxCode>
+                <ns0:Description>United States Flight Segment Tax Domestic</ns0:Description>
+              </ns0:Tax>
+              <ns0:Tax>
+                <ns0:Amount Code="EUR">1030</ns0:Amount>
+                <ns0:TaxCode>AY</ns0:TaxCode>
+                <ns0:Description>United States Passenger Civil Aviation Security Service Fee</ns0:Description>
+              </ns0:Tax>
+              <ns0:Tax>
+                <ns0:Amount Code="EUR">828</ns0:Amount>
+                <ns0:TaxCode>XF</ns0:TaxCode>
+                <ns0:Description>US Passenger Facility Charge</ns0:Description>
+              </ns0:Tax>
+            </ns0:Breakdown>
+          </ns0:Taxes>
+        </ns0:Price>
+        <ns0:OriginalIssueInfo>
+          <ns0:IssuingAgentID>00022665</ns0:IssuingAgentID>
+          <ns0:DateOfIssue>2023-04-12</ns0:DateOfIssue>
+          <ns0:LocationCode>NCE</ns0:LocationCode>
+          <ns0:TicketDocumentNbr>0015741997759</ns0:TicketDocumentNbr>
+        </ns0:OriginalIssueInfo>
+        <ns0:PassengerReference>T1</ns0:PassengerReference>
+      </ns0:TicketDocInfo>
+    </ns0:TicketDocInfos>
+  </ns0:Response>
+</ns0:AMA_TravelOrderViewRS>

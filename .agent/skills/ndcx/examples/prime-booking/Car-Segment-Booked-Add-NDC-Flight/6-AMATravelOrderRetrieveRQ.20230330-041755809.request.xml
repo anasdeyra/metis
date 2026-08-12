@@ -1,0 +1,18 @@
+<ns0:AMA_TravelOrderRetrieveRQ xmlns:ns0="http://xml.amadeus.com/2010/06/Travel_OrderRetrieveRQ_v1">
+  <ns0:Party>
+    <ns0:Sender>
+      <ns0:TravelAgency>
+        <ns0:AgencyID>unused</ns0:AgencyID>
+        <ns0:PseudoCityID>unused</ns0:PseudoCityID>
+      </ns0:TravelAgency>
+    </ns0:Sender>
+  </ns0:Party>
+  <ns0:Request>
+    <ns0:OrderFilterCriteria>
+      <ns0:Order>
+        <ns0:OrderID>AA001H87KFXA2</ns0:OrderID>
+        <ns0:OwnerCode>AA</ns0:OwnerCode>
+      </ns0:Order>
+    </ns0:OrderFilterCriteria>
+  </ns0:Request>
+</ns0:AMA_TravelOrderRetrieveRQ>

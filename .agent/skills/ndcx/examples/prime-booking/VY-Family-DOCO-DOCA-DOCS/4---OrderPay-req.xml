@@ -1,0 +1,48 @@
+<ns0:AMA_TravelOrderPayRQ xmlns:ns0="http://xml.amadeus.com/2010/06/Travel_OrderPayRQ_v1">
+  <ns0:Party>
+    <ns0:Sender>
+      <ns0:TravelAgency>
+        <ns0:AgencyID>27212216</ns0:AgencyID>
+        <ns0:PseudoCityID>AE9L</ns0:PseudoCityID>
+      </ns0:TravelAgency>
+    </ns0:Sender>
+  </ns0:Party>
+  <ns0:Request>
+    <ns0:PaymentInfo>
+      <ns0:Amount CurCode="EUR">777.47</ns0:Amount>
+      <ns0:TypeCode>CC</ns0:TypeCode>
+      <ns0:SecurePaymentVersion2>
+        <ns0:PaymentTrxChannelCode>MO</ns0:PaymentTrxChannelCode>
+      </ns0:SecurePaymentVersion2>
+      <ns0:PaymentMethod>
+        <ns0:PaymentCard>
+          <ns0:CreditCardVendorCode>VI</ns0:CreditCardVendorCode>
+          <ns0:CardNumber>4035501000000008</ns0:CardNumber>
+          <ns0:CardIssuerName>Jean DUPONT</ns0:CardIssuerName>
+          <ns0:CardholderContactInfo>
+            <ns0:StreetText>1 rue R</ns0:StreetText>
+            <ns0:CityName>RES1</ns0:CityName>
+            <ns0:CountrySubDivisionName>SUB1</ns0:CountrySubDivisionName>
+            <ns0:PostalCode>06001</ns0:PostalCode>
+            <ns0:CountryCode>FR</ns0:CountryCode>
+          </ns0:CardholderContactInfo>
+          <ns0:SeriesCode>737</ns0:SeriesCode>
+          <ns0:ExpirationDate>0330</ns0:ExpirationDate>
+        </ns0:PaymentCard>
+      </ns0:PaymentMethod>
+      <ns0:PayerContactInfo>
+        <ns0:EmailAddress>
+          <ns0:EmailAddressText>jean.dupont@email.com</ns0:EmailAddressText>
+        </ns0:EmailAddress>
+        <ns0:Individual>
+          <ns0:GivenName>Jean</ns0:GivenName>
+          <ns0:Surname>DUPONT</ns0:Surname>
+        </ns0:Individual>
+      </ns0:PayerContactInfo>
+    </ns0:PaymentInfo>
+    <ns0:Order>
+      <ns0:OrderID>WGWMJA</ns0:OrderID>
+      <ns0:OwnerCode>VY</ns0:OwnerCode>
+    </ns0:Order>
+  </ns0:Request>
+</ns0:AMA_TravelOrderPayRQ>

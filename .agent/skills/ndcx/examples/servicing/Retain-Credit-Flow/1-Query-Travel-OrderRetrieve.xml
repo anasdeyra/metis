@@ -1,0 +1,39 @@
+<soap:Envelope xmlns:add="http://www.w3.org/2005/08/addressing" xmlns:link="http://wsdl.amadeus.com/2010/06/ws/Link_v1" xmlns:oas="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd" xmlns:oas1="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:sec="http://xml.amadeus.com/2010/06/Security_v1" xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+  <soap:Header>
+    <add:MessageID>9fd5de5a-da33-4b76-9371-34c6302a3831</add:MessageID>
+    <add:Action>http://webservices.amadeus.com/Travel_OrderRetrieve_1.6</add:Action>
+    <add:To>https://noded5.test.webservices.amadeus.com/WSAP</add:To>
+    <link:TransactionFlowLink />
+    <oas:Security>
+      <oas:UsernameToken oas1:Id="UsernameToken-1">
+        <oas:Username>YOUR_WS_USER</oas:Username>
+        <oas:Nonce EncodingType="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-soap-message-security-1.0#Base64Binary">REDACTED_NONCE</oas:Nonce>
+        <oas:Password Type="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-username-token-profile-1.0#PasswordDigest">REDACTED_DIGEST</oas:Password>
+        <oas1:Created>2023-11-15T12:56:18.129Z</oas1:Created>
+      </oas:UsernameToken>
+    </oas:Security>
+    <sec:AMA_SecurityHostedUser>
+      <sec:UserID AgentDutyCode="SU" POS_Type="1" PseudoCityCode="YOUR_OFFICE_ID" RequestorType="U" />
+    </sec:AMA_SecurityHostedUser>
+  </soap:Header>
+  <soap:Body>
+    <AMA_TravelOrderRetrieveRQ>
+      <Party>
+        <Sender>
+          <TravelAgency>
+            <AgencyID>unused</AgencyID>
+            <PseudoCityID>unused</PseudoCityID>
+          </TravelAgency>
+        </Sender>
+      </Party>
+      <Request>
+        <OrderFilterCriteria>
+          <Order>
+            <OrderID>AA001H68RM4A2</OrderID>
+            <OwnerCode>AA</OwnerCode>
+          </Order>
+        </OrderFilterCriteria>
+      </Request>
+    </AMA_TravelOrderRetrieveRQ>
+  </soap:Body>
+</soap:Envelope>

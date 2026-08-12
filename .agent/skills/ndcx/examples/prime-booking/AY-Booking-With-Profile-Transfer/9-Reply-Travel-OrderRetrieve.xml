@@ -1,0 +1,800 @@
+<soap:Envelope xmlns:awsse="http://xml.amadeus.com/2010/06/Session_v3" xmlns:ns3="http://xml.amadeus.com/2010/06/Travel_OrderViewRS_v1" xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns:wsa="http://www.w3.org/2005/08/addressing" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <soap:Header>
+    <wsa:To>http://www.w3.org/2005/08/addressing/anonymous</wsa:To>
+    <wsa:From>
+      <wsa:Address>https://noded5.test.webservices.amadeus.com/CUSTOMER_WSAP</wsa:Address>
+    </wsa:From>
+    <wsa:Action>http://webservices.amadeus.com/Travel_OrderRetrieve_1.6</wsa:Action>
+    <wsa:MessageID>urn:uuid:e05511c4-d592-0034-9598-6d78c9a43d00</wsa:MessageID>
+    <wsa:RelatesTo RelationshipType="http://www.w3.org/2005/08/addressing/reply">34f6095c-290c-4842-8951-c8b1429ca200</wsa:RelatesTo>
+    <awsse:Session TransactionStatusCode="End">
+      <awsse:SessionId>0154PT1H90</awsse:SessionId>
+      <awsse:SequenceNumber>1</awsse:SequenceNumber>
+      <awsse:SecurityToken>REDACTED_TOKEN</awsse:SecurityToken>
+    </awsse:Session>
+  </soap:Header>
+  <soap:Body>
+    <ns3:AMA_TravelOrderViewRS xsi:schemaLocation="http://xml.amadeus.com/2010/06/Travel_OrderViewRS_v1 file:///Y:/grammar/NDCX/FLX/xsd/AMA_TravelOrderViewRS.xsd">
+      <ns3:PayloadAttributes>
+        <ns3:Version>18.1</ns3:Version>
+      </ns3:PayloadAttributes>
+      <ns3:Response>
+        <ns3:DataLists>
+          <ns3:BaggageAllowanceList>
+            <ns3:BaggageAllowance>
+              <ns3:BaggageAllowanceID>FBA1</ns3:BaggageAllowanceID>
+              <ns3:TypeCode>Checked</ns3:TypeCode>
+              <ns3:PieceAllowance>
+                <ns3:ApplicablePartyText>Traveler</ns3:ApplicablePartyText>
+                <ns3:TotalQty>0</ns3:TotalQty>
+              </ns3:PieceAllowance>
+            </ns3:BaggageAllowance>
+          </ns3:BaggageAllowanceList>
+          <ns3:ContactInfoList>
+            <ns3:ContactInfo>
+              <ns3:ContactInfoID>CTCPAX2_1</ns3:ContactInfoID>
+              <ns3:ContactTypeText>NOTIFICATION</ns3:ContactTypeText>
+              <ns3:IndividualRef>PAX2</ns3:IndividualRef>
+              <ns3:EmailAddress>
+                <ns3:EmailAddressText>MYMAIL@AMADEUS.COM</ns3:EmailAddressText>
+              </ns3:EmailAddress>
+            </ns3:ContactInfo>
+            <ns3:ContactInfo>
+              <ns3:ContactInfoID>CTC_1</ns3:ContactInfoID>
+              <ns3:ContactTypeText>STANDARD</ns3:ContactTypeText>
+              <ns3:OtherAddress>
+                <ns3:LabelText>Other</ns3:LabelText>
+                <ns3:OtherAddressText>3054996000</ns3:OtherAddressText>
+              </ns3:OtherAddress>
+              <ns3:EmailAddress>
+                <ns3:EmailAddressText>AGENCY EMAIL CONTACT</ns3:EmailAddressText>
+              </ns3:EmailAddress>
+            </ns3:ContactInfo>
+          </ns3:ContactInfoList>
+          <ns3:OriginDestList>
+            <ns3:OriginDest>
+              <ns3:OriginDestID>OD1</ns3:OriginDestID>
+              <ns3:OriginCode>HEL</ns3:OriginCode>
+              <ns3:DestCode>LHR</ns3:DestCode>
+              <ns3:PaxJourneyRefID>FLT1</ns3:PaxJourneyRefID>
+            </ns3:OriginDest>
+            <ns3:OriginDest>
+              <ns3:OriginDestID>OD2</ns3:OriginDestID>
+              <ns3:OriginCode>LHR</ns3:OriginCode>
+              <ns3:DestCode>HEL</ns3:DestCode>
+              <ns3:PaxJourneyRefID>FLT2</ns3:PaxJourneyRefID>
+            </ns3:OriginDest>
+          </ns3:OriginDestList>
+          <ns3:PaxJourneyList>
+            <ns3:PaxJourney>
+              <ns3:PaxJourneyID>FLT1</ns3:PaxJourneyID>
+              <ns3:Duration>PT3H10M</ns3:Duration>
+              <ns3:PaxSegmentRefID>SEG1</ns3:PaxSegmentRefID>
+            </ns3:PaxJourney>
+            <ns3:PaxJourney>
+              <ns3:PaxJourneyID>FLT2</ns3:PaxJourneyID>
+              <ns3:Duration>PT2H50M</ns3:Duration>
+              <ns3:PaxSegmentRefID>SEG2</ns3:PaxSegmentRefID>
+            </ns3:PaxJourney>
+          </ns3:PaxJourneyList>
+          <ns3:PaxList>
+            <ns3:Pax>
+              <ns3:PaxID>PAX2</ns3:PaxID>
+              <ns3:PTC>ADT</ns3:PTC>
+              <ns3:IdentityDoc>
+                <ns3:IdentityDocID>23434320</ns3:IdentityDocID>
+                <ns3:IdentityDocTypeCode>PT</ns3:IdentityDocTypeCode>
+                <ns3:IssuingCountryCode>CO</ns3:IssuingCountryCode>
+                <ns3:ExpiryDate>2028-01-01</ns3:ExpiryDate>
+                <ns3:GenderCode>M</ns3:GenderCode>
+              </ns3:IdentityDoc>
+              <ns3:Individual>
+                <ns3:IndividualID>PAX2</ns3:IndividualID>
+                <ns3:Birthdate>1981-06-15</ns3:Birthdate>
+                <ns3:TitleName>MRS</ns3:TitleName>
+                <ns3:GivenName>SANDRA</ns3:GivenName>
+                <ns3:Surname>GONZALEZ</ns3:Surname>
+              </ns3:Individual>
+            </ns3:Pax>
+          </ns3:PaxList>
+          <ns3:PaxSegmentList>
+            <ns3:PaxSegment>
+              <ns3:PaxSegmentID>SEG1</ns3:PaxSegmentID>
+              <ns3:Duration>PT3H10M</ns3:Duration>
+              <ns3:Dep>
+                <ns3:IATA_LocationCode>HEL</ns3:IATA_LocationCode>
+                <ns3:AircraftScheduledDateTime>2024-04-02T08:00:00</ns3:AircraftScheduledDateTime>
+              </ns3:Dep>
+              <ns3:Arrival>
+                <ns3:IATA_LocationCode>LHR</ns3:IATA_LocationCode>
+                <ns3:TerminalName>3</ns3:TerminalName>
+                <ns3:AircraftScheduledDateTime>2024-04-02T09:10:00</ns3:AircraftScheduledDateTime>
+              </ns3:Arrival>
+              <ns3:MarketingCarrierInfo>
+                <ns3:CarrierDesigCode>AY</ns3:CarrierDesigCode>
+                <ns3:CarrierName>FINNAIR</ns3:CarrierName>
+                <ns3:MarketingCarrierFlightNumberText>1331</ns3:MarketingCarrierFlightNumberText>
+                <ns3:RBD_Code>V</ns3:RBD_Code>
+              </ns3:MarketingCarrierInfo>
+              <ns3:OperatingCarrierInfo>
+                <ns3:CarrierDesigCode>AY</ns3:CarrierDesigCode>
+                <ns3:CarrierName>FINNAIR</ns3:CarrierName>
+                <ns3:Disclosure>
+                  <ns3:DisclosureID>DIS1</ns3:DisclosureID>
+                  <ns3:Desc>
+                    <ns3:DescID>DES1</ns3:DescID>
+                    <ns3:DescText>FINNAIR</ns3:DescText>
+                  </ns3:Desc>
+                </ns3:Disclosure>
+              </ns3:OperatingCarrierInfo>
+              <ns3:DatedOperatingLeg>
+                <ns3:DatedOperatingLegID>LEG1</ns3:DatedOperatingLegID>
+                <ns3:Dep>
+                  <ns3:IATA_LocationCode>HEL</ns3:IATA_LocationCode>
+                  <ns3:AircraftScheduledDateTime>2024-04-02T08:00:00</ns3:AircraftScheduledDateTime>
+                </ns3:Dep>
+                <ns3:Arrival>
+                  <ns3:IATA_LocationCode>LHR</ns3:IATA_LocationCode>
+                  <ns3:AircraftScheduledDateTime>2024-04-02T09:10:00</ns3:AircraftScheduledDateTime>
+                </ns3:Arrival>
+                <ns3:IATA_AircraftType>
+                  <ns3:IATA_AircraftTypeCode>359</ns3:IATA_AircraftTypeCode>
+                </ns3:IATA_AircraftType>
+              </ns3:DatedOperatingLeg>
+            </ns3:PaxSegment>
+            <ns3:PaxSegment>
+              <ns3:PaxSegmentID>SEG2</ns3:PaxSegmentID>
+              <ns3:Duration>PT2H50M</ns3:Duration>
+              <ns3:Dep>
+                <ns3:IATA_LocationCode>LHR</ns3:IATA_LocationCode>
+                <ns3:TerminalName>3</ns3:TerminalName>
+                <ns3:AircraftScheduledDateTime>2024-04-03T18:10:00</ns3:AircraftScheduledDateTime>
+              </ns3:Dep>
+              <ns3:Arrival>
+                <ns3:IATA_LocationCode>HEL</ns3:IATA_LocationCode>
+                <ns3:AircraftScheduledDateTime>2024-04-03T23:00:00</ns3:AircraftScheduledDateTime>
+              </ns3:Arrival>
+              <ns3:MarketingCarrierInfo>
+                <ns3:CarrierDesigCode>AY</ns3:CarrierDesigCode>
+                <ns3:CarrierName>FINNAIR</ns3:CarrierName>
+                <ns3:MarketingCarrierFlightNumberText>1338</ns3:MarketingCarrierFlightNumberText>
+                <ns3:RBD_Code>Q</ns3:RBD_Code>
+              </ns3:MarketingCarrierInfo>
+              <ns3:OperatingCarrierInfo>
+                <ns3:CarrierDesigCode>AY</ns3:CarrierDesigCode>
+                <ns3:CarrierName>FINNAIR</ns3:CarrierName>
+                <ns3:Disclosure>
+                  <ns3:DisclosureID>DIS2</ns3:DisclosureID>
+                  <ns3:Desc>
+                    <ns3:DescID>DES2</ns3:DescID>
+                    <ns3:DescText>FINNAIR</ns3:DescText>
+                  </ns3:Desc>
+                </ns3:Disclosure>
+              </ns3:OperatingCarrierInfo>
+              <ns3:DatedOperatingLeg>
+                <ns3:DatedOperatingLegID>LEG2</ns3:DatedOperatingLegID>
+                <ns3:Dep>
+                  <ns3:IATA_LocationCode>LHR</ns3:IATA_LocationCode>
+                  <ns3:AircraftScheduledDateTime>2024-04-03T18:10:00</ns3:AircraftScheduledDateTime>
+                </ns3:Dep>
+                <ns3:Arrival>
+                  <ns3:IATA_LocationCode>HEL</ns3:IATA_LocationCode>
+                  <ns3:AircraftScheduledDateTime>2024-04-03T23:00:00</ns3:AircraftScheduledDateTime>
+                </ns3:Arrival>
+                <ns3:IATA_AircraftType>
+                  <ns3:IATA_AircraftTypeCode>359</ns3:IATA_AircraftTypeCode>
+                </ns3:IATA_AircraftType>
+              </ns3:DatedOperatingLeg>
+            </ns3:PaxSegment>
+          </ns3:PaxSegmentList>
+          <ns3:PriceClassList>
+            <ns3:PriceClass>
+              <ns3:PriceClassID>ESLIGHT1</ns3:PriceClassID>
+              <ns3:Name>ECONOMY SUPERLIGHT</ns3:Name>
+            </ns3:PriceClass>
+          </ns3:PriceClassList>
+          <ns3:ServiceDefinitionList>
+            <ns3:ServiceDefinition>
+              <ns3:ServiceDefinitionID>BAGALLOW_1</ns3:ServiceDefinitionID>
+              <ns3:Name>Bag allowances</ns3:Name>
+              <ns3:Description>
+                <ns3:DescID>Bag allowances</ns3:DescID>
+              </ns3:Description>
+              <ns3:ServiceDefinitionAssociation>
+                <ns3:BaggageAllowanceRefID>FBA1</ns3:BaggageAllowanceRefID>
+              </ns3:ServiceDefinitionAssociation>
+            </ns3:ServiceDefinition>
+          </ns3:ServiceDefinitionList>
+        </ns3:DataLists>
+        <ns3:Metadata>
+          <ns3:Other>
+            <ns3:OtherMetadata>
+              <ns3:CurrencyMetadatas>
+                <ns3:CurrencyMetadata MetadataKey="SEK">
+                  <ns3:Decimals>0</ns3:Decimals>
+                </ns3:CurrencyMetadata>
+              </ns3:CurrencyMetadatas>
+              <ns3:RuleMetadatas>
+                <ns3:RuleMetadata MetadataKey="ATC_EXCHANGE_ELIGIBILITY">
+                  <ns3:RuleID>ATC_EXCHANGE_ELIGIBILITY</ns3:RuleID>
+                  <ns3:Status>false</ns3:Status>
+                </ns3:RuleMetadata>
+                <ns3:RuleMetadata MetadataKey="ATC_REFUND_ELIGIBILITY">
+                  <ns3:RuleID>ATC_REFUND_ELIGIBILITY</ns3:RuleID>
+                  <ns3:Status>false</ns3:Status>
+                  <ns3:Remarks>
+                    <ns3:Remark>No e-tickets eligible for refund were found.</ns3:Remark>
+                  </ns3:Remarks>
+                </ns3:RuleMetadata>
+                <ns3:RuleMetadata MetadataKey="VOID_ELIGIBILITY">
+                  <ns3:RuleID>VOID_ELIGIBILITY</ns3:RuleID>
+                  <ns3:Status>false</ns3:Status>
+                  <ns3:Remarks>
+                    <ns3:Remark>No ticket</ns3:Remark>
+                  </ns3:Remarks>
+                </ns3:RuleMetadata>
+              </ns3:RuleMetadatas>
+            </ns3:OtherMetadata>
+            <ns3:OtherMetadata>
+              <ns3:RuleMetadatas>
+                <ns3:RuleMetadata MetadataKey="RULE5">
+                  <ns3:RuleID>Cancel before departure</ns3:RuleID>
+                  <ns3:Values>
+                    <ns3:Value>
+                      <ns3:Instruction>Not Allowed</ns3:Instruction>
+                    </ns3:Value>
+                  </ns3:Values>
+                </ns3:RuleMetadata>
+                <ns3:RuleMetadata MetadataKey="RULE6">
+                  <ns3:RuleID>Cancel after departure</ns3:RuleID>
+                  <ns3:Values>
+                    <ns3:Value>
+                      <ns3:Instruction>Not Allowed</ns3:Instruction>
+                    </ns3:Value>
+                  </ns3:Values>
+                </ns3:RuleMetadata>
+                <ns3:RuleMetadata MetadataKey="RULE7">
+                  <ns3:RuleID>Cancel before departure - No Show</ns3:RuleID>
+                  <ns3:Values>
+                    <ns3:Value>
+                      <ns3:Instruction>Not Allowed</ns3:Instruction>
+                    </ns3:Value>
+                  </ns3:Values>
+                </ns3:RuleMetadata>
+                <ns3:RuleMetadata MetadataKey="RULE8">
+                  <ns3:RuleID>Cancel after departure - No Show</ns3:RuleID>
+                  <ns3:Values>
+                    <ns3:Value>
+                      <ns3:Instruction>Not Allowed</ns3:Instruction>
+                    </ns3:Value>
+                  </ns3:Values>
+                </ns3:RuleMetadata>
+                <ns3:RuleMetadata MetadataKey="RULE13">
+                  <ns3:RuleID>Change before departure</ns3:RuleID>
+                  <ns3:Values>
+                    <ns3:Value>
+                      <ns3:Instruction>Not Allowed</ns3:Instruction>
+                    </ns3:Value>
+                  </ns3:Values>
+                </ns3:RuleMetadata>
+                <ns3:RuleMetadata MetadataKey="RULE14">
+                  <ns3:RuleID>Change after departure</ns3:RuleID>
+                  <ns3:Values>
+                    <ns3:Value>
+                      <ns3:Instruction>Not Allowed</ns3:Instruction>
+                    </ns3:Value>
+                  </ns3:Values>
+                </ns3:RuleMetadata>
+                <ns3:RuleMetadata MetadataKey="RULE15">
+                  <ns3:RuleID>Change before departure - No Show</ns3:RuleID>
+                  <ns3:Values>
+                    <ns3:Value>
+                      <ns3:Instruction>Not Allowed</ns3:Instruction>
+                    </ns3:Value>
+                  </ns3:Values>
+                </ns3:RuleMetadata>
+                <ns3:RuleMetadata MetadataKey="RULE16">
+                  <ns3:RuleID>Change after departure - No Show</ns3:RuleID>
+                  <ns3:Values>
+                    <ns3:Value>
+                      <ns3:Instruction>Not Allowed</ns3:Instruction>
+                    </ns3:Value>
+                  </ns3:Values>
+                </ns3:RuleMetadata>
+              </ns3:RuleMetadatas>
+            </ns3:OtherMetadata>
+          </ns3:Other>
+        </ns3:Metadata>
+        <ns3:Order>
+          <ns3:OrderID>AY_ORQ8FS</ns3:OrderID>
+          <ns3:OwnerCode>AY</ns3:OwnerCode>
+          <ns3:PaymentTimeLimitDateTime>2024-03-25T14:59:00.000Z</ns3:PaymentTimeLimitDateTime>
+          <ns3:BookingRef>
+            <ns3:BookingID>ORQ8FS</ns3:BookingID>
+            <ns3:BookingEntity>
+              <ns3:Carrier>
+                <ns3:AirlineDesigCode>AY</ns3:AirlineDesigCode>
+              </ns3:Carrier>
+            </ns3:BookingEntity>
+          </ns3:BookingRef>
+          <ns3:BookingRef>
+            <ns3:BookingID>ORQPQX</ns3:BookingID>
+            <ns3:BookingEntity>
+              <ns3:Org OrgID="1A">
+                <ns3:Name>Amadeus</ns3:Name>
+              </ns3:Org>
+            </ns3:BookingEntity>
+          </ns3:BookingRef>
+          <ns3:OrderItem>
+            <ns3:OrderItemID>AY_ORQ8FS_AIR-1-2_1APAX_PAX2</ns3:OrderItemID>
+            <ns3:OwnerCode>AY</ns3:OwnerCode>
+            <ns3:StatusCode>NOT ENTITLED</ns3:StatusCode>
+            <ns3:PriceGuaranteeTimeLimitDateTime>2024-03-25T14:59:00Z</ns3:PriceGuaranteeTimeLimitDateTime>
+            <ns3:FareDetail>
+              <ns3:PassengerRefs>PAX2</ns3:PassengerRefs>
+              <ns3:Price>
+                <ns3:TotalAmount>
+                  <ns3:DetailCurrencyPrice>
+                    <ns3:Total Code="SEK">3915</ns3:Total>
+                  </ns3:DetailCurrencyPrice>
+                </ns3:TotalAmount>
+                <ns3:BaseAmount Code="SEK">3256</ns3:BaseAmount>
+                <ns3:Taxes>
+                  <ns3:Total Code="SEK">659</ns3:Total>
+                  <ns3:Breakdown>
+                    <ns3:Tax>
+                      <ns3:Amount Code="SEK">64</ns3:Amount>
+                      <ns3:Nation>AP</ns3:Nation>
+                      <ns3:TaxCode>DQ</ns3:TaxCode>
+                    </ns3:Tax>
+                    <ns3:Tax>
+                      <ns3:Amount Code="SEK">125</ns3:Amount>
+                      <ns3:Nation>DP</ns3:Nation>
+                      <ns3:TaxCode>FI</ns3:TaxCode>
+                    </ns3:Tax>
+                    <ns3:Tax>
+                      <ns3:Amount Code="SEK">10</ns3:Amount>
+                      <ns3:Nation>AV</ns3:Nation>
+                      <ns3:TaxCode>XU</ns3:TaxCode>
+                    </ns3:Tax>
+                    <ns3:Tax>
+                      <ns3:Amount Code="SEK">171</ns3:Amount>
+                      <ns3:Nation>AD</ns3:Nation>
+                      <ns3:TaxCode>GB</ns3:TaxCode>
+                    </ns3:Tax>
+                    <ns3:Tax>
+                      <ns3:Amount Code="SEK">289</ns3:Amount>
+                      <ns3:Nation>AS</ns3:Nation>
+                      <ns3:TaxCode>UB</ns3:TaxCode>
+                    </ns3:Tax>
+                  </ns3:Breakdown>
+                </ns3:Taxes>
+              </ns3:Price>
+              <ns3:FareComponent>
+                <ns3:FareBasis>
+                  <ns3:FareBasisCode>
+                    <ns3:Code>VNY0S9BZ</ns3:Code>
+                  </ns3:FareBasisCode>
+                  <ns3:RBD>V</ns3:RBD>
+                  <ns3:CabinType>
+                    <ns3:CabinTypeCode>M</ns3:CabinTypeCode>
+                    <ns3:CabinTypeName>ECONOMY</ns3:CabinTypeName>
+                  </ns3:CabinType>
+                </ns3:FareBasis>
+                <ns3:FareRules>
+                  <ns3:Penalty CancelFeeInd="false" ChangeFeeInd="false">
+                    <ns3:Details>
+                      <ns3:Detail refs="RULE5">
+                        <ns3:Type>Cancel</ns3:Type>
+                        <ns3:Application>2</ns3:Application>
+                        <ns3:Amounts>
+                          <ns3:Amount>
+                            <ns3:CurrencyAmountValue Code="SEK">0</ns3:CurrencyAmountValue>
+                            <ns3:AmountApplication>MIN</ns3:AmountApplication>
+                            <ns3:ApplicableFeeRemarks>
+                              <ns3:Remark>Reissue/Refund minimum penalty amount before departure</ns3:Remark>
+                            </ns3:ApplicableFeeRemarks>
+                          </ns3:Amount>
+                          <ns3:Amount>
+                            <ns3:CurrencyAmountValue Code="SEK">0</ns3:CurrencyAmountValue>
+                            <ns3:AmountApplication>MAX</ns3:AmountApplication>
+                            <ns3:ApplicableFeeRemarks>
+                              <ns3:Remark>Reissue/Refund maximum penalty amount before departure</ns3:Remark>
+                            </ns3:ApplicableFeeRemarks>
+                          </ns3:Amount>
+                        </ns3:Amounts>
+                      </ns3:Detail>
+                      <ns3:Detail refs="RULE13">
+                        <ns3:Type>Change</ns3:Type>
+                        <ns3:Application>2</ns3:Application>
+                        <ns3:Amounts>
+                          <ns3:Amount>
+                            <ns3:CurrencyAmountValue Code="SEK">0</ns3:CurrencyAmountValue>
+                            <ns3:AmountApplication>MIN</ns3:AmountApplication>
+                            <ns3:ApplicableFeeRemarks>
+                              <ns3:Remark>Reissue/Refund minimum penalty amount before departure</ns3:Remark>
+                            </ns3:ApplicableFeeRemarks>
+                          </ns3:Amount>
+                          <ns3:Amount>
+                            <ns3:CurrencyAmountValue Code="SEK">0</ns3:CurrencyAmountValue>
+                            <ns3:AmountApplication>MAX</ns3:AmountApplication>
+                            <ns3:ApplicableFeeRemarks>
+                              <ns3:Remark>Reissue/Refund maximum penalty amount before departure</ns3:Remark>
+                            </ns3:ApplicableFeeRemarks>
+                          </ns3:Amount>
+                        </ns3:Amounts>
+                      </ns3:Detail>
+                      <ns3:Detail refs="RULE6">
+                        <ns3:Type>Cancel</ns3:Type>
+                        <ns3:Application>3</ns3:Application>
+                        <ns3:Amounts>
+                          <ns3:Amount>
+                            <ns3:CurrencyAmountValue Code="SEK">0</ns3:CurrencyAmountValue>
+                            <ns3:AmountApplication>MIN</ns3:AmountApplication>
+                            <ns3:ApplicableFeeRemarks>
+                              <ns3:Remark>Reissue/Refund minimum penalty amount after departure</ns3:Remark>
+                            </ns3:ApplicableFeeRemarks>
+                          </ns3:Amount>
+                          <ns3:Amount>
+                            <ns3:CurrencyAmountValue Code="SEK">0</ns3:CurrencyAmountValue>
+                            <ns3:AmountApplication>MAX</ns3:AmountApplication>
+                            <ns3:ApplicableFeeRemarks>
+                              <ns3:Remark>Reissue/Refund maximum penalty amount with sale currency</ns3:Remark>
+                            </ns3:ApplicableFeeRemarks>
+                          </ns3:Amount>
+                        </ns3:Amounts>
+                      </ns3:Detail>
+                      <ns3:Detail refs="RULE14">
+                        <ns3:Type>Change</ns3:Type>
+                        <ns3:Application>3</ns3:Application>
+                        <ns3:Amounts>
+                          <ns3:Amount>
+                            <ns3:CurrencyAmountValue Code="SEK">0</ns3:CurrencyAmountValue>
+                            <ns3:AmountApplication>MIN</ns3:AmountApplication>
+                            <ns3:ApplicableFeeRemarks>
+                              <ns3:Remark>Reissue/Refund minimum penalty amount after departure</ns3:Remark>
+                            </ns3:ApplicableFeeRemarks>
+                          </ns3:Amount>
+                          <ns3:Amount>
+                            <ns3:CurrencyAmountValue Code="SEK">0</ns3:CurrencyAmountValue>
+                            <ns3:AmountApplication>MAX</ns3:AmountApplication>
+                            <ns3:ApplicableFeeRemarks>
+                              <ns3:Remark>Reissue/Refund maximum penalty amount with sale currency</ns3:Remark>
+                            </ns3:ApplicableFeeRemarks>
+                          </ns3:Amount>
+                        </ns3:Amounts>
+                      </ns3:Detail>
+                      <ns3:Detail refs="RULE7">
+                        <ns3:Type>Cancel</ns3:Type>
+                        <ns3:Application>12</ns3:Application>
+                        <ns3:Amounts>
+                          <ns3:Amount>
+                            <ns3:CurrencyAmountValue Code="SEK">0</ns3:CurrencyAmountValue>
+                            <ns3:AmountApplication>MIN</ns3:AmountApplication>
+                            <ns3:ApplicableFeeRemarks>
+                              <ns3:Remark>Reissue/Refund minimum penalty amount before departure no show</ns3:Remark>
+                            </ns3:ApplicableFeeRemarks>
+                          </ns3:Amount>
+                          <ns3:Amount>
+                            <ns3:CurrencyAmountValue Code="SEK">0</ns3:CurrencyAmountValue>
+                            <ns3:AmountApplication>MAX</ns3:AmountApplication>
+                            <ns3:ApplicableFeeRemarks>
+                              <ns3:Remark>Reissue/Refund maximum penalty amount before departure no show</ns3:Remark>
+                            </ns3:ApplicableFeeRemarks>
+                          </ns3:Amount>
+                        </ns3:Amounts>
+                      </ns3:Detail>
+                      <ns3:Detail refs="RULE15">
+                        <ns3:Type>Change</ns3:Type>
+                        <ns3:Application>12</ns3:Application>
+                        <ns3:Amounts>
+                          <ns3:Amount>
+                            <ns3:CurrencyAmountValue Code="SEK">0</ns3:CurrencyAmountValue>
+                            <ns3:AmountApplication>MIN</ns3:AmountApplication>
+                            <ns3:ApplicableFeeRemarks>
+                              <ns3:Remark>Reissue/Refund minimum penalty amount before departure no show</ns3:Remark>
+                            </ns3:ApplicableFeeRemarks>
+                          </ns3:Amount>
+                          <ns3:Amount>
+                            <ns3:CurrencyAmountValue Code="SEK">0</ns3:CurrencyAmountValue>
+                            <ns3:AmountApplication>MAX</ns3:AmountApplication>
+                            <ns3:ApplicableFeeRemarks>
+                              <ns3:Remark>Reissue/Refund maximum penalty amount before departure no show</ns3:Remark>
+                            </ns3:ApplicableFeeRemarks>
+                          </ns3:Amount>
+                        </ns3:Amounts>
+                      </ns3:Detail>
+                      <ns3:Detail refs="RULE8">
+                        <ns3:Type>Cancel</ns3:Type>
+                        <ns3:Application>13</ns3:Application>
+                        <ns3:Amounts>
+                          <ns3:Amount>
+                            <ns3:CurrencyAmountValue Code="SEK">0</ns3:CurrencyAmountValue>
+                            <ns3:AmountApplication>MIN</ns3:AmountApplication>
+                            <ns3:ApplicableFeeRemarks>
+                              <ns3:Remark>Reissue/Refund minimum penalty amount after departure no show</ns3:Remark>
+                            </ns3:ApplicableFeeRemarks>
+                          </ns3:Amount>
+                          <ns3:Amount>
+                            <ns3:CurrencyAmountValue Code="SEK">0</ns3:CurrencyAmountValue>
+                            <ns3:AmountApplication>MAX</ns3:AmountApplication>
+                            <ns3:ApplicableFeeRemarks>
+                              <ns3:Remark>Reissue/Refund maximum penalty amount after departure no show</ns3:Remark>
+                            </ns3:ApplicableFeeRemarks>
+                          </ns3:Amount>
+                        </ns3:Amounts>
+                      </ns3:Detail>
+                      <ns3:Detail refs="RULE16">
+                        <ns3:Type>Change</ns3:Type>
+                        <ns3:Application>13</ns3:Application>
+                        <ns3:Amounts>
+                          <ns3:Amount>
+                            <ns3:CurrencyAmountValue Code="SEK">0</ns3:CurrencyAmountValue>
+                            <ns3:AmountApplication>MIN</ns3:AmountApplication>
+                            <ns3:ApplicableFeeRemarks>
+                              <ns3:Remark>Reissue/Refund minimum penalty amount after departure no show</ns3:Remark>
+                            </ns3:ApplicableFeeRemarks>
+                          </ns3:Amount>
+                          <ns3:Amount>
+                            <ns3:CurrencyAmountValue Code="SEK">0</ns3:CurrencyAmountValue>
+                            <ns3:AmountApplication>MAX</ns3:AmountApplication>
+                            <ns3:ApplicableFeeRemarks>
+                              <ns3:Remark>Reissue/Refund maximum penalty amount after departure no show</ns3:Remark>
+                            </ns3:ApplicableFeeRemarks>
+                          </ns3:Amount>
+                        </ns3:Amounts>
+                      </ns3:Detail>
+                    </ns3:Details>
+                  </ns3:Penalty>
+                </ns3:FareRules>
+                <ns3:PriceClassRef>ESLIGHT1</ns3:PriceClassRef>
+                <ns3:SegmentRefs>SEG1</ns3:SegmentRefs>
+              </ns3:FareComponent>
+              <ns3:FareComponent>
+                <ns3:FareBasis>
+                  <ns3:FareBasisCode>
+                    <ns3:Code>QNY0S9BZ</ns3:Code>
+                  </ns3:FareBasisCode>
+                  <ns3:RBD>Q</ns3:RBD>
+                  <ns3:CabinType>
+                    <ns3:CabinTypeCode>M</ns3:CabinTypeCode>
+                    <ns3:CabinTypeName>ECONOMY</ns3:CabinTypeName>
+                  </ns3:CabinType>
+                </ns3:FareBasis>
+                <ns3:FareRules>
+                  <ns3:Penalty CancelFeeInd="false" ChangeFeeInd="false">
+                    <ns3:Details>
+                      <ns3:Detail refs="RULE5">
+                        <ns3:Type>Cancel</ns3:Type>
+                        <ns3:Application>2</ns3:Application>
+                        <ns3:Amounts>
+                          <ns3:Amount>
+                            <ns3:CurrencyAmountValue Code="SEK">0</ns3:CurrencyAmountValue>
+                            <ns3:AmountApplication>MIN</ns3:AmountApplication>
+                            <ns3:ApplicableFeeRemarks>
+                              <ns3:Remark>Reissue/Refund minimum penalty amount before departure</ns3:Remark>
+                            </ns3:ApplicableFeeRemarks>
+                          </ns3:Amount>
+                          <ns3:Amount>
+                            <ns3:CurrencyAmountValue Code="SEK">0</ns3:CurrencyAmountValue>
+                            <ns3:AmountApplication>MAX</ns3:AmountApplication>
+                            <ns3:ApplicableFeeRemarks>
+                              <ns3:Remark>Reissue/Refund maximum penalty amount before departure</ns3:Remark>
+                            </ns3:ApplicableFeeRemarks>
+                          </ns3:Amount>
+                        </ns3:Amounts>
+                      </ns3:Detail>
+                      <ns3:Detail refs="RULE13">
+                        <ns3:Type>Change</ns3:Type>
+                        <ns3:Application>2</ns3:Application>
+                        <ns3:Amounts>
+                          <ns3:Amount>
+                            <ns3:CurrencyAmountValue Code="SEK">0</ns3:CurrencyAmountValue>
+                            <ns3:AmountApplication>MIN</ns3:AmountApplication>
+                            <ns3:ApplicableFeeRemarks>
+                              <ns3:Remark>Reissue/Refund minimum penalty amount before departure</ns3:Remark>
+                            </ns3:ApplicableFeeRemarks>
+                          </ns3:Amount>
+                          <ns3:Amount>
+                            <ns3:CurrencyAmountValue Code="SEK">0</ns3:CurrencyAmountValue>
+                            <ns3:AmountApplication>MAX</ns3:AmountApplication>
+                            <ns3:ApplicableFeeRemarks>
+                              <ns3:Remark>Reissue/Refund maximum penalty amount before departure</ns3:Remark>
+                            </ns3:ApplicableFeeRemarks>
+                          </ns3:Amount>
+                        </ns3:Amounts>
+                      </ns3:Detail>
+                      <ns3:Detail refs="RULE6">
+                        <ns3:Type>Cancel</ns3:Type>
+                        <ns3:Application>3</ns3:Application>
+                        <ns3:Amounts>
+                          <ns3:Amount>
+                            <ns3:CurrencyAmountValue Code="SEK">0</ns3:CurrencyAmountValue>
+                            <ns3:AmountApplication>MIN</ns3:AmountApplication>
+                            <ns3:ApplicableFeeRemarks>
+                              <ns3:Remark>Reissue/Refund minimum penalty amount after departure</ns3:Remark>
+                            </ns3:ApplicableFeeRemarks>
+                          </ns3:Amount>
+                          <ns3:Amount>
+                            <ns3:CurrencyAmountValue Code="SEK">0</ns3:CurrencyAmountValue>
+                            <ns3:AmountApplication>MAX</ns3:AmountApplication>
+                            <ns3:ApplicableFeeRemarks>
+                              <ns3:Remark>Reissue/Refund maximum penalty amount with sale currency</ns3:Remark>
+                            </ns3:ApplicableFeeRemarks>
+                          </ns3:Amount>
+                        </ns3:Amounts>
+                      </ns3:Detail>
+                      <ns3:Detail refs="RULE14">
+                        <ns3:Type>Change</ns3:Type>
+                        <ns3:Application>3</ns3:Application>
+                        <ns3:Amounts>
+                          <ns3:Amount>
+                            <ns3:CurrencyAmountValue Code="SEK">0</ns3:CurrencyAmountValue>
+                            <ns3:AmountApplication>MIN</ns3:AmountApplication>
+                            <ns3:ApplicableFeeRemarks>
+                              <ns3:Remark>Reissue/Refund minimum penalty amount after departure</ns3:Remark>
+                            </ns3:ApplicableFeeRemarks>
+                          </ns3:Amount>
+                          <ns3:Amount>
+                            <ns3:CurrencyAmountValue Code="SEK">0</ns3:CurrencyAmountValue>
+                            <ns3:AmountApplication>MAX</ns3:AmountApplication>
+                            <ns3:ApplicableFeeRemarks>
+                              <ns3:Remark>Reissue/Refund maximum penalty amount with sale currency</ns3:Remark>
+                            </ns3:ApplicableFeeRemarks>
+                          </ns3:Amount>
+                        </ns3:Amounts>
+                      </ns3:Detail>
+                      <ns3:Detail refs="RULE7">
+                        <ns3:Type>Cancel</ns3:Type>
+                        <ns3:Application>12</ns3:Application>
+                        <ns3:Amounts>
+                          <ns3:Amount>
+                            <ns3:CurrencyAmountValue Code="SEK">0</ns3:CurrencyAmountValue>
+                            <ns3:AmountApplication>MIN</ns3:AmountApplication>
+                            <ns3:ApplicableFeeRemarks>
+                              <ns3:Remark>Reissue/Refund minimum penalty amount before departure no show</ns3:Remark>
+                            </ns3:ApplicableFeeRemarks>
+                          </ns3:Amount>
+                          <ns3:Amount>
+                            <ns3:CurrencyAmountValue Code="SEK">0</ns3:CurrencyAmountValue>
+                            <ns3:AmountApplication>MAX</ns3:AmountApplication>
+                            <ns3:ApplicableFeeRemarks>
+                              <ns3:Remark>Reissue/Refund maximum penalty amount before departure no show</ns3:Remark>
+                            </ns3:ApplicableFeeRemarks>
+                          </ns3:Amount>
+                        </ns3:Amounts>
+                      </ns3:Detail>
+                      <ns3:Detail refs="RULE15">
+                        <ns3:Type>Change</ns3:Type>
+                        <ns3:Application>12</ns3:Application>
+                        <ns3:Amounts>
+                          <ns3:Amount>
+                            <ns3:CurrencyAmountValue Code="SEK">0</ns3:CurrencyAmountValue>
+                            <ns3:AmountApplication>MIN</ns3:AmountApplication>
+                            <ns3:ApplicableFeeRemarks>
+                              <ns3:Remark>Reissue/Refund minimum penalty amount before departure no show</ns3:Remark>
+                            </ns3:ApplicableFeeRemarks>
+                          </ns3:Amount>
+                          <ns3:Amount>
+                            <ns3:CurrencyAmountValue Code="SEK">0</ns3:CurrencyAmountValue>
+                            <ns3:AmountApplication>MAX</ns3:AmountApplication>
+                            <ns3:ApplicableFeeRemarks>
+                              <ns3:Remark>Reissue/Refund maximum penalty amount before departure no show</ns3:Remark>
+                            </ns3:ApplicableFeeRemarks>
+                          </ns3:Amount>
+                        </ns3:Amounts>
+                      </ns3:Detail>
+                      <ns3:Detail refs="RULE8">
+                        <ns3:Type>Cancel</ns3:Type>
+                        <ns3:Application>13</ns3:Application>
+                        <ns3:Amounts>
+                          <ns3:Amount>
+                            <ns3:CurrencyAmountValue Code="SEK">0</ns3:CurrencyAmountValue>
+                            <ns3:AmountApplication>MIN</ns3:AmountApplication>
+                            <ns3:ApplicableFeeRemarks>
+                              <ns3:Remark>Reissue/Refund minimum penalty amount after departure no show</ns3:Remark>
+                            </ns3:ApplicableFeeRemarks>
+                          </ns3:Amount>
+                          <ns3:Amount>
+                            <ns3:CurrencyAmountValue Code="SEK">0</ns3:CurrencyAmountValue>
+                            <ns3:AmountApplication>MAX</ns3:AmountApplication>
+                            <ns3:ApplicableFeeRemarks>
+                              <ns3:Remark>Reissue/Refund maximum penalty amount after departure no show</ns3:Remark>
+                            </ns3:ApplicableFeeRemarks>
+                          </ns3:Amount>
+                        </ns3:Amounts>
+                      </ns3:Detail>
+                      <ns3:Detail refs="RULE16">
+                        <ns3:Type>Change</ns3:Type>
+                        <ns3:Application>13</ns3:Application>
+                        <ns3:Amounts>
+                          <ns3:Amount>
+                            <ns3:CurrencyAmountValue Code="SEK">0</ns3:CurrencyAmountValue>
+                            <ns3:AmountApplication>MIN</ns3:AmountApplication>
+                            <ns3:ApplicableFeeRemarks>
+                              <ns3:Remark>Reissue/Refund minimum penalty amount after departure no show</ns3:Remark>
+                            </ns3:ApplicableFeeRemarks>
+                          </ns3:Amount>
+                          <ns3:Amount>
+                            <ns3:CurrencyAmountValue Code="SEK">0</ns3:CurrencyAmountValue>
+                            <ns3:AmountApplication>MAX</ns3:AmountApplication>
+                            <ns3:ApplicableFeeRemarks>
+                              <ns3:Remark>Reissue/Refund maximum penalty amount after departure no show</ns3:Remark>
+                            </ns3:ApplicableFeeRemarks>
+                          </ns3:Amount>
+                        </ns3:Amounts>
+                      </ns3:Detail>
+                    </ns3:Details>
+                  </ns3:Penalty>
+                </ns3:FareRules>
+                <ns3:PriceClassRef>ESLIGHT1</ns3:PriceClassRef>
+                <ns3:SegmentRefs>SEG2</ns3:SegmentRefs>
+              </ns3:FareComponent>
+              <ns3:Remarks>
+                <ns3:Remark>FC-HEL AY LON192.68AY HEL119.48NUC312.16END ROE0.928954</ns3:Remark>
+                <ns3:Remark>FE-PAX NO BAG INCL/NONREF-NO CHNG</ns3:Remark>
+              </ns3:Remarks>
+            </ns3:FareDetail>
+            <ns3:Price>
+              <ns3:TotalAmount CurCode="SEK">3915</ns3:TotalAmount>
+              <ns3:BaseAmount CurCode="SEK">3256</ns3:BaseAmount>
+              <ns3:TaxSummary>
+                <ns3:TotalTaxAmount CurCode="SEK">659</ns3:TotalTaxAmount>
+              </ns3:TaxSummary>
+            </ns3:Price>
+            <ns3:Service>
+              <ns3:ServiceID>SEG1_PAX2_1</ns3:ServiceID>
+              <ns3:StatusCode>HK</ns3:StatusCode>
+              <ns3:PaxRefID>PAX2</ns3:PaxRefID>
+              <ns3:ServiceAssociations>
+                <ns3:ServiceDefinitionRef>
+                  <ns3:ServiceDefinitionRefID>BAGALLOW_1</ns3:ServiceDefinitionRefID>
+                  <ns3:PaxSegmentRefID>SEG1</ns3:PaxSegmentRefID>
+                </ns3:ServiceDefinitionRef>
+              </ns3:ServiceAssociations>
+            </ns3:Service>
+            <ns3:Service>
+              <ns3:ServiceID>SEG2_PAX2_1</ns3:ServiceID>
+              <ns3:StatusCode>HK</ns3:StatusCode>
+              <ns3:PaxRefID>PAX2</ns3:PaxRefID>
+              <ns3:ServiceAssociations>
+                <ns3:ServiceDefinitionRef>
+                  <ns3:ServiceDefinitionRefID>BAGALLOW_1</ns3:ServiceDefinitionRefID>
+                  <ns3:PaxSegmentRefID>SEG2</ns3:PaxSegmentRefID>
+                </ns3:ServiceDefinitionRef>
+              </ns3:ServiceAssociations>
+            </ns3:Service>
+            <ns3:Service>
+              <ns3:ServiceID>SEG1_PAX2</ns3:ServiceID>
+              <ns3:StatusCode>HK</ns3:StatusCode>
+              <ns3:PaxRefID>PAX2</ns3:PaxRefID>
+              <ns3:ServiceAssociations>
+                <ns3:PaxSegmentRefID>SEG1</ns3:PaxSegmentRefID>
+              </ns3:ServiceAssociations>
+            </ns3:Service>
+            <ns3:Service>
+              <ns3:ServiceID>SEG2_PAX2</ns3:ServiceID>
+              <ns3:StatusCode>HK</ns3:StatusCode>
+              <ns3:PaxRefID>PAX2</ns3:PaxRefID>
+              <ns3:ServiceAssociations>
+                <ns3:PaxSegmentRefID>SEG2</ns3:PaxSegmentRefID>
+              </ns3:ServiceAssociations>
+            </ns3:Service>
+          </ns3:OrderItem>
+          <ns3:TotalPrice>
+            <ns3:TotalAmount CurCode="SEK">3915</ns3:TotalAmount>
+            <ns3:BaseAmount CurCode="SEK">3256</ns3:BaseAmount>
+            <ns3:TaxSummary>
+              <ns3:TotalTaxAmount CurCode="SEK">659</ns3:TotalTaxAmount>
+            </ns3:TaxSummary>
+          </ns3:TotalPrice>
+        </ns3:Order>
+        <ns3:OrderViewProcessing>
+          <ns3:Remarks>
+            <ns3:Remark>***REFUND THROUGH TRAVEL AGENCY ONLY***</ns3:Remark>
+          </ns3:Remarks>
+        </ns3:OrderViewProcessing>
+      </ns3:Response>
+    </ns3:AMA_TravelOrderViewRS>
+  </soap:Body>
+</soap:Envelope>

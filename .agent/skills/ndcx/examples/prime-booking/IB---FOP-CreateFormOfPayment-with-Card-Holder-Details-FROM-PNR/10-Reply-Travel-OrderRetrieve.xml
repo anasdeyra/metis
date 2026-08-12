@@ -1,0 +1,435 @@
+<soap:Envelope xmlns:awsse="http://xml.amadeus.com/2010/06/Session_v3" xmlns:ns3="http://xml.amadeus.com/2010/06/Travel_OrderViewRS_v1" xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns:wsa="http://www.w3.org/2005/08/addressing">
+  <soap:Header>
+    <wsa:To>http://www.w3.org/2005/08/addressing/anonymous</wsa:To>
+    <wsa:From>
+      <wsa:Address>https://noded5.test.webservices.amadeus.com/WSAP</wsa:Address>
+    </wsa:From>
+    <wsa:Action>http://webservices.amadeus.com/Travel_OrderRetrieve_1.7</wsa:Action>
+    <wsa:MessageID>urn:uuid:b894ec8a-ebb4-8654-ed0b-3ccdb894d53f</wsa:MessageID>
+    <wsa:RelatesTo RelationshipType="http://www.w3.org/2005/08/addressing/reply">d1fefb52-6884-4fc2-b640-179715077bd8</wsa:RelatesTo>
+    <awsse:Session TransactionStatusCode="End">
+      <awsse:SessionId>01GF36P3W5</awsse:SessionId>
+      <awsse:SequenceNumber>1</awsse:SequenceNumber>
+      <awsse:SecurityToken>REDACTED_TOKEN</awsse:SecurityToken>
+    </awsse:Session>
+  </soap:Header>
+  <soap:Body>
+    <ns3:AMA_TravelOrderViewRS>
+      <ns3:Response>
+        <ns3:DataLists>
+          <ns3:BaggageAllowanceList>
+            <ns3:BaggageAllowance>
+              <ns3:BaggageAllowanceID>HANDBAGALLOWANCE_01</ns3:BaggageAllowanceID>
+              <ns3:TypeCode>CarryOn</ns3:TypeCode>
+              <ns3:PieceAllowance>
+                <ns3:ApplicablePartyText>Traveler</ns3:ApplicablePartyText>
+                <ns3:TotalQty>2</ns3:TotalQty>
+                <ns3:ApplicableBagText>CARRY ON BAGGAGE</ns3:ApplicableBagText>
+              </ns3:PieceAllowance>
+            </ns3:BaggageAllowance>
+            <ns3:BaggageAllowance>
+              <ns3:BaggageAllowanceID>CHECKEDBAGALLOWANCE_1</ns3:BaggageAllowanceID>
+              <ns3:TypeCode>Checked</ns3:TypeCode>
+              <ns3:PieceAllowance>
+                <ns3:ApplicablePartyText>Traveler</ns3:ApplicablePartyText>
+                <ns3:TotalQty>0</ns3:TotalQty>
+                <ns3:ApplicableBagText>BAG UP TO 23 KG AND 158 LCM</ns3:ApplicableBagText>
+              </ns3:PieceAllowance>
+            </ns3:BaggageAllowance>
+          </ns3:BaggageAllowanceList>
+          <ns3:ContactInfoList>
+            <ns3:ContactInfo>
+              <ns3:ContactInfoID>CONTACT_PAX1</ns3:ContactInfoID>
+              <ns3:Phone>
+                <ns3:PhoneNumber>33097230220</ns3:PhoneNumber>
+              </ns3:Phone>
+              <ns3:EmailAddress>
+                <ns3:EmailAddressText>juan_1aws_test@tayrona.latam.co</ns3:EmailAddressText>
+              </ns3:EmailAddress>
+            </ns3:ContactInfo>
+          </ns3:ContactInfoList>
+          <ns3:FareList>
+            <ns3:FareGroup ListKey="FG1">
+              <ns3:Fare>
+                <ns3:FareCode>70J</ns3:FareCode>
+              </ns3:Fare>
+              <ns3:FareBasisCode>
+                <ns3:Code>AON0B5</ns3:Code>
+              </ns3:FareBasisCode>
+            </ns3:FareGroup>
+          </ns3:FareList>
+          <ns3:OriginDestList>
+            <ns3:OriginDest>
+              <ns3:OriginDestID>OD1</ns3:OriginDestID>
+              <ns3:OriginCode>MAD</ns3:OriginCode>
+              <ns3:DestCode>BCN</ns3:DestCode>
+              <ns3:PaxJourneyRefID>MADBCN20241009213500</ns3:PaxJourneyRefID>
+            </ns3:OriginDest>
+          </ns3:OriginDestList>
+          <ns3:PaxJourneyList>
+            <ns3:PaxJourney>
+              <ns3:PaxJourneyID>MADBCN20241009213500</ns3:PaxJourneyID>
+              <ns3:Duration>PT1H15M</ns3:Duration>
+              <ns3:PaxSegmentRefID>IB303420241009</ns3:PaxSegmentRefID>
+            </ns3:PaxJourney>
+          </ns3:PaxJourneyList>
+          <ns3:PaxList>
+            <ns3:Pax>
+              <ns3:PaxID>PAX1</ns3:PaxID>
+              <ns3:PTC>ADT</ns3:PTC>
+              <ns3:Birthdate>1985-07-20</ns3:Birthdate>
+              <ns3:ContactInfoRefID>CONTACT_PAX1</ns3:ContactInfoRefID>
+              <ns3:Individual>
+                <ns3:IndividualID>IDPAX1</ns3:IndividualID>
+                <ns3:Birthdate>1985-07-20</ns3:Birthdate>
+                <ns3:GenderCode>F</ns3:GenderCode>
+                <ns3:TitleName>MISS</ns3:TitleName>
+                <ns3:GivenName>JUAN</ns3:GivenName>
+                <ns3:Surname>ALICAS</ns3:Surname>
+              </ns3:Individual>
+            </ns3:Pax>
+          </ns3:PaxList>
+          <ns3:PaxSegmentList>
+            <ns3:PaxSegment>
+              <ns3:PaxSegmentID>IB303420241009</ns3:PaxSegmentID>
+              <ns3:Duration>PT1H15M</ns3:Duration>
+              <ns3:Dep>
+                <ns3:IATA_LocationCode>MAD</ns3:IATA_LocationCode>
+                <ns3:StationName>ADOLFO SUAREZ BARAJAS</ns3:StationName>
+                <ns3:TerminalName>4</ns3:TerminalName>
+                <ns3:AircraftScheduledDateTime>2024-10-09T21:35:00</ns3:AircraftScheduledDateTime>
+              </ns3:Dep>
+              <ns3:Arrival>
+                <ns3:IATA_LocationCode>BCN</ns3:IATA_LocationCode>
+                <ns3:StationName>AIRPORT</ns3:StationName>
+                <ns3:TerminalName>1</ns3:TerminalName>
+                <ns3:AircraftScheduledDateTime>2024-10-09T22:50:00</ns3:AircraftScheduledDateTime>
+              </ns3:Arrival>
+              <ns3:MarketingCarrierInfo>
+                <ns3:CarrierDesigCode>IB</ns3:CarrierDesigCode>
+                <ns3:CarrierName>Iberia</ns3:CarrierName>
+                <ns3:MarketingCarrierFlightNumberText>3034</ns3:MarketingCarrierFlightNumberText>
+              </ns3:MarketingCarrierInfo>
+              <ns3:OperatingCarrierInfo>
+                <ns3:CarrierDesigCode>IB</ns3:CarrierDesigCode>
+                <ns3:CarrierName>Iberia</ns3:CarrierName>
+                <ns3:OperatingCarrierFlightNumberText>3034</ns3:OperatingCarrierFlightNumberText>
+                <ns3:Disclosure>
+                  <ns3:DisclosureID>DisclosureID-1</ns3:DisclosureID>
+                  <ns3:Desc>
+                    <ns3:DescID>DescID-1</ns3:DescID>
+                    <ns3:DescText>IB</ns3:DescText>
+                  </ns3:Desc>
+                </ns3:Disclosure>
+              </ns3:OperatingCarrierInfo>
+              <ns3:DatedOperatingLeg>
+                <ns3:DatedOperatingLegID>LEG1</ns3:DatedOperatingLegID>
+                <ns3:CarrierAircraftType>
+                  <ns3:CarrierAircraftTypeCode>321</ns3:CarrierAircraftTypeCode>
+                  <ns3:CarrierAircraftTypeName>Airbus A321</ns3:CarrierAircraftTypeName>
+                </ns3:CarrierAircraftType>
+                <ns3:Dep>
+                  <ns3:IATA_LocationCode>MAD</ns3:IATA_LocationCode>
+                  <ns3:AircraftScheduledDateTime>2024-10-09T21:35:00</ns3:AircraftScheduledDateTime>
+                </ns3:Dep>
+                <ns3:Arrival>
+                  <ns3:IATA_LocationCode>BCN</ns3:IATA_LocationCode>
+                  <ns3:AircraftScheduledDateTime>2024-10-09T22:50:00</ns3:AircraftScheduledDateTime>
+                </ns3:Arrival>
+              </ns3:DatedOperatingLeg>
+            </ns3:PaxSegment>
+          </ns3:PaxSegmentList>
+          <ns3:PriceClassList>
+            <ns3:PriceClass>
+              <ns3:PriceClassID>BASIC0mIXZbzP5I5</ns3:PriceClassID>
+              <ns3:Code>BASIC</ns3:Code>
+              <ns3:Name>BASIC</ns3:Name>
+              <ns3:Desc>
+                <ns3:DescID>CFFIBMADBCNBASIC0LF</ns3:DescID>
+                <ns3:DescText>TS/PY/0LF///PRIORITY BAGGAGE/DISPLAYED-BUT-NOT-OFFERED</ns3:DescText>
+              </ns3:Desc>
+              <ns3:Desc>
+                <ns3:DescID>CFFIBMADBCNBASIC0LW</ns3:DescID>
+                <ns3:DescText>TS/SY/0LW/Priority//PRIORITY SECURITY/DISPLAYED-BUT-NOT-OFFERED</ns3:DescText>
+              </ns3:Desc>
+              <ns3:Desc>
+                <ns3:DescID>CFFIBMADBCNBASICIB5</ns3:DescID>
+                <ns3:DescText>BF/SE/IB5///XL SEAT SELECTION/CHARGE</ns3:DescText>
+              </ns3:Desc>
+              <ns3:Desc>
+                <ns3:DescID>CFFIBMADBCNBASIC0B3</ns3:DescID>
+                <ns3:DescText>ML//0B3///MEAL/DISPLAYED-BUT-NOT-OFFERED</ns3:DescText>
+              </ns3:Desc>
+              <ns3:Desc>
+                <ns3:DescID>CFFIBMADBCNBASICIB3</ns3:DescID>
+                <ns3:DescText>BF/SE/IB3///FRONT SEAT SELECTION/CHARGE</ns3:DescText>
+              </ns3:Desc>
+              <ns3:Desc>
+                <ns3:DescID>CFFIBMADBCNBASIC03P</ns3:DescID>
+                <ns3:DescText>TS/PO/03P///PRIORITY CHECK IN/DISPLAYED-BUT-NOT-OFFERED</ns3:DescText>
+              </ns3:Desc>
+              <ns3:Desc>
+                <ns3:DescID>CFFIBMADBCNBASIC050</ns3:DescID>
+                <ns3:DescText>BF/SE/050/BS//STANDARD SEAT SELECTION/CHARGE</ns3:DescText>
+              </ns3:Desc>
+              <ns3:Desc>
+                <ns3:DescID>CFFIBMADBCNBASICIB4</ns3:DescID>
+                <ns3:DescText>BF/SE/IB4///STD SEAT SEL 24H BEFORE DEPART/CHARGE</ns3:DescText>
+              </ns3:Desc>
+              <ns3:Desc>
+                <ns3:DescID>CFFIBMADBCNBASIC0G6</ns3:DescID>
+                <ns3:DescText>TS/PR/0G6///PRIORITY BOARDING GROUP 1/DISPLAYED-BUT-NOT-OFFERED</ns3:DescText>
+              </ns3:Desc>
+              <ns3:Desc>
+                <ns3:DescID>CFFIBMADBCNBASICIB1</ns3:DescID>
+                <ns3:DescText>BF//IB1///AVIOS ELITE/FREE</ns3:DescText>
+              </ns3:Desc>
+              <ns3:Desc>
+                <ns3:DescID>CFFIBMADBCNBASICIC2</ns3:DescID>
+                <ns3:DescText>TS/PR/IC2///PRIORITY BOARDING GROUP 2/DISPLAYED-BUT-NOT-OFFERED</ns3:DescText>
+              </ns3:Desc>
+              <ns3:Desc>
+                <ns3:DescID>CFFIBMADBCNBASICIC3</ns3:DescID>
+                <ns3:DescText>ML//IC3///SNACK OR DRINK/CHARGE</ns3:DescText>
+              </ns3:Desc>
+              <ns3:Desc>
+                <ns3:DescID>CFFIBMADBCNBASIC09A</ns3:DescID>
+                <ns3:DescText>TS/DE/09A/WW/LV/WIFI CONNECTION/CHARGE</ns3:DescText>
+              </ns3:Desc>
+              <ns3:Desc>
+                <ns3:DescID>CFFIBMADBCNBASIC05Z</ns3:DescID>
+                <ns3:DescText>BF/SE/05Z/Premium//EMERGENCY SEAT SELECTION/CHARGE</ns3:DescText>
+              </ns3:Desc>
+              <ns3:Desc>
+                <ns3:DescID>CFFIBMADBCNBASIC0BX</ns3:DescID>
+                <ns3:DescText>LG//0BX///LOUNGE ACCESS/DISPLAYED-BUT-NOT-OFFERED</ns3:DescText>
+              </ns3:Desc>
+              <ns3:Desc>
+                <ns3:DescID>CFFIBMADBCNBASICIB0</ns3:DescID>
+                <ns3:DescText>BF//IB0///AVIOS/FREE</ns3:DescText>
+              </ns3:Desc>
+            </ns3:PriceClass>
+          </ns3:PriceClassList>
+          <ns3:ServiceDefinitionList>
+            <ns3:ServiceDefinition>
+              <ns3:ServiceDefinitionID>BAGSERVICE-CA-1</ns3:ServiceDefinitionID>
+              <ns3:Name>CarryOnBag</ns3:Name>
+              <ns3:Description>
+                <ns3:DescID>SerDescID</ns3:DescID>
+                <ns3:DescText>Carry On Bag</ns3:DescText>
+              </ns3:Description>
+              <ns3:ServiceDefinitionAssociation>
+                <ns3:BaggageAllowanceRefID>HANDBAGALLOWANCE_01</ns3:BaggageAllowanceRefID>
+              </ns3:ServiceDefinitionAssociation>
+            </ns3:ServiceDefinition>
+            <ns3:ServiceDefinition>
+              <ns3:ServiceDefinitionID>BAGSERVICE-CH-1</ns3:ServiceDefinitionID>
+              <ns3:Name>CheckedBag</ns3:Name>
+              <ns3:Description>
+                <ns3:DescID>SerDescID</ns3:DescID>
+                <ns3:DescText>Checked Bag</ns3:DescText>
+              </ns3:Description>
+              <ns3:ServiceDefinitionAssociation>
+                <ns3:BaggageAllowanceRefID>CHECKEDBAGALLOWANCE_1</ns3:BaggageAllowanceRefID>
+              </ns3:ServiceDefinitionAssociation>
+            </ns3:ServiceDefinition>
+          </ns3:ServiceDefinitionList>
+        </ns3:DataLists>
+        <ns3:Metadata>
+          <ns3:Other>
+            <ns3:OtherMetadata>
+              <ns3:CurrencyMetadatas>
+                <ns3:CurrencyMetadata MetadataKey="EUR">
+                  <ns3:Decimals>2</ns3:Decimals>
+                  <ns3:Name>Euro</ns3:Name>
+                </ns3:CurrencyMetadata>
+              </ns3:CurrencyMetadatas>
+            </ns3:OtherMetadata>
+            <ns3:OtherMetadata>
+              <ns3:RuleMetadatas>
+                <ns3:RuleMetadata MetadataKey="RULEMETADATAKEY_2">
+                  <ns3:RuleID>Cancel</ns3:RuleID>
+                  <ns3:Values>
+                    <ns3:Value>
+                      <ns3:Instruction>Not Allowed</ns3:Instruction>
+                    </ns3:Value>
+                  </ns3:Values>
+                </ns3:RuleMetadata>
+                <ns3:RuleMetadata MetadataKey="RULEMETADATAKEY_3">
+                  <ns3:RuleID>Change</ns3:RuleID>
+                  <ns3:Values>
+                    <ns3:Value>
+                      <ns3:Instruction>Allowed</ns3:Instruction>
+                    </ns3:Value>
+                  </ns3:Values>
+                </ns3:RuleMetadata>
+              </ns3:RuleMetadatas>
+            </ns3:OtherMetadata>
+          </ns3:Other>
+        </ns3:Metadata>
+        <ns3:Order>
+          <ns3:OrderID>IB386db30bcb3045d9b6efca5afe5d6147OC</ns3:OrderID>
+          <ns3:OwnerCode>IB</ns3:OwnerCode>
+          <ns3:PaymentTimeLimitDateTime>2024-08-27T21:59:59.000Z</ns3:PaymentTimeLimitDateTime>
+          <ns3:BookingRef>
+            <ns3:BookingID>JKYE4</ns3:BookingID>
+            <ns3:BookingEntity>
+              <ns3:Carrier>
+                <ns3:AirlineDesigCode>IB</ns3:AirlineDesigCode>
+              </ns3:Carrier>
+            </ns3:BookingEntity>
+          </ns3:BookingRef>
+          <ns3:BookingRef>
+            <ns3:BookingID>5XJRDI</ns3:BookingID>
+            <ns3:BookingEntity>
+              <ns3:Org OrgID="1A">
+                <ns3:Name>Amadeus</ns3:Name>
+              </ns3:Org>
+            </ns3:BookingEntity>
+          </ns3:BookingRef>
+          <ns3:OrderItem>
+            <ns3:OrderItemID>IB386db30bcb3045d9b6efca5afe5d6147OC_01_1APAX_PAX1</ns3:OrderItemID>
+            <ns3:FareDetail>
+              <ns3:PassengerRefs>PAX1</ns3:PassengerRefs>
+              <ns3:Price>
+                <ns3:TotalAmount>
+                  <ns3:DetailCurrencyPrice>
+                    <ns3:Total Code="EUR">2367</ns3:Total>
+                  </ns3:DetailCurrencyPrice>
+                </ns3:TotalAmount>
+                <ns3:BaseAmount Code="EUR">300</ns3:BaseAmount>
+                <ns3:Taxes>
+                  <ns3:Total Code="EUR">2067</ns3:Total>
+                  <ns3:Breakdown>
+                    <ns3:Tax>
+                      <ns3:Amount Code="EUR">1609</ns3:Amount>
+                      <ns3:Nation>ES</ns3:Nation>
+                      <ns3:TaxCode>JD</ns3:TaxCode>
+                    </ns3:Tax>
+                    <ns3:Tax>
+                      <ns3:Amount Code="EUR">69</ns3:Amount>
+                      <ns3:Nation>ES</ns3:Nation>
+                      <ns3:TaxCode>OG</ns3:TaxCode>
+                    </ns3:Tax>
+                    <ns3:Tax>
+                      <ns3:Amount Code="EUR">389</ns3:Amount>
+                      <ns3:Nation>ES</ns3:Nation>
+                      <ns3:TaxCode>QV</ns3:TaxCode>
+                    </ns3:Tax>
+                  </ns3:Breakdown>
+                </ns3:Taxes>
+              </ns3:Price>
+              <ns3:FareComponent>
+                <ns3:FareBasis>
+                  <ns3:FareBasisCode refs="FG1">
+                    <ns3:Code>AON0B5</ns3:Code>
+                  </ns3:FareBasisCode>
+                  <ns3:RBD>A</ns3:RBD>
+                  <ns3:CabinType>
+                    <ns3:CabinTypeCode>M</ns3:CabinTypeCode>
+                    <ns3:CabinTypeName>Economy</ns3:CabinTypeName>
+                  </ns3:CabinType>
+                </ns3:FareBasis>
+                <ns3:FareRules>
+                  <ns3:Penalty CancelFeeInd="false" ChangeFeeInd="true" RefundableInd="false">
+                    <ns3:Details>
+                      <ns3:Detail refs="RULEMETADATAKEY_2">
+                        <ns3:Type>Cancel</ns3:Type>
+                        <ns3:Application>2</ns3:Application>
+                        <ns3:Amounts />
+                      </ns3:Detail>
+                      <ns3:Detail refs="RULEMETADATAKEY_2">
+                        <ns3:Type>Cancel</ns3:Type>
+                        <ns3:Application>1</ns3:Application>
+                        <ns3:Amounts />
+                      </ns3:Detail>
+                      <ns3:Detail refs="RULEMETADATAKEY_2">
+                        <ns3:Type>Cancel</ns3:Type>
+                        <ns3:Application>3</ns3:Application>
+                        <ns3:Amounts />
+                      </ns3:Detail>
+                      <ns3:Detail refs="RULEMETADATAKEY_3">
+                        <ns3:Type>Change</ns3:Type>
+                        <ns3:Application>2</ns3:Application>
+                        <ns3:Amounts>
+                          <ns3:Amount>
+                            <ns3:CurrencyAmountValue Code="EUR">5000</ns3:CurrencyAmountValue>
+                            <ns3:AmountApplication>MAX</ns3:AmountApplication>
+                          </ns3:Amount>
+                          <ns3:Amount>
+                            <ns3:CurrencyAmountValue Code="EUR">5000</ns3:CurrencyAmountValue>
+                            <ns3:AmountApplication>MIN</ns3:AmountApplication>
+                          </ns3:Amount>
+                        </ns3:Amounts>
+                      </ns3:Detail>
+                      <ns3:Detail refs="RULEMETADATAKEY_3">
+                        <ns3:Type>Change</ns3:Type>
+                        <ns3:Application>3</ns3:Application>
+                        <ns3:Amounts>
+                          <ns3:Amount>
+                            <ns3:CurrencyAmountValue Code="EUR">5000</ns3:CurrencyAmountValue>
+                            <ns3:AmountApplication>MAX</ns3:AmountApplication>
+                          </ns3:Amount>
+                          <ns3:Amount>
+                            <ns3:CurrencyAmountValue Code="EUR">5000</ns3:CurrencyAmountValue>
+                            <ns3:AmountApplication>MIN</ns3:AmountApplication>
+                          </ns3:Amount>
+                        </ns3:Amounts>
+                      </ns3:Detail>
+                    </ns3:Details>
+                  </ns3:Penalty>
+                </ns3:FareRules>
+                <ns3:PriceClassRef>BASIC0mIXZbzP5I5</ns3:PriceClassRef>
+                <ns3:SegmentRefs>IB303420241009</ns3:SegmentRefs>
+              </ns3:FareComponent>
+            </ns3:FareDetail>
+            <ns3:Price>
+              <ns3:TotalAmount CurCode="EUR">2367</ns3:TotalAmount>
+              <ns3:BaseAmount CurCode="EUR">300</ns3:BaseAmount>
+              <ns3:TaxSummary>
+                <ns3:TotalTaxAmount CurCode="EUR">2067</ns3:TotalTaxAmount>
+              </ns3:TaxSummary>
+            </ns3:Price>
+            <ns3:Service>
+              <ns3:ServiceID>FLIGHT_IB303420241009_PAX1</ns3:ServiceID>
+              <ns3:StatusCode>HK</ns3:StatusCode>
+              <ns3:PaxRefID>PAX1</ns3:PaxRefID>
+              <ns3:ServiceAssociations>
+                <ns3:PaxSegmentRefID>IB303420241009</ns3:PaxSegmentRefID>
+              </ns3:ServiceAssociations>
+            </ns3:Service>
+            <ns3:Service>
+              <ns3:ServiceID>BAG_SERVICE-IB303420241009-PAX1-CA</ns3:ServiceID>
+              <ns3:StatusCode>HK</ns3:StatusCode>
+              <ns3:PaxRefID>PAX1</ns3:PaxRefID>
+              <ns3:ServiceAssociations>
+                <ns3:ServiceDefinitionRef>
+                  <ns3:ServiceDefinitionRefID>BAGSERVICE-CA-1</ns3:ServiceDefinitionRefID>
+                  <ns3:PaxSegmentRefID>IB303420241009</ns3:PaxSegmentRefID>
+                </ns3:ServiceDefinitionRef>
+              </ns3:ServiceAssociations>
+            </ns3:Service>
+            <ns3:Service>
+              <ns3:ServiceID>BAG_SERVICE-IB303420241009-PAX1-CH</ns3:ServiceID>
+              <ns3:StatusCode>HK</ns3:StatusCode>
+              <ns3:PaxRefID>PAX1</ns3:PaxRefID>
+              <ns3:ServiceAssociations>
+                <ns3:ServiceDefinitionRef>
+                  <ns3:ServiceDefinitionRefID>BAGSERVICE-CH-1</ns3:ServiceDefinitionRefID>
+                  <ns3:PaxSegmentRefID>IB303420241009</ns3:PaxSegmentRefID>
+                </ns3:ServiceDefinitionRef>
+              </ns3:ServiceAssociations>
+            </ns3:Service>
+          </ns3:OrderItem>
+          <ns3:TotalPrice>
+            <ns3:TotalAmount CurCode="EUR">2367</ns3:TotalAmount>
+          </ns3:TotalPrice>
+        </ns3:Order>
+        <ns3:Warning>
+          <ns3:Code>24040</ns3:Code>
+          <ns3:DescText>PNR HAS BEEN CHANGED   IGNORE BEFORE PROCEEDING</ns3:DescText>
+        </ns3:Warning>
+      </ns3:Response>
+    </ns3:AMA_TravelOrderViewRS>
+  </soap:Body>
+</soap:Envelope>

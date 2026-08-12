@@ -1,0 +1,12 @@
+<ns0:PNR_Retrieve xmlns:ns0="http://xml.amadeus.com/PNRRET_21_1_1A">
+  <ns0:retrievalFacts>
+    <ns0:retrieve>
+      <ns0:type>2</ns0:type>
+    </ns0:retrieve>
+    <ns0:reservationOrProfileIdentifier>
+      <ns0:reservation>
+        <ns0:controlNumber>UWUD4I</ns0:controlNumber>
+      </ns0:reservation>
+    </ns0:reservationOrProfileIdentifier>
+  </ns0:retrievalFacts>
+</ns0:PNR_Retrieve>

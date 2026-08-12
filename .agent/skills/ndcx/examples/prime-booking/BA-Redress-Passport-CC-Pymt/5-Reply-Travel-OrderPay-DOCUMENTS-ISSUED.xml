@@ -1,0 +1,460 @@
+<ns0:AMA_TravelOrderViewRS xmlns:ns0="http://xml.amadeus.com/2010/06/Travel_OrderViewRS_v1">
+  <ns0:Response>
+    <ns0:DataLists>
+      <ns0:BaggageAllowanceList>
+        <ns0:BaggageAllowance>
+          <ns0:BaggageAllowanceID>BAG1</ns0:BaggageAllowanceID>
+          <ns0:TypeCode>Checked</ns0:TypeCode>
+          <ns0:DescText>FREE BAGGAGE</ns0:DescText>
+          <ns0:PieceAllowance>
+            <ns0:ApplicablePartyText>Party</ns0:ApplicablePartyText>
+            <ns0:TotalQty>0</ns0:TotalQty>
+          </ns0:PieceAllowance>
+        </ns0:BaggageAllowance>
+      </ns0:BaggageAllowanceList>
+      <ns0:ContactInfoList>
+        <ns0:ContactInfo>
+          <ns0:ContactInfoID>ContactInfo-T2</ns0:ContactInfoID>
+          <ns0:Phone>
+            <ns0:LabelText>mobile</ns0:LabelText>
+            <ns0:PhoneNumber>3054996000</ns0:PhoneNumber>
+          </ns0:Phone>
+          <ns0:EmailAddress>
+            <ns0:EmailAddressText>MSMITH@AMADEUS.COM</ns0:EmailAddressText>
+          </ns0:EmailAddress>
+          <ns0:EmailAddress>
+            <ns0:EmailAddressText>MIKE@MYEMAIL.COM</ns0:EmailAddressText>
+          </ns0:EmailAddress>
+          <ns0:PostalAddress>
+            <ns0:StreetText>123 MAIN STREET,APT 5 FL 33122</ns0:StreetText>
+          </ns0:PostalAddress>
+          <ns0:PostalAddress>
+            <ns0:LabelText>payerAddress</ns0:LabelText>
+            <ns0:StreetText>123 MAIN STREET</ns0:StreetText>
+            <ns0:StreetText>APT 5</ns0:StreetText>
+            <ns0:PostalCode>33122</ns0:PostalCode>
+            <ns0:CityName>MIAMI</ns0:CityName>
+            <ns0:CountryName>US</ns0:CountryName>
+          </ns0:PostalAddress>
+        </ns0:ContactInfo>
+      </ns0:ContactInfoList>
+      <ns0:FareList>
+        <ns0:FareGroup ListKey="FBCODE1" refs="T2 FareType">
+          <ns0:Fare>
+            <ns0:FareCode>70J</ns0:FareCode>
+          </ns0:Fare>
+          <ns0:FareBasisCode>
+            <ns0:Code>BLX5C5B4</ns0:Code>
+          </ns0:FareBasisCode>
+        </ns0:FareGroup>
+      </ns0:FareList>
+      <ns0:OriginDestList>
+        <ns0:OriginDest>
+          <ns0:OriginDestID>OD1</ns0:OriginDestID>
+          <ns0:OriginCode>LGW</ns0:OriginCode>
+          <ns0:DestCode>JFK</ns0:DestCode>
+          <ns0:PaxJourneyRefID>Flight1</ns0:PaxJourneyRefID>
+        </ns0:OriginDest>
+      </ns0:OriginDestList>
+      <ns0:PaxJourneyList>
+        <ns0:PaxJourney>
+          <ns0:PaxJourneyID>Flight1</ns0:PaxJourneyID>
+          <ns0:Duration>PT8H0M</ns0:Duration>
+          <ns0:PaxSegmentRefID>FS1</ns0:PaxSegmentRefID>
+        </ns0:PaxJourney>
+      </ns0:PaxJourneyList>
+      <ns0:PaxList>
+        <ns0:Pax>
+          <ns0:PaxID>T2</ns0:PaxID>
+          <ns0:PTC>ADT</ns0:PTC>
+          <ns0:ContactInfoRefID>ContactInfo-T2</ns0:ContactInfoRefID>
+          <ns0:IdentityDoc>
+            <ns0:IdentityDocID>15478569</ns0:IdentityDocID>
+            <ns0:IdentityDocTypeCode>PT</ns0:IdentityDocTypeCode>
+            <ns0:IssuingCountryCode>USA</ns0:IssuingCountryCode>
+            <ns0:CitizenshipCountryCode>USA</ns0:CitizenshipCountryCode>
+            <ns0:ExpiryDate>2029-05-25</ns0:ExpiryDate>
+            <ns0:Birthdate>1993-02-25</ns0:Birthdate>
+          </ns0:IdentityDoc>
+          <ns0:IdentityDoc>
+            <ns0:IdentityDocID>87458999</ns0:IdentityDocID>
+            <ns0:IdentityDocTypeCode>R</ns0:IdentityDocTypeCode>
+            <ns0:Visa>
+              <ns0:VisaID>87458999</ns0:VisaID>
+              <ns0:VisaTypeCode>R</ns0:VisaTypeCode>
+              <ns0:IssuingCountryCode>USA</ns0:IssuingCountryCode>
+            </ns0:Visa>
+          </ns0:IdentityDoc>
+          <ns0:Individual>
+            <ns0:IndividualID>ID2</ns0:IndividualID>
+            <ns0:Birthdate>1993-02-25</ns0:Birthdate>
+            <ns0:GenderCode>M</ns0:GenderCode>
+            <ns0:TitleName>MR</ns0:TitleName>
+            <ns0:GivenName>MIKE</ns0:GivenName>
+            <ns0:Surname>SMITH</ns0:Surname>
+          </ns0:Individual>
+        </ns0:Pax>
+      </ns0:PaxList>
+      <ns0:PaxSegmentList>
+        <ns0:PaxSegment>
+          <ns0:PaxSegmentID>FS1</ns0:PaxSegmentID>
+          <ns0:SecureFlightInd>true</ns0:SecureFlightInd>
+          <ns0:Duration>PT8H</ns0:Duration>
+          <ns0:SegmentTypeCode>HK</ns0:SegmentTypeCode>
+          <ns0:CabinType>
+            <ns0:CabinTypeCode>B</ns0:CabinTypeCode>
+          </ns0:CabinType>
+          <ns0:Dep>
+            <ns0:IATA_LocationCode>LGW</ns0:IATA_LocationCode>
+            <ns0:StationName>Gatwick (London) Airport</ns0:StationName>
+            <ns0:TerminalName>S</ns0:TerminalName>
+            <ns0:AircraftScheduledDateTime>2024-09-24T15:05:00</ns0:AircraftScheduledDateTime>
+          </ns0:Dep>
+          <ns0:Arrival>
+            <ns0:IATA_LocationCode>JFK</ns0:IATA_LocationCode>
+            <ns0:StationName>John F Kennedy (NY) (New York) Airport</ns0:StationName>
+            <ns0:TerminalName>8</ns0:TerminalName>
+            <ns0:AircraftScheduledDateTime>2024-09-24T18:05:00</ns0:AircraftScheduledDateTime>
+          </ns0:Arrival>
+          <ns0:MarketingCarrierInfo>
+            <ns0:CarrierDesigCode>BA</ns0:CarrierDesigCode>
+            <ns0:CarrierName>British Airways</ns0:CarrierName>
+            <ns0:MarketingCarrierFlightNumberText>2273</ns0:MarketingCarrierFlightNumberText>
+          </ns0:MarketingCarrierInfo>
+          <ns0:OperatingCarrierInfo>
+            <ns0:CarrierDesigCode>BA</ns0:CarrierDesigCode>
+            <ns0:CarrierName>British Airways</ns0:CarrierName>
+          </ns0:OperatingCarrierInfo>
+          <ns0:DatedOperatingLeg>
+            <ns0:DatedOperatingLegID>LEG1</ns0:DatedOperatingLegID>
+            <ns0:CarrierAircraftType>
+              <ns0:CarrierAircraftTypeCode>777</ns0:CarrierAircraftTypeCode>
+              <ns0:CarrierAircraftTypeName>Boeing 777 jet</ns0:CarrierAircraftTypeName>
+            </ns0:CarrierAircraftType>
+          </ns0:DatedOperatingLeg>
+        </ns0:PaxSegment>
+      </ns0:PaxSegmentList>
+      <ns0:PriceClassList>
+        <ns0:PriceClass>
+          <ns0:PriceClassID>PCR_1</ns0:PriceClassID>
+          <ns0:Code>NOBAG</ns0:Code>
+          <ns0:Name>BASIC ECONOMY</ns0:Name>
+        </ns0:PriceClass>
+      </ns0:PriceClassList>
+      <ns0:ServiceDefinitionList>
+        <ns0:ServiceDefinition>
+          <ns0:ServiceDefinitionID>BAG-T2-FS1-FreeBag</ns0:ServiceDefinitionID>
+          <ns0:Name>BAG</ns0:Name>
+          <ns0:Description>
+            <ns0:DescID>SerDescID</ns0:DescID>
+            <ns0:DescText>FREE BAGGAGE</ns0:DescText>
+          </ns0:Description>
+          <ns0:ServiceDefinitionAssociation>
+            <ns0:BaggageAllowanceRefID>BAG1</ns0:BaggageAllowanceRefID>
+          </ns0:ServiceDefinitionAssociation>
+          <ns0:BookingInstructions>
+            <ns0:SSRCode>ASVC</ns0:SSRCode>
+            <ns0:Method>SSR</ns0:Method>
+          </ns0:BookingInstructions>
+        </ns0:ServiceDefinition>
+      </ns0:ServiceDefinitionList>
+    </ns0:DataLists>
+    <ns0:Metadata>
+      <ns0:Other>
+        <ns0:OtherMetadata>
+          <ns0:CurrencyMetadatas>
+            <ns0:CurrencyMetadata MetadataKey="GBP">
+              <ns0:Decimals>2</ns0:Decimals>
+            </ns0:CurrencyMetadata>
+          </ns0:CurrencyMetadatas>
+        </ns0:OtherMetadata>
+        <ns0:OtherMetadata>
+          <ns0:RuleMetadatas>
+            <ns0:RuleMetadata MetadataKey="RuleMetaData1">
+              <ns0:RuleID>Change</ns0:RuleID>
+              <ns0:Values>
+                <ns0:Value>
+                  <ns0:Instruction>Allowed</ns0:Instruction>
+                </ns0:Value>
+              </ns0:Values>
+            </ns0:RuleMetadata>
+            <ns0:RuleMetadata MetadataKey="RuleMetaData2">
+              <ns0:RuleID>Change</ns0:RuleID>
+              <ns0:Values>
+                <ns0:Value>
+                  <ns0:Instruction>NotAllowed</ns0:Instruction>
+                </ns0:Value>
+              </ns0:Values>
+            </ns0:RuleMetadata>
+            <ns0:RuleMetadata MetadataKey="RuleMetaData3">
+              <ns0:RuleID>Cancellation</ns0:RuleID>
+              <ns0:Values>
+                <ns0:Value>
+                  <ns0:Instruction>NotAllowed</ns0:Instruction>
+                </ns0:Value>
+              </ns0:Values>
+            </ns0:RuleMetadata>
+          </ns0:RuleMetadatas>
+        </ns0:OtherMetadata>
+      </ns0:Other>
+    </ns0:Metadata>
+    <ns0:Order>
+      <ns0:OrderID>O7Q9W2</ns0:OrderID>
+      <ns0:OwnerCode>BA</ns0:OwnerCode>
+      <ns0:BookingRef>
+        <ns0:BookingID>O7Q9W2</ns0:BookingID>
+        <ns0:BookingEntity>
+          <ns0:Carrier>
+            <ns0:AirlineDesigCode>BA</ns0:AirlineDesigCode>
+          </ns0:Carrier>
+        </ns0:BookingEntity>
+      </ns0:BookingRef>
+      <ns0:BookingRef>
+        <ns0:BookingID>O7R387</ns0:BookingID>
+        <ns0:BookingEntity>
+          <ns0:Org OrgID="1A">
+            <ns0:Name>Amadeus</ns0:Name>
+          </ns0:Org>
+        </ns0:BookingEntity>
+      </ns0:BookingRef>
+      <ns0:OrderItem>
+        <ns0:OrderItemID>O7Q9W2-T2-FS1_1APAX_T2</ns0:OrderItemID>
+        <ns0:FareDetail>
+          <ns0:PassengerRefs>T2</ns0:PassengerRefs>
+          <ns0:Price>
+            <ns0:TotalAmount>
+              <ns0:DetailCurrencyPrice>
+                <ns0:Total Code="GBP">113607</ns0:Total>
+              </ns0:DetailCurrencyPrice>
+            </ns0:TotalAmount>
+            <ns0:BaseAmount Code="GBP">86200</ns0:BaseAmount>
+            <ns0:Taxes>
+              <ns0:Total Code="GBP">27407</ns0:Total>
+              <ns0:Breakdown>
+                <ns0:Tax>
+                  <ns0:Amount Code="GBP">160</ns0:Amount>
+                  <ns0:Nation>AG</ns0:Nation>
+                  <ns0:TaxCode>OA</ns0:TaxCode>
+                </ns0:Tax>
+                <ns0:Tax>
+                  <ns0:Amount Code="GBP">11500</ns0:Amount>
+                  <ns0:Nation>AD</ns0:Nation>
+                  <ns0:TaxCode>YQ</ns0:TaxCode>
+                </ns0:Tax>
+                <ns0:Tax>
+                  <ns0:Amount Code="GBP">8800</ns0:Amount>
+                  <ns0:Nation>AD</ns0:Nation>
+                  <ns0:TaxCode>GB</ns0:TaxCode>
+                </ns0:Tax>
+                <ns0:Tax>
+                  <ns0:Amount Code="GBP">2018</ns0:Amount>
+                  <ns0:Nation>AS</ns0:Nation>
+                  <ns0:TaxCode>UB</ns0:TaxCode>
+                </ns0:Tax>
+                <ns0:Tax>
+                  <ns0:Amount Code="GBP">1740</ns0:Amount>
+                  <ns0:Nation>AS</ns0:Nation>
+                  <ns0:TaxCode>US</ns0:TaxCode>
+                </ns0:Tax>
+                <ns0:Tax>
+                  <ns0:Amount Code="GBP">300</ns0:Amount>
+                  <ns0:Nation>CO</ns0:Nation>
+                  <ns0:TaxCode>XA</ns0:TaxCode>
+                </ns0:Tax>
+                <ns0:Tax>
+                  <ns0:Amount Code="GBP">550</ns0:Amount>
+                  <ns0:Nation>CR</ns0:Nation>
+                  <ns0:TaxCode>XY</ns0:TaxCode>
+                </ns0:Tax>
+                <ns0:Tax>
+                  <ns0:Amount Code="GBP">550</ns0:Amount>
+                  <ns0:Nation>AE</ns0:Nation>
+                  <ns0:TaxCode>YC</ns0:TaxCode>
+                </ns0:Tax>
+                <ns0:Tax>
+                  <ns0:Amount Code="GBP">1789</ns0:Amount>
+                  <ns0:Nation>GB</ns0:Nation>
+                  <ns0:TaxCode>DU</ns0:TaxCode>
+                </ns0:Tax>
+              </ns0:Breakdown>
+            </ns0:Taxes>
+          </ns0:Price>
+          <ns0:FareComponent>
+            <ns0:FareBasis>
+              <ns0:FareBasisCode>
+                <ns0:Code>BLX5C5B4</ns0:Code>
+              </ns0:FareBasisCode>
+              <ns0:RBD>B</ns0:RBD>
+              <ns0:CabinType>
+                <ns0:CabinTypeCode>M</ns0:CabinTypeCode>
+                <ns0:CabinTypeName>Economy</ns0:CabinTypeName>
+              </ns0:CabinType>
+            </ns0:FareBasis>
+            <ns0:FareRules>
+              <ns0:Penalty refs="Rule1 Rule2 Rule3 Rule4 Rule5 Rule6">
+                <ns0:Details>
+                  <ns0:Detail refs="RuleMetaData1">
+                    <ns0:Type>Change</ns0:Type>
+                    <ns0:Application>2</ns0:Application>
+                    <ns0:Amounts>
+                      <ns0:Amount>
+                        <ns0:CurrencyAmountValue Code="GBP">15000</ns0:CurrencyAmountValue>
+                        <ns0:AmountApplication>MIN</ns0:AmountApplication>
+                      </ns0:Amount>
+                      <ns0:Amount>
+                        <ns0:CurrencyAmountValue Code="GBP">15000</ns0:CurrencyAmountValue>
+                        <ns0:AmountApplication>MAX</ns0:AmountApplication>
+                      </ns0:Amount>
+                    </ns0:Amounts>
+                  </ns0:Detail>
+                  <ns0:Detail refs="RuleMetaData2">
+                    <ns0:Type>Change</ns0:Type>
+                    <ns0:Application>1</ns0:Application>
+                  </ns0:Detail>
+                  <ns0:Detail refs="RuleMetaData2">
+                    <ns0:Type>Change</ns0:Type>
+                    <ns0:Application>3</ns0:Application>
+                  </ns0:Detail>
+                  <ns0:Detail refs="RuleMetaData3">
+                    <ns0:Type>Cancellation</ns0:Type>
+                    <ns0:Application>2</ns0:Application>
+                  </ns0:Detail>
+                  <ns0:Detail refs="RuleMetaData3">
+                    <ns0:Type>Cancellation</ns0:Type>
+                    <ns0:Application>1</ns0:Application>
+                  </ns0:Detail>
+                  <ns0:Detail refs="RuleMetaData3">
+                    <ns0:Type>Cancellation</ns0:Type>
+                    <ns0:Application>3</ns0:Application>
+                  </ns0:Detail>
+                </ns0:Details>
+              </ns0:Penalty>
+            </ns0:FareRules>
+            <ns0:PriceClassRef>PCR_1</ns0:PriceClassRef>
+            <ns0:SegmentRefs>FS1</ns0:SegmentRefs>
+          </ns0:FareComponent>
+        </ns0:FareDetail>
+        <ns0:Price>
+          <ns0:TotalAmount CurCode="GBP">113607</ns0:TotalAmount>
+          <ns0:BaseAmount CurCode="GBP">86200</ns0:BaseAmount>
+          <ns0:TaxSummary>
+            <ns0:TotalTaxAmount CurCode="GBP">27407</ns0:TotalTaxAmount>
+            <ns0:Tax>
+              <ns0:Amount CurCode="GBP">160</ns0:Amount>
+              <ns0:TaxCode>OA</ns0:TaxCode>
+              <ns0:Country>
+                <ns0:CountryCode>AG</ns0:CountryCode>
+              </ns0:Country>
+            </ns0:Tax>
+            <ns0:Tax>
+              <ns0:Amount CurCode="GBP">11500</ns0:Amount>
+              <ns0:TaxCode>YQ</ns0:TaxCode>
+              <ns0:Country>
+                <ns0:CountryCode>AD</ns0:CountryCode>
+              </ns0:Country>
+            </ns0:Tax>
+            <ns0:Tax>
+              <ns0:Amount CurCode="GBP">8800</ns0:Amount>
+              <ns0:TaxCode>GB</ns0:TaxCode>
+              <ns0:Country>
+                <ns0:CountryCode>AD</ns0:CountryCode>
+              </ns0:Country>
+            </ns0:Tax>
+            <ns0:Tax>
+              <ns0:Amount CurCode="GBP">2018</ns0:Amount>
+              <ns0:TaxCode>UB</ns0:TaxCode>
+              <ns0:Country>
+                <ns0:CountryCode>AS</ns0:CountryCode>
+              </ns0:Country>
+            </ns0:Tax>
+            <ns0:Tax>
+              <ns0:Amount CurCode="GBP">1740</ns0:Amount>
+              <ns0:TaxCode>US</ns0:TaxCode>
+              <ns0:Country>
+                <ns0:CountryCode>AS</ns0:CountryCode>
+              </ns0:Country>
+            </ns0:Tax>
+            <ns0:Tax>
+              <ns0:Amount CurCode="GBP">300</ns0:Amount>
+              <ns0:TaxCode>XA</ns0:TaxCode>
+              <ns0:Country>
+                <ns0:CountryCode>CO</ns0:CountryCode>
+              </ns0:Country>
+            </ns0:Tax>
+            <ns0:Tax>
+              <ns0:Amount CurCode="GBP">550</ns0:Amount>
+              <ns0:TaxCode>XY</ns0:TaxCode>
+              <ns0:Country>
+                <ns0:CountryCode>CR</ns0:CountryCode>
+              </ns0:Country>
+            </ns0:Tax>
+            <ns0:Tax>
+              <ns0:Amount CurCode="GBP">550</ns0:Amount>
+              <ns0:TaxCode>YC</ns0:TaxCode>
+              <ns0:Country>
+                <ns0:CountryCode>AE</ns0:CountryCode>
+              </ns0:Country>
+            </ns0:Tax>
+            <ns0:Tax>
+              <ns0:Amount CurCode="GBP">1789</ns0:Amount>
+              <ns0:TaxCode>DU</ns0:TaxCode>
+              <ns0:Country>
+                <ns0:CountryCode>GB</ns0:CountryCode>
+              </ns0:Country>
+            </ns0:Tax>
+          </ns0:TaxSummary>
+        </ns0:Price>
+        <ns0:Service>
+          <ns0:ServiceID>Svc001</ns0:ServiceID>
+          <ns0:StatusCode>HK</ns0:StatusCode>
+          <ns0:PaxRefID>T2</ns0:PaxRefID>
+          <ns0:ServiceAssociations>
+            <ns0:PaxSegmentRefID>FS1</ns0:PaxSegmentRefID>
+          </ns0:ServiceAssociations>
+        </ns0:Service>
+        <ns0:Service>
+          <ns0:ServiceID>Svc001-BAG001</ns0:ServiceID>
+          <ns0:PaxRefID>T2</ns0:PaxRefID>
+          <ns0:ServiceAssociations>
+            <ns0:ServiceDefinitionRef>
+              <ns0:ServiceDefinitionRefID>BAG-T2-FS1-FreeBag</ns0:ServiceDefinitionRefID>
+              <ns0:PaxSegmentRefID>FS1</ns0:PaxSegmentRefID>
+            </ns0:ServiceDefinitionRef>
+          </ns0:ServiceAssociations>
+        </ns0:Service>
+      </ns0:OrderItem>
+      <ns0:PaymentInfo>
+        <ns0:Amount CurCode="GBP">113607</ns0:Amount>
+        <ns0:TypeCode>CC</ns0:TypeCode>
+        <ns0:PaymentMethod>
+          <ns0:PaymentCard>
+            <ns0:CreditCardVendorCode>VI</ns0:CreditCardVendorCode>
+          </ns0:PaymentCard>
+        </ns0:PaymentMethod>
+      </ns0:PaymentInfo>
+      <ns0:TotalPrice>
+        <ns0:TotalAmount CurCode="GBP">113607</ns0:TotalAmount>
+      </ns0:TotalPrice>
+    </ns0:Order>
+    <ns0:TicketDocInfos>
+      <ns0:TicketDocInfo>
+        <ns0:TicketDocument>
+          <ns0:TicketDocNbr>1252183156292</ns0:TicketDocNbr>
+          <ns0:Type>T</ns0:Type>
+          <ns0:NumberofBooklets>1</ns0:NumberofBooklets>
+          <ns0:DateOfIssue>2024-07-09</ns0:DateOfIssue>
+          <ns0:CouponInfo>
+            <ns0:CouponNumber>1</ns0:CouponNumber>
+            <ns0:CouponReference>FS1</ns0:CouponReference>
+            <ns0:Status>O</ns0:Status>
+          </ns0:CouponInfo>
+          <ns0:ReportingType>Airline</ns0:ReportingType>
+        </ns0:TicketDocument>
+        <ns0:PassengerReference>T2</ns0:PassengerReference>
+      </ns0:TicketDocInfo>
+    </ns0:TicketDocInfos>
+    <ns0:Warning>
+      <ns0:DescText>All services may not be delivered as the requested fare component may include a codeshare flight or an interline itinerary.</ns0:DescText>
+    </ns0:Warning>
+  </ns0:Response>
+</ns0:AMA_TravelOrderViewRS>

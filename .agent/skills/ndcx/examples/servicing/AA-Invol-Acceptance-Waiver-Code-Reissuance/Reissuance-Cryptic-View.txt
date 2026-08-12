@@ -1,0 +1,11 @@
+Original booking
+
+[]
+
+Disruption performed
+
+[]
+
+Acceptance with Reissuance. New ticket number returned.
+
+[]

@@ -1,0 +1,17 @@
+<!-- NOTE: this file is a FRAGMENT exactly as captured in the Amadeus sample
+     pack; it is not standalone well-formed XML (unbound prefix: line 1, column 0).
+     Usually it is a body or header block lifted out of its SOAP envelope, or it
+     contains an unescaped character. Kept verbatim rather than repaired so the
+     original is not misrepresented. Read it for field shapes, do not parse it. -->
+<pnr:PNR_Retrieve>
+	<pnr:retrievalFacts>
+		<pnr:retrieve>
+			<pnr:type>2</pnr:type>
+		</pnr:retrieve>
+		<pnr:reservationOrProfileIdentifier>
+			<pnr:reservation>
+				<pnr:controlNumber>PYMASE</pnr:controlNumber>
+			</pnr:reservation>
+		</pnr:reservationOrProfileIdentifier>
+	</pnr:retrievalFacts>
+</pnr:PNR_Retrieve>

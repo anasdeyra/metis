@@ -1,0 +1,31 @@
+<ns0:AMA_TravelOrderPayRQ xmlns:ns0="http://xml.amadeus.com/2010/06/Travel_OrderPayRQ_v1">
+  <ns0:Party>
+    <ns0:Sender>
+      <ns0:TravelAgency>
+        <ns0:AgencyID>unused</ns0:AgencyID>
+        <ns0:PseudoCityID>unused</ns0:PseudoCityID>
+      </ns0:TravelAgency>
+    </ns0:Sender>
+  </ns0:Party>
+  <ns0:Request>
+    <ns0:PaymentInfo>
+      <ns0:Amount CurCode="EUR">5298.65</ns0:Amount>
+      <ns0:TypeCode>CC</ns0:TypeCode>
+      <ns0:SecurePaymentVersion2>
+        <ns0:PaymentTrxChannelCode>MO</ns0:PaymentTrxChannelCode>
+      </ns0:SecurePaymentVersion2>
+      <ns0:PaymentMethod>
+        <ns0:PaymentCard>
+          <ns0:CreditCardVendorCode>VI</ns0:CreditCardVendorCode>
+          <ns0:CardNumber>4434260000000008</ns0:CardNumber>
+          <ns0:SeriesCode>123</ns0:SeriesCode>
+          <ns0:ExpirationDate>0139</ns0:ExpirationDate>
+        </ns0:PaymentCard>
+      </ns0:PaymentMethod>
+    </ns0:PaymentInfo>
+    <ns0:Order>
+      <ns0:OrderID>QF081H6KJDYA3</ns0:OrderID>
+      <ns0:OwnerCode>QF</ns0:OwnerCode>
+    </ns0:Order>
+  </ns0:Request>
+</ns0:AMA_TravelOrderPayRQ>

@@ -1,0 +1,884 @@
+<soap:Envelope xmlns:awsse="http://xml.amadeus.com/2010/06/Session_v3" xmlns:ns3="http://xml.amadeus.com/2010/06/Travel_OfferPriceRS_v1" xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns:wsa="http://www.w3.org/2005/08/addressing">
+  <soap:Header>
+    <wsa:To>http://www.w3.org/2005/08/addressing/anonymous</wsa:To>
+    <wsa:From>
+      <wsa:Address>https://noded5.test.webservices.amadeus.com/WSAP</wsa:Address>
+    </wsa:From>
+    <wsa:Action>http://webservices.amadeus.com/Travel_OfferPrice_1.2</wsa:Action>
+    <wsa:MessageID>urn:uuid:bf46c3b2-39cf-2f14-cd4e-0b2d1585a070</wsa:MessageID>
+    <wsa:RelatesTo RelationshipType="http://www.w3.org/2005/08/addressing/reply">cb0f1314-4681-4bc9-8849-1a051e7c057e</wsa:RelatesTo>
+    <awsse:Session TransactionStatusCode="End">
+      <awsse:SessionId>016U1RAWG1</awsse:SessionId>
+      <awsse:SequenceNumber>1</awsse:SequenceNumber>
+      <awsse:SecurityToken>REDACTED_TOKEN</awsse:SecurityToken>
+    </awsse:Session>
+  </soap:Header>
+  <soap:Body>
+    <ns3:AMA_TravelOfferPriceRS>
+      <ns3:Response>
+        <ns3:DataLists>
+          <ns3:BaggageAllowanceList>
+            <ns3:BaggageAllowance>
+              <ns3:BaggageAllowanceID>Pbgawzwukl3qucwus</ns3:BaggageAllowanceID>
+              <ns3:TypeCode>CheckedBag</ns3:TypeCode>
+              <ns3:ApplicablePartyText>Traveler</ns3:ApplicablePartyText>
+              <ns3:DescText>CHECKED ALLOWANCE</ns3:DescText>
+              <ns3:PieceAllowance>
+                <ns3:ApplicablePartyText>Traveler</ns3:ApplicablePartyText>
+                <ns3:TotalQty>0</ns3:TotalQty>
+                <ns3:PieceDimensionAllowance>
+                  <ns3:Qty>0</ns3:Qty>
+                </ns3:PieceDimensionAllowance>
+              </ns3:PieceAllowance>
+            </ns3:BaggageAllowance>
+            <ns3:BaggageAllowance>
+              <ns3:BaggageAllowanceID>Pbgaxfeu69jkks62v</ns3:BaggageAllowanceID>
+              <ns3:TypeCode>CheckedBag</ns3:TypeCode>
+              <ns3:ApplicablePartyText>Traveler</ns3:ApplicablePartyText>
+              <ns3:DescText>First Checked Bag</ns3:DescText>
+              <ns3:WeightAllowance>
+                <ns3:MaximumWeightMeasure UnitCode="KG">23</ns3:MaximumWeightMeasure>
+              </ns3:WeightAllowance>
+              <ns3:WeightAllowance>
+                <ns3:MaximumWeightMeasure UnitCode="LBS">50</ns3:MaximumWeightMeasure>
+              </ns3:WeightAllowance>
+            </ns3:BaggageAllowance>
+            <ns3:BaggageAllowance>
+              <ns3:BaggageAllowanceID>Pbgadwteqhq0ny61x</ns3:BaggageAllowanceID>
+              <ns3:TypeCode>CheckedBag</ns3:TypeCode>
+              <ns3:ApplicablePartyText>Traveler</ns3:ApplicablePartyText>
+              <ns3:DescText>Second Checked Bag</ns3:DescText>
+              <ns3:WeightAllowance>
+                <ns3:MaximumWeightMeasure UnitCode="KG">23</ns3:MaximumWeightMeasure>
+              </ns3:WeightAllowance>
+              <ns3:WeightAllowance>
+                <ns3:MaximumWeightMeasure UnitCode="LBS">50</ns3:MaximumWeightMeasure>
+              </ns3:WeightAllowance>
+            </ns3:BaggageAllowance>
+          </ns3:BaggageAllowanceList>
+          <ns3:FareList>
+            <ns3:FareGroup refs="Pfrkdka5r0o2d2hl4" ListKey="Pfcpdka5r0o2d2hl4">
+              <ns3:Fare>
+                <ns3:FareCode>70J</ns3:FareCode>
+              </ns3:Fare>
+              <ns3:FareBasisCode>
+                <ns3:Code>KAK5AWBN</ns3:Code>
+              </ns3:FareBasisCode>
+            </ns3:FareGroup>
+            <ns3:FareGroup refs="Pfrk6qkym8cciibn8" ListKey="Pfcp6qkym8cciibn8">
+              <ns3:Fare>
+                <ns3:FareCode>70J</ns3:FareCode>
+              </ns3:Fare>
+              <ns3:FareBasisCode>
+                <ns3:Code>KAK5AWFM</ns3:Code>
+              </ns3:FareBasisCode>
+            </ns3:FareGroup>
+            <ns3:FareGroup refs="Pfrkr9smxoxi358ib" ListKey="Pfcpr9smxoxi358ib">
+              <ns3:Fare>
+                <ns3:FareCode>70J</ns3:FareCode>
+              </ns3:Fare>
+              <ns3:FareBasisCode>
+                <ns3:Code>KAK5AWFM</ns3:Code>
+              </ns3:FareBasisCode>
+            </ns3:FareGroup>
+            <ns3:FareGroup refs="Pfrkzqrclg1tv4rfa" ListKey="Pfcpzqrclg1tv4rfa">
+              <ns3:Fare>
+                <ns3:FareCode>70J</ns3:FareCode>
+              </ns3:Fare>
+              <ns3:FareBasisCode>
+                <ns3:Code>KAK5AWFM</ns3:Code>
+              </ns3:FareBasisCode>
+            </ns3:FareGroup>
+            <ns3:FareGroup refs="Pfrk87fdsp0og3hw1" ListKey="Pfcp87fdsp0og3hw1">
+              <ns3:Fare>
+                <ns3:FareCode>70J</ns3:FareCode>
+              </ns3:Fare>
+              <ns3:FareBasisCode>
+                <ns3:Code>KAK5AWFM</ns3:Code>
+              </ns3:FareBasisCode>
+            </ns3:FareGroup>
+            <ns3:FareGroup refs="Pfrkgkbqoalc1dl8t" ListKey="Pfcpgkbqoalc1dl8t">
+              <ns3:Fare>
+                <ns3:FareCode>70J</ns3:FareCode>
+              </ns3:Fare>
+              <ns3:FareBasisCode>
+                <ns3:Code>KAK5AWDN</ns3:Code>
+              </ns3:FareBasisCode>
+            </ns3:FareGroup>
+            <ns3:FareGroup refs="Pfrkry71dbcbwgrqi" ListKey="Pfcpry71dbcbwgrqi">
+              <ns3:Fare>
+                <ns3:FareCode>70J</ns3:FareCode>
+              </ns3:Fare>
+              <ns3:FareBasisCode>
+                <ns3:Code>KAK5AWFN</ns3:Code>
+              </ns3:FareBasisCode>
+            </ns3:FareGroup>
+            <ns3:FareGroup refs="Pfrknbcfm50uzyynd" ListKey="Pfcpnbcfm50uzyynd">
+              <ns3:Fare>
+                <ns3:FareCode>70J</ns3:FareCode>
+              </ns3:Fare>
+              <ns3:FareBasisCode>
+                <ns3:Code>KAK5AWFN</ns3:Code>
+              </ns3:FareBasisCode>
+            </ns3:FareGroup>
+            <ns3:FareGroup refs="Pfrkcqjz033z1ng6g" ListKey="Pfcpcqjz033z1ng6g">
+              <ns3:Fare>
+                <ns3:FareCode>70J</ns3:FareCode>
+              </ns3:Fare>
+              <ns3:FareBasisCode>
+                <ns3:Code>KAK5AWIN</ns3:Code>
+              </ns3:FareBasisCode>
+            </ns3:FareGroup>
+            <ns3:FareGroup refs="Pfrkkomyskxehy41m" ListKey="Pfcpkomyskxehy41m">
+              <ns3:Fare>
+                <ns3:FareCode>70J</ns3:FareCode>
+              </ns3:Fare>
+              <ns3:FareBasisCode>
+                <ns3:Code>KAK5AWDM</ns3:Code>
+              </ns3:FareBasisCode>
+            </ns3:FareGroup>
+            <ns3:FareGroup refs="Pfrkfk4o036sthsvi" ListKey="Pfcpfk4o036sthsvi">
+              <ns3:Fare>
+                <ns3:FareCode>70J</ns3:FareCode>
+              </ns3:Fare>
+              <ns3:FareBasisCode>
+                <ns3:Code>KAK5AWDM</ns3:Code>
+              </ns3:FareBasisCode>
+            </ns3:FareGroup>
+            <ns3:FareGroup refs="Pfrkqq8a0722t27l4" ListKey="Pfcpqq8a0722t27l4">
+              <ns3:Fare>
+                <ns3:FareCode>70J</ns3:FareCode>
+              </ns3:Fare>
+              <ns3:FareBasisCode>
+                <ns3:Code>KAK5AWIM</ns3:Code>
+              </ns3:FareBasisCode>
+            </ns3:FareGroup>
+            <ns3:FareGroup refs="Pfrk9sa91tp1bg510" ListKey="Pfcp9sa91tp1bg510">
+              <ns3:Fare>
+                <ns3:FareCode>70J</ns3:FareCode>
+              </ns3:Fare>
+              <ns3:FareBasisCode>
+                <ns3:Code>KAK5AWIM</ns3:Code>
+              </ns3:FareBasisCode>
+            </ns3:FareGroup>
+          </ns3:FareList>
+          <ns3:OriginDestList>
+            <ns3:OriginDest>
+              <ns3:OriginDestID>OD1</ns3:OriginDestID>
+              <ns3:OriginCode>ORD</ns3:OriginCode>
+              <ns3:DestCode>ATL</ns3:DestCode>
+              <ns3:PaxJourneyRefID>Pfltj0rydn3ldeyig</ns3:PaxJourneyRefID>
+            </ns3:OriginDest>
+          </ns3:OriginDestList>
+          <ns3:PaxJourneyList>
+            <ns3:PaxJourney>
+              <ns3:PaxJourneyID>Pfltj0rydn3ldeyig</ns3:PaxJourneyID>
+              <ns3:Duration>PT2H2M</ns3:Duration>
+              <ns3:PaxSegmentRefID>Isgm15006fc50d1ed</ns3:PaxSegmentRefID>
+            </ns3:PaxJourney>
+          </ns3:PaxJourneyList>
+          <ns3:PaxList>
+            <ns3:Pax>
+              <ns3:PaxID>P1</ns3:PaxID>
+              <ns3:PTC>ADT</ns3:PTC>
+            </ns3:Pax>
+          </ns3:PaxList>
+          <ns3:PaxSegmentList>
+            <ns3:PaxSegment>
+              <ns3:PaxSegmentID>Isgm15006fc50d1ed</ns3:PaxSegmentID>
+              <ns3:Duration>PT2H2M</ns3:Duration>
+              <ns3:Dep>
+                <ns3:IATA_LocationCode>ORD</ns3:IATA_LocationCode>
+                <ns3:AircraftScheduledDateTime>2024-06-25T10:35:00</ns3:AircraftScheduledDateTime>
+                <ns3:TerminalName>1</ns3:TerminalName>
+                <ns3:StationName>Chicago O\'Hare International</ns3:StationName>
+              </ns3:Dep>
+              <ns3:Arrival>
+                <ns3:IATA_LocationCode>ATL</ns3:IATA_LocationCode>
+                <ns3:AircraftScheduledDateTime>2024-06-25T13:37:00</ns3:AircraftScheduledDateTime>
+                <ns3:TerminalName>N</ns3:TerminalName>
+                <ns3:StationName>Atlanta Hartsfield-Jackson International</ns3:StationName>
+              </ns3:Arrival>
+              <ns3:MarketingCarrierInfo>
+                <ns3:CarrierDesigCode>UA</ns3:CarrierDesigCode>
+                <ns3:CarrierName>United Airlines</ns3:CarrierName>
+                <ns3:MarketingCarrierFlightNumberText>2225</ns3:MarketingCarrierFlightNumberText>
+              </ns3:MarketingCarrierInfo>
+              <ns3:DatedOperatingLeg>
+                <ns3:DatedOperatingLegID>S1</ns3:DatedOperatingLegID>
+                <ns3:CarrierAircraftType>
+                  <ns3:CarrierAircraftTypeCode>7M8</ns3:CarrierAircraftTypeCode>
+                  <ns3:CarrierAircraftTypeName>Boeing 737MAX 8 Passenger</ns3:CarrierAircraftTypeName>
+                </ns3:CarrierAircraftType>
+                <ns3:Dep>
+                  <ns3:IATA_LocationCode>ORD</ns3:IATA_LocationCode>
+                  <ns3:AircraftScheduledDateTime>2024-06-25T10:35:00</ns3:AircraftScheduledDateTime>
+                  <ns3:TerminalName>1</ns3:TerminalName>
+                  <ns3:StationName>Chicago O\'Hare International</ns3:StationName>
+                </ns3:Dep>
+                <ns3:Arrival>
+                  <ns3:IATA_LocationCode>ATL</ns3:IATA_LocationCode>
+                  <ns3:AircraftScheduledDateTime>2024-06-25T13:37:00</ns3:AircraftScheduledDateTime>
+                  <ns3:TerminalName>N</ns3:TerminalName>
+                  <ns3:StationName>Atlanta Hartsfield-Jackson International</ns3:StationName>
+                </ns3:Arrival>
+              </ns3:DatedOperatingLeg>
+            </ns3:PaxSegment>
+          </ns3:PaxSegmentList>
+          <ns3:PriceClassList>
+            <ns3:PriceClass>
+              <ns3:PriceClassID>Ppcskghrizd03dek</ns3:PriceClassID>
+              <ns3:Code>1_basiceco</ns3:Code>
+              <ns3:Name>Basic Economy</ns3:Name>
+            </ns3:PriceClass>
+            <ns3:PriceClass>
+              <ns3:PriceClassID>Ppchlb4g23v8er09</ns3:PriceClassID>
+              <ns3:Code>10_bizflex</ns3:Code>
+              <ns3:Name>Business Flexible</ns3:Name>
+            </ns3:PriceClass>
+            <ns3:PriceClass>
+              <ns3:PriceClassID>Ppc9k7fqa7rg505v</ns3:PriceClassID>
+              <ns3:Code>11_bizunrs</ns3:Code>
+              <ns3:Name>Business Unrestricted</ns3:Name>
+            </ns3:PriceClass>
+            <ns3:PriceClass>
+              <ns3:PriceClassID>Ppc6z1jcqm9t7nq6</ns3:PriceClassID>
+              <ns3:Code>12_firstflex</ns3:Code>
+              <ns3:Name>First Flexible</ns3:Name>
+            </ns3:PriceClass>
+            <ns3:PriceClass>
+              <ns3:PriceClassID>Ppcl3i0pfc10tvgh</ns3:PriceClassID>
+              <ns3:Code>13_firstunrs</ns3:Code>
+              <ns3:Name>First Unrestricted</ns3:Name>
+            </ns3:PriceClass>
+            <ns3:PriceClass>
+              <ns3:PriceClassID>Ppc7uipzlk1pzay1</ns3:PriceClassID>
+              <ns3:Code>2_eco</ns3:Code>
+              <ns3:Name>Economy</ns3:Name>
+            </ns3:PriceClass>
+            <ns3:PriceClass>
+              <ns3:PriceClassID>Ppc4wwwmcrkr1zfu</ns3:PriceClassID>
+              <ns3:Code>3_biz</ns3:Code>
+              <ns3:Name>Business</ns3:Name>
+            </ns3:PriceClass>
+            <ns3:PriceClass>
+              <ns3:PriceClassID>Ppcawy3f56pwrco9</ns3:PriceClassID>
+              <ns3:Code>4_first</ns3:Code>
+              <ns3:Name>First</ns3:Name>
+            </ns3:PriceClass>
+            <ns3:PriceClass>
+              <ns3:PriceClassID>Ppcgr0nml6xupgdb</ns3:PriceClassID>
+              <ns3:Code>5_premeco</ns3:Code>
+              <ns3:Name>Premium Economy</ns3:Name>
+            </ns3:PriceClass>
+            <ns3:PriceClass>
+              <ns3:PriceClassID>Ppcanjynfrd2g2vl</ns3:PriceClassID>
+              <ns3:Code>6_ecoflex</ns3:Code>
+              <ns3:Name>Economy Flexible</ns3:Name>
+            </ns3:PriceClass>
+            <ns3:PriceClass>
+              <ns3:PriceClassID>Ppc9ttoelka56jq3</ns3:PriceClassID>
+              <ns3:Code>7_ecounrs</ns3:Code>
+              <ns3:Name>Economy Unrestricted</ns3:Name>
+            </ns3:PriceClass>
+            <ns3:PriceClass>
+              <ns3:PriceClassID>Ppcod941nrvi1n17</ns3:PriceClassID>
+              <ns3:Code>8_premecoflex</ns3:Code>
+              <ns3:Name>Premium Economy Flexible</ns3:Name>
+            </ns3:PriceClass>
+            <ns3:PriceClass>
+              <ns3:PriceClassID>Ppceeunuj36kjgk6</ns3:PriceClassID>
+              <ns3:Code>9_premecounrs</ns3:Code>
+              <ns3:Name>Premium Economy Unrestricted</ns3:Name>
+            </ns3:PriceClass>
+          </ns3:PriceClassList>
+          <ns3:ServiceDefinitionList>
+            <ns3:ServiceDefinition>
+              <ns3:ServiceDefinitionID>Psvc1cnawwv34yjxd</ns3:ServiceDefinitionID>
+              <ns3:OwnerCode>UAD</ns3:OwnerCode>
+              <ns3:Name>Extra Bag and Club Trip Pass</ns3:Name>
+              <ns3:ServiceCode>B06</ns3:ServiceCode>
+              <ns3:ReasonForIssuanceCode>J</ns3:ReasonForIssuanceCode>
+              <ns3:ReasonForIssuanceSubCode>B06</ns3:ReasonForIssuanceSubCode>
+              <ns3:ValidatingCarrierCode>UA</ns3:ValidatingCarrierCode>
+              <ns3:Description>
+                <ns3:DescID>Details</ns3:DescID>
+                <ns3:DescText>Extra Bag and Club Trip Pass</ns3:DescText>
+              </ns3:Description>
+              <ns3:BookingInstructions>
+                <ns3:Method>API</ns3:Method>
+              </ns3:BookingInstructions>
+            </ns3:ServiceDefinition>
+            <ns3:ServiceDefinition>
+              <ns3:ServiceDefinitionID>Psvcveao6p2s5k7ch</ns3:ServiceDefinitionID>
+              <ns3:OwnerCode>UAD</ns3:OwnerCode>
+              <ns3:Name>Club Trip Pass</ns3:Name>
+              <ns3:ServiceCode>B03</ns3:ServiceCode>
+              <ns3:ReasonForIssuanceCode>J</ns3:ReasonForIssuanceCode>
+              <ns3:ReasonForIssuanceSubCode>B03</ns3:ReasonForIssuanceSubCode>
+              <ns3:ValidatingCarrierCode>UA</ns3:ValidatingCarrierCode>
+              <ns3:Description>
+                <ns3:DescID>Details</ns3:DescID>
+                <ns3:DescText>Club Trip Pass</ns3:DescText>
+              </ns3:Description>
+              <ns3:BookingInstructions>
+                <ns3:Method>API</ns3:Method>
+              </ns3:BookingInstructions>
+            </ns3:ServiceDefinition>
+            <ns3:ServiceDefinition>
+              <ns3:ServiceDefinitionID>Psvcu9pty2rdzudyx</ns3:ServiceDefinitionID>
+              <ns3:OwnerCode>UAD</ns3:OwnerCode>
+              <ns3:Name>Seat Assignment, Extra Bag andClub Trip Pass</ns3:Name>
+              <ns3:ServiceCode>B26</ns3:ServiceCode>
+              <ns3:ReasonForIssuanceCode>J</ns3:ReasonForIssuanceCode>
+              <ns3:ReasonForIssuanceSubCode>B26</ns3:ReasonForIssuanceSubCode>
+              <ns3:ValidatingCarrierCode>UA</ns3:ValidatingCarrierCode>
+              <ns3:Description>
+                <ns3:DescID>Details</ns3:DescID>
+                <ns3:DescText>Seat Assignment, Extra Bag andClub Trip Pass</ns3:DescText>
+              </ns3:Description>
+              <ns3:BookingInstructions>
+                <ns3:Method>API</ns3:Method>
+              </ns3:BookingInstructions>
+            </ns3:ServiceDefinition>
+            <ns3:ServiceDefinition>
+              <ns3:ServiceDefinitionID>Psvcdcbzpo1h73js6</ns3:ServiceDefinitionID>
+              <ns3:OwnerCode>UAD</ns3:OwnerCode>
+              <ns3:Name>Seat Assignment and Club TripPass</ns3:Name>
+              <ns3:ServiceCode>B25</ns3:ServiceCode>
+              <ns3:ReasonForIssuanceCode>J</ns3:ReasonForIssuanceCode>
+              <ns3:ReasonForIssuanceSubCode>B25</ns3:ReasonForIssuanceSubCode>
+              <ns3:ValidatingCarrierCode>UA</ns3:ValidatingCarrierCode>
+              <ns3:Description>
+                <ns3:DescID>Details</ns3:DescID>
+                <ns3:DescText>Seat Assignment and Club TripPass</ns3:DescText>
+              </ns3:Description>
+              <ns3:BookingInstructions>
+                <ns3:Method>API</ns3:Method>
+              </ns3:BookingInstructions>
+            </ns3:ServiceDefinition>
+            <ns3:ServiceDefinition>
+              <ns3:ServiceDefinitionID>Psvcp22tl34kp4tv6</ns3:ServiceDefinitionID>
+              <ns3:OwnerCode>UAD</ns3:OwnerCode>
+              <ns3:Name>Seat Assignment and Extra Bag</ns3:Name>
+              <ns3:ServiceCode>B24</ns3:ServiceCode>
+              <ns3:ReasonForIssuanceCode>J</ns3:ReasonForIssuanceCode>
+              <ns3:ReasonForIssuanceSubCode>B24</ns3:ReasonForIssuanceSubCode>
+              <ns3:ValidatingCarrierCode>UA</ns3:ValidatingCarrierCode>
+              <ns3:Description>
+                <ns3:DescID>Details</ns3:DescID>
+                <ns3:DescText>Seat Assignment and Extra Bag</ns3:DescText>
+              </ns3:Description>
+              <ns3:BookingInstructions>
+                <ns3:Method>API</ns3:Method>
+              </ns3:BookingInstructions>
+            </ns3:ServiceDefinition>
+            <ns3:ServiceDefinition>
+              <ns3:ServiceDefinitionID>Psvcjdf782cqe7y3y</ns3:ServiceDefinitionID>
+              <ns3:OwnerCode>UAD</ns3:OwnerCode>
+              <ns3:Name>Seat Assignment</ns3:Name>
+              <ns3:ServiceCode>B23</ns3:ServiceCode>
+              <ns3:ReasonForIssuanceCode>J</ns3:ReasonForIssuanceCode>
+              <ns3:ReasonForIssuanceSubCode>B23</ns3:ReasonForIssuanceSubCode>
+              <ns3:ValidatingCarrierCode>UA</ns3:ValidatingCarrierCode>
+              <ns3:Description>
+                <ns3:DescID>Details</ns3:DescID>
+                <ns3:DescText>Seat Assignment</ns3:DescText>
+              </ns3:Description>
+              <ns3:BookingInstructions>
+                <ns3:Method>API</ns3:Method>
+              </ns3:BookingInstructions>
+            </ns3:ServiceDefinition>
+            <ns3:ServiceDefinition>
+              <ns3:ServiceDefinitionID>Psvcblcvod6rmaouv</ns3:ServiceDefinitionID>
+              <ns3:OwnerCode>UAD</ns3:OwnerCode>
+              <ns3:Name>FareLock</ns3:Name>
+              <ns3:ServiceCode>FLK</ns3:ServiceCode>
+              <ns3:ReasonForIssuanceCode>A</ns3:ReasonForIssuanceCode>
+              <ns3:ReasonForIssuanceSubCode>FLK</ns3:ReasonForIssuanceSubCode>
+              <ns3:ValidatingCarrierCode>UA</ns3:ValidatingCarrierCode>
+              <ns3:Description>
+                <ns3:DescID>Details</ns3:DescID>
+                <ns3:DescText>FareLock</ns3:DescText>
+              </ns3:Description>
+              <ns3:BookingInstructions>
+                <ns3:Method>API</ns3:Method>
+              </ns3:BookingInstructions>
+            </ns3:ServiceDefinition>
+            <ns3:ServiceDefinition>
+              <ns3:ServiceDefinitionID>Psvcjkt84urtjmwjx</ns3:ServiceDefinitionID>
+              <ns3:OwnerCode>UAD</ns3:OwnerCode>
+              <ns3:Name>FareLock</ns3:Name>
+              <ns3:ServiceCode>FLK</ns3:ServiceCode>
+              <ns3:ReasonForIssuanceCode>A</ns3:ReasonForIssuanceCode>
+              <ns3:ReasonForIssuanceSubCode>FLK</ns3:ReasonForIssuanceSubCode>
+              <ns3:ValidatingCarrierCode>UA</ns3:ValidatingCarrierCode>
+              <ns3:Description>
+                <ns3:DescID>Details</ns3:DescID>
+                <ns3:DescText>FareLock</ns3:DescText>
+              </ns3:Description>
+              <ns3:BookingInstructions>
+                <ns3:Method>API</ns3:Method>
+              </ns3:BookingInstructions>
+            </ns3:ServiceDefinition>
+            <ns3:ServiceDefinition>
+              <ns3:ServiceDefinitionID>Psvcd4t6o0rt4z47d</ns3:ServiceDefinitionID>
+              <ns3:OwnerCode>UAD</ns3:OwnerCode>
+              <ns3:Name>FareLock</ns3:Name>
+              <ns3:ServiceCode>FLK</ns3:ServiceCode>
+              <ns3:ReasonForIssuanceCode>A</ns3:ReasonForIssuanceCode>
+              <ns3:ReasonForIssuanceSubCode>FLK</ns3:ReasonForIssuanceSubCode>
+              <ns3:ValidatingCarrierCode>UA</ns3:ValidatingCarrierCode>
+              <ns3:Description>
+                <ns3:DescID>Details</ns3:DescID>
+                <ns3:DescText>FareLock</ns3:DescText>
+              </ns3:Description>
+              <ns3:BookingInstructions>
+                <ns3:Method>API</ns3:Method>
+              </ns3:BookingInstructions>
+            </ns3:ServiceDefinition>
+            <ns3:ServiceDefinition>
+              <ns3:ServiceDefinitionID>svc958f1kxl3anbl</ns3:ServiceDefinitionID>
+              <ns3:OwnerCode>UAD</ns3:OwnerCode>
+              <ns3:Name>First Checked Bag</ns3:Name>
+              <ns3:ServiceCode>B1</ns3:ServiceCode>
+              <ns3:ReasonForIssuanceCode>A</ns3:ReasonForIssuanceCode>
+              <ns3:ReasonForIssuanceSubCode>BAG</ns3:ReasonForIssuanceSubCode>
+              <ns3:ValidatingCarrierCode>UA</ns3:ValidatingCarrierCode>
+              <ns3:Description>
+                <ns3:DescID>Details</ns3:DescID>
+                <ns3:DescText>First Checked Bag</ns3:DescText>
+              </ns3:Description>
+              <ns3:ServiceDefinitionAssociation>
+                <ns3:BaggageAllowanceRefID>Pbgaxfeu69jkks62v</ns3:BaggageAllowanceRefID>
+              </ns3:ServiceDefinitionAssociation>
+              <ns3:BookingInstructions>
+                <ns3:Method>API</ns3:Method>
+              </ns3:BookingInstructions>
+            </ns3:ServiceDefinition>
+            <ns3:ServiceDefinition>
+              <ns3:ServiceDefinitionID>svcso9yrwvnow4dl</ns3:ServiceDefinitionID>
+              <ns3:OwnerCode>UAD</ns3:OwnerCode>
+              <ns3:Name>Second Checked Bag</ns3:Name>
+              <ns3:ServiceCode>B2</ns3:ServiceCode>
+              <ns3:ReasonForIssuanceCode>A</ns3:ReasonForIssuanceCode>
+              <ns3:ReasonForIssuanceSubCode>BAG</ns3:ReasonForIssuanceSubCode>
+              <ns3:ValidatingCarrierCode>UA</ns3:ValidatingCarrierCode>
+              <ns3:Description>
+                <ns3:DescID>Details</ns3:DescID>
+                <ns3:DescText>Second Checked Bag</ns3:DescText>
+              </ns3:Description>
+              <ns3:ServiceDefinitionAssociation>
+                <ns3:BaggageAllowanceRefID>Pbgadwteqhq0ny61x</ns3:BaggageAllowanceRefID>
+              </ns3:ServiceDefinitionAssociation>
+              <ns3:BookingInstructions>
+                <ns3:Method>API</ns3:Method>
+              </ns3:BookingInstructions>
+            </ns3:ServiceDefinition>
+          </ns3:ServiceDefinitionList>
+        </ns3:DataLists>
+        <ns3:Metadata>
+          <ns3:Other>
+            <ns3:OtherMetadata>
+              <ns3:CurrencyMetadatas>
+                <ns3:CurrencyMetadata MetadataKey="USD">
+                  <ns3:Decimals>2</ns3:Decimals>
+                </ns3:CurrencyMetadata>
+              </ns3:CurrencyMetadatas>
+            </ns3:OtherMetadata>
+            <ns3:OtherMetadata>
+              <ns3:RuleMetadatas>
+                <ns3:RuleMetadata MetadataKey="PcncPAD0DAB02-F919-4880-B4E4N">
+                  <ns3:RuleID>Cancel</ns3:RuleID>
+                  <ns3:Values>
+                    <ns3:Value>
+                      <ns3:Instruction>Not Allowed</ns3:Instruction>
+                    </ns3:Value>
+                  </ns3:Values>
+                </ns3:RuleMetadata>
+                <ns3:RuleMetadata MetadataKey="PchgPAD0DAB02-F919-4880-B4E4N">
+                  <ns3:RuleID>Change</ns3:RuleID>
+                  <ns3:Values>
+                    <ns3:Value>
+                      <ns3:Instruction>Not Allowed</ns3:Instruction>
+                    </ns3:Value>
+                  </ns3:Values>
+                </ns3:RuleMetadata>
+              </ns3:RuleMetadatas>
+            </ns3:OtherMetadata>
+          </ns3:Other>
+        </ns3:Metadata>
+        <ns3:PricedOffer>
+          <ns3:Offer>
+            <ns3:OfferID>ERM1-6UYiQTIyCjy~ZJPHOmB_1A_d1eb62cf-3612-40c9-8522-1278a2d96c3a_1A_PAD0DAB02-F919-4880-B4E4anvyliknsordr-1</ns3:OfferID>
+            <ns3:OwnerCode>UAD</ns3:OwnerCode>
+            <ns3:ValidatingCarrierCode>UA</ns3:ValidatingCarrierCode>
+            <ns3:OfferExpirationDateTime>2024-05-24T18:04:32Z</ns3:OfferExpirationDateTime>
+            <ns3:PaymentTimeLimitDateTime>2024-05-25T23:59:00</ns3:PaymentTimeLimitDateTime>
+            <ns3:BaggageAllowance>
+              <ns3:PaxJourneyRefID>Pfltj0rydn3ldeyig</ns3:PaxJourneyRefID>
+              <ns3:PaxRefID>P1</ns3:PaxRefID>
+              <ns3:BaggageAllowanceRefID>Pbgaxfeu69jkks62v</ns3:BaggageAllowanceRefID>
+            </ns3:BaggageAllowance>
+            <ns3:JourneyOverview>
+              <ns3:JourneyPriceClass>
+                <ns3:PriceClassRefID>Ppcskghrizd03dek</ns3:PriceClassRefID>
+                <ns3:PaxJourneyRefID>Pfltj0rydn3ldeyig</ns3:PaxJourneyRefID>
+              </ns3:JourneyPriceClass>
+            </ns3:JourneyOverview>
+            <ns3:PTC_OfferParameters>
+              <ns3:PTC_PricedCode>ADT</ns3:PTC_PricedCode>
+              <ns3:PTC_RequestedCode>ADT</ns3:PTC_RequestedCode>
+              <ns3:RequestedPaxNumber>1</ns3:RequestedPaxNumber>
+              <ns3:PricedPaxNumber>1</ns3:PricedPaxNumber>
+            </ns3:PTC_OfferParameters>
+            <ns3:OfferItem>
+              <ns3:OfferItemID>PAD0DAB02-F919-4880-B4E4anvyliknsordr-1-1</ns3:OfferItemID>
+              <ns3:MandatoryInd>true</ns3:MandatoryInd>
+              <ns3:FareDetail>
+                <ns3:FareIndicatorCode>0</ns3:FareIndicatorCode>
+                <ns3:PassengerRefs>P1</ns3:PassengerRefs>
+                <ns3:Price>
+                  <ns3:BaseAmount Code="USD">5895</ns3:BaseAmount>
+                  <ns3:Taxes>
+                    <ns3:Total Code="USD">1952</ns3:Total>
+                    <ns3:Breakdown>
+                      <ns3:Tax>
+                        <ns3:Amount Code="USD">442</ns3:Amount>
+                        <ns3:Nation>US</ns3:Nation>
+                        <ns3:TaxCode>US</ns3:TaxCode>
+                        <ns3:Description>US Transportation Tax</ns3:Description>
+                      </ns3:Tax>
+                      <ns3:Tax>
+                        <ns3:Amount Code="USD">450</ns3:Amount>
+                        <ns3:Nation>US</ns3:Nation>
+                        <ns3:TaxCode>XF</ns3:TaxCode>
+                        <ns3:Description>US Passenger Facility Charge</ns3:Description>
+                      </ns3:Tax>
+                      <ns3:Tax>
+                        <ns3:Amount Code="USD">500</ns3:Amount>
+                        <ns3:Nation>US</ns3:Nation>
+                        <ns3:TaxCode>ZP</ns3:TaxCode>
+                        <ns3:Description>United States Flight Segment Tax Domestic</ns3:Description>
+                      </ns3:Tax>
+                      <ns3:Tax>
+                        <ns3:Amount Code="USD">560</ns3:Amount>
+                        <ns3:Nation>US</ns3:Nation>
+                        <ns3:TaxCode>AY</ns3:TaxCode>
+                        <ns3:Description>United States Passenger Civil Aviation Security Service Fee</ns3:Description>
+                      </ns3:Tax>
+                    </ns3:Breakdown>
+                  </ns3:Taxes>
+                </ns3:Price>
+                <ns3:FareComponent>
+                  <ns3:Price>
+                    <ns3:BaseAmount Code="USD">5895</ns3:BaseAmount>
+                    <ns3:Taxes>
+                      <ns3:Total Code="USD">1952</ns3:Total>
+                      <ns3:Breakdown>
+                        <ns3:Tax>
+                          <ns3:Amount Code="USD">442</ns3:Amount>
+                          <ns3:Nation>US</ns3:Nation>
+                          <ns3:TaxCode>US</ns3:TaxCode>
+                          <ns3:Description>US Transportation Tax</ns3:Description>
+                        </ns3:Tax>
+                        <ns3:Tax>
+                          <ns3:Amount Code="USD">450</ns3:Amount>
+                          <ns3:Nation>US</ns3:Nation>
+                          <ns3:TaxCode>XF</ns3:TaxCode>
+                          <ns3:Description>US Passenger Facility Charge</ns3:Description>
+                        </ns3:Tax>
+                        <ns3:Tax>
+                          <ns3:Amount Code="USD">500</ns3:Amount>
+                          <ns3:Nation>US</ns3:Nation>
+                          <ns3:TaxCode>ZP</ns3:TaxCode>
+                          <ns3:Description>United States Flight Segment Tax Domestic</ns3:Description>
+                        </ns3:Tax>
+                        <ns3:Tax>
+                          <ns3:Amount Code="USD">560</ns3:Amount>
+                          <ns3:Nation>US</ns3:Nation>
+                          <ns3:TaxCode>AY</ns3:TaxCode>
+                          <ns3:Description>United States Passenger Civil Aviation Security Service Fee</ns3:Description>
+                        </ns3:Tax>
+                      </ns3:Breakdown>
+                    </ns3:Taxes>
+                  </ns3:Price>
+                  <ns3:FareBasis>
+                    <ns3:FareBasisCode refs="Pfcpdka5r0o2d2hl4">
+                      <ns3:Code>KAK5AWBN</ns3:Code>
+                    </ns3:FareBasisCode>
+                    <ns3:FareBasisCityPair>CHIATLUA</ns3:FareBasisCityPair>
+                    <ns3:RBD>N</ns3:RBD>
+                    <ns3:CabinType>
+                      <ns3:CabinTypeCode>Y</ns3:CabinTypeCode>
+                      <ns3:CabinTypeName>ECONOMY</ns3:CabinTypeName>
+                    </ns3:CabinType>
+                  </ns3:FareBasis>
+                  <ns3:FareRules>
+                    <ns3:Penalty CancelFeeInd="false" ChangeFeeInd="true" RefundableInd="false">
+                      <ns3:Details>
+                        <ns3:Detail refs="PcncPAD0DAB02-F919-4880-B4E4N">
+                          <ns3:Type>Cancel</ns3:Type>
+                          <ns3:Amounts>
+                            <ns3:Amount>
+                              <ns3:CurrencyAmountValue Code="USD">0</ns3:CurrencyAmountValue>
+                              <ns3:AmountApplication>MIN</ns3:AmountApplication>
+                            </ns3:Amount>
+                            <ns3:Amount>
+                              <ns3:CurrencyAmountValue Code="USD">0</ns3:CurrencyAmountValue>
+                              <ns3:AmountApplication>MAX</ns3:AmountApplication>
+                            </ns3:Amount>
+                          </ns3:Amounts>
+                        </ns3:Detail>
+                        <ns3:Detail refs="PchgPAD0DAB02-F919-4880-B4E4N">
+                          <ns3:Type>Change</ns3:Type>
+                          <ns3:Amounts>
+                            <ns3:Amount>
+                              <ns3:CurrencyAmountValue Code="USD">0</ns3:CurrencyAmountValue>
+                              <ns3:AmountApplication>MIN</ns3:AmountApplication>
+                            </ns3:Amount>
+                            <ns3:Amount>
+                              <ns3:CurrencyAmountValue Code="USD">0</ns3:CurrencyAmountValue>
+                              <ns3:AmountApplication>MAX</ns3:AmountApplication>
+                            </ns3:Amount>
+                          </ns3:Amounts>
+                        </ns3:Detail>
+                        <ns3:Detail>
+                          <ns3:Type>Change</ns3:Type>
+                          <ns3:Application>2</ns3:Application>
+                          <ns3:Amounts>
+                            <ns3:Amount>
+                              <ns3:CurrencyAmountValue Code="USD">9900</ns3:CurrencyAmountValue>
+                              <ns3:AmountApplication>MIN</ns3:AmountApplication>
+                            </ns3:Amount>
+                            <ns3:Amount>
+                              <ns3:CurrencyAmountValue Code="USD">9900</ns3:CurrencyAmountValue>
+                              <ns3:AmountApplication>MAX</ns3:AmountApplication>
+                            </ns3:Amount>
+                          </ns3:Amounts>
+                        </ns3:Detail>
+                      </ns3:Details>
+                    </ns3:Penalty>
+                    <ns3:AdvanceStay>
+                      <ns3:AdvancePurchase Context="Latest">P30D</ns3:AdvancePurchase>
+                    </ns3:AdvanceStay>
+                    <ns3:Ticketing>
+                      <ns3:Endorsements>
+                        <ns3:Endorsement>NRF-BE/NOCHGDAFTDPT</ns3:Endorsement>
+                      </ns3:Endorsements>
+                    </ns3:Ticketing>
+                  </ns3:FareRules>
+                  <ns3:PriceClassRef>Ppcskghrizd03dek</ns3:PriceClassRef>
+                  <ns3:SegmentRefs>Isgm15006fc50d1ed</ns3:SegmentRefs>
+                </ns3:FareComponent>
+              </ns3:FareDetail>
+              <ns3:Service>
+                <ns3:ServiceID>Psvctmzx6ylc82lzj</ns3:ServiceID>
+                <ns3:PaxRefID>P1</ns3:PaxRefID>
+                <ns3:ServiceAssociations>
+                  <ns3:PaxJourneyRefID>Pfltj0rydn3ldeyig</ns3:PaxJourneyRefID>
+                </ns3:ServiceAssociations>
+              </ns3:Service>
+              <ns3:Price>
+                <ns3:TotalAmount CurCode="USD">7847</ns3:TotalAmount>
+              </ns3:Price>
+            </ns3:OfferItem>
+            <ns3:OfferItem>
+              <ns3:OfferItemID>PAD0DAB02-F919-4880-B4E4anvyliknsordr-1-2</ns3:OfferItemID>
+              <ns3:MandatoryInd>false</ns3:MandatoryInd>
+              <ns3:Service>
+                <ns3:ServiceID>Psvd1cnawwv34yjxd-anvyliknsordr-2</ns3:ServiceID>
+                <ns3:PaxRefID>P1</ns3:PaxRefID>
+                <ns3:ServiceAssociations>
+                  <ns3:ServiceDefinitionRef>
+                    <ns3:ServiceDefinitionRefID>Psvc1cnawwv34yjxd</ns3:ServiceDefinitionRefID>
+                    <ns3:PaxSegmentRefID>Isgm15006fc50d1ed</ns3:PaxSegmentRefID>
+                  </ns3:ServiceDefinitionRef>
+                </ns3:ServiceAssociations>
+              </ns3:Service>
+              <ns3:Price>
+                <ns3:TotalAmount CurCode="USD">7900</ns3:TotalAmount>
+              </ns3:Price>
+            </ns3:OfferItem>
+            <ns3:OfferItem>
+              <ns3:OfferItemID>PAD0DAB02-F919-4880-B4E4anvyliknsordr-1-3</ns3:OfferItemID>
+              <ns3:MandatoryInd>false</ns3:MandatoryInd>
+              <ns3:Service>
+                <ns3:ServiceID>Psvdveao6p2s5k7ch-anvyliknsordr-3</ns3:ServiceID>
+                <ns3:PaxRefID>P1</ns3:PaxRefID>
+                <ns3:ServiceAssociations>
+                  <ns3:ServiceDefinitionRef>
+                    <ns3:ServiceDefinitionRefID>Psvcveao6p2s5k7ch</ns3:ServiceDefinitionRefID>
+                    <ns3:PaxSegmentRefID>Isgm15006fc50d1ed</ns3:PaxSegmentRefID>
+                  </ns3:ServiceDefinitionRef>
+                </ns3:ServiceAssociations>
+              </ns3:Service>
+              <ns3:Price>
+                <ns3:TotalAmount CurCode="USD">5000</ns3:TotalAmount>
+              </ns3:Price>
+            </ns3:OfferItem>
+            <ns3:OfferItem>
+              <ns3:OfferItemID>PAD0DAB02-F919-4880-B4E4anvyliknsordr-1-4</ns3:OfferItemID>
+              <ns3:MandatoryInd>false</ns3:MandatoryInd>
+              <ns3:Service>
+                <ns3:ServiceID>Psvdu9pty2rdzudyx-anvyliknsordr-4</ns3:ServiceID>
+                <ns3:PaxRefID>P1</ns3:PaxRefID>
+                <ns3:ServiceAssociations>
+                  <ns3:ServiceDefinitionRef>
+                    <ns3:ServiceDefinitionRefID>Psvcu9pty2rdzudyx</ns3:ServiceDefinitionRefID>
+                    <ns3:PaxSegmentRefID>Isgm15006fc50d1ed</ns3:PaxSegmentRefID>
+                  </ns3:ServiceDefinitionRef>
+                </ns3:ServiceAssociations>
+              </ns3:Service>
+              <ns3:Price>
+                <ns3:TotalAmount CurCode="USD">11200</ns3:TotalAmount>
+              </ns3:Price>
+            </ns3:OfferItem>
+            <ns3:OfferItem>
+              <ns3:OfferItemID>PAD0DAB02-F919-4880-B4E4anvyliknsordr-1-5</ns3:OfferItemID>
+              <ns3:MandatoryInd>false</ns3:MandatoryInd>
+              <ns3:Service>
+                <ns3:ServiceID>Psvddcbzpo1h73js6-anvyliknsordr-5</ns3:ServiceID>
+                <ns3:PaxRefID>P1</ns3:PaxRefID>
+                <ns3:ServiceAssociations>
+                  <ns3:ServiceDefinitionRef>
+                    <ns3:ServiceDefinitionRefID>Psvcdcbzpo1h73js6</ns3:ServiceDefinitionRefID>
+                    <ns3:PaxSegmentRefID>Isgm15006fc50d1ed</ns3:PaxSegmentRefID>
+                  </ns3:ServiceDefinitionRef>
+                </ns3:ServiceAssociations>
+              </ns3:Service>
+              <ns3:Price>
+                <ns3:TotalAmount CurCode="USD">8300</ns3:TotalAmount>
+              </ns3:Price>
+            </ns3:OfferItem>
+            <ns3:OfferItem>
+              <ns3:OfferItemID>PAD0DAB02-F919-4880-B4E4anvyliknsordr-1-6</ns3:OfferItemID>
+              <ns3:MandatoryInd>false</ns3:MandatoryInd>
+              <ns3:Service>
+                <ns3:ServiceID>Psvdp22tl34kp4tv6-anvyliknsordr-6</ns3:ServiceID>
+                <ns3:PaxRefID>P1</ns3:PaxRefID>
+                <ns3:ServiceAssociations>
+                  <ns3:ServiceDefinitionRef>
+                    <ns3:ServiceDefinitionRefID>Psvcp22tl34kp4tv6</ns3:ServiceDefinitionRefID>
+                    <ns3:PaxSegmentRefID>Isgm15006fc50d1ed</ns3:PaxSegmentRefID>
+                  </ns3:ServiceDefinitionRef>
+                </ns3:ServiceAssociations>
+              </ns3:Service>
+              <ns3:Price>
+                <ns3:TotalAmount CurCode="USD">6600</ns3:TotalAmount>
+              </ns3:Price>
+            </ns3:OfferItem>
+            <ns3:OfferItem>
+              <ns3:OfferItemID>PAD0DAB02-F919-4880-B4E4anvyliknsordr-1-7</ns3:OfferItemID>
+              <ns3:MandatoryInd>false</ns3:MandatoryInd>
+              <ns3:Service>
+                <ns3:ServiceID>Psvdjdf782cqe7y3y-anvyliknsordr-7</ns3:ServiceID>
+                <ns3:PaxRefID>P1</ns3:PaxRefID>
+                <ns3:ServiceAssociations>
+                  <ns3:ServiceDefinitionRef>
+                    <ns3:ServiceDefinitionRefID>Psvcjdf782cqe7y3y</ns3:ServiceDefinitionRefID>
+                    <ns3:PaxSegmentRefID>Isgm15006fc50d1ed</ns3:PaxSegmentRefID>
+                  </ns3:ServiceDefinitionRef>
+                </ns3:ServiceAssociations>
+              </ns3:Service>
+              <ns3:Price>
+                <ns3:TotalAmount CurCode="USD">3400</ns3:TotalAmount>
+              </ns3:Price>
+            </ns3:OfferItem>
+            <ns3:OfferItem>
+              <ns3:OfferItemID>PAD0DAB02-F919-4880-B4E4anvyliknsordr-1-8</ns3:OfferItemID>
+              <ns3:MandatoryInd>false</ns3:MandatoryInd>
+              <ns3:Service>
+                <ns3:ServiceID>Psvdblcvod6rmaouv-anvyliknsordr-8</ns3:ServiceID>
+                <ns3:PaxRefID>P1</ns3:PaxRefID>
+                <ns3:ServiceAssociations>
+                  <ns3:ServiceDefinitionRef>
+                    <ns3:ServiceDefinitionRefID>Psvcblcvod6rmaouv</ns3:ServiceDefinitionRefID>
+                    <ns3:PaxSegmentRefID>Isgm15006fc50d1ed</ns3:PaxSegmentRefID>
+                  </ns3:ServiceDefinitionRef>
+                </ns3:ServiceAssociations>
+              </ns3:Service>
+              <ns3:Price>
+                <ns3:TotalAmount CurCode="USD">1299</ns3:TotalAmount>
+              </ns3:Price>
+            </ns3:OfferItem>
+            <ns3:OfferItem>
+              <ns3:OfferItemID>PAD0DAB02-F919-4880-B4E4anvyliknsordr-1-9</ns3:OfferItemID>
+              <ns3:MandatoryInd>false</ns3:MandatoryInd>
+              <ns3:Service>
+                <ns3:ServiceID>Psvdjkt84urtjmwjx-anvyliknsordr-9</ns3:ServiceID>
+                <ns3:PaxRefID>P1</ns3:PaxRefID>
+                <ns3:ServiceAssociations>
+                  <ns3:ServiceDefinitionRef>
+                    <ns3:ServiceDefinitionRefID>Psvcjkt84urtjmwjx</ns3:ServiceDefinitionRefID>
+                    <ns3:PaxSegmentRefID>Isgm15006fc50d1ed</ns3:PaxSegmentRefID>
+                  </ns3:ServiceDefinitionRef>
+                </ns3:ServiceAssociations>
+              </ns3:Service>
+              <ns3:Price>
+                <ns3:TotalAmount CurCode="USD">899</ns3:TotalAmount>
+              </ns3:Price>
+            </ns3:OfferItem>
+            <ns3:OfferItem>
+              <ns3:OfferItemID>PAD0DAB02-F919-4880-B4E4anvyliknsordr-1-10</ns3:OfferItemID>
+              <ns3:MandatoryInd>false</ns3:MandatoryInd>
+              <ns3:Service>
+                <ns3:ServiceID>Psvdd4t6o0rt4z47d-anvyliknsordr-10</ns3:ServiceID>
+                <ns3:PaxRefID>P1</ns3:PaxRefID>
+                <ns3:ServiceAssociations>
+                  <ns3:ServiceDefinitionRef>
+                    <ns3:ServiceDefinitionRefID>Psvcd4t6o0rt4z47d</ns3:ServiceDefinitionRefID>
+                    <ns3:PaxSegmentRefID>Isgm15006fc50d1ed</ns3:PaxSegmentRefID>
+                  </ns3:ServiceDefinitionRef>
+                </ns3:ServiceAssociations>
+              </ns3:Service>
+              <ns3:Price>
+                <ns3:TotalAmount CurCode="USD">599</ns3:TotalAmount>
+              </ns3:Price>
+            </ns3:OfferItem>
+            <ns3:OfferItem>
+              <ns3:OfferItemID>PAD0DAB02-F919-4880-B4E4anvyliknsordr-1-11</ns3:OfferItemID>
+              <ns3:MandatoryInd>false</ns3:MandatoryInd>
+              <ns3:Service>
+                <ns3:ServiceID>svd958f1kxl3anbl-anvyliknsordr-11</ns3:ServiceID>
+                <ns3:PaxRefID>P1</ns3:PaxRefID>
+                <ns3:ServiceAssociations>
+                  <ns3:ServiceDefinitionRef>
+                    <ns3:ServiceDefinitionRefID>svc958f1kxl3anbl</ns3:ServiceDefinitionRefID>
+                    <ns3:PaxSegmentRefID>Isgm15006fc50d1ed</ns3:PaxSegmentRefID>
+                  </ns3:ServiceDefinitionRef>
+                </ns3:ServiceAssociations>
+              </ns3:Service>
+              <ns3:Price>
+                <ns3:TotalAmount CurCode="USD">4000</ns3:TotalAmount>
+              </ns3:Price>
+            </ns3:OfferItem>
+            <ns3:OfferItem>
+              <ns3:OfferItemID>PAD0DAB02-F919-4880-B4E4anvyliknsordr-1-12</ns3:OfferItemID>
+              <ns3:MandatoryInd>false</ns3:MandatoryInd>
+              <ns3:Service>
+                <ns3:ServiceID>svdso9yrwvnow4dl-anvyliknsordr-12</ns3:ServiceID>
+                <ns3:PaxRefID>P1</ns3:PaxRefID>
+                <ns3:ServiceAssociations>
+                  <ns3:ServiceDefinitionRef>
+                    <ns3:ServiceDefinitionRefID>svcso9yrwvnow4dl</ns3:ServiceDefinitionRefID>
+                    <ns3:PaxSegmentRefID>Isgm15006fc50d1ed</ns3:PaxSegmentRefID>
+                  </ns3:ServiceDefinitionRef>
+                </ns3:ServiceAssociations>
+              </ns3:Service>
+              <ns3:Price>
+                <ns3:TotalAmount CurCode="USD">5000</ns3:TotalAmount>
+              </ns3:Price>
+            </ns3:OfferItem>
+            <ns3:TotalPrice>
+              <ns3:TotalAmount CurCode="USD">62044</ns3:TotalAmount>
+            </ns3:TotalPrice>
+          </ns3:Offer>
+        </ns3:PricedOffer>
+        <ns3:ShoppingResponse>
+          <ns3:ShoppingResponseID>PAD0DAB02-F919-4880-B4E4</ns3:ShoppingResponseID>
+        </ns3:ShoppingResponse>
+      </ns3:Response>
+    </ns3:AMA_TravelOfferPriceRS>
+  </soap:Body>
+</soap:Envelope>

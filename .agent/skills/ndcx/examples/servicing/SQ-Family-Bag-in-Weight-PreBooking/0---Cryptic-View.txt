@@ -1,0 +1,245 @@
+/$--- TST TSM RLR NDC ---
+RP/OID/OID            WS/SU  26JUL24/1709Z   3FY4J2
+OID/WSUSER/26JUL24
+  1.QUIN/MIKE(ADT)(INF/MARK/11JUL23)   2.QUIN/SARAH(CNN)
+  3.QUIN/SYL(ADT)
+  4  SQ 719 W 14OCT 1 BKKSIN HK3   915P1235A 15OCT       N
+  5  SQ 706 W 28OCT 1 SINBKK HK3   705A 830A 28OCT       N
+  6 APA EML-AGENCY@AMADEUS.COM
+  7 APA 305 499-6000
+  8 TK OK26JUL/OID
+  9 SSR XBAG SQ HK1 TTL 10KG EXCESS BAGGAGE WEIGHT/S4/P1
+ 10 SSR XBAG SQ HK1 TTL 10KG EXCESS BAGGAGE WEIGHT/S5/P1
+ 11 SSR XBAG SQ HK1 TTL 5KG EXCESS BAGGAGE WEIGHT/S4/P3
+ 12 SSR XBAG SQ HK1 TTL 5KG EXCESS BAGGAGE WEIGHT/S5/P3
+ 13 SSR XBAG SQ HK1 TTL 5KG EXCESS BAGGAGE WEIGHT/S4/P2
+ 14 SSR XBAG SQ HK1 TTL 5KG EXCESS BAGGAGE WEIGHT/S5/P2
+ 15 SSR XBAG SQ HK1 TTL 5KG EXCESS BAGGAGE WEIGHT/S4/P1
+ 16 SSR XBAG SQ HK1 TTL 5KG EXCESS BAGGAGE WEIGHT/S5/P1
+ 17 SSR CTCE SQ HK1 MQUIN//MYEMAIL.COM/P1
+ 18 SSR DOCS SQ HK1 ////07MAR92/M//QUIN/MIKE/P1
+ 19 SSR CTCE SQ HK1 MQUIN//MYEMAIL.COM/P3
+ 20 SSR DOCS SQ HK1 ////29SEP86/F//QUIN/SYL/P3
+ 21 SSR CTCE SQ HK1 MQUIN//MYEMAIL.COM/P2
+ 22 SSR DOCS SQ HK1 ////11MAY20/F//QUIN/SARAH/P2
+ 23 SSR DOCS SQ HK1 ////11JUL23/M//QUIN/MARK/P1
+ 24 FA PAX 618-2452796209/ETSQ/26JUL24/OID/IATA #
+       /S4-5/P1
+ 25 FA INF 618-2452796212/ETSQ/26JUL24/OID/IATA #
+       /S4-5/P1
+ 26 FA PAX 618-2452796210/ETSQ/26JUL24/OID/IATA #
+       /S4-5/P3
+ 27 FA PAX 618-2452796211/ETSQ/26JUL24/OID/IATA #
+       /S4-5/P2
+ 28 FA PAX 618-4571447541/DTSQ/26JUL24/OID/IATA #
+       /P1/E9-10
+ 29 FA INF 618-4571447544/DTSQ/26JUL24/OID/IATA #
+       /P1/E15-16
+ 30 FA PAX 618-4571447542/DTSQ/26JUL24/OID/IATA #
+       /P3/E11-12
+ 31 FA PAX 618-4571447543/DTSQ/26JUL24/OID/IATA #
+       /P2/E13-14
+ 32 FP INF CCCAXXXXXXXXXXXX0008/0139/S4-5/P1
+ 33 FP PAX CCCAXXXXXXXXXXXX0008/0139/S4-5/P1
+ 34 FP PAX CCCAXXXXXXXXXXXX0008/0139/S4-5/P3
+ 35 FP PAX CCCAXXXXXXXXXXXX0008/0139/S4-5/P2	
+
+
+
+
+<!-- TQT -->
+/$T     P/S  NAME                   TOTAL            FOP                 SEGMENTS
+1    .1 I QUIN/MARK(INF)          CAD        35.80 CCCAXXXXXXXXXXXX0008/0+4-5  
+2    .1   QUIN/MIKE               CAD       419.10 CCCAXXXXXXXXXXXX0008/0+4-5  
+3    .3   QUIN/SYL                CAD       419.10 CCCAXXXXXXXXXXXX0008/0+4-5  
+4    .2   QUIN/SARAH              CAD       339.10 CCCAXXXXXXXXXXXX0008/0+4-5  
+
+
+
+/$TST00001     OID WS/26JUL     LD 30JUL24  700A OD                        
+T-                                                                             
+   1.QUIN/MARK(INF)                                                            
+ 1   BKK SQ  719 W 14OCT  915P NS W14THRPO                   10K               
+ 2   SIN SQ  706 W 28OCT  705A NS W14THRPO                   10K               
+     BKK                                                                       
+FARE  F CAD      32.00                                                         
+TX001 X CAD     1.30-E7AP TX002 X CAD     1.30-E7AD TX003 X CAD     0.60-G8DP  
+TX004 X CAD     0.60-G8AE                                                      
+TOTAL   CAD      35.80                                                         
+GRAND TOTAL CAD      35.80                                                     
+                                                                               
+ 32.FP CCCAXXXXXXXXXXXX0008/0139                                               
+ 
+
+
+
+/$TST00002     OID WS/26JUL     LD 30JUL24  700A OD                        
+T-                                                                             
+   1.QUIN/MIKE(ADT)                                                            
+ 1   BKK SQ  719 W 14OCT  915P OK W14THRPO                   30K               
+ 2   SIN SQ  706 W 28OCT  705A OK W14THRPO                   30K               
+     BKK                                                                       
+FARE  F CAD     321.00                                                         
+TX001 X CAD     1.30-E7AP TX002 X CAD     1.30-E7AD TX003 X CAD     0.60-G8DP  
+TX004 X CAD     0.60-G8AE TX005 X CAD    27.80-TSLA TX006 X CAD    11.00-L7DE  
+TX007 X CAD     8.20-OPAE TX008 X CAD    47.30-SGAD                            
+TOTAL   CAD     419.10                                                         
+GRAND TOTAL CAD     419.10                                                     
+                                                                               
+ 33.FP CCCAXXXXXXXXXXXX0008/0139      
+
+
+
+ /$TST00003     OID WS/26JUL     LD 30JUL24  700A OD                        
+T-                                                                             
+   3.QUIN/SYL(ADT)                                                             
+ 1   BKK SQ  719 W 14OCT  915P OK W14THRPO                   30K               
+ 2   SIN SQ  706 W 28OCT  705A OK W14THRPO                   30K               
+     BKK                                                                       
+FARE  F CAD     321.00                                                         
+TX001 X CAD     1.30-E7AP TX002 X CAD     1.30-E7AD TX003 X CAD     0.60-G8DP  
+TX004 X CAD     0.60-G8AE TX005 X CAD    27.80-TSLA TX006 X CAD    11.00-L7DE  
+TX007 X CAD     8.20-OPAE TX008 X CAD    47.30-SGAD                            
+TOTAL   CAD     419.10                                                         
+GRAND TOTAL CAD     419.10                                                     
+                                                                               
+ 34.FP CCCAXXXXXXXXXXXX0008/0139                                               
+ 
+ 
+ 
+ 
+/$TST00004     OID WS/26JUL     LD 30JUL24  700A OD                        
+T-                                                                             
+   2.QUIN/SARAH(CNN)                                                           
+ 1   BKK SQ  719 W 14OCT  915P OK W14THRPO                   30K               
+ 2   SIN SQ  706 W 28OCT  705A OK W14THRPO                   30K               
+     BKK                                                                       
+FARE  F CAD     241.00                                                         
+TX001 X CAD     1.30-E7AP TX002 X CAD     1.30-E7AD TX003 X CAD     0.60-G8DP  
+TX004 X CAD     0.60-G8AE TX005 X CAD    27.80-TSLA TX006 X CAD    11.00-L7DE  
+TX007 X CAD     8.20-OPAE TX008 X CAD    47.30-SGAD                            
+TOTAL   CAD     339.10                                                         
+GRAND TOTAL CAD     339.10                                                     
+                                                                               
+ 35.FP CCCAXXXXXXXXXXXX0008/0139                                               
+ 
+ 
+ 
+ 
+ 
+<!-- EMD -->
+
+/$M   P    R   NAME            TOTAL          FOP             ELEMENTS T 
+1  .1  T C   QUIN/MIKE       CAD     164.00 CCCAXXXXXXXXXX+ 9-10     P
+2  .3  T C   QUIN/SYL        CAD      82.00 CCCAXXXXXXXXXX+ 11-12    P
+3  .2  T C   QUIN/SARAH      CAD      82.00 CCCAXXXXXXXXXX+ 13-14    P
+4  I1  T C   QUIN/MARK       CAD     110.00 CCCAXXXXXXXXXX+ 15-16    P
+
+
+
+/$TSM    1  TYPE P     OID WS/26JUL                
+  1.QUIN/MIKE (ADT)
+RFIC- /C   RFIC
+    1. RFISC-0AA EXCESS BAGGAGE WEIGHT                                    L   9
+       OPERATING CC-SQ                                     ORIGIN-BKK DEST-SIN
+       EXCESS BAGGAGE-10  KG
+       ICW-6182452796209E1
+       NON REFUNDABLE
+       NON EXCHANGEABLE
+       NON INTERLINEABLE
+    2. RFISC-0AA EXCESS BAGGAGE WEIGHT                                    L  10
+       OPERATING CC-SQ                                     ORIGIN-SIN DEST-BKK
+       EXCESS BAGGAGE-10  KG
+       ICW-6182452796209E2
+       NON REFUNDABLE
+       NON EXCHANGEABLE
+       NON INTERLINEABLE
+
+ADD INF/RKS:
+ 
+FARE    F  CAD     164.00           
+ 
+ 
+ 
+ 
+ 
+ /$TSM    2  TYPE P     OID WS/26JUL                
+  3.QUIN/SYL (ADT)
+RFIC- /C   RFIC
+    1. RFISC-0AA EXCESS BAGGAGE WEIGHT                                    L  11
+       OPERATING CC-SQ                                     ORIGIN-BKK DEST-SIN
+       EXCESS BAGGAGE-5   KG
+       ICW-6182452796210E1
+       NON REFUNDABLE
+       NON EXCHANGEABLE
+       NON INTERLINEABLE
+    2. RFISC-0AA EXCESS BAGGAGE WEIGHT                                    L  12
+       OPERATING CC-SQ                                     ORIGIN-SIN DEST-BKK
+       EXCESS BAGGAGE-5   KG
+       ICW-6182452796210E2
+       NON REFUNDABLE
+       NON EXCHANGEABLE
+       NON INTERLINEABLE
+
+ADD INF/RKS:
+ 
+FARE    F  CAD      82.00           
+ 
+TOTAL      CAD      82.00
+)  
+ 
+ 
+ 
+/$TSM    3  TYPE P     OID WS/26JUL                
+  2.QUIN/SARAH (CNN)
+RFIC- /C   RFIC
+    1. RFISC-0AA EXCESS BAGGAGE WEIGHT                                    L  13
+       OPERATING CC-SQ                                     ORIGIN-BKK DEST-SIN
+       EXCESS BAGGAGE-5   KG
+       ICW-6182452796211E1
+       NON REFUNDABLE
+       NON EXCHANGEABLE
+       NON INTERLINEABLE
+    2. RFISC-0AA EXCESS BAGGAGE WEIGHT                                    L  14
+       OPERATING CC-SQ                                     ORIGIN-SIN DEST-BKK
+       EXCESS BAGGAGE-5   KG
+       ICW-6182452796211E2
+       NON REFUNDABLE
+       NON EXCHANGEABLE
+       NON INTERLINEABLE
+
+ADD INF/RKS:
+ 
+FARE    F  CAD      82.00           
+ 
+TOTAL      CAD      82.00
+) 
+
+
+
+
+/$TSM    4  TYPE P     OID WS/26JUL                
+  1.QUIN/MARK (INF)
+RFIC- /C   RFIC
+    1. RFISC-0AA EXCESS BAGGAGE WEIGHT                                    L  15
+       OPERATING CC-SQ                                     ORIGIN-BKK DEST-SIN
+       EXCESS BAGGAGE-5   KG
+       ICW-6182452796212E1
+       NON REFUNDABLE
+       NON EXCHANGEABLE
+       NON INTERLINEABLE
+    2. RFISC-0AA EXCESS BAGGAGE WEIGHT                                    L  16
+       OPERATING CC-SQ                                     ORIGIN-SIN DEST-BKK
+       EXCESS BAGGAGE-5   KG
+       ICW-6182452796212E2
+       NON REFUNDABLE
+       NON EXCHANGEABLE
+       NON INTERLINEABLE
+
+ADD INF/RKS:
+ 
+FARE    F  CAD     110.00           
+ 
+TOTAL      CAD     110.00
+) 
+ 

@@ -1,0 +1,567 @@
+<ns0:AMA_TravelOrderReshopRS xmlns:ns0="http://xml.amadeus.com/2010/06/Travel_OrderReshopRS_v1">
+  <ns0:Response>
+    <ns0:DataLists>
+      <ns0:OriginDestList>
+        <ns0:OriginDest>
+          <ns0:OriginDestID>OD1</ns0:OriginDestID>
+          <ns0:ArrivalStationCode>MAD</ns0:ArrivalStationCode>
+          <ns0:DepStationCode>LIS</ns0:DepStationCode>
+          <ns0:PaxJourneyRefID>LISMAD20230408063500</ns0:PaxJourneyRefID>
+        </ns0:OriginDest>
+        <ns0:OriginDest>
+          <ns0:OriginDestID>OD2</ns0:OriginDestID>
+          <ns0:ArrivalStationCode>LIS</ns0:ArrivalStationCode>
+          <ns0:DepStationCode>MAD</ns0:DepStationCode>
+          <ns0:PaxJourneyRefID>MADLIS20230424194000</ns0:PaxJourneyRefID>
+        </ns0:OriginDest>
+      </ns0:OriginDestList>
+      <ns0:PaxJourneyList>
+        <ns0:PaxJourney>
+          <ns0:PaxJourneyID>LISMAD20230408063500</ns0:PaxJourneyID>
+          <ns0:PaxSegmentRefID>IB310720230408</ns0:PaxSegmentRefID>
+        </ns0:PaxJourney>
+        <ns0:PaxJourney>
+          <ns0:PaxJourneyID>MADLIS20230424194000</ns0:PaxJourneyID>
+          <ns0:PaxSegmentRefID>IB310620230424</ns0:PaxSegmentRefID>
+        </ns0:PaxJourney>
+      </ns0:PaxJourneyList>
+      <ns0:PaxList>
+        <ns0:Pax>
+          <ns0:PaxID>PAX1</ns0:PaxID>
+          <ns0:PTC>ADT</ns0:PTC>
+          <ns0:PaxRefID>PAX1.1</ns0:PaxRefID>
+          <ns0:Individual>
+            <ns0:IndividualID>PAX1</ns0:IndividualID>
+            <ns0:GenderCode>M</ns0:GenderCode>
+            <ns0:GivenName>ADTONE</ns0:GivenName>
+            <ns0:Surname>NDCX</ns0:Surname>
+          </ns0:Individual>
+        </ns0:Pax>
+        <ns0:Pax>
+          <ns0:PaxID>PAX2</ns0:PaxID>
+          <ns0:PTC>ADT</ns0:PTC>
+          <ns0:Individual>
+            <ns0:IndividualID>PAX2</ns0:IndividualID>
+            <ns0:GenderCode>F</ns0:GenderCode>
+            <ns0:GivenName>ADTTWO</ns0:GivenName>
+            <ns0:Surname>NDCX</ns0:Surname>
+          </ns0:Individual>
+        </ns0:Pax>
+        <ns0:Pax>
+          <ns0:PaxID>PAX3</ns0:PaxID>
+          <ns0:PTC>CHD</ns0:PTC>
+          <ns0:Individual>
+            <ns0:IndividualID>PAX3</ns0:IndividualID>
+            <ns0:GenderCode>M</ns0:GenderCode>
+            <ns0:GivenName>CHDONE</ns0:GivenName>
+            <ns0:Surname>NDCX</ns0:Surname>
+          </ns0:Individual>
+        </ns0:Pax>
+        <ns0:Pax>
+          <ns0:PaxID>PAX1.1</ns0:PaxID>
+          <ns0:PTC>INF</ns0:PTC>
+          <ns0:Individual>
+            <ns0:IndividualID>PAX1.1</ns0:IndividualID>
+            <ns0:GenderCode>F</ns0:GenderCode>
+            <ns0:GivenName>INFONE</ns0:GivenName>
+            <ns0:Surname>NDCX</ns0:Surname>
+          </ns0:Individual>
+        </ns0:Pax>
+      </ns0:PaxList>
+      <ns0:PaxSegmentList>
+        <ns0:PaxSegment>
+          <ns0:PaxSegmentID>IB310720230408</ns0:PaxSegmentID>
+          <ns0:Duration>PT1H25M</ns0:Duration>
+          <ns0:Dep>
+            <ns0:IATA_LocationCode>LIS</ns0:IATA_LocationCode>
+            <ns0:StationName>AIRPORT</ns0:StationName>
+            <ns0:TerminalName>1</ns0:TerminalName>
+            <ns0:AircraftScheduledDateTime>2023-04-08T06:35:00</ns0:AircraftScheduledDateTime>
+          </ns0:Dep>
+          <ns0:Arrival>
+            <ns0:IATA_LocationCode>MAD</ns0:IATA_LocationCode>
+            <ns0:StationName>BARAJAS</ns0:StationName>
+            <ns0:TerminalName>4</ns0:TerminalName>
+            <ns0:AircraftScheduledDateTime>2023-04-08T09:00:00</ns0:AircraftScheduledDateTime>
+          </ns0:Arrival>
+          <ns0:MarketingCarrierInfo>
+            <ns0:CarrierDesigCode>IB</ns0:CarrierDesigCode>
+            <ns0:CarrierName>Iberia</ns0:CarrierName>
+            <ns0:MarketingCarrierFlightNumberText>3107</ns0:MarketingCarrierFlightNumberText>
+          </ns0:MarketingCarrierInfo>
+          <ns0:OperatingCarrierInfo>
+            <ns0:CarrierDesigCode>IB</ns0:CarrierDesigCode>
+            <ns0:CarrierName>Iberia</ns0:CarrierName>
+            <ns0:OperatingCarrierFlightNumberText>3107</ns0:OperatingCarrierFlightNumberText>
+          </ns0:OperatingCarrierInfo>
+          <ns0:DatedOperatingLeg>
+            <ns0:DatedOperatingLegID>LEG1</ns0:DatedOperatingLegID>
+            <ns0:CarrierAircraftType>
+              <ns0:CarrierAircraftTypeCode>320</ns0:CarrierAircraftTypeCode>
+              <ns0:CarrierAircraftTypeName>Airbus A320</ns0:CarrierAircraftTypeName>
+            </ns0:CarrierAircraftType>
+            <ns0:Dep>
+              <ns0:StationName>AIRPORT</ns0:StationName>
+            </ns0:Dep>
+          </ns0:DatedOperatingLeg>
+        </ns0:PaxSegment>
+        <ns0:PaxSegment>
+          <ns0:PaxSegmentID>IB310620230424</ns0:PaxSegmentID>
+          <ns0:Duration>PT1H25M</ns0:Duration>
+          <ns0:Dep>
+            <ns0:IATA_LocationCode>MAD</ns0:IATA_LocationCode>
+            <ns0:StationName>BARAJAS</ns0:StationName>
+            <ns0:TerminalName>4</ns0:TerminalName>
+            <ns0:AircraftScheduledDateTime>2023-04-24T19:40:00</ns0:AircraftScheduledDateTime>
+          </ns0:Dep>
+          <ns0:Arrival>
+            <ns0:IATA_LocationCode>LIS</ns0:IATA_LocationCode>
+            <ns0:StationName>AIRPORT</ns0:StationName>
+            <ns0:TerminalName>1</ns0:TerminalName>
+            <ns0:AircraftScheduledDateTime>2023-04-24T20:05:00</ns0:AircraftScheduledDateTime>
+          </ns0:Arrival>
+          <ns0:MarketingCarrierInfo>
+            <ns0:CarrierDesigCode>IB</ns0:CarrierDesigCode>
+            <ns0:CarrierName>Iberia</ns0:CarrierName>
+            <ns0:MarketingCarrierFlightNumberText>3106</ns0:MarketingCarrierFlightNumberText>
+          </ns0:MarketingCarrierInfo>
+          <ns0:OperatingCarrierInfo>
+            <ns0:CarrierDesigCode>IB</ns0:CarrierDesigCode>
+            <ns0:CarrierName>Iberia</ns0:CarrierName>
+            <ns0:OperatingCarrierFlightNumberText>3106</ns0:OperatingCarrierFlightNumberText>
+          </ns0:OperatingCarrierInfo>
+          <ns0:DatedOperatingLeg>
+            <ns0:DatedOperatingLegID>LEG1</ns0:DatedOperatingLegID>
+            <ns0:CarrierAircraftType>
+              <ns0:CarrierAircraftTypeCode>320</ns0:CarrierAircraftTypeCode>
+              <ns0:CarrierAircraftTypeName>Airbus A320</ns0:CarrierAircraftTypeName>
+            </ns0:CarrierAircraftType>
+            <ns0:Dep>
+              <ns0:StationName>BARAJAS</ns0:StationName>
+            </ns0:Dep>
+          </ns0:DatedOperatingLeg>
+        </ns0:PaxSegment>
+      </ns0:PaxSegmentList>
+    </ns0:DataLists>
+    <ns0:Metadata>
+      <ns0:Other>
+        <ns0:OtherMetadata>
+          <ns0:RuleMetadatas>
+            <ns0:RuleMetadata MetadataKey="RULEMETADATAKEY_2">
+              <ns0:RuleID>Cancel</ns0:RuleID>
+              <ns0:Values>
+                <ns0:Value>
+                  <ns0:Instruction>Not Allowed</ns0:Instruction>
+                </ns0:Value>
+              </ns0:Values>
+            </ns0:RuleMetadata>
+            <ns0:RuleMetadata MetadataKey="RULEMETADATAKEY_3">
+              <ns0:RuleID>Change</ns0:RuleID>
+              <ns0:Values>
+                <ns0:Value>
+                  <ns0:Instruction>Allowed</ns0:Instruction>
+                </ns0:Value>
+              </ns0:Values>
+            </ns0:RuleMetadata>
+          </ns0:RuleMetadatas>
+        </ns0:OtherMetadata>
+        <ns0:OtherMetadata>
+          <ns0:CurrencyMetadatas>
+            <ns0:CurrencyMetadata MetadataKey="EUR">
+              <ns0:Decimals>2</ns0:Decimals>
+            </ns0:CurrencyMetadata>
+          </ns0:CurrencyMetadatas>
+        </ns0:OtherMetadata>
+      </ns0:Other>
+    </ns0:Metadata>
+    <ns0:ReshopResults UseCase="UNKNOWN">
+      <ns0:ReshopOffers>
+        <ns0:ReshopOffer>
+          <ns0:OfferID>IB82ba0bc6ca4547279a6cc54e46b5decf</ns0:OfferID>
+          <ns0:OwnerCode>IB</ns0:OwnerCode>
+          <ns0:OfferExpirationDateTime>2023-01-23T21:50:22.442Z</ns0:OfferExpirationDateTime>
+          <ns0:Desc>
+            <ns0:DescID>0</ns0:DescID>
+            <ns0:DescText>UNKNOWN</ns0:DescText>
+          </ns0:Desc>
+          <ns0:TotalPrice>
+            <ns0:TotalAmount CurCode="EUR">49812</ns0:TotalAmount>
+          </ns0:TotalPrice>
+          <ns0:DeleteOrderItem>
+            <ns0:OrderItemRefID>IB9dd0014a10ba42349493cb4806f98de9OC_01_1APAX_PAX1</ns0:OrderItemRefID>
+            <ns0:OriginalOrderItemDifferential>
+              <ns0:Amount CurCode="EUR">13000</ns0:Amount>
+              <ns0:TaxSummary>
+                <ns0:TotalTaxAmount CurCode="EUR">3758</ns0:TotalTaxAmount>
+                <ns0:Tax>
+                  <ns0:Amount CurCode="EUR">200</ns0:Amount>
+                  <ns0:TaxCode>J9</ns0:TaxCode>
+                  <ns0:Country>
+                    <ns0:CountryCode>PT</ns0:CountryCode>
+                  </ns0:Country>
+                </ns0:Tax>
+                <ns0:Tax>
+                  <ns0:Amount CurCode="EUR">507</ns0:Amount>
+                  <ns0:TaxCode>PT</ns0:TaxCode>
+                  <ns0:Country>
+                    <ns0:CountryCode>PT</ns0:CountryCode>
+                  </ns0:Country>
+                </ns0:Tax>
+                <ns0:Tax>
+                  <ns0:Amount CurCode="EUR">1213</ns0:Amount>
+                  <ns0:TaxCode>YP</ns0:TaxCode>
+                  <ns0:Country>
+                    <ns0:CountryCode>PT</ns0:CountryCode>
+                  </ns0:Country>
+                </ns0:Tax>
+                <ns0:Tax>
+                  <ns0:Amount CurCode="EUR">1448</ns0:Amount>
+                  <ns0:TaxCode>JD</ns0:TaxCode>
+                  <ns0:Country>
+                    <ns0:CountryCode>ES</ns0:CountryCode>
+                  </ns0:Country>
+                </ns0:Tax>
+                <ns0:Tax>
+                  <ns0:Amount CurCode="EUR">63</ns0:Amount>
+                  <ns0:TaxCode>OG</ns0:TaxCode>
+                  <ns0:Country>
+                    <ns0:CountryCode>ES</ns0:CountryCode>
+                  </ns0:Country>
+                </ns0:Tax>
+                <ns0:Tax>
+                  <ns0:Amount CurCode="EUR">327</ns0:Amount>
+                  <ns0:TaxCode>QV</ns0:TaxCode>
+                  <ns0:Country>
+                    <ns0:CountryCode>ES</ns0:CountryCode>
+                  </ns0:Country>
+                </ns0:Tax>
+              </ns0:TaxSummary>
+            </ns0:OriginalOrderItemDifferential>
+            <ns0:PenaltyDifferential>
+              <ns0:Amount CurCode="EUR">0</ns0:Amount>
+            </ns0:PenaltyDifferential>
+            <ns0:DifferentialAmountDue>
+              <ns0:Amount CurCode="EUR">-16758</ns0:Amount>
+              <ns0:TaxSummary>
+                <ns0:TotalTaxAmount CurCode="EUR">3758</ns0:TotalTaxAmount>
+                <ns0:Tax>
+                  <ns0:Amount CurCode="EUR">200</ns0:Amount>
+                  <ns0:TaxCode>J9</ns0:TaxCode>
+                  <ns0:Country>
+                    <ns0:CountryCode>PT</ns0:CountryCode>
+                  </ns0:Country>
+                </ns0:Tax>
+                <ns0:Tax>
+                  <ns0:Amount CurCode="EUR">507</ns0:Amount>
+                  <ns0:TaxCode>PT</ns0:TaxCode>
+                  <ns0:Country>
+                    <ns0:CountryCode>PT</ns0:CountryCode>
+                  </ns0:Country>
+                </ns0:Tax>
+                <ns0:Tax>
+                  <ns0:Amount CurCode="EUR">1213</ns0:Amount>
+                  <ns0:TaxCode>YP</ns0:TaxCode>
+                  <ns0:Country>
+                    <ns0:CountryCode>PT</ns0:CountryCode>
+                  </ns0:Country>
+                </ns0:Tax>
+                <ns0:Tax>
+                  <ns0:Amount CurCode="EUR">1448</ns0:Amount>
+                  <ns0:TaxCode>JD</ns0:TaxCode>
+                  <ns0:Country>
+                    <ns0:CountryCode>ES</ns0:CountryCode>
+                  </ns0:Country>
+                </ns0:Tax>
+                <ns0:Tax>
+                  <ns0:Amount CurCode="EUR">63</ns0:Amount>
+                  <ns0:TaxCode>OG</ns0:TaxCode>
+                  <ns0:Country>
+                    <ns0:CountryCode>ES</ns0:CountryCode>
+                  </ns0:Country>
+                </ns0:Tax>
+                <ns0:Tax>
+                  <ns0:Amount CurCode="EUR">327</ns0:Amount>
+                  <ns0:TaxCode>QV</ns0:TaxCode>
+                  <ns0:Country>
+                    <ns0:CountryCode>ES</ns0:CountryCode>
+                  </ns0:Country>
+                </ns0:Tax>
+              </ns0:TaxSummary>
+            </ns0:DifferentialAmountDue>
+          </ns0:DeleteOrderItem>
+          <ns0:DeleteOrderItem>
+            <ns0:OrderItemRefID>IB9dd0014a10ba42349493cb4806f98de9OC_02_1APAX_PAX2</ns0:OrderItemRefID>
+            <ns0:OriginalOrderItemDifferential>
+              <ns0:Amount CurCode="EUR">13000</ns0:Amount>
+              <ns0:TaxSummary>
+                <ns0:TotalTaxAmount CurCode="EUR">3758</ns0:TotalTaxAmount>
+                <ns0:Tax>
+                  <ns0:Amount CurCode="EUR">200</ns0:Amount>
+                  <ns0:TaxCode>J9</ns0:TaxCode>
+                  <ns0:Country>
+                    <ns0:CountryCode>PT</ns0:CountryCode>
+                  </ns0:Country>
+                </ns0:Tax>
+                <ns0:Tax>
+                  <ns0:Amount CurCode="EUR">507</ns0:Amount>
+                  <ns0:TaxCode>PT</ns0:TaxCode>
+                  <ns0:Country>
+                    <ns0:CountryCode>PT</ns0:CountryCode>
+                  </ns0:Country>
+                </ns0:Tax>
+                <ns0:Tax>
+                  <ns0:Amount CurCode="EUR">1213</ns0:Amount>
+                  <ns0:TaxCode>YP</ns0:TaxCode>
+                  <ns0:Country>
+                    <ns0:CountryCode>PT</ns0:CountryCode>
+                  </ns0:Country>
+                </ns0:Tax>
+                <ns0:Tax>
+                  <ns0:Amount CurCode="EUR">1448</ns0:Amount>
+                  <ns0:TaxCode>JD</ns0:TaxCode>
+                  <ns0:Country>
+                    <ns0:CountryCode>ES</ns0:CountryCode>
+                  </ns0:Country>
+                </ns0:Tax>
+                <ns0:Tax>
+                  <ns0:Amount CurCode="EUR">63</ns0:Amount>
+                  <ns0:TaxCode>OG</ns0:TaxCode>
+                  <ns0:Country>
+                    <ns0:CountryCode>ES</ns0:CountryCode>
+                  </ns0:Country>
+                </ns0:Tax>
+                <ns0:Tax>
+                  <ns0:Amount CurCode="EUR">327</ns0:Amount>
+                  <ns0:TaxCode>QV</ns0:TaxCode>
+                  <ns0:Country>
+                    <ns0:CountryCode>ES</ns0:CountryCode>
+                  </ns0:Country>
+                </ns0:Tax>
+              </ns0:TaxSummary>
+            </ns0:OriginalOrderItemDifferential>
+            <ns0:PenaltyDifferential>
+              <ns0:Amount CurCode="EUR">0</ns0:Amount>
+            </ns0:PenaltyDifferential>
+            <ns0:DifferentialAmountDue>
+              <ns0:Amount CurCode="EUR">-16758</ns0:Amount>
+              <ns0:TaxSummary>
+                <ns0:TotalTaxAmount CurCode="EUR">3758</ns0:TotalTaxAmount>
+                <ns0:Tax>
+                  <ns0:Amount CurCode="EUR">200</ns0:Amount>
+                  <ns0:TaxCode>J9</ns0:TaxCode>
+                  <ns0:Country>
+                    <ns0:CountryCode>PT</ns0:CountryCode>
+                  </ns0:Country>
+                </ns0:Tax>
+                <ns0:Tax>
+                  <ns0:Amount CurCode="EUR">507</ns0:Amount>
+                  <ns0:TaxCode>PT</ns0:TaxCode>
+                  <ns0:Country>
+                    <ns0:CountryCode>PT</ns0:CountryCode>
+                  </ns0:Country>
+                </ns0:Tax>
+                <ns0:Tax>
+                  <ns0:Amount CurCode="EUR">1213</ns0:Amount>
+                  <ns0:TaxCode>YP</ns0:TaxCode>
+                  <ns0:Country>
+                    <ns0:CountryCode>PT</ns0:CountryCode>
+                  </ns0:Country>
+                </ns0:Tax>
+                <ns0:Tax>
+                  <ns0:Amount CurCode="EUR">1448</ns0:Amount>
+                  <ns0:TaxCode>JD</ns0:TaxCode>
+                  <ns0:Country>
+                    <ns0:CountryCode>ES</ns0:CountryCode>
+                  </ns0:Country>
+                </ns0:Tax>
+                <ns0:Tax>
+                  <ns0:Amount CurCode="EUR">63</ns0:Amount>
+                  <ns0:TaxCode>OG</ns0:TaxCode>
+                  <ns0:Country>
+                    <ns0:CountryCode>ES</ns0:CountryCode>
+                  </ns0:Country>
+                </ns0:Tax>
+                <ns0:Tax>
+                  <ns0:Amount CurCode="EUR">327</ns0:Amount>
+                  <ns0:TaxCode>QV</ns0:TaxCode>
+                  <ns0:Country>
+                    <ns0:CountryCode>ES</ns0:CountryCode>
+                  </ns0:Country>
+                </ns0:Tax>
+              </ns0:TaxSummary>
+            </ns0:DifferentialAmountDue>
+          </ns0:DeleteOrderItem>
+          <ns0:DeleteOrderItem>
+            <ns0:OrderItemRefID>IB9dd0014a10ba42349493cb4806f98de9OC_03_1APAX_PAX3</ns0:OrderItemRefID>
+            <ns0:OriginalOrderItemDifferential>
+              <ns0:Amount CurCode="EUR">9200</ns0:Amount>
+              <ns0:TaxSummary>
+                <ns0:TotalTaxAmount CurCode="EUR">3758</ns0:TotalTaxAmount>
+                <ns0:Tax>
+                  <ns0:Amount CurCode="EUR">200</ns0:Amount>
+                  <ns0:TaxCode>J9</ns0:TaxCode>
+                  <ns0:Country>
+                    <ns0:CountryCode>PT</ns0:CountryCode>
+                  </ns0:Country>
+                </ns0:Tax>
+                <ns0:Tax>
+                  <ns0:Amount CurCode="EUR">507</ns0:Amount>
+                  <ns0:TaxCode>PT</ns0:TaxCode>
+                  <ns0:Country>
+                    <ns0:CountryCode>PT</ns0:CountryCode>
+                  </ns0:Country>
+                </ns0:Tax>
+                <ns0:Tax>
+                  <ns0:Amount CurCode="EUR">1213</ns0:Amount>
+                  <ns0:TaxCode>YP</ns0:TaxCode>
+                  <ns0:Country>
+                    <ns0:CountryCode>PT</ns0:CountryCode>
+                  </ns0:Country>
+                </ns0:Tax>
+                <ns0:Tax>
+                  <ns0:Amount CurCode="EUR">1448</ns0:Amount>
+                  <ns0:TaxCode>JD</ns0:TaxCode>
+                  <ns0:Country>
+                    <ns0:CountryCode>ES</ns0:CountryCode>
+                  </ns0:Country>
+                </ns0:Tax>
+                <ns0:Tax>
+                  <ns0:Amount CurCode="EUR">63</ns0:Amount>
+                  <ns0:TaxCode>OG</ns0:TaxCode>
+                  <ns0:Country>
+                    <ns0:CountryCode>ES</ns0:CountryCode>
+                  </ns0:Country>
+                </ns0:Tax>
+                <ns0:Tax>
+                  <ns0:Amount CurCode="EUR">327</ns0:Amount>
+                  <ns0:TaxCode>QV</ns0:TaxCode>
+                  <ns0:Country>
+                    <ns0:CountryCode>ES</ns0:CountryCode>
+                  </ns0:Country>
+                </ns0:Tax>
+              </ns0:TaxSummary>
+            </ns0:OriginalOrderItemDifferential>
+            <ns0:PenaltyDifferential>
+              <ns0:Amount CurCode="EUR">0</ns0:Amount>
+            </ns0:PenaltyDifferential>
+            <ns0:DifferentialAmountDue>
+              <ns0:Amount CurCode="EUR">-12958</ns0:Amount>
+              <ns0:TaxSummary>
+                <ns0:TotalTaxAmount CurCode="EUR">3758</ns0:TotalTaxAmount>
+                <ns0:Tax>
+                  <ns0:Amount CurCode="EUR">200</ns0:Amount>
+                  <ns0:TaxCode>J9</ns0:TaxCode>
+                  <ns0:Country>
+                    <ns0:CountryCode>PT</ns0:CountryCode>
+                  </ns0:Country>
+                </ns0:Tax>
+                <ns0:Tax>
+                  <ns0:Amount CurCode="EUR">507</ns0:Amount>
+                  <ns0:TaxCode>PT</ns0:TaxCode>
+                  <ns0:Country>
+                    <ns0:CountryCode>PT</ns0:CountryCode>
+                  </ns0:Country>
+                </ns0:Tax>
+                <ns0:Tax>
+                  <ns0:Amount CurCode="EUR">1213</ns0:Amount>
+                  <ns0:TaxCode>YP</ns0:TaxCode>
+                  <ns0:Country>
+                    <ns0:CountryCode>PT</ns0:CountryCode>
+                  </ns0:Country>
+                </ns0:Tax>
+                <ns0:Tax>
+                  <ns0:Amount CurCode="EUR">1448</ns0:Amount>
+                  <ns0:TaxCode>JD</ns0:TaxCode>
+                  <ns0:Country>
+                    <ns0:CountryCode>ES</ns0:CountryCode>
+                  </ns0:Country>
+                </ns0:Tax>
+                <ns0:Tax>
+                  <ns0:Amount CurCode="EUR">63</ns0:Amount>
+                  <ns0:TaxCode>OG</ns0:TaxCode>
+                  <ns0:Country>
+                    <ns0:CountryCode>ES</ns0:CountryCode>
+                  </ns0:Country>
+                </ns0:Tax>
+                <ns0:Tax>
+                  <ns0:Amount CurCode="EUR">327</ns0:Amount>
+                  <ns0:TaxCode>QV</ns0:TaxCode>
+                  <ns0:Country>
+                    <ns0:CountryCode>ES</ns0:CountryCode>
+                  </ns0:Country>
+                </ns0:Tax>
+              </ns0:TaxSummary>
+            </ns0:DifferentialAmountDue>
+          </ns0:DeleteOrderItem>
+          <ns0:DeleteOrderItem>
+            <ns0:OrderItemRefID>IB9dd0014a10ba42349493cb4806f98de9OC_04_1APAX_PAX1.1</ns0:OrderItemRefID>
+            <ns0:OriginalOrderItemDifferential>
+              <ns0:Amount CurCode="EUR">1500</ns0:Amount>
+              <ns0:TaxSummary>
+                <ns0:TotalTaxAmount CurCode="EUR">1838</ns0:TotalTaxAmount>
+                <ns0:Tax>
+                  <ns0:Amount CurCode="EUR">1448</ns0:Amount>
+                  <ns0:TaxCode>JD</ns0:TaxCode>
+                  <ns0:Country>
+                    <ns0:CountryCode>ES</ns0:CountryCode>
+                  </ns0:Country>
+                </ns0:Tax>
+                <ns0:Tax>
+                  <ns0:Amount CurCode="EUR">63</ns0:Amount>
+                  <ns0:TaxCode>OG</ns0:TaxCode>
+                  <ns0:Country>
+                    <ns0:CountryCode>ES</ns0:CountryCode>
+                  </ns0:Country>
+                </ns0:Tax>
+                <ns0:Tax>
+                  <ns0:Amount CurCode="EUR">327</ns0:Amount>
+                  <ns0:TaxCode>QV</ns0:TaxCode>
+                  <ns0:Country>
+                    <ns0:CountryCode>ES</ns0:CountryCode>
+                  </ns0:Country>
+                </ns0:Tax>
+              </ns0:TaxSummary>
+            </ns0:OriginalOrderItemDifferential>
+            <ns0:PenaltyDifferential>
+              <ns0:Amount CurCode="EUR">0</ns0:Amount>
+            </ns0:PenaltyDifferential>
+            <ns0:DifferentialAmountDue>
+              <ns0:Amount CurCode="EUR">-3338</ns0:Amount>
+              <ns0:TaxSummary>
+                <ns0:TotalTaxAmount CurCode="EUR">1838</ns0:TotalTaxAmount>
+                <ns0:Tax>
+                  <ns0:Amount CurCode="EUR">1448</ns0:Amount>
+                  <ns0:TaxCode>JD</ns0:TaxCode>
+                  <ns0:Country>
+                    <ns0:CountryCode>ES</ns0:CountryCode>
+                  </ns0:Country>
+                </ns0:Tax>
+                <ns0:Tax>
+                  <ns0:Amount CurCode="EUR">63</ns0:Amount>
+                  <ns0:TaxCode>OG</ns0:TaxCode>
+                  <ns0:Country>
+                    <ns0:CountryCode>ES</ns0:CountryCode>
+                  </ns0:Country>
+                </ns0:Tax>
+                <ns0:Tax>
+                  <ns0:Amount CurCode="EUR">327</ns0:Amount>
+                  <ns0:TaxCode>QV</ns0:TaxCode>
+                  <ns0:Country>
+                    <ns0:CountryCode>ES</ns0:CountryCode>
+                  </ns0:Country>
+                </ns0:Tax>
+              </ns0:TaxSummary>
+            </ns0:DifferentialAmountDue>
+          </ns0:DeleteOrderItem>
+        </ns0:ReshopOffer>
+      </ns0:ReshopOffers>
+    </ns0:ReshopResults>
+    <ns0:ShoppingResponse>
+      <ns0:ShoppingResponseID>GW-1674508808050-cUKmX</ns0:ShoppingResponseID>
+    </ns0:ShoppingResponse>
+    <ns0:Warning>
+      <ns0:Code>486</ns0:Code>
+      <ns0:DescText>For services bought outside of the NDC channel, please request refunds via the same channel used to purchased them</ns0:DescText>
+    </ns0:Warning>
+  </ns0:Response>
+</ns0:AMA_TravelOrderReshopRS>

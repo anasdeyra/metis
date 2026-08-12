@@ -1,0 +1,1922 @@
+<!-- TRIMMED FOR SIZE by the skill build: repeating elements reduced to 3 (Desc x9 -> 3; Tax x12 -> 3; Tax x9 -> 3). Structure is intact; counts are not representative. -->
+<ns0:AMA_TravelOfferPriceRS xmlns:ns0="http://xml.amadeus.com/2010/06/Travel_OfferPriceRQ_v1">
+  <ns0:Response>
+    <ns0:DataLists>
+      <ns0:BaggageAllowanceList>
+        <ns0:BaggageAllowance>
+          <ns0:BaggageAllowanceID>Pbga8iqmo58f8i6qj</ns0:BaggageAllowanceID>
+          <ns0:TypeCode>CheckedBag</ns0:TypeCode>
+          <ns0:ApplicablePartyText>Traveler</ns0:ApplicablePartyText>
+          <ns0:DescText>CHECKED ALLOWANCE</ns0:DescText>
+          <ns0:PieceAllowance>
+            <ns0:ApplicablePartyText>Traveler</ns0:ApplicablePartyText>
+            <ns0:TotalQty>2</ns0:TotalQty>
+            <ns0:PieceDimensionAllowance>
+              <ns0:Qty>2</ns0:Qty>
+            </ns0:PieceDimensionAllowance>
+          </ns0:PieceAllowance>
+        </ns0:BaggageAllowance>
+        <ns0:BaggageAllowance>
+          <ns0:BaggageAllowanceID>Pbga3eg63chl7ust7</ns0:BaggageAllowanceID>
+          <ns0:TypeCode>CheckedBag</ns0:TypeCode>
+          <ns0:ApplicablePartyText>Traveler</ns0:ApplicablePartyText>
+          <ns0:DescText>CHECKED ALLOWANCE</ns0:DescText>
+          <ns0:PieceAllowance>
+            <ns0:ApplicablePartyText>Traveler</ns0:ApplicablePartyText>
+            <ns0:TotalQty>2</ns0:TotalQty>
+            <ns0:PieceDimensionAllowance>
+              <ns0:Qty>2</ns0:Qty>
+            </ns0:PieceDimensionAllowance>
+          </ns0:PieceAllowance>
+        </ns0:BaggageAllowance>
+        <ns0:BaggageAllowance>
+          <ns0:BaggageAllowanceID>Pbgau0w59ixycax2t</ns0:BaggageAllowanceID>
+          <ns0:TypeCode>CheckedBag</ns0:TypeCode>
+          <ns0:ApplicablePartyText>Traveler</ns0:ApplicablePartyText>
+          <ns0:DescText>CHECKED ALLOWANCE</ns0:DescText>
+          <ns0:PieceAllowance>
+            <ns0:ApplicablePartyText>Traveler</ns0:ApplicablePartyText>
+            <ns0:TotalQty>2</ns0:TotalQty>
+            <ns0:PieceDimensionAllowance>
+              <ns0:Qty>2</ns0:Qty>
+            </ns0:PieceDimensionAllowance>
+          </ns0:PieceAllowance>
+        </ns0:BaggageAllowance>
+        <ns0:BaggageAllowance>
+          <ns0:BaggageAllowanceID>Pbgar5dpu7dylywtz</ns0:BaggageAllowanceID>
+          <ns0:TypeCode>CheckedBag</ns0:TypeCode>
+          <ns0:ApplicablePartyText>Traveler</ns0:ApplicablePartyText>
+          <ns0:DescText>CHECKED ALLOWANCE</ns0:DescText>
+          <ns0:PieceAllowance>
+            <ns0:ApplicablePartyText>Traveler</ns0:ApplicablePartyText>
+            <ns0:TotalQty>2</ns0:TotalQty>
+            <ns0:PieceDimensionAllowance>
+              <ns0:Qty>2</ns0:Qty>
+            </ns0:PieceDimensionAllowance>
+          </ns0:PieceAllowance>
+        </ns0:BaggageAllowance>
+      </ns0:BaggageAllowanceList>
+      <ns0:FareList>
+        <ns0:FareGroup refs="Pfrkl8mlqt83ueml6" ListKey="Pfcpl8mlqt83ueml6">
+          <ns0:Fare>
+            <ns0:FareCode>70J</ns0:FareCode>
+          </ns0:Fare>
+          <ns0:FareBasisCode>
+            <ns0:Code>DLW8A7S5</ns0:Code>
+          </ns0:FareBasisCode>
+        </ns0:FareGroup>
+        <ns0:FareGroup refs="Pfrksx9gzs8pwas8y" ListKey="Pfcpsx9gzs8pwas8y">
+          <ns0:Fare>
+            <ns0:FareCode>70J</ns0:FareCode>
+          </ns0:Fare>
+          <ns0:FareBasisCode>
+            <ns0:Code>RLW8A7S5</ns0:Code>
+          </ns0:FareBasisCode>
+        </ns0:FareGroup>
+        <ns0:FareGroup refs="Pfrkwnei470ka3g50" ListKey="Pfcpwnei470ka3g50">
+          <ns0:Fare>
+            <ns0:FareCode>70J</ns0:FareCode>
+          </ns0:Fare>
+          <ns0:FareBasisCode>
+            <ns0:Code>DLW8A7S9</ns0:Code>
+          </ns0:FareBasisCode>
+        </ns0:FareGroup>
+        <ns0:FareGroup refs="Pfrk37xulbgkyxqfq" ListKey="Pfcp37xulbgkyxqfq">
+          <ns0:Fare>
+            <ns0:FareCode>70J</ns0:FareCode>
+          </ns0:Fare>
+          <ns0:FareBasisCode>
+            <ns0:Code>RLW8A7S9</ns0:Code>
+          </ns0:FareBasisCode>
+        </ns0:FareGroup>
+        <ns0:FareGroup refs="Pfrkuk3xsbqez1r07" ListKey="Pfcpuk3xsbqez1r07">
+          <ns0:Fare>
+            <ns0:FareCode>749</ns0:FareCode>
+          </ns0:Fare>
+          <ns0:FareBasisCode>
+            <ns0:Code>DLW8A7H5</ns0:Code>
+          </ns0:FareBasisCode>
+        </ns0:FareGroup>
+        <ns0:FareGroup refs="Pfrkrh8j161aycyob" ListKey="Pfcprh8j161aycyob">
+          <ns0:Fare>
+            <ns0:FareCode>749</ns0:FareCode>
+          </ns0:Fare>
+          <ns0:FareBasisCode>
+            <ns0:Code>RLW8A7H5</ns0:Code>
+          </ns0:FareBasisCode>
+        </ns0:FareGroup>
+      </ns0:FareList>
+      <ns0:OriginDestList>
+        <ns0:OriginDest>
+          <ns0:OriginDestID>OD1</ns0:OriginDestID>
+          <ns0:OriginCode>DFW</ns0:OriginCode>
+          <ns0:DestCode>CDG</ns0:DestCode>
+          <ns0:PaxJourneyRefID>Pflt274zdz9yl2h2x</ns0:PaxJourneyRefID>
+        </ns0:OriginDest>
+        <ns0:OriginDest>
+          <ns0:OriginDestID>OD2</ns0:OriginDestID>
+          <ns0:OriginCode>CDG</ns0:OriginCode>
+          <ns0:DestCode>DFW</ns0:DestCode>
+          <ns0:PaxJourneyRefID>Pfltnv5wx3fe0etfa</ns0:PaxJourneyRefID>
+        </ns0:OriginDest>
+      </ns0:OriginDestList>
+      <ns0:PaxJourneyList>
+        <ns0:PaxJourney>
+          <ns0:PaxJourneyID>Pflt274zdz9yl2h2x</ns0:PaxJourneyID>
+          <ns0:Duration>PT9H10M</ns0:Duration>
+          <ns0:PaxSegmentRefID>Isgm0100598df44ef</ns0:PaxSegmentRefID>
+        </ns0:PaxJourney>
+        <ns0:PaxJourney>
+          <ns0:PaxJourneyID>Pfltnv5wx3fe0etfa</ns0:PaxJourneyID>
+          <ns0:Duration>PT10H45M</ns0:Duration>
+          <ns0:PaxSegmentRefID>Isgm0300598df44ef</ns0:PaxSegmentRefID>
+        </ns0:PaxJourney>
+      </ns0:PaxJourneyList>
+      <ns0:PaxList>
+        <ns0:Pax>
+          <ns0:PaxID>1</ns0:PaxID>
+          <ns0:PTC>ADT</ns0:PTC>
+        </ns0:Pax>
+        <ns0:Pax>
+          <ns0:PaxID>2</ns0:PaxID>
+          <ns0:PTC>CHD</ns0:PTC>
+        </ns0:Pax>
+      </ns0:PaxList>
+      <ns0:PaxSegmentList>
+        <ns0:PaxSegment>
+          <ns0:PaxSegmentID>Isgm0100598df44ef</ns0:PaxSegmentID>
+          <ns0:SecureFlightInd>true</ns0:SecureFlightInd>
+          <ns0:Duration>PT9H10M</ns0:Duration>
+          <ns0:Dep>
+            <ns0:IATA_LocationCode>DFW</ns0:IATA_LocationCode>
+            <ns0:AircraftScheduledDateTime>2024-10-28T17:55:00</ns0:AircraftScheduledDateTime>
+            <ns0:TerminalName>0</ns0:TerminalName>
+            <ns0:StationName>Dallas/Fort Worth International</ns0:StationName>
+          </ns0:Dep>
+          <ns0:Arrival>
+            <ns0:IATA_LocationCode>CDG</ns0:IATA_LocationCode>
+            <ns0:AircraftScheduledDateTime>2024-10-29T09:05:00</ns0:AircraftScheduledDateTime>
+            <ns0:TerminalName>2B</ns0:TerminalName>
+            <ns0:StationName>Paris Charles de Gaulle</ns0:StationName>
+          </ns0:Arrival>
+          <ns0:MarketingCarrierInfo>
+            <ns0:CarrierDesigCode>AA</ns0:CarrierDesigCode>
+            <ns0:CarrierName>American Airlines</ns0:CarrierName>
+            <ns0:MarketingCarrierFlightNumberText>48</ns0:MarketingCarrierFlightNumberText>
+          </ns0:MarketingCarrierInfo>
+          <ns0:OperatingCarrierInfo>
+            <ns0:CarrierDesigCode>AA</ns0:CarrierDesigCode>
+            <ns0:CarrierName>American Airlines</ns0:CarrierName>
+            <ns0:OperatingCarrierFlightNumberText>48</ns0:OperatingCarrierFlightNumberText>
+          </ns0:OperatingCarrierInfo>
+          <ns0:DatedOperatingLeg>
+            <ns0:DatedOperatingLegID>S1</ns0:DatedOperatingLegID>
+            <ns0:CarrierAircraftType>
+              <ns0:CarrierAircraftTypeCode>788</ns0:CarrierAircraftTypeCode>
+              <ns0:CarrierAircraftTypeName>Boeing 787-8</ns0:CarrierAircraftTypeName>
+            </ns0:CarrierAircraftType>
+            <ns0:Dep>
+              <ns0:IATA_LocationCode>DFW</ns0:IATA_LocationCode>
+              <ns0:AircraftScheduledDateTime>2024-10-28T17:55:00</ns0:AircraftScheduledDateTime>
+              <ns0:TerminalName>0</ns0:TerminalName>
+              <ns0:StationName>Dallas/Fort Worth International</ns0:StationName>
+            </ns0:Dep>
+            <ns0:Arrival>
+              <ns0:IATA_LocationCode>CDG</ns0:IATA_LocationCode>
+              <ns0:AircraftScheduledDateTime>2024-10-29T09:05:00</ns0:AircraftScheduledDateTime>
+              <ns0:TerminalName>2B</ns0:TerminalName>
+              <ns0:StationName>Paris Charles de Gaulle</ns0:StationName>
+            </ns0:Arrival>
+          </ns0:DatedOperatingLeg>
+        </ns0:PaxSegment>
+        <ns0:PaxSegment>
+          <ns0:PaxSegmentID>Isgm0300598df44ef</ns0:PaxSegmentID>
+          <ns0:SecureFlightInd>true</ns0:SecureFlightInd>
+          <ns0:Duration>PT10H45M</ns0:Duration>
+          <ns0:Dep>
+            <ns0:IATA_LocationCode>CDG</ns0:IATA_LocationCode>
+            <ns0:AircraftScheduledDateTime>2024-11-18T11:05:00</ns0:AircraftScheduledDateTime>
+            <ns0:TerminalName>2B</ns0:TerminalName>
+            <ns0:StationName>Paris Charles de Gaulle</ns0:StationName>
+          </ns0:Dep>
+          <ns0:Arrival>
+            <ns0:IATA_LocationCode>DFW</ns0:IATA_LocationCode>
+            <ns0:AircraftScheduledDateTime>2024-11-18T14:50:00</ns0:AircraftScheduledDateTime>
+            <ns0:TerminalName>D</ns0:TerminalName>
+            <ns0:StationName>Dallas/Fort Worth International</ns0:StationName>
+          </ns0:Arrival>
+          <ns0:MarketingCarrierInfo>
+            <ns0:CarrierDesigCode>AA</ns0:CarrierDesigCode>
+            <ns0:CarrierName>American Airlines</ns0:CarrierName>
+            <ns0:MarketingCarrierFlightNumberText>49</ns0:MarketingCarrierFlightNumberText>
+          </ns0:MarketingCarrierInfo>
+          <ns0:OperatingCarrierInfo>
+            <ns0:CarrierDesigCode>AA</ns0:CarrierDesigCode>
+            <ns0:CarrierName>American Airlines</ns0:CarrierName>
+            <ns0:OperatingCarrierFlightNumberText>49</ns0:OperatingCarrierFlightNumberText>
+          </ns0:OperatingCarrierInfo>
+          <ns0:DatedOperatingLeg>
+            <ns0:DatedOperatingLegID>S2</ns0:DatedOperatingLegID>
+            <ns0:CarrierAircraftType>
+              <ns0:CarrierAircraftTypeCode>788</ns0:CarrierAircraftTypeCode>
+              <ns0:CarrierAircraftTypeName>Boeing 787-8</ns0:CarrierAircraftTypeName>
+            </ns0:CarrierAircraftType>
+            <ns0:Dep>
+              <ns0:IATA_LocationCode>CDG</ns0:IATA_LocationCode>
+              <ns0:AircraftScheduledDateTime>2024-11-18T11:05:00</ns0:AircraftScheduledDateTime>
+              <ns0:TerminalName>2B</ns0:TerminalName>
+              <ns0:StationName>Paris Charles de Gaulle</ns0:StationName>
+            </ns0:Dep>
+            <ns0:Arrival>
+              <ns0:IATA_LocationCode>DFW</ns0:IATA_LocationCode>
+              <ns0:AircraftScheduledDateTime>2024-11-18T14:50:00</ns0:AircraftScheduledDateTime>
+              <ns0:TerminalName>D</ns0:TerminalName>
+              <ns0:StationName>Dallas/Fort Worth International</ns0:StationName>
+            </ns0:Arrival>
+          </ns0:DatedOperatingLeg>
+        </ns0:PaxSegment>
+      </ns0:PaxSegmentList>
+      <ns0:PriceClassList>
+        <ns0:PriceClass>
+          <ns0:PriceClassID>Ppcv2w9qb9j2txx9</ns0:PriceClassID>
+          <ns0:Code>AAAT-FBUS</ns0:Code>
+          <ns0:Name>Flagship Business</ns0:Name>
+          <ns0:DisplayOrderText>15</ns0:DisplayOrderText>
+          <ns0:Desc>
+            <ns0:DescID>FFM1-DESC1</ns0:DescID>
+            <ns0:DescText>Check 2 bags free</ns0:DescText>
+          </ns0:Desc>
+          <ns0:Desc>
+            <ns0:DescID>FFM1-DESC2</ns0:DescID>
+            <ns0:DescText>Choose a lie-flat seat</ns0:DescText>
+          </ns0:Desc>
+          <ns0:Desc>
+            <ns0:DescID>FFM1-DESC3</ns0:DescID>
+            <ns0:DescText>Priority check-in and boarding access (Groups 1-4)</ns0:DescText>
+          </ns0:Desc>
+        </ns0:PriceClass>
+        <ns0:PriceClass>
+          <ns0:PriceClassID>Ppcub3g9keitkmdy</ns0:PriceClassID>
+          <ns0:Code>AAAT-FBUSFL</ns0:Code>
+          <ns0:Name>Flagship Business Flexible</ns0:Name>
+          <ns0:DisplayOrderText>18</ns0:DisplayOrderText>
+          <ns0:Desc>
+            <ns0:DescID>FFM2-DESC1</ns0:DescID>
+            <ns0:DescText>Check 2 bags free</ns0:DescText>
+          </ns0:Desc>
+          <ns0:Desc>
+            <ns0:DescID>FFM2-DESC2</ns0:DescID>
+            <ns0:DescText>Choose a lie-flat seat</ns0:DescText>
+          </ns0:Desc>
+          <ns0:Desc>
+            <ns0:DescID>FFM2-DESC3</ns0:DescID>
+            <ns0:DescText>Priority check-in and boarding access (Groups 1-4)</ns0:DescText>
+          </ns0:Desc>
+        </ns0:PriceClass>
+        <ns0:PriceClass>
+          <ns0:PriceClassID>Ppc4cr24esdujumb</ns0:PriceClassID>
+          <ns0:Code>AAAT-FBUSPL</ns0:Code>
+          <ns0:Name>Flagship Business Plus</ns0:Name>
+          <ns0:DisplayOrderText>16</ns0:DisplayOrderText>
+          <ns0:Desc>
+            <ns0:DescID>FFM3-DESC1</ns0:DescID>
+            <ns0:DescText>Check 3 bags free</ns0:DescText>
+          </ns0:Desc>
+          <ns0:Desc>
+            <ns0:DescID>FFM3-DESC2</ns0:DescID>
+            <ns0:DescText>Choose a lie-flat seat</ns0:DescText>
+          </ns0:Desc>
+          <ns0:Desc>
+            <ns0:DescID>FFM3-DESC3</ns0:DescID>
+            <ns0:DescText>Priority boarding access (Groups 1-4)</ns0:DescText>
+          </ns0:Desc>
+        </ns0:PriceClass>
+      </ns0:PriceClassList>
+    </ns0:DataLists>
+    <ns0:Metadata>
+      <ns0:Other>
+        <ns0:OtherMetadata>
+          <ns0:CurrencyMetadatas>
+            <ns0:CurrencyMetadata MetadataKey="USD">
+              <ns0:Decimals>2</ns0:Decimals>
+            </ns0:CurrencyMetadata>
+            <ns0:CurrencyMetadata MetadataKey="EUR">
+              <ns0:Decimals>2</ns0:Decimals>
+            </ns0:CurrencyMetadata>
+          </ns0:CurrencyMetadatas>
+        </ns0:OtherMetadata>
+        <ns0:OtherMetadata>
+          <ns0:RuleMetadatas>
+            <ns0:RuleMetadata MetadataKey="PcncP81071294-AE91-4066-824BN">
+              <ns0:RuleID>Cancel</ns0:RuleID>
+              <ns0:Values>
+                <ns0:Value>
+                  <ns0:Instruction>Not Allowed</ns0:Instruction>
+                </ns0:Value>
+              </ns0:Values>
+            </ns0:RuleMetadata>
+          </ns0:RuleMetadatas>
+        </ns0:OtherMetadata>
+      </ns0:Other>
+    </ns0:Metadata>
+    <ns0:OtherOffers>
+      <ns0:Offer>
+        <ns0:OfferID>TOCa3okMOJRU2MTSGlvCrPD.1_1A_06b9a93d-bf85-4982-b10c-1f7771e80ccb_1A_P81071294-AE91-4066-824Benjs0yhot36rq-2</ns0:OfferID>
+        <ns0:OwnerCode>AA</ns0:OwnerCode>
+        <ns0:ValidatingCarrierCode>AA</ns0:ValidatingCarrierCode>
+        <ns0:OfferExpirationDateTime>2024-09-09T19:26:52Z</ns0:OfferExpirationDateTime>
+        <ns0:PaymentTimeLimitDateTime>2024-09-12T23:59:00</ns0:PaymentTimeLimitDateTime>
+        <ns0:JourneyOverview>
+          <ns0:JourneyPriceClass>
+            <ns0:PriceClassRefID>Ppcub3g9keitkmdy</ns0:PriceClassRefID>
+            <ns0:PaxJourneyRefID>Pflt274zdz9yl2h2x</ns0:PaxJourneyRefID>
+          </ns0:JourneyPriceClass>
+          <ns0:JourneyPriceClass>
+            <ns0:PriceClassRefID>Ppcub3g9keitkmdy</ns0:PriceClassRefID>
+            <ns0:PaxJourneyRefID>Pfltnv5wx3fe0etfa</ns0:PaxJourneyRefID>
+          </ns0:JourneyPriceClass>
+        </ns0:JourneyOverview>
+        <ns0:PTC_OfferParameters>
+          <ns0:PTC_PricedCode>ADT</ns0:PTC_PricedCode>
+          <ns0:PTC_RequestedCode>ADT</ns0:PTC_RequestedCode>
+          <ns0:RequestedPaxNumber>1</ns0:RequestedPaxNumber>
+          <ns0:PricedPaxNumber>1</ns0:PricedPaxNumber>
+        </ns0:PTC_OfferParameters>
+        <ns0:PTC_OfferParameters>
+          <ns0:PTC_PricedCode>CHD</ns0:PTC_PricedCode>
+          <ns0:PTC_RequestedCode>CHD</ns0:PTC_RequestedCode>
+          <ns0:RequestedPaxNumber>1</ns0:RequestedPaxNumber>
+          <ns0:PricedPaxNumber>1</ns0:PricedPaxNumber>
+        </ns0:PTC_OfferParameters>
+        <ns0:OfferItem>
+          <ns0:OfferItemID>P81071294-AE91-4066-824Benjs0yhot36rq-2-1</ns0:OfferItemID>
+          <ns0:MandatoryInd>true</ns0:MandatoryInd>
+          <ns0:FareDetail>
+            <ns0:FareIndicatorCode>0</ns0:FareIndicatorCode>
+            <ns0:PassengerRefs>1</ns0:PassengerRefs>
+            <ns0:Price>
+              <ns0:BaseAmount Code="USD">605000</ns0:BaseAmount>
+              <ns0:Taxes>
+                <ns0:Total Code="USD">220230</ns0:Total>
+                <ns0:Breakdown>
+                  <ns0:Tax>
+                    <ns0:Amount Code="USD">560</ns0:Amount>
+                    <ns0:Nation>US</ns0:Nation>
+                    <ns0:TaxCode>AY</ns0:TaxCode>
+                    <ns0:Description>United States Passenger Civil Aviation Security Service Fee</ns0:Description>
+                  </ns0:Tax>
+                  <ns0:Tax>
+                    <ns0:Amount Code="USD">200000</ns0:Amount>
+                    <ns0:TaxCode>YR</ns0:TaxCode>
+                    <ns0:Description>AA YR surcharge</ns0:Description>
+                  </ns0:Tax>
+                  <ns0:Tax>
+                    <ns0:Amount Code="USD">2220</ns0:Amount>
+                    <ns0:Nation>US</ns0:Nation>
+                    <ns0:TaxCode>US</ns0:TaxCode>
+                    <ns0:Description>US International Departure Tax</ns0:Description>
+                  </ns0:Tax>
+                </ns0:Breakdown>
+              </ns0:Taxes>
+            </ns0:Price>
+            <ns0:FareComponent>
+              <ns0:Price>
+                <ns0:BaseAmount Code="USD">340000</ns0:BaseAmount>
+                <ns0:Taxes>
+                  <ns0:Total Code="USD">103230</ns0:Total>
+                  <ns0:Breakdown>
+                    <ns0:Tax>
+                      <ns0:Amount Code="USD">560</ns0:Amount>
+                      <ns0:Nation>US</ns0:Nation>
+                      <ns0:TaxCode>AY</ns0:TaxCode>
+                      <ns0:Description>United States Passenger Civil Aviation Security Service Fee</ns0:Description>
+                    </ns0:Tax>
+                    <ns0:Tax>
+                      <ns0:Amount Code="USD">100000</ns0:Amount>
+                      <ns0:TaxCode>YR</ns0:TaxCode>
+                      <ns0:Description>AA YR surcharge</ns0:Description>
+                    </ns0:Tax>
+                    <ns0:Tax>
+                      <ns0:Amount Code="USD">2220</ns0:Amount>
+                      <ns0:Nation>US</ns0:Nation>
+                      <ns0:TaxCode>US</ns0:TaxCode>
+                      <ns0:Description>US International Departure Tax</ns0:Description>
+                    </ns0:Tax>
+                    <ns0:Tax>
+                      <ns0:Amount Code="USD">450</ns0:Amount>
+                      <ns0:Nation>US</ns0:Nation>
+                      <ns0:TaxCode>XF</ns0:TaxCode>
+                      <ns0:Description>US Passenger Facility Charge</ns0:Description>
+                    </ns0:Tax>
+                  </ns0:Breakdown>
+                </ns0:Taxes>
+              </ns0:Price>
+              <ns0:FareBasis>
+                <ns0:FareBasisCode refs="Pfcpwnei470ka3g50">
+                  <ns0:Code>DLW8A7S9</ns0:Code>
+                </ns0:FareBasisCode>
+                <ns0:FareBasisCityPair>DFWPARAA</ns0:FareBasisCityPair>
+                <ns0:RBD>D</ns0:RBD>
+                <ns0:CabinType>
+                  <ns0:CabinTypeCode>C</ns0:CabinTypeCode>
+                  <ns0:CabinTypeName>BUSINESS</ns0:CabinTypeName>
+                </ns0:CabinType>
+              </ns0:FareBasis>
+              <ns0:FareRules>
+                <ns0:AdvanceStay>
+                  <ns0:AdvancePurchase Context="Latest">P28D</ns0:AdvancePurchase>
+                  <ns0:AdvanceTicketing>
+                    <ns0:AdvanceReservation Context="Earliest">P28D</ns0:AdvanceReservation>
+                    <ns0:AdvanceDeparture Context="Latest">P3D</ns0:AdvanceDeparture>
+                  </ns0:AdvanceTicketing>
+                </ns0:AdvanceStay>
+                <ns0:Ticketing>
+                  <ns0:Endorsements>
+                    <ns0:Endorsement>NONREF AFTER DEPARTURE</ns0:Endorsement>
+                    <ns0:Endorsement>RESTRICTIONS APPLY</ns0:Endorsement>
+                  </ns0:Endorsements>
+                </ns0:Ticketing>
+                <ns0:Remarks>
+                  <ns0:Remark>Ticketing at least 28 DAYS before departure</ns0:Remark>
+                </ns0:Remarks>
+              </ns0:FareRules>
+              <ns0:PriceClassRef>Ppcub3g9keitkmdy</ns0:PriceClassRef>
+              <ns0:SegmentRefs>Isgm0100598df44ef</ns0:SegmentRefs>
+            </ns0:FareComponent>
+            <ns0:FareComponent>
+              <ns0:Price>
+                <ns0:BaseAmount Code="USD">265000</ns0:BaseAmount>
+                <ns0:Taxes>
+                  <ns0:Total Code="USD">117000</ns0:Total>
+                  <ns0:Breakdown>
+                    <ns0:Tax>
+                      <ns0:Amount Code="USD">2430</ns0:Amount>
+                      <ns0:Nation>FR</ns0:Nation>
+                      <ns0:TaxCode>FR</ns0:TaxCode>
+                      <ns0:LocalAmount Code="EUR">2189</ns0:LocalAmount>
+                      <ns0:Description>France Civil Aviation Tax Domestic And International</ns0:Description>
+                    </ns0:Tax>
+                    <ns0:Tax>
+                      <ns0:Amount Code="USD">383</ns0:Amount>
+                      <ns0:Nation>US</ns0:Nation>
+                      <ns0:TaxCode>XA</ns0:TaxCode>
+                      <ns0:Description>United States APHIS Passenger Fee Passengers</ns0:Description>
+                    </ns0:Tax>
+                    <ns0:Tax>
+                      <ns0:Amount Code="USD">697</ns0:Amount>
+                      <ns0:Nation>US</ns0:Nation>
+                      <ns0:TaxCode>YC</ns0:TaxCode>
+                      <ns0:Description>United States Customs User Fee</ns0:Description>
+                    </ns0:Tax>
+                  </ns0:Breakdown>
+                </ns0:Taxes>
+              </ns0:Price>
+              <ns0:FareBasis>
+                <ns0:FareBasisCode refs="Pfcp37xulbgkyxqfq">
+                  <ns0:Code>RLW8A7S9</ns0:Code>
+                </ns0:FareBasisCode>
+                <ns0:FareBasisCityPair>PARDFWAA</ns0:FareBasisCityPair>
+                <ns0:RBD>R</ns0:RBD>
+                <ns0:CabinType>
+                  <ns0:CabinTypeCode>C</ns0:CabinTypeCode>
+                  <ns0:CabinTypeName>BUSINESS</ns0:CabinTypeName>
+                </ns0:CabinType>
+              </ns0:FareBasis>
+              <ns0:FareRules>
+                <ns0:AdvanceStay>
+                  <ns0:AdvancePurchase Context="Latest">P28D</ns0:AdvancePurchase>
+                  <ns0:AdvanceTicketing>
+                    <ns0:AdvanceReservation Context="Earliest">P28D</ns0:AdvanceReservation>
+                    <ns0:AdvanceDeparture Context="Latest">P3D</ns0:AdvanceDeparture>
+                  </ns0:AdvanceTicketing>
+                </ns0:AdvanceStay>
+                <ns0:Ticketing>
+                  <ns0:Endorsements>
+                    <ns0:Endorsement>NONREF AFTER DEPARTURE</ns0:Endorsement>
+                    <ns0:Endorsement>RESTRICTIONS APPLY</ns0:Endorsement>
+                  </ns0:Endorsements>
+                </ns0:Ticketing>
+                <ns0:Remarks>
+                  <ns0:Remark>Ticketing at least 28 DAYS before departure</ns0:Remark>
+                </ns0:Remarks>
+              </ns0:FareRules>
+              <ns0:PriceClassRef>Ppcub3g9keitkmdy</ns0:PriceClassRef>
+              <ns0:SegmentRefs>Isgm0300598df44ef</ns0:SegmentRefs>
+            </ns0:FareComponent>
+          </ns0:FareDetail>
+          <ns0:Service>
+            <ns0:ServiceID>Psvcfzmktzfywppkh</ns0:ServiceID>
+            <ns0:PaxRefID>1</ns0:PaxRefID>
+            <ns0:ServiceAssociations>
+              <ns0:PaxJourneyRefID>Pflt274zdz9yl2h2x</ns0:PaxJourneyRefID>
+              <ns0:PaxJourneyRefID>Pfltnv5wx3fe0etfa</ns0:PaxJourneyRefID>
+            </ns0:ServiceAssociations>
+          </ns0:Service>
+          <ns0:Price>
+            <ns0:TotalAmount CurCode="USD">825230</ns0:TotalAmount>
+          </ns0:Price>
+        </ns0:OfferItem>
+        <ns0:OfferItem>
+          <ns0:OfferItemID>P81071294-AE91-4066-824Benjs0yhot36rq-2-2</ns0:OfferItemID>
+          <ns0:MandatoryInd>true</ns0:MandatoryInd>
+          <ns0:FareDetail>
+            <ns0:FareIndicatorCode>0</ns0:FareIndicatorCode>
+            <ns0:PassengerRefs>2</ns0:PassengerRefs>
+            <ns0:Price>
+              <ns0:BaseAmount Code="USD">605000</ns0:BaseAmount>
+              <ns0:Taxes>
+                <ns0:Total Code="USD">220230</ns0:Total>
+                <ns0:Breakdown>
+                  <ns0:Tax>
+                    <ns0:Amount Code="USD">560</ns0:Amount>
+                    <ns0:Nation>US</ns0:Nation>
+                    <ns0:TaxCode>AY</ns0:TaxCode>
+                    <ns0:Description>United States Passenger Civil Aviation Security Service Fee</ns0:Description>
+                  </ns0:Tax>
+                  <ns0:Tax>
+                    <ns0:Amount Code="USD">200000</ns0:Amount>
+                    <ns0:TaxCode>YR</ns0:TaxCode>
+                    <ns0:Description>AA YR surcharge</ns0:Description>
+                  </ns0:Tax>
+                  <ns0:Tax>
+                    <ns0:Amount Code="USD">2220</ns0:Amount>
+                    <ns0:Nation>US</ns0:Nation>
+                    <ns0:TaxCode>US</ns0:TaxCode>
+                    <ns0:Description>US International Departure Tax</ns0:Description>
+                  </ns0:Tax>
+                </ns0:Breakdown>
+              </ns0:Taxes>
+            </ns0:Price>
+            <ns0:FareComponent>
+              <ns0:Price>
+                <ns0:BaseAmount Code="USD">340000</ns0:BaseAmount>
+                <ns0:Taxes>
+                  <ns0:Total Code="USD">103230</ns0:Total>
+                  <ns0:Breakdown>
+                    <ns0:Tax>
+                      <ns0:Amount Code="USD">560</ns0:Amount>
+                      <ns0:Nation>US</ns0:Nation>
+                      <ns0:TaxCode>AY</ns0:TaxCode>
+                      <ns0:Description>United States Passenger Civil Aviation Security Service Fee</ns0:Description>
+                    </ns0:Tax>
+                    <ns0:Tax>
+                      <ns0:Amount Code="USD">100000</ns0:Amount>
+                      <ns0:TaxCode>YR</ns0:TaxCode>
+                      <ns0:Description>AA YR surcharge</ns0:Description>
+                    </ns0:Tax>
+                    <ns0:Tax>
+                      <ns0:Amount Code="USD">2220</ns0:Amount>
+                      <ns0:Nation>US</ns0:Nation>
+                      <ns0:TaxCode>US</ns0:TaxCode>
+                      <ns0:Description>US International Departure Tax</ns0:Description>
+                    </ns0:Tax>
+                    <ns0:Tax>
+                      <ns0:Amount Code="USD">450</ns0:Amount>
+                      <ns0:Nation>US</ns0:Nation>
+                      <ns0:TaxCode>XF</ns0:TaxCode>
+                      <ns0:Description>US Passenger Facility Charge</ns0:Description>
+                    </ns0:Tax>
+                  </ns0:Breakdown>
+                </ns0:Taxes>
+              </ns0:Price>
+              <ns0:FareBasis>
+                <ns0:FareBasisCode refs="Pfcpwnei470ka3g50">
+                  <ns0:Code>DLW8A7S9</ns0:Code>
+                </ns0:FareBasisCode>
+                <ns0:FareBasisCityPair>DFWPARAA</ns0:FareBasisCityPair>
+                <ns0:RBD>D</ns0:RBD>
+                <ns0:CabinType>
+                  <ns0:CabinTypeCode>C</ns0:CabinTypeCode>
+                  <ns0:CabinTypeName>BUSINESS</ns0:CabinTypeName>
+                </ns0:CabinType>
+              </ns0:FareBasis>
+              <ns0:FareRules>
+                <ns0:AdvanceStay>
+                  <ns0:AdvancePurchase Context="Latest">P28D</ns0:AdvancePurchase>
+                  <ns0:AdvanceTicketing>
+                    <ns0:AdvanceReservation Context="Earliest">P28D</ns0:AdvanceReservation>
+                    <ns0:AdvanceDeparture Context="Latest">P3D</ns0:AdvanceDeparture>
+                  </ns0:AdvanceTicketing>
+                </ns0:AdvanceStay>
+                <ns0:Ticketing>
+                  <ns0:Endorsements>
+                    <ns0:Endorsement>NONREF AFTER DEPARTURE</ns0:Endorsement>
+                    <ns0:Endorsement>RESTRICTIONS APPLY</ns0:Endorsement>
+                  </ns0:Endorsements>
+                </ns0:Ticketing>
+                <ns0:Remarks>
+                  <ns0:Remark>Ticketing at least 28 DAYS before departure</ns0:Remark>
+                </ns0:Remarks>
+              </ns0:FareRules>
+              <ns0:PriceClassRef>Ppcub3g9keitkmdy</ns0:PriceClassRef>
+              <ns0:SegmentRefs>Isgm0100598df44ef</ns0:SegmentRefs>
+            </ns0:FareComponent>
+            <ns0:FareComponent>
+              <ns0:Price>
+                <ns0:BaseAmount Code="USD">265000</ns0:BaseAmount>
+                <ns0:Taxes>
+                  <ns0:Total Code="USD">117000</ns0:Total>
+                  <ns0:Breakdown>
+                    <ns0:Tax>
+                      <ns0:Amount Code="USD">2430</ns0:Amount>
+                      <ns0:Nation>FR</ns0:Nation>
+                      <ns0:TaxCode>FR</ns0:TaxCode>
+                      <ns0:LocalAmount Code="EUR">2189</ns0:LocalAmount>
+                      <ns0:Description>France Civil Aviation Tax Domestic And International</ns0:Description>
+                    </ns0:Tax>
+                    <ns0:Tax>
+                      <ns0:Amount Code="USD">383</ns0:Amount>
+                      <ns0:Nation>US</ns0:Nation>
+                      <ns0:TaxCode>XA</ns0:TaxCode>
+                      <ns0:Description>United States APHIS Passenger Fee Passengers</ns0:Description>
+                    </ns0:Tax>
+                    <ns0:Tax>
+                      <ns0:Amount Code="USD">697</ns0:Amount>
+                      <ns0:Nation>US</ns0:Nation>
+                      <ns0:TaxCode>YC</ns0:TaxCode>
+                      <ns0:Description>United States Customs User Fee</ns0:Description>
+                    </ns0:Tax>
+                  </ns0:Breakdown>
+                </ns0:Taxes>
+              </ns0:Price>
+              <ns0:FareBasis>
+                <ns0:FareBasisCode refs="Pfcp37xulbgkyxqfq">
+                  <ns0:Code>RLW8A7S9</ns0:Code>
+                </ns0:FareBasisCode>
+                <ns0:FareBasisCityPair>PARDFWAA</ns0:FareBasisCityPair>
+                <ns0:RBD>R</ns0:RBD>
+                <ns0:CabinType>
+                  <ns0:CabinTypeCode>C</ns0:CabinTypeCode>
+                  <ns0:CabinTypeName>BUSINESS</ns0:CabinTypeName>
+                </ns0:CabinType>
+              </ns0:FareBasis>
+              <ns0:FareRules>
+                <ns0:AdvanceStay>
+                  <ns0:AdvancePurchase Context="Latest">P28D</ns0:AdvancePurchase>
+                  <ns0:AdvanceTicketing>
+                    <ns0:AdvanceReservation Context="Earliest">P28D</ns0:AdvanceReservation>
+                    <ns0:AdvanceDeparture Context="Latest">P3D</ns0:AdvanceDeparture>
+                  </ns0:AdvanceTicketing>
+                </ns0:AdvanceStay>
+                <ns0:Ticketing>
+                  <ns0:Endorsements>
+                    <ns0:Endorsement>NONREF AFTER DEPARTURE</ns0:Endorsement>
+                    <ns0:Endorsement>RESTRICTIONS APPLY</ns0:Endorsement>
+                  </ns0:Endorsements>
+                </ns0:Ticketing>
+                <ns0:Remarks>
+                  <ns0:Remark>Ticketing at least 28 DAYS before departure</ns0:Remark>
+                </ns0:Remarks>
+              </ns0:FareRules>
+              <ns0:PriceClassRef>Ppcub3g9keitkmdy</ns0:PriceClassRef>
+              <ns0:SegmentRefs>Isgm0300598df44ef</ns0:SegmentRefs>
+            </ns0:FareComponent>
+          </ns0:FareDetail>
+          <ns0:Service>
+            <ns0:ServiceID>Psvc9iaoiemrgihig</ns0:ServiceID>
+            <ns0:PaxRefID>2</ns0:PaxRefID>
+            <ns0:ServiceAssociations>
+              <ns0:PaxJourneyRefID>Pflt274zdz9yl2h2x</ns0:PaxJourneyRefID>
+              <ns0:PaxJourneyRefID>Pfltnv5wx3fe0etfa</ns0:PaxJourneyRefID>
+            </ns0:ServiceAssociations>
+          </ns0:Service>
+          <ns0:Price>
+            <ns0:TotalAmount CurCode="USD">825230</ns0:TotalAmount>
+          </ns0:Price>
+        </ns0:OfferItem>
+        <ns0:TotalPrice>
+          <ns0:TotalAmount CurCode="USD">1650460</ns0:TotalAmount>
+        </ns0:TotalPrice>
+      </ns0:Offer>
+      <ns0:Offer>
+        <ns0:OfferID>TOCa3okMOJRU2MTSGlvCrPD.1_1A_06b9a93d-bf85-4982-b10c-1f7771e80ccb_1A_P81071294-AE91-4066-824Ba2hmvoveugj6p-3</ns0:OfferID>
+        <ns0:OwnerCode>AA</ns0:OwnerCode>
+        <ns0:ValidatingCarrierCode>AA</ns0:ValidatingCarrierCode>
+        <ns0:OfferExpirationDateTime>2024-09-09T19:26:52Z</ns0:OfferExpirationDateTime>
+        <ns0:PaymentTimeLimitDateTime>2024-09-12T23:59:00</ns0:PaymentTimeLimitDateTime>
+        <ns0:JourneyOverview>
+          <ns0:JourneyPriceClass>
+            <ns0:PriceClassRefID>Ppc4cr24esdujumb</ns0:PriceClassRefID>
+            <ns0:PaxJourneyRefID>Pflt274zdz9yl2h2x</ns0:PaxJourneyRefID>
+          </ns0:JourneyPriceClass>
+          <ns0:JourneyPriceClass>
+            <ns0:PriceClassRefID>Ppc4cr24esdujumb</ns0:PriceClassRefID>
+            <ns0:PaxJourneyRefID>Pfltnv5wx3fe0etfa</ns0:PaxJourneyRefID>
+          </ns0:JourneyPriceClass>
+        </ns0:JourneyOverview>
+        <ns0:PTC_OfferParameters>
+          <ns0:PTC_PricedCode>ADT</ns0:PTC_PricedCode>
+          <ns0:PTC_RequestedCode>ADT</ns0:PTC_RequestedCode>
+          <ns0:RequestedPaxNumber>1</ns0:RequestedPaxNumber>
+          <ns0:PricedPaxNumber>1</ns0:PricedPaxNumber>
+        </ns0:PTC_OfferParameters>
+        <ns0:PTC_OfferParameters>
+          <ns0:PTC_PricedCode>ADT</ns0:PTC_PricedCode>
+          <ns0:PTC_RequestedCode>CHD</ns0:PTC_RequestedCode>
+          <ns0:RequestedPaxNumber>1</ns0:RequestedPaxNumber>
+          <ns0:PricedPaxNumber>1</ns0:PricedPaxNumber>
+        </ns0:PTC_OfferParameters>
+        <ns0:OfferItem>
+          <ns0:OfferItemID>P81071294-AE91-4066-824Ba2hmvoveugj6p-3-1</ns0:OfferItemID>
+          <ns0:MandatoryInd>true</ns0:MandatoryInd>
+          <ns0:FareDetail>
+            <ns0:FareIndicatorCode>0</ns0:FareIndicatorCode>
+            <ns0:PassengerRefs>1</ns0:PassengerRefs>
+            <ns0:Price>
+              <ns0:BaseAmount Code="USD">575000</ns0:BaseAmount>
+              <ns0:Taxes>
+                <ns0:Total Code="USD">220230</ns0:Total>
+                <ns0:Breakdown>
+                  <ns0:Tax>
+                    <ns0:Amount Code="USD">560</ns0:Amount>
+                    <ns0:Nation>US</ns0:Nation>
+                    <ns0:TaxCode>AY</ns0:TaxCode>
+                    <ns0:Description>United States Passenger Civil Aviation Security Service Fee</ns0:Description>
+                  </ns0:Tax>
+                  <ns0:Tax>
+                    <ns0:Amount Code="USD">200000</ns0:Amount>
+                    <ns0:TaxCode>YR</ns0:TaxCode>
+                    <ns0:Description>AA YR surcharge</ns0:Description>
+                  </ns0:Tax>
+                  <ns0:Tax>
+                    <ns0:Amount Code="USD">2220</ns0:Amount>
+                    <ns0:Nation>US</ns0:Nation>
+                    <ns0:TaxCode>US</ns0:TaxCode>
+                    <ns0:Description>US International Departure Tax</ns0:Description>
+                  </ns0:Tax>
+                </ns0:Breakdown>
+              </ns0:Taxes>
+            </ns0:Price>
+            <ns0:FareComponent>
+              <ns0:Price>
+                <ns0:BaseAmount Code="USD">325000</ns0:BaseAmount>
+                <ns0:Taxes>
+                  <ns0:Total Code="USD">103230</ns0:Total>
+                  <ns0:Breakdown>
+                    <ns0:Tax>
+                      <ns0:Amount Code="USD">560</ns0:Amount>
+                      <ns0:Nation>US</ns0:Nation>
+                      <ns0:TaxCode>AY</ns0:TaxCode>
+                      <ns0:Description>United States Passenger Civil Aviation Security Service Fee</ns0:Description>
+                    </ns0:Tax>
+                    <ns0:Tax>
+                      <ns0:Amount Code="USD">100000</ns0:Amount>
+                      <ns0:TaxCode>YR</ns0:TaxCode>
+                      <ns0:Description>AA YR surcharge</ns0:Description>
+                    </ns0:Tax>
+                    <ns0:Tax>
+                      <ns0:Amount Code="USD">2220</ns0:Amount>
+                      <ns0:Nation>US</ns0:Nation>
+                      <ns0:TaxCode>US</ns0:TaxCode>
+                      <ns0:Description>US International Departure Tax</ns0:Description>
+                    </ns0:Tax>
+                    <ns0:Tax>
+                      <ns0:Amount Code="USD">450</ns0:Amount>
+                      <ns0:Nation>US</ns0:Nation>
+                      <ns0:TaxCode>XF</ns0:TaxCode>
+                      <ns0:Description>US Passenger Facility Charge</ns0:Description>
+                    </ns0:Tax>
+                  </ns0:Breakdown>
+                </ns0:Taxes>
+              </ns0:Price>
+              <ns0:FareBasis>
+                <ns0:FareBasisCode refs="Pfcpuk3xsbqez1r07">
+                  <ns0:Code>DLW8A7H5</ns0:Code>
+                </ns0:FareBasisCode>
+                <ns0:FareBasisCityPair>DFWPARAA</ns0:FareBasisCityPair>
+                <ns0:RBD>D</ns0:RBD>
+                <ns0:CabinType>
+                  <ns0:CabinTypeCode>C</ns0:CabinTypeCode>
+                  <ns0:CabinTypeName>BUSINESS</ns0:CabinTypeName>
+                </ns0:CabinType>
+              </ns0:FareBasis>
+              <ns0:TicketDesig>FBPL</ns0:TicketDesig>
+              <ns0:FareRules>
+                <ns0:Penalty CancelFeeInd="true" ChangeFeeInd="false" RefundableInd="false">
+                  <ns0:Details>
+                    <ns0:Detail refs="PcncP81071294-AE91-4066-824BN">
+                      <ns0:Type>Cancel</ns0:Type>
+                      <ns0:Amounts>
+                        <ns0:Amount>
+                          <ns0:CurrencyAmountValue Code="USD">0</ns0:CurrencyAmountValue>
+                          <ns0:AmountApplication>MIN</ns0:AmountApplication>
+                        </ns0:Amount>
+                        <ns0:Amount>
+                          <ns0:CurrencyAmountValue Code="USD">0</ns0:CurrencyAmountValue>
+                          <ns0:AmountApplication>MAX</ns0:AmountApplication>
+                        </ns0:Amount>
+                      </ns0:Amounts>
+                    </ns0:Detail>
+                    <ns0:Detail>
+                      <ns0:Type>Cancel</ns0:Type>
+                      <ns0:Application>1</ns0:Application>
+                      <ns0:Amounts>
+                        <ns0:Amount>
+                          <ns0:CurrencyAmountValue Code="USD">0</ns0:CurrencyAmountValue>
+                          <ns0:AmountApplication>MIN</ns0:AmountApplication>
+                        </ns0:Amount>
+                        <ns0:Amount>
+                          <ns0:CurrencyAmountValue Code="USD">0</ns0:CurrencyAmountValue>
+                          <ns0:AmountApplication>MAX</ns0:AmountApplication>
+                        </ns0:Amount>
+                      </ns0:Amounts>
+                    </ns0:Detail>
+                    <ns0:Detail>
+                      <ns0:Type>Cancel</ns0:Type>
+                      <ns0:Application>2</ns0:Application>
+                      <ns0:Amounts>
+                        <ns0:Amount>
+                          <ns0:CurrencyAmountValue Code="USD">0</ns0:CurrencyAmountValue>
+                          <ns0:AmountApplication>MIN</ns0:AmountApplication>
+                        </ns0:Amount>
+                        <ns0:Amount>
+                          <ns0:CurrencyAmountValue Code="USD">0</ns0:CurrencyAmountValue>
+                          <ns0:AmountApplication>MAX</ns0:AmountApplication>
+                        </ns0:Amount>
+                      </ns0:Amounts>
+                    </ns0:Detail>
+                    <ns0:Detail>
+                      <ns0:Type>Cancel</ns0:Type>
+                      <ns0:Application>3</ns0:Application>
+                      <ns0:Amounts>
+                        <ns0:Amount>
+                          <ns0:CurrencyAmountValue Code="USD">0</ns0:CurrencyAmountValue>
+                          <ns0:AmountApplication>MIN</ns0:AmountApplication>
+                        </ns0:Amount>
+                        <ns0:Amount>
+                          <ns0:CurrencyAmountValue Code="USD">0</ns0:CurrencyAmountValue>
+                          <ns0:AmountApplication>MAX</ns0:AmountApplication>
+                        </ns0:Amount>
+                      </ns0:Amounts>
+                    </ns0:Detail>
+                  </ns0:Details>
+                </ns0:Penalty>
+                <ns0:AdvanceStay>
+                  <ns0:AdvancePurchase Context="Latest">P28D</ns0:AdvancePurchase>
+                  <ns0:AdvanceTicketing>
+                    <ns0:AdvanceReservation Context="Earliest">P28D</ns0:AdvanceReservation>
+                    <ns0:AdvanceDeparture Context="Latest">P3D</ns0:AdvanceDeparture>
+                  </ns0:AdvanceTicketing>
+                </ns0:AdvanceStay>
+                <ns0:Ticketing>
+                  <ns0:Endorsements>
+                    <ns0:Endorsement>NONREF/RESTRICTIONS APPLY</ns0:Endorsement>
+                  </ns0:Endorsements>
+                </ns0:Ticketing>
+                <ns0:Remarks>
+                  <ns0:Remark>Ticketing at least 28 DAYS before departure</ns0:Remark>
+                </ns0:Remarks>
+              </ns0:FareRules>
+              <ns0:PriceClassRef>Ppc4cr24esdujumb</ns0:PriceClassRef>
+              <ns0:SegmentRefs>Isgm0100598df44ef</ns0:SegmentRefs>
+            </ns0:FareComponent>
+            <ns0:FareComponent>
+              <ns0:Price>
+                <ns0:BaseAmount Code="USD">250000</ns0:BaseAmount>
+                <ns0:Taxes>
+                  <ns0:Total Code="USD">117000</ns0:Total>
+                  <ns0:Breakdown>
+                    <ns0:Tax>
+                      <ns0:Amount Code="USD">2430</ns0:Amount>
+                      <ns0:Nation>FR</ns0:Nation>
+                      <ns0:TaxCode>FR</ns0:TaxCode>
+                      <ns0:LocalAmount Code="EUR">2189</ns0:LocalAmount>
+                      <ns0:Description>France Civil Aviation Tax Domestic And International</ns0:Description>
+                    </ns0:Tax>
+                    <ns0:Tax>
+                      <ns0:Amount Code="USD">383</ns0:Amount>
+                      <ns0:Nation>US</ns0:Nation>
+                      <ns0:TaxCode>XA</ns0:TaxCode>
+                      <ns0:Description>United States APHIS Passenger Fee Passengers</ns0:Description>
+                    </ns0:Tax>
+                    <ns0:Tax>
+                      <ns0:Amount Code="USD">697</ns0:Amount>
+                      <ns0:Nation>US</ns0:Nation>
+                      <ns0:TaxCode>YC</ns0:TaxCode>
+                      <ns0:Description>United States Customs User Fee</ns0:Description>
+                    </ns0:Tax>
+                  </ns0:Breakdown>
+                </ns0:Taxes>
+              </ns0:Price>
+              <ns0:FareBasis>
+                <ns0:FareBasisCode refs="Pfcprh8j161aycyob">
+                  <ns0:Code>RLW8A7H5</ns0:Code>
+                </ns0:FareBasisCode>
+                <ns0:FareBasisCityPair>PARDFWAA</ns0:FareBasisCityPair>
+                <ns0:RBD>R</ns0:RBD>
+                <ns0:CabinType>
+                  <ns0:CabinTypeCode>C</ns0:CabinTypeCode>
+                  <ns0:CabinTypeName>BUSINESS</ns0:CabinTypeName>
+                </ns0:CabinType>
+              </ns0:FareBasis>
+              <ns0:TicketDesig>FBPL</ns0:TicketDesig>
+              <ns0:FareRules>
+                <ns0:Penalty CancelFeeInd="true" ChangeFeeInd="false" RefundableInd="false">
+                  <ns0:Details>
+                    <ns0:Detail refs="PcncP81071294-AE91-4066-824BN">
+                      <ns0:Type>Cancel</ns0:Type>
+                      <ns0:Amounts>
+                        <ns0:Amount>
+                          <ns0:CurrencyAmountValue Code="USD">0</ns0:CurrencyAmountValue>
+                          <ns0:AmountApplication>MIN</ns0:AmountApplication>
+                        </ns0:Amount>
+                        <ns0:Amount>
+                          <ns0:CurrencyAmountValue Code="USD">0</ns0:CurrencyAmountValue>
+                          <ns0:AmountApplication>MAX</ns0:AmountApplication>
+                        </ns0:Amount>
+                      </ns0:Amounts>
+                    </ns0:Detail>
+                    <ns0:Detail>
+                      <ns0:Type>Cancel</ns0:Type>
+                      <ns0:Application>1</ns0:Application>
+                      <ns0:Amounts>
+                        <ns0:Amount>
+                          <ns0:CurrencyAmountValue Code="USD">0</ns0:CurrencyAmountValue>
+                          <ns0:AmountApplication>MIN</ns0:AmountApplication>
+                        </ns0:Amount>
+                        <ns0:Amount>
+                          <ns0:CurrencyAmountValue Code="USD">0</ns0:CurrencyAmountValue>
+                          <ns0:AmountApplication>MAX</ns0:AmountApplication>
+                        </ns0:Amount>
+                      </ns0:Amounts>
+                    </ns0:Detail>
+                    <ns0:Detail>
+                      <ns0:Type>Cancel</ns0:Type>
+                      <ns0:Application>2</ns0:Application>
+                      <ns0:Amounts>
+                        <ns0:Amount>
+                          <ns0:CurrencyAmountValue Code="USD">0</ns0:CurrencyAmountValue>
+                          <ns0:AmountApplication>MIN</ns0:AmountApplication>
+                        </ns0:Amount>
+                        <ns0:Amount>
+                          <ns0:CurrencyAmountValue Code="USD">0</ns0:CurrencyAmountValue>
+                          <ns0:AmountApplication>MAX</ns0:AmountApplication>
+                        </ns0:Amount>
+                      </ns0:Amounts>
+                    </ns0:Detail>
+                    <ns0:Detail>
+                      <ns0:Type>Cancel</ns0:Type>
+                      <ns0:Application>3</ns0:Application>
+                      <ns0:Amounts>
+                        <ns0:Amount>
+                          <ns0:CurrencyAmountValue Code="USD">0</ns0:CurrencyAmountValue>
+                          <ns0:AmountApplication>MIN</ns0:AmountApplication>
+                        </ns0:Amount>
+                        <ns0:Amount>
+                          <ns0:CurrencyAmountValue Code="USD">0</ns0:CurrencyAmountValue>
+                          <ns0:AmountApplication>MAX</ns0:AmountApplication>
+                        </ns0:Amount>
+                      </ns0:Amounts>
+                    </ns0:Detail>
+                  </ns0:Details>
+                </ns0:Penalty>
+                <ns0:AdvanceStay>
+                  <ns0:AdvancePurchase Context="Latest">P28D</ns0:AdvancePurchase>
+                  <ns0:AdvanceTicketing>
+                    <ns0:AdvanceReservation Context="Earliest">P28D</ns0:AdvanceReservation>
+                    <ns0:AdvanceDeparture Context="Latest">P3D</ns0:AdvanceDeparture>
+                  </ns0:AdvanceTicketing>
+                </ns0:AdvanceStay>
+                <ns0:Ticketing>
+                  <ns0:Endorsements>
+                    <ns0:Endorsement>NONREF/RESTRICTIONS APPLY</ns0:Endorsement>
+                  </ns0:Endorsements>
+                </ns0:Ticketing>
+                <ns0:Remarks>
+                  <ns0:Remark>Ticketing at least 28 DAYS before departure</ns0:Remark>
+                </ns0:Remarks>
+              </ns0:FareRules>
+              <ns0:PriceClassRef>Ppc4cr24esdujumb</ns0:PriceClassRef>
+              <ns0:SegmentRefs>Isgm0300598df44ef</ns0:SegmentRefs>
+            </ns0:FareComponent>
+          </ns0:FareDetail>
+          <ns0:Service>
+            <ns0:ServiceID>Psvcm49jo4flogxib</ns0:ServiceID>
+            <ns0:PaxRefID>1</ns0:PaxRefID>
+            <ns0:ServiceAssociations>
+              <ns0:PaxJourneyRefID>Pflt274zdz9yl2h2x</ns0:PaxJourneyRefID>
+              <ns0:PaxJourneyRefID>Pfltnv5wx3fe0etfa</ns0:PaxJourneyRefID>
+            </ns0:ServiceAssociations>
+          </ns0:Service>
+          <ns0:Price>
+            <ns0:TotalAmount CurCode="USD">795230</ns0:TotalAmount>
+          </ns0:Price>
+        </ns0:OfferItem>
+        <ns0:OfferItem>
+          <ns0:OfferItemID>P81071294-AE91-4066-824Ba2hmvoveugj6p-3-2</ns0:OfferItemID>
+          <ns0:MandatoryInd>true</ns0:MandatoryInd>
+          <ns0:FareDetail>
+            <ns0:FareIndicatorCode>0</ns0:FareIndicatorCode>
+            <ns0:PassengerRefs>2</ns0:PassengerRefs>
+            <ns0:Price>
+              <ns0:BaseAmount Code="USD">575000</ns0:BaseAmount>
+              <ns0:Taxes>
+                <ns0:Total Code="USD">220230</ns0:Total>
+                <ns0:Breakdown>
+                  <ns0:Tax>
+                    <ns0:Amount Code="USD">560</ns0:Amount>
+                    <ns0:Nation>US</ns0:Nation>
+                    <ns0:TaxCode>AY</ns0:TaxCode>
+                    <ns0:Description>United States Passenger Civil Aviation Security Service Fee</ns0:Description>
+                  </ns0:Tax>
+                  <ns0:Tax>
+                    <ns0:Amount Code="USD">200000</ns0:Amount>
+                    <ns0:TaxCode>YR</ns0:TaxCode>
+                    <ns0:Description>AA YR surcharge</ns0:Description>
+                  </ns0:Tax>
+                  <ns0:Tax>
+                    <ns0:Amount Code="USD">2220</ns0:Amount>
+                    <ns0:Nation>US</ns0:Nation>
+                    <ns0:TaxCode>US</ns0:TaxCode>
+                    <ns0:Description>US International Departure Tax</ns0:Description>
+                  </ns0:Tax>
+                </ns0:Breakdown>
+              </ns0:Taxes>
+            </ns0:Price>
+            <ns0:FareComponent>
+              <ns0:Price>
+                <ns0:BaseAmount Code="USD">325000</ns0:BaseAmount>
+                <ns0:Taxes>
+                  <ns0:Total Code="USD">103230</ns0:Total>
+                  <ns0:Breakdown>
+                    <ns0:Tax>
+                      <ns0:Amount Code="USD">560</ns0:Amount>
+                      <ns0:Nation>US</ns0:Nation>
+                      <ns0:TaxCode>AY</ns0:TaxCode>
+                      <ns0:Description>United States Passenger Civil Aviation Security Service Fee</ns0:Description>
+                    </ns0:Tax>
+                    <ns0:Tax>
+                      <ns0:Amount Code="USD">100000</ns0:Amount>
+                      <ns0:TaxCode>YR</ns0:TaxCode>
+                      <ns0:Description>AA YR surcharge</ns0:Description>
+                    </ns0:Tax>
+                    <ns0:Tax>
+                      <ns0:Amount Code="USD">2220</ns0:Amount>
+                      <ns0:Nation>US</ns0:Nation>
+                      <ns0:TaxCode>US</ns0:TaxCode>
+                      <ns0:Description>US International Departure Tax</ns0:Description>
+                    </ns0:Tax>
+                    <ns0:Tax>
+                      <ns0:Amount Code="USD">450</ns0:Amount>
+                      <ns0:Nation>US</ns0:Nation>
+                      <ns0:TaxCode>XF</ns0:TaxCode>
+                      <ns0:Description>US Passenger Facility Charge</ns0:Description>
+                    </ns0:Tax>
+                  </ns0:Breakdown>
+                </ns0:Taxes>
+              </ns0:Price>
+              <ns0:FareBasis>
+                <ns0:FareBasisCode refs="Pfcpuk3xsbqez1r07">
+                  <ns0:Code>DLW8A7H5</ns0:Code>
+                </ns0:FareBasisCode>
+                <ns0:FareBasisCityPair>DFWPARAA</ns0:FareBasisCityPair>
+                <ns0:RBD>D</ns0:RBD>
+                <ns0:CabinType>
+                  <ns0:CabinTypeCode>C</ns0:CabinTypeCode>
+                  <ns0:CabinTypeName>BUSINESS</ns0:CabinTypeName>
+                </ns0:CabinType>
+              </ns0:FareBasis>
+              <ns0:TicketDesig>FBPL</ns0:TicketDesig>
+              <ns0:FareRules>
+                <ns0:Penalty CancelFeeInd="true" ChangeFeeInd="false" RefundableInd="false">
+                  <ns0:Details>
+                    <ns0:Detail refs="PcncP81071294-AE91-4066-824BN">
+                      <ns0:Type>Cancel</ns0:Type>
+                      <ns0:Amounts>
+                        <ns0:Amount>
+                          <ns0:CurrencyAmountValue Code="USD">0</ns0:CurrencyAmountValue>
+                          <ns0:AmountApplication>MIN</ns0:AmountApplication>
+                        </ns0:Amount>
+                        <ns0:Amount>
+                          <ns0:CurrencyAmountValue Code="USD">0</ns0:CurrencyAmountValue>
+                          <ns0:AmountApplication>MAX</ns0:AmountApplication>
+                        </ns0:Amount>
+                      </ns0:Amounts>
+                    </ns0:Detail>
+                    <ns0:Detail>
+                      <ns0:Type>Cancel</ns0:Type>
+                      <ns0:Application>1</ns0:Application>
+                      <ns0:Amounts>
+                        <ns0:Amount>
+                          <ns0:CurrencyAmountValue Code="USD">0</ns0:CurrencyAmountValue>
+                          <ns0:AmountApplication>MIN</ns0:AmountApplication>
+                        </ns0:Amount>
+                        <ns0:Amount>
+                          <ns0:CurrencyAmountValue Code="USD">0</ns0:CurrencyAmountValue>
+                          <ns0:AmountApplication>MAX</ns0:AmountApplication>
+                        </ns0:Amount>
+                      </ns0:Amounts>
+                    </ns0:Detail>
+                    <ns0:Detail>
+                      <ns0:Type>Cancel</ns0:Type>
+                      <ns0:Application>2</ns0:Application>
+                      <ns0:Amounts>
+                        <ns0:Amount>
+                          <ns0:CurrencyAmountValue Code="USD">0</ns0:CurrencyAmountValue>
+                          <ns0:AmountApplication>MIN</ns0:AmountApplication>
+                        </ns0:Amount>
+                        <ns0:Amount>
+                          <ns0:CurrencyAmountValue Code="USD">0</ns0:CurrencyAmountValue>
+                          <ns0:AmountApplication>MAX</ns0:AmountApplication>
+                        </ns0:Amount>
+                      </ns0:Amounts>
+                    </ns0:Detail>
+                    <ns0:Detail>
+                      <ns0:Type>Cancel</ns0:Type>
+                      <ns0:Application>3</ns0:Application>
+                      <ns0:Amounts>
+                        <ns0:Amount>
+                          <ns0:CurrencyAmountValue Code="USD">0</ns0:CurrencyAmountValue>
+                          <ns0:AmountApplication>MIN</ns0:AmountApplication>
+                        </ns0:Amount>
+                        <ns0:Amount>
+                          <ns0:CurrencyAmountValue Code="USD">0</ns0:CurrencyAmountValue>
+                          <ns0:AmountApplication>MAX</ns0:AmountApplication>
+                        </ns0:Amount>
+                      </ns0:Amounts>
+                    </ns0:Detail>
+                  </ns0:Details>
+                </ns0:Penalty>
+                <ns0:AdvanceStay>
+                  <ns0:AdvancePurchase Context="Latest">P28D</ns0:AdvancePurchase>
+                  <ns0:AdvanceTicketing>
+                    <ns0:AdvanceReservation Context="Earliest">P28D</ns0:AdvanceReservation>
+                    <ns0:AdvanceDeparture Context="Latest">P3D</ns0:AdvanceDeparture>
+                  </ns0:AdvanceTicketing>
+                </ns0:AdvanceStay>
+                <ns0:Ticketing>
+                  <ns0:Endorsements>
+                    <ns0:Endorsement>NONREF/RESTRICTIONS APPLY</ns0:Endorsement>
+                  </ns0:Endorsements>
+                </ns0:Ticketing>
+                <ns0:Remarks>
+                  <ns0:Remark>Ticketing at least 28 DAYS before departure</ns0:Remark>
+                </ns0:Remarks>
+              </ns0:FareRules>
+              <ns0:PriceClassRef>Ppc4cr24esdujumb</ns0:PriceClassRef>
+              <ns0:SegmentRefs>Isgm0100598df44ef</ns0:SegmentRefs>
+            </ns0:FareComponent>
+            <ns0:FareComponent>
+              <ns0:Price>
+                <ns0:BaseAmount Code="USD">250000</ns0:BaseAmount>
+                <ns0:Taxes>
+                  <ns0:Total Code="USD">117000</ns0:Total>
+                  <ns0:Breakdown>
+                    <ns0:Tax>
+                      <ns0:Amount Code="USD">2430</ns0:Amount>
+                      <ns0:Nation>FR</ns0:Nation>
+                      <ns0:TaxCode>FR</ns0:TaxCode>
+                      <ns0:LocalAmount Code="EUR">2189</ns0:LocalAmount>
+                      <ns0:Description>France Civil Aviation Tax Domestic And International</ns0:Description>
+                    </ns0:Tax>
+                    <ns0:Tax>
+                      <ns0:Amount Code="USD">383</ns0:Amount>
+                      <ns0:Nation>US</ns0:Nation>
+                      <ns0:TaxCode>XA</ns0:TaxCode>
+                      <ns0:Description>United States APHIS Passenger Fee Passengers</ns0:Description>
+                    </ns0:Tax>
+                    <ns0:Tax>
+                      <ns0:Amount Code="USD">697</ns0:Amount>
+                      <ns0:Nation>US</ns0:Nation>
+                      <ns0:TaxCode>YC</ns0:TaxCode>
+                      <ns0:Description>United States Customs User Fee</ns0:Description>
+                    </ns0:Tax>
+                  </ns0:Breakdown>
+                </ns0:Taxes>
+              </ns0:Price>
+              <ns0:FareBasis>
+                <ns0:FareBasisCode refs="Pfcprh8j161aycyob">
+                  <ns0:Code>RLW8A7H5</ns0:Code>
+                </ns0:FareBasisCode>
+                <ns0:FareBasisCityPair>PARDFWAA</ns0:FareBasisCityPair>
+                <ns0:RBD>R</ns0:RBD>
+                <ns0:CabinType>
+                  <ns0:CabinTypeCode>C</ns0:CabinTypeCode>
+                  <ns0:CabinTypeName>BUSINESS</ns0:CabinTypeName>
+                </ns0:CabinType>
+              </ns0:FareBasis>
+              <ns0:TicketDesig>FBPL</ns0:TicketDesig>
+              <ns0:FareRules>
+                <ns0:Penalty CancelFeeInd="true" ChangeFeeInd="false" RefundableInd="false">
+                  <ns0:Details>
+                    <ns0:Detail refs="PcncP81071294-AE91-4066-824BN">
+                      <ns0:Type>Cancel</ns0:Type>
+                      <ns0:Amounts>
+                        <ns0:Amount>
+                          <ns0:CurrencyAmountValue Code="USD">0</ns0:CurrencyAmountValue>
+                          <ns0:AmountApplication>MIN</ns0:AmountApplication>
+                        </ns0:Amount>
+                        <ns0:Amount>
+                          <ns0:CurrencyAmountValue Code="USD">0</ns0:CurrencyAmountValue>
+                          <ns0:AmountApplication>MAX</ns0:AmountApplication>
+                        </ns0:Amount>
+                      </ns0:Amounts>
+                    </ns0:Detail>
+                    <ns0:Detail>
+                      <ns0:Type>Cancel</ns0:Type>
+                      <ns0:Application>1</ns0:Application>
+                      <ns0:Amounts>
+                        <ns0:Amount>
+                          <ns0:CurrencyAmountValue Code="USD">0</ns0:CurrencyAmountValue>
+                          <ns0:AmountApplication>MIN</ns0:AmountApplication>
+                        </ns0:Amount>
+                        <ns0:Amount>
+                          <ns0:CurrencyAmountValue Code="USD">0</ns0:CurrencyAmountValue>
+                          <ns0:AmountApplication>MAX</ns0:AmountApplication>
+                        </ns0:Amount>
+                      </ns0:Amounts>
+                    </ns0:Detail>
+                    <ns0:Detail>
+                      <ns0:Type>Cancel</ns0:Type>
+                      <ns0:Application>2</ns0:Application>
+                      <ns0:Amounts>
+                        <ns0:Amount>
+                          <ns0:CurrencyAmountValue Code="USD">0</ns0:CurrencyAmountValue>
+                          <ns0:AmountApplication>MIN</ns0:AmountApplication>
+                        </ns0:Amount>
+                        <ns0:Amount>
+                          <ns0:CurrencyAmountValue Code="USD">0</ns0:CurrencyAmountValue>
+                          <ns0:AmountApplication>MAX</ns0:AmountApplication>
+                        </ns0:Amount>
+                      </ns0:Amounts>
+                    </ns0:Detail>
+                    <ns0:Detail>
+                      <ns0:Type>Cancel</ns0:Type>
+                      <ns0:Application>3</ns0:Application>
+                      <ns0:Amounts>
+                        <ns0:Amount>
+                          <ns0:CurrencyAmountValue Code="USD">0</ns0:CurrencyAmountValue>
+                          <ns0:AmountApplication>MIN</ns0:AmountApplication>
+                        </ns0:Amount>
+                        <ns0:Amount>
+                          <ns0:CurrencyAmountValue Code="USD">0</ns0:CurrencyAmountValue>
+                          <ns0:AmountApplication>MAX</ns0:AmountApplication>
+                        </ns0:Amount>
+                      </ns0:Amounts>
+                    </ns0:Detail>
+                  </ns0:Details>
+                </ns0:Penalty>
+                <ns0:AdvanceStay>
+                  <ns0:AdvancePurchase Context="Latest">P28D</ns0:AdvancePurchase>
+                  <ns0:AdvanceTicketing>
+                    <ns0:AdvanceReservation Context="Earliest">P28D</ns0:AdvanceReservation>
+                    <ns0:AdvanceDeparture Context="Latest">P3D</ns0:AdvanceDeparture>
+                  </ns0:AdvanceTicketing>
+                </ns0:AdvanceStay>
+                <ns0:Ticketing>
+                  <ns0:Endorsements>
+                    <ns0:Endorsement>NONREF/RESTRICTIONS APPLY</ns0:Endorsement>
+                  </ns0:Endorsements>
+                </ns0:Ticketing>
+                <ns0:Remarks>
+                  <ns0:Remark>Ticketing at least 28 DAYS before departure</ns0:Remark>
+                </ns0:Remarks>
+              </ns0:FareRules>
+              <ns0:PriceClassRef>Ppc4cr24esdujumb</ns0:PriceClassRef>
+              <ns0:SegmentRefs>Isgm0300598df44ef</ns0:SegmentRefs>
+            </ns0:FareComponent>
+          </ns0:FareDetail>
+          <ns0:Service>
+            <ns0:ServiceID>Psvcc5l8f3rh31cod</ns0:ServiceID>
+            <ns0:PaxRefID>2</ns0:PaxRefID>
+            <ns0:ServiceAssociations>
+              <ns0:PaxJourneyRefID>Pflt274zdz9yl2h2x</ns0:PaxJourneyRefID>
+              <ns0:PaxJourneyRefID>Pfltnv5wx3fe0etfa</ns0:PaxJourneyRefID>
+            </ns0:ServiceAssociations>
+          </ns0:Service>
+          <ns0:Price>
+            <ns0:TotalAmount CurCode="USD">795230</ns0:TotalAmount>
+          </ns0:Price>
+        </ns0:OfferItem>
+        <ns0:TotalPrice>
+          <ns0:TotalAmount CurCode="USD">1590460</ns0:TotalAmount>
+        </ns0:TotalPrice>
+      </ns0:Offer>
+    </ns0:OtherOffers>
+    <ns0:PricedOffer>
+      <ns0:Offer>
+        <ns0:OfferID>TOCa3okMOJRU2MTSGlvCrPD.1_1A_06b9a93d-bf85-4982-b10c-1f7771e80ccb_1A_P81071294-AE91-4066-824Bgvqz7mjik14g9-1</ns0:OfferID>
+        <ns0:OwnerCode>AA</ns0:OwnerCode>
+        <ns0:ValidatingCarrierCode>AA</ns0:ValidatingCarrierCode>
+        <ns0:OfferExpirationDateTime>2024-09-09T19:26:52Z</ns0:OfferExpirationDateTime>
+        <ns0:PaymentTimeLimitDateTime>2024-09-12T23:59:00</ns0:PaymentTimeLimitDateTime>
+        <ns0:BaggageAllowance>
+          <ns0:PaxJourneyRefID>Pflt274zdz9yl2h2x</ns0:PaxJourneyRefID>
+          <ns0:PaxRefID>1</ns0:PaxRefID>
+          <ns0:BaggageAllowanceRefID>Pbga8iqmo58f8i6qj</ns0:BaggageAllowanceRefID>
+        </ns0:BaggageAllowance>
+        <ns0:BaggageAllowance>
+          <ns0:PaxJourneyRefID>Pflt274zdz9yl2h2x</ns0:PaxJourneyRefID>
+          <ns0:PaxRefID>2</ns0:PaxRefID>
+          <ns0:BaggageAllowanceRefID>Pbgau0w59ixycax2t</ns0:BaggageAllowanceRefID>
+        </ns0:BaggageAllowance>
+        <ns0:BaggageAllowance>
+          <ns0:PaxJourneyRefID>Pfltnv5wx3fe0etfa</ns0:PaxJourneyRefID>
+          <ns0:PaxRefID>1</ns0:PaxRefID>
+          <ns0:BaggageAllowanceRefID>Pbga3eg63chl7ust7</ns0:BaggageAllowanceRefID>
+        </ns0:BaggageAllowance>
+        <ns0:BaggageAllowance>
+          <ns0:PaxJourneyRefID>Pfltnv5wx3fe0etfa</ns0:PaxJourneyRefID>
+          <ns0:PaxRefID>2</ns0:PaxRefID>
+          <ns0:BaggageAllowanceRefID>Pbgar5dpu7dylywtz</ns0:BaggageAllowanceRefID>
+        </ns0:BaggageAllowance>
+        <ns0:JourneyOverview>
+          <ns0:JourneyPriceClass>
+            <ns0:PriceClassRefID>Ppcv2w9qb9j2txx9</ns0:PriceClassRefID>
+            <ns0:PaxJourneyRefID>Pflt274zdz9yl2h2x</ns0:PaxJourneyRefID>
+          </ns0:JourneyPriceClass>
+          <ns0:JourneyPriceClass>
+            <ns0:PriceClassRefID>Ppcv2w9qb9j2txx9</ns0:PriceClassRefID>
+            <ns0:PaxJourneyRefID>Pfltnv5wx3fe0etfa</ns0:PaxJourneyRefID>
+          </ns0:JourneyPriceClass>
+        </ns0:JourneyOverview>
+        <ns0:PTC_OfferParameters>
+          <ns0:PTC_PricedCode>ADT</ns0:PTC_PricedCode>
+          <ns0:PTC_RequestedCode>ADT</ns0:PTC_RequestedCode>
+          <ns0:RequestedPaxNumber>1</ns0:RequestedPaxNumber>
+          <ns0:PricedPaxNumber>1</ns0:PricedPaxNumber>
+        </ns0:PTC_OfferParameters>
+        <ns0:PTC_OfferParameters>
+          <ns0:PTC_PricedCode>CHD</ns0:PTC_PricedCode>
+          <ns0:PTC_RequestedCode>CHD</ns0:PTC_RequestedCode>
+          <ns0:RequestedPaxNumber>1</ns0:RequestedPaxNumber>
+          <ns0:PricedPaxNumber>1</ns0:PricedPaxNumber>
+        </ns0:PTC_OfferParameters>
+        <ns0:OfferItem>
+          <ns0:OfferItemID>P81071294-AE91-4066-824Bgvqz7mjik14g9-1-1</ns0:OfferItemID>
+          <ns0:MandatoryInd>true</ns0:MandatoryInd>
+          <ns0:FareDetail>
+            <ns0:FareIndicatorCode>0</ns0:FareIndicatorCode>
+            <ns0:PassengerRefs>1</ns0:PassengerRefs>
+            <ns0:Price>
+              <ns0:BaseAmount Code="USD">555000</ns0:BaseAmount>
+              <ns0:Taxes>
+                <ns0:Total Code="USD">220230</ns0:Total>
+                <ns0:Breakdown>
+                  <ns0:Tax>
+                    <ns0:Amount Code="USD">560</ns0:Amount>
+                    <ns0:Nation>US</ns0:Nation>
+                    <ns0:TaxCode>AY</ns0:TaxCode>
+                    <ns0:Description>United States Passenger Civil Aviation Security Service Fee</ns0:Description>
+                  </ns0:Tax>
+                  <ns0:Tax>
+                    <ns0:Amount Code="USD">200000</ns0:Amount>
+                    <ns0:TaxCode>YR</ns0:TaxCode>
+                    <ns0:Description>AA YR surcharge</ns0:Description>
+                  </ns0:Tax>
+                  <ns0:Tax>
+                    <ns0:Amount Code="USD">2220</ns0:Amount>
+                    <ns0:Nation>US</ns0:Nation>
+                    <ns0:TaxCode>US</ns0:TaxCode>
+                    <ns0:Description>US International Departure Tax</ns0:Description>
+                  </ns0:Tax>
+                </ns0:Breakdown>
+              </ns0:Taxes>
+            </ns0:Price>
+            <ns0:FareComponent>
+              <ns0:Price>
+                <ns0:BaseAmount Code="USD">315000</ns0:BaseAmount>
+                <ns0:Taxes>
+                  <ns0:Total Code="USD">103230</ns0:Total>
+                  <ns0:Breakdown>
+                    <ns0:Tax>
+                      <ns0:Amount Code="USD">560</ns0:Amount>
+                      <ns0:Nation>US</ns0:Nation>
+                      <ns0:TaxCode>AY</ns0:TaxCode>
+                      <ns0:Description>United States Passenger Civil Aviation Security Service Fee</ns0:Description>
+                    </ns0:Tax>
+                    <ns0:Tax>
+                      <ns0:Amount Code="USD">100000</ns0:Amount>
+                      <ns0:TaxCode>YR</ns0:TaxCode>
+                      <ns0:Description>AA YR surcharge</ns0:Description>
+                    </ns0:Tax>
+                    <ns0:Tax>
+                      <ns0:Amount Code="USD">2220</ns0:Amount>
+                      <ns0:Nation>US</ns0:Nation>
+                      <ns0:TaxCode>US</ns0:TaxCode>
+                      <ns0:Description>US International Departure Tax</ns0:Description>
+                    </ns0:Tax>
+                    <ns0:Tax>
+                      <ns0:Amount Code="USD">450</ns0:Amount>
+                      <ns0:Nation>US</ns0:Nation>
+                      <ns0:TaxCode>XF</ns0:TaxCode>
+                      <ns0:Description>US Passenger Facility Charge</ns0:Description>
+                    </ns0:Tax>
+                  </ns0:Breakdown>
+                </ns0:Taxes>
+              </ns0:Price>
+              <ns0:FareBasis>
+                <ns0:FareBasisCode refs="Pfcpl8mlqt83ueml6">
+                  <ns0:Code>DLW8A7S5</ns0:Code>
+                </ns0:FareBasisCode>
+                <ns0:FareBasisCityPair>DFWPARAA</ns0:FareBasisCityPair>
+                <ns0:RBD>D</ns0:RBD>
+                <ns0:CabinType>
+                  <ns0:CabinTypeCode>C</ns0:CabinTypeCode>
+                  <ns0:CabinTypeName>BUSINESS</ns0:CabinTypeName>
+                </ns0:CabinType>
+              </ns0:FareBasis>
+              <ns0:FareRules>
+                <ns0:Penalty CancelFeeInd="true" ChangeFeeInd="false" RefundableInd="false">
+                  <ns0:Details>
+                    <ns0:Detail refs="PcncP81071294-AE91-4066-824BN">
+                      <ns0:Type>Cancel</ns0:Type>
+                      <ns0:Amounts>
+                        <ns0:Amount>
+                          <ns0:CurrencyAmountValue Code="USD">0</ns0:CurrencyAmountValue>
+                          <ns0:AmountApplication>MIN</ns0:AmountApplication>
+                        </ns0:Amount>
+                        <ns0:Amount>
+                          <ns0:CurrencyAmountValue Code="USD">0</ns0:CurrencyAmountValue>
+                          <ns0:AmountApplication>MAX</ns0:AmountApplication>
+                        </ns0:Amount>
+                      </ns0:Amounts>
+                    </ns0:Detail>
+                    <ns0:Detail>
+                      <ns0:Type>Cancel</ns0:Type>
+                      <ns0:Application>1</ns0:Application>
+                      <ns0:Amounts>
+                        <ns0:Amount>
+                          <ns0:CurrencyAmountValue Code="USD">0</ns0:CurrencyAmountValue>
+                          <ns0:AmountApplication>MIN</ns0:AmountApplication>
+                        </ns0:Amount>
+                        <ns0:Amount>
+                          <ns0:CurrencyAmountValue Code="USD">0</ns0:CurrencyAmountValue>
+                          <ns0:AmountApplication>MAX</ns0:AmountApplication>
+                        </ns0:Amount>
+                      </ns0:Amounts>
+                    </ns0:Detail>
+                    <ns0:Detail>
+                      <ns0:Type>Cancel</ns0:Type>
+                      <ns0:Application>2</ns0:Application>
+                      <ns0:Amounts>
+                        <ns0:Amount>
+                          <ns0:CurrencyAmountValue Code="USD">0</ns0:CurrencyAmountValue>
+                          <ns0:AmountApplication>MIN</ns0:AmountApplication>
+                        </ns0:Amount>
+                        <ns0:Amount>
+                          <ns0:CurrencyAmountValue Code="USD">0</ns0:CurrencyAmountValue>
+                          <ns0:AmountApplication>MAX</ns0:AmountApplication>
+                        </ns0:Amount>
+                      </ns0:Amounts>
+                    </ns0:Detail>
+                    <ns0:Detail>
+                      <ns0:Type>Cancel</ns0:Type>
+                      <ns0:Application>3</ns0:Application>
+                      <ns0:Amounts>
+                        <ns0:Amount>
+                          <ns0:CurrencyAmountValue Code="USD">0</ns0:CurrencyAmountValue>
+                          <ns0:AmountApplication>MIN</ns0:AmountApplication>
+                        </ns0:Amount>
+                        <ns0:Amount>
+                          <ns0:CurrencyAmountValue Code="USD">0</ns0:CurrencyAmountValue>
+                          <ns0:AmountApplication>MAX</ns0:AmountApplication>
+                        </ns0:Amount>
+                      </ns0:Amounts>
+                    </ns0:Detail>
+                  </ns0:Details>
+                </ns0:Penalty>
+                <ns0:AdvanceStay>
+                  <ns0:AdvancePurchase Context="Latest">P28D</ns0:AdvancePurchase>
+                  <ns0:AdvanceTicketing>
+                    <ns0:AdvanceReservation Context="Earliest">P28D</ns0:AdvanceReservation>
+                    <ns0:AdvanceDeparture Context="Latest">P3D</ns0:AdvanceDeparture>
+                  </ns0:AdvanceTicketing>
+                </ns0:AdvanceStay>
+                <ns0:Ticketing>
+                  <ns0:Endorsements>
+                    <ns0:Endorsement>NONREF/RESTRICTIONS APPLY</ns0:Endorsement>
+                  </ns0:Endorsements>
+                </ns0:Ticketing>
+                <ns0:Remarks>
+                  <ns0:Remark>Ticketing at least 28 DAYS before departure</ns0:Remark>
+                </ns0:Remarks>
+              </ns0:FareRules>
+              <ns0:PriceClassRef>Ppcv2w9qb9j2txx9</ns0:PriceClassRef>
+              <ns0:SegmentRefs>Isgm0100598df44ef</ns0:SegmentRefs>
+            </ns0:FareComponent>
+            <ns0:FareComponent>
+              <ns0:Price>
+                <ns0:BaseAmount Code="USD">240000</ns0:BaseAmount>
+                <ns0:Taxes>
+                  <ns0:Total Code="USD">117000</ns0:Total>
+                  <ns0:Breakdown>
+                    <ns0:Tax>
+                      <ns0:Amount Code="USD">2430</ns0:Amount>
+                      <ns0:Nation>FR</ns0:Nation>
+                      <ns0:TaxCode>FR</ns0:TaxCode>
+                      <ns0:LocalAmount Code="EUR">2189</ns0:LocalAmount>
+                      <ns0:Description>France Civil Aviation Tax Domestic And International</ns0:Description>
+                    </ns0:Tax>
+                    <ns0:Tax>
+                      <ns0:Amount Code="USD">383</ns0:Amount>
+                      <ns0:Nation>US</ns0:Nation>
+                      <ns0:TaxCode>XA</ns0:TaxCode>
+                      <ns0:Description>United States APHIS Passenger Fee Passengers</ns0:Description>
+                    </ns0:Tax>
+                    <ns0:Tax>
+                      <ns0:Amount Code="USD">697</ns0:Amount>
+                      <ns0:Nation>US</ns0:Nation>
+                      <ns0:TaxCode>YC</ns0:TaxCode>
+                      <ns0:Description>United States Customs User Fee</ns0:Description>
+                    </ns0:Tax>
+                  </ns0:Breakdown>
+                </ns0:Taxes>
+              </ns0:Price>
+              <ns0:FareBasis>
+                <ns0:FareBasisCode refs="Pfcpsx9gzs8pwas8y">
+                  <ns0:Code>RLW8A7S5</ns0:Code>
+                </ns0:FareBasisCode>
+                <ns0:FareBasisCityPair>PARDFWAA</ns0:FareBasisCityPair>
+                <ns0:RBD>R</ns0:RBD>
+                <ns0:CabinType>
+                  <ns0:CabinTypeCode>C</ns0:CabinTypeCode>
+                  <ns0:CabinTypeName>BUSINESS</ns0:CabinTypeName>
+                </ns0:CabinType>
+              </ns0:FareBasis>
+              <ns0:FareRules>
+                <ns0:Penalty CancelFeeInd="true" ChangeFeeInd="false" RefundableInd="false">
+                  <ns0:Details>
+                    <ns0:Detail refs="PcncP81071294-AE91-4066-824BN">
+                      <ns0:Type>Cancel</ns0:Type>
+                      <ns0:Amounts>
+                        <ns0:Amount>
+                          <ns0:CurrencyAmountValue Code="USD">0</ns0:CurrencyAmountValue>
+                          <ns0:AmountApplication>MIN</ns0:AmountApplication>
+                        </ns0:Amount>
+                        <ns0:Amount>
+                          <ns0:CurrencyAmountValue Code="USD">0</ns0:CurrencyAmountValue>
+                          <ns0:AmountApplication>MAX</ns0:AmountApplication>
+                        </ns0:Amount>
+                      </ns0:Amounts>
+                    </ns0:Detail>
+                    <ns0:Detail>
+                      <ns0:Type>Cancel</ns0:Type>
+                      <ns0:Application>1</ns0:Application>
+                      <ns0:Amounts>
+                        <ns0:Amount>
+                          <ns0:CurrencyAmountValue Code="USD">0</ns0:CurrencyAmountValue>
+                          <ns0:AmountApplication>MIN</ns0:AmountApplication>
+                        </ns0:Amount>
+                        <ns0:Amount>
+                          <ns0:CurrencyAmountValue Code="USD">0</ns0:CurrencyAmountValue>
+                          <ns0:AmountApplication>MAX</ns0:AmountApplication>
+                        </ns0:Amount>
+                      </ns0:Amounts>
+                    </ns0:Detail>
+                    <ns0:Detail>
+                      <ns0:Type>Cancel</ns0:Type>
+                      <ns0:Application>2</ns0:Application>
+                      <ns0:Amounts>
+                        <ns0:Amount>
+                          <ns0:CurrencyAmountValue Code="USD">0</ns0:CurrencyAmountValue>
+                          <ns0:AmountApplication>MIN</ns0:AmountApplication>
+                        </ns0:Amount>
+                        <ns0:Amount>
+                          <ns0:CurrencyAmountValue Code="USD">0</ns0:CurrencyAmountValue>
+                          <ns0:AmountApplication>MAX</ns0:AmountApplication>
+                        </ns0:Amount>
+                      </ns0:Amounts>
+                    </ns0:Detail>
+                    <ns0:Detail>
+                      <ns0:Type>Cancel</ns0:Type>
+                      <ns0:Application>3</ns0:Application>
+                      <ns0:Amounts>
+                        <ns0:Amount>
+                          <ns0:CurrencyAmountValue Code="USD">0</ns0:CurrencyAmountValue>
+                          <ns0:AmountApplication>MIN</ns0:AmountApplication>
+                        </ns0:Amount>
+                        <ns0:Amount>
+                          <ns0:CurrencyAmountValue Code="USD">0</ns0:CurrencyAmountValue>
+                          <ns0:AmountApplication>MAX</ns0:AmountApplication>
+                        </ns0:Amount>
+                      </ns0:Amounts>
+                    </ns0:Detail>
+                  </ns0:Details>
+                </ns0:Penalty>
+                <ns0:AdvanceStay>
+                  <ns0:AdvancePurchase Context="Latest">P28D</ns0:AdvancePurchase>
+                  <ns0:AdvanceTicketing>
+                    <ns0:AdvanceReservation Context="Earliest">P28D</ns0:AdvanceReservation>
+                    <ns0:AdvanceDeparture Context="Latest">P3D</ns0:AdvanceDeparture>
+                  </ns0:AdvanceTicketing>
+                </ns0:AdvanceStay>
+                <ns0:Ticketing>
+                  <ns0:Endorsements>
+                    <ns0:Endorsement>NONREF/RESTRICTIONS APPLY</ns0:Endorsement>
+                  </ns0:Endorsements>
+                </ns0:Ticketing>
+                <ns0:Remarks>
+                  <ns0:Remark>Ticketing at least 28 DAYS before departure</ns0:Remark>
+                </ns0:Remarks>
+              </ns0:FareRules>
+              <ns0:PriceClassRef>Ppcv2w9qb9j2txx9</ns0:PriceClassRef>
+              <ns0:SegmentRefs>Isgm0300598df44ef</ns0:SegmentRefs>
+            </ns0:FareComponent>
+          </ns0:FareDetail>
+          <ns0:Service>
+            <ns0:ServiceID>Psvcx6if2sqn1cb8s</ns0:ServiceID>
+            <ns0:PaxRefID>1</ns0:PaxRefID>
+            <ns0:ServiceAssociations>
+              <ns0:PaxJourneyRefID>Pflt274zdz9yl2h2x</ns0:PaxJourneyRefID>
+              <ns0:PaxJourneyRefID>Pfltnv5wx3fe0etfa</ns0:PaxJourneyRefID>
+            </ns0:ServiceAssociations>
+          </ns0:Service>
+          <ns0:Price>
+            <ns0:TotalAmount CurCode="USD">775230</ns0:TotalAmount>
+          </ns0:Price>
+        </ns0:OfferItem>
+        <ns0:OfferItem>
+          <ns0:OfferItemID>P81071294-AE91-4066-824Bgvqz7mjik14g9-1-2</ns0:OfferItemID>
+          <ns0:MandatoryInd>true</ns0:MandatoryInd>
+          <ns0:FareDetail>
+            <ns0:FareIndicatorCode>0</ns0:FareIndicatorCode>
+            <ns0:PassengerRefs>2</ns0:PassengerRefs>
+            <ns0:Price>
+              <ns0:BaseAmount Code="USD">555000</ns0:BaseAmount>
+              <ns0:Taxes>
+                <ns0:Total Code="USD">220230</ns0:Total>
+                <ns0:Breakdown>
+                  <ns0:Tax>
+                    <ns0:Amount Code="USD">560</ns0:Amount>
+                    <ns0:Nation>US</ns0:Nation>
+                    <ns0:TaxCode>AY</ns0:TaxCode>
+                    <ns0:Description>United States Passenger Civil Aviation Security Service Fee</ns0:Description>
+                  </ns0:Tax>
+                  <ns0:Tax>
+                    <ns0:Amount Code="USD">200000</ns0:Amount>
+                    <ns0:TaxCode>YR</ns0:TaxCode>
+                    <ns0:Description>AA YR surcharge</ns0:Description>
+                  </ns0:Tax>
+                  <ns0:Tax>
+                    <ns0:Amount Code="USD">2220</ns0:Amount>
+                    <ns0:Nation>US</ns0:Nation>
+                    <ns0:TaxCode>US</ns0:TaxCode>
+                    <ns0:Description>US International Departure Tax</ns0:Description>
+                  </ns0:Tax>
+                </ns0:Breakdown>
+              </ns0:Taxes>
+            </ns0:Price>
+            <ns0:FareComponent>
+              <ns0:Price>
+                <ns0:BaseAmount Code="USD">315000</ns0:BaseAmount>
+                <ns0:Taxes>
+                  <ns0:Total Code="USD">103230</ns0:Total>
+                  <ns0:Breakdown>
+                    <ns0:Tax>
+                      <ns0:Amount Code="USD">560</ns0:Amount>
+                      <ns0:Nation>US</ns0:Nation>
+                      <ns0:TaxCode>AY</ns0:TaxCode>
+                      <ns0:Description>United States Passenger Civil Aviation Security Service Fee</ns0:Description>
+                    </ns0:Tax>
+                    <ns0:Tax>
+                      <ns0:Amount Code="USD">100000</ns0:Amount>
+                      <ns0:TaxCode>YR</ns0:TaxCode>
+                      <ns0:Description>AA YR surcharge</ns0:Description>
+                    </ns0:Tax>
+                    <ns0:Tax>
+                      <ns0:Amount Code="USD">2220</ns0:Amount>
+                      <ns0:Nation>US</ns0:Nation>
+                      <ns0:TaxCode>US</ns0:TaxCode>
+                      <ns0:Description>US International Departure Tax</ns0:Description>
+                    </ns0:Tax>
+                    <ns0:Tax>
+                      <ns0:Amount Code="USD">450</ns0:Amount>
+                      <ns0:Nation>US</ns0:Nation>
+                      <ns0:TaxCode>XF</ns0:TaxCode>
+                      <ns0:Description>US Passenger Facility Charge</ns0:Description>
+                    </ns0:Tax>
+                  </ns0:Breakdown>
+                </ns0:Taxes>
+              </ns0:Price>
+              <ns0:FareBasis>
+                <ns0:FareBasisCode refs="Pfcpl8mlqt83ueml6">
+                  <ns0:Code>DLW8A7S5</ns0:Code>
+                </ns0:FareBasisCode>
+                <ns0:FareBasisCityPair>DFWPARAA</ns0:FareBasisCityPair>
+                <ns0:RBD>D</ns0:RBD>
+                <ns0:CabinType>
+                  <ns0:CabinTypeCode>C</ns0:CabinTypeCode>
+                  <ns0:CabinTypeName>BUSINESS</ns0:CabinTypeName>
+                </ns0:CabinType>
+              </ns0:FareBasis>
+              <ns0:FareRules>
+                <ns0:Penalty CancelFeeInd="true" ChangeFeeInd="false" RefundableInd="false">
+                  <ns0:Details>
+                    <ns0:Detail refs="PcncP81071294-AE91-4066-824BN">
+                      <ns0:Type>Cancel</ns0:Type>
+                      <ns0:Amounts>
+                        <ns0:Amount>
+                          <ns0:CurrencyAmountValue Code="USD">0</ns0:CurrencyAmountValue>
+                          <ns0:AmountApplication>MIN</ns0:AmountApplication>
+                        </ns0:Amount>
+                        <ns0:Amount>
+                          <ns0:CurrencyAmountValue Code="USD">0</ns0:CurrencyAmountValue>
+                          <ns0:AmountApplication>MAX</ns0:AmountApplication>
+                        </ns0:Amount>
+                      </ns0:Amounts>
+                    </ns0:Detail>
+                    <ns0:Detail>
+                      <ns0:Type>Cancel</ns0:Type>
+                      <ns0:Application>1</ns0:Application>
+                      <ns0:Amounts>
+                        <ns0:Amount>
+                          <ns0:CurrencyAmountValue Code="USD">0</ns0:CurrencyAmountValue>
+                          <ns0:AmountApplication>MIN</ns0:AmountApplication>
+                        </ns0:Amount>
+                        <ns0:Amount>
+                          <ns0:CurrencyAmountValue Code="USD">0</ns0:CurrencyAmountValue>
+                          <ns0:AmountApplication>MAX</ns0:AmountApplication>
+                        </ns0:Amount>
+                      </ns0:Amounts>
+                    </ns0:Detail>
+                    <ns0:Detail>
+                      <ns0:Type>Cancel</ns0:Type>
+                      <ns0:Application>2</ns0:Application>
+                      <ns0:Amounts>
+                        <ns0:Amount>
+                          <ns0:CurrencyAmountValue Code="USD">0</ns0:CurrencyAmountValue>
+                          <ns0:AmountApplication>MIN</ns0:AmountApplication>
+                        </ns0:Amount>
+                        <ns0:Amount>
+                          <ns0:CurrencyAmountValue Code="USD">0</ns0:CurrencyAmountValue>
+                          <ns0:AmountApplication>MAX</ns0:AmountApplication>
+                        </ns0:Amount>
+                      </ns0:Amounts>
+                    </ns0:Detail>
+                    <ns0:Detail>
+                      <ns0:Type>Cancel</ns0:Type>
+                      <ns0:Application>3</ns0:Application>
+                      <ns0:Amounts>
+                        <ns0:Amount>
+                          <ns0:CurrencyAmountValue Code="USD">0</ns0:CurrencyAmountValue>
+                          <ns0:AmountApplication>MIN</ns0:AmountApplication>
+                        </ns0:Amount>
+                        <ns0:Amount>
+                          <ns0:CurrencyAmountValue Code="USD">0</ns0:CurrencyAmountValue>
+                          <ns0:AmountApplication>MAX</ns0:AmountApplication>
+                        </ns0:Amount>
+                      </ns0:Amounts>
+                    </ns0:Detail>
+                  </ns0:Details>
+                </ns0:Penalty>
+                <ns0:AdvanceStay>
+                  <ns0:AdvancePurchase Context="Latest">P28D</ns0:AdvancePurchase>
+                  <ns0:AdvanceTicketing>
+                    <ns0:AdvanceReservation Context="Earliest">P28D</ns0:AdvanceReservation>
+                    <ns0:AdvanceDeparture Context="Latest">P3D</ns0:AdvanceDeparture>
+                  </ns0:AdvanceTicketing>
+                </ns0:AdvanceStay>
+                <ns0:Ticketing>
+                  <ns0:Endorsements>
+                    <ns0:Endorsement>NONREF/RESTRICTIONS APPLY</ns0:Endorsement>
+                  </ns0:Endorsements>
+                </ns0:Ticketing>
+                <ns0:Remarks>
+                  <ns0:Remark>Ticketing at least 28 DAYS before departure</ns0:Remark>
+                </ns0:Remarks>
+              </ns0:FareRules>
+              <ns0:PriceClassRef>Ppcv2w9qb9j2txx9</ns0:PriceClassRef>
+              <ns0:SegmentRefs>Isgm0100598df44ef</ns0:SegmentRefs>
+            </ns0:FareComponent>
+            <ns0:FareComponent>
+              <ns0:Price>
+                <ns0:BaseAmount Code="USD">240000</ns0:BaseAmount>
+                <ns0:Taxes>
+                  <ns0:Total Code="USD">117000</ns0:Total>
+                  <ns0:Breakdown>
+                    <ns0:Tax>
+                      <ns0:Amount Code="USD">2430</ns0:Amount>
+                      <ns0:Nation>FR</ns0:Nation>
+                      <ns0:TaxCode>FR</ns0:TaxCode>
+                      <ns0:LocalAmount Code="EUR">2189</ns0:LocalAmount>
+                      <ns0:Description>France Civil Aviation Tax Domestic And International</ns0:Description>
+                    </ns0:Tax>
+                    <ns0:Tax>
+                      <ns0:Amount Code="USD">383</ns0:Amount>
+                      <ns0:Nation>US</ns0:Nation>
+                      <ns0:TaxCode>XA</ns0:TaxCode>
+                      <ns0:Description>United States APHIS Passenger Fee Passengers</ns0:Description>
+                    </ns0:Tax>
+                    <ns0:Tax>
+                      <ns0:Amount Code="USD">697</ns0:Amount>
+                      <ns0:Nation>US</ns0:Nation>
+                      <ns0:TaxCode>YC</ns0:TaxCode>
+                      <ns0:Description>United States Customs User Fee</ns0:Description>
+                    </ns0:Tax>
+                  </ns0:Breakdown>
+                </ns0:Taxes>
+              </ns0:Price>
+              <ns0:FareBasis>
+                <ns0:FareBasisCode refs="Pfcpsx9gzs8pwas8y">
+                  <ns0:Code>RLW8A7S5</ns0:Code>
+                </ns0:FareBasisCode>
+                <ns0:FareBasisCityPair>PARDFWAA</ns0:FareBasisCityPair>
+                <ns0:RBD>R</ns0:RBD>
+                <ns0:CabinType>
+                  <ns0:CabinTypeCode>C</ns0:CabinTypeCode>
+                  <ns0:CabinTypeName>BUSINESS</ns0:CabinTypeName>
+                </ns0:CabinType>
+              </ns0:FareBasis>
+              <ns0:FareRules>
+                <ns0:Penalty CancelFeeInd="true" ChangeFeeInd="false" RefundableInd="false">
+                  <ns0:Details>
+                    <ns0:Detail refs="PcncP81071294-AE91-4066-824BN">
+                      <ns0:Type>Cancel</ns0:Type>
+                      <ns0:Amounts>
+                        <ns0:Amount>
+                          <ns0:CurrencyAmountValue Code="USD">0</ns0:CurrencyAmountValue>
+                          <ns0:AmountApplication>MIN</ns0:AmountApplication>
+                        </ns0:Amount>
+                        <ns0:Amount>
+                          <ns0:CurrencyAmountValue Code="USD">0</ns0:CurrencyAmountValue>
+                          <ns0:AmountApplication>MAX</ns0:AmountApplication>
+                        </ns0:Amount>
+                      </ns0:Amounts>
+                    </ns0:Detail>
+                    <ns0:Detail>
+                      <ns0:Type>Cancel</ns0:Type>
+                      <ns0:Application>1</ns0:Application>
+                      <ns0:Amounts>
+                        <ns0:Amount>
+                          <ns0:CurrencyAmountValue Code="USD">0</ns0:CurrencyAmountValue>
+                          <ns0:AmountApplication>MIN</ns0:AmountApplication>
+                        </ns0:Amount>
+                        <ns0:Amount>
+                          <ns0:CurrencyAmountValue Code="USD">0</ns0:CurrencyAmountValue>
+                          <ns0:AmountApplication>MAX</ns0:AmountApplication>
+                        </ns0:Amount>
+                      </ns0:Amounts>
+                    </ns0:Detail>
+                    <ns0:Detail>
+                      <ns0:Type>Cancel</ns0:Type>
+                      <ns0:Application>2</ns0:Application>
+                      <ns0:Amounts>
+                        <ns0:Amount>
+                          <ns0:CurrencyAmountValue Code="USD">0</ns0:CurrencyAmountValue>
+                          <ns0:AmountApplication>MIN</ns0:AmountApplication>
+                        </ns0:Amount>
+                        <ns0:Amount>
+                          <ns0:CurrencyAmountValue Code="USD">0</ns0:CurrencyAmountValue>
+                          <ns0:AmountApplication>MAX</ns0:AmountApplication>
+                        </ns0:Amount>
+                      </ns0:Amounts>
+                    </ns0:Detail>
+                    <ns0:Detail>
+                      <ns0:Type>Cancel</ns0:Type>
+                      <ns0:Application>3</ns0:Application>
+                      <ns0:Amounts>
+                        <ns0:Amount>
+                          <ns0:CurrencyAmountValue Code="USD">0</ns0:CurrencyAmountValue>
+                          <ns0:AmountApplication>MIN</ns0:AmountApplication>
+                        </ns0:Amount>
+                        <ns0:Amount>
+                          <ns0:CurrencyAmountValue Code="USD">0</ns0:CurrencyAmountValue>
+                          <ns0:AmountApplication>MAX</ns0:AmountApplication>
+                        </ns0:Amount>
+                      </ns0:Amounts>
+                    </ns0:Detail>
+                  </ns0:Details>
+                </ns0:Penalty>
+                <ns0:AdvanceStay>
+                  <ns0:AdvancePurchase Context="Latest">P28D</ns0:AdvancePurchase>
+                  <ns0:AdvanceTicketing>
+                    <ns0:AdvanceReservation Context="Earliest">P28D</ns0:AdvanceReservation>
+                    <ns0:AdvanceDeparture Context="Latest">P3D</ns0:AdvanceDeparture>
+                  </ns0:AdvanceTicketing>
+                </ns0:AdvanceStay>
+                <ns0:Ticketing>
+                  <ns0:Endorsements>
+                    <ns0:Endorsement>NONREF/RESTRICTIONS APPLY</ns0:Endorsement>
+                  </ns0:Endorsements>
+                </ns0:Ticketing>
+                <ns0:Remarks>
+                  <ns0:Remark>Ticketing at least 28 DAYS before departure</ns0:Remark>
+                </ns0:Remarks>
+              </ns0:FareRules>
+              <ns0:PriceClassRef>Ppcv2w9qb9j2txx9</ns0:PriceClassRef>
+              <ns0:SegmentRefs>Isgm0300598df44ef</ns0:SegmentRefs>
+            </ns0:FareComponent>
+          </ns0:FareDetail>
+          <ns0:Service>
+            <ns0:ServiceID>Psvckfi112k1bnkmo</ns0:ServiceID>
+            <ns0:PaxRefID>2</ns0:PaxRefID>
+            <ns0:ServiceAssociations>
+              <ns0:PaxJourneyRefID>Pflt274zdz9yl2h2x</ns0:PaxJourneyRefID>
+              <ns0:PaxJourneyRefID>Pfltnv5wx3fe0etfa</ns0:PaxJourneyRefID>
+            </ns0:ServiceAssociations>
+          </ns0:Service>
+          <ns0:Price>
+            <ns0:TotalAmount CurCode="USD">775230</ns0:TotalAmount>
+          </ns0:Price>
+        </ns0:OfferItem>
+        <ns0:TotalPrice>
+          <ns0:TotalAmount CurCode="USD">1550460</ns0:TotalAmount>
+        </ns0:TotalPrice>
+      </ns0:Offer>
+    </ns0:PricedOffer>
+    <ns0:ShoppingResponse>
+      <ns0:ShoppingResponseID>P81071294-AE91-4066-824B</ns0:ShoppingResponseID>
+    </ns0:ShoppingResponse>
+  </ns0:Response>
+</ns0:AMA_TravelOfferPriceRS>

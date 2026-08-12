@@ -1,0 +1,38 @@
+<soap:Envelope xmlns:ns4="http://xml.amadeus.com/2010/06/Security_v1" xmlns:ns5="http://xml.amadeus.com/2010/06/Travel_OrderRetrieveRQ_v1" xmlns:oas="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd" xmlns:oas1="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns:wsa="http://www.w3.org/2005/08/addressing">
+  <soap:Header>
+    <wsa:MessageID>121c2edd-896a-44eb-ad38-bd8df086c6f5</wsa:MessageID>
+    <wsa:Action>http://webservices.amadeus.com/Travel_OrderRetrieve_1.5</wsa:Action>
+    <wsa:To>https://nodeD1.test.webservices.amadeus.com/WSAP</wsa:To>
+    <oas:Security>
+      <oas:UsernameToken oas1:Id="UsernameToken-1">
+        <oas:Username>YOUR_WS_USER</oas:Username>
+        <oas:Nonce EncodingType="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-soap-message-security-1.0#Base64Binary">REDACTED_NONCE</oas:Nonce>
+        <oas:Password Type="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-username-token-profile-1.0#PasswordDigest">REDACTED_DIGEST</oas:Password>
+        <oas1:Created>2023-05-25T10:55:42.095Z</oas1:Created>
+      </oas:UsernameToken>
+    </oas:Security>
+    <ns4:AMA_SecurityHostedUser>
+      <ns4:UserID AgentDutyCode="SU" POS_Type="1" PseudoCityCode="YOUR_OFFICE_ID" RequestorType="U" />
+    </ns4:AMA_SecurityHostedUser>
+  </soap:Header>
+  <soap:Body>
+    <ns5:AMA_TravelOrderRetrieveRQ>
+      <ns5:Party>
+        <ns5:Sender>
+          <ns5:TravelAgency>
+            <ns5:AgencyID>unused</ns5:AgencyID>
+            <ns5:PseudoCityID>unused</ns5:PseudoCityID>
+          </ns5:TravelAgency>
+        </ns5:Sender>
+      </ns5:Party>
+      <ns5:Request>
+        <ns5:OrderFilterCriteria>
+          <ns5:Order>
+            <ns5:OrderID>AA001HBN2AXA2</ns5:OrderID>
+            <ns5:OwnerCode>AA</ns5:OwnerCode>
+          </ns5:Order>
+        </ns5:OrderFilterCriteria>
+      </ns5:Request>
+    </ns5:AMA_TravelOrderRetrieveRQ>
+  </soap:Body>
+</soap:Envelope>

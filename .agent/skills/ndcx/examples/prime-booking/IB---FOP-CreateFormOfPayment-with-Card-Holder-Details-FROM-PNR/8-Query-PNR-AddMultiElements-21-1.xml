@@ -1,0 +1,45 @@
+<soap:Envelope xmlns:add="http://www.w3.org/2005/08/addressing" xmlns:link="http://wsdl.amadeus.com/2010/06/ws/Link_v1" xmlns:ses="http://xml.amadeus.com/2010/06/Session_v3" xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+  <soap:Header>
+    <ses:Session TransactionStatusCode="InSeries">
+      <ses:SessionId>01GELFF39H</ses:SessionId>
+      <ses:SequenceNumber>3</ses:SequenceNumber>
+      <ses:SecurityToken>REDACTED_TOKEN</ses:SecurityToken>
+    </ses:Session>
+    <add:MessageID>2cb67301-0de2-4a97-af21-e2a929c3d9b8</add:MessageID>
+    <add:Action>http://webservices.amadeus.com/PNRADD_21_1_1A</add:Action>
+    <add:To>https://noded5.test.webservices.amadeus.com/WSAP</add:To>
+    <link:TransactionFlowLink />
+  </soap:Header>
+  <soap:Body>
+    <PNR_AddMultiElements>
+      <pnrActions>
+        <optionCode>11</optionCode>
+      </pnrActions>
+      <dataElementsMaster>
+        <marker1 />
+        <dataElementsIndiv>
+          <elementManagementData>
+            <segmentName>TK</segmentName>
+          </elementManagementData>
+          <ticketElement>
+            <ticket>
+              <indicator>OK</indicator>
+            </ticket>
+          </ticketElement>
+        </dataElementsIndiv>
+        <dataElementsIndiv>
+          <elementManagementData>
+            <segmentName>RF</segmentName>
+          </elementManagementData>
+          <freetextData>
+            <freetextDetail>
+              <subjectQualifier>3</subjectQualifier>
+              <type>P22</type>
+            </freetextDetail>
+            <longFreetext>WEBSERVICES</longFreetext>
+          </freetextData>
+        </dataElementsIndiv>
+      </dataElementsMaster>
+    </PNR_AddMultiElements>
+  </soap:Body>
+</soap:Envelope>

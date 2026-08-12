@@ -1,0 +1,36 @@
+<ns0:AMA_TravelOfferPriceRQ xmlns:ns0="http://xml.amadeus.com/2010/06/Travel_OfferPriceRQ_v1">
+  <ns0:Party>
+    <ns0:Sender>
+      <ns0:TravelAgency>
+        <ns0:AgencyID>27212216</ns0:AgencyID>
+        <ns0:PseudoCityID>AE9L</ns0:PseudoCityID>
+      </ns0:TravelAgency>
+    </ns0:Sender>
+  </ns0:Party>
+  <ns0:Request>
+    <ns0:DataLists>
+      <ns0:PaxList>
+        <ns0:Pax>
+          <ns0:PTC>ADT</ns0:PTC>
+          <ns0:PaxID>1</ns0:PaxID>
+        </ns0:Pax>
+      </ns0:PaxList>
+    </ns0:DataLists>
+    <ns0:PricedOffer>
+      <ns0:SelectedOffer>
+        <ns0:OfferRefID>TOuEYT2O0tSJuS9SgPeb96VC_1A_58cee9b8-0d4c-49d0-8760-a6ff857bec18_1A_ce1c68c6-0d82-4faa-9c68-c60d826f0023</ns0:OfferRefID>
+        <ns0:OwnerCode>AF</ns0:OwnerCode>
+        <ns0:ShoppingResponseRefID>ce2c79c7-1d93-5faa-9c79-c71d937f1112</ns0:ShoppingResponseRefID>
+        <ns0:SelectedOfferItem>
+          <ns0:OfferItemRefID>c42b2eb2-138a-4207-ab2e-b2138a720797</ns0:OfferItemRefID>
+          <ns0:PaxRefID>1</ns0:PaxRefID>
+        </ns0:SelectedOfferItem>
+        <ns0:SelectedOfferItem>
+          <ns0:OfferItemRefID>e1efce90-fef7-45fe-afce-90fef7f5fe06</ns0:OfferItemRefID>
+          <ns0:PaxRefID>1</ns0:PaxRefID>
+        </ns0:SelectedOfferItem>
+      </ns0:SelectedOffer>
+    </ns0:PricedOffer>
+    <ns0:ShoppingCriteria />
+  </ns0:Request>
+</ns0:AMA_TravelOfferPriceRQ>

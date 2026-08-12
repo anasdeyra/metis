@@ -1,0 +1,841 @@
+<ns0:AMA_TravelOfferPriceRS xmlns:ns0="http://xml.amadeus.com/2010/06/Travel_OfferPriceRS_v1">
+  <ns0:Response>
+    <ns0:DataLists>
+      <ns0:BaggageAllowanceList>
+        <ns0:BaggageAllowance>
+          <ns0:BaggageAllowanceID>HANDBAGALLOWANCE_0</ns0:BaggageAllowanceID>
+          <ns0:TypeCode>CarryOnBag</ns0:TypeCode>
+          <ns0:PieceAllowance>
+            <ns0:ApplicablePartyText>Traveler</ns0:ApplicablePartyText>
+            <ns0:TotalQty>2</ns0:TotalQty>
+            <ns0:PieceDimensionAllowance>
+              <ns0:Qty>2</ns0:Qty>
+            </ns0:PieceDimensionAllowance>
+          </ns0:PieceAllowance>
+        </ns0:BaggageAllowance>
+        <ns0:BaggageAllowance>
+          <ns0:BaggageAllowanceID>CHECKEDBAGALLOWANCE_0</ns0:BaggageAllowanceID>
+          <ns0:TypeCode>CheckedBag</ns0:TypeCode>
+          <ns0:PieceAllowance>
+            <ns0:ApplicablePartyText>Traveler</ns0:ApplicablePartyText>
+            <ns0:TotalQty>0</ns0:TotalQty>
+            <ns0:PieceDimensionAllowance>
+              <ns0:Qty>0</ns0:Qty>
+            </ns0:PieceDimensionAllowance>
+          </ns0:PieceAllowance>
+        </ns0:BaggageAllowance>
+      </ns0:BaggageAllowanceList>
+      <ns0:FareList>
+        <ns0:FareGroup ListKey="LZNNANB4">
+          <ns0:Fare>
+            <ns0:FareCode>70J</ns0:FareCode>
+          </ns0:Fare>
+          <ns0:FareBasisCode>
+            <ns0:Code>LZNNANB4</ns0:Code>
+          </ns0:FareBasisCode>
+        </ns0:FareGroup>
+        <ns0:FareGroup ListKey="AAN7ANB4">
+          <ns0:Fare>
+            <ns0:FareCode>70J</ns0:FareCode>
+          </ns0:Fare>
+          <ns0:FareBasisCode>
+            <ns0:Code>AAN7ANB4</ns0:Code>
+          </ns0:FareBasisCode>
+        </ns0:FareGroup>
+      </ns0:FareList>
+      <ns0:OriginDestList>
+        <ns0:OriginDest>
+          <ns0:OriginDestID>OD1</ns0:OriginDestID>
+          <ns0:OriginCode>LIS</ns0:OriginCode>
+          <ns0:DestCode>MAD</ns0:DestCode>
+          <ns0:PaxJourneyRefID>LISMAD20230408063500</ns0:PaxJourneyRefID>
+        </ns0:OriginDest>
+        <ns0:OriginDest>
+          <ns0:OriginDestID>OD2</ns0:OriginDestID>
+          <ns0:OriginCode>MAD</ns0:OriginCode>
+          <ns0:DestCode>LIS</ns0:DestCode>
+          <ns0:PaxJourneyRefID>MADLIS20230424194000</ns0:PaxJourneyRefID>
+        </ns0:OriginDest>
+      </ns0:OriginDestList>
+      <ns0:PaxJourneyList>
+        <ns0:PaxJourney>
+          <ns0:PaxJourneyID>LISMAD20230408063500</ns0:PaxJourneyID>
+          <ns0:Duration>PT1H25M</ns0:Duration>
+          <ns0:PaxSegmentRefID>IB310720230408</ns0:PaxSegmentRefID>
+        </ns0:PaxJourney>
+        <ns0:PaxJourney>
+          <ns0:PaxJourneyID>MADLIS20230424194000</ns0:PaxJourneyID>
+          <ns0:Duration>PT1H25M</ns0:Duration>
+          <ns0:PaxSegmentRefID>IB310620230424</ns0:PaxSegmentRefID>
+        </ns0:PaxJourney>
+      </ns0:PaxJourneyList>
+      <ns0:PaxList>
+        <ns0:Pax>
+          <ns0:PaxID>1</ns0:PaxID>
+          <ns0:PTC>ADT</ns0:PTC>
+          <ns0:PaxRefID>1.1</ns0:PaxRefID>
+        </ns0:Pax>
+        <ns0:Pax>
+          <ns0:PaxID>2</ns0:PaxID>
+          <ns0:PTC>ADT</ns0:PTC>
+        </ns0:Pax>
+        <ns0:Pax>
+          <ns0:PaxID>3</ns0:PaxID>
+          <ns0:PTC>CHD</ns0:PTC>
+        </ns0:Pax>
+        <ns0:Pax>
+          <ns0:PaxID>1.1</ns0:PaxID>
+          <ns0:PTC>INF</ns0:PTC>
+        </ns0:Pax>
+      </ns0:PaxList>
+      <ns0:PaxSegmentList>
+        <ns0:PaxSegment>
+          <ns0:PaxSegmentID>IB310720230408</ns0:PaxSegmentID>
+          <ns0:Duration>PT1H25M</ns0:Duration>
+          <ns0:Dep>
+            <ns0:IATA_LocationCode>LIS</ns0:IATA_LocationCode>
+            <ns0:AircraftScheduledDateTime>2023-04-08T06:35:00</ns0:AircraftScheduledDateTime>
+            <ns0:TerminalName>1</ns0:TerminalName>
+            <ns0:StationName>Lisbon</ns0:StationName>
+          </ns0:Dep>
+          <ns0:Arrival>
+            <ns0:IATA_LocationCode>MAD</ns0:IATA_LocationCode>
+            <ns0:AircraftScheduledDateTime>2023-04-08T09:00:00</ns0:AircraftScheduledDateTime>
+            <ns0:TerminalName>4</ns0:TerminalName>
+            <ns0:StationName>Madrid Adolfo Suarez-Barajas</ns0:StationName>
+          </ns0:Arrival>
+          <ns0:MarketingCarrierInfo>
+            <ns0:CarrierDesigCode>IB</ns0:CarrierDesigCode>
+            <ns0:CarrierName>Iberia</ns0:CarrierName>
+            <ns0:MarketingCarrierFlightNumberText>3107</ns0:MarketingCarrierFlightNumberText>
+          </ns0:MarketingCarrierInfo>
+          <ns0:OperatingCarrierInfo>
+            <ns0:CarrierDesigCode>IB</ns0:CarrierDesigCode>
+            <ns0:CarrierName>Iberia</ns0:CarrierName>
+            <ns0:OperatingCarrierFlightNumberText>3107</ns0:OperatingCarrierFlightNumberText>
+          </ns0:OperatingCarrierInfo>
+          <ns0:DatedOperatingLeg>
+            <ns0:DatedOperatingLegID>S1</ns0:DatedOperatingLegID>
+            <ns0:CarrierAircraftType>
+              <ns0:CarrierAircraftTypeCode>320</ns0:CarrierAircraftTypeCode>
+              <ns0:CarrierAircraftTypeName>Airbus A320</ns0:CarrierAircraftTypeName>
+            </ns0:CarrierAircraftType>
+            <ns0:Dep>
+              <ns0:IATA_LocationCode>LIS</ns0:IATA_LocationCode>
+              <ns0:AircraftScheduledDateTime>2023-04-08T06:35:00</ns0:AircraftScheduledDateTime>
+              <ns0:TerminalName>1</ns0:TerminalName>
+              <ns0:StationName>Lisbon</ns0:StationName>
+            </ns0:Dep>
+            <ns0:Arrival>
+              <ns0:IATA_LocationCode>MAD</ns0:IATA_LocationCode>
+              <ns0:AircraftScheduledDateTime>2023-04-08T09:00:00</ns0:AircraftScheduledDateTime>
+              <ns0:TerminalName>4</ns0:TerminalName>
+              <ns0:StationName>Madrid Adolfo Suarez-Barajas</ns0:StationName>
+            </ns0:Arrival>
+          </ns0:DatedOperatingLeg>
+        </ns0:PaxSegment>
+        <ns0:PaxSegment>
+          <ns0:PaxSegmentID>IB310620230424</ns0:PaxSegmentID>
+          <ns0:Duration>PT1H25M</ns0:Duration>
+          <ns0:Dep>
+            <ns0:IATA_LocationCode>MAD</ns0:IATA_LocationCode>
+            <ns0:AircraftScheduledDateTime>2023-04-24T19:40:00</ns0:AircraftScheduledDateTime>
+            <ns0:TerminalName>4</ns0:TerminalName>
+            <ns0:StationName>Madrid Adolfo Suarez-Barajas</ns0:StationName>
+          </ns0:Dep>
+          <ns0:Arrival>
+            <ns0:IATA_LocationCode>LIS</ns0:IATA_LocationCode>
+            <ns0:AircraftScheduledDateTime>2023-04-24T20:05:00</ns0:AircraftScheduledDateTime>
+            <ns0:TerminalName>1</ns0:TerminalName>
+            <ns0:StationName>Lisbon</ns0:StationName>
+          </ns0:Arrival>
+          <ns0:MarketingCarrierInfo>
+            <ns0:CarrierDesigCode>IB</ns0:CarrierDesigCode>
+            <ns0:CarrierName>Iberia</ns0:CarrierName>
+            <ns0:MarketingCarrierFlightNumberText>3106</ns0:MarketingCarrierFlightNumberText>
+          </ns0:MarketingCarrierInfo>
+          <ns0:OperatingCarrierInfo>
+            <ns0:CarrierDesigCode>IB</ns0:CarrierDesigCode>
+            <ns0:CarrierName>Iberia</ns0:CarrierName>
+            <ns0:OperatingCarrierFlightNumberText>3106</ns0:OperatingCarrierFlightNumberText>
+          </ns0:OperatingCarrierInfo>
+          <ns0:DatedOperatingLeg>
+            <ns0:DatedOperatingLegID>S2</ns0:DatedOperatingLegID>
+            <ns0:CarrierAircraftType>
+              <ns0:CarrierAircraftTypeCode>320</ns0:CarrierAircraftTypeCode>
+              <ns0:CarrierAircraftTypeName>Airbus A320</ns0:CarrierAircraftTypeName>
+            </ns0:CarrierAircraftType>
+            <ns0:Dep>
+              <ns0:IATA_LocationCode>MAD</ns0:IATA_LocationCode>
+              <ns0:AircraftScheduledDateTime>2023-04-24T19:40:00</ns0:AircraftScheduledDateTime>
+              <ns0:TerminalName>4</ns0:TerminalName>
+              <ns0:StationName>Madrid Adolfo Suarez-Barajas</ns0:StationName>
+            </ns0:Dep>
+            <ns0:Arrival>
+              <ns0:IATA_LocationCode>LIS</ns0:IATA_LocationCode>
+              <ns0:AircraftScheduledDateTime>2023-04-24T20:05:00</ns0:AircraftScheduledDateTime>
+              <ns0:TerminalName>1</ns0:TerminalName>
+              <ns0:StationName>Lisbon</ns0:StationName>
+            </ns0:Arrival>
+          </ns0:DatedOperatingLeg>
+        </ns0:PaxSegment>
+      </ns0:PaxSegmentList>
+      <ns0:PriceClassList>
+        <ns0:PriceClass>
+          <ns0:PriceClassID>NOBAGylw43nOD</ns0:PriceClassID>
+          <ns0:Code>NOBAG</ns0:Code>
+          <ns0:Name>BASIC</ns0:Name>
+          <ns0:Desc>
+            <ns0:DescID>FFM1-DESC1</ns0:DescID>
+            <ns0:DescText>STANDARD SEAT SELECTION/CHARGE</ns0:DescText>
+          </ns0:Desc>
+          <ns0:Desc>
+            <ns0:DescID>FFM1-DESC2</ns0:DescID>
+            <ns0:DescText>XL SEAT SELECTION/CHARGE</ns0:DescText>
+          </ns0:Desc>
+          <ns0:Desc>
+            <ns0:DescID>FFM1-DESC3</ns0:DescID>
+            <ns0:DescText>EMERGENCY SEAT SELECTION/CHARGE</ns0:DescText>
+          </ns0:Desc>
+          <ns0:Desc>
+            <ns0:DescID>FFM1-DESC4</ns0:DescID>
+            <ns0:DescText>FRONT SEAT SELECTION/CHARGE</ns0:DescText>
+          </ns0:Desc>
+          <ns0:Desc>
+            <ns0:DescID>FFM1-DESC5</ns0:DescID>
+            <ns0:DescText>STD SEAT SEL 24H BEFORE DEPART/CHARGE</ns0:DescText>
+          </ns0:Desc>
+          <ns0:Desc>
+            <ns0:DescID>FFM1-DESC6</ns0:DescID>
+            <ns0:DescText>EARLY CHECK IN/DISPLAYED-BUT-NOT-OFFERED</ns0:DescText>
+          </ns0:Desc>
+          <ns0:Desc>
+            <ns0:DescID>FFM1-DESC7</ns0:DescID>
+            <ns0:DescText>MEAL/DISPLAYED-BUT-NOT-OFFERED</ns0:DescText>
+          </ns0:Desc>
+          <ns0:Desc>
+            <ns0:DescID>FFM1-DESC8</ns0:DescID>
+            <ns0:DescText>SNACK OR DRINK/CHARGE</ns0:DescText>
+          </ns0:Desc>
+          <ns0:Desc>
+            <ns0:DescID>FFM1-DESC9</ns0:DescID>
+            <ns0:DescText>LOUNGE ACCESS/DISPLAYED-BUT-NOT-OFFERED</ns0:DescText>
+          </ns0:Desc>
+          <ns0:Desc>
+            <ns0:DescID>FFM1-DESC10</ns0:DescID>
+            <ns0:DescText>PRIORITY SECURITY/DISPLAYED-BUT-NOT-OFFERED</ns0:DescText>
+          </ns0:Desc>
+          <ns0:Desc>
+            <ns0:DescID>FFM1-DESC11</ns0:DescID>
+            <ns0:DescText>PRIORITY BAGGAGE/DISPLAYED-BUT-NOT-OFFERED</ns0:DescText>
+          </ns0:Desc>
+          <ns0:Desc>
+            <ns0:DescID>FFM1-DESC12</ns0:DescID>
+            <ns0:DescText>PRIORITY BOARDING GROUP 1/DISPLAYED-BUT-NOT-OFFERED</ns0:DescText>
+          </ns0:Desc>
+          <ns0:Desc>
+            <ns0:DescID>FFM1-DESC13</ns0:DescID>
+            <ns0:DescText>PRIORITY BOARDING GROUP 2/DISPLAYED-BUT-NOT-OFFERED</ns0:DescText>
+          </ns0:Desc>
+          <ns0:Desc>
+            <ns0:DescID>FFM1-DESC14</ns0:DescID>
+            <ns0:DescText>PRIORITY CHECK IN/DISPLAYED-BUT-NOT-OFFERED</ns0:DescText>
+          </ns0:Desc>
+          <ns0:Desc>
+            <ns0:DescID>FFM1-DESC15</ns0:DescID>
+            <ns0:DescText>WIFI CONNECTION/CHARGE</ns0:DescText>
+          </ns0:Desc>
+          <ns0:Desc>
+            <ns0:DescID>FFM1-DESC16</ns0:DescID>
+            <ns0:DescText>AVIOS/FREE</ns0:DescText>
+          </ns0:Desc>
+          <ns0:Desc>
+            <ns0:DescID>FFM1-DESC17</ns0:DescID>
+            <ns0:DescText>AVIOS ELITE/FREE</ns0:DescText>
+          </ns0:Desc>
+        </ns0:PriceClass>
+      </ns0:PriceClassList>
+    </ns0:DataLists>
+    <ns0:Metadata>
+      <ns0:Other>
+        <ns0:OtherMetadata>
+          <ns0:CurrencyMetadatas>
+            <ns0:CurrencyMetadata MetadataKey="EUR">
+              <ns0:Decimals>2</ns0:Decimals>
+            </ns0:CurrencyMetadata>
+          </ns0:CurrencyMetadatas>
+        </ns0:OtherMetadata>
+        <ns0:OtherMetadata>
+          <ns0:RuleMetadatas>
+            <ns0:RuleMetadata MetadataKey="RULEMETADATAKEY_2">
+              <ns0:RuleID>Cancel</ns0:RuleID>
+              <ns0:Values>
+                <ns0:Value>
+                  <ns0:Instruction>Not Allowed</ns0:Instruction>
+                </ns0:Value>
+              </ns0:Values>
+            </ns0:RuleMetadata>
+            <ns0:RuleMetadata MetadataKey="RULEMETADATAKEY_3">
+              <ns0:RuleID>Change</ns0:RuleID>
+              <ns0:Values>
+                <ns0:Value>
+                  <ns0:Instruction>Allowed</ns0:Instruction>
+                </ns0:Value>
+              </ns0:Values>
+            </ns0:RuleMetadata>
+          </ns0:RuleMetadatas>
+        </ns0:OtherMetadata>
+      </ns0:Other>
+    </ns0:Metadata>
+    <ns0:PricedOffer>
+      <ns0:Offer>
+        <ns0:OfferID>EREjkQ5zThQnOQLnIoE6p3RA_1A_edc66ec3-d219-4e68-bc93-40f65882d710_1A_IB9dd0014a10ba42349493cb4806f98de9OC</ns0:OfferID>
+        <ns0:OwnerCode>IB</ns0:OwnerCode>
+        <ns0:OfferExpirationDateTime>2023-01-23T22:08:47.548Z</ns0:OfferExpirationDateTime>
+        <ns0:PaymentTimeLimitDateTime>2023-01-24T22:59:59Z</ns0:PaymentTimeLimitDateTime>
+        <ns0:BaggageAllowance>
+          <ns0:PaxJourneyRefID>LISMAD20230408063500</ns0:PaxJourneyRefID>
+          <ns0:PaxJourneyRefID>MADLIS20230424194000</ns0:PaxJourneyRefID>
+          <ns0:PaxRefID>1 2 3 1.1</ns0:PaxRefID>
+          <ns0:BaggageAllowanceRefID>CHECKEDBAGALLOWANCE_0</ns0:BaggageAllowanceRefID>
+        </ns0:BaggageAllowance>
+        <ns0:BaggageAllowance>
+          <ns0:PaxJourneyRefID>LISMAD20230408063500</ns0:PaxJourneyRefID>
+          <ns0:PaxJourneyRefID>MADLIS20230424194000</ns0:PaxJourneyRefID>
+          <ns0:PaxRefID>1 2 3 1.1</ns0:PaxRefID>
+          <ns0:BaggageAllowanceRefID>HANDBAGALLOWANCE_0</ns0:BaggageAllowanceRefID>
+        </ns0:BaggageAllowance>
+        <ns0:JourneyOverview>
+          <ns0:JourneyPriceClass>
+            <ns0:PriceClassRefID>NOBAGylw43nOD</ns0:PriceClassRefID>
+            <ns0:PaxJourneyRefID>LISMAD20230408063500</ns0:PaxJourneyRefID>
+          </ns0:JourneyPriceClass>
+          <ns0:JourneyPriceClass>
+            <ns0:PriceClassRefID>NOBAGylw43nOD</ns0:PriceClassRefID>
+            <ns0:PaxJourneyRefID>MADLIS20230424194000</ns0:PaxJourneyRefID>
+          </ns0:JourneyPriceClass>
+        </ns0:JourneyOverview>
+        <ns0:OfferItem>
+          <ns0:OfferItemID>IB9dd0014a10ba42349493cb4806f98de9OC_01</ns0:OfferItemID>
+          <ns0:MandatoryInd>true</ns0:MandatoryInd>
+          <ns0:FareDetail>
+            <ns0:PassengerRefs>1</ns0:PassengerRefs>
+            <ns0:PassengerRefs>2</ns0:PassengerRefs>
+            <ns0:Price>
+              <ns0:BaseAmount Code="EUR">13000</ns0:BaseAmount>
+              <ns0:Taxes>
+                <ns0:Total Code="EUR">3758</ns0:Total>
+                <ns0:Breakdown>
+                  <ns0:Tax>
+                    <ns0:Amount Code="EUR">200</ns0:Amount>
+                    <ns0:Nation>PT</ns0:Nation>
+                    <ns0:TaxCode>J9</ns0:TaxCode>
+                    <ns0:Description>Portugal Carbon Tax</ns0:Description>
+                  </ns0:Tax>
+                  <ns0:Tax>
+                    <ns0:Amount Code="EUR">507</ns0:Amount>
+                    <ns0:Nation>PT</ns0:Nation>
+                    <ns0:TaxCode>PT</ns0:TaxCode>
+                    <ns0:Description>Portugal Security Tax</ns0:Description>
+                  </ns0:Tax>
+                  <ns0:Tax>
+                    <ns0:Amount Code="EUR">1213</ns0:Amount>
+                    <ns0:Nation>PT</ns0:Nation>
+                    <ns0:TaxCode>YP</ns0:TaxCode>
+                    <ns0:Description>Portugal Braganca Faro Lisbon Porto Vila Real Beja Passenger Service Charge</ns0:Description>
+                  </ns0:Tax>
+                  <ns0:Tax>
+                    <ns0:Amount Code="EUR">1448</ns0:Amount>
+                    <ns0:Nation>ES</ns0:Nation>
+                    <ns0:TaxCode>JD</ns0:TaxCode>
+                    <ns0:Description>Spain Departure Charge</ns0:Description>
+                  </ns0:Tax>
+                  <ns0:Tax>
+                    <ns0:Amount Code="EUR">63</ns0:Amount>
+                    <ns0:Nation>ES</ns0:Nation>
+                    <ns0:TaxCode>OG</ns0:TaxCode>
+                    <ns0:Description>Spain Aviation Safety And Security Fee</ns0:Description>
+                  </ns0:Tax>
+                  <ns0:Tax>
+                    <ns0:Amount Code="EUR">327</ns0:Amount>
+                    <ns0:Nation>ES</ns0:Nation>
+                    <ns0:TaxCode>QV</ns0:TaxCode>
+                    <ns0:Description>Spain Security Tax</ns0:Description>
+                  </ns0:Tax>
+                </ns0:Breakdown>
+              </ns0:Taxes>
+            </ns0:Price>
+            <ns0:FareComponent>
+              <ns0:FareBasis>
+                <ns0:FareBasisCode>
+                  <ns0:Code>LZNNANB4</ns0:Code>
+                </ns0:FareBasisCode>
+                <ns0:RBD>L</ns0:RBD>
+                <ns0:CabinType>
+                  <ns0:CabinTypeCode>5</ns0:CabinTypeCode>
+                  <ns0:CabinTypeName>Economy</ns0:CabinTypeName>
+                </ns0:CabinType>
+              </ns0:FareBasis>
+              <ns0:FareRules>
+                <ns0:Penalty CancelFeeInd="false" ChangeFeeInd="true" RefundableInd="false">
+                  <ns0:Details>
+                    <ns0:Detail refs="RULEMETADATAKEY_3">
+                      <ns0:Type>Change</ns0:Type>
+                      <ns0:Application>2</ns0:Application>
+                      <ns0:Amounts>
+                        <ns0:Amount>
+                          <ns0:CurrencyAmountValue Code="EUR">6500</ns0:CurrencyAmountValue>
+                          <ns0:AmountApplication>MIN</ns0:AmountApplication>
+                        </ns0:Amount>
+                        <ns0:Amount>
+                          <ns0:CurrencyAmountValue Code="EUR">6500</ns0:CurrencyAmountValue>
+                          <ns0:AmountApplication>MAX</ns0:AmountApplication>
+                        </ns0:Amount>
+                      </ns0:Amounts>
+                    </ns0:Detail>
+                    <ns0:Detail refs="RULEMETADATAKEY_3">
+                      <ns0:Type>Change</ns0:Type>
+                      <ns0:Application>3</ns0:Application>
+                      <ns0:Amounts>
+                        <ns0:Amount>
+                          <ns0:CurrencyAmountValue Code="EUR">6500</ns0:CurrencyAmountValue>
+                          <ns0:AmountApplication>MIN</ns0:AmountApplication>
+                        </ns0:Amount>
+                        <ns0:Amount>
+                          <ns0:CurrencyAmountValue Code="EUR">6500</ns0:CurrencyAmountValue>
+                          <ns0:AmountApplication>MAX</ns0:AmountApplication>
+                        </ns0:Amount>
+                      </ns0:Amounts>
+                    </ns0:Detail>
+                  </ns0:Details>
+                </ns0:Penalty>
+                <ns0:Remarks>
+                  <ns0:Remark> CANCELLATIONS BEFORE DEPARTURE TICKET IS NON-REFUNDABLE IN CASE OF CANCEL/REFUND. AFTER DEPARTURE TICKET IS NON-REFUNDABLE IN CASE OF CANCEL/REFUND. CHANGES BEFORE DEPARTURE PER TICKET CHARGE EUR 65.00 FOR REISSUE. CHILD/INFANT DISCOUNTS APPLY. AFTER DEPARTURE PER TICKET CHARGE EUR 65.00 FOR REISSUE. CHILD/INFANT DISCOUNTS APPLY. NOTE - INFORMATION RELATIVE IN BOTH CANCELATION AND CHANGES ------------------------------ WAIVED FOR DEATH OF A PASSENGER AND PASSENGERS TRAVELLING COMPANIONS. ------------------------------ IT WILL BE CONSIDERED NO SHOW WHEN A PASSENGER HAS NOT ADVISED THE AIRLINE THAT WILL NOT BE ABLE TO MAKE THE FLIGHT IN WHICH THEY ARE BOOKED ON. BEING NECESSARY THAT THE PASSENGER HAS CANCELED AND REFUNDED OR CHANGED THE TICKET AT THE SAME TIME. ------------------------------ REFUND FOR NO SHOW - NOT PERMITTED CHANGES FOR NO SHOW - NOT PERMITTED CHILD/INFANT DISCOUNTS APPLY. ------------------------------ IN CASE CHARGE FOR CHANGES APPLIES PER TRANSACTION/TICKET AND PERSON TO ALL PASSENGER TYPES. IN CASE CHARGE FOR CANCELLATION APPLIES PER DIRECTION TO ALL PASSENGER TYPES. ------------------------------ A CHANGE IS A DATE/FLIGHT/ROUTING/BOOKING CODE CHANGE. ------------------------------ REISSUE MUST BE MADE AT THE SAME TIME AS CHANGE OF RESERVATION BUT NO LATER THAN SCHEDULED DEPARTURE TIME OF FLIGHT BEING CHANGED. ------------------------------ WHEN MORE THAN ONE FARE COMPONENT IS CHANGED THE HIGHEST PENALTY OF ALL CHANGED FARE COMPONENTS WITH THE JOURNEY APPLIES. ------------------------------ WHEN COMBINING NON-REFUNDABLE FARES WITH A REFUNDABLE FARES 1-THE AMOUNT PAID ON EACH REFUNDABLE FARE COMPONENT IS REFUNDED 2-THE AMOUNT PAID ON EACH NON-REFUNDABLE FARE COMPONENT WILL NOT BE REFUNDED 3-WHEN COMBINING FARES CHARGE THE SUM OF THE CANCELLATION FEES OF ALL CANCELLED FARE COMPONENTS ------------------------------ REFUND OF UNUSED TAXES PAID TO THIRD PARTIES PERMITTED. EXCEPT FOR TAXES THAT ARE LEGALLY NON-REFUNDABLE. YQ/YR WILL BE REFUNDED IF THE FARE IS REFUNDABLE OTHERWISE IT WOULD NOT BE ALLOWED ------------------------------ REFUND AND CHANGES ARE PERMITTED WITHIN TICKET VALIDITY UNDER FARE CONDITIONS. ------------------------------ ANY NON-REFUNDABLE AMOUNT AND/OR CANCELLATION PENALTY FROM A PREVIOUS TICKET REMAINS NON- REFUNDABLE FOLLOWING A CHANGE. ------------------------------ TICKET IS NOT TRANSFERABLE TO ANOTHER PERSON. ----------------------------------------------- ----REPRICING CONDITIONS ---- A.BEFORE DEPARTURE OF JOURNEY WHEN THE FISRT FARE COMPONENT IS CHANGED THE ITINERARY MUST BE RE-PRICED USING CURRENT FARES IN EFFECT ON THE DATE THE TICKET IS REISSUED. B.BEFORE DEPARTURE OF JOURNEY WHEN CHANGES ARE TO BOOKING CODE ONLY IN THE FIRST FARE COMPONENT AND RESULT IN A HIGHER FARE THE ITINERARY MUST BE RE- PRICED USING HISTORICAL FARES IN EFFECT ON THE PREVIOUS TICKETING DATE OR USING CURRENT FARE IN EFFECT ON THE DATE THE TICKET IS REISSUED - WICHEVER IS LOWER. C. BEFORE DEPARTURE OF JOURNEY WHEN THERE ARE NO CHANGES TO THE FIRST FARE COMPONENT BUT OTHER FARE COMPONENTS ARE CHANGED THE ITINERARY MUST BE RE-PRICED USING HISTORICAL FAERS IN EFFECT ON THE PREVIOUS TICKETING DATE OR USING CURRENT FARES IN EFFECT ON THE DATE THE TICKET IS REISSUED - WHICHEVER IS LOWER. D. AFTER DEPARTURE OF JOURNEY THE ITINERARY MUST BE RE-PRICED USING HISTORICAL FARES IN EFFECT ON THE PREVIOUS TICKETING DATE. ----------------------------------------------- WHEN THE ITINERARY RESULT IN A HIGHER FARE THE DIFFERENCE WILL BE COLLECTED ANY APPLICABLE CHANGE FEE APPLIES. ----------------------------------------------- WHEN THE NEW ITINERARY RESULTS IN A LOWER FARE THE CHANGE FEE APPLIES AND NO CREDIT OF THE RESIDUAL AMOUNT WILL BE MADE.</ns0:Remark>
+                </ns0:Remarks>
+              </ns0:FareRules>
+              <ns0:PriceClassRef>NOBAGylw43nOD</ns0:PriceClassRef>
+              <ns0:SegmentRefs>IB310720230408</ns0:SegmentRefs>
+            </ns0:FareComponent>
+            <ns0:FareComponent>
+              <ns0:FareBasis>
+                <ns0:FareBasisCode>
+                  <ns0:Code>AAN7ANB4</ns0:Code>
+                </ns0:FareBasisCode>
+                <ns0:RBD>A</ns0:RBD>
+                <ns0:CabinType>
+                  <ns0:CabinTypeCode>5</ns0:CabinTypeCode>
+                  <ns0:CabinTypeName>Economy</ns0:CabinTypeName>
+                </ns0:CabinType>
+              </ns0:FareBasis>
+              <ns0:FareRules>
+                <ns0:Penalty CancelFeeInd="false" ChangeFeeInd="true" RefundableInd="false">
+                  <ns0:Details>
+                    <ns0:Detail refs="RULEMETADATAKEY_3">
+                      <ns0:Type>Change</ns0:Type>
+                      <ns0:Application>2</ns0:Application>
+                      <ns0:Amounts>
+                        <ns0:Amount>
+                          <ns0:CurrencyAmountValue Code="EUR">6500</ns0:CurrencyAmountValue>
+                          <ns0:AmountApplication>MIN</ns0:AmountApplication>
+                        </ns0:Amount>
+                        <ns0:Amount>
+                          <ns0:CurrencyAmountValue Code="EUR">6500</ns0:CurrencyAmountValue>
+                          <ns0:AmountApplication>MAX</ns0:AmountApplication>
+                        </ns0:Amount>
+                      </ns0:Amounts>
+                    </ns0:Detail>
+                    <ns0:Detail refs="RULEMETADATAKEY_3">
+                      <ns0:Type>Change</ns0:Type>
+                      <ns0:Application>3</ns0:Application>
+                      <ns0:Amounts>
+                        <ns0:Amount>
+                          <ns0:CurrencyAmountValue Code="EUR">6500</ns0:CurrencyAmountValue>
+                          <ns0:AmountApplication>MIN</ns0:AmountApplication>
+                        </ns0:Amount>
+                        <ns0:Amount>
+                          <ns0:CurrencyAmountValue Code="EUR">6500</ns0:CurrencyAmountValue>
+                          <ns0:AmountApplication>MAX</ns0:AmountApplication>
+                        </ns0:Amount>
+                      </ns0:Amounts>
+                    </ns0:Detail>
+                  </ns0:Details>
+                </ns0:Penalty>
+                <ns0:Remarks>
+                  <ns0:Remark> CANCELLATIONS BEFORE DEPARTURE TICKET IS NON-REFUNDABLE IN CASE OF CANCEL/REFUND. AFTER DEPARTURE TICKET IS NON-REFUNDABLE IN CASE OF CANCEL/REFUND. CHANGES BEFORE DEPARTURE PER TICKET CHARGE EUR 65.00 FOR REISSUE. CHILD/INFANT DISCOUNTS APPLY. AFTER DEPARTURE PER TICKET CHARGE EUR 65.00 FOR REISSUE. CHILD/INFANT DISCOUNTS APPLY. NOTE - INFORMATION RELATIVE IN BOTH CANCELATION AND CHANGES ------------------------------ WAIVED FOR DEATH OF A PASSENGER AND PASSENGERS TRAVELLING COMPANIONS. ------------------------------ IT WILL BE CONSIDERED NO SHOW WHEN A PASSENGER HAS NOT ADVISED THE AIRLINE THAT WILL NOT BE ABLE TO MAKE THE FLIGHT IN WHICH THEY ARE BOOKED ON. BEING NECESSARY THAT THE PASSENGER HAS CANCELED AND REFUNDED OR CHANGED THE TICKET AT THE SAME TIME. ------------------------------ REFUND FOR NO SHOW - NOT PERMITTED CHANGES FOR NO SHOW - NOT PERMITTED CHILD/INFANT DISCOUNTS APPLY. ------------------------------ IN CASE CHARGE FOR CHANGES APPLIES PER TRANSACTION/TICKET AND PERSON TO ALL PASSENGER TYPES. IN CASE CHARGE FOR CANCELLATION APPLIES PER DIRECTION TO ALL PASSENGER TYPES. ------------------------------ A CHANGE IS A DATE/FLIGHT/ROUTING/BOOKING CODE CHANGE. ------------------------------ REISSUE MUST BE MADE AT THE SAME TIME AS CHANGE OF RESERVATION BUT NO LATER THAN SCHEDULED DEPARTURE TIME OF FLIGHT BEING CHANGED. ------------------------------ WHEN MORE THAN ONE FARE COMPONENT IS CHANGED THE HIGHEST PENALTY OF ALL CHANGED FARE COMPONENTS WITH THE JOURNEY APPLIES. ------------------------------ WHEN COMBINING NON-REFUNDABLE FARES WITH A REFUNDABLE FARES 1-THE AMOUNT PAID ON EACH REFUNDABLE FARE COMPONENT IS REFUNDED 2-THE AMOUNT PAID ON EACH NON-REFUNDABLE FARE COMPONENT WILL NOT BE REFUNDED 3-WHEN COMBINING FARES CHARGE THE SUM OF THE CANCELLATION FEES OF ALL CANCELLED FARE COMPONENTS ------------------------------ REFUND OF UNUSED TAXES PAID TO THIRD PARTIES PERMITTED. EXCEPT FOR TAXES THAT ARE LEGALLY NON-REFUNDABLE. YQ/YR WILL BE REFUNDED IF THE FARE IS REFUNDABLE OTHERWISE IT WOULD NOT BE ALLOWED ------------------------------ REFUND AND CHANGES ARE PERMITTED WITHIN TICKET VALIDITY UNDER FARE CONDITIONS. ------------------------------ ANY NON-REFUNDABLE AMOUNT AND/OR CANCELLATION PENALTY FROM A PREVIOUS TICKET REMAINS NON- REFUNDABLE FOLLOWING A CHANGE. ------------------------------ TICKET IS NOT TRANSFERABLE TO ANOTHER PERSON. ----------------------------------------------- ----REPRICING CONDITIONS ---- A.BEFORE DEPARTURE OF JOURNEY WHEN THE FISRT FARE COMPONENT IS CHANGED THE ITINERARY MUST BE RE-PRICED USING CURRENT FARES IN EFFECT ON THE DATE THE TICKET IS REISSUED. B.BEFORE DEPARTURE OF JOURNEY WHEN CHANGES ARE TO BOOKING CODE ONLY IN THE FIRST FARE COMPONENT AND RESULT IN A HIGHER FARE THE ITINERARY MUST BE RE- PRICED USING HISTORICAL FARES IN EFFECT ON THE PREVIOUS TICKETING DATE OR USING CURRENT FARE IN EFFECT ON THE DATE THE TICKET IS REISSUED - WICHEVER IS LOWER. C. BEFORE DEPARTURE OF JOURNEY WHEN THERE ARE NO CHANGES TO THE FIRST FARE COMPONENT BUT OTHER FARE COMPONENTS ARE CHANGED THE ITINERARY MUST BE RE-PRICED USING HISTORICAL FAERS IN EFFECT ON THE PREVIOUS TICKETING DATE OR USING CURRENT FARES IN EFFECT ON THE DATE THE TICKET IS REISSUED - WHICHEVER IS LOWER. D. AFTER DEPARTURE OF JOURNEY THE ITINERARY MUST BE RE-PRICED USING HISTORICAL FARES IN EFFECT ON THE PREVIOUS TICKETING DATE. ----------------------------------------------- WHEN THE ITINERARY RESULT IN A HIGHER FARE THE DIFFERENCE WILL BE COLLECTED ANY APPLICABLE CHANGE FEE APPLIES. ----------------------------------------------- WHEN THE NEW ITINERARY RESULTS IN A LOWER FARE THE CHANGE FEE APPLIES AND NO CREDIT OF THE RESIDUAL AMOUNT WILL BE MADE.</ns0:Remark>
+                </ns0:Remarks>
+              </ns0:FareRules>
+              <ns0:PriceClassRef>NOBAGylw43nOD</ns0:PriceClassRef>
+              <ns0:SegmentRefs>IB310620230424</ns0:SegmentRefs>
+            </ns0:FareComponent>
+          </ns0:FareDetail>
+          <ns0:SaleDetail>
+            <ns0:Markup CurCode="EUR">1000</ns0:Markup>
+            <ns0:Margin CurCode="EUR">1200</ns0:Margin>
+            <ns0:PassengerRefs>1</ns0:PassengerRefs>
+            <ns0:PassengerRefs>2</ns0:PassengerRefs>
+          </ns0:SaleDetail>
+          <ns0:Service>
+            <ns0:ServiceID>IBFLIGHT_01_IB9dd0014a10ba42349493cb4806f98de9OC_01</ns0:ServiceID>
+            <ns0:PaxRefID>1</ns0:PaxRefID>
+            <ns0:PaxRefID>2</ns0:PaxRefID>
+            <ns0:ServiceAssociations>
+              <ns0:PaxJourneyRefID>LISMAD20230408063500</ns0:PaxJourneyRefID>
+              <ns0:PaxJourneyRefID>MADLIS20230424194000</ns0:PaxJourneyRefID>
+            </ns0:ServiceAssociations>
+          </ns0:Service>
+          <ns0:Service>
+            <ns0:ServiceID>IBFLIGHT_02_IB9dd0014a10ba42349493cb4806f98de9OC_01</ns0:ServiceID>
+            <ns0:PaxRefID>1</ns0:PaxRefID>
+            <ns0:PaxRefID>2</ns0:PaxRefID>
+            <ns0:ServiceAssociations>
+              <ns0:PaxJourneyRefID>MADLIS20230424194000</ns0:PaxJourneyRefID>
+            </ns0:ServiceAssociations>
+          </ns0:Service>
+          <ns0:Price>
+            <ns0:TotalAmount CurCode="EUR">33516</ns0:TotalAmount>
+          </ns0:Price>
+        </ns0:OfferItem>
+        <ns0:OfferItem>
+          <ns0:OfferItemID>IB9dd0014a10ba42349493cb4806f98de9OC_02</ns0:OfferItemID>
+          <ns0:MandatoryInd>true</ns0:MandatoryInd>
+          <ns0:FareDetail>
+            <ns0:PassengerRefs>3</ns0:PassengerRefs>
+            <ns0:Price>
+              <ns0:BaseAmount Code="EUR">9200</ns0:BaseAmount>
+              <ns0:Taxes>
+                <ns0:Total Code="EUR">3758</ns0:Total>
+                <ns0:Breakdown>
+                  <ns0:Tax>
+                    <ns0:Amount Code="EUR">200</ns0:Amount>
+                    <ns0:Nation>PT</ns0:Nation>
+                    <ns0:TaxCode>J9</ns0:TaxCode>
+                    <ns0:Description>Portugal Carbon Tax</ns0:Description>
+                  </ns0:Tax>
+                  <ns0:Tax>
+                    <ns0:Amount Code="EUR">507</ns0:Amount>
+                    <ns0:Nation>PT</ns0:Nation>
+                    <ns0:TaxCode>PT</ns0:TaxCode>
+                    <ns0:Description>Portugal Security Tax</ns0:Description>
+                  </ns0:Tax>
+                  <ns0:Tax>
+                    <ns0:Amount Code="EUR">1213</ns0:Amount>
+                    <ns0:Nation>PT</ns0:Nation>
+                    <ns0:TaxCode>YP</ns0:TaxCode>
+                    <ns0:Description>Portugal Braganca Faro Lisbon Porto Vila Real Beja Passenger Service Charge</ns0:Description>
+                  </ns0:Tax>
+                  <ns0:Tax>
+                    <ns0:Amount Code="EUR">1448</ns0:Amount>
+                    <ns0:Nation>ES</ns0:Nation>
+                    <ns0:TaxCode>JD</ns0:TaxCode>
+                    <ns0:Description>Spain Departure Charge</ns0:Description>
+                  </ns0:Tax>
+                  <ns0:Tax>
+                    <ns0:Amount Code="EUR">63</ns0:Amount>
+                    <ns0:Nation>ES</ns0:Nation>
+                    <ns0:TaxCode>OG</ns0:TaxCode>
+                    <ns0:Description>Spain Aviation Safety And Security Fee</ns0:Description>
+                  </ns0:Tax>
+                  <ns0:Tax>
+                    <ns0:Amount Code="EUR">327</ns0:Amount>
+                    <ns0:Nation>ES</ns0:Nation>
+                    <ns0:TaxCode>QV</ns0:TaxCode>
+                    <ns0:Description>Spain Security Tax</ns0:Description>
+                  </ns0:Tax>
+                </ns0:Breakdown>
+              </ns0:Taxes>
+            </ns0:Price>
+            <ns0:FareComponent>
+              <ns0:FareBasis>
+                <ns0:FareBasisCode>
+                  <ns0:Code>LZNNANB4</ns0:Code>
+                </ns0:FareBasisCode>
+                <ns0:RBD>L</ns0:RBD>
+                <ns0:CabinType>
+                  <ns0:CabinTypeCode>5</ns0:CabinTypeCode>
+                  <ns0:CabinTypeName>Economy</ns0:CabinTypeName>
+                </ns0:CabinType>
+              </ns0:FareBasis>
+              <ns0:FareRules>
+                <ns0:Penalty CancelFeeInd="false" ChangeFeeInd="true" RefundableInd="false">
+                  <ns0:Details>
+                    <ns0:Detail refs="RULEMETADATAKEY_3">
+                      <ns0:Type>Change</ns0:Type>
+                      <ns0:Application>2</ns0:Application>
+                      <ns0:Amounts>
+                        <ns0:Amount>
+                          <ns0:CurrencyAmountValue Code="EUR">6500</ns0:CurrencyAmountValue>
+                          <ns0:AmountApplication>MIN</ns0:AmountApplication>
+                        </ns0:Amount>
+                        <ns0:Amount>
+                          <ns0:CurrencyAmountValue Code="EUR">6500</ns0:CurrencyAmountValue>
+                          <ns0:AmountApplication>MAX</ns0:AmountApplication>
+                        </ns0:Amount>
+                      </ns0:Amounts>
+                    </ns0:Detail>
+                    <ns0:Detail refs="RULEMETADATAKEY_3">
+                      <ns0:Type>Change</ns0:Type>
+                      <ns0:Application>3</ns0:Application>
+                      <ns0:Amounts>
+                        <ns0:Amount>
+                          <ns0:CurrencyAmountValue Code="EUR">6500</ns0:CurrencyAmountValue>
+                          <ns0:AmountApplication>MIN</ns0:AmountApplication>
+                        </ns0:Amount>
+                        <ns0:Amount>
+                          <ns0:CurrencyAmountValue Code="EUR">6500</ns0:CurrencyAmountValue>
+                          <ns0:AmountApplication>MAX</ns0:AmountApplication>
+                        </ns0:Amount>
+                      </ns0:Amounts>
+                    </ns0:Detail>
+                  </ns0:Details>
+                </ns0:Penalty>
+                <ns0:Remarks>
+                  <ns0:Remark> CANCELLATIONS BEFORE DEPARTURE TICKET IS NON-REFUNDABLE IN CASE OF CANCEL/REFUND. AFTER DEPARTURE TICKET IS NON-REFUNDABLE IN CASE OF CANCEL/REFUND. CHANGES BEFORE DEPARTURE PER TICKET CHARGE EUR 65.00 FOR REISSUE. CHILD/INFANT DISCOUNTS APPLY. AFTER DEPARTURE PER TICKET CHARGE EUR 65.00 FOR REISSUE. CHILD/INFANT DISCOUNTS APPLY. NOTE - INFORMATION RELATIVE IN BOTH CANCELATION AND CHANGES ------------------------------ WAIVED FOR DEATH OF A PASSENGER AND PASSENGERS TRAVELLING COMPANIONS. ------------------------------ IT WILL BE CONSIDERED NO SHOW WHEN A PASSENGER HAS NOT ADVISED THE AIRLINE THAT WILL NOT BE ABLE TO MAKE THE FLIGHT IN WHICH THEY ARE BOOKED ON. BEING NECESSARY THAT THE PASSENGER HAS CANCELED AND REFUNDED OR CHANGED THE TICKET AT THE SAME TIME. ------------------------------ REFUND FOR NO SHOW - NOT PERMITTED CHANGES FOR NO SHOW - NOT PERMITTED CHILD/INFANT DISCOUNTS APPLY. ------------------------------ IN CASE CHARGE FOR CHANGES APPLIES PER TRANSACTION/TICKET AND PERSON TO ALL PASSENGER TYPES. IN CASE CHARGE FOR CANCELLATION APPLIES PER DIRECTION TO ALL PASSENGER TYPES. ------------------------------ A CHANGE IS A DATE/FLIGHT/ROUTING/BOOKING CODE CHANGE. ------------------------------ REISSUE MUST BE MADE AT THE SAME TIME AS CHANGE OF RESERVATION BUT NO LATER THAN SCHEDULED DEPARTURE TIME OF FLIGHT BEING CHANGED. ------------------------------ WHEN MORE THAN ONE FARE COMPONENT IS CHANGED THE HIGHEST PENALTY OF ALL CHANGED FARE COMPONENTS WITH THE JOURNEY APPLIES. ------------------------------ WHEN COMBINING NON-REFUNDABLE FARES WITH A REFUNDABLE FARES 1-THE AMOUNT PAID ON EACH REFUNDABLE FARE COMPONENT IS REFUNDED 2-THE AMOUNT PAID ON EACH NON-REFUNDABLE FARE COMPONENT WILL NOT BE REFUNDED 3-WHEN COMBINING FARES CHARGE THE SUM OF THE CANCELLATION FEES OF ALL CANCELLED FARE COMPONENTS ------------------------------ REFUND OF UNUSED TAXES PAID TO THIRD PARTIES PERMITTED. EXCEPT FOR TAXES THAT ARE LEGALLY NON-REFUNDABLE. YQ/YR WILL BE REFUNDED IF THE FARE IS REFUNDABLE OTHERWISE IT WOULD NOT BE ALLOWED ------------------------------ REFUND AND CHANGES ARE PERMITTED WITHIN TICKET VALIDITY UNDER FARE CONDITIONS. ------------------------------ ANY NON-REFUNDABLE AMOUNT AND/OR CANCELLATION PENALTY FROM A PREVIOUS TICKET REMAINS NON- REFUNDABLE FOLLOWING A CHANGE. ------------------------------ TICKET IS NOT TRANSFERABLE TO ANOTHER PERSON. ----------------------------------------------- ----REPRICING CONDITIONS ---- A.BEFORE DEPARTURE OF JOURNEY WHEN THE FISRT FARE COMPONENT IS CHANGED THE ITINERARY MUST BE RE-PRICED USING CURRENT FARES IN EFFECT ON THE DATE THE TICKET IS REISSUED. B.BEFORE DEPARTURE OF JOURNEY WHEN CHANGES ARE TO BOOKING CODE ONLY IN THE FIRST FARE COMPONENT AND RESULT IN A HIGHER FARE THE ITINERARY MUST BE RE- PRICED USING HISTORICAL FARES IN EFFECT ON THE PREVIOUS TICKETING DATE OR USING CURRENT FARE IN EFFECT ON THE DATE THE TICKET IS REISSUED - WICHEVER IS LOWER. C. BEFORE DEPARTURE OF JOURNEY WHEN THERE ARE NO CHANGES TO THE FIRST FARE COMPONENT BUT OTHER FARE COMPONENTS ARE CHANGED THE ITINERARY MUST BE RE-PRICED USING HISTORICAL FAERS IN EFFECT ON THE PREVIOUS TICKETING DATE OR USING CURRENT FARES IN EFFECT ON THE DATE THE TICKET IS REISSUED - WHICHEVER IS LOWER. D. AFTER DEPARTURE OF JOURNEY THE ITINERARY MUST BE RE-PRICED USING HISTORICAL FARES IN EFFECT ON THE PREVIOUS TICKETING DATE. ----------------------------------------------- WHEN THE ITINERARY RESULT IN A HIGHER FARE THE DIFFERENCE WILL BE COLLECTED ANY APPLICABLE CHANGE FEE APPLIES. ----------------------------------------------- WHEN THE NEW ITINERARY RESULTS IN A LOWER FARE THE CHANGE FEE APPLIES AND NO CREDIT OF THE RESIDUAL AMOUNT WILL BE MADE.</ns0:Remark>
+                </ns0:Remarks>
+              </ns0:FareRules>
+              <ns0:PriceClassRef>NOBAGylw43nOD</ns0:PriceClassRef>
+              <ns0:SegmentRefs>IB310720230408</ns0:SegmentRefs>
+            </ns0:FareComponent>
+            <ns0:FareComponent>
+              <ns0:FareBasis>
+                <ns0:FareBasisCode>
+                  <ns0:Code>AAN7ANB4</ns0:Code>
+                </ns0:FareBasisCode>
+                <ns0:RBD>A</ns0:RBD>
+                <ns0:CabinType>
+                  <ns0:CabinTypeCode>5</ns0:CabinTypeCode>
+                  <ns0:CabinTypeName>Economy</ns0:CabinTypeName>
+                </ns0:CabinType>
+              </ns0:FareBasis>
+              <ns0:FareRules>
+                <ns0:Penalty CancelFeeInd="false" ChangeFeeInd="true" RefundableInd="false">
+                  <ns0:Details>
+                    <ns0:Detail refs="RULEMETADATAKEY_3">
+                      <ns0:Type>Change</ns0:Type>
+                      <ns0:Application>2</ns0:Application>
+                      <ns0:Amounts>
+                        <ns0:Amount>
+                          <ns0:CurrencyAmountValue Code="EUR">6500</ns0:CurrencyAmountValue>
+                          <ns0:AmountApplication>MIN</ns0:AmountApplication>
+                        </ns0:Amount>
+                        <ns0:Amount>
+                          <ns0:CurrencyAmountValue Code="EUR">6500</ns0:CurrencyAmountValue>
+                          <ns0:AmountApplication>MAX</ns0:AmountApplication>
+                        </ns0:Amount>
+                      </ns0:Amounts>
+                    </ns0:Detail>
+                    <ns0:Detail refs="RULEMETADATAKEY_3">
+                      <ns0:Type>Change</ns0:Type>
+                      <ns0:Application>3</ns0:Application>
+                      <ns0:Amounts>
+                        <ns0:Amount>
+                          <ns0:CurrencyAmountValue Code="EUR">6500</ns0:CurrencyAmountValue>
+                          <ns0:AmountApplication>MIN</ns0:AmountApplication>
+                        </ns0:Amount>
+                        <ns0:Amount>
+                          <ns0:CurrencyAmountValue Code="EUR">6500</ns0:CurrencyAmountValue>
+                          <ns0:AmountApplication>MAX</ns0:AmountApplication>
+                        </ns0:Amount>
+                      </ns0:Amounts>
+                    </ns0:Detail>
+                  </ns0:Details>
+                </ns0:Penalty>
+                <ns0:Remarks>
+                  <ns0:Remark> CANCELLATIONS BEFORE DEPARTURE TICKET IS NON-REFUNDABLE IN CASE OF CANCEL/REFUND. AFTER DEPARTURE TICKET IS NON-REFUNDABLE IN CASE OF CANCEL/REFUND. CHANGES BEFORE DEPARTURE PER TICKET CHARGE EUR 65.00 FOR REISSUE. CHILD/INFANT DISCOUNTS APPLY. AFTER DEPARTURE PER TICKET CHARGE EUR 65.00 FOR REISSUE. CHILD/INFANT DISCOUNTS APPLY. NOTE - INFORMATION RELATIVE IN BOTH CANCELATION AND CHANGES ------------------------------ WAIVED FOR DEATH OF A PASSENGER AND PASSENGERS TRAVELLING COMPANIONS. ------------------------------ IT WILL BE CONSIDERED NO SHOW WHEN A PASSENGER HAS NOT ADVISED THE AIRLINE THAT WILL NOT BE ABLE TO MAKE THE FLIGHT IN WHICH THEY ARE BOOKED ON. BEING NECESSARY THAT THE PASSENGER HAS CANCELED AND REFUNDED OR CHANGED THE TICKET AT THE SAME TIME. ------------------------------ REFUND FOR NO SHOW - NOT PERMITTED CHANGES FOR NO SHOW - NOT PERMITTED CHILD/INFANT DISCOUNTS APPLY. ------------------------------ IN CASE CHARGE FOR CHANGES APPLIES PER TRANSACTION/TICKET AND PERSON TO ALL PASSENGER TYPES. IN CASE CHARGE FOR CANCELLATION APPLIES PER DIRECTION TO ALL PASSENGER TYPES. ------------------------------ A CHANGE IS A DATE/FLIGHT/ROUTING/BOOKING CODE CHANGE. ------------------------------ REISSUE MUST BE MADE AT THE SAME TIME AS CHANGE OF RESERVATION BUT NO LATER THAN SCHEDULED DEPARTURE TIME OF FLIGHT BEING CHANGED. ------------------------------ WHEN MORE THAN ONE FARE COMPONENT IS CHANGED THE HIGHEST PENALTY OF ALL CHANGED FARE COMPONENTS WITH THE JOURNEY APPLIES. ------------------------------ WHEN COMBINING NON-REFUNDABLE FARES WITH A REFUNDABLE FARES 1-THE AMOUNT PAID ON EACH REFUNDABLE FARE COMPONENT IS REFUNDED 2-THE AMOUNT PAID ON EACH NON-REFUNDABLE FARE COMPONENT WILL NOT BE REFUNDED 3-WHEN COMBINING FARES CHARGE THE SUM OF THE CANCELLATION FEES OF ALL CANCELLED FARE COMPONENTS ------------------------------ REFUND OF UNUSED TAXES PAID TO THIRD PARTIES PERMITTED. EXCEPT FOR TAXES THAT ARE LEGALLY NON-REFUNDABLE. YQ/YR WILL BE REFUNDED IF THE FARE IS REFUNDABLE OTHERWISE IT WOULD NOT BE ALLOWED ------------------------------ REFUND AND CHANGES ARE PERMITTED WITHIN TICKET VALIDITY UNDER FARE CONDITIONS. ------------------------------ ANY NON-REFUNDABLE AMOUNT AND/OR CANCELLATION PENALTY FROM A PREVIOUS TICKET REMAINS NON- REFUNDABLE FOLLOWING A CHANGE. ------------------------------ TICKET IS NOT TRANSFERABLE TO ANOTHER PERSON. ----------------------------------------------- ----REPRICING CONDITIONS ---- A.BEFORE DEPARTURE OF JOURNEY WHEN THE FISRT FARE COMPONENT IS CHANGED THE ITINERARY MUST BE RE-PRICED USING CURRENT FARES IN EFFECT ON THE DATE THE TICKET IS REISSUED. B.BEFORE DEPARTURE OF JOURNEY WHEN CHANGES ARE TO BOOKING CODE ONLY IN THE FIRST FARE COMPONENT AND RESULT IN A HIGHER FARE THE ITINERARY MUST BE RE- PRICED USING HISTORICAL FARES IN EFFECT ON THE PREVIOUS TICKETING DATE OR USING CURRENT FARE IN EFFECT ON THE DATE THE TICKET IS REISSUED - WICHEVER IS LOWER. C. BEFORE DEPARTURE OF JOURNEY WHEN THERE ARE NO CHANGES TO THE FIRST FARE COMPONENT BUT OTHER FARE COMPONENTS ARE CHANGED THE ITINERARY MUST BE RE-PRICED USING HISTORICAL FAERS IN EFFECT ON THE PREVIOUS TICKETING DATE OR USING CURRENT FARES IN EFFECT ON THE DATE THE TICKET IS REISSUED - WHICHEVER IS LOWER. D. AFTER DEPARTURE OF JOURNEY THE ITINERARY MUST BE RE-PRICED USING HISTORICAL FARES IN EFFECT ON THE PREVIOUS TICKETING DATE. ----------------------------------------------- WHEN THE ITINERARY RESULT IN A HIGHER FARE THE DIFFERENCE WILL BE COLLECTED ANY APPLICABLE CHANGE FEE APPLIES. ----------------------------------------------- WHEN THE NEW ITINERARY RESULTS IN A LOWER FARE THE CHANGE FEE APPLIES AND NO CREDIT OF THE RESIDUAL AMOUNT WILL BE MADE.</ns0:Remark>
+                </ns0:Remarks>
+              </ns0:FareRules>
+              <ns0:PriceClassRef>NOBAGylw43nOD</ns0:PriceClassRef>
+              <ns0:SegmentRefs>IB310620230424</ns0:SegmentRefs>
+            </ns0:FareComponent>
+          </ns0:FareDetail>
+          <ns0:SaleDetail>
+            <ns0:Markup CurCode="EUR">500</ns0:Markup>
+            <ns0:Margin CurCode="EUR">600</ns0:Margin>
+            <ns0:PassengerRefs>3</ns0:PassengerRefs>
+          </ns0:SaleDetail>
+          <ns0:Service>
+            <ns0:ServiceID>IBFLIGHT_01_IB9dd0014a10ba42349493cb4806f98de9OC_02</ns0:ServiceID>
+            <ns0:PaxRefID>3</ns0:PaxRefID>
+            <ns0:ServiceAssociations>
+              <ns0:PaxJourneyRefID>LISMAD20230408063500</ns0:PaxJourneyRefID>
+              <ns0:PaxJourneyRefID>MADLIS20230424194000</ns0:PaxJourneyRefID>
+            </ns0:ServiceAssociations>
+          </ns0:Service>
+          <ns0:Service>
+            <ns0:ServiceID>IBFLIGHT_02_IB9dd0014a10ba42349493cb4806f98de9OC_02</ns0:ServiceID>
+            <ns0:PaxRefID>3</ns0:PaxRefID>
+            <ns0:ServiceAssociations>
+              <ns0:PaxJourneyRefID>MADLIS20230424194000</ns0:PaxJourneyRefID>
+            </ns0:ServiceAssociations>
+          </ns0:Service>
+          <ns0:Price>
+            <ns0:TotalAmount CurCode="EUR">12958</ns0:TotalAmount>
+          </ns0:Price>
+        </ns0:OfferItem>
+        <ns0:OfferItem>
+          <ns0:OfferItemID>IB9dd0014a10ba42349493cb4806f98de9OC_03</ns0:OfferItemID>
+          <ns0:MandatoryInd>true</ns0:MandatoryInd>
+          <ns0:FareDetail>
+            <ns0:PassengerRefs>1.1</ns0:PassengerRefs>
+            <ns0:Price>
+              <ns0:BaseAmount Code="EUR">1500</ns0:BaseAmount>
+              <ns0:Taxes>
+                <ns0:Total Code="EUR">1838</ns0:Total>
+                <ns0:Breakdown>
+                  <ns0:Tax>
+                    <ns0:Amount Code="EUR">1448</ns0:Amount>
+                    <ns0:Nation>ES</ns0:Nation>
+                    <ns0:TaxCode>JD</ns0:TaxCode>
+                    <ns0:Description>Spain Departure Charge</ns0:Description>
+                  </ns0:Tax>
+                  <ns0:Tax>
+                    <ns0:Amount Code="EUR">63</ns0:Amount>
+                    <ns0:Nation>ES</ns0:Nation>
+                    <ns0:TaxCode>OG</ns0:TaxCode>
+                    <ns0:Description>Spain Aviation Safety And Security Fee</ns0:Description>
+                  </ns0:Tax>
+                  <ns0:Tax>
+                    <ns0:Amount Code="EUR">327</ns0:Amount>
+                    <ns0:Nation>ES</ns0:Nation>
+                    <ns0:TaxCode>QV</ns0:TaxCode>
+                    <ns0:Description>Spain Security Tax</ns0:Description>
+                  </ns0:Tax>
+                </ns0:Breakdown>
+              </ns0:Taxes>
+            </ns0:Price>
+            <ns0:FareComponent>
+              <ns0:FareBasis>
+                <ns0:FareBasisCode>
+                  <ns0:Code>LZNNANB4</ns0:Code>
+                </ns0:FareBasisCode>
+                <ns0:RBD>L</ns0:RBD>
+                <ns0:CabinType>
+                  <ns0:CabinTypeCode>5</ns0:CabinTypeCode>
+                  <ns0:CabinTypeName>Economy</ns0:CabinTypeName>
+                </ns0:CabinType>
+              </ns0:FareBasis>
+              <ns0:FareRules>
+                <ns0:Penalty CancelFeeInd="false" ChangeFeeInd="true" RefundableInd="false">
+                  <ns0:Details>
+                    <ns0:Detail refs="RULEMETADATAKEY_3">
+                      <ns0:Type>Change</ns0:Type>
+                      <ns0:Application>2</ns0:Application>
+                      <ns0:Amounts>
+                        <ns0:Amount>
+                          <ns0:CurrencyAmountValue Code="EUR">6500</ns0:CurrencyAmountValue>
+                          <ns0:AmountApplication>MIN</ns0:AmountApplication>
+                        </ns0:Amount>
+                        <ns0:Amount>
+                          <ns0:CurrencyAmountValue Code="EUR">6500</ns0:CurrencyAmountValue>
+                          <ns0:AmountApplication>MAX</ns0:AmountApplication>
+                        </ns0:Amount>
+                      </ns0:Amounts>
+                    </ns0:Detail>
+                    <ns0:Detail refs="RULEMETADATAKEY_3">
+                      <ns0:Type>Change</ns0:Type>
+                      <ns0:Application>3</ns0:Application>
+                      <ns0:Amounts>
+                        <ns0:Amount>
+                          <ns0:CurrencyAmountValue Code="EUR">6500</ns0:CurrencyAmountValue>
+                          <ns0:AmountApplication>MIN</ns0:AmountApplication>
+                        </ns0:Amount>
+                        <ns0:Amount>
+                          <ns0:CurrencyAmountValue Code="EUR">6500</ns0:CurrencyAmountValue>
+                          <ns0:AmountApplication>MAX</ns0:AmountApplication>
+                        </ns0:Amount>
+                      </ns0:Amounts>
+                    </ns0:Detail>
+                  </ns0:Details>
+                </ns0:Penalty>
+                <ns0:Remarks>
+                  <ns0:Remark> CANCELLATIONS BEFORE DEPARTURE TICKET IS NON-REFUNDABLE IN CASE OF CANCEL/REFUND. AFTER DEPARTURE TICKET IS NON-REFUNDABLE IN CASE OF CANCEL/REFUND. CHANGES BEFORE DEPARTURE PER TICKET CHARGE EUR 65.00 FOR REISSUE. CHILD/INFANT DISCOUNTS APPLY. AFTER DEPARTURE PER TICKET CHARGE EUR 65.00 FOR REISSUE. CHILD/INFANT DISCOUNTS APPLY. NOTE - INFORMATION RELATIVE IN BOTH CANCELATION AND CHANGES ------------------------------ WAIVED FOR DEATH OF A PASSENGER AND PASSENGERS TRAVELLING COMPANIONS. ------------------------------ IT WILL BE CONSIDERED NO SHOW WHEN A PASSENGER HAS NOT ADVISED THE AIRLINE THAT WILL NOT BE ABLE TO MAKE THE FLIGHT IN WHICH THEY ARE BOOKED ON. BEING NECESSARY THAT THE PASSENGER HAS CANCELED AND REFUNDED OR CHANGED THE TICKET AT THE SAME TIME. ------------------------------ REFUND FOR NO SHOW - NOT PERMITTED CHANGES FOR NO SHOW - NOT PERMITTED CHILD/INFANT DISCOUNTS APPLY. ------------------------------ IN CASE CHARGE FOR CHANGES APPLIES PER TRANSACTION/TICKET AND PERSON TO ALL PASSENGER TYPES. IN CASE CHARGE FOR CANCELLATION APPLIES PER DIRECTION TO ALL PASSENGER TYPES. ------------------------------ A CHANGE IS A DATE/FLIGHT/ROUTING/BOOKING CODE CHANGE. ------------------------------ REISSUE MUST BE MADE AT THE SAME TIME AS CHANGE OF RESERVATION BUT NO LATER THAN SCHEDULED DEPARTURE TIME OF FLIGHT BEING CHANGED. ------------------------------ WHEN MORE THAN ONE FARE COMPONENT IS CHANGED THE HIGHEST PENALTY OF ALL CHANGED FARE COMPONENTS WITH THE JOURNEY APPLIES. ------------------------------ WHEN COMBINING NON-REFUNDABLE FARES WITH A REFUNDABLE FARES 1-THE AMOUNT PAID ON EACH REFUNDABLE FARE COMPONENT IS REFUNDED 2-THE AMOUNT PAID ON EACH NON-REFUNDABLE FARE COMPONENT WILL NOT BE REFUNDED 3-WHEN COMBINING FARES CHARGE THE SUM OF THE CANCELLATION FEES OF ALL CANCELLED FARE COMPONENTS ------------------------------ REFUND OF UNUSED TAXES PAID TO THIRD PARTIES PERMITTED. EXCEPT FOR TAXES THAT ARE LEGALLY NON-REFUNDABLE. YQ/YR WILL BE REFUNDED IF THE FARE IS REFUNDABLE OTHERWISE IT WOULD NOT BE ALLOWED ------------------------------ REFUND AND CHANGES ARE PERMITTED WITHIN TICKET VALIDITY UNDER FARE CONDITIONS. ------------------------------ ANY NON-REFUNDABLE AMOUNT AND/OR CANCELLATION PENALTY FROM A PREVIOUS TICKET REMAINS NON- REFUNDABLE FOLLOWING A CHANGE. ------------------------------ TICKET IS NOT TRANSFERABLE TO ANOTHER PERSON. ----------------------------------------------- ----REPRICING CONDITIONS ---- A.BEFORE DEPARTURE OF JOURNEY WHEN THE FISRT FARE COMPONENT IS CHANGED THE ITINERARY MUST BE RE-PRICED USING CURRENT FARES IN EFFECT ON THE DATE THE TICKET IS REISSUED. B.BEFORE DEPARTURE OF JOURNEY WHEN CHANGES ARE TO BOOKING CODE ONLY IN THE FIRST FARE COMPONENT AND RESULT IN A HIGHER FARE THE ITINERARY MUST BE RE- PRICED USING HISTORICAL FARES IN EFFECT ON THE PREVIOUS TICKETING DATE OR USING CURRENT FARE IN EFFECT ON THE DATE THE TICKET IS REISSUED - WICHEVER IS LOWER. C. BEFORE DEPARTURE OF JOURNEY WHEN THERE ARE NO CHANGES TO THE FIRST FARE COMPONENT BUT OTHER FARE COMPONENTS ARE CHANGED THE ITINERARY MUST BE RE-PRICED USING HISTORICAL FAERS IN EFFECT ON THE PREVIOUS TICKETING DATE OR USING CURRENT FARES IN EFFECT ON THE DATE THE TICKET IS REISSUED - WHICHEVER IS LOWER. D. AFTER DEPARTURE OF JOURNEY THE ITINERARY MUST BE RE-PRICED USING HISTORICAL FARES IN EFFECT ON THE PREVIOUS TICKETING DATE. ----------------------------------------------- WHEN THE ITINERARY RESULT IN A HIGHER FARE THE DIFFERENCE WILL BE COLLECTED ANY APPLICABLE CHANGE FEE APPLIES. ----------------------------------------------- WHEN THE NEW ITINERARY RESULTS IN A LOWER FARE THE CHANGE FEE APPLIES AND NO CREDIT OF THE RESIDUAL AMOUNT WILL BE MADE.</ns0:Remark>
+                </ns0:Remarks>
+              </ns0:FareRules>
+              <ns0:PriceClassRef>NOBAGylw43nOD</ns0:PriceClassRef>
+              <ns0:SegmentRefs>IB310720230408</ns0:SegmentRefs>
+            </ns0:FareComponent>
+            <ns0:FareComponent>
+              <ns0:FareBasis>
+                <ns0:FareBasisCode>
+                  <ns0:Code>AAN7ANB4</ns0:Code>
+                </ns0:FareBasisCode>
+                <ns0:RBD>A</ns0:RBD>
+                <ns0:CabinType>
+                  <ns0:CabinTypeCode>5</ns0:CabinTypeCode>
+                  <ns0:CabinTypeName>Economy</ns0:CabinTypeName>
+                </ns0:CabinType>
+              </ns0:FareBasis>
+              <ns0:FareRules>
+                <ns0:Penalty CancelFeeInd="false" ChangeFeeInd="true" RefundableInd="false">
+                  <ns0:Details>
+                    <ns0:Detail refs="RULEMETADATAKEY_3">
+                      <ns0:Type>Change</ns0:Type>
+                      <ns0:Application>2</ns0:Application>
+                      <ns0:Amounts>
+                        <ns0:Amount>
+                          <ns0:CurrencyAmountValue Code="EUR">6500</ns0:CurrencyAmountValue>
+                          <ns0:AmountApplication>MIN</ns0:AmountApplication>
+                        </ns0:Amount>
+                        <ns0:Amount>
+                          <ns0:CurrencyAmountValue Code="EUR">6500</ns0:CurrencyAmountValue>
+                          <ns0:AmountApplication>MAX</ns0:AmountApplication>
+                        </ns0:Amount>
+                      </ns0:Amounts>
+                    </ns0:Detail>
+                    <ns0:Detail refs="RULEMETADATAKEY_3">
+                      <ns0:Type>Change</ns0:Type>
+                      <ns0:Application>3</ns0:Application>
+                      <ns0:Amounts>
+                        <ns0:Amount>
+                          <ns0:CurrencyAmountValue Code="EUR">6500</ns0:CurrencyAmountValue>
+                          <ns0:AmountApplication>MIN</ns0:AmountApplication>
+                        </ns0:Amount>
+                        <ns0:Amount>
+                          <ns0:CurrencyAmountValue Code="EUR">6500</ns0:CurrencyAmountValue>
+                          <ns0:AmountApplication>MAX</ns0:AmountApplication>
+                        </ns0:Amount>
+                      </ns0:Amounts>
+                    </ns0:Detail>
+                  </ns0:Details>
+                </ns0:Penalty>
+                <ns0:Remarks>
+                  <ns0:Remark> CANCELLATIONS BEFORE DEPARTURE TICKET IS NON-REFUNDABLE IN CASE OF CANCEL/REFUND. AFTER DEPARTURE TICKET IS NON-REFUNDABLE IN CASE OF CANCEL/REFUND. CHANGES BEFORE DEPARTURE PER TICKET CHARGE EUR 65.00 FOR REISSUE. CHILD/INFANT DISCOUNTS APPLY. AFTER DEPARTURE PER TICKET CHARGE EUR 65.00 FOR REISSUE. CHILD/INFANT DISCOUNTS APPLY. NOTE - INFORMATION RELATIVE IN BOTH CANCELATION AND CHANGES ------------------------------ WAIVED FOR DEATH OF A PASSENGER AND PASSENGERS TRAVELLING COMPANIONS. ------------------------------ IT WILL BE CONSIDERED NO SHOW WHEN A PASSENGER HAS NOT ADVISED THE AIRLINE THAT WILL NOT BE ABLE TO MAKE THE FLIGHT IN WHICH THEY ARE BOOKED ON. BEING NECESSARY THAT THE PASSENGER HAS CANCELED AND REFUNDED OR CHANGED THE TICKET AT THE SAME TIME. ------------------------------ REFUND FOR NO SHOW - NOT PERMITTED CHANGES FOR NO SHOW - NOT PERMITTED CHILD/INFANT DISCOUNTS APPLY. ------------------------------ IN CASE CHARGE FOR CHANGES APPLIES PER TRANSACTION/TICKET AND PERSON TO ALL PASSENGER TYPES. IN CASE CHARGE FOR CANCELLATION APPLIES PER DIRECTION TO ALL PASSENGER TYPES. ------------------------------ A CHANGE IS A DATE/FLIGHT/ROUTING/BOOKING CODE CHANGE. ------------------------------ REISSUE MUST BE MADE AT THE SAME TIME AS CHANGE OF RESERVATION BUT NO LATER THAN SCHEDULED DEPARTURE TIME OF FLIGHT BEING CHANGED. ------------------------------ WHEN MORE THAN ONE FARE COMPONENT IS CHANGED THE HIGHEST PENALTY OF ALL CHANGED FARE COMPONENTS WITH THE JOURNEY APPLIES. ------------------------------ WHEN COMBINING NON-REFUNDABLE FARES WITH A REFUNDABLE FARES 1-THE AMOUNT PAID ON EACH REFUNDABLE FARE COMPONENT IS REFUNDED 2-THE AMOUNT PAID ON EACH NON-REFUNDABLE FARE COMPONENT WILL NOT BE REFUNDED 3-WHEN COMBINING FARES CHARGE THE SUM OF THE CANCELLATION FEES OF ALL CANCELLED FARE COMPONENTS ------------------------------ REFUND OF UNUSED TAXES PAID TO THIRD PARTIES PERMITTED. EXCEPT FOR TAXES THAT ARE LEGALLY NON-REFUNDABLE. YQ/YR WILL BE REFUNDED IF THE FARE IS REFUNDABLE OTHERWISE IT WOULD NOT BE ALLOWED ------------------------------ REFUND AND CHANGES ARE PERMITTED WITHIN TICKET VALIDITY UNDER FARE CONDITIONS. ------------------------------ ANY NON-REFUNDABLE AMOUNT AND/OR CANCELLATION PENALTY FROM A PREVIOUS TICKET REMAINS NON- REFUNDABLE FOLLOWING A CHANGE. ------------------------------ TICKET IS NOT TRANSFERABLE TO ANOTHER PERSON. ----------------------------------------------- ----REPRICING CONDITIONS ---- A.BEFORE DEPARTURE OF JOURNEY WHEN THE FISRT FARE COMPONENT IS CHANGED THE ITINERARY MUST BE RE-PRICED USING CURRENT FARES IN EFFECT ON THE DATE THE TICKET IS REISSUED. B.BEFORE DEPARTURE OF JOURNEY WHEN CHANGES ARE TO BOOKING CODE ONLY IN THE FIRST FARE COMPONENT AND RESULT IN A HIGHER FARE THE ITINERARY MUST BE RE- PRICED USING HISTORICAL FARES IN EFFECT ON THE PREVIOUS TICKETING DATE OR USING CURRENT FARE IN EFFECT ON THE DATE THE TICKET IS REISSUED - WICHEVER IS LOWER. C. BEFORE DEPARTURE OF JOURNEY WHEN THERE ARE NO CHANGES TO THE FIRST FARE COMPONENT BUT OTHER FARE COMPONENTS ARE CHANGED THE ITINERARY MUST BE RE-PRICED USING HISTORICAL FAERS IN EFFECT ON THE PREVIOUS TICKETING DATE OR USING CURRENT FARES IN EFFECT ON THE DATE THE TICKET IS REISSUED - WHICHEVER IS LOWER. D. AFTER DEPARTURE OF JOURNEY THE ITINERARY MUST BE RE-PRICED USING HISTORICAL FARES IN EFFECT ON THE PREVIOUS TICKETING DATE. ----------------------------------------------- WHEN THE ITINERARY RESULT IN A HIGHER FARE THE DIFFERENCE WILL BE COLLECTED ANY APPLICABLE CHANGE FEE APPLIES. ----------------------------------------------- WHEN THE NEW ITINERARY RESULTS IN A LOWER FARE THE CHANGE FEE APPLIES AND NO CREDIT OF THE RESIDUAL AMOUNT WILL BE MADE.</ns0:Remark>
+                </ns0:Remarks>
+              </ns0:FareRules>
+              <ns0:PriceClassRef>NOBAGylw43nOD</ns0:PriceClassRef>
+              <ns0:SegmentRefs>IB310620230424</ns0:SegmentRefs>
+            </ns0:FareComponent>
+          </ns0:FareDetail>
+          <ns0:SaleDetail>
+            <ns0:Markup CurCode="EUR">100</ns0:Markup>
+            <ns0:Margin CurCode="EUR">0</ns0:Margin>
+            <ns0:PassengerRefs>1.1</ns0:PassengerRefs>
+          </ns0:SaleDetail>
+          <ns0:Service>
+            <ns0:ServiceID>IBFLIGHT_01_IB9dd0014a10ba42349493cb4806f98de9OC_03</ns0:ServiceID>
+            <ns0:PaxRefID>1.1</ns0:PaxRefID>
+            <ns0:ServiceAssociations>
+              <ns0:PaxJourneyRefID>LISMAD20230408063500</ns0:PaxJourneyRefID>
+              <ns0:PaxJourneyRefID>MADLIS20230424194000</ns0:PaxJourneyRefID>
+            </ns0:ServiceAssociations>
+          </ns0:Service>
+          <ns0:Service>
+            <ns0:ServiceID>IBFLIGHT_02_IB9dd0014a10ba42349493cb4806f98de9OC_03</ns0:ServiceID>
+            <ns0:PaxRefID>1.1</ns0:PaxRefID>
+            <ns0:ServiceAssociations>
+              <ns0:PaxJourneyRefID>MADLIS20230424194000</ns0:PaxJourneyRefID>
+            </ns0:ServiceAssociations>
+          </ns0:Service>
+          <ns0:Price>
+            <ns0:TotalAmount CurCode="EUR">3338</ns0:TotalAmount>
+          </ns0:Price>
+        </ns0:OfferItem>
+        <ns0:TotalPrice>
+          <ns0:TotalAmount CurCode="EUR">49812</ns0:TotalAmount>
+        </ns0:TotalPrice>
+      </ns0:Offer>
+    </ns0:PricedOffer>
+    <ns0:ShoppingResponse>
+      <ns0:ShoppingResponseID>Qm9va2luZ0BHVy0xNjc0NTA4NzIzNTg0LWxjV3la</ns0:ShoppingResponseID>
+    </ns0:ShoppingResponse>
+  </ns0:Response>
+</ns0:AMA_TravelOfferPriceRS>

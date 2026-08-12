@@ -1,0 +1,51 @@
+<ns0:AMA_TravelOrderPayRQ xmlns:ns0="http://xml.amadeus.com/2010/06/Travel_OrderPayRQ_v1">
+  <ns0:Party>
+    <ns0:Sender>
+      <ns0:TravelAgency>
+        <ns0:AgencyID>unused</ns0:AgencyID>
+        <ns0:PseudoCityID>unused</ns0:PseudoCityID>
+      </ns0:TravelAgency>
+    </ns0:Sender>
+  </ns0:Party>
+  <ns0:Request>
+    <ns0:PaymentInfo>
+      <ns0:Amount CurCode="GBP">1118.38</ns0:Amount>
+      <ns0:TypeCode>CC</ns0:TypeCode>
+      <ns0:PayerContactInfo>
+        <ns0:Individual>
+          <ns0:GivenName>MIKE</ns0:GivenName>
+          <ns0:Surname>SMITH</ns0:Surname>
+        </ns0:Individual>
+        <ns0:EmailAddress>
+          <ns0:EmailAddressText>MIKE@MYEMAIL.COM</ns0:EmailAddressText>
+        </ns0:EmailAddress>
+      </ns0:PayerContactInfo>
+      <ns0:SecurePaymentVersion2>
+        <ns0:PaymentTrxChannelCode>MO</ns0:PaymentTrxChannelCode>
+      </ns0:SecurePaymentVersion2>
+      <ns0:PaymentMethod>
+        <ns0:PaymentCard>
+          <ns0:CreditCardVendorCode>VI</ns0:CreditCardVendorCode>
+          <ns0:CardNumber>4273000000005803</ns0:CardNumber>
+          <ns0:SeriesCode>123</ns0:SeriesCode>
+          <ns0:CardIssuerName>MIKE SMITH</ns0:CardIssuerName>
+          <ns0:ExpirationDate>0330</ns0:ExpirationDate>
+          <ns0:CardholderContactInfo>
+            <ns0:LabelText>AddressAtOrigin</ns0:LabelText>
+            <ns0:StreetText>123 MAIN STREET</ns0:StreetText>
+            <ns0:BuildingRoomText>APT 5</ns0:BuildingRoomText>
+            <ns0:PostalCode>33122</ns0:PostalCode>
+            <ns0:CityName>MIAMI</ns0:CityName>
+            <ns0:CountrySubDivisionName>FL</ns0:CountrySubDivisionName>
+            <ns0:CountryName>United States of America</ns0:CountryName>
+            <ns0:CountryCode>US</ns0:CountryCode>
+          </ns0:CardholderContactInfo>
+        </ns0:PaymentCard>
+      </ns0:PaymentMethod>
+    </ns0:PaymentInfo>
+    <ns0:Order>
+      <ns0:OrderID>O7Q9W2</ns0:OrderID>
+      <ns0:OwnerCode>BA</ns0:OwnerCode>
+    </ns0:Order>
+  </ns0:Request>
+</ns0:AMA_TravelOrderPayRQ>

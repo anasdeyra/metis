@@ -1,0 +1,48 @@
+<soap:Envelope xmlns:add="http://www.w3.org/2005/08/addressing" xmlns:link="http://wsdl.amadeus.com/2010/06/ws/Link_v1" xmlns:ns6="http://xml.amadeus.com/2010/06/Travel_SeatAvailabilityRQ_v1" xmlns:oas="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd" xmlns:oas1="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:sec="http://xml.amadeus.com/2010/06/Security_v1" xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+  <soap:Header>
+    <add:MessageID>351be334-110c-471a-bd8d-855f07987f50</add:MessageID>
+    <add:Action>http://webservices.amadeus.com/Travel_SeatAvailability_1.0</add:Action>
+    <add:To>https://noded5.test.webservices.amadeus.com/WSAP</add:To>
+    <link:TransactionFlowLink />
+    <oas:Security>
+      <oas:UsernameToken oas1:Id="UsernameToken-1">
+        <oas:Username>YOUR_WS_USER</oas:Username>
+        <oas:Nonce EncodingType="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-soap-message-security-1.0#Base64Binary">REDACTED_NONCE</oas:Nonce>
+        <oas:Password Type="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-username-token-profile-1.0#PasswordDigest">REDACTED_DIGEST</oas:Password>
+        <oas1:Created>2023-03-31T12:04:11.862Z</oas1:Created>
+      </oas:UsernameToken>
+    </oas:Security>
+    <sec:AMA_SecurityHostedUser>
+      <sec:UserID AgentDutyCode="SU" POS_Type="1" PseudoCityCode="YOUR_OFFICE_ID" RequestorType="U" />
+    </sec:AMA_SecurityHostedUser>
+  </soap:Header>
+  <soap:Body>
+    <ns6:AMA_TravelSeatAvailabilityRQ>
+      <ns6:Party>
+        <ns6:Sender>
+          <ns6:TravelAgency>
+            <ns6:AgencyID>unused</ns6:AgencyID>
+            <ns6:PseudoCityID>unused</ns6:PseudoCityID>
+          </ns6:TravelAgency>
+        </ns6:Sender>
+      </ns6:Party>
+      <ns6:Request>
+        <ns6:CoreRequest>
+          <ns6:Offer>
+            <ns6:OfferItemID>ER-6giejiZSZy-E~0eqx6KJB_1A_66b6ca30-937c-4668-8e57-f2aa5ba93498_1A_db7bf37b-23d9-4b82-bbf3-7b23d90b0001</ns6:OfferItemID>
+            <ns6:OwnerCode>AF</ns6:OwnerCode>
+          </ns6:Offer>
+        </ns6:CoreRequest>
+        <ns6:Paxs>
+          <ns6:Pax>
+            <ns6:PaxID>PAX1</ns6:PaxID>
+            <ns6:PTC>ADT</ns6:PTC>
+          </ns6:Pax>
+        </ns6:Paxs>
+        <ns6:ShoppingResponse>
+          <ns6:ShoppingResponseID>66b6ca30-937c-4668-8e57-f2aa5ba93498</ns6:ShoppingResponseID>
+        </ns6:ShoppingResponse>
+      </ns6:Request>
+    </ns6:AMA_TravelSeatAvailabilityRQ>
+  </soap:Body>
+</soap:Envelope>

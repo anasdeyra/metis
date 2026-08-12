@@ -1,0 +1,177 @@
+/$--- TST TSM RLR NDC ---
+RP/OID/OID            AA/SU   8JUL24/2340Z   5ZL2SN
+  1.SMITH/MIKE MR(ADT)   2.SMITH/SARA MRS(ADT)
+  3 SVC AF HK1 SAFF DXB 19OCT-SUSTAINABLE_AVIATION_FUEL/SAFINVES
+    TED_KG_134.48/PERCENTAGE_SAF_40.00/P1
+  4 SVC AF HK1 SAFF DXB 19OCT-SUSTAINABLE_AVIATION_FUEL/SAFINVES
+    TED_KG_134.48/PERCENTAGE_SAF_40.00/P2
+  5  AF 655 X 19OCT 6 DXBCDG HK2  2340 1  0040 0600   NDC
+  6 SVC AF HK1 SAFF CDG 22OCT-SUSTAINABLE_AVIATION_FUEL/SAFINVES
+    TED_KG_137.44/PERCENTAGE_SAF_40.00/P1
+  7 SVC AF HK1 SAFF CDG 22OCT-SUSTAINABLE_AVIATION_FUEL/SAFINVES
+    TED_KG_137.44/PERCENTAGE_SAF_40.00/P2
+  8  AF1640 Q 22OCT 2 CDGAMS HK2  1105 2F 1145 1310   NDC
+  9  AF8423 Q 22OCT 2 AMSDXB HK2  1340    1420 2300   NDC
+ 10 APA 31 514 598 0607
+ 11 TK OK09JUL/OID
+ 12 SSR CTCE AF HK1 MSMITH//MYEMAIL.COM/P1
+ 13 SSR CTCM AF HK1 +13054996000/P1
+ 14 SSR DOCS AF HK1 ////01JAN80/M//SMITH/MIKE/P1
+ 15 SSR CTCE AF HK1 SARAH.SMITH//MYEMAIL.COM/P2
+ 16 SSR CTCM AF HK1 +16264448787/P2
+ 17 SSR DOCS AF HK1 ////02JAN80/F//SMITH/SARA/P2
+ 18 SSR CLID AF HK/ AMAZON/P1
+ 19 SSR CLID AF HK/ AMAZON/P2
+ 20 FA PAX 057-2317749120/ETAF/08JUL24/OID/IATA#/S5
+       ,8-9/P2
+ 21 FA PAX 057-2317749119/ETAF/08JUL24/OID/IATA#/S5
+       ,8-9/P1
+ 22 FA PAX 057-4211759752/DTAF/08JUL24/OID/IATA#/S3/P1   <!--SAF BUNDLE ISSUED EMDS -->
+ 23 FA PAX 057-4211759753/DTAF/08JUL24/OID/IATA#/S4/P2   <!--SAF BUNDLE ISSUED EMDS -->
+ 24 FA PAX 057-4211759754/DTAF/08JUL24/OID/IATA#/S6/P1   <!--SAF BUNDLE ISSUED EMDS --> 
+ 25 FA PAX 057-4211759755/DTAF/08JUL24/OID/IATA#/S7/P2   <!--SAF BUNDLE ISSUED EMDS --> 
+ 26 FP CASH
+ 
+ 
+//////////////////////////////////////////////////////////////////////////////////////////////////
+ 
+<!--TST-->
+/$T     P/S  NAME                   TOTAL            FOP                 SEGMENTS
+1    .1   SMITH/MIKE MR           EUR       727.42 CASH                   5,8-9
+2    .2   SMITH/SARA MRS          EUR       727.42 CASH                   5,8-9
+
+
+
+/$TST00001     OID FV/08JUL                      OD                        
+T-                                                                             
+   1.SMITH/MIKE MR(ADT)                                                        
+ 1   DXB AF  655 X 19OCT 0040  OK XG30JHLA                   0PC               
+ 2   CDG AF 1640 Q 22OCT 1145  OK QG20ABLA                   0PC               
+ 3   AMS AF 8423 Q 22OCT 1420  OK QG20ABLA                   0PC               
+     DXB                                                                       
+FARE  F EUR     420.00                                                         
+TX001 X EUR    12.80-FR   TX002 X EUR   200.00-YR   TX003 X EUR    13.45-QX    
+TX004 X EUR     9.54-CJ   TX005 X EUR     3.00-O4   TX006 X EUR     1.28-TP    
+TX007 X EUR    11.21-RN   TX008 X EUR     9.09-FR   TX009 X EUR    10.18-F6    
+TX010 X EUR     2.56-ZR   TX011 X EUR     6.00-YR   TX012 X EUR    19.09-AE    
+TX013 X EUR     4.51-IZ                                                        
+TOTAL   EUR     722.71                                                         
+GRAND TOTAL EUR     727.42                                                     
+                                                                               
+ 26.FP CASH 
+ 
+ ////////////////////////////////////////////////////////////////////////////////////////////
+ 
+
+/$TST00002     OID FV/08JUL                      OD                        
+T-                                                                             
+   2.SMITH/SARA MRS(ADT)                                                       
+ 1   DXB AF  655 X 19OCT 0040  OK XG30JHLA                   0PC               
+ 2   CDG AF 1640 Q 22OCT 1145  OK QG20ABLA                   0PC               
+ 3   AMS AF 8423 Q 22OCT 1420  OK QG20ABLA                   0PC               
+     DXB                                                                       
+FARE  F EUR     420.00                                                         
+TX001 X EUR    12.80-FR   TX002 X EUR   200.00-YR   TX003 X EUR    13.45-QX    
+TX004 X EUR     9.54-CJ   TX005 X EUR     3.00-O4   TX006 X EUR     1.28-TP    
+TX007 X EUR    11.21-RN   TX008 X EUR     9.09-FR   TX009 X EUR    10.18-F6    
+TX010 X EUR     2.56-ZR   TX011 X EUR     6.00-YR   TX012 X EUR    19.09-AE    
+TX013 X EUR     4.51-IZ                                                        
+TOTAL   EUR     722.71                                                         
+GRAND TOTAL EUR     727.42                                                     
+                                                                               
+ 26.FP CASH                                                                    
+ 
+
+
+//////////////////////////////////////////////////////////////////////////////////////////////
+
+<!-- EMD --> 
+
+
+/$M   P    R   NAME            TOTAL          FOP             ELEMENTS T 
+5  .2  T I   SMITH/SARA MRS  EUR      47.85 CASH            7        P
+6  .1  T I   SMITH/MIKE MR   EUR      47.85 CASH            6        P
+7  .1  T I   SMITH/MIKE MR   EUR      46.82 CASH            3        P
+8  .2  T I   SMITH/SARA MRS  EUR      46.82 CASH            4        P
+
+
+======================================================================================
+/$TSM    5  TYPE P     OID FV/08JUL                
+  2.SMITH/SARA MRS (ADT)
+RFIC- /I   RFIC
+    1. RFISC-SAF SAF                                                      L   7
+       OPERATING CC-AF                                     ORIGIN-CDG
+       ICW-0572317749120
+       NON REFUNDABLE
+       NON EXCHANGEABLE
+       NON INTERLINEABLE
+
+ADD INF/RKS:
+ 
+FARE    F  EUR      47.85           
+ 
+TOTAL      EUR      47.85
+FP  CASH
+ 
+ 
+====================================================================================== 
+ 
+
+/$TSM    6  TYPE P     OID FV/08JUL                
+  1.SMITH/MIKE MR (ADT)
+RFIC- /I   RFIC
+    1. RFISC-SAF SAF                                                      L   6
+       OPERATING CC-AF                                     ORIGIN-CDG
+       ICW-0572317749119
+       NON REFUNDABLE
+       NON EXCHANGEABLE
+       NON INTERLINEABLE
+
+ADD INF/RKS:
+ 
+FARE    F  EUR      47.85           
+ 
+TOTAL      EUR      47.85
+FP  CASH
+ 
+
+========================================================================================
+
+/$TSM    7  TYPE P     OID FV/08JUL                
+  1.SMITH/MIKE MR (ADT)
+RFIC- /I   RFIC
+    1. RFISC-SAF SAF                                                      L   3
+       OPERATING CC-AF                                     ORIGIN-DXB
+       ICW-0572317749119
+       NON REFUNDABLE
+       NON EXCHANGEABLE
+       NON INTERLINEABLE
+
+ADD INF/RKS:
+ 
+FARE    F  EUR      46.82           
+ 
+TOTAL      EUR      46.82
+FP  CASH
+ 
+
+==========================================================================================
+
+/$TSM    8  TYPE P     OID FV/08JUL                
+  2.SMITH/SARA MRS (ADT)
+RFIC- /I   RFIC
+    1. RFISC-SAF SAF                                                      L   4
+       OPERATING CC-AF                                     ORIGIN-DXB
+       ICW-0572317749120
+       NON REFUNDABLE
+       NON EXCHANGEABLE
+       NON INTERLINEABLE
+
+ADD INF/RKS:
+ 
+FARE    F  EUR      46.82           
+ 
+TOTAL      EUR      46.82
+FP  CASH
+  
+ 

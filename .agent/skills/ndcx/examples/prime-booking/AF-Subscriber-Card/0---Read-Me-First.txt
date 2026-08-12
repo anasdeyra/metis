@@ -1,0 +1,2 @@
+<!-- The Subscriber card example is for reference only.  To test subscriber cards, customers will need to use their dedicated subscriber card number assigned by the carrier.
+If the subscriber card number does not exists on the test environment, the validation will need to managed on production.  -->

@@ -1,0 +1,26 @@
+<ns0:AMA_TravelOrderChangeRQ xmlns:ns0="http://xml.amadeus.com/2010/06/Travel_OrderChangeRQ_v1">
+  <ns0:Party>
+    <ns0:Sender>
+      <ns0:TravelAgency>
+        <ns0:AgencyID>27212216</ns0:AgencyID>
+        <ns0:PseudoCityID>AE9L</ns0:PseudoCityID>
+      </ns0:TravelAgency>
+    </ns0:Sender>
+  </ns0:Party>
+  <ns0:Request>
+    <ns0:ChangeOrder>
+      <ns0:UpdateOrderItem>
+        <ns0:AcceptOffer>
+          <ns0:SelectedOffer>
+            <ns0:OfferID>ERlp2shnDaTdmWRrav1C1z3D_1A__1A_1A_TPID_Eg1DaGFuZ2VQYXhJbmZv</ns0:OfferID>
+            <ns0:OwnerCode>QF</ns0:OwnerCode>
+          </ns0:SelectedOffer>
+        </ns0:AcceptOffer>
+      </ns0:UpdateOrderItem>
+    </ns0:ChangeOrder>
+    <ns0:Order>
+      <ns0:OrderID>QF081HGUHKWA3</ns0:OrderID>
+      <ns0:OwnerCode>QF</ns0:OwnerCode>
+    </ns0:Order>
+  </ns0:Request>
+</ns0:AMA_TravelOrderChangeRQ>

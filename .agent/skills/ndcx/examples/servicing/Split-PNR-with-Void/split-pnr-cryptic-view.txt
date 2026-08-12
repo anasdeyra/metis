@@ -1,0 +1,152 @@
+<!-- Originally there were 4 travellers (3 ADT + 1 CHD)  
+PNR below shows the split record after line 19 with the new PNR RecLoc -->
+
+--- TST AXR RLR NDC ---                                          
+RP/office id/office id            AA/SU  17JAN24/1829Z   2FTQO7  
+office id/WSUSER/17JAN24                                         
+  1.ALA/CONRADO MISS(CNN)   2.ANAVIT/AMANDA MISS(ADT)            
+  3.ASCHNE/MAURO MR(ADT)                                         
+  4  AA 028 G 18MAR 1 LAXJFK HK3  2300 0721  19MAR       N       
+  5  AA 306 Q 26MAR 2 JFKLAX HK3  1630 1953  26MAR       N       
+  6 APA PPOIRIER@AMADEUS.COM                                     
+  7 APA 305 09723 0220                                           
+  8 TK OK17JAN/office id                                         
+  9 SSR CTCE AA HK1 MAURO..1AWS..TEST//TAYRONA.LATAM.CO/P3       
+ 10 SSR DOCS AA HK1 P/CO/32323200//07SEP86/M/01JAN28/ASCHNE/MAUR 
+       O/P3                                                      
+ 11 SSR CTCE AA HK1 MAURO..1AWS..TEST//TAYRONA.LATAM.CO/P2       
+ 12 SSR DOCS AA HK1 P/CO/26666640//03SEP82/F/01JAN28/ANAVIT/AMAN 
+       DA/P2                                                     
+ 13 SSR CTCE AA HK1 MAURO..1AWS..TEST//TAYRONA.LATAM.CO/P1       
+ 14 SSR DOCS AA HK1 P/CO/5656560//17FEB19/F/01JAN28/ALA/CONRADO  
+       /P1                                                       
+ 15 RM NOTIFY PASSENGER PRIOR TO TICKET PURCHASE & CHECK-IN:     
+       FEDERAL LAWS FORBID THE CARRIAGE OF HAZARDOUS MATERIALS - 
+       GGAMAUSHAZ/S4-5                                           
+16 FA PAX 001-5752003758/ETAA/17JAN24/office id/05642840    
+      /S4-5/P3                                              
+17 FA PAX 001-5752003759/ETAA/17JAN24/office id/05642840    
+      /S4-5/P2                                              
+18 FA PAX 001-5752003761/ETAA/17JAN24/office id/05642840    
+      /S4-5/P1                                              
+19 FP CASH                                                  
+ * SP 17JAN/FVSU/office id-2FT6UT   
+
+
+
+<!--TST after split pnr for remaining travellers -->
+T     P/S  NAME                   TOTAL            FOP                 SEGMENTS
+1    .3   ASCHNE/MAURO MR         USD       495.20 CASH                   4-5  
+2    .2   ANAVIT/AMANDA MISS      USD       495.20 CASH                   4-5  
+4    .1   ALA/CONRADO MISS        USD       495.20 CASH                   4-5  
+
+
+TST00001     office id SQ/17JAN                      OD                      
+T-                                                                           
+   3.ASCHNE/MAURO MR(ADT)                                                    
+ 1   LAX AA  028 G 18MAR 2300  OK GUAJZSMX                   0PC             
+ 2   JFK AA  306 Q 26MAR 1630  OK QWAGHSN3                   0PC             
+     LAX                                                                     
+FARE  F USD     432.56                                                       
+TX001 X USD    32.44-USUS TX002 X USD    10.00-ZPUS TX003 X USD    11.20-AYUS
+TX004 X USD     9.00-XFUS                                                    
+TOTAL   USD     495.20                                                       
+GRAND TOTAL USD     495.20                                                   
+                                                                             
+ 19.FP CASH                                                                  
+ 
+ 
+
+
+TST00002     office id SQ/17JAN                      OD                        
+T-                                                                             
+   2.ANAVIT/AMANDA MISS(ADT)                                                   
+ 1   LAX AA  028 G 18MAR 2300  OK GUAJZSMX                   0PC               
+ 2   JFK AA  306 Q 26MAR 1630  OK QWAGHSN3                   0PC               
+     LAX                                                                       
+FARE  F USD     432.56                                                         
+TX001 X USD    32.44-USUS TX002 X USD    10.00-ZPUS TX003 X USD    11.20-AYUS  
+TX004 X USD     9.00-XFUS                                                      
+TOTAL   USD     495.20                                                         
+GRAND TOTAL USD     495.20                                                     
+                                                                               
+ 19.FP CASH                                                                    
+
+
+
+
+TST00004     office id SQ/17JAN                      OD                      
+T-                                                                           
+   1.ALA/CONRADO MISS(CNN)                                                   
+ 1   LAX AA  028 G 18MAR 2300  OK GUAJZSMX                   0PC             
+ 2   JFK AA  306 Q 26MAR 1630  OK QWAGHSN3                   0PC             
+     LAX                                                                     
+FARE  F USD     432.56                                                       
+TX001 X USD    32.44-USUS TX002 X USD    10.00-ZPUS TX003 X USD    11.20-AYUS
+TX004 X USD     9.00-XFUS                                                    
+TOTAL   USD     495.20                                                       
+GRAND TOTAL USD     495.20                                                   
+                                                                             
+ 19.FP CASH                                                                  
+
+
+ 
+
+<!--SPLIT PNR RECORD DETAILS --> 
+
+ --- TST AXR RLR NDC ---                                           
+RP/office id/office id            FV/SU  17JAN24/1829Z   2FT6UT   
+office id/WSUSER/17JAN24                                          
+  1.ARACO/FERMIN MR(ADT)                                          
+  2  AA 028 G 18MAR 1 LAXJFK HK1  2300 0721  19MAR       N        
+  3  AA 306 Q 26MAR 2 JFKLAX HK1  1630 1953  26MAR       N        
+  4 APA PPOIRIER@AMADEUS.COM                                      
+  5 APA 305 09723 0220                                            
+  6 TK OK17JAN/office id                                          
+  7 SSR CTCE AA HK1 MAURO..1AWS..TEST//TAYRONA.LATAM.CO           
+  8 SSR DOCS AA HK1 P/CO/33939360//14MAR09/M/01JAN28/ARACO/FERMI  
+       N                                                          
+  9 RM NOTIFY PASSENGER PRIOR TO TICKET PURCHASE & CHECK-IN:      
+       FEDERAL LAWS FORBID THE CARRIAGE OF HAZARDOUS MATERIALS -  
+       GGAMAUSHAZ/S2-3                                            
+ 10 FA PAX 001-5752003760/ETAA/17JAN24/office id/05642840/S2-3    
+ 11 FP CASH                                                       
+  * SP 17JAN/FVSU/office id-2FTQO7    
+
+
+
+<!--TST-->
+TST00001     office id FV/17JAN                      OD                      
+T-                                                                           
+   1.ARACO/FERMIN MR(ADT)                                                    
+ 1   LAX AA  028 G 18MAR 2300  OK GUAJZSMX                   0PC             
+ 2   JFK AA  306 Q 26MAR 1630  OK QWAGHSN3                   0PC             
+     LAX                                                                     
+FARE  F USD     432.56                                                       
+TX001 X USD    32.44-USUS TX002 X USD    10.00-ZPUS TX003 X USD    11.20-AYUS
+TX004 X USD     9.00-XFUS                                                    
+TOTAL   USD     495.20                                                       
+GRAND TOTAL USD     495.20                                                   
+                                                                             
+ 11.FP CASH     
+
+
+
+
+<!--Void Split PNR -->
+
+TICKET REVALIDATION/REISSUE IS RECOMMENDED                      
+--- TST AXR NDC ---                                             
+RP/office id/office id            FV/SU  17JAN24/1843Z   2FT6UT 
+office id/WSUSER/17JAN24                                        
+  1.ARACO/FERMIN MR(ADT)                                        
+  2 APA PPOIRIER@AMADEUS.COM                                    
+  3 APA 305 09723 0220                                          
+  4 TK OK17JAN/office id                                        
+  5 SSR CTCE AA HK1 MAURO..1AWS..TEST//TAYRONA.LATAM.CO         
+  6 SSR DOCS AA HK1 P/CO/33939360//14MAR09/M/01JAN28/ARACO/FERMI
+       N                                                        
+  7 FHE PAX 001-5752003760                                      
+  8 FP CASH                                                     
+  * SP 17JAN/FVSU/office id-2FTQO7                              
+  
