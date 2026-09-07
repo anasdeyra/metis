@@ -38,7 +38,7 @@
     {
       "name": "front-dashboard",
       "remote": "git@gitlab.com:GroupeAdnenis/metis-connect/front-dashboard",
-      "enabled": false,
+      "enabled": true,
       "description": "Admin Dashboard",
       "stack": "Nuxt 3 / Vue 3"
     },

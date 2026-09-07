@@ -11,6 +11,11 @@
       "gitRemote": "git@gitlab.com:GroupeAdnenis/metis-connect/api-dashboard",
     },
     {
+      "name": "front-dashboard",
+      "path": "front-dashboard",
+      "gitRemote": "git@gitlab.com:GroupeAdnenis/metis-connect/front-dashboard",
+    },
+    {
       "name": "front-reservation",
       "path": "front-reservation",
       "gitRemote": "git@gitlab.com:GroupeAdnenis/metis-connect/front-reservation",
@@ -47,7 +52,6 @@
       "api-car",
       "api-hotel",
       "api-rail",
-      "front-dashboard",
     ],
     "git.ignoredRepositories": [],
     "scm.repositories.selectionMode": "multiple",
@@ -165,6 +169,7 @@
         "options": [
           "api-aerial",
           "api-dashboard",
+          "front-dashboard",
           "front-reservation",
         ]
       },
