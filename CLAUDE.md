@@ -6,6 +6,7 @@
   - **Travel Agent (TA) mode** — back-office flow for travel agents.
   - **OBT (Online Booking Tool) mode** — self-service booking flow.
 - It does not contain product code. It orchestrates the sub-repos below.
+- **All actual work happens in the sub-repos** — feature branches, commits, bug fixes, everything. This meta-repo root has no feature/ticket branches (only `master`/`dashboard`); never try to commit or branch here for product work.
 
 ### Sub-repos
 Declared in `metis.repos.json`, toggled via `"enabled"`. Enabled repos appear in `metis.code-workspace`.
