@@ -116,6 +116,20 @@ assuming they're still true.
 ### PTC / passenger codes
 
 - Children are `CNN`, never `CHD`.
+- **`PaxID` on any post-booking call is the HOST's id, not the `PAX{n}` metis mints.** The
+  host renumbers: the SQ capture sends `P1, P2, P3, P1.1` on `Travel_OrderCreate` and gets
+  back `PAX2..PAX5`; the QF pax-update capture carries `T1`. Read it off a live
+  `Travel_OrderRetrieve` — minting it addresses the wrong passenger, or none, with no host
+  error either way. **Live-confirmed on KQ 2026-10-21** (PAX1 → PAX2; the order-keyed
+  ServiceList only lists host ids). The ancillary `Travel_OrderChange` now takes the host pax
+  list as `body.hostPaxs` (commit `632d7ec90`; the front sends the order-keyed ServiceList's
+  `DataLists.Pax`). The servicing 2nd OfferPrice takes it too (`2ceb1b09f`). Persistence is
+  fine on both ends:
+  - `dossierCreate` already re-keys each traveller on the reply's PaxID by name
+    (`dossier.utils.js` "paxFromDataList");
+  - `saveAfterRetreive` stores the host id;
+  - `resolveNdcxDossierTravelerIdByPax` now keys on that stored `paxId` (`aab2b7ed3`), keeping
+    position only for legacy rows without one.
 - GenderCode has no independent source on front-reservation's pax type —
   derive from title (`MR`→M, `MRS`→F, …). This is an accepted permanent
   limitation, not something to "fix" by adding a new field.
@@ -183,15 +197,16 @@ assuming they're still true.
 - OrderPay calls `updateIssuance` **only** — checked against every other
   provider (AFKL, EK, ACCELYA, IBERIA, TURKISHA, TRANSAVIA, BA), none pair it
   with `saveAfterRetreive`. `saveAfterRetreive` stays retrieve's job.
-- 🔴 **Live, currently-shipped hazard** (front-reservation, `BaseAdapter`):
-  `issueOrder()` is one of the few `BaseAdapter` methods that does **not**
-  throw for an unimplemented provider — it POSTs straight to
-  `/aerial/${getControllerByOra(ora)}/order/orderChangeRQ`, and
-  `getControllerByOra` **falls back to `"AFKL"`** for any ora it doesn't
-  recognize. `AMADEUS_NDCX` has no `CONTROLLERS` entry today, so pressing
-  "émettre" on an NDC[X] folder silently POSTs a live issuance payload to
-  **AFKL's** controller instead of erroring. Override `issueOrder()` for
-  NDC[X] in `BaseAdapter`/its subclass before this ships to real users.
+- ✅ **RESOLVED 2026-10-13** (was a 🔴 live hazard; verified independently by two
+  passes, do not re-raise). `BaseAdapter.issueOrder()` is one of the few
+  `BaseAdapter` methods that does **not** throw for an unimplemented provider — it
+  POSTs straight to `/aerial/${getControllerByOra(ora)}/order/orderChangeRQ`, and
+  `getControllerByOra` **falls back to `"AFKL"`** for any ora it doesn't recognize.
+  That fallback is still there for unknown oras, but `AMADEUS_NDCX` is no longer one:
+  `BaseAdapter.ts:84-85` now has a `CONTROLLERS` entry, and
+  `AmadeusNdcxAdapter.ts:851` overrides `issueOrder()` to POST
+  `/aerial/AMADEUS_NDCX/order/orderPayRQ`. Keep the override — the comment above it
+  explains why it is required, not optional.
 
 ### OrderCancel
 
@@ -247,4 +262,7 @@ This file is intentionally short. For anything beyond a one-line reminder:
 - [`NDCX-ORDERCREATE-FINISH-PLAN.md`](./NDCX-ORDERCREATE-FINISH-PLAN.md) — the currency-metadata array bug
 - [`NDCX-ORDERPAY-PLAN.md`](./NDCX-ORDERPAY-PLAN.md) — ADRs 15-20
 - [`NDCX-ORDERCANCEL-PLAN.md`](./NDCX-ORDERCANCEL-PLAN.md) — ADRs 21-26
+- [`NDCX-UPDATEPAX-PLAN.md`](./NDCX-UPDATEPAX-PLAN.md) — ADRs 45-51, passenger updates (contact/name/FQTV) + why docs & corp are refused
+- [`NDCX-FLIGHTCHANGE-PLAN.md`](./NDCX-FLIGHTCHANGE-PLAN.md) — ADRs 52-59, voluntary flight change (fare-driven exchange). Also carries the 🔴 `pnrList.ownerIataCode` finding: metis stores the NDC *provider designator* (`UAD`), not the airline (`UA`), and feeds it to `Order/OwnerCode` on pay/cancel/change
+- [`NDCX-ANCILLARIES-PLAN.md`](./NDCX-ANCILLARIES-PLAN.md) — ADRs 78-88, non-bag ancillaries (meals, sports, lounge, fast track/priority, assistance SSRs) from a live 8-carrier ServiceList survey. Carries the 🔴 finding that the 2nd `Travel_OfferPrice` **silently drops free services** (meals/SSRs), so they must bypass the reprice
 - `.agents/skills/ndcx/` — Amadeus protocol reference (skill), not project-specific decisions
