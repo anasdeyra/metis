@@ -1,0 +1,130 @@
+{
+  "title": "NDC[X] certification runs — 2026-10-18 (test host nodea1, sales point AdenisPDV)",
+  "host": "test host nodea1, sales point AdenisPDV, office NCEPF3273",
+  "intro": "Live runs executed with `ndcx_cert_runner.js` against the Amadeus test host (AA), driving the product's own builders/mappers; raw XML written by the capture logger into `api-aerial/use cases/NDCX/`. Each case folder holds the calls in order, RQ+RS per step, copied unmodified. Windows are in the operator machine's local time (the logger stamps file mtimes locally).",
+  "cases": [
+    {
+      "id": "C1-domestic-cash",
+      "title": "Case 1 — 2 ADT / domestic / one way / direct flights / cash / booking and ticketing",
+      "window": ["2026-10-18T19:26:00", "2026-10-18T19:28:59"],
+      "labels": [
+        "01-shopping",
+        "02-offer-price",
+        "03-order-create",
+        "04-retrieve-held",
+        "05-order-pay-cash",
+        "06-retrieve-ticketed",
+        "07-retrieve-ticketed-2"
+      ],
+      "summary": {
+        "order": "AA001HB2X21A3",
+        "pnr": "IAXGEZ",
+        "amount": "266.16 EUR",
+        "payment": "cash (PaymentMethod/Cash/CashInd=true)",
+        "tickets": "0015762157896, 0015762157897 (2)",
+        "outcome": "TICKETED (coupons O) — kept"
+      },
+      "notes": [
+        "JFK-ORD AA3162, 2026-12-07, one way, direct, 2 ADT — US domestic on the certification carrier (AA).",
+        "`04-retrieve-held` is the pay command's pre-payment retrieve (the pay amount comes from the live order): the order exists, no `TicketDocInfos` yet.",
+        "`06-retrieve-ticketed`: the two tickets appear with coupons `O` after `Travel_OrderPay` — no separate ticketing call on the NDC path.",
+        "Last case that had no clean live run with its exact composition; ticked on `offerPay` capability before, now proven end to end."
+      ]
+    },
+    {
+      "id": "C2-direct-upsell-card",
+      "title": "Case 2 — 2 ADT + 1 CHD(CNN) + 1 INF / international / round trip / DIRECT / upsell at pricing / credit card / booking and ticketing",
+      "window": ["2026-10-18T17:39:00", "2026-10-18T17:45:59"],
+      "labels": [
+        "01-shopping",
+        "02-offer-price",
+        "03-offer-price-upsell",
+        "04-order-create-failed-pax-name",
+        "05-order-create",
+        "06-retrieve-held",
+        "07-order-pay",
+        "08-retrieve-ticketed",
+        "09-retrieve-ticketed-2",
+        "10-retrieve-ticketed-3"
+      ],
+      "summary": {
+        "order": "AA001XYYX21A3",
+        "pnr": "IFYALV",
+        "amount": "1947.82 EUR",
+        "payment": "credit card VI (test card 4434260000000008)",
+        "tickets": "0015762157888-91 (4)",
+        "outcome": "TICKETED (coupons O) — kept"
+      },
+      "notes": [
+        "CDG-JFK AA43 / JFK-CDG AA42, direct both ways, 2026-12-07 / 2026-12-14.",
+        "`03-offer-price-upsell` is the Offer_06 evidence: `Request/ShoppingCriteria/FarePreferences @PreferencesContext=\"Upsell\"` answered with 9 `OtherOffers/Offer` bundles (Main Cabin 1947.82 → Flagship Business 14713.82 EUR) and an updated `ShoppingResponseID` (P950A6E5-268C-4DF5-A2BB).",
+        "`05-order-create` is the Create_05 evidence: `SelectedOffer/OfferID` is an `OtherOffers` offer (`…P555BA8FF-…-2`), `ShoppingResponseRefID` is that updated shopping response, one SelectedOfferItem per PTC (ADT, ADT, CNN, INF).",
+        "`04-order-create-failed-pax-name` is the first attempt, refused by the host with `39138 FAIL TO CREATE PAX NAME IN 1A PNR` when the pax list carried a different surname per passenger; the retry uses one shared family surname with distinct given names/titles (MR JEAN / MRS MARIE / MSTR LUC / MISS EVA)."
+      ]
+    },
+    {
+      "id": "C3-connect-card-void",
+      "title": "Case 3 + 5 — 2 ADT + 1 CHD(CNN) + 1 INF / international / round trip / CONNECTING / credit card / booking and ticketing / same-day VOID after ticketing",
+      "window": ["2026-10-18T17:46:00", "2026-10-18T17:49:59"],
+      "labels": [
+        "01-shopping",
+        "02-offer-price",
+        "03-order-create",
+        "04-retrieve-held",
+        "05-order-pay",
+        "06-retrieve-ticketed",
+        "07-retrieve-ticketed-2",
+        "08-void-quote-reshop",
+        "09-order-cancel-void",
+        "10-retrieve-after-void"
+      ],
+      "summary": {
+        "order": "AA001S7ZX21A3",
+        "pnr": "IGWENS",
+        "amount": "2011.82 EUR",
+        "payment": "credit card VI (test card 4434260000000008)",
+        "tickets": "0015762157892-95 (4)",
+        "outcome": "TICKETED then VOIDED same day (16 coupons -> V)"
+      },
+      "notes": [
+        "CDG-DFW-LAX AA49/AA1526 out and LAX-JFK-CDG AA307/AA42 back — two segments per bound, US hub connections (the FR↔US connecting itinerary the certification Void/Refund template asks for).",
+        "`08-void-quote-reshop`: `Travel_OrderReshop` cancel quote returns `ReshopResults UseCase=\"VOID\"` (`DescText VOID`), refund 0 — the Cancel_02 evidence for the void branch.",
+        "`09-order-cancel-void`: `Travel_OrderCancel` voids all 16 coupons (`CouponInfo/Status=V` on 4 tickets × 4 segments); the post-cancel retrieve answers 119 UNABLE TO RETRIEVE PNR, which is the expected terminal state.",
+        "Same-day void on AA does work when the quote is taken first — the 2026-10-13 attempt on this office (cancel straight after issuance, no quote) failed with `UNABLE TO RETRIEVE OFFER` / `RS_ERROR_UNKNOWN`."
+      ]
+    },
+    {
+      "id": "C4-hold-cancel-before-ticketing",
+      "title": "Case 4 — 2 ADT + 1 CHD(CNN) + 1 INF / international / round trip / direct / credit card selected / HELD then CANCELLED before ticketing",
+      "window": ["2026-10-18T17:50:00", "2026-10-18T17:52:59"],
+      "labels": [
+        "01-shopping",
+        "02-offer-price",
+        "03-order-create-hold",
+        "04-retrieve-held",
+        "05-order-cancel-before-ticketing",
+        "06-retrieve-after-cancel"
+      ],
+      "summary": {
+        "order": "AA001R9ZX21A3",
+        "pnr": "ILONKF",
+        "amount": "1519.82 EUR",
+        "payment": "credit card VI on file (never charged)",
+        "tickets": "none",
+        "outcome": "HELD then CANCELLED before ticketing (order unretrievable, 119)"
+      },
+      "notes": [
+        "CDG-JFK AA43 / JFK-CDG AA42, 2026-12-07 / 2026-12-14.",
+        "No `Travel_OrderPay`, so the order is never ticketed: `04-retrieve-held` shows the order with an empty `TicketDocInfos`.",
+        "`05-order-cancel-before-ticketing` is a bare `Travel_OrderCancel` (OrderID + OwnerCode, no reshop quote) — the held-order branch of the product's cancel path (`pnr.status = 1` ⇒ outcome `CANCEL`); the reply is a clean `Response/OrderRefID`, and the final retrieve answers 119."
+      ]
+    }
+  ],
+  "checklistMapping": [
+    "**2 ADT / domestic / one way / direct / cash** → `C1-domestic-cash` (JFK-ORD / AA3162, 2 ADT, cash 266.16 EUR, tickets …896/…897, coupons `O`).",
+    "**2 ADT + 1 CHD + 1 INF / international / RT / direct / upsell at pricing / credit card** → `C2-direct-upsell-card` (Offer_06 on `03-`, Create_05 on `05-`).",
+    "**2 ADT + 1 CHD + 1 INF / international / RT / connecting / credit card** → `C3-connect-card-void`.",
+    "**Cancellation before ticketing** → `C4-hold-cancel-before-ticketing`.",
+    "**Voiding after ticketing (same day)** → `C3-connect-card-void` steps 08-10."
+  ]
+}

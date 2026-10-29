@@ -2,5 +2,15 @@
   "$schema": "https://opencode.ai/config.json",
   "plugin": [
     ".opencode/plugins/graphify.js"
-  ]
+  ],
+  "mcp": {
+    "glab": {
+      "type": "local",
+      "command": ["glab.exe", "mcp", "serve"],
+      "enabled": true,
+      "environment": {
+        "GITLAB_TOKEN": "${GITLAB_TOKEN}"
+      }
+    }
+  }
 }

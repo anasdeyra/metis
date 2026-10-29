@@ -231,6 +231,16 @@ Card type codes used: `CA` = Mastercard, `VI` = Visa, `AX` = American Express, `
 - Cause: duplicate names are blocked at `OrderCreate`.
 - Fix: add a title, or concatenate a middle initial with the first name.
 
+### `39138 FAIL TO CREATE PAX NAME IN 1A PNR` at Travel_OrderCreate
+
+Own-office capture, AA, 2026-10-18 (`api-aerial/use cases/NDCX/cert-runs/cases/C2-direct-upsell-card/04-order-create-failed-pax-name`):
+
+- Symptom: `Travel_OrderCreate` answers only `<Errors><Error><Code>39138</Code><DescText>FAIL TO CREATE PAX NAME IN 1A PNR</DescText><OwnerName>1A</OwnerName></Error></Errors>` — no hint at which passenger.
+- What was sent (refused): four passengers, **a different surname each** (`CERTTEST1`, `CERTTEST2`, `CERTTESTCHD`, `CERTTESTINF`), the two adults sharing the given name `ADULT`, and titles/genders `MR M` twice.
+- What went through (first attempt): **one shared family surname** with distinct given names, titles and genders — `MR JEAN` / `MRS MARIE` / `MSTR LUC` (child) / `MISS EVA` (infant), the infant bound to the first adult.
+- The two variables (split surnames vs. repeated given names/titles) changed together, so the capture does not isolate which one the 1A name builder refuses; send the family shape either way.
+- Cost of the miss: none — `Travel_OrderCreate` does **not** consume the offer. The same priced offer was still valid ~2½ minutes later and the retry created the order; no re-shopping.
+
 ### Secure Flight Data Needed error returned at Travel_OrderPay response
 
 - Symptom: "Secure Flight Data Needed" error in the `Travel_OrderPay` response.

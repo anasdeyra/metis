@@ -35,11 +35,20 @@ self-contained. Do not read them all — `references/` totals ~9,000 lines.
 | Servicing-guide deltas on queues/errors/test data                                            | `references/17-servicing-queues-errors-faq.md`                                                                                                                                                    |
 | "Does carrier X support feature Y?"                                                          | `references/18-airline-capability-matrix.md`, or grep `references/airline-matrix.csv` (tidy: one row per feature × carrier × channel) and `references/airline-notes.csv` (the `Note (Dnn)` texts) |
 | A real message on the wire for any flow                                                      | `examples/INDEX.md`, then the scenario folder                                                                                                                                                     |
+| Running a certification test case end-to-end, or compiling evidence from captures             | `scripts/README.md` (`ndcx_cert_runner.js` + `ndcx_package_cert_runs.js`)                                                                                                                          |
 
 `scripts/ndcx_search.py` is a working, dependency-light client: it builds the
 WS-Security header, sends a MasterPricer search, and extracts the NDC OfferIDs.
 Use it as the reference implementation and as a smoke test (`--dry-run` needs no
 credentials).
+
+`scripts/ndcx_cert_runner.js` drives a whole certification flow — shopping → pricing →
+upsell → order → payment → retrieve → void/refund quote → cancel — through the metis
+`api-aerial` builders and mappers, so each step is a real product payload written to the
+capture folder; `scripts/ndcx_package_cert_runs.js` then turns those captures into per-case
+evidence bundles (step folders with RQ+RS, README, INDEX, zips) from a JSON manifest.
+`scripts/README.md` has the chains, the worked 2026-10-18 runs and the operational gotchas
+(pax-name `39138`, offer expiry, quote-before-void).
 
 ## Non-negotiables
 

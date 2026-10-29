@@ -33,9 +33,16 @@ Open only what the task needs — `ndcx/references/` is ~9,000 lines.
 | Servicing deltas on queues/errors/test data | `ndcx/references/17-servicing-queues-errors-faq.md` |
 | "Does carrier X support feature Y?" | `ndcx/references/18-airline-capability-matrix.md` or grep `ndcx/references/airline-matrix.csv` |
 | A real message on the wire | `ndcx/examples/INDEX.md`, then the scenario folder |
+| Running a certification test case end-to-end, or compiling evidence | `ndcx/scripts/README.md` |
 
 `ndcx/scripts/ndcx_search.py` is a working reference client (WS-Security header +
 MasterPricer search + OfferID extraction). `--dry-run` needs no credentials.
+
+`ndcx/scripts/ndcx_cert_runner.js` runs a full flow (shopping → pricing → upsell → order →
+payment → retrieve → void/refund quote → cancel) through the host app's own builders/mappers
+and leaves real capture XML behind; `ndcx/scripts/ndcx_package_cert_runs.js` compiles those
+captures into per-case evidence bundles from a JSON manifest. `ndcx/scripts/README.md`
+documents both, with the certification chains and the recorded 2026-10-18 runs.
 
 ## Rules that must hold in any code you write here
 
