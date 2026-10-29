@@ -17945,9 +17945,9 @@
     "semantic_hash": "731aec8b35910689072e90db6b71d082"
   },
   "CLAUDE.md": {
-    "mtime": 1783009377.1474693,
-    "ast_hash": "b93817f608a54a5cc36ec08b6f35497b",
-    "semantic_hash": "b93817f608a54a5cc36ec08b6f35497b"
+    "mtime": 1791294066.998487,
+    "ast_hash": "e8aee6b082e7fbda822d110d50f68158",
+    "semantic_hash": ""
   },
   "README.md": {
     "mtime": 1779182782.1216273,
@@ -22068,16 +22068,6 @@
     "mtime": 1781983479.2858734,
     "ast_hash": "a4b173882c13bb64ab5e7cf4c75ae3b2",
     "semantic_hash": "a4b173882c13bb64ab5e7cf4c75ae3b2"
-  },
-  "api-aerial/src/billet.pdf": {
-    "mtime": 1782897847.913138,
-    "ast_hash": "daa985e3118f2f8a06308ea356cc7610",
-    "semantic_hash": "daa985e3118f2f8a06308ea356cc7610"
-  },
-  "api-aerial/src/temp.pdf": {
-    "mtime": 1725618087.853944,
-    "ast_hash": "c3a34e73a0c1e7395da3fadac775d3c7",
-    "semantic_hash": "c3a34e73a0c1e7395da3fadac775d3c7"
   },
   "front-dashboard/src/public/Proc\u00e9dure-Remarques-Sabre.pdf": {
     "mtime": 1732205246.9410748,
@@ -33660,13 +33650,13 @@
     "semantic_hash": ""
   },
   ".agents/skills/ndcx/CLAUDE.md": {
-    "mtime": 1786542933.0,
-    "ast_hash": "bebf26177f2fb6085e4ab04b4f03a545",
+    "mtime": 1792344188.8116808,
+    "ast_hash": "5d131dc910264a081e935e52e1ebac6f",
     "semantic_hash": ""
   },
   ".agents/skills/ndcx/SKILL.md": {
-    "mtime": 1786543602.944149,
-    "ast_hash": "bd370bf1cd203740ee67481872978924",
+    "mtime": 1792344179.7109034,
+    "ast_hash": "03cd206d6d7ae736352b485cbd455f01",
     "semantic_hash": ""
   },
   ".agents/skills/ndcx/examples/INDEX.md": {
@@ -33785,8 +33775,8 @@
     "semantic_hash": ""
   },
   ".agents/skills/ndcx/references/09-queues-sync-errors-testdata.md": {
-    "mtime": 1786526281.0,
-    "ast_hash": "0093ee7ac0f841b7f1bcc1114d1e654f",
+    "mtime": 1792344228.6621976,
+    "ast_hash": "1006cef87125022a75cc5ed03bc36fb2",
     "semantic_hash": ""
   },
   ".agents/skills/ndcx/references/10-certification-and-testing.md": {
@@ -33855,13 +33845,13 @@
     "semantic_hash": ""
   },
   "NDCX-CONTEXT.md": {
-    "mtime": 1790175997.5559125,
-    "ast_hash": "f35862cf17d0e8efab92a4f8bc817417",
+    "mtime": 1792612881.7119842,
+    "ast_hash": "0b2758eb7e2bd3136ece58d4ad445480",
     "semantic_hash": ""
   },
   "NDCX-INTEGRATION.md": {
-    "mtime": 1790163732.8119397,
-    "ast_hash": "3ae3c87c00cf5e74282fd99e191f156b",
+    "mtime": 1791536648.234896,
+    "ast_hash": "398c7a9f93afc52d98bdbcfbc050fc28",
     "semantic_hash": ""
   },
   "NDCX-OFFERPRICE-PLAN.md": {
@@ -33932,6 +33922,61 @@
   ".agents/skills/ndcx/examples/prime-booking/Contact-Refused-for-Multiple-Pax/PNR-Cryptic-View.png": {
     "mtime": 1786526281.0,
     "ast_hash": "cb78c1389f3ec2d959c1102ecb481656",
+    "semantic_hash": ""
+  },
+  "NDCX-CHECKLIST-AMADEUS.md": {
+    "mtime": 1792348817.707164,
+    "ast_hash": "d566b7da10f79e0aa2575014ccefc1f7",
+    "semantic_hash": ""
+  },
+  "NDCX-PAYMENT-PLAN.md": {
+    "mtime": 1791896049.2214675,
+    "ast_hash": "be2e1a414b1dd84833163f3d4c0f59ef",
+    "semantic_hash": ""
+  },
+  "NDCX-UPDATEPAX-PLAN.md": {
+    "mtime": 1791533132.1074126,
+    "ast_hash": "45689b6016fa93c94e1a3efe8904af1a",
+    "semantic_hash": ""
+  },
+  ".agents/skills/ndcx/scripts/cert-runs.2026-10-18.json": {
+    "mtime": 1792348145.1777637,
+    "ast_hash": "a6d141c26e3ae904cfa9741cbef78a09",
+    "semantic_hash": ""
+  },
+  ".agents/skills/ndcx/scripts/ndcx_cert_runner.js": {
+    "mtime": 1792598372.5071144,
+    "ast_hash": "8cd368bb3cb3b23e084fd17a2c5597e4",
+    "semantic_hash": ""
+  },
+  ".agents/skills/ndcx/scripts/ndcx_package_cert_runs.js": {
+    "mtime": 1792344274.701594,
+    "ast_hash": "e56a13528061b7a7bd3240b4abef0261",
+    "semantic_hash": ""
+  },
+  ".agents/skills/ndcx/scripts/README.md": {
+    "mtime": 1792598667.8901885,
+    "ast_hash": "77125d0d577bdd01bcecb5e4409295b8",
+    "semantic_hash": ""
+  },
+  "NDCX-ANCILLARIES-PLAN.md": {
+    "mtime": 1792612878.4973812,
+    "ast_hash": "47bc7138860cd80bb26b2f0c84ff5fdc",
+    "semantic_hash": ""
+  },
+  "NDCX-FLIGHTMODIFICATION-PLAN.md": {
+    "mtime": 1792918846.4552019,
+    "ast_hash": "035be2b45556f34135d41365fcea1ba1",
+    "semantic_hash": ""
+  },
+  "NDCX-REPONSE-DEYRA-2026-10-18.md": {
+    "mtime": 1792348860.6142762,
+    "ast_hash": "4b78c12b73839fcd10ac5abec6570b30",
+    "semantic_hash": ""
+  },
+  "NDCX-UPSELL-PLAN.md": {
+    "mtime": 1791896644.6157637,
+    "ast_hash": "9928a2d5dc4d77695293d30f9f2f67c0",
     "semantic_hash": ""
   }
 }

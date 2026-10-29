@@ -1,16 +1,16 @@
-# Graph Report - metis  (2026-10-05)
+# Graph Report - metis  (2026-10-25)
 
 ## Corpus Check
-- 70 files · ~143,130 words
+- 81 files · ~191,537 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 919 nodes · 883 edges · 74 communities (60 shown, 14 thin omitted)
+- 1180 nodes · 1171 edges · 93 communities (79 shown, 14 thin omitted)
 - Extraction: 100% EXTRACTED · 0% INFERRED · 0% AMBIGUOUS · INFERRED: 3 edges (avg confidence: 0.73)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `12c5564e`
+- Built from commit: `8f1c78f0`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -88,18 +88,37 @@
 - [[_COMMUNITY_Order warnings are persisted on the PNR and gate the servicing actions|Order warnings are persisted on the PNR and gate the servicing actions]]
 - [[_COMMUNITY_One notification per OCN message, deduplicated on order version|One notification per OCN message, deduplicated on order version]]
 - [[_COMMUNITY_plan-document-reviewer-prompt|plan-document-reviewer-prompt.md]]
+- [[_COMMUNITY_NDCX Payment Methods — gap analysis & extension plan (credit cards) — MET2-2422|NDC[X] Payment Methods — gap analysis & extension plan (credit cards) — MET2-2422]]
+- [[_COMMUNITY_NDCX — Voluntary flight change (exchange  reshop)|NDC[X] — Voluntary flight change (exchange / reshop)]]
+- [[_COMMUNITY_File Structure|File Structure]]
+- [[_COMMUNITY_3. Traps — do not repeat|3. Traps — do not repeat]]
+- [[_COMMUNITY_Ce qui est coché, et pourquoi|Ce qui est coché, et pourquoi]]
+- [[_COMMUNITY_5. Tasks|5. Tasks]]
+- [[_COMMUNITY_ndcx_package_cert_runs.js|ndcx_package_cert_runs.js]]
+- [[_COMMUNITY_NDCX flight modification — implementation plan (v3.1)|NDC[X] flight modification — implementation plan (v3.1)]]
+- [[_COMMUNITY_Réponse à Deyra — checklist NDCX Prime (brouillon du 18102026)|Réponse à Deyra — checklist NDC[X] Prime (brouillon du 18/10/2026)]]
+- [[_COMMUNITY_11. Phased rollout (each phase independently verifiable)|11. Phased rollout (each phase independently verifiable)]]
+- [[_COMMUNITY_3. Verified findings (owner assumptions checked)|3. Verified findings (owner assumptions checked)]]
+- [[_COMMUNITY_6. Backend changes (`api-aerialsrc`)|6. Backend changes (`api-aerial/src`)]]
+- [[_COMMUNITY_7. Frontend changes (`front-reservationapp`)|7. Frontend changes (`front-reservation/app`)]]
+- [[_COMMUNITY_NDCX scripts|NDC[X] scripts]]
+- [[_COMMUNITY_10. Testing (no certification)|10. Testing (no certification)]]
+- [[_COMMUNITY_5. Architecture and NDCX call sequence|5. Architecture and NDCX call sequence]]
+- [[_COMMUNITY_8. Data model|8. Data model]]
+- [[_COMMUNITY_1. Context — what exists today|1. Context — what exists today]]
+- [[_COMMUNITY_4. Decisions table|4. Decisions table]]
 
 ## God Nodes (most connected - your core abstractions)
-1. `NDC[X] Setup and Connectivity` - 19 edges
-2. `Certification Checklist` - 19 edges
-3. `Shopping Options and Fare Handling (Fare_MasterPricerTravelBoardSearch)` - 17 edges
-4. `Prime booking, refunds and voids (`examples/prime-booking/`)` - 15 edges
-5. `NDC[X] Payment and Features Reference` - 15 edges
-6. `File Structure` - 14 edges
-7. `Ancillaries, seats and servicing (`examples/servicing/`)` - 12 edges
-8. `NDC[X] Next Step — Cancel / Void / Refund (`Travel_OrderCancel`) — MET2-2422` - 12 edges
-9. `NDC[X] Next Step — Order Pay / Ticketing (`Travel_OrderPay`) — MET2-2422` - 12 edges
-10. `GitLab CLI (glab) Skill` - 11 edges
+1. `run()` - 19 edges
+2. `NDC[X] Setup and Connectivity` - 19 edges
+3. `Certification Checklist` - 19 edges
+4. `Shopping Options and Fare Handling (Fare_MasterPricerTravelBoardSearch)` - 17 edges
+5. `NDC[X] flight modification — implementation plan (v3.1)` - 16 edges
+6. `Prime booking, refunds and voids (`examples/prime-booking/`)` - 15 edges
+7. `NDC[X] Payment and Features Reference` - 15 edges
+8. `5. Tasks` - 15 edges
+9. `NDC[X] Payment Methods — gap analysis & extension plan (credit cards) — MET2-2422` - 14 edges
+10. `File Structure` - 14 edges
 
 ## Surprising Connections (you probably didn't know these)
 - None detected - all connections are within the same source files.
@@ -112,11 +131,11 @@
 - **Verdict Decision System (Approve/Approve with Comments/Request Changes)** — agent_skills_mr_review_skill_verdict_approve, agent_skills_mr_review_skill_verdict_approve_with_comments, agent_skills_mr_review_skill_verdict_request_changes [EXTRACTED 1.00]
 - **glab CLI MR Review Workflow (view/diff/note/approve)** — agent_skills_mr_review_skill_glab_mr_view, agent_skills_mr_review_skill_glab_mr_diff, agent_skills_mr_review_skill_glab_mr_note, agent_skills_mr_review_skill_glab_mr_approve [EXTRACTED 1.00]
 
-## Communities (74 total, 14 thin omitted)
+## Communities (93 total, 14 thin omitted)
 
 ### Community 0 - "ADR & Context Templates"
-Cohesion: 0.07
-Nodes (30): 1. Assessment — what's actually true right now, 2. Done this session, 3. What's left (not blocking, informational — do opportunistically or leave for the next pass), 4. What this plan deliberately does not cover, NDC[X] OrderCreate — Finish Plan (MET2-2422), 1. Found during review, fixed — re-verify, 2. ⚠️ Needs a decision before merge — IdentityDoc builder is currently disabled, 3. Corrections the author made to the plan text (spot-checked against code, hold up) (+22 more)
+Cohesion: 0.08
+Nodes (25): 1. L'option XND n'est PAS encore active en production, 2. « Upsell at pricing » — ~~non implémenté~~ → réglé le 18/10, Cas de test (6/6 cochés, tous prouvés en live), Ce qui est coché, et pourquoi, Checklist de certification Amadeus NDC[X] Prime — état au 2026-10-18, Critères (3/3 cochés), Hors périmètre de cette checklist, Infos appli (+17 more)
 
 ### Community 1 - "GitLab CLI (glab) Skill"
 Cohesion: 0.06
@@ -224,7 +243,7 @@ Nodes (26): 10. Definition of done, 11. Glossary additions, 1. Scope, 2. Decisio
 
 ### Community 40 - "Issue and solution (FAQ)"
 Cohesion: 0.08
-Nodes (24): Airline Error Messages, Amount as integer vs amount as integer with decimalPlace, Coupon Status Codes, Duplicate Names, Error message enhancement in Master Pricer response, Gotchas, Issue and solution (FAQ), Middle Name (+16 more)
+Nodes (25): `39138 FAIL TO CREATE PAX NAME IN 1A PNR` at Travel_OrderCreate, Airline Error Messages, Amount as integer vs amount as integer with decimalPlace, Coupon Status Codes, Duplicate Names, Error message enhancement in Master Pricer response, Gotchas, Issue and solution (FAQ) (+17 more)
 
 ### Community 41 - "NDC[X] Setup and Connectivity"
 Cohesion: 0.09
@@ -350,24 +369,100 @@ Nodes (3): Consequences, Considered options, Notification type is a shared cross
 Cohesion: 0.50
 Nodes (3): Consequences, Considered options, Order warnings are persisted on the PNR and gate the servicing actions
 
+### Community 74 - "NDC[X] Payment Methods — gap analysis & extension plan (credit cards) — MET2-2422"
+Cohesion: 0.09
+Nodes (23): 0. Headline, 10. Effort against 2026-11-08, 11. Open questions — resolve, do not assume, 12. Definition of done, 1. Corrections to `NDCX-ORDERPAY-PLAN.md` (verified from code, 2026-10-13), 2. What the code does today for cards (verified), 3. 🔒 Raw PAN in the SOAP body — stated openly, 4. Feature-by-feature gap table (+15 more)
+
+### Community 75 - "NDC[X] — Voluntary flight change (exchange / reshop)"
+Cohesion: 0.06
+Nodes (48): arg(), arr(), buildPaxs(), { createNdcxAncillaryOfferPricePayload }, { createNdcxOfferPricePayload }, { createNdcxOrderCancelPayload }, { createNdcxOrderChangePayload }, { createNdcxOrderCreatePayload, createNdcxOrderRetrievePayload } (+40 more)
+
+### Community 76 - "File Structure"
+Cohesion: 0.12
+Nodes (16): ADRs introduced by this plan, Dependency: build the seat-map plan first, File Structure, Global Constraints, NDC[X] Ancillary Services (`Travel_ServiceList`) Implementation Plan, PR description must name, Task 1: Service classification (pure), Task 2: `Travel_ServiceList` request builder (+8 more)
+
+### Community 77 - "3. Traps — do not repeat"
+Cohesion: 0.13
+Nodes (15): 1. What NDC[X] can and cannot do, 2. Shape, 3. Traps — do not repeat, 4. Gate and persistence, 5. Files, 6. Open, An FF update carries ALL passengers, Echo the OfferID verbatim (+7 more)
+
+### Community 78 - "Ce qui est coché, et pourquoi"
+Cohesion: 0.06
+Nodes (34): 10. Open questions — resolve while building, do not assume, 11. Definition of done, 12. Glossary additions, 1. Scope, 2. Decisions taken this session (ADRs), 3. Carrier support — read before building anything, 4. Shape, 5.1 The request delta — three lines, and the element order matters (+26 more)
+
+### Community 79 - "5. Tasks"
+Cohesion: 0.07
+Nodes (28): 0.1 Live survey: 2026-10-21, test office NCEPF3273, 1 ADT, round trip 07/14 Dec 2026, 0.2 Wire facts (cite these by number in code comments), 0.3 Current state: what exists and what is missing, 0. Evidence, 1. Scope decisions, 2. Front rendering map, 3. ADRs introduced by this plan (ADR-78 … ADR-90), 4. File structure (+20 more)
+
+### Community 80 - "ndcx_package_cert_runs.js"
+Cohesion: 0.16
+Nodes (11): { execFileSync }, flag(), fs, listCalls(), LOGS_DIR, main(), manifest, MANIFEST_PATH (+3 more)
+
+### Community 81 - "NDC[X] flight modification — implementation plan (v3.1)"
+Cohesion: 0.20
+Nodes (9): 0. What changed since v1 (and v3 delta), 12. Risks, 13. What I could not verify, 2.1 In scope, 2.2 Non-goals, 2. Scope and non-goals, 9. Errors and edge cases, Appendix A — Deferred, out of scope: involuntary changes (+1 more)
+
+### Community 82 - "Réponse à Deyra — checklist NDC[X] Prime (brouillon du 18/10/2026)"
+Cohesion: 0.20
+Nodes (9): 1. Cas de test — 6/6 OK, 2. Services — 11 des 12 de ta liste, 3. Stateless, 4. Header, 5. Application, 6. Merge / prod — le seul point bloquant pour l'envoi : XND, 7. Checklist, 8. Questions à poser à Amadeus avant le 28/10 (un mail par sujet) (+1 more)
+
+### Community 83 - "11. Phased rollout (each phase independently verifiable)"
+Cohesion: 0.25
+Nodes (8): 11. Phased rollout (each phase independently verifiable), Deferred (separate tickets), Phase 0 — Safety (front only), Phase 1 — Backend, ticketed exchange, Phase 2 — Backend, held-order change, Phase 3 — Front, ticketed, Phase 4 — Front, held, Phase 5 — Production enablement
+
+### Community 84 - "3. Verified findings (owner assumptions checked)"
+Cohesion: 0.25
+Nodes (8): 3.1 "Ticketed only" — **CORRECTED: it is not a real restriction**, 3.2 Held bookings — **CONFIRMED viable per the matrix; request shape not documented; one code defect**, 3.3 Card "saved in the PNR" — **PARTLY CONFIRMED (held), CONTRADICTED (ticketed)**, 3.4 Per-airline capabilities for voluntary change, 3.5 Other verified points carried over from v1 (still true), 3.6 D8: `modificationFlight` and what it records automatically (v3), 3.7 D8 wiring review against the reference callers (v3.1), 3. Verified findings (owner assumptions checked)
+
+### Community 85 - "6. Backend changes (`api-aerial/src`)"
+Cohesion: 0.25
+Nodes (8): 6.1 `utils/AMADEUS_NDCX/carrierCapabilities.js`, 6.2 `utils/AMADEUS_NDCX/orderExchange.utils.js`, 6.3 `utils/AMADEUS_NDCX/orderExchangeReply.mapper.js`, 6.4 `controllers/AMADEUS_NDCX/order.controller.js`, 6.5 `utils/AMADEUS_NDCX/orderCancel.utils.js`, 6.6 Logging, 6.7 Backend tests, 6. Backend changes (`api-aerial/src`)
+
+### Community 86 - "7. Frontend changes (`front-reservation/app`)"
+Cohesion: 0.25
+Nodes (8): 7.1 Phase 0 — safety (now), 7.2 `utils/adapters/AmadeusNdcxAdapter.ts` — wire both statuses, 7.3 `components/folder/pnr/BtnActions/BtnActions.vue`, 7.4 `pages/folder/[id]/edit/index.vue` (3255 lines), 7.5 New `components/folder/edit/ndcx/NdcxExchangeCandidates.vue` (+ `ndcxExchangeCandidates.utils.ts`), 7.6 `pages/folder/[id]/edit/recap.vue` + new `components/folder/edit/ndcx/NdcxExchangeConfirm.vue`, 7.7 i18n, 7. Frontend changes (`front-reservation/app`)
+
+### Community 87 - "NDC[X] scripts"
+Cohesion: 0.33
+Nodes (5): NDC[X] scripts, `ndcx_cert_runner.js`, `ndcx_package_cert_runs.js`, Non-bag ancillaries (meals, sports, lounge, fast track, assistance) — `NDCX-ANCILLARIES-PLAN.md` Task 0, Worked example — 2026-10-18 (AA, test host nodea1, office NCEPF3273)
+
+### Community 88 - "10. Testing (no certification)"
+Cohesion: 0.40
+Nodes (5): 10.1 Automated, 10.2 Test-host harness, 10.3 Manual test-host scenarios, 10.4 Controlled production validation (per carrier, before enabling it), 10. Testing (no certification)
+
+### Community 89 - "5. Architecture and NDCX call sequence"
+Cohesion: 0.40
+Nodes (5): 5.1 Components, 5.2 Ticketed order — voluntary fare-driven exchange, 5.3 Held order — modify unpaid order (deferred payment), 5.4 State machine (both statuses), 5. Architecture and NDCX call sequence
+
+### Community 90 - "8. Data model"
+Cohesion: 0.40
+Nodes (5): 8.1 `POST /aerial/AMADEUS_NDCX/order/orderFlightReshopRQ`, 8.2 `POST /aerial/AMADEUS_NDCX/order/orderFlightChangeRQ`, 8.3 Front store (`stores/orderServicingFlow.ts`), 8.4 Database, 8. Data model
+
+### Community 91 - "1. Context — what exists today"
+Cohesion: 0.50
+Nodes (4): 1.1 Backend (`api-aerial`), 1.2 Frontend (`front-reservation`), 1.3 Reused as-is, 1. Context — what exists today
+
+### Community 92 - "4. Decisions table"
+Cohesion: 0.50
+Nodes (4): 4.1 Product decisions, 4.2 Technical decisions, 4.3 D4: paying the ticketed add-collect with the saved form of payment, 4. Decisions table
+
 ## Knowledge Gaps
-- **671 isolated node(s):** `$schema`, `plugin`, `type`, `command`, `enabled` (+666 more)
+- **866 isolated node(s):** `path`, `fs`, `SRC`, `{ getSalesPoint }`, `{ NdcxService }` (+861 more)
   These have ≤1 connection - possible missing edges or undocumented components.
 - **14 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
+- **Why does `NDC[X] Non-Bag Ancillaries — meals, sports, lounge, fast track / priority, assistance` connect `5. Tasks` to `ADR & Context Templates`?**
+  _High betweenness centrality (0.018) - this node is a cross-community bridge._
+- **Why does `NDC[X] — Upsell at pricing (`Travel_OfferPrice` + `OtherOffers`)` connect `Ce qui est coché, et pourquoi` to `ADR & Context Templates`?**
+  _High betweenness centrality (0.016) - this node is a cross-community bridge._
 - **Why does `NDC[X] Next Step — Order Booking (`Travel_OrderCreate`) + shared OrderView mapper — MET2-2422` connect `Vue 3 & Nuxt Frontend Skill` to `ADR & Context Templates`?**
   _High betweenness centrality (0.013) - this node is a cross-community bridge._
-- **Why does `NDC[X] Next Step — Cancel / Void / Refund (`Travel_OrderCancel`) — MET2-2422` connect `Agent-Browser Skill` to `ADR & Context Templates`?**
-  _High betweenness centrality (0.012) - this node is a cross-community bridge._
-- **Why does `NDC[X] Next Step — Provider Adapter + `offerPrice` — MET2-2422` connect `NDC[X] Next Step — Provider Adapter + `offerPrice` — MET2-2422` to `ADR & Context Templates`?**
-  _High betweenness centrality (0.011) - this node is a cross-community bridge._
-- **What connects `2026-10-15 -> 151026 (MasterPricer date format).`, `PTC blocks. Guide: use CNN (not CHD) for children; INF rides on an adult ref.`, `$schema` to the rest of the system?**
-  _675 weakly-connected nodes found - possible documentation gaps or missing edges._
+- **What connects `path`, `fs`, `SRC` to the rest of the system?**
+  _870 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `ADR & Context Templates` be split into smaller, more focused modules?**
-  _Cohesion score 0.06794871794871794 - nodes in this community are weakly interconnected._
+  _Cohesion score 0.07564102564102564 - nodes in this community are weakly interconnected._
 - **Should `GitLab CLI (glab) Skill` be split into smaller, more focused modules?**
   _Cohesion score 0.0625 - nodes in this community are weakly interconnected._
 - **Should `Vue 3 & Nuxt Frontend Skill` be split into smaller, more focused modules?**
