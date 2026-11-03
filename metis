@@ -1,0 +1,518 @@
+#!/usr/bin/env bash
+#
+# metis - developer CLI for the Metis workspace (Linux).
+#
+# Starts the dev servers in a tmux session and wraps the workspace tasks that
+# used to live in VS Code. Run `./metis help` for the list of commands.
+set -euo pipefail
+
+ROOT=$(cd "$(dirname "$(readlink -f "${BASH_SOURCE[0]}")")" && pwd)
+cd "$ROOT"
+
+# --- configuration ------------------------------------------------------------
+
+SESSION=metis        # tmux session name
+WINDOW=dev           # the single window that holds the three servers
+VPN_CONN=fortigate   # strongSwan connection name (see scripts/vpn/ipsec.conf)
+VPN_SCRIPT="$ROOT/scripts/vpn/vpn.sh"
+
+SERVICES=(aerial dashboard front)
+declare -A REPO=([aerial]=api-aerial [dashboard]=api-dashboard [front]=front-reservation)
+declare -A DIR=([aerial]=api-aerial/src [dashboard]=api-dashboard/src [front]=front-reservation)
+# PORT=... in each API's .environment/.env; Nuxt's default for the front.
+declare -A PORT=([aerial]=8080 [dashboard]=8081 [front]=3000)
+INSPECTOR_PORT=9229  # api-aerial's `npm run dev` runs nodemon --inspect
+
+# Command run in every pane: start the server; once it exits (crash, Ctrl-C),
+# leave an interactive shell open in the same directory.
+# Single-quoted on purpose: it is expanded by the pane's shell, not by this script.
+PANE_CMD='npm run dev; s=$?; printf "\n[metis] npm run dev exited with status %s - interactive shell in %s\n" "$s" "$PWD"; exec "${SHELL:-bash}"'
+PANE_FMT=(-P -F '#{pane_id}')
+
+# Never reset these to development (same list as tasks/hard_reset.js).
+PROTECTED_BRANCHES=(development master main production staging)
+
+# --- output -------------------------------------------------------------------
+
+# Prints "[label] message" on the given fd, colored when that fd is a terminal.
+tag() {
+  local fd=$1 color=$2 label=$3
+  shift 3
+  if [[ -t $fd && -z ${NO_COLOR:-} ]]; then
+    printf '\e[%sm[%s]\e[0m %s\n' "$color" "$label" "$*" >&"$fd"
+  else
+    printf '[%s] %s\n' "$label" "$*" >&"$fd"
+  fi
+}
+info() { tag 1 34 info "$@"; }
+ok()   { tag 1 32 ok "$@"; }
+warn() { tag 2 33 warn "$@"; }
+err()  { tag 2 31 error "$@"; }
+die()  { err "$@"; exit 1; }
+
+# --- option parsing -----------------------------------------------------------
+
+DRY_RUN=0 RESTART=0 DETACH=0 YES=0
+CMD=''
+ARGS=()
+
+# parse_flags "<allowed options>" args... -> sets the flag variables and ARGS.
+parse_flags() {
+  local allowed=" $1 " a
+  shift
+  ARGS=()
+  for a in "$@"; do
+    case $a in
+      -h|--help) usage; exit 0 ;;
+      -*)
+        [[ $allowed == *" $a "* ]] || die "Unknown option '$a' for '$CMD' (see ./metis help)"
+        case $a in
+          --dry-run) DRY_RUN=1 ;;
+          --restart) RESTART=1 ;;
+          --detach)  DETACH=1 ;;
+          -y|--yes)  YES=1 ;;
+        esac ;;
+      *) ARGS+=("$a") ;;
+    esac
+  done
+}
+
+# Runs a command, or only prints it with --dry-run.
+run() {
+  if (( DRY_RUN )); then
+    printf '  +'
+    printf ' %q' "$@"
+    printf '\n'
+  else
+    "$@"
+  fi
+}
+
+usage() {
+  cat <<'EOF'
+Usage: ./metis <command> [options]
+
+Dev servers (tmux session "metis": api-aerial, api-dashboard, front-reservation)
+  dev [--restart] [--detach] [--dry-run]
+                        Start the servers. If the session already exists you are
+                        asked to attach or restart; --restart skips the question
+                        and rebuilds, --detach starts without attaching.
+  attach                Attach to (or switch to) the running session.
+  stop [--dry-run]      Kill the session, then report processes still listening
+                        on the server ports.
+  restart <service> [--dry-run]
+                        Restart one pane: aerial | dashboard | front
+  status                Show the session, the VPN tunnel and the server ports.
+
+Repositories
+  sync                  Clone missing repos and pull development (tasks/sync_all.js).
+  reset [repo] [--yes]  Reset a repo's current branch to origin/development,
+                        locally and on the remote (tasks/hard_reset.js).
+                        Asks for confirmation; --yes skips it.
+  setup                 Regenerate metis.code-workspace, .gitignore and the README
+                        table from metis.repos.json (tasks/setup_workspace.js).
+
+VPN (FortiGate IKEv1 via strongSwan, needs sudo)
+  vpn setup|up|down|status
+
+Options:  -h, --help
+EOF
+}
+
+# --- helpers ------------------------------------------------------------------
+
+need_node() {
+  command -v node >/dev/null || die "node is not on PATH"
+}
+
+need_tmux() {
+  command -v tmux >/dev/null || die "tmux is not installed (sudo apt install tmux)"
+  local v
+  v=$(tmux -V)
+  # Needs new-session/respawn-pane -e (3.2). Unversioned builds are let through.
+  if [[ $v =~ ([0-9]+)\.([0-9]+) ]]; then
+    if (( BASH_REMATCH[1] < 3 || (BASH_REMATCH[1] == 3 && BASH_REMATCH[2] < 2) )); then
+      die "tmux >= 3.2 is required (found: $v)"
+    fi
+  fi
+}
+
+session_exists() {
+  tmux has-session -t "=$SESSION" 2>/dev/null
+}
+
+# Prints "<process> (pid N)" and returns 0 if something is listening on port $1.
+port_holder() {
+  local line who
+  line=$(ss -ltnpH "sport = :$1" 2>/dev/null | head -n1 || true)
+  [[ -n $line ]] || return 1
+  who=$(sed -n 's/.*users:(("\([^"]*\)",pid=\([0-9]*\).*/\1 (pid \2)/p' <<<"$line")
+  printf '%s\n' "${who:-unknown process}"
+}
+
+attach_session() {
+  if [[ -n ${TMUX:-} ]]; then
+    run tmux switch-client -t "=$SESSION"
+  else
+    run tmux attach-session -t "=$SESSION"
+  fi
+}
+
+# up | down | unknown. Never prompts: `ipsec status` needs root, so without
+# cached sudo credentials the answer is "unknown".
+vpn_state() {
+  local out
+  sudo -n true 2>/dev/null || { echo unknown; return; }
+  out=$(sudo -n ipsec status "$VPN_CONN" 2>/dev/null || true)
+  if [[ $out == *ESTABLISHED* ]]; then echo up; else echo down; fi
+}
+
+# --- dev ----------------------------------------------------------------------
+
+preflight() {
+  local s failed=0 holder
+
+  command -v ss >/dev/null || die "ss (iproute2) is required to check the server ports"
+
+  if (( ! DETACH && ! DRY_RUN )) && [[ ! -t 0 || ! -t 1 ]]; then
+    die "No terminal to attach to; use --detach"
+  fi
+
+  for s in "${SERVICES[@]}"; do
+    if [[ ! -d ${DIR[$s]} ]]; then
+      err "${REPO[$s]}: ${DIR[$s]} not found - run ./metis sync"
+      failed=1
+    elif [[ ! -d ${DIR[$s]}/node_modules ]]; then
+      err "${REPO[$s]}: no node_modules - run: cd ${DIR[$s]} && npm install"
+      failed=1
+    fi
+  done
+
+  for s in "${SERVICES[@]}"; do
+    if holder=$(port_holder "${PORT[$s]}"); then
+      err "port ${PORT[$s]} (${REPO[$s]}) is already in use by $holder"
+      failed=1
+    fi
+  done
+
+  (( failed == 0 )) || die "Preflight failed; nothing was started."
+}
+
+# Brings the VPN up unless the tunnel is already established.
+ensure_vpn() {
+  local state
+  info "Checking VPN ($VPN_CONN)..."
+  if (( ! DRY_RUN )); then
+    sudo -v || die "sudo is needed to query the VPN"   # prompts once, then cached
+  fi
+  state=$(vpn_state)
+  case $state in
+    up)
+      ok "VPN already connected" ;;
+    unknown)
+      # Only reachable with --dry-run (a real run just refreshed sudo above).
+      info "VPN state unknown (sudo credentials not cached); a real run would check it and run: $VPN_SCRIPT up" ;;
+    down)
+      info "VPN is down, bringing it up..."
+      run "$VPN_SCRIPT" up || die "Could not bring the VPN up"
+      if (( ! DRY_RUN )); then
+        [[ $(vpn_state) == up ]] || die "VPN is still not connected after 'vpn up'"
+        ok "VPN connected"
+      fi ;;
+  esac
+}
+
+# Creates a pane-creating tmux command and prints the new pane id
+# (a placeholder with --dry-run).
+tmx_pane() {
+  local label=$1
+  shift
+  if (( DRY_RUN )); then
+    printf '  + tmux' >&2
+    printf ' %q' "$@" >&2
+    printf '\n' >&2
+    printf '<%s-pane>\n' "$label"
+  else
+    tmux "$@"
+  fi
+}
+
+# One window: the two APIs side by side on top, front-reservation as a thin
+# full-width strip (15%) below. Panes are labelled with the repo name.
+create_session() {
+  local cols rows s
+  local -A pane
+  cols=$(tput cols 2>/dev/null || true)
+  rows=$(tput lines 2>/dev/null || true)
+  [[ $cols =~ ^[0-9]+$ ]] || cols=200
+  [[ $rows =~ ^[0-9]+$ ]] || rows=50
+
+  fail() {
+    tmux kill-session -t "=$SESSION" 2>/dev/null || true
+    die "$*"
+  }
+  tm() { run tmux "$@" || fail "tmux $1 failed"; }
+
+  info "Creating tmux session '$SESSION'..."
+  # PATH is passed explicitly so the panes use the node that is active in this
+  # shell (e.g. via fnm) rather than whatever the tmux server started with.
+  pane[aerial]=$(tmx_pane aerial new-session -d -s "$SESSION" -n "$WINDOW" \
+    -x "$cols" -y "$rows" -c "$ROOT/${DIR[aerial]}" -e "PATH=$PATH" \
+    "${PANE_FMT[@]}" "$PANE_CMD") || fail "tmux new-session failed"
+  pane[dashboard]=$(tmx_pane dashboard split-window -h -t "${pane[aerial]}" \
+    -c "$ROOT/${DIR[dashboard]}" "${PANE_FMT[@]}" "$PANE_CMD") || fail "tmux split-window failed"
+  pane[front]=$(tmx_pane front split-window -v -f -l 15% -t "=$SESSION:$WINDOW" \
+    -c "$ROOT/${DIR[front]}" "${PANE_FMT[@]}" "$PANE_CMD") || fail "tmux split-window failed"
+
+  for s in "${SERVICES[@]}"; do
+    tm set-option -p -t "${pane[$s]}" @metis_service "$s"
+    tm set-option -p -t "${pane[$s]}" @metis_title "${REPO[$s]}"
+  done
+  tm set-option -w -t "=$SESSION:$WINDOW" pane-border-status top
+  tm set-option -w -t "=$SESSION:$WINDOW" pane-border-format ' #{@metis_title} '
+  tm select-pane -t "${pane[aerial]}"
+
+  if (( DRY_RUN )); then
+    info "Dry run: nothing was started."
+  else
+    ok "Session '$SESSION' is up (api-aerial :${PORT[aerial]}, api-dashboard :${PORT[dashboard]}, front-reservation :${PORT[front]})"
+  fi
+}
+
+cmd_dev() {
+  local ans
+  parse_flags "--restart --detach --dry-run" "$@"
+  (( ${#ARGS[@]} == 0 )) || die "'dev' takes no arguments (see ./metis help)"
+  need_tmux
+
+  if session_exists; then
+    if (( RESTART )); then
+      info "Restarting: killing the existing '$SESSION' session..."
+      run tmux kill-session -t "=$SESSION"
+      if (( ! DRY_RUN )); then sleep 1; fi   # let the old servers release their ports
+    elif (( DETACH )); then
+      info "Session '$SESSION' is already running (use --restart to rebuild it)."
+      return 0
+    elif (( DRY_RUN )); then
+      info "Session '$SESSION' already exists; a real run would ask: attach or restart?"
+      return 0
+    else
+      [[ -t 0 && -t 1 ]] || die "Session '$SESSION' already exists and there is no terminal to ask; use ./metis attach or ./metis dev --restart"
+      while true; do
+        read -rp "Session '$SESSION' is already running. [A]ttach / [r]estart? " ans
+        case ${ans,,} in
+          ''|a|attach)
+            attach_session
+            return 0 ;;
+          r|restart)
+            run tmux kill-session -t "=$SESSION"
+            sleep 1
+            break ;;
+          *) echo "Please answer 'a' or 'r'." ;;
+        esac
+      done
+    fi
+  fi
+
+  preflight
+  ensure_vpn
+  create_session
+  if (( ! DETACH )); then
+    attach_session
+  elif (( ! DRY_RUN )); then
+    info "Attach with: ./metis attach"
+  fi
+}
+
+# --- stop / attach / restart / status -----------------------------------------
+
+report_leftovers() {
+  local s port holder found=0
+  local ports=()
+  for s in "${SERVICES[@]}"; do ports+=("${PORT[$s]}"); done
+  ports+=("$INSPECTOR_PORT")
+  for port in "${ports[@]}"; do
+    if holder=$(port_holder "$port"); then
+      warn "port $port is still in use by $holder"
+      found=1
+    fi
+  done
+  if (( found == 0 )); then ok "No leftover listeners on ${ports[*]}"; fi
+}
+
+cmd_stop() {
+  parse_flags "--dry-run" "$@"
+  (( ${#ARGS[@]} == 0 )) || die "'stop' takes no arguments (see ./metis help)"
+  need_tmux
+  if session_exists; then
+    run tmux kill-session -t "=$SESSION"
+    if (( DRY_RUN )); then
+      info "Dry run: a real run would then report processes still listening on the server ports."
+      return 0
+    fi
+    ok "Session '$SESSION' stopped"
+    sleep 1   # give the servers a moment to exit before looking at the ports
+  else
+    info "Session '$SESSION' is not running."
+    if (( DRY_RUN )); then return 0; fi
+  fi
+  report_leftovers
+}
+
+cmd_attach() {
+  parse_flags "" "$@"
+  (( ${#ARGS[@]} == 0 )) || die "'attach' takes no arguments (see ./metis help)"
+  need_tmux
+  session_exists || die "Session '$SESSION' is not running; start it with: ./metis dev"
+  attach_session
+}
+
+cmd_restart() {
+  local svc pane
+  parse_flags "--dry-run" "$@"
+  (( ${#ARGS[@]} == 1 )) || die "Usage: ./metis restart <aerial|dashboard|front> [--dry-run]"
+  svc=${ARGS[0]}
+  [[ -n ${DIR[$svc]:-} ]] || die "Unknown service '$svc' (expected: ${SERVICES[*]})"
+  need_tmux
+  session_exists || die "Session '$SESSION' is not running; start it with: ./metis dev"
+  pane=$(tmux list-panes -t "=$SESSION:$WINDOW" -F '#{pane_id} #{@metis_service}' \
+    | awk -v s="$svc" '$2 == s { print $1 }')
+  [[ -n $pane ]] || die "Could not find the $svc pane in session '$SESSION' (try ./metis dev --restart)"
+  info "Restarting ${REPO[$svc]}..."
+  # No command given: tmux reruns the command the pane was created with.
+  run tmux respawn-pane -k -t "$pane" -c "$ROOT/${DIR[$svc]}" -e "PATH=$PATH"
+}
+
+cmd_status() {
+  local s state holder
+  parse_flags "" "$@"
+  (( ${#ARGS[@]} == 0 )) || die "'status' takes no arguments (see ./metis help)"
+
+  if ! command -v tmux >/dev/null; then
+    printf '%-10s %s\n' "tmux" "not installed"
+  elif session_exists; then
+    printf '%-10s %s\n' "session" "'$SESSION' running"
+  else
+    printf '%-10s %s\n' "session" "'$SESSION' not running"
+  fi
+
+  state=$(vpn_state)
+  case $state in
+    up)      printf '%-10s %s\n' "vpn" "connected ($VPN_CONN)" ;;
+    down)    printf '%-10s %s\n' "vpn" "not connected ($VPN_CONN)" ;;
+    unknown) printf '%-10s %s\n' "vpn" "unknown (needs sudo; run ./metis vpn status)" ;;
+  esac
+
+  for s in "${SERVICES[@]}"; do
+    if holder=$(port_holder "${PORT[$s]}"); then
+      printf '%-10s %-18s :%-5s listening (%s)\n' "$s" "${REPO[$s]}" "${PORT[$s]}" "$holder"
+    else
+      printf '%-10s %-18s :%-5s not listening\n' "$s" "${REPO[$s]}" "${PORT[$s]}"
+    fi
+  done
+}
+
+# --- sync / setup / vpn -------------------------------------------------------
+
+cmd_sync() {
+  parse_flags "" "$@"
+  (( ${#ARGS[@]} == 0 )) || die "'sync' takes no arguments (see ./metis help)"
+  need_node
+  node "$ROOT/tasks/sync_all.js"
+}
+
+cmd_setup() {
+  parse_flags "" "$@"
+  (( ${#ARGS[@]} == 0 )) || die "'setup' takes no arguments (see ./metis help)"
+  need_node
+  node "$ROOT/tasks/setup_workspace.js"
+}
+
+cmd_vpn() {
+  parse_flags "" "$@"
+  (( ${#ARGS[@]} == 1 )) || die "Usage: ./metis vpn setup|up|down|status"
+  case ${ARGS[0]} in
+    setup|up|down|status) "$VPN_SCRIPT" "${ARGS[0]}" ;;
+    *) die "Usage: ./metis vpn setup|up|down|status" ;;
+  esac
+}
+
+# --- reset --------------------------------------------------------------------
+
+cmd_reset() {
+  local repo branch changes remote ans r
+  local enabled=()
+  parse_flags "--yes -y" "$@"
+  (( ${#ARGS[@]} <= 1 )) || die "Usage: ./metis reset [repo] [--yes]"
+  need_node
+
+  mapfile -t enabled < <(node -e '
+    for (const r of require(process.argv[1]).repos) if (r.enabled) console.log(r.name)
+  ' "$ROOT/metis.repos.json")
+  (( ${#enabled[@]} > 0 )) || die "No enabled repos in metis.repos.json"
+
+  repo=${ARGS[0]:-}
+  if [[ -z $repo ]]; then
+    [[ -t 0 ]] || die "Usage: ./metis reset <repo> [--yes]  (repos: ${enabled[*]})"
+    PS3="Reset which repository? (number) "
+    select repo in "${enabled[@]}"; do
+      [[ -n $repo ]] && break
+    done
+    [[ -n $repo ]] || die "No repository selected"
+  fi
+
+  [[ " ${enabled[*]} " == *" $repo "* ]] || die "'$repo' is not an enabled repo (enabled: ${enabled[*]})"
+  [[ -d $repo/.git ]] || die "$repo is not cloned; run ./metis sync"
+
+  branch=$(git -C "$repo" rev-parse --abbrev-ref HEAD)
+  for r in "${PROTECTED_BRANCHES[@]}"; do
+    [[ $branch != "$r" ]] || die "Branch '$branch' of $repo is protected; refusing to reset it to development"
+  done
+
+  changes=$(git -C "$repo" status --porcelain | wc -l)
+  remote=$(git -C "$repo" ls-remote --heads origin "$branch" 2>/dev/null || echo "?")
+
+  echo "Repository : $repo"
+  echo "Branch     : $branch"
+  echo "This will:"
+  echo "  - discard $changes uncommitted/untracked path(s) (git reset --hard, git clean -fd)"
+  echo "  - reset '$branch' to origin/development"
+  if [[ $remote == "?" ]]; then
+    echo "  - force-push '$branch' to origin if it exists there (could not check the remote)"
+  elif [[ -n $remote ]]; then
+    echo "  - FORCE-PUSH '$branch' to origin (it exists on the remote)"
+  else
+    echo "  - leave the remote alone ('$branch' does not exist on origin)"
+  fi
+
+  if (( ! YES )); then
+    [[ -t 0 ]] || die "No terminal to confirm; pass --yes to proceed"
+    read -rp "Continue? [y/N] " ans
+    [[ ${ans,,} == y || ${ans,,} == yes ]] || die "Aborted."
+  fi
+
+  node "$ROOT/tasks/hard_reset.js" "$repo"
+}
+
+# --- main ---------------------------------------------------------------------
+
+main() {
+  CMD=${1:-}
+  if (( $# > 0 )); then shift; fi
+  case $CMD in
+    dev)       cmd_dev "$@" ;;
+    attach)    cmd_attach "$@" ;;
+    stop)      cmd_stop "$@" ;;
+    restart)   cmd_restart "$@" ;;
+    status)    cmd_status "$@" ;;
+    sync)      cmd_sync "$@" ;;
+    reset)     cmd_reset "$@" ;;
+    setup)     cmd_setup "$@" ;;
+    vpn)       cmd_vpn "$@" ;;
+    help|-h|--help) usage ;;
+    '')        usage >&2; exit 1 ;;
+    *)         err "Unknown command '$CMD'"; usage >&2; exit 1 ;;
+  esac
+}
+
+main "$@"

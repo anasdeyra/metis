@@ -1,3 +1,4 @@
+#!/usr/bin/env node
 /**
  * Converts any file into a .md file with a title, metadata table, and
  * the original file content inside a fenced code block.

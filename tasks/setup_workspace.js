@@ -1,3 +1,4 @@
+#!/usr/bin/env node
 const fs = require('fs');
 const path = require('path');
 
@@ -102,14 +103,6 @@ function main() {
   workspace.settings['scm.alwaysShowRepositories'] = true;
   workspace.settings['scm.defaultViewMode'] = 'tree';
 
-  // 6. Rebuild tasks.inputs "repoName" options
-  if (workspace.tasks && workspace.tasks.inputs) {
-    const repoNameInput = workspace.tasks.inputs.find((i) => i.id === 'repoName');
-    if (repoNameInput) {
-      repoNameInput.options = enabledRepos.map((r) => r.name);
-    }
-  }
-
   // 6. Write back with trailing commas (JSONC style VS Code expects)
   const output = addTrailingCommas(JSON.stringify(workspace, null, 2));
   fs.writeFileSync(workspacePath, output + '\n', 'utf8');
@@ -152,7 +145,7 @@ function configureGitHooks(rootDir, allRepos) {
 
   // Configuration for root repository
   try {
-    const hooksPath = path.join(rootDir, 'tasks', 'hooks').replace(/\\/g, '/');
+    const hooksPath = path.join(rootDir, 'tasks', 'hooks');
     execSync(`git config core.hooksPath "${hooksPath}"`, { cwd: rootDir });
     log(colors.green, '  ✔ Root repository hooks configured with absolute path');
   } catch (err) {

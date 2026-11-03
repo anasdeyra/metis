@@ -24,12 +24,12 @@ Declared in `metis.repos.json`, toggled via `"enabled"`. Enabled repos appear in
 ### How to work here
 - Product code lives in the sub-repos. **Operate inside the relevant sub-repo directory, not in the meta-repo root.**
 - Do not commit product code into this meta-repo. The meta-repo only tracks orchestration files.
-- **Adding or toggling a sub-repo**: edit `metis.repos.json`, then run `node tasks/setup_workspace.js` and reload `metis.code-workspace`.
-- **Cloning / syncing sub-repos to `development`**: `node tasks/sync_all.js`.
-- **Discarding local changes in one sub-repo**: `node tasks/hard_reset.js <repo-name>`.
+- **Adding or toggling a sub-repo**: edit `metis.repos.json`, then run `./metis setup` and reload `metis.code-workspace`.
+- **Cloning / syncing sub-repos to `development`**: `./metis sync`.
+- **Discarding local changes in one sub-repo**: `./metis reset <repo-name>` (shows what it will do and asks for confirmation; `--yes` skips the prompt; force-pushes the branch if it exists on the remote).
 - **Default branch**: `development`. Do not commit to `main` from this workspace.
-- VS Code tasks (via `Ctrl+Shift+P` → `Tasks: Run Task`): "Setup Workspace", "Git: pull from dev", "Git: Hard Reset".
-- **Multi-service debug**: `metis.code-workspace` exposes launch compounds that start multiple APIs + the booking UI together.
+- **Dev servers**: `./metis dev` opens the tmux session `metis` with `api-aerial`, `api-dashboard` and `front-reservation` (it may prompt for `sudo` to bring the VPN up). Manage it with `./metis attach | stop | restart <aerial|dashboard|front> | status`. `./metis help` lists every command, including `vpn`.
+- The VS Code tasks and launch configs were removed from `metis.code-workspace`; `./metis` replaces them.
 - For codebase questions, prefer `graphify` (see below). It indexes this meta-repo; for sub-repo internals, defer to the sub-repo's own `AGENTS.md` / `CLAUDE.md` if present.
 
 ## graphify
