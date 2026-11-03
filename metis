@@ -113,7 +113,7 @@ Repositories
                         table from metis.repos.json (tasks/setup_workspace.js).
 
 VPN (FortiGate IKEv1 via strongSwan, needs sudo)
-  vpn setup|up|down|status
+  vpn setup|apply|up|down|status
 
 Options:  -h, --help
 EOF
@@ -268,6 +268,8 @@ create_session() {
     tm set-option -p -t "${pane[$s]}" @metis_service "$s"
     tm set-option -p -t "${pane[$s]}" @metis_title "${REPO[$s]}"
   done
+  # Mouse: wheel scrolls the pane's history, click selects a pane.
+  tm set-option -t "=$SESSION" mouse on
   tm set-option -w -t "=$SESSION:$WINDOW" pane-border-status top
   tm set-option -w -t "=$SESSION:$WINDOW" pane-border-format ' #{@metis_title} '
   tm select-pane -t "${pane[aerial]}"
@@ -430,10 +432,11 @@ cmd_setup() {
 
 cmd_vpn() {
   parse_flags "" "$@"
-  (( ${#ARGS[@]} == 1 )) || die "Usage: ./metis vpn setup|up|down|status"
+  local usage="Usage: ./metis vpn setup|apply|up|down|status"
+  (( ${#ARGS[@]} >= 1 && ${#ARGS[@]} <= 2 )) || die "$usage"
   case ${ARGS[0]} in
-    setup|up|down|status) "$VPN_SCRIPT" "${ARGS[0]}" ;;
-    *) die "Usage: ./metis vpn setup|up|down|status" ;;
+    setup|apply|up|down|status) (( ${#ARGS[@]} == 1 )) || die "$usage"; "$VPN_SCRIPT" "${ARGS[0]}" ;;
+    *) die "$usage" ;;
   esac
 }
 
