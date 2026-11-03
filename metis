@@ -269,7 +269,9 @@ create_session() {
     tm set-option -p -t "${pane[$s]}" @metis_title "${REPO[$s]}"
   done
   # Mouse: wheel scrolls the pane's history, click selects a pane.
-  tm set-option -t "=$SESSION" mouse on
+  # The trailing colon makes tmux parse "=name" as a session (set-option -t
+  # "=name" alone fails with "no such session" on tmux 3.4).
+  tm set-option -t "=$SESSION:" mouse on
   tm set-option -w -t "=$SESSION:$WINDOW" pane-border-status top
   tm set-option -w -t "=$SESSION:$WINDOW" pane-border-format ' #{@metis_title} '
   tm select-pane -t "${pane[aerial]}"
