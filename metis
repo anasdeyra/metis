@@ -50,7 +50,7 @@ die()  { err "$@"; exit 1; }
 
 # --- option parsing -----------------------------------------------------------
 
-DRY_RUN=0 RESTART=0 DETACH=0
+DRY_RUN=0 RESTART=0 DETACH=0 WITH_VPN=0
 CMD=''
 ARGS=()
 
@@ -68,6 +68,7 @@ parse_flags() {
           --dry-run) DRY_RUN=1 ;;
           --restart) RESTART=1 ;;
           --detach)  DETACH=1 ;;
+          --vpn)     WITH_VPN=1 ;;
         esac ;;
       *) ARGS+=("$a") ;;
     esac
@@ -90,10 +91,12 @@ usage() {
 Usage: ./metis <command> [options]
 
 Dev servers (tmux session "metis": api-aerial, api-dashboard, front-reservation)
-  dev [--restart] [--detach] [--dry-run]
+  dev [--vpn] [--restart] [--detach] [--dry-run]
                         Start the servers. If the session already exists you are
                         asked to attach or restart; --restart skips the question
                         and rebuilds, --detach starts without attaching.
+                        The VPN is left alone unless --vpn is given, which brings
+                        it up first (needs sudo).
   attach                Attach to (or switch to) the running session.
   stop [--dry-run]      Kill the session, then report processes still listening
                         on the server ports.
@@ -321,7 +324,7 @@ cmd_watch_branches() {
 
 cmd_dev() {
   local ans
-  parse_flags "--restart --detach --dry-run" "$@"
+  parse_flags "--vpn --restart --detach --dry-run" "$@"
   (( ${#ARGS[@]} == 0 )) || die "'dev' takes no arguments (see ./metis help)"
   need_tmux
 
@@ -355,7 +358,7 @@ cmd_dev() {
   fi
 
   preflight
-  ensure_vpn
+  if (( WITH_VPN )); then ensure_vpn; fi
   create_session
   if (( ! DETACH )); then
     attach_session

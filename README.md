@@ -38,7 +38,7 @@ Requires `bash`, `node`, `tmux` >= 3.2 and `ss`; the VPN commands also need `sud
 
 | Command | What it does |
 | :--- | :--- |
-| `./metis dev [--restart] [--detach] [--dry-run]` | Start `api-aerial` (`:8080`), `api-dashboard` (`:8081`) and `front-reservation` (`:3000`) in the tmux session `metis`. |
+| `./metis dev [--vpn] [--restart] [--detach] [--dry-run]` | Start `api-aerial` (`:8080`), `api-dashboard` (`:8081`) and `front-reservation` (`:3000`) in the tmux session `metis`. |
 | `./metis attach` | Attach to the running session (switches client when already inside tmux). |
 | `./metis stop [--dry-run]` | Kill the session, then report any process still listening on the server ports. |
 | `./metis restart <aerial\|dashboard\|front> [--dry-run]` | Restart a single pane without touching the others. |
