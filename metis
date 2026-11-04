@@ -22,6 +22,7 @@ declare -A DIR=([aerial]=api-aerial/src [dashboard]=api-dashboard/src [front]=fr
 # PORT=... in each API's .environment/.env; Nuxt's default for the front.
 declare -A PORT=([aerial]=8080 [dashboard]=8081 [front]=3000)
 INSPECTOR_PORT=9229  # api-aerial's `npm run dev` runs nodemon --inspect
+BRANCH_POLL=2        # seconds between checks of each pane's git branch
 
 # Command run in every pane: start the server; once it exits (crash, Ctrl-C),
 # leave an interactive shell open in the same directory.
@@ -273,14 +274,52 @@ create_session() {
   # "=name" alone fails with "no such session" on tmux 3.4).
   tm set-option -t "=$SESSION:" mouse on
   tm set-option -w -t "=$SESSION:$WINDOW" pane-border-status top
-  tm set-option -w -t "=$SESSION:$WINDOW" pane-border-format ' #{@metis_title} '
+  tm set-option -w -t "=$SESSION:$WINDOW" pane-border-format \
+    ' #{@metis_title}#{?@metis_branch, [#{@metis_branch}],} '
   tm select-pane -t "${pane[aerial]}"
+  start_branch_watcher
 
   if (( DRY_RUN )); then
     info "Dry run: nothing was started."
   else
     ok "Session '$SESSION' is up (api-aerial :${PORT[aerial]}, api-dashboard :${PORT[dashboard]}, front-reservation :${PORT[front]})"
   fi
+}
+
+# Starts a background job, owned by the tmux server, that keeps the branch shown
+# in each pane title in sync. It is tied to the session id (not the name), so
+# it exits when this session dies even if a new 'metis' session replaces it.
+start_branch_watcher() {
+  local sid
+  if (( DRY_RUN )); then
+    run tmux run-shell -b "$ROOT/metis _watch-branches <session-id> >/dev/null 2>&1"
+    return 0
+  fi
+  sid=$(tmux display-message -p -t "=$SESSION:" '#{session_id}') || fail "tmux display-message failed"
+  tm run-shell -b "$(printf '%q ' "$ROOT/metis" _watch-branches "$sid")>/dev/null 2>&1"
+}
+
+# Branch (or short commit when detached) of the repo containing $1, or nothing.
+git_branch() {
+  git -C "$1" symbolic-ref --short -q HEAD 2>/dev/null \
+    || git -C "$1" rev-parse --short HEAD 2>/dev/null \
+    || true
+}
+
+# Internal: polls the git branch of every pane's current directory and stores
+# it in the pane option @metis_branch (read by pane-border-format). The option
+# is only written when it changes, since setting an option redraws the clients.
+cmd_watch_branches() {
+  local sid=${1:?session id} id cur path b
+  while tmux has-session -t "$sid" 2>/dev/null; do
+    while IFS='|' read -r id cur path; do
+      b=$(git_branch "$path")
+      if [[ $b != "$cur" ]]; then
+        tmux set-option -p -t "$id" @metis_branch "$b" 2>/dev/null || true
+      fi
+    done < <(tmux list-panes -s -t "$sid" -F '#{pane_id}|#{@metis_branch}|#{pane_current_path}' 2>/dev/null || true)
+    sleep "$BRANCH_POLL"
+  done
 }
 
 cmd_dev() {
@@ -514,6 +553,7 @@ main() {
     reset)     cmd_reset "$@" ;;
     setup)     cmd_setup "$@" ;;
     vpn)       cmd_vpn "$@" ;;
+    _watch-branches) cmd_watch_branches "$@" ;;
     help|-h|--help) usage ;;
     '')        usage >&2; exit 1 ;;
     *)         err "Unknown command '$CMD'"; usage >&2; exit 1 ;;
