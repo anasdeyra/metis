@@ -25,9 +25,8 @@ Declared in `metis.repos.json`, toggled via `"enabled"`. Enabled repos appear in
 ### How to work here
 - Product code lives in the sub-repos. **Operate inside the relevant sub-repo directory, not in the meta-repo root.**
 - Do not commit product code into this meta-repo. The meta-repo only tracks orchestration files.
-- **Adding or toggling a sub-repo**: edit `metis.repos.json`, then run `./metis setup` and reload `metis.code-workspace`.
-- **Cloning / syncing sub-repos to `development`**: `./metis sync`.
-- **Discarding local changes in one sub-repo**: `./metis reset <repo-name>` (shows what it will do and asks for confirmation; `--yes` skips the prompt; force-pushes the branch if it exists on the remote).
+- **Adding or toggling a sub-repo**: edit `metis.repos.json`, clone the repo, and update `metis.code-workspace` by hand.
+- **Keeping a feature branch current**: `./metis pull [repo...]` merges `origin/development` into each enabled repo's current branch (fast-forwards on `development`; skips dirty repos; leaves conflicts for you to resolve). `--dry-run` previews it.
 - **Default branch**: `development`. Do not commit to `main` from this workspace.
 - **Dev servers**: `./metis dev` opens the tmux session `metis` with `api-aerial`, `api-dashboard` and `front-reservation` (it may prompt for `sudo` to bring the VPN up). Manage it with `./metis attach | stop | restart <aerial|dashboard|front> | status`. `./metis help` lists every command, including `vpn`.
 - The VS Code tasks and launch configs were removed from `metis.code-workspace`; `./metis` replaces them.

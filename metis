@@ -30,9 +30,6 @@ BRANCH_POLL=2        # seconds between checks of each pane's git branch
 PANE_CMD='npm run dev; s=$?; printf "\n[metis] npm run dev exited with status %s - interactive shell in %s\n" "$s" "$PWD"; exec "${SHELL:-bash}"'
 PANE_FMT=(-P -F '#{pane_id}')
 
-# Never reset these to development (same list as tasks/hard_reset.js).
-PROTECTED_BRANCHES=(development master main production staging)
-
 # --- output -------------------------------------------------------------------
 
 # Prints "[label] message" on the given fd, colored when that fd is a terminal.
@@ -53,7 +50,7 @@ die()  { err "$@"; exit 1; }
 
 # --- option parsing -----------------------------------------------------------
 
-DRY_RUN=0 RESTART=0 DETACH=0 YES=0
+DRY_RUN=0 RESTART=0 DETACH=0
 CMD=''
 ARGS=()
 
@@ -71,7 +68,6 @@ parse_flags() {
           --dry-run) DRY_RUN=1 ;;
           --restart) RESTART=1 ;;
           --detach)  DETACH=1 ;;
-          -y|--yes)  YES=1 ;;
         esac ;;
       *) ARGS+=("$a") ;;
     esac
@@ -106,12 +102,13 @@ Dev servers (tmux session "metis": api-aerial, api-dashboard, front-reservation)
   status                Show the session, the VPN tunnel and the server ports.
 
 Repositories
-  sync                  Clone missing repos and pull development (tasks/sync_all.js).
-  reset [repo] [--yes]  Reset a repo's current branch to origin/development,
-                        locally and on the remote (tasks/hard_reset.js).
-                        Asks for confirmation; --yes skips it.
-  setup                 Regenerate metis.code-workspace, .gitignore and the README
-                        table from metis.repos.json (tasks/setup_workspace.js).
+  pull [repo...] [--dry-run]
+                        Merge origin/development into the current branch of each
+                        enabled repo (or only the named ones), to keep feature
+                        branches up to date. On development itself it
+                        fast-forwards. Repos with uncommitted changes to tracked
+                        files are skipped; on conflicts the merge is left in
+                        progress for you to resolve.
 
 VPN (FortiGate IKEv1 via strongSwan, needs sudo)
   vpn setup|apply|up|down|status
@@ -181,7 +178,7 @@ preflight() {
 
   for s in "${SERVICES[@]}"; do
     if [[ ! -d ${DIR[$s]} ]]; then
-      err "${REPO[$s]}: ${DIR[$s]} not found - run ./metis sync"
+      err "${REPO[$s]}: ${DIR[$s]} not found - clone it first"
       failed=1
     elif [[ ! -d ${DIR[$s]}/node_modules ]]; then
       err "${REPO[$s]}: no node_modules - run: cd ${DIR[$s]} && npm install"
@@ -455,21 +452,7 @@ cmd_status() {
   done
 }
 
-# --- sync / setup / vpn -------------------------------------------------------
-
-cmd_sync() {
-  parse_flags "" "$@"
-  (( ${#ARGS[@]} == 0 )) || die "'sync' takes no arguments (see ./metis help)"
-  need_node
-  node "$ROOT/tasks/sync_all.js"
-}
-
-cmd_setup() {
-  parse_flags "" "$@"
-  (( ${#ARGS[@]} == 0 )) || die "'setup' takes no arguments (see ./metis help)"
-  need_node
-  node "$ROOT/tasks/setup_workspace.js"
-}
+# --- pull / vpn ----------------------------------------------------------------
 
 cmd_vpn() {
   parse_flags "" "$@"
@@ -481,13 +464,66 @@ cmd_vpn() {
   esac
 }
 
-# --- reset --------------------------------------------------------------------
+# --- pull ---------------------------------------------------------------------
 
-cmd_reset() {
-  local repo branch changes remote ans r
-  local enabled=()
-  parse_flags "--yes -y" "$@"
-  (( ${#ARGS[@]} <= 1 )) || die "Usage: ./metis reset [repo] [--yes]"
+# Merges origin/development into the current branch of one repo.
+# Returns 0 when the repo is up to date afterwards, 1 when it needs attention.
+pull_repo() {
+  local repo=$1 branch conflicts
+
+  if [[ ! -d $repo/.git ]]; then
+    warn "$repo: not cloned, skipping"
+    return 1
+  fi
+  branch=$(git -C "$repo" symbolic-ref --short -q HEAD || true)
+  if [[ -z $branch ]]; then
+    warn "$repo: detached HEAD, skipping"
+    return 1
+  fi
+  if [[ -n $(git -C "$repo" status --porcelain --untracked-files=no) ]]; then
+    warn "$repo: uncommitted changes on '$branch', skipping (commit or stash them first)"
+    return 1
+  fi
+
+  if (( DRY_RUN )); then
+    info "$repo ($branch):"
+    run git -C "$repo" fetch origin development
+    if [[ $branch == development ]]; then
+      run git -C "$repo" merge --ff-only origin/development
+    else
+      run git -C "$repo" merge --no-edit origin/development
+    fi
+    return 0
+  fi
+
+  info "$repo ($branch): fetching origin/development..."
+  git -C "$repo" fetch origin development || { err "$repo: fetch failed"; return 1; }
+
+  if git -C "$repo" merge-base --is-ancestor origin/development HEAD; then
+    ok "$repo ($branch): already up to date"
+    return 0
+  fi
+
+  if [[ $branch == development ]]; then
+    git -C "$repo" merge --ff-only origin/development \
+      || { err "$repo: development cannot be fast-forwarded to origin/development"; return 1; }
+  elif ! git -C "$repo" merge --no-edit origin/development; then
+    conflicts=$(git -C "$repo" diff --name-only --diff-filter=U)
+    if [[ -n $conflicts ]]; then
+      err "$repo ($branch): merge conflicts, resolve them in $repo then commit (or run: git -C $repo merge --abort):"
+      sed 's/^/    /' <<<"$conflicts" >&2
+    else
+      err "$repo ($branch): merge failed"
+    fi
+    return 1
+  fi
+  ok "$repo ($branch): merged origin/development"
+}
+
+cmd_pull() {
+  local repo failed=0
+  local enabled=() repos=()
+  parse_flags "--dry-run" "$@"
   need_node
 
   mapfile -t enabled < <(node -e '
@@ -495,47 +531,19 @@ cmd_reset() {
   ' "$ROOT/metis.repos.json")
   (( ${#enabled[@]} > 0 )) || die "No enabled repos in metis.repos.json"
 
-  repo=${ARGS[0]:-}
-  if [[ -z $repo ]]; then
-    [[ -t 0 ]] || die "Usage: ./metis reset <repo> [--yes]  (repos: ${enabled[*]})"
-    PS3="Reset which repository? (number) "
-    select repo in "${enabled[@]}"; do
-      [[ -n $repo ]] && break
-    done
-    [[ -n $repo ]] || die "No repository selected"
-  fi
+  for repo in "${ARGS[@]}"; do
+    [[ " ${enabled[*]} " == *" $repo "* ]] || die "'$repo' is not an enabled repo (enabled: ${enabled[*]})"
+  done
+  repos=("${ARGS[@]}")
+  (( ${#repos[@]} > 0 )) || repos=("${enabled[@]}")
 
-  [[ " ${enabled[*]} " == *" $repo "* ]] || die "'$repo' is not an enabled repo (enabled: ${enabled[*]})"
-  [[ -d $repo/.git ]] || die "$repo is not cloned; run ./metis sync"
-
-  branch=$(git -C "$repo" rev-parse --abbrev-ref HEAD)
-  for r in "${PROTECTED_BRANCHES[@]}"; do
-    [[ $branch != "$r" ]] || die "Branch '$branch' of $repo is protected; refusing to reset it to development"
+  for repo in "${repos[@]}"; do
+    pull_repo "$repo" || failed=$((failed + 1))
   done
 
-  changes=$(git -C "$repo" status --porcelain | wc -l)
-  remote=$(git -C "$repo" ls-remote --heads origin "$branch" 2>/dev/null || echo "?")
-
-  echo "Repository : $repo"
-  echo "Branch     : $branch"
-  echo "This will:"
-  echo "  - discard $changes uncommitted/untracked path(s) (git reset --hard, git clean -fd)"
-  echo "  - reset '$branch' to origin/development"
-  if [[ $remote == "?" ]]; then
-    echo "  - force-push '$branch' to origin if it exists there (could not check the remote)"
-  elif [[ -n $remote ]]; then
-    echo "  - FORCE-PUSH '$branch' to origin (it exists on the remote)"
-  else
-    echo "  - leave the remote alone ('$branch' does not exist on origin)"
+  if (( failed > 0 )); then
+    die "$failed of ${#repos[@]} repo(s) need attention"
   fi
-
-  if (( ! YES )); then
-    [[ -t 0 ]] || die "No terminal to confirm; pass --yes to proceed"
-    read -rp "Continue? [y/N] " ans
-    [[ ${ans,,} == y || ${ans,,} == yes ]] || die "Aborted."
-  fi
-
-  node "$ROOT/tasks/hard_reset.js" "$repo"
 }
 
 # --- main ---------------------------------------------------------------------
@@ -549,9 +557,7 @@ main() {
     stop)      cmd_stop "$@" ;;
     restart)   cmd_restart "$@" ;;
     status)    cmd_status "$@" ;;
-    sync)      cmd_sync "$@" ;;
-    reset)     cmd_reset "$@" ;;
-    setup)     cmd_setup "$@" ;;
+    pull)      cmd_pull "$@" ;;
     vpn)       cmd_vpn "$@" ;;
     _watch-branches) cmd_watch_branches "$@" ;;
     help|-h|--help) usage ;;
