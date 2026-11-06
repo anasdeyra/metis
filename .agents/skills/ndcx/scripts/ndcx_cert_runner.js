@@ -23,6 +23,14 @@
  *   quote    --state <file>        (Travel_OrderReshop cancel quote: VOID or REFUND)
  *   cancel   --state <file>        (Travel_OrderCancel — held order = cancel, ticketed = void/refund)
  *
+ * Voluntary flight change (NDCX-FLIGHTMODIFICATION-PLAN.md §10.2) — product exchange builders, no DB:
+ *   xshop    --state <file> --date YYYY-MM-DD [--bound n] [--origin X --dest Y] [--cabin C]
+ *            [--auto|--no-auto] [--ignore-gate] [--retain-mode product|fixed|none] [--pax-fix] [--log f.jsonl]
+ *   xprice   --state <file> [--candidate n] [--pax-fix] [--dump dir] [--log f.jsonl]   (Reshop #2 only)
+ *   xchange  --state <file> [--candidate n] --commit [--pax-fix] [--log f.jsonl]       (Reshop #2 + OrderChange)
+ *   --retain-mode fixed / --pax-fix simulate the two parser fixes found on 2026-11-05 (bag allowance under
+ *   ServiceDefinitionRef; repeated PassengerRefs / Service/PaxRefID on multi-pax items).
+ *
  * Non-bag ancillaries (NDCX-ANCILLARIES-PLAN.md Task 0) — HELD orders on the TEST host only, never `pay`:
  *   shop → price → services --dump d → ancprice --services AVML,SPEQ,WCHR   (F6: free items dropped by the 2nd OfferPrice)
  *   shop → price → create --services VGML,WCHR,BIKE → retrieve --dump d → cancel   (ADR-82 H1; --free-mode h2 = 2nd SelectedOffer)
@@ -101,6 +109,23 @@ const {
 const { mapNdcxOrderReshopCancelQuote } = require(SRC + "/utils/AMADEUS_NDCX/orderReshopReply.mapper");
 const { mapNdcxOrderViewReply } = require(SRC + "/utils/AMADEUS_NDCX/orderViewReply.mapper");
 const { encryptData } = require(SRC + "/utils/Encryption/dataEncrypt");
+const {
+  listNdcxBounds,
+  resolveNdcxExchangeContext,
+  resolveNdcxCurrentCabinCode,
+  readNdcxAirlineOwnerCode,
+  resolveNdcxRetainServiceIds,
+  createNdcxOrderReshopShopPayload,
+  createNdcxOrderReshopPricePayload,
+  extractNdcxPricedExchangeOffer,
+  createNdcxOrderChangeExchangePayload,
+  resolveNdcxExchangePaymentAmount,
+  resolveNdcxExchangeOwnerCodes,
+} = require(SRC + "/utils/AMADEUS_NDCX/orderExchange.utils");
+const { mapNdcxExchangeShopReply } = require(SRC + "/utils/AMADEUS_NDCX/orderExchangeReply.mapper");
+const { readCurrencyDecimals } = require(SRC + "/utils/AMADEUS_NDCX/amount.utils");
+const { extractNdcxOrderPaxList } = require(SRC + "/utils/AMADEUS_NDCX/updatePax.utils");
+const { resolveNdcxFlightChangeSupport } = require(SRC + "/utils/AMADEUS_NDCX/carrierCapabilities");
 
 const SALES_POINT_ID = Number(arg("salespoint", 1));
 
@@ -450,6 +475,13 @@ function summarizeOrderServices(reply) {
   return out;
 }
 
+/** --pax-fix: every host pax ref of a raw AddOfferItem (repeated FareDetail/PassengerRefs and Service/PaxRefID). */
+function readAllPaxRefs(rawItem) {
+  const fromFare = arr(rawItem?.FareDetail).flatMap((fd) => arr(fd?.PassengerRefs).flatMap((r) => String(textOf(r) ?? "").split(/\s+/)));
+  const fromSvc = arr(rawItem?.Service).flatMap((sv) => arr(sv?.PaxRefID).map(textOf));
+  return [...new Set([...fromFare, ...fromSvc].filter(Boolean))];
+}
+
 // ---------------------------------------------------------------------------
 // commands
 // ---------------------------------------------------------------------------
@@ -677,6 +709,210 @@ async function run() {
       const sum = summarizeOrderServices(reply);
       console.log(`  services on reply: ${sum.services.length}`);
       for (const x of sum.services) console.log("   ", JSON.stringify(x));
+      return;
+    }
+
+    if (cmd === "xshop" || cmd === "xprice" || cmd === "xchange") {
+      // Voluntary flight change (NDCX-FLIGHTMODIFICATION-PLAN.md §10.2): the product's exchange builders,
+      // same call order as order.controller.js handleFlightReshop / commitFlightChange, no DB.
+      const st = loadState();
+      if (!st.orderId) throw new Error("Run `create` first (no orderId in state)");
+      const owner = st.order?.OwnerCode || st.offer?.OwnerCode;
+      const pre = await svc.travelOrderRetrieve(createNdcxOrderRetrievePayload({ OrderID: st.orderId, OwnerCode: owner }, sp));
+      const preView = mapNdcxOrderViewReply(pre, {});
+      const ticketed = arr(preView?.TicketDocInfo).length > 0;
+      const pnrStatus = Number(arg("status", ticketed ? 2 : 1));
+      const airline = readNdcxAirlineOwnerCode(pre) ?? owner;
+      const hostPaxList = extractNdcxOrderPaxList(pre);
+      const log = (entry) => {
+        const file = arg("log");
+        const row = { at: new Date().toISOString(), cmd, carrier: airline, orderId: st.orderId, pnrStatus, ...entry };
+        if (file) fs.appendFileSync(path.resolve(file), JSON.stringify(row) + "\n");
+        return row;
+      };
+
+      if (cmd === "xshop") {
+        const bounds = listNdcxBounds(pre);
+        const boundIdx = Number(arg("bound", "0"));
+        const bound = bounds[boundIdx];
+        if (!bound) throw new Error(`No bound ${boundIdx} (order has ${bounds.length})`);
+        if (!arg("date")) throw new Error("--date YYYY-MM-DD is required");
+        const flights = [{ origin: arg("origin", bound.origin), destination: arg("dest", bound.destination), date: arg("date") }];
+        const context = resolveNdcxExchangeContext(pre, { changedBounds: [boundIdx], flights });
+        const support = resolveNdcxFlightChangeSupport(airline, pnrStatus, { dateOnly: context.dateOnly, hasInfant: context.hasInfant });
+        console.log(`GATE ${airline} status=${pnrStatus} dateOnly=${context.dateOnly} allowed=${support.allowed} autoExch=${support.autoExchRequestInd} ${support.reason ?? ""} ${(support.warnings || []).join(" / ")}`);
+        if (!support.allowed && !flag("ignore-gate")) {
+          console.log("XSHOP SKIPPED (gate)", JSON.stringify(log({ bounds, flights, gate: support.reason })));
+          return;
+        }
+        // --retain-mode product (default) | fixed (also resolve ServiceAssociations/ServiceDefinitionRef/PaxSegmentRefID,
+        // the shape SQ/TU/LO use for the free bag allowance) | none (no RetainServiceID at all).
+        const retainMode = arg("retain-mode", "product");
+        const retainSource =
+          retainMode === "fixed"
+            ? (() => {
+                const copy = JSON.parse(JSON.stringify(pre));
+                for (const item of arr(copy?.Response?.Order?.OrderItem)) {
+                  for (const sv of arr(item?.Service)) {
+                    const sa = sv?.ServiceAssociations;
+                    const nested = arr(sa?.ServiceDefinitionRef).flatMap((r) => arr(r?.PaxSegmentRefID));
+                    if (sa && nested.length && !sa.PaxSegmentRefID && !sa.PaxJourneyRefID) sa.PaxSegmentRefID = nested;
+                  }
+                }
+                return copy;
+              })()
+            : pre;
+        const retain = retainMode === "none" ? {} : resolveNdcxRetainServiceIds(retainSource, context.changedPaxJourneyIds);
+        console.log(`RETAIN (${retainMode}) ${JSON.stringify(retain)}`);
+        const cabinCode = arg("cabin") || resolveNdcxCurrentCabinCode(pre, context.changedPaxJourneyIds);
+        const autoExch = flag("no-auto") ? false : flag("auto") ? true : support.autoExchRequestInd;
+        const payload = createNdcxOrderReshopShopPayload(
+          {
+            OrderID: st.orderId,
+            OwnerCode: owner,
+            originDestRequests: flights,
+            deleteOrderItems: extractNdcxOrderItemIds(pre).map((id) => ({ orderItemRefId: id, retainServiceIds: retain[id] ?? [] })),
+            paxs: hostPaxList.map((p) => ({ hostPaxId: p.PaxID, ptc: p.PTC, givenName: p.givenName, surname: p.surname })),
+            cabin: cabinCode ? { typeCode: cabinCode } : undefined,
+            autoExchRequestInd: autoExch,
+          },
+          sp,
+        );
+        const t0 = Date.now();
+        let reply;
+        try {
+          reply = await svc.travelOrderReshop(payload);
+        } catch (e) {
+          console.log("XSHOP TRANSPORT ERROR", JSON.stringify(log({ bounds, flights, ms: Date.now() - t0, transportError: String(e.message).slice(0, 300) })));
+          process.exitCode = 1;
+          return;
+        }
+        const ms = Date.now() - t0;
+        if (arg("dump")) dumpJson(arg("dump"), `${airline}-xshop.reply.json`, reply);
+        const shop = mapNdcxExchangeShopReply(reply);
+        // --pax-fix: simulate reading every Service/PaxRefID of an item (LO 2 ADT sends them repeated).
+        if (flag("pax-fix")) {
+          const rawOffers = arr(reply?.Response?.ReshopResults?.ReshopOffers?.ReshopOffer);
+          for (const c of shop.Candidates) {
+            const raw = rawOffers.find((o) => textOf(o?.OfferID) === c.OfferId);
+            for (const it of c.OfferItems) {
+              if (it.PaxRefIds?.length) continue;
+              const rawItem = arr(raw?.AddOfferItem).find((x) => textOf(x?.OfferItemID) === it.OfferItemId);
+              it.PaxRefIds = readAllPaxRefs(rawItem);
+            }
+          }
+        }
+        const candidates = shop.Candidates.map((c) => ({
+          OfferId: c.OfferId,
+          OwnerCode: c.OwnerCode,
+          expires: c.OfferExpirationDateTime,
+          total: c.TotalPrice,
+          diff: c.Differential ? { sign: c.Differential.sign, total: c.Differential.totalAmount, cur: c.Differential.currency } : null,
+          OfferItems: c.OfferItems,
+          flights: c.Journeys.map((j) => j.Segments.map((s) => `${s.MarketingCarrierCode}${s.MarketingCarrierFlightNumber} ${s.Departure.IATA_LocationCode}-${s.Arrival.IATA_LocationCode} ${String(s.Departure.AircraftScheduledDateTime).slice(0, 16)}`).join(" + ")),
+        }));
+        saveState({ xshop: { at: new Date().toISOString(), pnrStatus, ShoppingResponseId: shop.ShoppingResponseId, candidates } });
+        const row = log({ bounds, flights, cabin: cabinCode, autoExch, retainMode, retain, ms, useCase: shop.UseCase, candidates: candidates.length, errors: shop.Errors, warnings: shop.Warning, first: candidates.slice(0, 3).map(({ OfferItems, ...c }) => c) });
+        console.log(`XSHOP ${shop.Errors.length ? "ERRORS" : "OK"} ${airline} status=${pnrStatus} ${flights[0].origin}-${flights[0].destination} ${flights[0].date} candidates=${candidates.length} ${ms}ms`);
+        if (shop.Errors.length) console.log("  errors", JSON.stringify(shop.Errors));
+        candidates.slice(0, Number(arg("show", "8"))).forEach((c, i) =>
+          console.log(`  [${i}] ${c.diff ? c.diff.sign + " " + c.diff.total + " " + c.diff.cur : "nodiff"} total=${c.total?.amount ?? "?"} items=${c.OfferItems.length} exp=${c.expires} :: ${c.flights.join(" | ")}`),
+        );
+        void row;
+        return;
+      }
+
+      const xs = st.xshop;
+      if (!xs?.candidates?.length) throw new Error("Run `xshop` first (no candidates in state)");
+      const cand = xs.candidates[Number(arg("candidate", "0"))];
+      if (!cand) throw new Error("No such candidate");
+      const pricePayload = createNdcxOrderReshopPricePayload(
+        {
+          OrderID: st.orderId,
+          OwnerCode: owner,
+          offerRefId: cand.OfferId,
+          offerOwnerCode: cand.OwnerCode,
+          shoppingResponseId: xs.ShoppingResponseId,
+          offerItems: cand.OfferItems.map((i) => ({ offerItemRefId: i.OfferItemId, paxRefIds: i.PaxRefIds })),
+        },
+        sp,
+      );
+      const t0 = Date.now();
+      const priceReply = await svc.travelOrderReshop(pricePayload);
+      const priced = extractNdcxPricedExchangeOffer(priceReply, readCurrencyDecimals(priceReply?.Response));
+      if (arg("dump")) dumpJson(arg("dump"), `${airline}-${cmd}-price.reply.json`, priceReply);
+      if (flag("pax-fix")) {
+        const rawOffer = arr(priceReply?.Response?.ReshopResults?.ReshopOffers?.ReshopOffer)[0];
+        for (const it of priced.OfferItems ?? []) {
+          if (it.PaxRefIds?.length) continue;
+          const rawItem = arr(rawOffer?.AddOfferItem).find((x) => textOf(x?.OfferItemID) === it.OfferItemId);
+          it.PaxRefIds = readAllPaxRefs(rawItem);
+        }
+      }
+      const ms = Date.now() - t0;
+      const pricedSummary = {
+        OfferId: priced.OfferId,
+        total: priced.TotalPrice,
+        diff: priced.Differential ? { sign: priced.Differential.sign, total: priced.Differential.totalAmount, cur: priced.Differential.currency } : null,
+        shopDiff: cand.diff,
+        items: priced.OfferItems?.length,
+        errors: priced.Errors,
+      };
+      console.log(`XPRICE ${priced.Errors?.length || !priced.OfferId ? "ERRORS" : "OK"} ${airline} status=${pnrStatus} ${ms}ms`, JSON.stringify(pricedSummary));
+      if (cmd === "xprice") {
+        log({ ms, ...pricedSummary });
+        return;
+      }
+
+      // xchange: Travel_OrderChange commit. Held = no PaymentInfo; ticketed = the saved FOP when add-collect.
+      if (!flag("commit")) throw new Error("xchange commits the exchange on the host; pass --commit");
+      if (priced.Errors?.length || !priced.OfferId) {
+        log({ ms, ...pricedSummary, committed: false });
+        return;
+      }
+      const held = pnrStatus === 1;
+      const support = resolveNdcxFlightChangeSupport(airline, pnrStatus, { hasInfant: hostPaxList.some((p) => p.PTC === "INF") });
+      const pay = resolveNdcxExchangePaymentAmount(priced.Differential, support.residualAutoRefund);
+      const { validatingCarrierCode } = resolveNdcxExchangeOwnerCodes(owner, priced.ValidatingCarrierCode, airline);
+      const pnr = {
+        paymentMethod: st.pnr?.Payment,
+        paymentTypeCode: st.pnr?.paymentTypeCode,
+        EnrollmentStatusText: st.pnr?.EnrollmentStatusText,
+        CardBrandCode: st.pnr?.CardBrandCode,
+        ExpirationDate: st.pnr?.ExpirationDate,
+        CardHolderName: st.pnr?.CardHolderName,
+        pnrList: [{ ownerIataCode: owner }],
+      };
+      const changePayload = createNdcxOrderChangeExchangePayload(
+        {
+          OrderID: st.orderId,
+          OwnerCode: validatingCarrierCode,
+          offerId: priced.OfferId,
+          offerOwnerCode: priced.OwnerCode,
+          shoppingResponseId: priced.ShoppingResponseId,
+          offerItems: priced.OfferItems.map((item) => ({ offerItemRefId: item.OfferItemId, paxRefIds: item.PaxRefIds })),
+          paxs: hostPaxList.map((p) => ({ hostPaxId: p.PaxID, ptc: p.PTC, givenName: p.givenName, surname: p.surname })),
+          pnrStatus: held ? 1 : 2,
+          amount: pay.amount,
+          currency: pay.currency,
+          pnr,
+        },
+        sp,
+      );
+      const t1 = Date.now();
+      let changeReply;
+      try {
+        changeReply = await svc.travelOrderChange(changePayload);
+      } catch (e) {
+        console.log("XCHANGE TRANSPORT ERROR", JSON.stringify(log({ ...pricedSummary, transportError: String(e.message).slice(0, 300) })));
+        process.exitCode = 1;
+        return;
+      }
+      const view = mapNdcxOrderViewReply(changeReply, {});
+      const errs = arr(view?.Errors);
+      const tickets = arr(view?.TicketDocInfo).map((t) => ({ number: textOf(t?.Ticket?.TicketNumber), coupons: (t?.Ticket?.Coupon ?? []).map((c) => textOf(c?.CouponStatusCode)) }));
+      const row = log({ ...pricedSummary, paid: pay.amount, committed: !errs.length, changeMs: Date.now() - t1, changeErrors: errs, total: textOf(view?.Order?.TotalPrice?.TotalAmount), tickets });
+      console.log(`XCHANGE ${errs.length ? "ERRORS" : "OK"}`, JSON.stringify(row));
       return;
     }
 
