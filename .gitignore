@@ -32,6 +32,7 @@ front-reservation/
 .gemini/
 .agent/scratch/
 scratch/
+graphify-out/
 
 # Reviews (temp artifacts)
 mrs/*
