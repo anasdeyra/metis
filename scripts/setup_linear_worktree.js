@@ -14,13 +14,12 @@ const fs = require('fs');
 const path = require('path');
 const readline = require('readline');
 
-// Read remotes from the workspace file
-const workspacePath = path.join(__dirname, '..', 'metis.code-workspace');
-const workspaceRaw = fs.readFileSync(workspacePath, 'utf-8');
-const workspaceData = JSON.parse(workspaceRaw.replace(/,\s*([\]}])/g, '$1').replace(/\/\/.*$/gm, ''));
+// Read remotes from the workspace config (enabled repos only)
+const reposJsonPath = path.join(__dirname, '..', 'metis.repos.json');
+const reposJson = JSON.parse(fs.readFileSync(reposJsonPath, 'utf-8'));
 const repos = {};
-for (const folder of workspaceData.folders) {
-  if (folder.gitRemote) repos[folder.name] = folder.gitRemote;
+for (const r of reposJson.repos) {
+  if (r.enabled) repos[r.name] = r.remote;
 }
 
 const LINEAR_MCP_URL = 'https://mcp.linear.app/mcp';

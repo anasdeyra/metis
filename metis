@@ -2,8 +2,8 @@
 #
 # metis - developer CLI for the Metis workspace (Linux).
 #
-# Starts the dev servers in a tmux session and wraps the workspace tasks that
-# used to live in VS Code. Run `./metis help` for the list of commands.
+# Starts the dev servers in a tmux session and wraps common workspace
+# operations. Run `./metis help` for the list of commands.
 set -euo pipefail
 
 ROOT=$(cd "$(dirname "$(readlink -f "${BASH_SOURCE[0]}")")" && pwd)
@@ -13,8 +13,6 @@ cd "$ROOT"
 
 SESSION=metis        # tmux session name
 WINDOW=dev           # the single window that holds the three servers
-VPN_CONN=fortigate   # strongSwan connection name (see scripts/vpn/ipsec.conf)
-VPN_SCRIPT="$ROOT/scripts/vpn/vpn.sh"
 
 SERVICES=(aerial dashboard front)
 declare -A REPO=([aerial]=api-aerial [dashboard]=api-dashboard [front]=front-reservation)
@@ -50,7 +48,7 @@ die()  { err "$@"; exit 1; }
 
 # --- option parsing -----------------------------------------------------------
 
-DRY_RUN=0 RESTART=0 DETACH=0 WITH_VPN=0
+DRY_RUN=0 RESTART=0 DETACH=0
 CMD=''
 ARGS=()
 
@@ -68,7 +66,6 @@ parse_flags() {
           --dry-run) DRY_RUN=1 ;;
           --restart) RESTART=1 ;;
           --detach)  DETACH=1 ;;
-          --vpn)     WITH_VPN=1 ;;
         esac ;;
       *) ARGS+=("$a") ;;
     esac
@@ -91,18 +88,16 @@ usage() {
 Usage: ./metis <command> [options]
 
 Dev servers (tmux session "metis": api-aerial, api-dashboard, front-reservation)
-  dev [--vpn] [--restart] [--detach] [--dry-run]
+  dev [--restart] [--detach] [--dry-run]
                         Start the servers. If the session already exists you are
                         asked to attach or restart; --restart skips the question
                         and rebuilds, --detach starts without attaching.
-                        The VPN is left alone unless --vpn is given, which brings
-                        it up first (needs sudo).
   attach                Attach to (or switch to) the running session.
   stop [--dry-run]      Kill the session, then report processes still listening
                         on the server ports.
   restart <service> [--dry-run]
                         Restart one pane: aerial | dashboard | front
-  status                Show the session, the VPN tunnel and the server ports.
+  status                Show the session and the server ports.
 
 Repositories
   pull [repo...] [--dry-run]
@@ -112,9 +107,6 @@ Repositories
                         fast-forwards. Repos with uncommitted changes to tracked
                         files are skipped; on conflicts the merge is left in
                         progress for you to resolve.
-
-VPN (FortiGate IKEv1 via strongSwan, needs sudo)
-  vpn setup|apply|up|down|status
 
 Options:  -h, --help
 EOF
@@ -159,15 +151,6 @@ attach_session() {
   fi
 }
 
-# up | down | unknown. Never prompts: `ipsec status` needs root, so without
-# cached sudo credentials the answer is "unknown".
-vpn_state() {
-  local out
-  sudo -n true 2>/dev/null || { echo unknown; return; }
-  out=$(sudo -n ipsec status "$VPN_CONN" 2>/dev/null || true)
-  if [[ $out == *ESTABLISHED* ]]; then echo up; else echo down; fi
-}
-
 # --- dev ----------------------------------------------------------------------
 
 preflight() {
@@ -197,30 +180,6 @@ preflight() {
   done
 
   (( failed == 0 )) || die "Preflight failed; nothing was started."
-}
-
-# Brings the VPN up unless the tunnel is already established.
-ensure_vpn() {
-  local state
-  info "Checking VPN ($VPN_CONN)..."
-  if (( ! DRY_RUN )); then
-    sudo -v || die "sudo is needed to query the VPN"   # prompts once, then cached
-  fi
-  state=$(vpn_state)
-  case $state in
-    up)
-      ok "VPN already connected" ;;
-    unknown)
-      # Only reachable with --dry-run (a real run just refreshed sudo above).
-      info "VPN state unknown (sudo credentials not cached); a real run would check it and run: $VPN_SCRIPT up" ;;
-    down)
-      info "VPN is down, bringing it up..."
-      run "$VPN_SCRIPT" up || die "Could not bring the VPN up"
-      if (( ! DRY_RUN )); then
-        [[ $(vpn_state) == up ]] || die "VPN is still not connected after 'vpn up'"
-        ok "VPN connected"
-      fi ;;
-  esac
 }
 
 # Creates a pane-creating tmux command and prints the new pane id
@@ -324,7 +283,7 @@ cmd_watch_branches() {
 
 cmd_dev() {
   local ans
-  parse_flags "--vpn --restart --detach --dry-run" "$@"
+  parse_flags "--restart --detach --dry-run" "$@"
   (( ${#ARGS[@]} == 0 )) || die "'dev' takes no arguments (see ./metis help)"
   need_tmux
 
@@ -358,7 +317,6 @@ cmd_dev() {
   fi
 
   preflight
-  if (( WITH_VPN )); then ensure_vpn; fi
   create_session
   if (( ! DETACH )); then
     attach_session
@@ -427,7 +385,7 @@ cmd_restart() {
 }
 
 cmd_status() {
-  local s state holder
+  local s holder
   parse_flags "" "$@"
   (( ${#ARGS[@]} == 0 )) || die "'status' takes no arguments (see ./metis help)"
 
@@ -439,13 +397,6 @@ cmd_status() {
     printf '%-10s %s\n' "session" "'$SESSION' not running"
   fi
 
-  state=$(vpn_state)
-  case $state in
-    up)      printf '%-10s %s\n' "vpn" "connected ($VPN_CONN)" ;;
-    down)    printf '%-10s %s\n' "vpn" "not connected ($VPN_CONN)" ;;
-    unknown) printf '%-10s %s\n' "vpn" "unknown (needs sudo; run ./metis vpn status)" ;;
-  esac
-
   for s in "${SERVICES[@]}"; do
     if holder=$(port_holder "${PORT[$s]}"); then
       printf '%-10s %-18s :%-5s listening (%s)\n' "$s" "${REPO[$s]}" "${PORT[$s]}" "$holder"
@@ -455,17 +406,7 @@ cmd_status() {
   done
 }
 
-# --- pull / vpn ----------------------------------------------------------------
-
-cmd_vpn() {
-  parse_flags "" "$@"
-  local usage="Usage: ./metis vpn setup|apply|up|down|status"
-  (( ${#ARGS[@]} >= 1 && ${#ARGS[@]} <= 2 )) || die "$usage"
-  case ${ARGS[0]} in
-    setup|apply|up|down|status) (( ${#ARGS[@]} == 1 )) || die "$usage"; "$VPN_SCRIPT" "${ARGS[0]}" ;;
-    *) die "$usage" ;;
-  esac
-}
+# --- pull ---------------------------------------------------------------------
 
 # --- pull ---------------------------------------------------------------------
 
@@ -561,7 +502,6 @@ main() {
     restart)   cmd_restart "$@" ;;
     status)    cmd_status "$@" ;;
     pull)      cmd_pull "$@" ;;
-    vpn)       cmd_vpn "$@" ;;
     _watch-branches) cmd_watch_branches "$@" ;;
     help|-h|--help) usage ;;
     '')        usage >&2; exit 1 ;;
